@@ -44,4 +44,9 @@ Ofrecer a los participantes el conocimiento general y detallado de los SIG orien
 
 ## Dirigido a
 
-Los contenidos presentados en este curso están dirigidos a estudiantes y profesionales de diferentes disciplinas que requieran aprender y/o fortalecer sus conocimientos en hidrología computacional y sistemas de información geográfica, tales como:
+Los contenidos presentados en este curso están dirigidos a funcionarios públicos, estudiantes y profesionales de diferentes disciplinas que requieran aprender y/o fortalecer sus conocimientos en el uso de sistemas de información geográfica, tales como:
+
+* Estudiantes de pregrado y posgrado en ingeniería o arquitectura.
+* Ingenieros, arquitectos y especialistas.
+* Técnicos y tecnólogos en ingeniería civil, arquitectura y profesiones afines.
+* Funcionarios públicos y/o gestores territoriales en carrera administrativa, contratistas y asesores municipales
