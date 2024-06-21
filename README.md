@@ -55,3 +55,38 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 * Ingenieros, arquitectos y especialistas.
 * Técnicos y tecnólogos en ingeniería civil, arquitectura y profesiones afines.
 * Funcionarios públicos y/o gestores territoriales en carrera administrativa, consultores, contratistas y asesores municipales
+
+
+## Módulo I – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
+
+En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. A cuanto a la aplicabilidad, realizaremos la Definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población
+
+| Actividad                                 | Alcance                                                                                                                                                                                                                                                                                                                                                    | Dedicación,<br>3.25 horas | 
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------:|
+| [Conceptos básicos](Section01/WhatIsLTWB) | Conceptos básicos, sistemas de proyección, a partir de mapas digitales en formato Adobe Acrobat, identificar elementos cartográficos y topográficos como simbología, escala, sistema de proyección, norte, área de elementos por proporcionalidad de cuadrantes a partir de grilla, a partir de archivos de proyección identificar parámetros geográficos. |                           | 
+
+
+## Módulo II – Conceptos básicos aplicados de SIG en OT (3 horas)
+
+
+
+## Módulo III – Herramientas de análisis espacial aplicadas a OT (3 horas)
+
+
+
+## Módulo IV – Bases de datos espaciales GDB para gestión del OT (3 horas)
+
+
+
+## Módulo V – Modelos de elevación digital - DEM (6 horas)
+
+
+
+## Módulo VI – Sensores remotos y procesamiento digital de imágenes (9 horas)
+
+
+
+## Módulo VII – Análisis de amenazas naturales, modelación de redes vehiculares y fotogrametría con drones (6 horas)
+
+
+
