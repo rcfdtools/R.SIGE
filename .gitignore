@@ -38,6 +38,7 @@ Lib/
 .shp/*.sbn
 .shp/*.sbx
 .shp/*.shp.*
+ReadmeLTWB.md
 
 # Video exclusions
 #Section02/FdrDEM/FdrDEM.mp4
