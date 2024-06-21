@@ -180,6 +180,8 @@ En este módulo realizaremos diferentes análisis complementarios utilizando her
 > Los tiempos de dedicación indicados en cada módulo, corresponden a horas mínimas que el estudiante debe dedicar al desarrollo del caso de estudio con el cual se ejemplificó este curso y a las actividades complementarias indicadas al final de cada clase. Estudiantes bajo el esquema de certificación y caso de estudio asignado requerirán de al menos 96 horas de trabajo y horas complementarias, de acuerdo a su experticia en el manejo de las herramientas computacionales utilizadas. 
 
 
+
+
 ##
 
 _:beginner: Ayuda / Colabora: a través de la pestaña _[Discussions](https://github.com/rcfdtools/R.LTWB/discussions)_ localizada en la parte superior de esta ventana, podrás encontrar y participar en los [_anuncios o noticias_](https://github.com/rcfdtools/R.LTWB/discussions/categories/announcements) publicados, enviarnos tus [_ideas_](https://github.com/rcfdtools/R.LTWB/discussions/categories/ideas) para actividades complementarias, participar en preguntas, respuestas y consultas específicas [_Q&A_](https://github.com/rcfdtools/R.LTWB/discussions/categories/q-a) y realizar [_publicaciones o consultas generales_](https://github.com/rcfdtools/R.LTWB/discussions/categories/general) públicas._
