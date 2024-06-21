@@ -1,7 +1,7 @@
 # Curso taller de Sistemas de Información Geográfica aplicados a Ordenamiento Territorial (OT) - SIGE
 
 
-_Bienvenido al _Curso taller de Sistemas de Información Geográfica aplicados a Ordenamiento Territorial (OT) - SIGE_. Este curso ha sido dividido en diferentes secciones y actividades secuenciales, a través de las cuales el estudiante desarrollará diferentes habilidades computacionales y analíticas, que podrá aplicar en estudios o en la gestión del ordenamiento territorial en municipios.
+_Bienvenido al Curso taller de Sistemas de Información Geográfica aplicados a Ordenamiento Territorial (OT) - SIGE. Este curso ha sido dividido en diferentes secciones y actividades secuenciales, a través de las cuales el estudiante desarrollará diferentes habilidades computacionales y analíticas, que podrá aplicar en estudios o en la gestión del ordenamiento territorial en municipios._
 
 A través de talleres orientados a la solución de un caso de estudio general y con el apoyo técnico de instructores y monitores (dependiendo del número de inscritos), los participantes desarrollarán un proyecto de clase que les permitirá crear el prototipo de un sistema de información geográfica para la gestión del ordenamiento territorial.
 
