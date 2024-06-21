@@ -59,7 +59,7 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 
 ## Módulo I – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
 
-En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a la aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.
+En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a su aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.
 
 | Actividad                                 | Alcance                                                                                                                                                                                                                                                                                                                                                    | Dedicación,<br>3 horas | 
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------:|
@@ -68,25 +68,53 @@ En este módulo se abordan conceptos básicos de topografía, conceptos básicos
 
 ## Módulo II – Conceptos básicos aplicados de SIG en OT (3 horas)
 
+En este módulo se abordan conceptos de ciencias y tecnologías relacionadas con los SIG, sus ventajas y desafíos, y su aplicación y utilidad. En cuanto a su aplicabilidad, estudiaremos los mapas veredales para la disolución y obtención de los límites territoriales, analizaremos el cubrimiento de la red vial municipal, realizaremos un análisis geográfico del modelo de ordenamiento territorial - MOT y la digitalización y cálculo de propiedades geométricas y geográficas.
+
 
 
 ## Módulo III – Herramientas de análisis espacial aplicadas a OT (3 horas)
 
+En este módulo se abordan conceptos de tablas geo-codificadas y los Geo-procesos más comunmente utilizados para análisis espacial. En cuanto a su aplicabilidad, realizaremos la reconstrucción de los límites geográficos de áreas urbanas, zonas de expansión, centros poblados y áreas especiales definidas en tablas geo-codificadas del OT, también su comparación con los vectores de la cartografía oficial del OT. Complementariamente, realizaremos la generación de corredores viales a partir de perfiles definidos en el OT con identificación de construcciones afectadas y para finalizar, un análisis de coberturas de redes de estaciones hidro-climatológicas por subzonas hidrográficas y equipamientos por proximidad a corredores viales.
 
 
 ## Módulo IV – Bases de datos espaciales GDB para gestión del OT (3 horas)
+
+En este módulo se abordan conceptos de diagramas Entidad-Relación, creación y edición de bases de datos, conjuntos de entidades, clases de entidad, tablas y dominios. En cuanto a su aplicabilidad, realizaremos la integración de los conjuntos de datos recopilados en una única GDB, estudiaremos los índices de ocupación y construcción y el análisis de destinaciones catastrales y su relación con las actividades de uso definidas en el OT.
 
 
 
 ## Módulo V – Modelos de elevación digital - DEM (6 horas)
 
+En este módulo se abordan conceptos relacionados con la definición, funciones y aplicaciones de los de los DEM así como sus métodos de creación. En cuanto a su aplicabilidad, realizaremos la creación de DEM's a partir de curvas de nivel, la descarga, procesamiento y validación de DEM satelitales, los análisis zonales a partir de divisiones geopolíticas municipales, la generación de perfiles y su visualización 3D, y crearemos el mapa de pendientes para el análisis de incompatibilidad con áreas de actividad definidas en el OT.
 
 
 ## Módulo VI – Sensores remotos y procesamiento digital de imágenes (9 horas)
 
+En este módulo se abordan conceptos relacionados con las definición, aplicación y clasificación de los sensores remotos, tipos de composiciones espectrales utilizados para identificación de algunos tipos básicos de coberturas (agua, suelo, vegetación) y las plataformas utilizadas para su descarga y procesamiento. En cuanto a su aplicabilidad, realizaremos la descarga de imágenes satelitales con generación de mosaicos, el análisis de composición para identificación de zonas urbanas y cuerpos de agua, análisis multiespectral para identificación de coberturas vegetales a partir de índices y su relación con las zonas de protección establecidas en el OT y análisis hidro-climatológico a partir de datos satelitales en formato científico.
 
 
 ## Módulo VII – Análisis de amenazas naturales, modelación de redes vehiculares y fotogrametría con drones (6 horas)
+
+En este módulo realizaremos diferentes análisis complementarios utilizando herramientas especializadas de análisis orientadas a identificaciones de amenazas, modelación de redes y fotogrametría.
+
+
+
+> Los tiempos de dedicación corresponden a horas mínimas que el estudiante debe dedicar al desarrollo del caso de estudio con el cual se ejemplificó este curso y a las actividades complementarias indicadas al final de cada clase. Estudiantes bajo el esquema de certificación y caso de estudio asignado requerirán de al menos 96 horas de trabajo y horas complementarias, de acuerdo a su experticia en el manejo de las herramientas computacionales utilizadas. 
+
+
+##
+
+_:beginner: Ayuda / Colabora: a través de la pestaña _[Discussions](https://github.com/rcfdtools/R.LTWB/discussions)_ localizada en la parte superior de esta ventana, podrás encontrar y participar en los [_anuncios o noticias_](https://github.com/rcfdtools/R.LTWB/discussions/categories/announcements) publicados, enviarnos tus [_ideas_](https://github.com/rcfdtools/R.LTWB/discussions/categories/ideas) para actividades complementarias, participar en preguntas, respuestas y consultas específicas [_Q&A_](https://github.com/rcfdtools/R.LTWB/discussions/categories/q-a) y realizar [_publicaciones o consultas generales_](https://github.com/rcfdtools/R.LTWB/discussions/categories/general) públicas._
+
+_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
+
+_Clonación: para compatibilidad completa de las rutas utilizadas en los scripts y herramientas de R.SIGE, en Microsoft Windows clonar y/o descomprimir en _D:\R.SIGE_. Enlace para clonación https://github.com/rcfdtools/R.SIGE.git._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
+
+| [:sun_with_face: Iniciar curso](Section01) | [:infinity: Otros cursos](https://github.com/rcfdtools) | [:notebook: Referencias](References.md) | [:label: Abreviaturas y definiciones](Definitios.md) |
+|--------------------------------------------|---------------------------------------------------------|-----------------------------------------|------------------------------------------------------|
+
 
 
 
