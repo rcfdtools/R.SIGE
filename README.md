@@ -87,7 +87,7 @@ En este módulo se abordan conceptos de ciencias y tecnologías relacionadas con
 | Inventario de información geo-espacial recopilada                     |         | 
 | Creación del diccionario de datos                                     |         | 
 | Análisis veredal y límite territorial                                 |         | 
-| :new:Representación geográfica de censos y proyecciones poblacionales |         | 
+| Representación geográfica de censos y proyecciones poblacionales :new:|         | 
 | Creación de plantillas para impresión digital                         |         | 
 | Análisis vial                                                         |         | 
 | Análisis geográfico del Modelo de Ordenamiento Territorial - MOT      |         | 
@@ -103,7 +103,7 @@ En este módulo se abordan conceptos de tablas geo-codificadas y los Geo-proceso
 |:-----------------------------------------------------|:--------|
 | Tablas geo-codificadas del OT                        |         | 
 | Corredores viales urbanos y construcciones afectadas |         | 
-| :new:Estudio de localización de equipamientos        |         | 
+| Estudio de localización de equipamientos :new:       |         | 
 | Estudio de redes hidro-climatológicas                |         | 
 | Análisis de sub-zonas hidrográficas                  |         | 
 | Análisis usando software libre                       |         | 
@@ -132,8 +132,8 @@ En este módulo se abordan conceptos relacionados con la definición, funciones 
 | Modelo digital de elevación a partir de curvas de nivel              |         | 
 | Modelo digital de elevación a partir de sensores remotos satelitales |         | 
 | Mapa de pendientes de terreno                                        |         | 
-| :new:Delimitación de zonas de páramo a partir de DEM                 |         | 
-| :new:Mapa de pisos térmicos                                          |         | 
+| Delimitación de zonas de páramo a partir de DEM :new:                |         | 
+| Mapa de pisos térmicos :new:                                         |         | 
 | Perfiles de muestreo en red hidrográfica y vías principales          |         | 
 | Delimitación de cuencas hidrográficas locales                        |         | 
 | Estudio geográfico de embalses                                       |         |
@@ -149,7 +149,7 @@ En este módulo se abordan conceptos relacionados con las definición, aplicaci�
 | Descarga de imágenes ráster satelitales y composición de bandas          |         | 
 | Clasificación no supervisada ISO Cluster                                 |         | 
 | Binarización por algebra de mapas para identificación de cuerpos de agua |         | 
-| Composiciones para identificar áreas urbanas                             |         | 
+| Composiciones para identificar y delimitar áreas urbanas                 |         | 
 | Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI, NBR                     |         | 
 | Análisis hidro-climatológico ERA5 Land Monthly                           |         | 
 | Análisis usando software libre                                           |         | 
@@ -170,7 +170,7 @@ En este módulo realizaremos diferentes análisis complementarios utilizando her
 | Análisis de redes viales - Integración de red vial urbana y rural                                  |         | 
 | Análisis de redes viales - Equipamientos educativos y centros de atención de emergencias           |         | 
 | Análisis de redes viales - Creación y configuración del network dataset                            |         | 
-| :new:Análisis de redes viales - Estudio de rutas de transporte público                             |         | 
+| Análisis de redes viales - Estudio de rutas de transporte público :new:                            |         | 
 | Análisis de redes viales - Estudio de rutas de transporte escolar                                  |         | 
 | Análisis de redes viales - Estudio de áreas de servicio para atención de emergencias               |         | 
 | Análisis de redes viales - Estudio centro de atención más cercano para atención de incidentes      |         | 
@@ -178,8 +178,6 @@ En este módulo realizaremos diferentes análisis complementarios utilizando her
 | Análisis usando software libre                                                                     |         | 
 
 > Los tiempos de dedicación indicados en cada módulo, corresponden a horas mínimas que el estudiante debe dedicar al desarrollo del caso de estudio con el cual se ejemplificó este curso y a las actividades complementarias indicadas al final de cada clase. Estudiantes bajo el esquema de certificación y caso de estudio asignado requerirán de al menos 96 horas de trabajo y horas complementarias, de acuerdo a su experticia en el manejo de las herramientas computacionales utilizadas. 
-
-
 
 
 ##
