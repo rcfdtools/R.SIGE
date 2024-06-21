@@ -1,0 +1,78 @@
+# Ignore files for push...
+# General advice from https://github.com/rcfdtools
+# Before put large files over 100MB, you have to include the path and name here on .gitignore.
+# Alert: when you create large files them can appear into the Commit main panel for push and the GitHub server can get back an error and stop the file loading and the pushing process. You can drop the commit, renaming the files after the inclusion here on .gitignore or move the large files to another external directory (like Downloads) and then make a Push. After the Push be done, you can move back the large files to the original folder. Before made Commit drops, is recommended get a full copy of your local repository for prevent data lost.
+# Large files over 100MB have be compress in 95MB file parts.
+
+
+# General exclusions
+.idea/
+.git/
+.venv/
+.github/
+.venvPython312/
+Lib/
+#.refs/GitHubRefs/
+# Grid pyramid
+*.ovr
+*.lock
+*__pycache__*
+# Compiled Python Files
+*.pyc
+# TIFF world file
+*.tfw
+# Grid temporal metadata
+*.aux.xml
+*.tif.xml
+*.tif.aux.xml
+*.tif.vat.cpg
+*.tif.vat.dbf
+*.tif.ovr
+*Copia_de_seguridad_de*
+#Shapefiles uncompressed
+.shp/*.shp
+.shp/*.shx
+.shp/*.dbf
+.shp/*.prj
+.shp/*.CPG
+.shp/*.sbn
+.shp/*.sbx
+.shp/*.shp.*
+
+# Video exclusions
+#Section02/FdrDEM/FdrDEM.mp4
+
+# Large files exclusions
+#.dem/ASTER/ASTGTMV003Mosaic.tif
+#.dem/ASTER/ASTGTMV003Mosaic.tif.*
+#HECHMS/terrain/
+#HECHMS/gis/
+.dem/*.tif
+.dem/*.tif.*
+.data/DTM_Bogota2020_4326*.rar
+.dem/DTM_Bogota2020_9377_Extent*.rar
+.dem/DTM_Bogota2020_9377_Extent_Building*.rar
+#.dem/*.zip
+#.dem/*.rar
+#.dem/*.7z
+HECRAS_v0/
+HECRAS/
+
+
+# Some samples
+# http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+
+# ignore all .a files
+# *.a
+
+# but do track lib.a, even though you're ignoring .a files above
+# !lib.a
+
+# ignore all files in any directory named build
+# build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+# doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+# doc/**/*.pdf
