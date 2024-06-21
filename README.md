@@ -66,82 +66,116 @@ El curso y sus diferentes talleres prácticos, se ejemplifican a través de un c
 
 En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a su aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.
 
-| Actividad                                                     | Alcance      | 
-|---------------------------------------------------------------|--------------|
-| Auto-presentación individual                                  |              | 
-| Conformación de grupos y creación de repositorios de proyecto |              | 
-| Conceptos básicos de SIG                                      |              | 
-| Reseña histórica municipal                                    |              |
-| Estudio poblacional: censos y proyecciones                    |              | 
-| Conceptos generales de Ordenamiento Territorial - OT          |              |
-| Ordenamiento Territorial de la zona de estudio                |              |
-| Revisión cartográfica impresa digitalmente                    |              |
+| Actividad                                                      | Alcance | 
+|:---------------------------------------------------------------|:--------|
+| Auto-presentación individual                                   |         | 
+| Conformación de grupos y creación de repositorios de proyecto  |         | 
+| Conceptos básicos de SIG                                       |         | 
+| Reseña histórica municipal                                     |         |
+| Estudio poblacional: censos y proyecciones                     |         | 
+| Conceptos generales de Ordenamiento Territorial - OT           |         |
+| Ordenamiento Territorial de la zona de estudio                 |         |
+| Revisión cartográfica impresa digitalmente                     |         |
 
 
 ## Módulo II – Conceptos básicos aplicados de SIG en OT (3 horas)
 
 En este módulo se abordan conceptos de ciencias y tecnologías relacionadas con los SIG, sus ventajas y desafíos, y su aplicación y utilidad. En cuanto a su aplicabilidad, estudiaremos los mapas veredales para la disolución y obtención de los límites territoriales, analizaremos el cubrimiento de la red vial municipal, realizaremos un análisis geográfico del modelo de ordenamiento territorial - MOT y la digitalización y cálculo de propiedades geométricas y geográficas.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-| Inventario de información geo-espacial recopilada |              | 
-|                                                   |              | 
-|                                                   |              | 
+| Actividad                                                             | Alcance | 
+|:----------------------------------------------------------------------|:--------|
+| Inventario de información geo-espacial recopilada                     |         | 
+| Creación del diccionario de datos                                     |         | 
+| Análisis veredal y límite territorial                                 |         | 
+| :new:Representación geográfica de censos y proyecciones poblacionales |         | 
+| Creación de plantillas para impresión digital                         |         | 
+| Análisis vial                                                         |         | 
+| Análisis geográfico del Modelo de Ordenamiento Territorial - MOT      |         | 
+| Digitalización de vectores: drenajes, vías y predios                  |         |
+| Análisis usando software libre                                        |         | 
 
 
 ## Módulo III – Herramientas de análisis espacial aplicadas a OT (3 horas)
 
-En este módulo se abordan conceptos de tablas geo-codificadas y los Geo-procesos más comunmente utilizados para análisis espacial. En cuanto a su aplicabilidad, realizaremos la reconstrucción de los límites geográficos de áreas urbanas, zonas de expansión, centros poblados y áreas especiales definidas en tablas geo-codificadas del OT, también su comparación con los vectores de la cartografía oficial del OT. Complementariamente, realizaremos la generación de corredores viales a partir de perfiles definidos en el OT con identificación de construcciones afectadas y para finalizar, un análisis de coberturas de redes de estaciones hidro-climatológicas por subzonas hidrográficas y equipamientos por proximidad a corredores viales.
+En este módulo se abordan conceptos de tablas geo-codificadas y los Geo-procesos más comúnmente utilizados para análisis espacial. En cuanto a su aplicabilidad, realizaremos la reconstrucción de los límites geográficos de áreas urbanas, zonas de expansión, centros poblados y áreas especiales definidas en tablas geo-codificadas del OT, también su comparación con los vectores de la cartografía oficial del OT. Complementariamente, realizaremos la generación de corredores viales a partir de perfiles definidos en el OT con identificación de construcciones afectadas y para finalizar, un análisis de coberturas de redes de estaciones hidro-climatológicas por subzonas hidrográficas y equipamientos por proximidad a corredores viales.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-|                                                   |              | 
-|                                                   |              | 
-|                                                   |              | 
+| Actividad                                            | Alcance | 
+|:-----------------------------------------------------|:--------|
+| Tablas geo-codificadas del OT                        |         | 
+| Corredores viales urbanos y construcciones afectadas |         | 
+| :new:Estudio de localización de equipamientos        |         | 
+| Estudio de redes hidro-climatológicas                |         | 
+| Análisis de sub-zonas hidrográficas                  |         | 
+| Análisis usando software libre                       |         | 
 
 
 ## Módulo IV – Bases de datos espaciales GDB para gestión del OT (3 horas)
 
 En este módulo se abordan conceptos de diagramas Entidad-Relación, creación y edición de bases de datos, conjuntos de entidades, clases de entidad, tablas y dominios. En cuanto a su aplicabilidad, realizaremos la integración de los conjuntos de datos recopilados en una única GDB, estudiaremos los índices de ocupación y construcción y el análisis de destinaciones catastrales y su relación con las actividades de uso definidas en el OT.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-|                                                   |              | 
-|                                                   |              | 
-|                                                   |              | 
+| Actividad                                                        | Alcance | 
+|:-----------------------------------------------------------------|:--------|
+| Creación de base de datos geográfica del proyecto - GDB          |         | 
+| Análisis de destinaciones económicas IGAC (creación de dominios) |         | 
+| Índices de ocupación y construcción                              |         | 
+| Mapa geológico de Colombia                                       |         | 
+| Mapa de suelos, usos potenciales y conflictos de uso de Colombia |         | 
+| Análisis usando software libre                                   |         | 
 
 
 ## Módulo V – Modelos de elevación digital - DEM (6 horas)
 
 En este módulo se abordan conceptos relacionados con la definición, funciones y aplicaciones de los de los DEM así como sus métodos de creación. En cuanto a su aplicabilidad, realizaremos la creación de DEM's a partir de curvas de nivel, la descarga, procesamiento y validación de DEM satelitales, los análisis zonales a partir de divisiones geopolíticas municipales, la generación de perfiles y su visualización 3D, y crearemos el mapa de pendientes para el análisis de incompatibilidad con áreas de actividad definidas en el OT.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-|                                                   |              | 
-|                                                   |              | 
-|                                                   |              | 
+| Actividad                                                            | Alcance | 
+|:---------------------------------------------------------------------|:--------|
+| Modelo digital de elevación a partir de curvas de nivel              |         | 
+| Modelo digital de elevación a partir de sensores remotos satelitales |         | 
+| Mapa de pendientes de terreno                                        |         | 
+| :new:Delimitación de zonas de páramo a partir de DEM                 |         | 
+| :new:Mapa de pisos térmicos                                          |         | 
+| Perfiles de muestreo en red hidrográfica y vías principales          |         | 
+| Delimitación de cuencas hidrográficas locales                        |         | 
+| Estudio geográfico de embalses                                       |         |
+| Análisis usando software libre                                       |         | 
 
 
 ## Módulo VI – Sensores remotos y procesamiento digital de imágenes (9 horas)
 
 En este módulo se abordan conceptos relacionados con las definición, aplicación y clasificación de los sensores remotos, tipos de composiciones espectrales utilizados para identificación de algunos tipos básicos de coberturas (agua, suelo, vegetación) y las plataformas utilizadas para su descarga y procesamiento. En cuanto a su aplicabilidad, realizaremos la descarga de imágenes satelitales con generación de mosaicos, el análisis de composición para identificación de zonas urbanas y cuerpos de agua, análisis multiespectral para identificación de coberturas vegetales a partir de índices y su relación con las zonas de protección establecidas en el OT y análisis hidro-climatológico a partir de datos satelitales en formato científico.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-|                                                   |              | 
-|                                                   |              | 
-|                                                   |              | 
+| Actividad                                                                | Alcance | 
+|:-------------------------------------------------------------------------|:--------|
+| Descarga de imágenes ráster satelitales y composición de bandas          |         | 
+| Clasificación no supervisada ISO Cluster                                 |         | 
+| Binarización por algebra de mapas para identificación de cuerpos de agua |         | 
+| Composiciones para identificar áreas urbanas                             |         | 
+| Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI, NBR                     |         | 
+| Análisis hidro-climatológico ERA5 Land Monthly                           |         | 
+| Análisis usando software libre                                           |         | 
 
 
 ## Módulo VII – Análisis de amenazas naturales, modelación de redes vehiculares y fotogrametría con drones (6 horas)
 
 En este módulo realizaremos diferentes análisis complementarios utilizando herramientas especializadas de análisis orientadas a identificaciones de amenazas, modelación de redes y fotogrametría.
 
-| Actividad                                         | Alcance      | 
-|---------------------------------------------------|--------------|
-|                                                   |              | 
-|                                                   |              | 
-|                                                   |              |
+| Actividad                                                                                          | Alcance | 
+|:---------------------------------------------------------------------------------------------------|:--------|
+| Análisis de amenazas naturales con ILWIS - Descarga y visualización de mapas base                  |         | 
+| Análisis de amenazas naturales con ILWIS - Creación de mapas de pesos                              |         | 
+| Análisis de amenazas naturales con ILWIS - Creación y clasificación del mapa combinado de amenazas |         | 
+| Análisis de amenazas en ArcGIS Pro - Descarga y visualización de mapas base                        |         | 
+| Análisis de amenazas en ArcGIS Pro - Creación de mapas de pesos                                    |         | 
+| Análisis de amenazas en ArcGIS Pro - Creación y clasificación del mapa combinado de amenazas       |         | 
+| Análisis de redes viales - Integración de red vial urbana y rural                                  |         | 
+| Análisis de redes viales - Equipamientos educativos y centros de atención de emergencias           |         | 
+| Análisis de redes viales - Creación y configuración del network dataset                            |         | 
+| :new:Análisis de redes viales - Estudio de rutas de transporte público                             |         | 
+| Análisis de redes viales - Estudio de rutas de transporte escolar                                  |         | 
+| Análisis de redes viales - Estudio de áreas de servicio para atención de emergencias               |         | 
+| Análisis de redes viales - Estudio centro de atención más cercano para atención de incidentes      |         | 
+| Análisis de redes viales - Matriz de costos Origen a Destino                                       |         | 
+| Análisis usando software libre                                                                     |         | 
 
 > Los tiempos de dedicación indicados en cada módulo, corresponden a horas mínimas que el estudiante debe dedicar al desarrollo del caso de estudio con el cual se ejemplificó este curso y a las actividades complementarias indicadas al final de cada clase. Estudiantes bajo el esquema de certificación y caso de estudio asignado requerirán de al menos 96 horas de trabajo y horas complementarias, de acuerdo a su experticia en el manejo de las herramientas computacionales utilizadas. 
 
