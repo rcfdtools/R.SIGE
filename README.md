@@ -61,10 +61,10 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
-* Microsoft Office 365
-* ESRI ArcGIS Pro 3.3 con licencia de Spatial Analyst, 3D Analyst y Network Analyst
-* QGIS 3.34 o superior
-* Notepad++
+* [Microsoft Office 365](https://www.office.com/)
+* [ESRI ArcGIS Pro 3.3](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) con licencia de Spatial Analyst, 3D Analyst y Network Analyst
+* [QGIS 3.34](https://qgis.org/) o superior
+* [Notepad++](https://notepad-plus-plus.org/)
 
 
 ## Caso de estudio general
