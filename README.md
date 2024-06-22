@@ -57,6 +57,16 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 * Funcionarios públicos y/o gestores territoriales en carrera administrativa, consultores, contratistas y asesores municipales
 
 
+## Software requerido
+
+Para el desarrollo del curso, son requeridas las siguientes herramientas:
+
+* Microsoft Office 365
+* ESRI ArcGIS Pro 3.3 con licencia de Spatial Analyst, 3D Analyst y Network Analyst
+* QGIS 3.34 o superior
+* Notepad++
+
+
 ## Caso de estudio general
 
 El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
@@ -66,16 +76,18 @@ El curso y sus diferentes talleres prácticos, se ejemplifican a través de un c
 
 En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a su aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.
 
-| Actividad                                                      | Alcance | 
-|:---------------------------------------------------------------|:--------|
-| Auto-presentación individual                                   |         | 
-| Conformación de grupos y creación de repositorios de proyecto  |         | 
-| Conceptos básicos de SIG                                       |         | 
-| Reseña histórica municipal                                     |         |
-| Estudio poblacional: censos y proyecciones                     |         | 
-| Conceptos generales de Ordenamiento Territorial - OT           |         |
-| Ordenamiento Territorial de la zona de estudio                 |         |
-| Revisión cartográfica impresa digitalmente                     |         |
+| Actividad                                                           | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                   | 
+|:--------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Auto-presentación individual                                        | El diligenciamiento completo de la auto-presentación nos permite conocer su perfil académico y profesional, saber con qué recursos informáticos cuenta para preparar y desarrollar las pruebas técnicas asignadas y avances de proyecto, conocer sus conocimientos generales en el uso de herramientas computacionales, lenguajes de programación, métodos de estudio y habilidades.                                                      | 
+| Conformación de grupos y creación de repositorios de proyecto       | Al inicio del curso se conforman los grupos de trabajo, se crea y reporta el repositorio (GitHUB, OneDrive, Google Drive...) para el almacenamiento de los avances en el desarrollo del proyecto de clase. Tenga en cuenta que el repositorio es creado por uno de los integrantes del grupo y se reporta una única vez al inicio del curso, se debe mantener activo hasta que el proyecto final sea completamente revisado y calificado. | 
+| Conceptos básicos de topografía, fotogrametría y fotointerpretación | ¿Qué es la Topografía?. Ramas principales de la topografía. Estudio de la topografía.                                                                                                                                                                                                                                                                                                                                                     | 
+| Conceptos básicos de SIG                                            | Historia de los SIG como ciencia. Ciencias y tecnologías relacionadas. ¿Qué es un SIG? Ventajas y desafíos de los SIG. Aplicación y utilidad. Calidad de los datos. Funciones de un SIG. Tipos de datos - codificación. Formatos para almacenamiento geográfico. Tipos de herramientas SIG.                                                                                                                                               | 
+| Georreferenciación                                                  | Este taller presenta las consideraciones generales a tener en cuenta para la georreferenciación de elementos geográficos en el desarrollo de proyectos dentro del límite territorial de Colombia. ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas? Sistemas de referencia y proyección cartográfica en Colombia. Sistema geodésico mundial WGS84 – EPSG 4326.                                                | 
+| Reseña histórica municipal                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Estudio poblacional: censos y proyecciones                          |                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
+| Conceptos generales de Ordenamiento Territorial - OT                |                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Ordenamiento Territorial de la zona de estudio                      |                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Revisión cartografía impresa digitalmente                           |                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
 ## Módulo II – Conceptos básicos aplicados de SIG en OT (3 horas)
