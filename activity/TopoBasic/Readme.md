@@ -161,16 +161,6 @@ La combinación de las dos áreas de la topografía plana permite la elaboració
 <div align="center"><img src="graph/Altimetria.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Impresión 3D<br>Tomado de: <a href="https://opentopography.org/learn/3D_printing">https://opentopography.org</a></sub><br><br></div>
 
 
-## Actividades complementarias :pencil2:
-
-En la siguiente tabla se listan las actividades complementarias que deben ser desarrolladas y documentadas por el estudiante en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (mostrar nombre completo, código y enlace a su cuenta de GitHub), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
-
-
-| Actividad | Alcance |
-|:---------:|:--------|
-|     1     | ....    | 
-
-
 ## Referencias
 
 * https://globalgpssystems.com/gnss/gnss-constellations-how-they-work-and-how-they-improve-gps
