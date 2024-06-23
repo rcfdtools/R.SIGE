@@ -74,7 +74,7 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 
 Es la disciplina que utiliza las fotografías para la obtención de mapas de terrenos. Los levantamientos fotogramétricos comprenden la obtención de datos y mediciones precisas a partir de fotografías del terreno tomadas con cámaras especiales u otros instrumentos sensores, ya sea desde aviones o drones (fotogrametría aérea) o desde puntos elevados del terreno (fotogrametría terrestre) y que tiene aplicación en trabajos topográficos. Se utilizan los principios de la perspectiva para la proyección sobre planos a escala, de los detalles que figuran en las fotografías. Los trabajos fotogramétricos deben apoyarse sobre puntos visibles y localizados por métodos de triangulación topográfica o geodésicos que sirven de control tanto planimétrico como altimétrico.
 
-<div align="center"><img src="graph/Topografia-Con-Drones-Visual-Drone-t2.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://visualdrone.co/">Tomado de: https://visualdrone.co/</a></sub><br><br></div>
+<div align="center"><img src="graph/Topografia-Con-Drones-Visual-Drone-t2.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Tomado de: <a href="https://visualdrone.co/">https://visualdrone.co/</a></sub><br><br></div>
 
 > El trabajo consiste en esencia en tomar fotografía desde dos o más estaciones adecuadas y utilizarlas después para obtener los detalles del terreno fotografiado, tanto en planta como en alzado o perfil. 
 
