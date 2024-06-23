@@ -118,11 +118,14 @@ Estos planos se utilizan como base para la mayoría de los trabajos y proyectos 
 * Actividades relacionadas con geología, arquitectura del paisaje, arqueología, etc.
 
 
-## Estudio de la topografía
+## Estudio de la topografía[^2]
 
 ### A. Planimetría o control horizontal
 
 Solo tiene en cuenta la proyección del terreno sobre un plano horizontal imaginario (vista en planta) que se supone que es la superficie media de la tierra; esta proyección se denomina base productiva y es la que se considera cuando se miden distancias horizontales y se calcula el área de un terreno. Aquí no interesan las diferencias relativas de las elevaciones entre los diferentes puntos del terreno. La ubicación de los diferentes puntos sobre la superficie de la tierra se hace mediante la medición de ángulos y distancias a partir de puntos y líneas de referencia proyectadas sobre un plano horizontal.
+
+
+#### Poligonal abierta o cerrada
 
 <div align="center"><img src="graph/PoligonalAbierta.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal abierta<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
@@ -130,6 +133,24 @@ El conjunto de líneas que unen los puntos observados se denomina Poligonal Base
 
 <div align="center"><img src="graph/PoligonalCerrada.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal cerrada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
+
+#### Redes poligonales y ramificadas
+
+En algunos trabajos de gran extensión es recomendable establecer una red de polígonos dentro de una poligonal cerrada, para así tener una forma de acceder a lugares en los cuales se requiere tomar información que no puede ser vista desde las estaciones perimetrales de la poligonal.
+
+<div align="center"><img src="graph/PoligonalRamificada.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal ramificada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co</a></sub><br><br></div>
+
+
+### B. Altimetría o control vertical
+
+La altimetría se encarga de la medición de las diferencias de nivel o de elevación entre los diferentes puntos del terreno, las cuales representan las distancias verticales medidas a partir de un plano horizontal de referencia. La determinación de las alturas o distancias verticales también se puede hacer a partir de las mediciones de las pendientes o grado de inclinación del terreno y de la distancia inclinada entre cada dos puntos. Como resultado se obtiene el esquema vertical.
+
+
+## Planimetría y altimetría simultáneas
+
+La combinación de las dos áreas de la topografía plana permite la elaboración o confección de un "plano topográfico", donde se muestra tanto la posición en planta como la elevación de cada uno de los diferentes puntos del terreno. La elevación o altitud de los diferentes puntos del terreno se representa mediante las curvas de nivel, que son líneas trazadas en el plano de planta con base en el esquema horizontal y que unen puntos que tienen igual altura. Las curvas de nivel sirven para reproducir en el dibujo la configuración topográfica o relieve del terreno.
+
+<div align="center"><img src="graph/Altimetria.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Impresión 3D<br>Tomado de: <a href="https://opentopography.org/learn/3D_printing">https://opentopography.org</a></sub><br><br></div>
 
 
 ## Actividades complementarias :pencil2:
