@@ -10,7 +10,7 @@ La topografía se trata de la medición de las características físicas o geom�
 
 * Entender conceptos básicos de topografía y sus ramas derivadas.
 * Entender su aplicación y utilidad.
-* Entender las diferencias entre planimetría y altimetría 
+* Entender las diferencias entre planimetría y altimetría. 
 
 
 ## Requerimientos
@@ -35,7 +35,7 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 
 Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana.
 
-> Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro, y que se utilizan en esta actividad a manera de referencia.
+> Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro y que estas 3 ramas han sido utilizadas para ilustrar esta actividad.
 
 
 ### A.Geodesia
@@ -54,7 +54,7 @@ Los levantamientos de alta precisión  requieren del establecimiento de puntos d
 <div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-#### Sistema global de navegación por satélite - GNSS
+#### Sistema global de navegación por satélite - GNSS[^3]
 
 Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores GNSS para determinar su ubicación actual, tales como GPS, GLONASS y Galileo.
 
@@ -62,8 +62,10 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 
 > En la mayoría de partes del mundo, es habitual hacer referencia a la navegación global como GPS (Sistema de posicionamiento global). En la práctica, el GPS es un sistema especial basado en Norteamérica. Hay un número creciente de sistemas de navegación por satélite disponibles para el público internacional. Se recomienda utilizar el término GNSS para describir todos los sistemas, ya que es el término más representativo internacionalmente.
 
-<div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/GNSS.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="www.swisstopo.admin.ch">www.swisstopo.admin.ch</a></sub><br><br></div>
 
+
+<div align="center"><img src="graph/DGPS_Reference_Station.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:DGPS_Reference_Station.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Actividades complementarias :pencil2:
@@ -105,3 +107,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 [^1]: https://support.esri.com/es-es/gis-dictionary/surveying
 [^2]: https://www.ecomexico.net/
+[^3]: https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm
