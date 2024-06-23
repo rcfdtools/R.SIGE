@@ -94,7 +94,7 @@ El levantamiento topográfico plano tiene la misma finalidad de los levantamient
 
 La mayor parte de los levantamientos de la topografía tienen por finalidad el cálculo de la superficie o áreas, volúmenes, distancias, direcciones y la representación de las medidas tomadas en el campo mediante los planos topográficos correspondientes.
 
-<div align="center"><img src="graph/PlanoTopografico.png" alt="R.SIGE" width="80%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://lhongtortai.com/collection/que-es-un-plano-topografico">https://lhongtortai.com</a></sub><br><br></div>
+<div align="center"><img src="graph/PlanoTopografico.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Plano topográfico<br>Tomado de: <a href="https://lhongtortai.com/collection/que-es-un-plano-topografico">https://lhongtortai.com</a></sub><br><br></div>
 
 Estos planos se utilizan como base para la mayoría de los trabajos y proyectos de ingeniería relacionados con la planeación y construcción de obras civiles. Por ejemplo, se requieren levantamientos topográficos antes, durante y después de la planeación y construcción de:
 
@@ -116,6 +116,19 @@ Estos planos se utilizan como base para la mayoría de los trabajos y proyectos 
 * Control de la aerofotografía
 * Determinación de límites de terrenos de propiedad privada y pública (linderos y medianeras)
 * Actividades relacionadas con geología, arquitectura del paisaje, arqueología, etc.
+
+
+## Estudio de la topografía
+
+### A. Planimetría o control horizontal
+
+Solo tiene en cuenta la proyección del terreno sobre un plano horizontal imaginario (vista en planta) que se supone que es la superficie media de la tierra; esta proyección se denomina base productiva y es la que se considera cuando se miden distancias horizontales y se calcula el área de un terreno. Aquí no interesan las diferencias relativas de las elevaciones entre los diferentes puntos del terreno. La ubicación de los diferentes puntos sobre la superficie de la tierra se hace mediante la medición de ángulos y distancias a partir de puntos y líneas de referencia proyectadas sobre un plano horizontal.
+
+<div align="center"><img src="graph/PoligonalAbierta.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal abierta<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
+
+El conjunto de líneas que unen los puntos observados se denomina Poligonal Base y es la que conforma la red fundamental o esqueleto del levantamiento, a partir de la cual se referencia la posición de todos los detalles o accidentes naturales y/o artificiales de interés. La poligonal base puede ser abierta o cerrada según los requerimientos del levantamiento topográfico. Como resultado de los trabajos de planimetría se obtiene un esquema horizontal.
+
+<div align="center"><img src="graph/PoligonalCerrada.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal cerrada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
 
 
