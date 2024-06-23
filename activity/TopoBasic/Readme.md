@@ -1,23 +1,26 @@
 # Conceptos básicos de topografía, fotogrametría y fotointerpretación
 Keywords: `Topography` `Photogrammetric`
 
+La topografía se trata de la medición de las características físicas o geométricas de la Tierra. Los levantamientos topográficos se clasifican a menudo por el tipo de datos estudiados o por los instrumentos o métodos utilizados. Algunos ejemplos son los estudios geodésicos, geológicos, topográficos, hidrográficos, terrestres, geofísicos, de suelos, de minas y de ingeniería.[^1]
+
 <div align="center"><img src="graph/Geoid_undulation_10k_scale.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
-El estudio de la topografía no permite entender la forma de la tierra y ...
 
 ## Objetivos
 
 * Entender conceptos básicos de topografía y sus ramas derivadas.
-* 
+* Entender su aplicación y utilidad.
+* Entender las diferencias entre planimetría y altimetría 
 
 
 ## Requerimientos
 
-* Conceptos básicos de geografía.
+* Lectura de [Conceptos básicos de geografía](https://www.esri.com/es-es/geographic-approach/overview).
+* Lectura de [Geografía y Gobierno](https://www.esri.com/es-es/geographic-approach/case-studies/government).
 
 
 
-## ¿Qué es la Topografía?[^1]
+## ¿Qué es la Topografía?[^2]
 
 La topografía es una ciencia que estudia el conjunto de procedimientos para determinar las posiciones relativas de los puntos sobre la superficie de la tierra y debajo de la misma, mediante la combinación de las medidas según los tres elementos del espacio: 
 
@@ -28,9 +31,12 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 > La topografía explica los procedimientos y operaciones del trabajo de campo, los métodos de cálculo o procesamiento de datos y la representación del terreno en un plano o dibujo topográfico a escala. La combinación de estos elementos se denomina Levantamiento topográfico.
 
 
-## Ramas principales de la topografía[^1]
+## Ramas principales de la topografía[^2]
 
 Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana.
+
+> Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro, y que se utilizan en esta actividad a manera de referencia.
+
 
 ### A.Geodesia
 
@@ -54,7 +60,7 @@ Los sistemas de navegación por satélite transmiten información de geolocaliza
 
 GNSS significa Sistema global de navegación por satélite y se utiliza para describir cualquier sistema de navegación por satélite con cobertura global. Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores GNSS para determinar su ubicación actual.
 
-En la mayoría de partes del mundo, es habitual hacer referencia a la navegación global como GPS (Sistema de posicionamiento global). En la práctica, el GPS es un sistema especial basado en Norteamérica. Hay un número creciente de sistemas de navegación por satélite disponibles para el público internacional. Se recomienda utilizar el término GNSS para describir todos los sistemas, ya que es el término más representativo internacionalmente.
+> En la mayoría de partes del mundo, es habitual hacer referencia a la navegación global como GPS (Sistema de posicionamiento global). En la práctica, el GPS es un sistema especial basado en Norteamérica. Hay un número creciente de sistemas de navegación por satélite disponibles para el público internacional. Se recomienda utilizar el término GNSS para describir todos los sistemas, ya que es el término más representativo internacionalmente.
 
 <div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -97,4 +103,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [Anterior](../xxxx) | [Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente]() |
 |---------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: www.ecomexico.net
+[^1]: https://support.esri.com/es-es/gis-dictionary/surveying
+[^2]: https://www.ecomexico.net/
