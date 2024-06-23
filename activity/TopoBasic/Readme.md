@@ -151,6 +151,8 @@ En algunos trabajos de gran extensión es recomendable establecer una red de pol
 
 La altimetría se encarga de la medición de las diferencias de nivel o de elevación entre los diferentes puntos del terreno, las cuales representan las distancias verticales medidas a partir de un plano horizontal de referencia. La determinación de las alturas o distancias verticales también se puede hacer a partir de las mediciones de las pendientes o grado de inclinación del terreno y de la distancia inclinada entre cada dos puntos. Como resultado se obtiene el esquema vertical.
 
+<div align="center"><img src="graph/Perfil_L-401.jpg" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal ramificada<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Perfil_L-401.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+
 
 ### Planimetría y altimetría simultáneas
 
