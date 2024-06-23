@@ -1,36 +1,44 @@
 ### Abreviaturas
 
-| Abreviatura  | Significado                                                                                                                                                           |
-|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| POT          | [Plan de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                       |
-| EOT          | [Esquema de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                    |
-| PBOT         | [Plan Básico de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                |
-| SO, OS       | [Sistema operativo.](https://en.wikipedia.org/wiki/Operating_system)                                                                                                  |
-| CMD          | [Command o intérprete de comandos del SO.](https://en.wikipedia.org/wiki/Cmd.exe)                                                                                     |
-| GUI          | [Graphical user interface. Interfaz gráfica de usuario.](https://en.wikipedia.org/wiki/Graphical_user_interface)                                                      |
-| WMO          | [World Meteorological Organization.](https://public.wmo.int/en)                                                                                                       |
-| OMM          | [Organización Meteorológica Mundial.](https://public.wmo.int/es)                                                                                                      |
-| IDEAM        | [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia - Suramérica                                             |
-| NASA         | [National Aeronautics and Space Administration](https://www.nasa.gov/) de Estados Unidos de América                                                                   |
-| DEM          | [Digital elevation model. Modelo digital de elevación.](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/exploring-digital-elevation-models.htm)  |
-| CRS          | [Coordinate reference system.](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)                                          |
-| ASTER        | [Advanced Spaceborne Thermal Emission and Reflection Radiometer ](https://asterweb.jpl.nasa.gov/gdem.asp)                                                             |
-| ALOS         | [Advanced Land Observing Satellite](https://asf.alaska.edu/data-sets/sar-data-sets/alos-palsar/)                                                                      |
-| PALSAR       | [Phased Array type L-band Synthetic Aperture Radar ](https://asf.alaska.edu/data-sets/sar-data-sets/alos-palsar/)                                                     |
-| LIDAR        | [Light Detection And Ranging](https://en.wikipedia.org/wiki/Lidar)                                                                                                    |
-| EPSG         | [Geodetic Parameter Dataset](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                           |
-| SIG          | [Sistema de información geográfica](https://www.esri.com/es-es/what-is-gis/overview)                                                                                  |
-| GIS          | [Geographical information system](https://www.esri.com/en-us/what-is-gis/overview)                                                                                    |
-| m.s.n.m      | Elevación inversa o cota en metros sobre el nivel del mar                                                                                                             |
-| N/A          | No aplica                                                                                                                                                             |
+| Abreviatura | Significado                                                                                                                                                          |
+|:------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| N/A         | No aplica                                                                                                                                                            |
+| POT         | [Plan de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                      |
+| EOT         | [Esquema de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                   |
+| PBOT        | [Plan Básico de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica               |
+| SO, OS      | [Sistema operativo.](https://en.wikipedia.org/wiki/Operating_system)                                                                                                 |
+| CMD         | [Command o intérprete de comandos del SO.](https://en.wikipedia.org/wiki/Cmd.exe)                                                                                    |
+| GUI         | [Graphical user interface. Interfaz gráfica de usuario.](https://en.wikipedia.org/wiki/Graphical_user_interface)                                                     |
+| WMO         | [World Meteorological Organization.](https://public.wmo.int/en)                                                                                                      |
+| OMM         | [Organización Meteorológica Mundial.](https://public.wmo.int/es)                                                                                                     |
+| IDEAM       | [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia - Suramérica                                            |
+| NASA        | [National Aeronautics and Space Administration](https://www.nasa.gov/) de Estados Unidos de América                                                                  |
+| DEM         | [Digital elevation model. Modelo digital de elevación.](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/exploring-digital-elevation-models.htm) |
+| CRS         | [Coordinate reference system.](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)                                         |
+| ASTER       | [Advanced Spaceborne Thermal Emission and Reflection Radiometer ](https://asterweb.jpl.nasa.gov/gdem.asp)                                                            |
+| ALOS        | [Advanced Land Observing Satellite](https://asf.alaska.edu/data-sets/sar-data-sets/alos-palsar/)                                                                     |
+| PALSAR      | [Phased Array type L-band Synthetic Aperture Radar ](https://asf.alaska.edu/data-sets/sar-data-sets/alos-palsar/)                                                    |
+| LIDAR       | [Light Detection And Ranging](https://en.wikipedia.org/wiki/Lidar)                                                                                                   |
+| EPSG        | [Geodetic Parameter Dataset](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                          |
+| SIG         | [Sistema de información geográfica](https://www.esri.com/es-es/what-is-gis/overview)                                                                                 |
+| GIS         | [Geographical information system](https://www.esri.com/en-us/what-is-gis/overview)                                                                                   |
+| m.s.n.m     | Elevación inversa o cota en metros sobre el nivel del mar                                                                                                            |
+| GNSS        | Sistema global de navegación por satélite. Representa todos los sistemas satelitales que se utilizan actualmente en todo el mundo, como GPS, GLONASS y Galileo       |
+| GPS         | Sistema de posicionamiento global. Sistema satelital que se utiliza habitualmente en Norteamérica                                                                    |
+| NMEA        | National Marine and Electronics Association de los Estados Unidos de América                                                                                         |
+|             |                                                                                                                                                                      |
 
 
 ### Definiciones
 
-| Definición                                                        | Descripción                                                                                                                         |
-|:------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [Standalone](https://en.wikipedia.org/wiki/Standalone_software)   | Instalación independiente                                                                                                           |
-| [Datum](https://en.wikipedia.org/wiki/Geodetic_datum)             | Un sistema de referencia geodésico es un recurso matemático que permite asignar coordenadas a puntos sobre la superficie terrestre  |
+| Definición                                                                                                                             | Descripción                                                                                                                                                                                                                                                 |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Standalone](https://en.wikipedia.org/wiki/Standalone_software)                                                                        | Instalación independiente                                                                                                                                                                                                                                   |
+| [Datum](https://en.wikipedia.org/wiki/Geodetic_datum)                                                                                  | Un sistema de referencia geodésico es un recurso matemático que permite asignar coordenadas a puntos sobre la superficie terrestre                                                                                                                          |
+| [Dispositivo (ubicación)](https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm)         | Equipo, ya sea móvil o de escritorio, que se utiliza para rastrear la posición global                                                                                                                                                                       |
+| [Zona de influencia de precisión](https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm) | Contorno circular que rodea la ubicación del dispositivo. La zona de influencia representa la probabilidad de que, si el dispositivo no está exactamente en la ubicación especificada, esté dentro de esta área                                             |
+| [Seguimiento](https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm)                     | Término utilizado en la navegación global que se refiere a cuando la dirección hacia la que se dirige en un mapa siempre se encuentra en la parte superior de la pantalla. Lo contrario es Norte hacia arriba o el ángulo de rotación establecido del mapa  |
+|                                                                                                                                        |                                                                                                                                                                                                                                                             |
 
 
 ### Extensiones y tipos de archivos
