@@ -1,9 +1,7 @@
 # Conceptos básicos de topografía, fotogrametría y fotointerpretación
 Keywords: `Topography` `Photogrammetric`
 
-<div align="center">  
-![R.SIGE](graph/Geodesia.png)  
-</div><br>
+<div align="center"><img src="graph/Geodesia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 El estudio de la topografía no permite entender la forma de la tierra y ...
 
@@ -19,7 +17,7 @@ El estudio de la topografía no permite entender la forma de la tierra y ...
 
 
 
-## ¿Qué es la Topografía? [^1]
+## ¿Qué es la Topografía?[^1]
 
 La topografía es una ciencia que estudia el conjunto de procedimientos para determinar las posiciones relativas de los puntos sobre la superficie de la tierra y debajo de la misma, mediante la combinación de las medidas según los tres elementos del espacio: 
 
@@ -27,16 +25,21 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 * Elevación
 * Dirección
 
-La topografía explica los procedimientos y operaciones del trabajo de campo, los métodos de cálculo o procesamiento de datos y la representación del terreno en un plano o dibujo topográfico a escala. La combinación de estos elementos se denomina Levantamiento topográfico.
+> La topografía explica los procedimientos y operaciones del trabajo de campo, los métodos de cálculo o procesamiento de datos y la representación del terreno en un plano o dibujo topográfico a escala. La combinación de estos elementos se denomina Levantamiento topográfico.
 
 
-## Ramas principales de la topografía
+## Ramas principales de la topografía[^1]
 
 
 ### A.Geodesia
 
 <div align="center"><img src="graph/Geodesia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
+Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
+
+Cuando la zona no es demasiado extensa, se puede obtener la precisión requerida considerando la tierra como una esfera perfecta, pero si dicha superficie es muy grande debe adoptarse la verdadera forma elipsoidal de la superficie terrestre.
+
+<div align="center"><img src="graph/WGS84_mean_Earth_radius.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:WGS84_mean_Earth_radius.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 
