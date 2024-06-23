@@ -85,7 +85,7 @@ Como una derivación de la fotogrametría, está la fotointerpretación que se e
 
 > Tienen las ventajas de la rapidez con que se hace el trabajo, la profusión de los detalles y su empleo en lugares de difícil o imposible acceso desde el propio terreno.
 
-<div align="center"><img src="graph/NDVI.png" alt="R.SIGE" width="60%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://eightfourcapital.medium.com/why-we-use-ndvi-a0d5172e6e6">https://eightfourcapital.medium.com</a></sub><br><br></div>
+<div align="center"><img src="graph/NDVI.png" alt="R.SIGE" width="50%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://eightfourcapital.medium.com/why-we-use-ndvi-a0d5172e6e6">https://eightfourcapital.medium.com</a></sub><br><br></div>
 
 
 ## C. Topografía plana
@@ -94,14 +94,13 @@ El levantamiento topográfico plano tiene la misma finalidad de los levantamient
 
 <div align="center"><img src="graph/Topographic_map_example.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Ejemplo de un mapa topográfico<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Topographic_map_example.png">https://commons.wikimedia.org</a></sub><br><br></div>
 
-
 Esta área se encarga de la medición de terrenos y lotes o parcelas de áreas pequeñas, proyectados sobre un plano horizontal, despreciando los efectos de la curvatura terrestre. La mayor parte de los levantamientos en proyectos de ingeniería son de esta clase, ya que los errores cometidos al no tener en cuenta la curvatura terrestre son despreciables y el grado de precisión obtenido queda dentro de los márgenes permisibles desde el punto de vista práctico.
 
 <div align="center"><img src="graph/Geodeziistoj_de_kompanio.png" alt="R.SIGE" width="100%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geodeziistoj_de_kompanio_%22Gazprom_projektirovanije%22_plenumas_konkursajn_taskojn_de_elekta_etapo_de_la_3-a_konstrua_%C4%89ampionado_de_Rusio_07.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 La mayor parte de los levantamientos de la topografía tienen por finalidad el cálculo de la superficie o áreas, volúmenes, distancias, direcciones y la representación de las medidas tomadas en el campo mediante los planos topográficos correspondientes.
 
-<div align="center"><img src="graph/PlanoTopografico.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Plano topográfico<br>Tomado de: <a href="https://lhongtortai.com/collection/que-es-un-plano-topografico">https://lhongtortai.com</a></sub><br><br></div>
+<div align="center"><img src="graph/PlanoTopografico.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Plano topográfico<br>Tomado de: <a href="https://lhongtortai.com/collection/que-es-un-plano-topografico">https://lhongtortai.com</a></sub><br><br></div>
 
 Estos planos se utilizan como base para la mayoría de los trabajos y proyectos de ingeniería relacionados con la planeación y construcción de obras civiles. Por ejemplo, se requieren levantamientos topográficos antes, durante y después de la planeación y construcción de:
 
@@ -134,18 +133,18 @@ Solo tiene en cuenta la proyección del terreno sobre un plano horizontal imagin
 
 #### Poligonal abierta o cerrada
 
-<div align="center"><img src="graph/PoligonalAbierta.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal abierta<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
+<div align="center"><img src="graph/PoligonalAbierta.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal abierta<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
 El conjunto de líneas que unen los puntos observados se denomina Poligonal Base y es la que conforma la red fundamental o esqueleto del levantamiento, a partir de la cual se referencia la posición de todos los detalles o accidentes naturales y/o artificiales de interés. La poligonal base puede ser abierta o cerrada según los requerimientos del levantamiento topográfico. Como resultado de los trabajos de planimetría se obtiene un esquema horizontal.
 
-<div align="center"><img src="graph/PoligonalCerrada.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal cerrada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
+<div align="center"><img src="graph/PoligonalCerrada.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal cerrada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
 
 #### Redes poligonales y ramificadas
 
 En algunos trabajos de gran extensión es recomendable establecer una red de polígonos dentro de una poligonal cerrada, para así tener una forma de acceder a lugares en los cuales se requiere tomar información que no puede ser vista desde las estaciones perimetrales de la poligonal.
 
-<div align="center"><img src="graph/PoligonalRamificada.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Poligonal ramificada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co</a></sub><br><br></div>
+<div align="center"><img src="graph/PoligonalRamificada.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal ramificada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co</a></sub><br><br></div>
 
 
 ### B. Altimetría o control vertical
