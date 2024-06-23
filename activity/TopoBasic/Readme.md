@@ -1,5 +1,5 @@
 # Conceptos básicos de topografía, fotogrametría y fotointerpretación
-Keywords: `Topography` `Photogrammetric`
+Keywords: `Topography` `Photogrammetric` `Earth-Shape` `GNSS`
 
 La topografía se trata de la medición de las características físicas o geométricas de la Tierra. Los levantamientos topográficos se clasifican a menudo por el tipo de datos estudiados o por los instrumentos o métodos utilizados. Algunos ejemplos son los estudios geodésicos, geológicos, topográficos, hidrográficos, terrestres, geofísicos, de suelos, de minas y de ingeniería.[^1]
 
@@ -30,12 +30,10 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 
 > La topografía explica los procedimientos y operaciones del trabajo de campo, los métodos de cálculo o procesamiento de datos y la representación del terreno en un plano o dibujo topográfico a escala. La combinación de estos elementos se denomina Levantamiento topográfico.
 
-Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana.
-
-> Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro y que estas 3 ramas han sido utilizadas para ilustrar esta actividad.
+Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana. Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro y que estas 3 ramas han sido utilizadas para ilustrar esta actividad.
 
 
-## A.Geodesia[^2]
+## A. Geodesia[^2]
 
 Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
 
@@ -70,7 +68,7 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 <div align="center"><img src="graph/DGPS_Reference_Station.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:DGPS_Reference_Station.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-## B.Fotogrametría[^2]
+## B. Fotogrametría[^2]
 
 Es la disciplina que utiliza las fotografías para la obtención de mapas de terrenos. 
 
@@ -92,7 +90,7 @@ Como una derivación de la fotogrametría, está la fotointerpretación que se e
 <div align="center"><img src="graph/NDVI.png" alt="R.SIGE" width="60%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://eightfourcapital.medium.com/why-we-use-ndvi-a0d5172e6e6">https://eightfourcapital.medium.com</a></sub><br><br></div>
 
 
-## C.Topografía plana
+## C. Topografía plana
 
 El levantamiento topográfico plano tiene la misma finalidad de los levantamientos geodésicos, pero difiere en cuanto a la magnitud y precisión y por consiguiente en los métodos empleados.
 
@@ -161,7 +159,7 @@ La altimetría se encarga de la medición de las diferencias de nivel o de eleva
 
 La combinación de las dos áreas de la topografía plana permite la elaboración o confección de un "plano topográfico", donde se muestra tanto la posición en planta como la elevación de cada uno de los diferentes puntos del terreno. La elevación o altitud de los diferentes puntos del terreno se representa mediante las curvas de nivel, que son líneas trazadas en el plano de planta con base en el esquema horizontal y que unen puntos que tienen igual altura. Las curvas de nivel sirven para reproducir en el dibujo la configuración topográfica o relieve del terreno.
 
-<div align="center"><img src="graph/Altimetria.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Impresión 3D<br>Tomado de: <a href="https://opentopography.org/learn/3D_printing">https://opentopography.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Altimetria.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Impresión 3D<br>Tomado de: <a href="https://opentopography.org/learn/3D_printing">https://opentopography.org</a></sub><br><br></div>
 
 
 ## Actividades complementarias :pencil2:
