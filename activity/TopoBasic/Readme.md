@@ -171,13 +171,6 @@ En la siguiente tabla se listan las actividades complementarias que deben ser de
 |     1     | ....    | 
 
 
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
-
-
 ## Referencias
 
 * https://globalgpssystems.com/gnss/gnss-constellations-how-they-work-and-how-they-improve-gps
