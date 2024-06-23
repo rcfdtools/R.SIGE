@@ -1,7 +1,7 @@
 # Conceptos básicos de topografía, fotogrametría y fotointerpretación
 Keywords: `Topography` `Photogrammetric`
 
-<div align="center"><img src="graph/Geodesia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Geoid_undulation_10k_scale.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 El estudio de la topografía no permite entender la forma de la tierra y ...
 
@@ -30,16 +30,24 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 
 ## Ramas principales de la topografía[^1]
 
+Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana.
 
 ### A.Geodesia
 
-<div align="center"><img src="graph/Geodesia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Geoid_undulation_10k_scale.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
 
 Cuando la zona no es demasiado extensa, se puede obtener la precisión requerida considerando la tierra como una esfera perfecta, pero si dicha superficie es muy grande debe adoptarse la verdadera forma elipsoidal de la superficie terrestre.
 
 <div align="center"><img src="graph/WGS84_mean_Earth_radius.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:WGS84_mean_Earth_radius.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+
+
+#### Red geodésica de control
+
+Los levantamientos de alta precisión  requieren del establecimiento de puntos de control primario o puntos geodésicos, que son puntos debidamente materializados sobre la superficie de la tierra, es decir, con posiciones y elevaciones conocidas, las cuales son de gran importancia y trascendencia por constituir puntos o redes de apoyo y referencia confiables para todos los demás levantamientos de menor precisión.
+
+<div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 
