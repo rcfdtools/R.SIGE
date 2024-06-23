@@ -37,7 +37,7 @@ Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y 
 
 Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
 
-<div align="center"><img src="graph/Geoid_undulation_10k_scale.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Geoid_undulation_10k_scale.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geoid_undulation_10k_scale.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 Cuando la zona no es demasiado extensa, se puede obtener la precisión requerida considerando la tierra como una esfera perfecta, pero si dicha superficie es muy grande debe adoptarse la verdadera forma elipsoidal de la superficie terrestre.
 
@@ -174,7 +174,8 @@ En la siguiente tabla se listan las actividades complementarias que deben ser de
 ## Referencias
 
 * https://globalgpssystems.com/gnss/gnss-constellations-how-they-work-and-how-they-improve-gps
-* https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm 
+* https://pro.arcgis.com/es/pro-app/latest/help/mapping/device-location/gnss-and-location-devices.htm
+* https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf
 
 
 ## Control de versiones
