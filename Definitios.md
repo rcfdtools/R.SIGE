@@ -2,13 +2,16 @@
 
 | Abreviatura | Significado                                                                                                                                                          |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POT         | [Plan de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                                                                                          |
+| EOT         | [Esquema de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                                                                                                                               |
+| PBOT        | [Plan Básico de Ordenamiento Territorial](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html), Ley 388 de 1997 Colombia - Suramérica                                                                                                                           |
 | SO, OS      | [Sistema operativo.](https://en.wikipedia.org/wiki/Operating_system)                                                                                                 |
 | CMD         | [Command o intérprete de comandos del SO.](https://en.wikipedia.org/wiki/Cmd.exe)                                                                                    |
 | GUI         | [Graphical user interface. Interfaz gráfica de usuario.](https://en.wikipedia.org/wiki/Graphical_user_interface)                                                     |
 | WMO         | [World Meteorological Organization.](https://public.wmo.int/en)                                                                                                      |
 | OMM         | [Organización Meteorológica Mundial.](https://public.wmo.int/es)                                                                                                     |
 | IDEAM       | [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia - Suramérica                                            |
-| LTWB        | [Long-term water balance](https://github.com/rcfdtools/R.LTWB)                                                                                                       |
+| NASA        | [National Aeronautics and Space Administration](https://www.nasa.gov/) de Estados Unidos de América                                                                  |
 | DEM         | [Digital elevation model. Modelo digital de elevación.](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/exploring-digital-elevation-models.htm) |
 | CRS         | [Coordinate reference system.](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)                                         |
 | ASTER       | [Advanced Spaceborne Thermal Emission and Reflection Radiometer ](https://asterweb.jpl.nasa.gov/gdem.asp)                                                            |
@@ -50,15 +53,15 @@
 | .ovr                                       | Raster pyramid format for raster files in a GIS                                  |
 | [.xml](https://fileinfo.com/extension/xml) | Extensible Markup Language for Application programming interface                 |
 | .vrt                                       | [Format driver for GDAL -  XML schema](https://gdal.org/drivers/raster/vrt.html) |
-| [.py](https://fileinfo.com/extension/py)   | Python script files                                                             |
+| [.py](https://fileinfo.com/extension/py)   | Python script files                                                              |
 | [.pyc](https://fileinfo.com/extension/pyc) | Compiled Python Files                                                            |
 | [.tfw](https://fileinfo.com/extension/tfw) | TIFF world file                                                                  |
 | [.csv](https://fileinfo.com/extension/csv) | Comma separated values file                                                      |
 
 
-_R.LTWB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](https://github.com/rcfdtools/R.LTWB/wiki/License)._
+_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](https://github.com/rcfdtools/R.SIGE/wiki/License)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:house: Inicio](Readme.md) |
+| [:house: Inicio](README.md) |
 |-----------------------------|
