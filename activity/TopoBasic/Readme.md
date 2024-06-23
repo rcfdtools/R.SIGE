@@ -15,8 +15,8 @@ La topografía se trata de la medición de las características físicas o geom�
 
 ## Requerimientos
 
-* Lectura de [Conceptos básicos de geografía](https://www.esri.com/es-es/geographic-approach/overview).
-* Lectura de [Geografía y Gobierno](https://www.esri.com/es-es/geographic-approach/case-studies/government).
+* Lectura - [Resolución de problemas con un enfoque geográfico](https://www.esri.com/es-es/geographic-approach/overview).
+* Lectura - [Geografía y Gobierno](https://www.esri.com/es-es/geographic-approach/case-studies/government).
 
 
 
@@ -30,15 +30,12 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 
 > La topografía explica los procedimientos y operaciones del trabajo de campo, los métodos de cálculo o procesamiento de datos y la representación del terreno en un plano o dibujo topográfico a escala. La combinación de estos elementos se denomina Levantamiento topográfico.
 
-
-## Ramas principales de la topografía
-
 Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana.
 
 > Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro y que estas 3 ramas han sido utilizadas para ilustrar esta actividad.
 
 
-### A.Geodesia[^2]
+## A.Geodesia[^2]
 
 Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
 
@@ -49,14 +46,14 @@ Cuando la zona no es demasiado extensa, se puede obtener la precisión requerida
 > Los levantamientos de grandes ciudades se hacen bajo el supuesto de que la tierra es perfectamente esférica. Este tipo de levantamiento está catalogado como de alta precisión e incluye el establecimiento de los puntos de control primario o puntos geodésicos, que son puntos debidamente materializados sobre la superficie de la tierra, es decir, con posiciones y elevaciones conocidas, las cuales son de gran importancia y trascendencia por constituir puntos o redes de apoyo y referencia confiables para todos los demás levantamientos de menor precisión. Los puntos fijados geodésicamente (levantamiento de control), como por ejemplo los vértices de triangulación, constituyen una red a la que puede referirse cualquier otro levantamiento sin temor a error alguno en distancias horizontal o vertical o en dirección, derivado de la diferencia entre la superficie de referencia y la verdadera superficie de la tierra. 
 
 
-#### Red geodésica de control
+### Red geodésica de control
 
 Los levantamientos de alta precisión  requieren del establecimiento de puntos de control primario o puntos geodésicos, que son puntos debidamente materializados sobre la superficie de la tierra, es decir, con posiciones y elevaciones conocidas, las cuales son de gran importancia y trascendencia por constituir puntos o redes de apoyo y referencia confiables para todos los demás levantamientos de menor precisión.
 
 <div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-#### Sistema global de navegación por satélite - GNSS[^3]
+### Sistema global de navegación por satélite - GNSS[^3]
 
 Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores GNSS para determinar su ubicación actual, tales como GPS, GLONASS y Galileo.
 
@@ -70,6 +67,7 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 
 <div align="center"><img src="graph/DGPS_Reference_Station.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:DGPS_Reference_Station.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
+
 ## B.Fotogrametría[^2]
 
 Es la disciplina que utiliza las fotografías para la obtención de mapas de terrenos. Los levantamientos fotogramétricos comprenden la obtención de datos y mediciones precisas a partir de fotografías del terreno tomadas con cámaras especiales u otros instrumentos sensores, ya sea desde aviones o drones (fotogrametría aérea) o desde puntos elevados del terreno (fotogrametría terrestre) y que tiene aplicación en trabajos topográficos. Se utilizan los principios de la perspectiva para la proyección sobre planos a escala, de los detalles que figuran en las fotografías. Los trabajos fotogramétricos deben apoyarse sobre puntos visibles y localizados por métodos de triangulación topográfica o geodésicos que sirven de control tanto planimétrico como altimétrico.
@@ -77,6 +75,48 @@ Es la disciplina que utiliza las fotografías para la obtención de mapas de ter
 <div align="center"><img src="graph/Topografia-Con-Drones-Visual-Drone-t2.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Tomado de: <a href="https://visualdrone.co/">https://visualdrone.co/</a></sub><br><br></div>
 
 > El trabajo consiste en esencia en tomar fotografía desde dos o más estaciones adecuadas y utilizarlas después para obtener los detalles del terreno fotografiado, tanto en planta como en alzado o perfil. 
+
+
+### Fotointerpretación
+
+Como una derivación de la fotogrametría, está la fotointerpretación que se emplea para el análisis cualitativo de los terrenos. La fotogrametría aérea se basa en fotografías tomadas desde aviones o drones equipados para el trabajo, en combinación de las técnicas de aerotriangulación analítica para establecer posiciones de control para la obtención de proyecciones reales del terreno y para hacer comprobaciones con una menor precisión que la obtenida en las redes primarias de control geodésico. 
+
+> Tienen las ventajas de la rapidez con que se hace el trabajo, la profusión de los detalles y su empleo en lugares de difícil o imposible acceso desde el propio terreno.
+
+<div align="center"><img src="graph/NDVI.png" alt="R.SIGE" width="60%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://eightfourcapital.medium.com/why-we-use-ndvi-a0d5172e6e6">https://eightfourcapital.medium.com</a></sub><br><br></div>
+
+
+## C.Topografía plana
+
+El levantamiento topográfico plano tiene la misma finalidad de los levantamientos geodésicos, pero difiere en cuanto a la magnitud y precisión y por consiguiente en los métodos empleados. Esta área se encarga de la medición de terrenos y lotes o parcelas de áreas pequeñas, proyectados sobre un plano horizontal, despreciando los efectos de la curvatura terrestre. La mayor parte de los levantamientos en proyectos de ingeniería son de esta clase, ya que los errores cometidos al no tener en cuenta la curvatura terrestre son despreciables y el grado de precisión obtenido queda dentro de los márgenes permisibles desde el punto de vista práctico.
+
+<div align="center"><img src="graph/Geodeziistoj_de_kompanio.png" alt="R.SIGE" width="60%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Geodeziistoj_de_kompanio_%22Gazprom_projektirovanije%22_plenumas_konkursajn_taskojn_de_elekta_etapo_de_la_3-a_konstrua_%C4%89ampionado_de_Rusio_07.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+
+La mayor parte de los levantamientos de la topografía tienen por finalidad el cálculo de la superficie o áreas, volúmenes, distancias, direcciones y la representación de las medidas tomadas en el campo mediante los planos topográficos correspondientes.
+
+<div align="center"><img src="graph/PlanoTopografico.png" alt="R.SIGE" width="80%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://lhongtortai.com/collection/que-es-un-plano-topografico">https://lhongtortai.com</a></sub><br><br></div>
+
+Estos planos se utilizan como base para la mayoría de los trabajos y proyectos de ingeniería relacionados con la planeación y construcción de obras civiles. Por ejemplo, se requieren levantamientos topográficos antes, durante y después de la planeación y construcción de:
+
+* Carreteras
+* Vías férreas
+* Sistemas de transporte masivo
+* Edificios
+* Puentes
+* Túneles
+* Canales
+* Obras de irrigación
+* Presas
+* Sistemas de drenaje
+* Subdivisión de terrenos urbanos y rurales
+* Sistemas de aprovisionamiento de agua potable (acueductos)
+* Redes de aguas servidas (alcantarillados)
+* Oleoductos y gasoductos
+* Líneas de transmisión eléctrica
+* Control de la aerofotografía
+* Determinación de límites de terrenos de propiedad privada y pública (linderos y medianeras)
+* Actividades relacionadas con geología, arquitectura del paisaje, arqueología, etc.
+
 
 
 ## Actividades complementarias :pencil2:
