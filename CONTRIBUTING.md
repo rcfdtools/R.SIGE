@@ -20,12 +20,12 @@ En la parte inferior de cada sección y actividad, encontrará un enlace con el 
 
 ### Comparte tus repositorios
 
-Colabora con este proyecto compartiendo y publicando tus propias herramientas y repositorios. Si dispones de un proyecto propio en GitHub o en otra plataforma de desarrollo colaborativo y está relacionada con el alcance de los temas de R.SIGE, envíanos desde _[Discussions](https://github.com/rcfdtools/R.SIGE/discussions)_ el link de acceso. Una vez revisemos la funcionalidad y su aplicabilidad dentro del contexto de temas asociados a Hidrología Computacional con sistemas de información geográfica - SIG, podremos incluir un enlace directo en este proyecto para que otros estudiantes e investigadores puedan acceder a tús desarrollos. 
+Colabora con este proyecto compartiendo y publicando tus propias herramientas y repositorios. Si dispones de un proyecto propio en GitHub o en otra plataforma de desarrollo colaborativo y está relacionada con el alcance de los temas de R.SIGE, envíanos desde _[Discussions](https://github.com/rcfdtools/R.SIGE/discussions)_ el link de acceso. Una vez revisemos la funcionalidad y su aplicabilidad dentro del contexto de temas asociados a sistemas de información geográfica - SIG y ordenamiento territorial, podremos incluir un enlace directo en este proyecto para que otros estudiantes e investigadores puedan acceder a tús desarrollos. 
 
 
 ##
 
-_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](https://github.com/rcfdtools/R.SIGE/LICENSE.md)._
+_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](https://github.com/rcfdtools/R.SIGE/blob/main/LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
