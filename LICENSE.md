@@ -23,5 +23,5 @@ Al consultar, descargar, descomprimir, instalar, usar o explorar las herramienta
 
 ### Citación
 
-Se permite la reproducción digital parcial o total de estas actividades, scripts, guías de desarrollo, modelos de datos y documentación, siempre que se haga referencia como: **_"R.SIGE - Curso taller de Sistemas de Información Geográfica aplicados a Ordenamiento Territorial (OT)", r.cfdtools@gmail.com, https://github.com/rcfdtools/R.SIGE, Bogotá - Colombia - Suramérica."_**.
+Se permite la reproducción digital parcial o total de estas actividades, scripts, guías de desarrollo, modelos de datos y documentación, siempre que se haga referencia como: _"R.SIGE - Curso taller de Sistemas de Información Geográfica aplicados a Ordenamiento Territorial (OT)", r.cfdtools@gmail.com, https://github.com/rcfdtools/R.SIGE, Bogotá - Colombia - Suramérica."_.
 
