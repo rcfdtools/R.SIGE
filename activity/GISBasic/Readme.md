@@ -84,7 +84,7 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 
 <div align="center"><img src="graph/WhatIsGIS.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Diagrama por rcfdtools</sub><br><br></div>
 
-<div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas</sub><br><br></div>
+<div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas</sub><br><br></div>
 
 
 ## Ventajas y desafíos de los SIG[^3]
