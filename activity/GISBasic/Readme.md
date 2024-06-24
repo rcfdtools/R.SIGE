@@ -206,7 +206,10 @@ Geo-procesos para responder estas preguntas:
 | <div align="center"><img src="graph/ZonalStatistic.png" alt="R.SIGE" width="200" border="0"/></div>                                                            | Estadísticas zonales [como grilla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm) o [como tabla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm) | Resume el valor de un ráster dentro de las zonas de otro dataset o como una tabla con estadísticos característicos.                                                                                                                                                                                                                                                                                              |
 
 
-## Tipos de datos - codificación
+## Tipos de datos usados en SIG
+
+
+### Datos según codificación o representación
 
 La codificación de datos geográficos empleados en un SIG proviene de dos tipos de representaciones principales:
 
@@ -216,7 +219,20 @@ La codificación de datos geográficos empleados en un SIG proviene de dos tipos
 | Ráster          | <div align="center"><img src="graph/Raster.png" alt="R.SIGE" width="400" border="0"/></div><br>Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y  precipitación, temperatura, acidez en suelos, etc.. |
 
 
+### Tipos de datos en registros de atributos
 
+<div align="center"><img src="graph/DataTypeRecord.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+
+Los datos asociados a un elemento geográfico contenidos en los registros de atributos pueden ser:
+
+| Tipo             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ↕ Geométricos    | Tipo de elemento vectorial: Punto, Punto 3D, Línea, Línea 3D, Polígono, Polígono 3D. Pueden ser de parte sencilla o multiparte.                                                                                                                                                                                                                                                                                                |
+| # Numéricos      | Tipo Binario o boolean (1 ó 0), tipo fecha o date (Ej: 2010/06/01), enteros o integer (Ej: 100) y reales simple o double (Ej: 100 – 23.49). Son identificables fácilmente en la tabla de atributos debido a que el valor almacenado en el campo se alinea a la derecha. OID o ObjectID es un campo de sistema que se indexa de 0 a n en archivos de formas shapefile y de 1 a n en GDB o bases de datos geográficas de ArcGIS. |
+| Ω Texto (string) | Cadenas de caracteres usados para descripciones nominales o de cualidades de un elemento dentro de un registro.                                                                                                                                                                                                                                                                                                                |
+| ☼ Objetos        | Archivos adjuntos, imágenes, hipervínculos, etc.                                                                                                                                                                                                                                                                                                                                                                               |
+
+> En representaciones catastrales, un predio que es dividido por una vía y que tiene una única matrícula inmobiliaria y un único código catastral, puede ser almacenado como una entidad multiparte, con lo que solo obtendrá un registro en la tabla de atributos.
 
 ## Referencias
 
