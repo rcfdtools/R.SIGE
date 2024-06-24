@@ -92,7 +92,7 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 
 | Geografía                                                                                                                                                                                   | Información geográfica                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| ![R.SIGE](graph/Nasa_blue_marble.jpg)<br>Elementos que componen el ambiente natural (topografía, hidrografía, geología, suelos) o construido (ciudades, edificaciones, vías, equipamientos) | ![R.SIGE](graph/GoogleMpas.png)<br>Abstracción o representación de la realidad geográfica (paisaje) |
+| ![R.SIGE](graph/Nasa_blue_marble.jpg)<br>Elementos que componen el ambiente natural (topografía, hidrografía, geología, suelos) o construido (ciudades, edificaciones, vías, equipamientos) | ![R.SIGE](graph/GoogleMaps.png)<br>Abstracción o representación de la realidad geográfica (paisaje) |
 
 <sub>Imágenes de: https://commons.wikimedia.org/wiki/File:Nasa_blue_marble.jpg, https://www.google.com/maps</sub>
 
