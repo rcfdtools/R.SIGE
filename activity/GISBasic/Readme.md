@@ -184,6 +184,23 @@ A partir de la información existente producir nueva información.
 | Sobreimposición                      | Uniones espaciales, intersecciones, transparencias, extracción, etc.                                                                              | Definir secciones transversales en canales y encontrar el punto de intersección con el eje para definir los tramos de modelación de la red pluvial. |
 
 
+## Algunas funciones espaciales o de geo-procesamiento de las herramientas SIG
+
+| Ilustración | Función                                                                                           | Alcance                                                                                                                                                                                                      |
+|-------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             | [Zona de influencia](https://pro.arcgis.com/es/pro-app/latest/tool-reference/analysis/buffer.htm) | Crea polígonos de zona de influencia alrededor de entidades de entrada a una distancia especificada.<br><div align="center"><img src="graph/Buffer.png" alt="R.SIGE" width="200" border="0"/><br><br></div>  |
+|             | Zona de influencia de múltiples anillos                                                           |                                                                                                                                                                                                              |
+|             | Recortar                                                                                          |                                                                                                                                                                                                              |
+|             | Intersecar                                                                                        |                                                                                                                                                                                                              |
+|             | Combinación                                                                                       |                                                                                                                                                                                                              |
+|             | Fusionar                                                                                          |                                                                                                                                                                                                              |
+|             | Disolver                                                                                          |                                                                                                                                                                                                              |
+|             | Cercano                                                                                           |                                                                                                                                                                                                              |
+|             | Crear polígonos de Thiessen                                                                       |                                                                                                                                                                                                              |
+|             | Interpolación (IDW, SPline, Krigging)                                                             |                                                                                                                                                                                                              |
+|             | Estadísticas zonales como grilla o como tabla                                                     |                                                                                                                                                                                                              |
+
+Ilustraciones tomadas de https://pro.arcgis.com/
 
 
 ## Referencias
