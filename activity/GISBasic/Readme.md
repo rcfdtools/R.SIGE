@@ -16,6 +16,7 @@ La gran diferencia que existe entre un aplicativo SIG y otros paquetes de softwa
 ## Requerimientos
 
 * [Conceptos básicos de topografía, fotogrametría y fotointerpretación](../TopoBasic/Readme.md)
+* Lectura - [¿Qué son los SIG](https://www.esri.com/es-es/what-is-gis/overview)
 
 
 ## Historia de los SIG como ciencia[^1]
@@ -87,7 +88,17 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 <div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas<br>Tomado de: <a href="https://flr2019.weebly.com/uploads/1/2/2/9/122916722/lulcc_tay_nguyen_uni._vietnam.pdf">https://flr2019.weebly.com</a></sub><br><br></div>
 
 
+### Diferencia entre geografía e información geográfica
+
+| Geografía                                                                                                                                           | Información geográfica                                            |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Elementos que componen el ambiente natural (topografía, hidrografía, geología, suelos) o construido (ciudades, edificaciones, vías, equipamientos)  | Abstracción o representación de la realidad geográfica (paisaje)  |
+
+
 ## Ventajas y desafíos de los SIG[^3]
+
+
+### Ventajas
 
 | Ventaja                                    | Alcance                                                                                                                                                                                                                                                                                                               |
 |:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -97,6 +108,7 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 | Toma de decisiones basada en la ubicación  | Los SIG ayudan a tomar decisiones informadas al proporcionar información geoespacial precisa y actualizada. Esto es especialmente útil en áreas como la planificación urbana, la gestión de recursos naturales, la gestión de emergencias y el transporte, donde la ubicación desempeña un papel crucial.             |
 | Optimización de recursos                   | Los SIG permiten optimizar la asignación y el uso de recursos al proporcionar información sobre la ubicación y la distribución de los mismos. Esto ayuda a reducir costos, mejorar la eficiencia y maximizar el rendimiento en diferentes sectores, como logística, servicios públicos y gestión de infraestructuras. |
 
+### Desafíos
 
 | Desafío                         | Alcance                                                                                                                                                                                                                                                                                                          |
 |:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -105,7 +117,23 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 | Capacitación y conocimiento     | El uso efectivo de los SIG requiere de personal capacitado y con conocimientos especializados en el manejo de herramientas y técnicas geoespaciales. La capacitación continua y la actualización de conocimientos son fundamentales para aprovechar al máximo las capacidades de los SIG.                        |
 | Privacidad y seguridad          | Los datos geo-espaciales pueden contener información sensible, como ubicaciones de personas o empresas. La privacidad y la seguridad de estos datos son importantes y deben abordarse mediante políticas adecuadas de protección de datos y medidas de seguridad informática.                                    |
 | Interoperabilidad y estándares  | La interoperabilidad entre diferentes sistemas y la adopción de estándares son desafíos en los SIG. La capacidad de compartir y utilizar datos geoespaciales entre diferentes plataformas y aplicaciones es crucial para una gestión eficiente y una toma de decisiones efectiva.                                |
-|
+
+
+## Aplicación y utilidad
+
+Los SIG son ampliamente utilizados en el desarrollo de:
+
+* Gestión territorial (POT, PBOT, EOT)
+* Investigación científica
+* Gestión de recursos naturales
+* Formación Catastral de inmuebles
+* Mercadeo y logística
+* Censos
+* Estratificación
+* Estudios Ambientales
+* Inventario de redes sanitarias y pluviales
+* Cartografía
+* Topología para modelación de redes
 
 
 
