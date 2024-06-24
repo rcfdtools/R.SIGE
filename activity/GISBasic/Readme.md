@@ -206,6 +206,16 @@ Geo-procesos para responder estas preguntas:
 | <div align="center"><img src="graph/ZonalStatistic.png" alt="R.SIGE" width="200" border="0"/></div>                                                            | Estadísticas zonales [como grilla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm) o [como tabla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm) | Resume el valor de un ráster dentro de las zonas de otro dataset o como una tabla con estadísticos característicos.                                                                                                                                                                                                                                                                                              |
 
 
+## Tipos de datos - codificación
+
+La codificación de datos geográficos empleados en un SIG proviene de dos tipos de representaciones principales:
+
+| Ilustración                                                                                                                            | Representación  | Descripción                                                                                                                                                                                                                                                                                                                                                           |
+|:---------------------------------------------------------------------------------------------------------------------------------------|:----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <div align="center"><img src="graph/Vector.png" alt="R.SIGE" width="200" border="0"/></div>                                            | Vectorial       | Utiliza elementos o entidades de tipo punto, línea o polígono para la representación geográfica. Este tipo de datos se denomina discreto debido a que cada uno de ellos es independiente del otro. Por ejemplo, un punto puede representar un pozo de inspección de alcantarillado, una línea un tramo de tubería o conducto, y un polígono el área de una subcuenca. |
+| <div align="center"><img src="graph/GISAnswers.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div> | Ráster          | Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y  precipitación, temperatura, acidez en suelos, etc.. |
+
+
 
 
 ## Referencias
