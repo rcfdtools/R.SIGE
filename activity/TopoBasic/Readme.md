@@ -56,7 +56,7 @@ Los levantamientos de grandes ciudades se hacen bajo el supuesto de que la tierr
 
 ### Sistema global de navegación por satélite - GNSS[^3]
 
-Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores GNSS para determinar su ubicación actual, tales como GPS, GLONASS, Galileo, QZSS, BeiDou y NavIC.
+Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores [GNSS](https://es.wikipedia.org/wiki/Sistema_global_de_navegaci%C3%B3n_por_sat%C3%A9lite) para determinar su ubicación actual, tales como [GPS](https://es.wikipedia.org/wiki/GPS), [GLONASS](https://es.wikipedia.org/wiki/GLONASS), [Galileo](https://es.wikipedia.org/wiki/Galileo_(navegaci%C3%B3n_por_sat%C3%A9lite)), [QZSS](https://es.wikipedia.org/wiki/Quasi-Zenith), [BeiDou](https://es.wikipedia.org/wiki/Beidou) y [NavIC](https://en.wikipedia.org/wiki/Indian_Regional_Navigation_Satellite_System).
 
 <div align="center"><img src="graph/Archeological_research_at_the_Bilsk_hillfort.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%D0%97%D0%B9%D0%BE%D0%BC%D0%BA%D0%B0_%D0%B2%D0%B0%D0%BB%D1%96%D0%B2_%D0%91%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%89%D0%B0_(%D0%9F%D0%BE%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BD%D0%B0)_%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BC_GNSS-%D0%BF%D1%80%D0%B8%D0%B9%D0%BC%D0%B0%D1%87%D0%B5%D0%BC.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
