@@ -125,12 +125,24 @@ Los SIG son ampliamente utilizados en el desarrollo de:
 * Gestión de recursos naturales
 * Formación Catastral de inmuebles
 * Mercadeo y logística
-* Censos
-* Estratificación
+* Censos y Estratificación
 * Estudios Ambientales
 * Inventario de redes sanitarias y pluviales
-* Cartografía
-* Topología para modelación de redes
+* Cartografía y topología para modelación de redes
+
+
+## Calidad de los datos[^4]
+
+¿Qué conocemos como calidad?
+
+Calidad es el “grado en el que un conjunto de características inherentes cumple con los requisitos”, entendiéndose por requisito “necesidad o expectativa establecida, generalmente implícita u obligatoria” (norma ISO 9000).
+
+Todo dato espacial contiene algún tipo de error, en mayor o menor medida. Conocer las razones por las cuales aparecen estos errores es importante para poder evaluar correctamente la validez del trabajo que realizamos con los datos y los resultados que obtenemos a partir de ellos.
+
+Es importante no solo contar con datos de calidad en los que estos errores sean mínimos, sino conocer el tipo de error que existe en nuestros datos y la magnitud de estos.
+
+<div align="center"><img src="graph/GISQualityColombia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Estándares desarrollados para la evaluación de la calidad en la información geográfica<br>Tomado de: <a href="https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf">https://www.ideca.gov.co</a></sub><br><br></div>
+
 
 
 
@@ -153,7 +165,7 @@ En la siguiente tabla se listan las actividades complementarias que deben ser de
 
 ## Referencias
 
-* 
+* https://volaya.github.io/libro-sig/chapters/Calidad_datos.html
 
 
 ## Control de versiones
@@ -173,3 +185,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 [^1]: https://www.esri.com/es-es/what-is-gis/history-of-gis 
 [^2]: https://es.wikipedia.org/wiki/Ciencias_de_la_Tierra
 [^3]: https://blogs.upm.es/espacio-geotig/2023/06/22/ventajas-desafios/
+[^4]: https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf
