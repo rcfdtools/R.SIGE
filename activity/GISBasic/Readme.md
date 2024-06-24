@@ -132,11 +132,11 @@ Los SIG son ampliamente utilizados en el desarrollo de:
 
 <div align="center">¿Para qué combinar estos datos?</div>
 
-<div align="center"><img src="graph/BasinA.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+<div align="center"><img src="graph/BasinA.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub><br><br></div>
 
 <div align="center">Para obtener una base de datos integrada por diferentes elementos vectoriales y de tipo Raster que permitan ensamblar un modelo geográfico e hidráulico de una cuenca hidrográfica.</div>
 
-<div align="center"><img src="graph/BasinB.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+<div align="center"><img src="graph/BasinB.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub><br><br></div>
 
 
 
