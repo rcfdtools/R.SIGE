@@ -41,6 +41,8 @@ Línea de tiempo
 
 ### Estudio de la tierra sólida
 
+<div align="center"><img src="graph/Gunung_Bromo.jpg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Gunung_Bromo.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+
 | Ciencia                                                                 | Alcance                                                                                                                                                                                                                                                                                      |
 |:------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Geodesía](https://es.wikipedia.org/wiki/Geodesia)                      | Estudia la forma de la Tierra.                                                                                                                                                                                                                                                               |
@@ -54,6 +56,8 @@ Línea de tiempo
 
 ### Estudio de la atmósfera, los océanos y los seres vivos
 
+<div align="center"><img src="graph/Hurrican_Catarina_from_the_ISS_on_March_26_2004.jpg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Hurrican_Catarina_from_the_ISS_on_March_26_2004.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+
 | Ciencia                                                                        | Alcance                                                                                                                                                                                                                                                                                                               |
 |:-------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Climatología](https://es.wikipedia.org/wiki/Climatolog%C3%ADa)                | Se ocupa del estudio de los fenómenos meteorológicos y sus variaciones a lo largo del tiempo cronológico.                                                                                                                                                                                                             |
@@ -65,6 +69,8 @@ Línea de tiempo
 
 ### Tecnologías relacionadas
 
+<div align="center"><img src="graph/Ocean-O.jpg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Ocean-O.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
+
 | Ciencia                                                                                                                        | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:-------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Teledetección](https://es.wikipedia.org/wiki/Teledetecci%C3%B3n)                                                              | La teledetección, o detección remota, es la adquisición de información a pequeña o gran escala de un objeto o fenómeno, ya sea usando instrumentos de grabación o instrumentos de escaneo en tiempo real inalámbricos o que no están en contacto directo con el objeto (como por ejemplo aviones, satélites, astronave, boyas o barcos). En la práctica, la teledetección consiste en recoger información a través de diferentes dispositivos de un objeto concreto o un área.  |
@@ -73,7 +79,9 @@ Línea de tiempo
 
 
 
-## Actividades complementarias:pencil2:
+
+
+## Actividades complementarias :pencil2:
 
 En la siguiente tabla se listan las actividades complementarias que deben ser desarrolladas y documentadas por el estudiante en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (mostrar nombre completo, código y enlace a su cuenta de GitHub), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
