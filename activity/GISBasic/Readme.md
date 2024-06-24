@@ -26,15 +26,14 @@ El campo de los sistemas de información geográfica (GIS) se inició en los añ
 
 Línea de tiempo
 
-| Año   | Evento                                                                                                                                                              |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1960  | Inicio de los SIG en investigación científica                                                                                                                       |
-| 1963  | Primer SIG implementando el Sistema Canadiense de Información Geográfica utilizado para inventario forestal                                                         |
-| 1965  | Laboratorio SIG Universidad de Harvard y creación del software [SYMAP](https://en.wikipedia.org/wiki/Harvard_Laboratory_for_Computer_Graphics_and_Spatial_Analysis) |
-| 1969  | Fundación de Environmental Systems Research Institute, Inc. ([Esri](https://www.esri.com/en-us/what-is-gis/history-of-gis))                                                                                                  |
-|  1982     | SIG se Vuelve comercial y Esri crea [ARC/INFO](https://en.wikipedia.org/wiki/ArcInfo)                                                                                                                                                                    |
-
->Actualmente: utilizados en la vida diaria y como herramienta tecnológica se utilizan en múltiples campos de la ingeniería y arquitectura.
+| Año         | Evento                                                                                                                                                              |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1960        | Inicio de los SIG en investigación científica                                                                                                                       |
+| 1963        | Primer SIG implementando el Sistema Canadiense de Información Geográfica utilizado para inventario forestal                                                         |
+| 1965        | Laboratorio SIG Universidad de Harvard y creación del software [SYMAP](https://en.wikipedia.org/wiki/Harvard_Laboratory_for_Computer_Graphics_and_Spatial_Analysis) |
+| 1969        | Fundación de Environmental Systems Research Institute, Inc. ([Esri](https://www.esri.com/en-us/what-is-gis/history-of-gis))                                         |
+| 1982        | SIG se Vuelve comercial y Esri crea [ARC/INFO](https://en.wikipedia.org/wiki/ArcInfo)                                                                               |
+| Actualmente | Utilizados en la vida diaria y como herramienta tecnológica se utilizan en múltiples campos de la ingeniería y arquitectura.                                        |
 
 
 ## Ciencias y tecnologías relacionadas[^2]
