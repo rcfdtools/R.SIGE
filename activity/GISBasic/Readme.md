@@ -176,11 +176,6 @@ Es importante no solo contar con datos de calidad en los que estos errores sean 
 
 A partir de la información existente producir nueva información.
 
-* Selección geográfica y por atributos: Búsquedas simples o complejas de forma geográfica o a través de las tablas de atributos. Ejemplo: Seleccionar todas las tuberías de la red troncal de alcantarillado en la subcuenca 1 cuyo material sea concreto.
-* Proximidad: Determinar qué elementos están cerca a otros basados en una determinada distancia. Ejemplo: Localizar todas las edificaciones que se encuentran a menos de 100 metros del eje de un río o canal.
-* Ruta óptima: Selección de rutas con la menor distancia o interferencias posibles. Pueden presentarse en medios tales como carreteras, drenajes, tuberías, etc. Ejemplo: Trazar una nueva vía, usando como variables la elevación, inclinación, y la dirección de la inclinación del terreno.
-* Sobreimposición: Uniones espaciales, intersecciones, transparencias, extracción, etc. Ejemplo: Definir secciones transversales en canales y encontrar el punto de intersección con el eje para definir los tramos de modelación de la red pluvial.
-
 | Función                              | Alcance                                                                                                                                           | Ejemplo                                                                                                                                             |
 |:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Selección geográfica y por atributos | Búsquedas simples o complejas de forma geográfica o a través de las tablas de atributos.                                                          | Seleccionar todas las tuberías de la red troncal de alcantarillado en la subcuenca 1 cuyo material sea concreto.                                    |
