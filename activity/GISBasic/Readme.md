@@ -130,6 +130,15 @@ Los SIG son ampliamente utilizados en el desarrollo de:
 * Inventario de redes sanitarias y pluviales
 * Cartografía y topología para modelación de redes
 
+<div align="center">¿Para qué combinar estos datos?</div>
+
+<div align="center"><img src="graph/BasinA.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+
+<div align="center">Para obtener una base de datos integrada por diferentes elementos vectoriales y de tipo Raster que permitan ensamblar un modelo geográfico e hidráulico de una cuenca hidrográfica.</div>
+
+<div align="center"><img src="graph/BasinB.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+
+
 
 ## Calidad de los datos[^4]
 
