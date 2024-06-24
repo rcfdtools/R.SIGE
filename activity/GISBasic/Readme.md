@@ -141,7 +141,7 @@ Todo dato espacial contiene algún tipo de error, en mayor o menor medida. Conoc
 
 Es importante no solo contar con datos de calidad en los que estos errores sean mínimos, sino conocer el tipo de error que existe en nuestros datos y la magnitud de estos.
 
-<div align="center"><img src="graph/GISQualityColombia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Estándares desarrollados para la evaluación de la calidad en la información geográfica<br>Tomado de: <a href="https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf">https://www.ideca.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/GISQualityColombia.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Estándares desarrollados para la evaluación de la calidad en la información geográfica<br>Tomado de: <a href="https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf">https://www.ideca.gov.co</a></sub><br><br></div>
 
 
 ## Funciones de un SIG
