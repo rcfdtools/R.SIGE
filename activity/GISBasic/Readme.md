@@ -206,7 +206,7 @@ Geo-procesos para responder estas preguntas:
 | <div align="center"><img src="graph/ZonalStatistic.png" alt="R.SIGE" width="200" border="0"/></div>                                                            | Estadísticas zonales [como grilla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm) o [como tabla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm) | Resume el valor de un ráster dentro de las zonas de otro dataset o como una tabla con estadísticos característicos.                                                                                                                                                                                                                                                                                              |
 
 
-## Tipos de datos usados en SIG
+## Tipos de datos y formatos usados en SIG
 
 
 ### Datos según codificación o representación
@@ -233,6 +233,17 @@ Los datos asociados a un elemento geográfico contenidos en los registros de atr
 | ☼<br>Objetos        | Archivos adjuntos, imágenes, hipervínculos, etc.                                                                                                                                                                                                                                                                                                                                                                               |
 
 > En representaciones catastrales, un predio que es dividido por una vía y que tiene una única matrícula inmobiliaria y un único código catastral, puede ser almacenado como una entidad multiparte, con lo que solo obtendrá un registro en la tabla de atributos.
+
+
+## Formatos para almacenamiento geográfico
+
+| Formato     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Shapefile   | Archivo de formas nativo desarrollado por Esri que es utilizado por herramientas comerciales y de dominio público. Es el formato estándar para intercambio de información geográfica entre las diferentes plataformas. Cada cobertura o capa de geográfica requiere de un sistema de proyección de coordenadas, no posee reglas topológicas directas y el formato de base de datos para almacenar atributos es dBase .dbf.<br><br>Un archivo de formas shapefile se compone de 4 archivos:<br><br>* .dbf: Base o tabla de datos de atributos><br>* .prj: Atributos de proyección geográfica><br>* .shp: Archivo de vectores><br>* .shx: Archivo de índices><br> |
+| Geodatabase | Base de datos geográfica ó GDB que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb, PostgreSQL, postgis) y corporativas (gdb, oracle)                                                                                                                                                                                                                                            |
+
+<div align="center"><img src="graph/GDBBenefits.png" alt="R.SIGE" width="60%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+
 
 ## Referencias
 
