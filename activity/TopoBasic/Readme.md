@@ -175,7 +175,7 @@ La combinación de las dos áreas de la topografía plana permite la elaboració
 
 | Versión    | Descripción     | Autor                                      | Horas |
 |------------|:----------------|--------------------------------------------|:-----:|
-| 2024.01.20 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.01.20 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._

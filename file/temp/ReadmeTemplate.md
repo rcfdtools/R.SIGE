@@ -1,9 +1,8 @@
 # Plantilla para actividades
 Keywords: `DEM` `AgreeDEM`
 
-<div align="center">  
-![R.SIGE](Graph/AgreeDEM.png)  
-</div><br>
+
+<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
 xxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -38,7 +37,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
 
 
-## Actividades complementarias:pencil2:
+## Actividades complementarias :pencil2:
 
 En la siguiente tabla se listan las actividades complementarias que deben ser desarrolladas y documentadas por el estudiante en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (mostrar nombre completo, código y enlace a su cuenta de GitHub), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
