@@ -80,9 +80,25 @@ Línea de tiempo
 
 ## ¿Qué es un SIG?
 
-Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistema especializado en la captura, manejo y análisis de información geográfica geoespacial.
+Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistema especializado en la captura, manejo y análisis de información geográfica geoespacial. Para su óptima implementación y operación, se requiere de los siguientes 4 elementos:
 
-<div align="center"><img src="graph/WhatIsGIS.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Tomado de: Elaboración propia</sub><br><br></div>
+<div align="center"><img src="graph/WhatIsGIS.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Diagrama por rcfdtools</sub><br><br></div>
+
+<div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas</sub><br><br></div>
+
+
+## Ventajas y desafíos de los SIG[^3]
+
+| Ventaja                                   | Alcance                                                                                                                                                                                                                                                                                                                |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Análisis espacial                         | Los SIG permiten realizar análisis espaciales avanzados, lo que facilita la identificación de patrones, relaciones y tendencias geográficas. Esto ayuda en la toma de decisiones basadas en la ubicación y proporciona información valiosa para la planificación y el diseño de políticas.                             |
+| Integración de datos                      | Los SIG permiten integrar datos geoespaciales con otros tipos de datos, como datos demográficos, económicos o ambientales. Esto proporciona una visión holística y enriquecida de los fenómenos, lo que facilita el análisis multidimensional y la comprensión de las interrelaciones entre diferentes variables.      |
+| Visualización efectiva                    | Los SIG ofrecen herramientas de visualización que permiten representar de manera clara y comprensible los datos geoespaciales en forma de mapas, gráficos y otras formas visuales. Esto facilita la comunicación de la información y mejora la comprensión de los resultados por parte de los usuarios.                |
+| Toma de decisiones basada en la ubicación | Los SIG ayudan a tomar decisiones informadas al proporcionar información geoespacial precisa y actualizada. Esto es especialmente útil en áreas como la planificación urbana, la gestión de recursos naturales, la gestión de emergencias y el transporte, donde la ubicación desempeña un papel crucial.              |
+| Optimización de recursos                  | Los SIG permiten optimizar la asignación y el uso de recursos al proporcionar información sobre la ubicación y la distribución de los mismos. Esto ayuda a reducir costos, mejorar la eficiencia y maximizar el rendimiento en diferentes sectores, como logística, servicios públicos y gestión de infraestructuras.  |
+
+
+
 
 
 
@@ -124,3 +140,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 [^1]: https://www.esri.com/es-es/what-is-gis/history-of-gis 
 [^2]: https://es.wikipedia.org/wiki/Ciencias_de_la_Tierra
+[^3]: https://blogs.upm.es/espacio-geotig/2023/06/22/ventajas-desafios/
