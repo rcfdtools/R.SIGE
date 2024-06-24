@@ -144,22 +144,42 @@ Es importante no solo contar con datos de calidad en los que estos errores sean 
 <div align="center"><img src="graph/GISQualityColombia.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Estándares desarrollados para la evaluación de la calidad en la información geográfica<br>Tomado de: <a href="https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf">https://www.ideca.gov.co</a></sub><br><br></div>
 
 
+## Funciones de un SIG
 
 
-## Actividades complementarias :pencil2:
+### Entrada, captura y almacenamiento de datos
 
-En la siguiente tabla se listan las actividades complementarias que deben ser desarrolladas y documentadas por el estudiante en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (mostrar nombre completo, código y enlace a su cuenta de GitHub), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
-
-
-| Actividad | Alcance |
-|:---------:|:--------|
-|     1     | ....    | 
+* Digitalización directa (desde foto aérea, plano escaneado e imagen satelital)
+* Desde archivos digitales (Tablas, CAD y archivos vectoriales)
+* Teledetección (LIDAR, IKONOS o satélite comercial de teledetección)
 
 
-## Compatibilidad
+### Representación gráfica
 
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
+* Visualización de datos geográficos (Visores y herramientas de edición)
+* Impresión cartográfica
+* Impresión digital
+* Uso compartido (Local y web)
+* Listados, informes, tablas de datos, indicadores, resúmenes
+
+
+### Manejo de datos
+
+* Transformación matemática de coordenadas: proyección, datum
+* Transformación geométrica: rotación, reducción, escalado…
+* Asignación de atributos
+* Definición de topología y ajuste
+* Importación y exportación
+
+
+### Análisis
+
+A partir de la información existente producir nueva información.
+
+* Selección geográfica y por atributos: Búsquedas simples o complejas de forma geográfica o a través de las tablas de atributos. Ejemplo: Seleccionar todas las tuberías de la red troncal de alcantarillado en la subcuenca 1 cuyo material sea concreto.
+* Proximidad: Determinar qué elementos están cerca a otros basados en una determinada distancia. Ejemplo: Localizar todas las edificaciones que se encuentran a menos de 100 metros del eje de un río o canal.
+* Ruta óptima: Selección de rutas con la menor distancia o interferencias posibles. Pueden presentarse en medios tales como carreteras, drenajes, tuberías, etc. Ejemplo: Trazar una nueva vía, usando como variables la elevación, inclinación, y la dirección de la inclinación del terreno.
+* Sobreimposición: Uniones espaciales, intersecciones, transparencias, extracción, etc. Ejemplo: Definir secciones transversales en canales y encontrar el punto de intersección con el eje para definir los tramos de modelación de la red pluvial.
 
 
 
