@@ -221,7 +221,7 @@ La codificación de datos geográficos empleados en un SIG proviene de dos tipos
 
 ### Tipos de datos en registros de atributos
 
-<div align="center"><img src="graph/DataTypeRecord.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub></div>
+<div align="center"><img src="graph/DataTypeRecord.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub><br><br></div>
 
 Los datos asociados a un elemento geográfico contenidos en los registros de atributos pueden ser:
 
