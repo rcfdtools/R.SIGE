@@ -38,6 +38,8 @@ Las coordenadas determinadas para el desarrollo de proyectos que requieran datos
 
 Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia MAGNA (Según resolución MAGNA-SIRGAS), cuyos parámetros son:
 
+<div align="center">
+
 | Parámetro                                                                                                                                          | Valor                                            |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
 | Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                       | 4686                                             |
@@ -48,6 +50,8 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 | Semieje menor (b), metros                                                                                                                          | 6356752.314                                      |
 | Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                            | 298.2572201                                      |
 | [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame  | 1994, Época 1995.4                               |
+
+</div>
 
 > Los valores del semieje mayor y semieje menor corresponden a los parámetros del elipsoide.
 
