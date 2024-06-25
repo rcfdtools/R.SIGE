@@ -1,5 +1,5 @@
 # Conceptos básicos de SIG 
-Keywords: `GIS-Basics` `GIS-Utility` `GIS-Functions` `Data-types` `Related-Sciences` `Shapefile` `GDB`
+Keywords: `GIS-Basics` `GIS-Utility` `GIS-Functions` `GIS-History` `Data-types` `Related-Sciences` `Shapefile` `GDB`
 
 Los Sistemas de Información Geográficos (SIG o GIS), son un conjunto de equipos, herramientas computacionales y personal capacitado para el manejo de datos geográficos. Hoy en día se han convertido en herramientas indispensables para el análisis y soporte de toma de decisiones en la solución de problemas complejos, debido a que el manejo de la información se realiza de forma espacial y dinámica, permitiendo representar de forma esquemática muy próxima a la realidad el ambiente natural y el entorno construido. Igualmente, los SIG permiten interactuar eficientemente con otro tipo de información no geográfica y su incorporación para diferentes aplicaciones.
 
