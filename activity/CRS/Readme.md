@@ -8,7 +8,9 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 
 ## Objetivos
 
-* 
+* Entender conceptos generales de georeferenciación
+* Estudiar los sistemas de proyección utilizados en Colombia
+* Entender como funciona el sistema geográfico mundial WGS84
 
 
 ## Requerimientos
