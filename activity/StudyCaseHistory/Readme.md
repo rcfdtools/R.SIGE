@@ -164,12 +164,13 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad | Alcance                                                                                                                                                                                                                |
 |:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance P1 | Investigue y documente la reseña histórica municipal del caso de estudio asignado. No es necesario presentar un documento de avance independiente, todos los avances de este módulo se integran en un único documento. | 
+| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado. No es necesario presentar un documento de avance independiente, todos los avances de este módulo se integran en un único documento. | 
 
 
 ## Referencias
 
 * https://es.wikipedia.org/wiki/Zipaquir%C3%A1
+* https://www.colombiaenmapas.gov.co/inicio/
 
 
 ## Control de versiones
