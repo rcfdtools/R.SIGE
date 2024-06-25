@@ -85,14 +85,13 @@ Las principales actividades económicas del municipio son:
 
 Información geo-espacial específica del municipio que puede ser consultada en línea a través de los siguientes portales, plataformas o servicios:
 
-| Plataforma                                               | Información consultable                                                                                                                                                                                                                                                                                                                                                                               |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Colombia en Mapas](https://www.colombiaenmapas.gov.co/) | Áreas Homogéneas de Tierras - Municipio de Zipaquirá, Cundinamarca. Capacidad de Uso - Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000. En la cartografía básica a escala 1:500k, 1:100k y 1:25k se encuentran múltiples vectores sobre el municipio. |
-| [Google Maps ](https://www.google.com/maps)              | Disponible: mapa satelital, mapa vectorial, mapa de terreno, mapa de tráfico, street view, puntos de interés, vías, límite urbano                                                                                                                                                                                                                                                                     |
-| [Microsoft Bing Maps](https://www.bing.com/maps)         |                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Open Street Maps ](https://www.openstreetmap.org)       |                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Google Earth ](https://earth.google.com)                |                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Sistema de información geográfica municipal              | No disponible o no encontrado                                                                                                                                                                                                                                                                                                                                                                         |
+| Plataforma                                                | Información consultable                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Colombia en Mapas](https://www.colombiaenmapas.gov.co/)  | Áreas Homogéneas de Tierras - Municipio de Zipaquirá, Cundinamarca. Capacidad de Uso - Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000. En la cartografía básica a escala 1:500k, 1:100k y 1:25k se encuentran múltiples vectores sobre el municipio. |
+| [Google Maps y Google Earth](https://www.google.com/maps) | Disponible: mapa satelital, mapa vial, mapa de terreno, mapa de tráfico, street view, puntos de interés, límite urbano                                                                                                                                                                                                                                                                                |
+| [Microsoft Bing Maps](https://www.bing.com/maps)          | Disponible: mapa satelital, mapa vial combinado con terreno, puntos de interés                                                                                                                                                                                                                                                                                                                        |
+| [Open Street Maps ](https://www.openstreetmap.org)        | Disponible: mapa vial, mapa de terreno                                                                                                                                                                                                                                                                                                                                                                |
+| Sistema de información geográfica municipal               | No disponible o no encontrado                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 ### 4.1. Colombia en Mapas
@@ -102,7 +101,7 @@ Información geo-espacial específica del municipio que puede ser consultada en 
 <div align="center"><img src="graph/IGAC_ColombiaEnMapas.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas del IGAC<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
-#### 4.1.1. Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca
+**Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca**
 
 El mapa digital de Áreas Homogéneas de Tierras (AHT) con fines multipropósito a escala 1:25.000, representa características y cualidades similares de clima, relieve, material litológico o depósitos superficiales que dan origen a los suelos, lo cual permite delimitar espacios de la superficie terrestre en trece clases de AHT e identificarlas según sus principales limitaciones y caracterizarlas, a través de un índice numérico denominado valor potencial, que expresa la capacidad productiva de las tierras. Esta información geográfica se constituye en una de las más importantes aplicaciones de los levantamientos de suelos a diferentes escalas cartográficas, siendo el insumo base para calificar la capacidad productiva de las tierras rurales.
 
@@ -111,7 +110,7 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 <div align="center"><img src="graph/IGAC_AHT.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
-#### 4.1.2. Capacidad de Uso. Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000
+**Capacidad de Uso. Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000**
 
 Mapa temático que representa la clasificación por Capacidad de Uso de las Tierras de las áreas planas de los municipios de Cogua, el Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá, Departamento de Cundinamarca a escala 1:10.000, publicado en el año 2013. Suministra información importante acerca del recurso suelo, a través de la determinación de las potencialidades y limitaciones de uso de las tierras a partir del análisis de las características de los suelos. Se definen las unidades cartográficas de capacidad de uso de la tierra con sus respectivos componentes: Clase, Subclase, Grupo de manejo, Principales Limitantes y Prácticas de Manejo.
 
@@ -123,10 +122,26 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 ### 4.2. Mapas disponibles en Google Maps
 
 <div align="center">
-<img src="graph/GoogleMaps_Basic.png" alt="R.SIGE" width="480" border="0" />
+<img src="graph/GoogleMaps_Road.png" alt="R.SIGE" width="480" border="0" />
 <img src="graph/GoogleMaps_Satellite.png" alt="R.SIGE" width="480" border="0" />
 <img src="graph/GoogleMaps_Terrain.png" alt="R.SIGE" width="480" border="0" />
 <img src="graph/GoogleMaps_Traffic.png" alt="R.SIGE" width="480" border="0" />
+</div>
+
+
+### 4.3. Mapas disponibles en Microsoft Bing Maps
+
+<div align="center">
+<img src="graph/Bing_Road.png" alt="R.SIGE" width="480" border="0" />
+<img src="graph/Bing_Satellite.png" alt="R.SIGE" width="480" border="0" />
+</div>
+
+
+### 4.4. Mapas disponible en OpenStreet
+
+<div align="center">
+<img src="graph/OpenStreetMap_Road.png" alt="R.SIGE" width="480" border="0" />
+<img src="graph/OpenStreetMap_Road_Terrain.png" alt="R.SIGE" width="480" border="0" />
 </div>
 
 
