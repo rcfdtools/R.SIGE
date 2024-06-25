@@ -27,47 +27,52 @@ De fundación prehispánica, sus pobladores se asentaban en el sector hoy conoci
 
 ## 2. Localización geográfica y topografía [^1]  
 
-La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordillera Oriental, en el altiplano Cundiboyacense. El casco urbano se encuentra a una altitud de 2652 m s. n. m., lo que la convierte en la tercera ciudad con mayor altitud en Colombia con más de 100.000 habitantes de acuerdo a la lista de las grandes ciudades más altas del mundo. Zipaquirá posee una extensión aproximada de 197 km² así: 8 km² de la zona urbana y 189 km² de la zona rural. El territorio donde se asienta la ciudad fue en el pasado un gran campo lleno de vegetación; algunos sectores de la ciudad también están construidos sobre unos viejos fosos de agua-sal, en los que la sal vigua era procesada para su consumo. Su río más extenso es el río Bogotá, pasando por el borde oriental de Zipaquirá en límites con Tocancipá y Sopó que desde hace varias décadas presenta altos niveles de contaminación, finalizando en Girardot. La zona en donde está ubicada la ciudad corresponde a la placa tectónica sudamericana, por lo que presenta una importante actividad sísmica.
+La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordillera Oriental, en el altiplano Cundiboyacense. El casco urbano se encuentra a una altitud de 2652 m.s.n.m., lo que la convierte en la tercera ciudad con mayor altitud en Colombia con más de 100.000 habitantes de acuerdo a la lista de las grandes ciudades más altas del mundo. Zipaquirá posee una extensión aproximada de 197 km² así: 8 km² de la zona urbana y 189 km² de la zona rural. El territorio donde se asienta la ciudad fue en el pasado un gran campo lleno de vegetación; algunos sectores de la ciudad también están construidos sobre unos viejos fosos de agua-sal, en los que la sal vigua era procesada para su consumo. Su río principal más extenso es el río Bogotá, pasando por el borde oriental de Zipaquirá en límites con Tocancipá y Sopó que desde hace varias décadas presenta altos niveles de contaminación, finalizando en Girardot. La zona en donde está ubicada la ciudad corresponde a la placa tectónica sudamericana, por lo que presenta una importante actividad sísmica.
+
+* Código [DANE](https://www.dane.gov.co/) departamento: 25
+* Código DANE Municipio: 817
 
 <div align="center">
 
 La zona rural del municipio está compuesta por diecisiete (17) veredas
 
-| Vereda                  | Código DANE   |
-|:------------------------|:--------------|
-| Barandillas             |               |
-| Barroblanco             |               |
-| El Tunal                |               |
-| Empalizado              |               |
-| La Granja               |               |
-| Páramo del Guerrero Oc. |               |
-| Pasoancho               |               |
-| Portachuelo             |               |
-| Río Frío                |               |
-| Salinas (El Centro)     |               |
-| San Antonio             |               |
-| San Isidro              |               |
-| San Jorge               |               |
-| Ventalarga              |               |
+| Vereda              | Código DANE    |
+|:--------------------|:---------------|
+| Barandillas         | 2589900000015  |
+| Barro Blanco        | 2589900000013  |
+| Centro              | 2589900000002  |
+| El Cedro            | 2589900000007  |
+| El Empalizado       | 2589900000010  |
+| El Tunal            | 2589900000005  |
+| La Granja           | 2589900000006  |
+| Pantano Redondo     | 2589900000008  |
+| Páramo del Guerrero | 2589900000009  |
+| Paso Ancho          | 2589900000004  |
+| Portachuelo         | 2589900000003  |
+| Río Frío            | 2589900000012  |
+| San Isidro          | 2589900000011  |
+| San Jorge           | 2589900000014  |
+
+<img src="graph/25899Vereda.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Elaborado por rcfdtools</sub>
 
 En la zona rural se encuentran los siguientes centros poblados
 
-| Centro poblado     | Vereda |
-|:-------------------|:-------|
-| Aposentos altos    |        |
-| Argélia            |        |
-| Barandillas        |        |
-| Bolívar 83         |        |
-| Bosques de Silesia |        |
-| El Rudal           |        |
-| La Mariela         |        |
-| Malagón            |        |
-| La Paz             |        |
-| Pasoancho          |        |
-| Portachuelo        |        |
-| San Jorge          |        |
-| San Miguel         |        |
-| Santa Isabel       |        |
+| Centro poblado     | Vereda      |
+|:-------------------|:------------|
+| Aposentos altos    |             |
+| Argélia            |             |
+| Barandillas        | Barandillas |
+| Bolívar 83         |             |
+| Bosques de Silesia |             |
+| El Rudal           |             |
+| La Mariela         |             |
+| Malagón            |             |
+| La Paz             |             |
+| Pasoancho          |             |
+| Portachuelo        |             |
+| San Jorge          |             |
+| San Miguel         |             |
+| Santa Isabel       |             |
 
 </div>
 
@@ -176,4 +181,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../CRS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/5) | [Siguiente :arrow_forward:]() |
 |---------------------------------------|-------------------|----------------------------------------------------------------------------------|---------------|
 
-[^1]: https://es.wikipedia.org/wiki/Zipaquir%C3%A1
+[^1]: Tomado o adaptado de https://es.wikipedia.org/wiki/Zipaquir%C3%A1
