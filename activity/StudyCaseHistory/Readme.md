@@ -20,14 +20,12 @@ Zipaquirá es un municipio de Colombia ubicado en el departamento de Cundinamarc
 * Caso de estudio propuesto, revisado y aprobado
 
 
-## 1. Historía del municipio[^1]  
-<sub>Referencia: tomado de https://es.wikipedia.org/wiki/Zipaquir%C3%A1</sub>
+## 1. Historía del municipio [^1]
 
 De fundación prehispánica, sus pobladores se asentaban en el sector hoy conocido como "Pueblo viejo" a 200 metros aproximados de su actual emplazamiento. Fue erigida como villa el 18 de julio de 1600 por auto de poblamiento proferido por el oidor español Luis Henríquez. Fue sucesivamente capital de la Provincia de Cundinamarca (1851), de la Provincia de Zipaquirá (1852-1855), del Estado Soberano de Cundinamarca (1861-1864), del departamento de Quesada (1905-1908) y del departamento de Zipaquirá (1908-1910). Zipaquirá es reconocida a nivel internacional por su Catedral de Sal, la cual recibió el reconocimiento como primera de las "Siete maravillas de Colombia” el 4 de febrero de 2007, además de su casco urbano, el cual fue declarado patrimonio histórico y cultural de Colombia.
 
 
-## 2. Localización geográfica y topografía  
-<sub>Referencia: tomado de https://es.wikipedia.org/wiki/Zipaquir%C3%A1</sub>
+## 2. Localización geográfica y topografía [^1]  
 
 La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordillera Oriental, en el altiplano Cundiboyacense. El casco urbano se encuentra a una altitud de 2652 m s. n. m., lo que la convierte en la tercera ciudad con mayor altitud en Colombia con más de 100.000 habitantes de acuerdo a la lista de las grandes ciudades más altas del mundo. Zipaquirá posee una extensión aproximada de 197 km² así: 8 km² de la zona urbana y 189 km² de la zona rural. El territorio donde se asienta la ciudad fue en el pasado un gran campo lleno de vegetación; algunos sectores de la ciudad también están construidos sobre unos viejos fosos de agua-sal, en los que la sal vigua era procesada para su consumo. Su río más extenso es el río Bogotá, pasando por el borde oriental de Zipaquirá en límites con Tocancipá y Sopó que desde hace varias décadas presenta altos niveles de contaminación, finalizando en Girardot. La zona en donde está ubicada la ciudad corresponde a la placa tectónica sudamericana, por lo que presenta una importante actividad sísmica.
 
