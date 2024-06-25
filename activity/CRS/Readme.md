@@ -28,11 +28,37 @@ el geoide y el elipsoide, necesarias para una cartografía de precisión
 <br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
 
 
+## Sistemas de referencia y proyección cartográfica en Colombia
+
+Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al **Marco Geocéntrico Nacional de Referencias – MAGNA**, razón por lo cual es necesario regirse por las **“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”** expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
+
+
+### Sistema de referencia horizontal datum MAGNA-SIRGAS, EPSG:4686
+
+Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia MAGNA (Según resolución MAGNA-SIRGAS), cuyos parámetros son:
+
+
+| Parámetro                                                                                                                                         | Valor                                            |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                      | 4686                                             |
+| Primer meridiano                                                                                                                                  | Greenwich 0,000000000000000000 Grados decimales  |
+| Datum geodésico                                                                                                                                   | MAGNA_SIRGAS                                     |
+| Elipsoide                                                                                                                                         | GRS 1980                                         |
+| Semieje mayor (a), metros                                                                                                                         | 6378137                                          |
+| Semieje menor (b), metros                                                                                                                         | 6356752.314                                      |
+| Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                           | 298.2572201                                      |
+| [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame | 1994, Época 1995.4                               |
+
+> Los valores del semieje mayor y semieje menor corresponden a los parámetros del elipsoide.
+
+<div align="center"><img src="graph/EPSG4685.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS
+<br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
 
 
 ## Referencias
 
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
+* http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/topografia-geoide-y-elipsoide/
 
 
 ## Control de versiones
