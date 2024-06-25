@@ -93,14 +93,14 @@ Información geo-espacial específica del municipio que puede ser consultada en 
 | [Google Earth ](https://earth.google.com)                |                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
-### Colombia en Mapas
+### 4.1. Colombia en Mapas
 
-[Colombia en Mapas](https://www.colombiaenmapas.gov.co/) es la colección más completa de mapas de Colombia. Es una herramienta en constante evolución. Construido para que todos los colombianos puedan consumir los datos, productos y servicios geográficos. No estamos solos en esto. Colombia en Mapas es el vehículo que dispone y centraliza la información geográfica producida por el IGAC y por todas las entidades nacionales, regionales y locales que generan datos del territorio, con el fin de promover la toma de decisiones efectivas del gobierno, las industrias y el ciudadano.
+[Colombia en Mapas](https://www.colombiaenmapas.gov.co/inicio/) es la colección más completa de mapas de Colombia. Es una herramienta en constante evolución. Construido para que todos los colombianos puedan consumir los datos, productos y servicios geográficos. No estamos solos en esto. Colombia en Mapas es el vehículo que dispone y centraliza la información geográfica producida por el IGAC y por todas las entidades nacionales, regionales y locales que generan datos del territorio, con el fin de promover la toma de decisiones efectivas del gobierno, las industrias y el ciudadano.
 
 <div align="center"><img src="graph/IGAC_ColombiaEnMapas.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas del IGAC<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
-#### Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca
+#### 4.1.1. Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca
 
 El mapa digital de Áreas Homogéneas de Tierras (AHT) con fines multipropósito a escala 1:25.000, representa características y cualidades similares de clima, relieve, material litológico o depósitos superficiales que dan origen a los suelos, lo cual permite delimitar espacios de la superficie terrestre en trece clases de AHT e identificarlas según sus principales limitaciones y caracterizarlas, a través de un índice numérico denominado valor potencial, que expresa la capacidad productiva de las tierras. Esta información geográfica se constituye en una de las más importantes aplicaciones de los levantamientos de suelos a diferentes escalas cartográficas, siendo el insumo base para calificar la capacidad productiva de las tierras rurales.
 
@@ -109,8 +109,13 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 <div align="center"><img src="graph/IGAC_AHT.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
+#### 4.1.2. Capacidad de Uso. Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000
 
+Mapa temático que representa la clasificación por Capacidad de Uso de las Tierras de las áreas planas de los municipios de Cogua, el Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá, Departamento de Cundinamarca a escala 1:10.000, publicado en el año 2013. Suministra información importante acerca del recurso suelo, a través de la determinación de las potencialidades y limitaciones de uso de las tierras a partir del análisis de las características de los suelos. Se definen las unidades cartográficas de capacidad de uso de la tierra con sus respectivos componentes: Clase, Subclase, Grupo de manejo, Principales Limitantes y Prácticas de Manejo.
 
+Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el Departamento de Cundinamarca.
+
+<div align="center"><img src="graph/IGAC_CUT.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Capacidad de Uso. Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
 ## Actividades complementarias :pencil2:
