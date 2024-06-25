@@ -108,12 +108,12 @@ Coordenadas Gauss – Krüger
 <div align="center"><img src="graph/IGACOrigenesGaussGruger.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Orígenes de la proyección Gauss-Krüger para Colombia <br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
 <div align="center">
-<br><br>Visualización de sistemas de proyección usando QGIS
-<img src="graph/EPSG3114.png" alt="R.SIGE" width="60%" border="0" />
-<img src="graph/EPSG3115.png" alt="R.SIGE" width="60%" border="0" />
-<img src="graph/EPSG3116.png" alt="R.SIGE" width="60%" border="0" />
-<img src="graph/EPSG3117.png" alt="R.SIGE" width="60%" border="0" />
-<img src="graph/EPSG3118.png" alt="R.SIGE" width="60%" border="0" />
+<br><br>Visualización de sistemas de proyección usando QGIS<br>
+<img src="graph/EPSG3114.png" alt="R.SIGE" width="240" border="0" />
+<img src="graph/EPSG3115.png" alt="R.SIGE" width="240" border="0" />
+<img src="graph/EPSG3116.png" alt="R.SIGE" width="240" border="0" />
+<img src="graph/EPSG3117.png" alt="R.SIGE" width="240" border="0" />
+<img src="graph/EPSG3118.png" alt="R.SIGE" width="240" border="0" />
 </div>
 
 
