@@ -79,7 +79,7 @@ En la zona rural se encuentran los siguientes centros poblados
 | San Miguel                 | La Granja   |
 | Santa Isabel               | La Granja   |
 
-<img src="graph/25899CentroPobladoRural.png" alt="R.SIGE" width="90%" border="0"/><br><sub>Centros poblados (norte hacia arriba)<br>En la ilustración se han excluido las veredas: Empalizado, Páramo de Guerrero, San Isidro, Pantano Redondo y Río Frío.<br>Elaborado por rcfdtools</sub>
+<img src="graph/25899CentroPobladoRural.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Centros poblados (norte hacia arriba)<br>En la ilustración se han excluido las veredas: Empalizado, Páramo de Guerrero, San Isidro, Pantano Redondo y Río Frío.<br>Elaborado por rcfdtools</sub>
 
 </div>
 
