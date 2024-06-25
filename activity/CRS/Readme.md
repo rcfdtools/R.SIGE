@@ -23,7 +23,7 @@ La forma teórica que convencionalmente se utiliza para definir la Tierra es el 
 
 La georreferenciación es el proceso utilizado para determinar la posición de un objeto o un conjunto de datos mediante un sistema de coordenadas referidas a la superficie terrestre. Los sistemas de coordenadas son un conjunto de parámetros que permiten definir inequívocamente la posición de cualquier punto en un espacio geométrico respecto a un punto denominado origen.
 
-<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.jpg" alt="R.SIGE" width="40%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
+<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.jpg" alt="R.SIGE" width="30%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
 el geoide y el elipsoide, necesarias para una cartografía de precisión 
 <br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
 
