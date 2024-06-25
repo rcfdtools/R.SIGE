@@ -7,3 +7,4 @@
 * https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
 * https://www.sirgas.org/fileadmin/docs/Boletines/Bol09/07_Martinez_Colombia.pdf
+* http://www.publicacions.ub.edu/liberweb/astronomia_esferica/material/version_pdf/Tomo%201/2.1%20Elipsoide%20terrestre.pdf

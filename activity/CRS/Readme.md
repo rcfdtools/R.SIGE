@@ -167,7 +167,45 @@ El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Inter
 <div align="center"><img src="graph/GRS80.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
 
-## 
+## Sistema geodésico mundial WGS84 – EPSG: 4326 
+
+El WGS84 es un sistema de coordenadas geográficas mundial que permite localizar cualquier punto de la Tierra (sin necesitar otro de referencia) por medio de tres unidades dadas. WGS84 son las siglas en inglés de World Geodetic System 84 que significa Sistema Geodésico Mundial 1984. 
+
+El Sistema Geodésico Mundial es un estándar para su uso en la cartografía, geodesia y navegación. Cuenta con un estándar de coordenadas de la Tierra, un estándar de referencia de la superficie esférica (el dato o elipsoide de referencia) para los datos de altitud primas, y una superficie equipotencial gravitacional (el geoide) que define el nivel del mar nominal. El origen de coordenadas de WGS84 está destinado a ser ubicado en el centro de la masa de la Tierra, se cree que el error es menos de 2 cm por lo que es en la que se basa el Sistema de Posicionamiento Global (GPS).
+
+<div align="center">
+Visualización del sistema de proyección usando QGIS<br>
+<img src="graph/EPSG4326.png" alt="R.SIGE" width="480" border="0" />
+</div>
+
+El sistema de referencia WGS84 es un sistema global geocéntrico, definido por los parámetros:
+
+Origen: Centro de masa de la Tierra
+
+Sistemas de ejes coordenados:
+
+* Eje Z: dirección del polo de referencia del IERS - The International Earth Rotation Service
+* Eje X: intersección del meridiano origen definido en 1984 por el BIH y el plano del Ecuador (incertidumbre de 0.005”).
+* Eje Y: eje perpendicular a los dos anteriores y coincidentes en el origen.
+
+Elipsoide WGS84: elipsoide de revolución definido por los parámetros:
+
+* Semieje mayor (a) = 6 378 137 m
+* Semieje menor (b) = 6 356 752.31424 m
+* Achatamiento f: 1/298,257223563
+
+Constante de Gravitación Terrestre
+* GM = 3,986004418x1014 m³/s²
+
+Velocidad angular
+
+* ω = 7,292115x10-5 rad/s
+
+Coeficiente de forma dinámica
+
+* J2= -484,166 85 x 10-6
+
+> El WGS84 utiliza el meridiano de referencia IERS definido por la Oficina Internacional de l'Heure. Se definió por la compilación de las observaciones de estrellas en diferentes países. La media de estos datos causó un desplazamiento de unos 100 metros al este lejos del Meridiano de Greenwich en Greenwich en el Reino Unido. 
 
 
 
@@ -175,21 +213,25 @@ El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Inter
 
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
 * http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/topografia-geoide-y-elipsoide/
+* http://www.publicacions.ub.edu/liberweb/astronomia_esferica/material/version_pdf/Tomo%201/2.1%20Elipsoide%20terrestre.pdf
+* Especificaciones técnicas cartografía básica. Anexo 2 – Tipos de coordenadas manejados en Colombia, Instituto Geográfico Agustín Codazzi – IGAC. Subdirección Geografía y Cartografía. 
+* Especificaciones técnicas cartografía básica, Instituto Geográfico Agustín Codazzi – IGAC. Subdirección Geografía y Cartografía. 2016
 
 
 ## Control de versiones
 
-| Versión    | Descripción     | Autor                                      | Horas |
-|------------|:----------------|--------------------------------------------|:-----:|
-| 2024.06.25 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                | Autor                                      | Horas |
+|------------|:-------------------------------------------|--------------------------------------------|:-----:|
+| 2018.07.22 | Versión inicial contenida en el curso TSIG | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.06.25 | Versión adaptada curso SIGE                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/4)  | [Siguiente :arrow_forward:]() |
+|--------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|---------------|
 
 [^1]: https://geoportal.igac.gov.co
 [^2]: https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica
