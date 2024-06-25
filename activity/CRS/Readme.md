@@ -19,7 +19,7 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 * Lectura - [Forma de la tierra](https://es.wikipedia.org/wiki/Forma_de_la_Tierra)
 
 
-## ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas?[^1]
+## 1. ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas?[^1]
 
 La forma teórica que convencionalmente se utiliza para definir la Tierra es el Geoide qué se define teóricamente a partir del nivel medio de los mares. Debido a su forma irregular y para la definición de una forma geométrica que pueda ser resuelta matemáticamente de forma simple se utilizan los conceptos de esfera y elipsoide
 
@@ -36,7 +36,7 @@ Los mapas representan ubicaciones en la superficie de la Tierra que utilizan cua
 Los datasets SIG incluyen ubicaciones de coordenadas dentro de un sistema de coordenadas cartesianas o globales para registrar ubicaciones y formas geográficas. De este modo, es posible superponer capas de datos SIG sobre la superficie de la Tierra.
 
 
-### Latitud y longitud
+### 1.1. Latitud y longitud
 Referencia: tomado de https://resources.arcgis.com
 
 Un método para describir la posición de una ubicación geográfica en la superficie de la Tierra consiste en utilizar mediciones esféricas de latitud y longitud. Estas son mediciones de los ángulos (en grados) desde el centro de la Tierra hasta un punto en su superficie. Este tipo de sistema de referencia de coordenadas generalmente se denomina sistema de coordenadas geográficas.
@@ -51,7 +51,7 @@ Si bien la longitud y la latitud se pueden ubicar en posiciones exactas de la su
 
 Por encima y por debajo del ecuador, los círculos que definen las líneas paralelas de latitud se vuelven gradualmente más pequeños hasta que se convierten en un solo punto en los Polos Norte y Sur donde convergen los meridianos. Mientras los meridianos convergen hacia los polos, la distancia que representa un grado de longitud disminuye a cero. En el esferoide de Clarke 1866, un grado de longitud en el ecuador equivale a 111,321 kilómetros, mientras que a una latitud de 60° solo equivale a 55,802 kilómetros. Ya que los grados de latitud y longitud no poseen una longitud estándar, no es posible medir distancias o áreas en forma precisa o visualizar datos fácilmente en un mapa plano o una pantalla de ordenador. Utilizar muchas aplicaciones (aunque no todas) de representación cartográfica y análisis SIG a menudo requiere un marco de coordenadas planas más estable, que suministran los sistemas de coordenadas proyectadas. De forma alternativa, algunos de los algoritmos utilizados para los operadores espaciales tienen en cuenta el comportamiento geométrico de los sistemas de coordenadas esféricas (geográficas).
 
-### Proyecciones de mapa a través de coordenadas cartesianas
+### 1.2. Proyecciones de mapa a través de coordenadas cartesianas
 Referencia: tomado de https://resources.arcgis.com
 
 Un sistema de coordenadas proyectadas es cualquier sistema de coordenadas diseñado para una superficie llana, como un mapa impreso o una pantalla de ordenador.
@@ -65,7 +65,7 @@ En la ilustración que se muestra a continuación, la notación (4,3) registra u
 <div align="center"><img src="graph/CartesianCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
-### Sistemas de coordenadas en 3D
+### 1.3. Sistemas de coordenadas en 3D
 Referencia: tomado de https://resources.arcgis.com
 
 Cada vez más sistemas de coordenadas proyectadas utilizan un valor z para medir la elevación por encima o por debajo del nivel del mar.
@@ -75,7 +75,7 @@ En la ilustración que se muestra a continuación, la notación (2,3,4) registra
 <div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
-### Propiedades y distorsión en proyecciones del mapa
+### 1.4. Propiedades y distorsión en proyecciones del mapa
 
 Debido a que la Tierra generalmente es considerada esférica, uno de los desafíos que deben afrontar los cartógrafos o profesionales de SIG es cómo representar al mundo real por medio de un sistema de coordenadas llanas o planas. Para poder comprender el dilema, piense cómo aplanaría una pelota de básquetbol; esto no se puede hacer sin distorsionar su forma o crear áreas de discontinuidad. El proceso de aplanamiento de la Tierra se denomina proyección, de ahí el término proyección de mapas.
 
@@ -94,12 +94,12 @@ Muchas proyecciones de mapas están diseñadas para fines específicos. Se podr�
 Estas propiedades (la proyección de mapa, junto con esferoide y datum) se convierten en parámetros importantes en la definición del sistema de coordenadas para cada dataset SIG y cada mapa. Al registrar descripciones detalladas de estas propiedades para cada dataset SIG, los equipos pueden volver a proyectar y transformar las ubicaciones geográficas de los elementos de dataset aleatoriamente en cualquier sistema de coordenadas adecuado. Por lo tanto, es posible integrar y combinar información de múltiples capas SIG independientemente de sus sistemas de coordenadas. Esta es una función fundamental de los sistemas SIG. La ubicación precisa comprende la base de casi todas las operaciones SIG.
 
 
-## Sistemas de referencia y proyección cartográfica en Colombia
+## 2. Sistemas de referencia y proyección cartográfica en Colombia
 
 Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al **Marco Geocéntrico Nacional de Referencias – MAGNA**, razón por lo cual es necesario regirse por las **“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”** expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
 
 
-### Sistema de referencia horizontal datum MAGNA-SIRGAS, EPSG:4686
+### 2.1. Sistema de referencia horizontal datum MAGNA-SIRGAS, EPSG:4686
 
 Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia MAGNA (Según resolución MAGNA-SIRGAS), cuyos parámetros son:
 
@@ -123,14 +123,14 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 <div align="center"><img src="graph/EPSG4686.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS <br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
 
 
-### Sistema de referencia vertical
+### 2.2. Sistema de referencia vertical
 
 Las alturas estarán referidas al nivel medio del mar definidas por el mareógrafo de Buenaventura.
 
 [Red de Vértices Pasivos y de Control Vertical](https://redgeodesica.igac.gov.co/redes/redes_interna/red_pasiva_nivelacion.html): Es la red compuesta de vértices materializados en campo en monumentaciones tipo mojones, pilastras, incrustaciones y obeliscos. En el caso colombiano, los datos coordenados de la Red Geodésica GNSS Nacional Pasiva, se encuentran vinculados al IRTF 2014, época de referencia 2018.0 y elipsoide GRS-80.
 
 
-### Proyección cartográfica por orígenes, EPSG: 3114 a 3118
+### 2.3. Proyección cartográfica por orígenes, EPSG: 3114 a 3118
 
 La proyección cartográfica, que consiste en la representación de la superficie terrestre sobre un plano, mediante un sistema bidimensional de coordenadas rectangulares, que muestra la correspondencia biunívoca entre los puntos de la superficie terrestre (φ, λ) y sus equivalentes sobre un plano de proyección (N, E), se ha establecido para Colombia usando el sistema Gauss – Krüger, el cual consiste en una representación conforme del elipsoide sobre un plano; es decir, que el ángulo formado entre dos líneas sobre la superficie terrestre se mantiene al ser estas proyectadas sobre un plano. Los meridianos y paralelos se interceptan perpendicularmente, pero no son líneas rectas, sino curvas complejas, excepto el meridiano central (de tangencia) y el paralelo de referencia. La escala de representación permanece constante sobre el meridiano central; pero esta varía al alejarse de aquel, introduciendo deformaciones en función de la longitud (λ). Por tal razón, el desarrollo de la proyección se controla mediante husos, que en el caso de Colombia se extienden al lado y lado del meridiano central.
 
@@ -182,7 +182,7 @@ Visualización de sistemas de proyección usando QGIS<br>
 </div>
 
 
-### Proyección cartográfica origen nacional único Colombia, EPSG:9377 o ESRI: 103599[^2] 
+### 2.4. Proyección cartográfica origen nacional único Colombia, EPSG:9377 o ESRI: 103599[^2] 
 
 El establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, serán los definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya, para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
@@ -214,7 +214,7 @@ Visualización del sistema de proyección usando QGIS<br>
 </div>
 
 
-### Proyección cartesiana
+### 2.5. Proyección cartesiana
 
 El sistema de proyección cartesiana equivale a una representación conforme del elipsoide sobre un plano paralelo al tangente que rozaría al elipsoide en el punto origen (φ0, λ0). La proyección del meridiano que pasa por este punto representa el eje de coordenada Norte. No obstante, los puntos sobre el elipsoide y los equivalentes proyectados sobre el plano no tienen una relación geométrica, Esta es puramente matemática. La proyección cartesiana es utilizada para la elaboración de planos de ciudades (cartografía a escalas mayores que 1: 5000), de allí, existen tantos orígenes de coordenadas cartesianas como ciudades o municipios. El plano de proyección se define sobre la altitud media de la zona poblacional a representar.
 
@@ -225,14 +225,14 @@ Los parámetros de coordenadas geográficas y planas asignadas para el origen de
 <div align="center"><img src="graph/CartesianProjection.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
 
-### Elipsoide GRS80 (Geodetic Reference System, 1980)
+### 2.6. Elipsoide GRS80 (Geodetic Reference System, 1980)
 
 El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Internacional de Geodesia (AIG: International Association of Geodesy) de la Unión Internacional de Geodesia y Geofísica (IUGG: International Union of Geodesy and Geophysics) en 1979. Este es el elipsoide asociado al ITRS (Sistema Internacional de Referencia Terreste), por tanto, a SIRGAS (Sistema de Referencia Geocéntrico para Las Américas) y a MAGNA. En la práctica equivale al elipsoide WGS84 (World Geodetic System, 1984). Sus constantes son: 
 
 <div align="center"><img src="graph/GRS80.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
 
-## Sistema geodésico mundial WGS84 – EPSG: 4326 
+## 3. Sistema geodésico mundial WGS84 – EPSG: 4326 
 
 El WGS84 es un sistema de coordenadas geográficas mundial que permite localizar cualquier punto de la Tierra (sin necesitar otro de referencia) por medio de tres unidades dadas. WGS84 son las siglas en inglés de World Geodetic System 84 que significa Sistema Geodésico Mundial 1984. 
 
