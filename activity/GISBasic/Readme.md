@@ -13,6 +13,7 @@ La gran diferencia que existe entre un aplicativo SIG y otros paquetes de softwa
 * Entender cómo los SIG se utilizan como herramientas para la toma de decisiones a partir de datos espaciales.
 * Estudiar las diferentes aplicaciones de los SIG en entornos corporativos y gubernamentales.
 * Entender sus ventajas y desafíos.
+* Aprender acerca de los tipos de datos y formatos comúnmente utilizados en los SIG.
 
 
 ## Requerimientos
