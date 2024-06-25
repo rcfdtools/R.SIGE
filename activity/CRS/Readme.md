@@ -15,6 +15,7 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 
 * Lectura - [Georreferenciación y sistemas de coordenadas](https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm)
 * Lectura - [¿Qué son las proyecciones cartográficas?](https://resources.arcgis.com/es/help/main/10.1/index.html#//003r00000001000000)
+* Lectura - [Forma de la tierra](https://es.wikipedia.org/wiki/Forma_de_la_Tierra)
 
 
 ## ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas?[^1]
@@ -37,17 +38,16 @@ Las coordenadas determinadas para el desarrollo de proyectos que requieran datos
 
 Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia MAGNA (Según resolución MAGNA-SIRGAS), cuyos parámetros son:
 
-
-| Parámetro                                                                                                                                         | Valor                                            |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
-| Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                      | 4686                                             |
-| Primer meridiano                                                                                                                                  | Greenwich 0,000000000000000000 Grados decimales  |
-| Datum geodésico                                                                                                                                   | MAGNA_SIRGAS                                     |
-| Elipsoide                                                                                                                                         | GRS 1980                                         |
-| Semieje mayor (a), metros                                                                                                                         | 6378137                                          |
-| Semieje menor (b), metros                                                                                                                         | 6356752.314                                      |
-| Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                           | 298.2572201                                      |
-| [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame | 1994, Época 1995.4                               |
+| Parámetro                                                                                                                                          | Valor                                            |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                       | 4686                                             |
+| Primer meridiano                                                                                                                                   | Greenwich 0,000000000000000000 Grados decimales  |
+| [Datum geodésico](https://es.wikipedia.org/wiki/Sistema_de_referencia_geod%C3%A9sico)                                                              | MAGNA_SIRGAS                                     |
+| [Elipsoide](https://es.wikipedia.org/wiki/Elipsoide)                                                                                               | GRS 1980                                         |
+| Semieje mayor (a), metros                                                                                                                          | 6378137                                          |
+| Semieje menor (b), metros                                                                                                                          | 6356752.314                                      |
+| Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                            | 298.2572201                                      |
+| [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame  | 1994, Época 1995.4                               |
 
 > Los valores del semieje mayor y semieje menor corresponden a los parámetros del elipsoide.
 
