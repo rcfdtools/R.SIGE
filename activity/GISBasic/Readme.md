@@ -279,17 +279,17 @@ La información geográfica puede ser consultada, transferida, transformada, sup
 
 ## Control de versiones
 
-| Versión    | Descripción     | Autor                                      | Horas |
-|------------|:----------------|--------------------------------------------|:-----:|
-| 2024.06.24 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                   | Autor                                      | Horas |
+|------------|:--------------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.06.24 | Versión actualizada a partir de los contenidos del curso TSIG | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../TopoBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|---------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
 [^1]: https://www.esri.com/es-es/what-is-gis/history-of-gis 
 [^2]: https://es.wikipedia.org/wiki/Ciencias_de_la_Tierra
