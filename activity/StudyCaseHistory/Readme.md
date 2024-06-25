@@ -59,20 +59,22 @@ En la zona rural se encuentran los siguientes centros poblados
 
 | Centro poblado     | Vereda      |
 |:-------------------|:------------|
-| Aposentos altos    |             |
-| Argélia            |             |
-| Barandillas        | Barandillas |
-| Bolívar 83         |             |
-| Bosques de Silesia |             |
-| El Rudal           |             |
-| La Mariela         |             |
-| Malagón            |             |
-| La Paz             |             |
-| Pasoancho          |             |
-| Portachuelo        |             |
-| San Jorge          |             |
-| San Miguel         |             |
-| Santa Isabel       |             |
+| Argélia            | El Cedro    |
+| Aposentos altos    | El Cedro    |
+| Barandillas        | La Granja   |
+| Bolívar 83         | El Cedro    |
+| Bosques de Silesia | El Cedro    |
+| El Rudal           | Paso Ancho  |
+| La Mariela         | La Granja   |
+| La Paz             | Paso Ancho  |
+| Malagón            | La Granja   |
+| Pasoancho          | Paso Ancho  |
+| Portachuelo        | Portachuelo |
+| San Jorge          | San Jorge   |
+| San Miguel         | La Granja   |
+| Santa Isabel       | La Granja   |
+
+<img src="graph/25899CentroPobladoRural.png" alt="R.SIGE" width="70%" border="0"/><br><sub>Centros poblados (norte hacia arriba).'<br>Elaborado por rcfdtools</sub>
 
 </div>
 
