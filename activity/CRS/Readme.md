@@ -103,9 +103,9 @@ Coordenadas Gauss – Krüger
 
 > Dado el requerimiento propio de la proyección Gauss – Krüger de introducir varios orígenes para la representación cartográfica del territorio colombiano, pueden presentarse puntos diferentes con valores de coordenadas idénticos, de allí debe prestarse especial atención al huso o zona en la que se encuentra el punto de interés, de modo que se eviten incongruencias al obtener coordenadas geográficas a partir de las planas (N, E).
 
-<div align="center"><img src="graph/IGACOrigenesGaussGruger.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Orígenes de la proyección Gauss-Krüger para Colombia <br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
+<div align="center"><img src="graph/IGACOrigenesGaussGruger.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Orígenes de la proyección Gauss-Krüger para Colombia <br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
-<div align="center"><img src="graph/SRSGaussKruger.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
+<div align="center"><img src="graph/SRSGaussKruger.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
 
 
 ###
