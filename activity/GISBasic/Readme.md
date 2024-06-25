@@ -5,15 +5,15 @@ Los Sistemas de Información Geográficos (SIG o GIS), son un conjunto de equipo
 
 <div align="center"><img src="graph/ArcGISPro_GISBasic.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://ecijg.maps.arcgis.com/apps/mapviewer/index.html?layers=ce76f13d1e9d46c5a229d00c37bbb8a3">https://ecijg.maps.arcgis.com</a></sub><br><br></div>
 
-La gran diferencia que existe entre un aplicativo SIG y otros paquetes de software gráfico radica en que el aplicativo SIG es esencialmente una base de datos espacial, lo que otorga una cualidad incomparable en el desarrollo de análisis enfocados a resolver problemas reales que afectan el espacio geográfico estudiado.   
+> La gran diferencia que existe entre un aplicativo SIG y otros paquetes de software gráfico radica en que el aplicativo SIG es esencialmente una base de datos espacial, lo que otorga una cualidad incomparable en el desarrollo de análisis enfocados a resolver problemas reales que afectan el espacio geográfico estudiado.   
 
 
 ## Objetivos
 
-* Entender cómo los SIG se utilizan como herramientas para la toma de decisiones a partir de datos espaciales.
+* Entender cómo los SIG se utilizan como herramienta para la toma de decisiones a partir de datos espaciales.
 * Estudiar las diferentes aplicaciones de los SIG en entornos corporativos y gubernamentales.
 * Entender sus ventajas y desafíos.
-* Aprender acerca de los tipos de datos y formatos comúnmente utilizados en los SIG.
+* Aprender acerca de los tipos de datos y formatos comúnmente utilizados por los SIG.
 
 
 ## Requerimientos
@@ -24,20 +24,20 @@ La gran diferencia que existe entre un aplicativo SIG y otros paquetes de softwa
 
 ## Historia de los SIG como ciencia[^1]
 
-En las últimas cinco décadas, **_los SIG han pasado de ser un concepto a convertirse en una ciencia_**. La espectacular evolución de los SIG de una herramienta rudimentaria a una plataforma moderna y potente para comprender y planear nuestro mundo está marcada por varios hitos clave.
+En las últimas décadas, los **_SIG han pasado de ser un concepto a convertirse en una ciencia_**. La espectacular evolución de los SIG de una herramienta rudimentaria a una plataforma moderna y potente para comprender y planear nuestro mundo está marcada por varios hitos clave.
 
 El campo de los sistemas de información geográfica (GIS) se inició en los años sesenta, cuando surgieron los ordenadores y los primeros conceptos de geografía cuantitativa y computacional. Los primeros trabajos de SIG incluían investigaciones importantes de la comunidad académica. Más tarde, el National Center for Geographic Information and Analysis de los Estados Unidos de América, dirigido por Michael Goodchild, formalizó la investigación sobre temas clave relacionados con la ciencia de información geográfica, como el análisis y la visualización espaciales. Este trabajo impulsó una revolución cuantitativa en el mundo de la ciencia geográfica y sentó las bases para los SIG. 
 
 Línea de tiempo
 
-|  Año  | Evento                                                                                                                                                               |
-|:-----:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1960  | Inicio de los SIG en investigación científica                                                                                                                        |
-| 1963  | Primer SIG implementando el Sistema Canadiense de Información Geográfica utilizado para inventario forestal                                                          |
-| 1965  | Laboratorio SIG Universidad de Harvard y creación del software [SYMAP](https://en.wikipedia.org/wiki/Harvard_Laboratory_for_Computer_Graphics_and_Spatial_Analysis)  |
-| 1969  | Fundación de Environmental Systems Research Institute, Inc. ([Esri](https://www.esri.com/en-us/what-is-gis/history-of-gis))                                          |
-| 1982  | SIG se Vuelve comercial y Esri crea [ARC/INFO](https://en.wikipedia.org/wiki/ArcInfo)                                                                                |
-|  Hoy  | Utilizados en la vida diaria y como herramienta tecnológica se utilizan en múltiples campos de la ingeniería y arquitectura.                                         |
+|  Año  | Evento                                                                                                                                                              |
+|:-----:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1960  | Inicio de los SIG en investigación científica                                                                                                                       |
+| 1963  | Primer SIG implementando el Sistema Canadiense de Información Geográfica utilizado para inventario forestal                                                         |
+| 1965  | Laboratorio SIG Universidad de Harvard y creación del software [SYMAP](https://en.wikipedia.org/wiki/Harvard_Laboratory_for_Computer_Graphics_and_Spatial_Analysis) |
+| 1969  | Fundación de Environmental Systems Research Institute, Inc. - [Esri](https://www.esri.com/en-us/what-is-gis/history-of-gis)                                         |
+| 1982  | SIG se Vuelve comercial y Esri crea [ARC/INFO](https://en.wikipedia.org/wiki/ArcInfo)                                                                               |
+|  Hoy  | Utilizados en la vida diaria y como herramienta tecnológica se utilizan en múltiples campos de la ingeniería y arquitectura.                                        |
 
 
 ## Ciencias y tecnologías relacionadas[^2]
