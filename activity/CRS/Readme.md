@@ -3,8 +3,6 @@ Keywords: `CRS` `SRS` `EPSG-4326` `WGS84`
 
 La georreferenciación es el uso de coordenadas de mapa para asignar una ubicación espacial a entidades cartográficas. Todos los elementos de una capa de mapa tienen una ubicación geográfica y una extensión específicas que permiten situarlos en la superficie de la Tierra o cerca de ella. La capacidad de localizar de manera precisa las entidades geográficas es fundamental tanto en la representación cartográfica como en SIG. Tomado de [ArcGIS Resources](https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm).
 
-Consideraciones generales a tener en cuenta para la georreferenciación de elementos geográficos en el desarrollo de proyectos dentro del límite territorial de Colombia: ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas? Sistemas de referencia y proyección cartográfica en Colombia. Sistema geodésico mundial WGS84 – EPSG 4326.
-
 <div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
@@ -25,9 +23,11 @@ La forma teórica que convencionalmente se utiliza para definir la Tierra es el 
 
 La georreferenciación es el proceso utilizado para determinar la posición de un objeto o un conjunto de datos mediante un sistema de coordenadas referidas a la superficie terrestre. Los sistemas de coordenadas son un conjunto de parámetros que permiten definir inequívocamente la posición de cualquier punto en un espacio geométrico respecto a un punto denominado origen.
 
-<div align="center"><img src="file/graph/Topografia-geoide-y-elipsoide.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
+<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
 el geoide y el elipsoide, necesarias para una cartografía de precisión 
 <br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
+
+
 
 
 ## Referencias
