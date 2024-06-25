@@ -81,25 +81,25 @@ Coordenadas elipsoidales MAGNA – SIRGAS de los orígenes Gauss – Krüger en 
 
 Latitud origen definida para todos los orígenes (N)
 
-| Grados  | Minutos  | Segundos  | Grados decimales  |
-|:--------|:---------|:----------|:------------------|
-| 4       | 35       | 46.3215   | 4.59620041666667  |
+|  Grados  |  Minutos  |  Segundos  | Grados decimales  |
+|:--------:|:---------:|:----------:|:------------------|
+|    4     |    35     |  46.3215   | 4.59620041666667  |
 
 Longitudes por cada orígen (W)
 
-| Origen                 | Grados | Minutos  | Segundos  | Grados decimales  | EPSG |
-|:-----------------------|:-------|:---------|:----------|:------------------|:-----|
-| MAGNA_OrigenEsteEste   | -68    | 4        | 39.0285   | -68.0775079166666 | 3118 |
-| MAGNA_OrigenEste       | -71    | 4        | 39.0285   | -71.0775079166666 | 3117 |
-| MAGNA_OrigenBogota     | -74    | 4        | 39.0285   | -74.0775079166666 | 3116 |
-| MAGNA_OrigenOeste      | -77    | 4        | 39.0285   | -77.0775079166666 | 3115 |
-| MAGNA_OrigenOesteOeste | -80    | 4        | 39.0285   | -80.0775079166666 | 3114 |
+| Origen                 | Grados  |  Minutos  |  Segundos  | Grados decimales  | EPSG  |
+|:-----------------------|:-------:|:---------:|:----------:|:------------------|:-----:|
+| MAGNA_OrigenEsteEste   |   -68   |     4     |  39.0285   | -68.0775079166666 | 3118  |
+| MAGNA_OrigenEste       |   -71   |     4     |  39.0285   | -71.0775079166666 | 3117  |
+| MAGNA_OrigenBogota     |   -74   |     4     |  39.0285   | -74.0775079166666 | 3116  |
+| MAGNA_OrigenOeste      |   -77   |     4     |  39.0285   | -77.0775079166666 | 3115  |
+| MAGNA_OrigenOesteOeste |   -80   |     4     |  39.0285   | -80.0775079166666 | 3114  |
 
 Coordenadas Gauss – Krüger
 
-| Falso norte (m) | False este (m)  |
-|-----------------|-----------------|
-| 1000000         | 1000000         |
+|  Falso norte (m)  |  False este (m)   |
+|:-----------------:|:-----------------:|
+|      1000000      |      1000000      |
 
 </div>
 
@@ -132,15 +132,15 @@ PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID
 
 Latitud y longitud origen en grados decimales
 
-| Latitud (dd) | Longitud (dd) |
-|--------------|---------------|
-| 4            | -73           |
+|  Latitud (dd)  |  Longitud (dd)  |
+|:--------------:|:---------------:|
+|       4        |       -73       |
 
 Coordenadas
 
-| Falso norte (m) | False este (m) |
-|-----------------|----------------|
-| 2000000         | 5000000        |
+|  Falso norte (m)  |  False este (m)  |
+|:-----------------:|:----------------:|
+|      2000000      |     5000000      |
 
 </div>
 
