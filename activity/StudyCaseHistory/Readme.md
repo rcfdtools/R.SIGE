@@ -95,7 +95,7 @@ Información geo-espacial específica del municipio que puede ser consultada en 
 
 ### Colombia en Mapas
 
-<div align="center"><img src="graph/ColombiaEnMapas.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/ColombiaEnMapas.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
 #### Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca
