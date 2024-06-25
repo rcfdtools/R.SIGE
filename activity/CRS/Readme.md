@@ -157,7 +157,7 @@ Al igual que en el sistema de Gauss – Krüger, la proyección cartesiana puede
 
 Los parámetros de coordenadas geográficas y planas asignadas para el origen del sistema son suministrados por el Instituto Geográfico Agustín Codazzi, para cada proyecto, mediante certificado de Origen Cartesiano.
 
-<div align="center"><img src="graph/CartesianProjection.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
+<div align="center"><img src="graph/CartesianProjection.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
 
 
 ### Elipsoide GRS80 (Geodetic Reference System, 1980)
