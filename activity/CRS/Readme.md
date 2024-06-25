@@ -29,7 +29,7 @@ el geoide y el elipsoide, necesarias para una cartografía de precisión
 <br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
 
 
-## Sistemas de referencia y proyección cartográfica en Colombia
+## Sistemas de referencia y proyección cartográfica en Colombia - Suramérica
 
 Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al **Marco Geocéntrico Nacional de Referencias – MAGNA**, razón por lo cual es necesario regirse por las **“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”** expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
 
@@ -40,16 +40,16 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 
 <div align="center">
 
-| Parámetro                                                                                                                                          | Valor                                            |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
-| Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                       | 4686                                             |
-| Primer meridiano                                                                                                                                   | Greenwich 0,000000000000000000 Grados decimales  |
-| [Datum geodésico](https://es.wikipedia.org/wiki/Sistema_de_referencia_geod%C3%A9sico)                                                              | MAGNA_SIRGAS                                     |
-| [Elipsoide](https://es.wikipedia.org/wiki/Elipsoide)                                                                                               | GRS 1980                                         |
-| Semieje mayor (a), metros                                                                                                                          | 6378137                                          |
-| Semieje menor (b), metros                                                                                                                          | 6356752.314                                      |
-| Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                            | 298.2572201                                      |
-| [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame  | 1994, Época 1995.4                               |
+| Parámetro o constante                                                                                                                             | Valor                                            |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)                                                                      | 4686                                             |
+| Primer meridiano                                                                                                                                  | Greenwich 0,000000000000000000 Grados decimales  |
+| [Datum geodésico](https://es.wikipedia.org/wiki/Sistema_de_referencia_geod%C3%A9sico)                                                             | MAGNA_SIRGAS                                     |
+| [Elipsoide](https://es.wikipedia.org/wiki/Elipsoide)                                                                                              | GRS 1980                                         |
+| Semieje mayor (a), metros                                                                                                                         | 6378137                                          |
+| Semieje menor (b), metros                                                                                                                         | 6356752.314                                      |
+| Aplanamiento inverso o recíproco (1/f), f = (a - b) / a                                                                                           | 298.2572201                                      |
+| [ITRF](https://en.wikipedia.org/wiki/International_Terrestrial_Reference_System_and_Frame) - International Terrestrial Reference System and Frame | 1994, Época 1995.4                               |
 
 </div>
 
@@ -127,7 +127,6 @@ El sistema de proyección cartográfico para Colombia, con un único origen, con
 PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]
 ```
 
-
 <div align="center">
 
 Latitud y longitud origen en grados decimales
@@ -150,7 +149,7 @@ Visualización del sistema de proyección usando QGIS<br>
 </div>
 
 
-## Proyección cartesiana
+### Proyección cartesiana
 
 El sistema de proyección cartesiana equivale a una representación conforme del elipsoide sobre un plano paralelo al tangente que rozaría al elipsoide en el punto origen (φ0, λ0). La proyección del meridiano que pasa por este punto representa el eje de coordenada Norte. No obstante, los puntos sobre el elipsoide y los equivalentes proyectados sobre el plano no tienen una relación geométrica, Esta es puramente matemática. La proyección cartesiana es utilizada para la elaboración de planos de ciudades (cartografía a escalas mayores que 1: 5000), de allí, existen tantos orígenes de coordenadas cartesianas como ciudades o municipios. El plano de proyección se define sobre la altitud media de la zona poblacional a representar.
 
@@ -161,8 +160,11 @@ Los parámetros de coordenadas geográficas y planas asignadas para el origen de
 <div align="center"><img src="graph/CartesianProjection.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
 
 
+### Elipsoide GRS80 (Geodetic Reference System, 1980)
 
+El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Internacional de Geodesia (AIG: International Association of Geodesy) de la Unión Internacional de Geodesia y Geofísica (IUGG: International Union of Geodesy and Geophysics) en 1979. Este es el elipsoide asociado al ITRS (Sistema Internacional de Referencia Terreste), por tanto, a SIRGAS (Sistema de Referencia Geocéntrico para Las Américas) y a MAGNA. En la práctica equivale al elipsoide WGS84 (World Geodetic System, 1984). Sus constantes son: 
 
+<div align="center"><img src="graph/GRS80.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
 
 
 ## Referencias
