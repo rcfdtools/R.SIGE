@@ -109,11 +109,11 @@ Coordenadas Gauss – Krüger
 
 <div align="center">
 <br><br>Visualización de sistemas de proyección usando QGIS
-<img src="graph/EPSG3114.png" alt="R.SIGE" width="50%" border="0" />
-<img src="graph/EPSG3115.png" alt="R.SIGE" width="50%" border="0" />
-<img src="graph/EPSG3116.png" alt="R.SIGE" width="50%" border="0" />
-<img src="graph/EPSG3117.png" alt="R.SIGE" width="50%" border="0" />
-<img src="graph/EPSG3118.png" alt="R.SIGE" width="50%" border="0" />
+<img src="graph/EPSG3114.png" alt="R.SIGE" width="60%" border="0" />
+<img src="graph/EPSG3115.png" alt="R.SIGE" width="60%" border="0" />
+<img src="graph/EPSG3116.png" alt="R.SIGE" width="60%" border="0" />
+<img src="graph/EPSG3117.png" alt="R.SIGE" width="60%" border="0" />
+<img src="graph/EPSG3118.png" alt="R.SIGE" width="60%" border="0" />
 </div>
 
 
