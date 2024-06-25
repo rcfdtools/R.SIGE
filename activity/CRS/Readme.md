@@ -69,6 +69,8 @@ Las alturas estarán referidas al nivel medio del mar definidas por el mareógra
 
 La proyección cartográfica, que consiste en la representación de la superficie terrestre sobre un plano, mediante un sistema bidimensional de coordenadas rectangulares, que muestra la correspondencia biunívoca entre los puntos de la superficie terrestre (φ, λ) y sus equivalentes sobre un plano de proyección (N, E), se ha establecido para Colombia usando el sistema Gauss – Krüger, el cual consiste en una representación conforme del elipsoide sobre un plano; es decir, que el ángulo formado entre dos líneas sobre la superficie terrestre se mantiene al ser estas proyectadas sobre un plano. Los meridianos y paralelos se interceptan perpendicularmente, pero no son líneas rectas, sino curvas complejas, excepto el meridiano central (de tangencia) y el paralelo de referencia. La escala de representación permanece constante sobre el meridiano central; pero esta varía al alejarse de aquel, introduciendo deformaciones en función de la longitud (λ). Por tal razón, el desarrollo de la proyección se controla mediante husos, que en el caso de Colombia se extienden al lado y lado del meridiano central.
 
+<div align="center"><img src="graph/SRSGaussKruger.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
+
 El sistema de proyección UTM (Universal Transverse Mercator) corresponde con el de Gauss – Krüger, solo que utiliza un factor de escala equivalente a m= 0,9996 para el meridiano central y husos de 6°.
 
 En Colombia, el origen principal de coordenadas Gauss – Krüger se definió en la pilastra sur del observatorio Astronómico de Bogotá, asignándole los valores N= 1000000 m y E= 1000000 m. Los orígenes complementarios se han establecido a 3º y 6º de longitud al este y oeste de dicho punto. Este sistema se utiliza para la elaboración de cartografía a escalas menores que 1: 1.500.000, donde se proyecta la totalidad del territorio nacional. También se utiliza para cartografía a escalas entre 1: 10.000 y 1: 500.000 de las zonas pobladas comprendidas en la zona de 3º correspondiente.
@@ -105,7 +107,13 @@ Coordenadas Gauss – Krüger
 
 <div align="center"><img src="graph/IGACOrigenesGaussGruger.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Orígenes de la proyección Gauss-Krüger para Colombia <br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
 
-<div align="center"><img src="graph/SRSGaussKruger.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
+<div align="center">
+<img src="graph/EPSG3114.png" alt="R.SIGE" width="50%" border="0" />
+<img src="graph/EPSG3115.png" alt="R.SIGE" width="50%" border="0" />
+<img src="graph/EPSG3116.png" alt="R.SIGE" width="50%" border="0" />
+<img src="graph/EPSG3117.png" alt="R.SIGE" width="50%" border="0" />
+<img src="graph/EPSG3118.png" alt="R.SIGE" width="50%" border="0" />
+</div>
 
 
 ###
