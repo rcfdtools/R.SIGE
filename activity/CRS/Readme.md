@@ -175,7 +175,7 @@ El Sistema Geodésico Mundial es un estándar para su uso en la cartografía, ge
 
 <div align="center">
 Visualización del sistema de proyección usando QGIS<br>
-<img src="graph/EPSG4326.png" alt="R.SIGE" width="480" border="0" />
+<img src="graph/EPSG4326.png" alt="R.SIGE" width="100%" border="0" />
 </div>
 
 El sistema de referencia WGS84 es un sistema global geocéntrico, definido por los parámetros:
@@ -206,7 +206,6 @@ Coeficiente de forma dinámica
 * J2= -484,166 85 x 10-6
 
 > El WGS84 utiliza el meridiano de referencia IERS definido por la Oficina Internacional de l'Heure. Se definió por la compilación de las observaciones de estrellas en diferentes países. La media de estos datos causó un desplazamiento de unos 100 metros al este lejos del Meridiano de Greenwich en Greenwich en el Reino Unido. 
-
 
 
 ## Referencias
