@@ -164,7 +164,6 @@ Los parámetros de coordenadas geográficas y planas asignadas para el origen de
 
 El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Internacional de Geodesia (AIG: International Association of Geodesy) de la Unión Internacional de Geodesia y Geofísica (IUGG: International Union of Geodesy and Geophysics) en 1979. Este es el elipsoide asociado al ITRS (Sistema Internacional de Referencia Terreste), por tanto, a SIRGAS (Sistema de Referencia Geocéntrico para Las Américas) y a MAGNA. En la práctica equivale al elipsoide WGS84 (World Geodetic System, 1984). Sus constantes son: 
 
-<div align="center"><img src="graph/GRS80.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
 
 
 ## Referencias
