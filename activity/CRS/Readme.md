@@ -51,7 +51,7 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 
 > Los valores del semieje mayor y semieje menor corresponden a los parámetros del elipsoide.
 
-<div align="center"><img src="graph/EPSG4685.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS
+<div align="center"><img src="graph/EPSG4686.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS
 <br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
 
 
