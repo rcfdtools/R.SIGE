@@ -13,7 +13,6 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 
 ## Requerimientos
 
-* Lectura - [Georreferenciación y sistemas de coordenadas](https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm)
 * Lectura - [¿Qué son las proyecciones cartográficas?](https://resources.arcgis.com/es/help/main/10.1/index.html#//003r00000001000000)
 * Lectura - [Forma de la tierra](https://es.wikipedia.org/wiki/Forma_de_la_Tierra)
 
@@ -70,7 +69,7 @@ Cada vez más sistemas de coordenadas proyectadas utilizan un valor z para medir
 
 En la ilustración que se muestra a continuación, la notación (2,3,4) registra un punto que está dos unidades por encima de x y tres unidades por encima de y desde el origen, y cuya elevación está cuatro unidades por encima de la superficie de la Tierra (4 metros por encima del nivel del mar).
 
-<div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
 
