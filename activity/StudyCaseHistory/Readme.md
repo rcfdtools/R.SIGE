@@ -29,8 +29,10 @@ De fundación prehispánica, sus pobladores se asentaban en el sector hoy conoci
 
 La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordillera Oriental, en el altiplano Cundiboyacense. El casco urbano se encuentra a una altitud de 2652 m.s.n.m., lo que la convierte en la tercera ciudad con mayor altitud en Colombia con más de 100.000 habitantes de acuerdo a la lista de las grandes ciudades más altas del mundo. Zipaquirá posee una extensión aproximada de 197 km² así: 8 km² de la zona urbana y 189 km² de la zona rural. El territorio donde se asienta la ciudad fue en el pasado un gran campo lleno de vegetación; algunos sectores de la ciudad también están construidos sobre unos viejos fosos de agua-sal, en los que la sal vigua era procesada para su consumo. Su río principal más extenso es el río Bogotá, pasando por el borde oriental de Zipaquirá en límites con Tocancipá y Sopó que desde hace varias décadas presenta altos niveles de contaminación, finalizando en Girardot. La zona en donde está ubicada la ciudad corresponde a la placa tectónica sudamericana, por lo que presenta una importante actividad sísmica.
 
-* Código [DANE](https://www.dane.gov.co/) departamento: 25
-* Código DANE Municipio: 817
+| Localización                 | Código [DANE](https://www.dane.gov.co/) |
+|------------------------------|:---------------------------------------:|
+| Departamento de Cundinamarca |                   25                    |
+| Municipio de Zipaquirá       |                   899                   |
 
 <div align="center">
 
@@ -57,22 +59,22 @@ La zona rural del municipio está compuesta por diecisiete (17) veredas
 
 En la zona rural se encuentran los siguientes centros poblados
 
-| Centro poblado     | Vereda      |
-|:-------------------|:------------|
-| Argélia            | El Cedro    |
-| Aposentos altos    | El Cedro    |
-| Barandillas        | La Granja   |
-| Bolívar 83         | El Cedro    |
-| Bosques de Silesia | El Cedro    |
-| El Rudal           | Paso Ancho  |
-| La Mariela         | La Granja   |
-| La Paz             | Paso Ancho  |
-| Malagón            | La Granja   |
-| Pasoancho          | Paso Ancho  |
-| Portachuelo        | Portachuelo |
-| San Jorge          | San Jorge   |
-| San Miguel         | La Granja   |
-| Santa Isabel       | La Granja   |
+| Centro poblado Rural - CPR | Vereda      |
+|:---------------------------|:------------|
+| Argélia                    | El Cedro    |
+| Aposentos altos            | El Cedro    |
+| Barandillas                | La Granja   |
+| Bolívar 83                 | El Cedro    |
+| Bosques de Silesia         | El Cedro    |
+| El Rudal                   | Paso Ancho  |
+| La Mariela                 | La Granja   |
+| La Paz                     | Paso Ancho  |
+| Malagón                    | La Granja   |
+| Pasoancho                  | Paso Ancho  |
+| Portachuelo                | Portachuelo |
+| San Jorge                  | San Jorge   |
+| San Miguel                 | La Granja   |
+| Santa Isabel               | La Granja   |
 
 <img src="graph/25899CentroPobladoRural.png" alt="R.SIGE" width="90%" border="0"/><br><sub>Centros poblados (norte hacia arriba)<br>En la ilustración se han excluido las veredas: Empalizado, Páramo de Guerrero, San Isidro, Pantano Redondo y Río Frío.<br>Elaborado por rcfdtools</sub>
 
