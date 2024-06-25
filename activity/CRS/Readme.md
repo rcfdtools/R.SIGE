@@ -175,7 +175,7 @@ El Sistema Geodésico Mundial es un estándar para su uso en la cartografía, ge
 
 <div align="center">
 Visualización del sistema de proyección usando QGIS<br>
-<img src="graph/EPSG4326.png" alt="R.SIGE" width="100%" border="0" />
+<img src="graph/EPSG4326.png" alt="R.SIGE" width="100%" border="0" /><br>
 </div>
 
 El sistema de referencia WGS84 es un sistema global geocéntrico, definido por los parámetros:
@@ -190,9 +190,9 @@ Sistemas de ejes coordenados:
 
 Elipsoide WGS84: elipsoide de revolución definido por los parámetros:
 
-* Semieje mayor (a) = 6 378 137 m
-* Semieje menor (b) = 6 356 752.31424 m
-* Achatamiento f: 1/298,257223563
+* Semieje mayor (a) = 6378137 m
+* Semieje menor (b) = 6356752.31424 m
+* Achatamiento f: 1 / 298,257223563
 
 Constante de Gravitación Terrestre
 * GM = 3,986004418x1014 m³/s²
