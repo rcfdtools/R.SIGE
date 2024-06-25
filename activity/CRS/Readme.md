@@ -59,6 +59,44 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 <br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
 
 
+### Sistema de referencia vertical
+
+Las alturas estarán referidas al nivel medio del mar definidas por el mareógrafo de Buenaventura.
+
+[Red de Vértices Pasivos y de Control Vertical](https://redgeodesica.igac.gov.co/redes/redes_interna/red_pasiva_nivelacion.html): Es la red compuesta de vértices materializados en campo en monumentaciones tipo mojones, pilastras, incrustaciones y obeliscos. En el caso colombiano, los datos coordenados de la Red Geodésica GNSS Nacional Pasiva, se encuentran vinculados al IRTF 2014, época de referencia 2018.0 y elipsoide GRS-80.
+
+
+### Proyección cartográfica por orígenes
+
+La proyección cartográfica, que consiste en la representación de la superficie terrestre sobre un plano, mediante un sistema bidimensional de coordenadas rectangulares, que muestra la correspondencia biunívoca entre los puntos de la superficie terrestre (φ, λ) y sus equivalentes sobre un plano de proyección (N, E), se ha establecido para Colombia usando el sistema Gauss – Krüger, el cual consiste en una representación conforme del elipsoide sobre un plano; es decir, que el ángulo formado entre dos líneas sobre la superficie terrestre se mantiene al ser estas proyectadas sobre un plano. Los meridianos y paralelos se interceptan perpendicularmente, pero no son líneas rectas, sino curvas complejas, excepto el meridiano central (de tangencia) y el paralelo de referencia. La escala de representación permanece constante sobre el meridiano central; pero esta varía al alejarse de aquel, introduciendo deformaciones en función de la longitud (λ). Por tal razón, el desarrollo de la proyección se controla mediante husos, que en el caso de Colombia se extienden al lado y lado del meridiano central.
+
+El sistema de proyección UTM (Universal Transverse Mercator) corresponde con el de Gauss – Krüger, solo que utiliza un factor de escala equivalente a m= 0,9996 para el meridiano central y husos de 6°.
+
+En Colombia, el origen principal de coordenadas Gauss – Krüger se definió en la pilastra sur del observatorio Astronómico de Bogotá, asignándole los valores N= 1000000 m y E= 1000000 m. Los orígenes complementarios se han establecido a 3º y 6º de longitud al este y oeste de dicho punto. Este sistema se utiliza para la elaboración de cartografía a escalas menores que 1: 1.500.000, donde se proyecta la totalidad del territorio nacional. También se utiliza para cartografía a escalas entre 1: 10.000 y 1: 500.000 de las zonas pobladas comprendidas en la zona de 3º correspondiente.
+
+#### Coordenadas MAGNA – SIRGAS de los orígenes Gauss – Krüger en Colombia
+
+<div align="center">
+
+Latitud origen definida para todos los orígenes 
+
+| Grados  | Minutos  | Segundos  | Grados decimales  |
+|:--------|:---------|:----------|:------------------|
+| 4       | 35       | 46.3215   | 4.59620041666667  |
+
+Longitudes por cada orígen
+
+| Origen                 | Grados  | Minutos  | Segundos  | Grados decimales  | EPSG |
+|:-----------------------|:--------|:---------|:----------|:------------------|:-----|
+| MAGNA_OrigenEsteEste   | 68      | 4        | 39.0285   | -68.0775079166666 | 3118 |
+| MAGNA_OrigenEste       | 71      | 4        | 39.0285   | -71.0775079166666 | 3117 |
+| MAGNA_OrigenBogota     | 74      | 4        | 39.0285   | -74.0775079166666 | 3116 |
+| MAGNA_OrigenOeste      | 77      | 4        | 39.0285   | -77.0775079166666 | 3115 |
+| MAGNA_OrigenOesteOeste | 80      | 4        | 39.0285   | -80.0775079166666 | 3114 |
+
+</div>
+
+
 ## Referencias
 
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
