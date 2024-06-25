@@ -62,6 +62,7 @@ En la ilustración que se muestra a continuación, la notación (4,3) registra u
 
 <div align="center"><img src="graph/CartesianCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
+
 ### Sistemas de coordenadas en 3D
 Referencia: tomado de https://resources.arcgis.com
 
@@ -72,8 +73,26 @@ En la ilustración que se muestra a continuación, la notación (2,3,4) registra
 <div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
+### Propiedades y distorsión en proyecciones del mapa
 
-## Sistemas de referencia y proyección cartográfica en Colombia - Suramérica
+Debido a que la Tierra generalmente es considerada esférica, uno de los desafíos que deben afrontar los cartógrafos o profesionales de SIG es cómo representar al mundo real por medio de un sistema de coordenadas llanas o planas. Para poder comprender el dilema, piense cómo aplanaría una pelota de básquetbol; esto no se puede hacer sin distorsionar su forma o crear áreas de discontinuidad. El proceso de aplanamiento de la Tierra se denomina proyección, de ahí el término proyección de mapas.
+
+Un sistema de coordenadas proyectadas se define sobre una superficie plana de dos dimensiones. Las coordenadas proyectadas se pueden definir en 2D (x,y) o 3D (x,y,z), donde las mediciones x,y representan la ubicación en la superficie de la Tierra y z representaría la altura por encima o por debajo del nivel del mar.
+
+<div align="center"><img src="graph/ProjectionFamilies.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+
+<div align="center"><img src="graph/ProjectionDistortion.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+
+A diferencia de un sistema de coordenadas geográficas, un sistema de coordenadas proyectadas posee longitudes, ángulos y áreas constantes en las dos dimensiones. Sin embargo, todas las proyecciones de mapa que representan la superficie de la Tierra como un mapa plano crean distorsiones en algún aspecto de la distancia, el área, la forma o la dirección.
+
+Como usuarios SIG, debemos lidiar con estas limitaciones utilizando proyecciones de mapa que se adaptan al uso previsto, su ubicación geográfica específica y la extensión deseada. El software SIG también puede transformar la información entre sistemas de coordenadas distintos para admitir la integración de datasets guardados en sistemas de coordenadas que difieren y para respaldar diversos flujos de trabajo fundamentales.
+
+Muchas proyecciones de mapas están diseñadas para fines específicos. Se podría usar una proyección de mapa para preservar la forma y otra para preservar el área (proyecciones conformes frente a proyecciones de áreas equivalentes).
+
+Estas propiedades (la proyección de mapa, junto con esferoide y datum) se convierten en parámetros importantes en la definición del sistema de coordenadas para cada dataset SIG y cada mapa. Al registrar descripciones detalladas de estas propiedades para cada dataset SIG, los equipos pueden volver a proyectar y transformar las ubicaciones geográficas de los elementos de dataset aleatoriamente en cualquier sistema de coordenadas adecuado. Por lo tanto, es posible integrar y combinar información de múltiples capas SIG independientemente de sus sistemas de coordenadas. Esta es una función fundamental de los sistemas SIG. La ubicación precisa comprende la base de casi todas las operaciones SIG.
+
+
+## Sistemas de referencia y proyección cartográfica en Colombia
 
 Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al **Marco Geocéntrico Nacional de Referencias – MAGNA**, razón por lo cual es necesario regirse por las **“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”** expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
 
