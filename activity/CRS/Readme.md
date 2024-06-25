@@ -74,9 +74,9 @@ El sistema de proyección UTM (Universal Transverse Mercator) corresponde con el
 
 En Colombia, el origen principal de coordenadas Gauss – Krüger se definió en la pilastra sur del observatorio Astronómico de Bogotá, asignándole los valores N= 1000000 m y E= 1000000 m. Los orígenes complementarios se han establecido a 3º y 6º de longitud al este y oeste de dicho punto. Este sistema se utiliza para la elaboración de cartografía a escalas menores que 1: 1.500.000, donde se proyecta la totalidad del territorio nacional. También se utiliza para cartografía a escalas entre 1: 10.000 y 1: 500.000 de las zonas pobladas comprendidas en la zona de 3º correspondiente.
 
-#### Coordenadas MAGNA – SIRGAS de los orígenes Gauss – Krüger en Colombia
-
 <div align="center">
+
+Coordenadas MAGNA – SIRGAS de los orígenes Gauss – Krüger en Colombia
 
 Latitud origen definida para todos los orígenes 
 
