@@ -301,8 +301,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../GISBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/4)  | [Siguiente :arrow_forward:]() |
-|--------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../GISBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/4)  | [Siguiente :arrow_forward:](../StudyCaseHistory/Readme.md) |
+|--------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------|
 
 [^1]: https://geoportal.igac.gov.co y https://resources.arcgis.com/
 [^2]: https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica
