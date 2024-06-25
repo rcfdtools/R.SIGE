@@ -8,3 +8,4 @@
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
 * https://www.sirgas.org/fileadmin/docs/Boletines/Bol09/07_Martinez_Colombia.pdf
 * http://www.publicacions.ub.edu/liberweb/astronomia_esferica/material/version_pdf/Tomo%201/2.1%20Elipsoide%20terrestre.pdf
+* https://www.ant.gov.co/wp-content/uploads/2020/10/GINFO_I_006_REALIZACION_DE_LOS_LEVANTAMIENTOS_TOPOGRAFICOS_POR_METODOS_DIRECTOSV2.pdf

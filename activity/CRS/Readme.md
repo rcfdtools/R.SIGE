@@ -99,7 +99,7 @@ Estas propiedades (la proyección de mapa, junto con esferoide y datum) se convi
 
 ## 2. Sistemas de referencia y proyección cartográfica en Colombia
 
-Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al **Marco Geocéntrico Nacional de Referencias – MAGNA**, razón por lo cual es necesario regirse por las **“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”** expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
+Las coordenadas determinadas para el desarrollo de proyectos que requieran datos espaciales deben estar ligadas al _Marco Geocéntrico Nacional de Referencias – MAGNA_, razón por lo cual es necesario regirse por las _“Técnicas de georreferenciación para levantamientos topográficos ligados a MAGNA”_ expedidos por el Instituto Geográfico Agustín Codazzi – IGAC.
 
 
 ### 2.1. Sistema de referencia horizontal datum MAGNA-SIRGAS, EPSG:4686
