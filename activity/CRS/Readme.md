@@ -191,7 +191,7 @@ El establecimiento de las condiciones técnicas mínimas que deben tener los pro
 
 El sistema de proyección cartográfico para Colombia, con un único origen, consiste en una proyección cartográfica [Transversa Mercator Secante](https://en.wikipedia.org/wiki/Transverse_Mercator_projection), cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
 
-<div align="center"><img src="graph/Comparison_of_cylindrical_projections.svg" alt="R.SIGE" width="40%" border="0" /><sub><br> Proyección sobre una superficie cilíndrica con diferentes paralelos<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Comparison_of_cylindrical_projections.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Comparison_of_cylindrical_projections.svg" alt="R.SIGE" width="30%" border="0" /><sub><br> Proyección sobre una superficie cilíndrica con diferentes paralelos<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Comparison_of_cylindrical_projections.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 ```
 PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]
