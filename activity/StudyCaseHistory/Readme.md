@@ -3,7 +3,7 @@ Keywords: `History` `StudyCase`
 
 Zipaquirá es un municipio de Colombia ubicado en el departamento de Cundinamarca, en la provincia de Sabana Centro, de la que es capital. Es el segundo municipio más grande y poblado de la provincia. Es uno de los centros de explotación de sal más importantes del país, razón por la que también es conocida como la Capital Salinera de Colombia.
 
-<div align="center"><img src="graph/StudyCaseHistory.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Áreas homogéneas de tierra - Municipio de Zipaquirá<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/StudyCaseHistory.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Áreas homogéneas de tierra - Municipio de Zipaquirá (norte hacia arriba)<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 > Reseña histórica es una expresión que se utiliza para explicar o repasar los hechos del pasado reciente o lejano, de un asunto determinado.
 
@@ -53,7 +53,7 @@ La zona rural del municipio está compuesta por diecisiete (17) veredas
 | San Isidro          | 2589900000011  |
 | San Jorge           | 2589900000014  |
 
-<img src="graph/25899Vereda.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Veredas DANE<br>Elaborado por rcfdtools</sub>
+<img src="graph/25899Vereda.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Veredas DANE (norte hacia arriba)<br>Expresión de rotulado en QGIS: QGIS: "nombre" ||'\n'|| 'A: ' ||Round("Akm2", 2) || 'km²'<br>Elaborado por rcfdtools</sub>
 
 En la zona rural se encuentran los siguientes centros poblados
 
