@@ -52,22 +52,22 @@ La zona rural del municipio está compuesta por diecisiete (17) veredas
 
 En la zona rural se encuentran los siguientes centros poblados
 
-| Centro poblado     | Vereda | Plan Parcial |
-|:-------------------|:-------|--------------|
-| Aposentos altos    |        |              |
-| Argélia            |        |              |
-| Barandillas        |        |              |
-| Bolívar 83         |        |              |
-| Bosques de Silesia |        |              |
-| El Rudal           |        |              |
-| La Mariela         |        |              |
-| Malagón            |        |              |
-| La Paz             |        |              |
-| Pasoancho          |        |              |
-| Portachuelo        |        |              |
-| San Jorge          |        |              |
-| San Miguel         |        |              |
-| Santa Isabel       |        |              |
+| Centro poblado     | Vereda |
+|:-------------------|:-------|
+| Aposentos altos    |        |
+| Argélia            |        |
+| Barandillas        |        |
+| Bolívar 83         |        |
+| Bosques de Silesia |        |
+| El Rudal           |        |
+| La Mariela         |        |
+| Malagón            |        |
+| La Paz             |        |
+| Pasoancho          |        |
+| Portachuelo        |        |
+| San Jorge          |        |
+| San Miguel         |        |
+| Santa Isabel       |        |
 
 </div>
 
