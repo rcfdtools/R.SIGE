@@ -36,7 +36,6 @@ Los datasets SIG incluyen ubicaciones de coordenadas dentro de un sistema de coo
 
 
 ### Latitud y longitud
-
 Referencia: tomado de https://resources.arcgis.com
 
 Un método para describir la posición de una ubicación geográfica en la superficie de la Tierra consiste en utilizar mediciones esféricas de latitud y longitud. Estas son mediciones de los ángulos (en grados) desde el centro de la Tierra hasta un punto en su superficie. Este tipo de sistema de referencia de coordenadas generalmente se denomina sistema de coordenadas geográficas.
@@ -52,6 +51,7 @@ Si bien la longitud y la latitud se pueden ubicar en posiciones exactas de la su
 Por encima y por debajo del ecuador, los círculos que definen las líneas paralelas de latitud se vuelven gradualmente más pequeños hasta que se convierten en un solo punto en los Polos Norte y Sur donde convergen los meridianos. Mientras los meridianos convergen hacia los polos, la distancia que representa un grado de longitud disminuye a cero. En el esferoide de Clarke 1866, un grado de longitud en el ecuador equivale a 111,321 kilómetros, mientras que a una latitud de 60° solo equivale a 55,802 kilómetros. Ya que los grados de latitud y longitud no poseen una longitud estándar, no es posible medir distancias o áreas en forma precisa o visualizar datos fácilmente en un mapa plano o una pantalla de ordenador. Utilizar muchas aplicaciones (aunque no todas) de representación cartográfica y análisis SIG a menudo requiere un marco de coordenadas planas más estable, que suministran los sistemas de coordenadas proyectadas. De forma alternativa, algunos de los algoritmos utilizados para los operadores espaciales tienen en cuenta el comportamiento geométrico de los sistemas de coordenadas esféricas (geográficas).
 
 ### Proyecciones de mapa a través de coordenadas cartesianas
+Referencia: tomado de https://resources.arcgis.com
 
 Un sistema de coordenadas proyectadas es cualquier sistema de coordenadas diseñado para una superficie llana, como un mapa impreso o una pantalla de ordenador.
 
@@ -62,6 +62,16 @@ El sistema de coordenadas cartesianas utiliza dos ejes: uno horizontal (x), que 
 En la ilustración que se muestra a continuación, la notación (4,3) registra un punto que se encuentra cuatro unidades por encima en x y tres unidades por encima en y desde el origen.
 
 <div align="center"><img src="graph/CartesianCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+
+### Sistemas de coordenadas en 3D
+Referencia: tomado de https://resources.arcgis.com
+
+Cada vez más sistemas de coordenadas proyectadas utilizan un valor z para medir la elevación por encima o por debajo del nivel del mar.
+
+En la ilustración que se muestra a continuación, la notación (2,3,4) registra un punto que está dos unidades por encima de x y tres unidades por encima de y desde el origen, y cuya elevación está cuatro unidades por encima de la superficie de la Tierra (4 metros por encima del nivel del mar).
+
+<div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+
 
 
 ## Sistemas de referencia y proyección cartográfica en Colombia - Suramérica
