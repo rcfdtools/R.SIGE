@@ -246,11 +246,13 @@ El WGS84 es un sistema de coordenadas geográficas mundial que permite localizar
 <div align="center">
 Visualización del sistema de proyección usando QGIS<br>
 <img src="graph/EPSG4326.png" alt="R.SIGE" width="100%" border="0" /><br>
-</div>
+</div><br>
 
 El sistema de referencia WGS84 es un sistema global geocéntrico, definido por los parámetros:
 
-Origen: Centro de masa de la Tierra
+Origen
+
+* Centro de masa de la Tierra
 
 Sistemas de ejes coordenados:
 
