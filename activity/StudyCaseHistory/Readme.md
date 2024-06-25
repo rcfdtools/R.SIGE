@@ -120,7 +120,7 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 <div align="center"><img src="graph/IGAC_CUT.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Capacidad de Uso. Levantamiento detallado de Suelos en las áreas planas de los municipios de Cogua, El Rosal, Nemocón, Subachoque, Suesca, Zipacón y Zipaquirá del departamento de Cundinamarca a escala 1:10.000<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
-4.2. Mapas disponibles en Google Maps
+### 4.2. Mapas disponibles en Google Maps
 
 <div align="center">
 <img src="graph/GoogleMaps_Basic.png" alt="R.SIGE" width="480" border="0" />
