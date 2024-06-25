@@ -1,14 +1,14 @@
 # Georreferenciación
 Keywords: `CRS` `SRS` `EPSG-4326` `WGS84`
 
-La georreferenciación es el uso de coordenadas de mapa para asignar una ubicación espacial a entidades cartográficas. Todos los elementos de una capa de mapa tienen una ubicación geográfica y una extensión específicas que permiten situarlos en la superficie de la Tierra o cerca de ella. La capacidad de localizar de manera precisa las entidades geográficas es fundamental tanto en la representación cartográfica como en SIG. <sub>Tomado de [ArcGIS Resources](https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm)</sub>.
+La georreferenciación es el uso de coordenadas de mapa para asignar una ubicación espacial a entidades cartográficas. Todos los elementos de una capa de mapa tienen una ubicación geográfica y una extensión específicas que permiten situarlos en la superficie de la Tierra o cerca de ella. La capacidad de localizar de manera precisa las entidades geográficas es fundamental tanto en la representación cartográfica como en SIG. <sub>Tomado de [ArcGIS Resources](https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm).</sub>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="55%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Objetivos
 
-* Entender conceptos generales de georeferenciación
+* Entender conceptos generales de georreferenciación
 * Estudiar los sistemas de proyección utilizados en Colombia
 * Entender como funciona el sistema geográfico mundial WGS84
 
@@ -25,7 +25,7 @@ La forma teórica que convencionalmente se utiliza para definir la Tierra es el 
 
 La georreferenciación es el proceso utilizado para determinar la posición de un objeto o un conjunto de datos mediante un sistema de coordenadas referidas a la superficie terrestre. Los sistemas de coordenadas son un conjunto de parámetros que permiten definir inequívocamente la posición de cualquier punto en un espacio geométrico respecto a un punto denominado origen.
 
-<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.jpg" alt="R.SIGE" width="30%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
+<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
 el geoide y el elipsoide, necesarias para una cartografía de precisión 
 <br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
 
