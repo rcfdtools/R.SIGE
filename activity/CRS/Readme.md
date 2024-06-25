@@ -55,8 +55,7 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 
 > Los valores del semieje mayor y semieje menor corresponden a los parámetros del elipsoide.
 
-<div align="center"><img src="graph/EPSG4686.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS
-<br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
+<div align="center"><img src="graph/EPSG4686.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Visualización de sistema de proyección usando QGIS <br>Tomado de: <a href="https://qgis.org/">https://qgis.org/</a></sub><br><br></div>
 
 
 ### Sistema de referencia vertical
@@ -76,25 +75,40 @@ En Colombia, el origen principal de coordenadas Gauss – Krüger se definió en
 
 <div align="center">
 
-Coordenadas MAGNA – SIRGAS de los orígenes Gauss – Krüger en Colombia
+Coordenadas elipsoidales MAGNA – SIRGAS de los orígenes Gauss – Krüger en Colombia
 
-Latitud origen definida para todos los orígenes 
+Latitud origen definida para todos los orígenes (N)
 
 | Grados  | Minutos  | Segundos  | Grados decimales  |
 |:--------|:---------|:----------|:------------------|
 | 4       | 35       | 46.3215   | 4.59620041666667  |
 
-Longitudes por cada orígen
+Longitudes por cada orígen (W)
 
-| Origen                 | Grados  | Minutos  | Segundos  | Grados decimales  | EPSG |
-|:-----------------------|:--------|:---------|:----------|:------------------|:-----|
-| MAGNA_OrigenEsteEste   | 68      | 4        | 39.0285   | -68.0775079166666 | 3118 |
-| MAGNA_OrigenEste       | 71      | 4        | 39.0285   | -71.0775079166666 | 3117 |
-| MAGNA_OrigenBogota     | 74      | 4        | 39.0285   | -74.0775079166666 | 3116 |
-| MAGNA_OrigenOeste      | 77      | 4        | 39.0285   | -77.0775079166666 | 3115 |
-| MAGNA_OrigenOesteOeste | 80      | 4        | 39.0285   | -80.0775079166666 | 3114 |
+| Origen                 | Grados | Minutos  | Segundos  | Grados decimales  | EPSG |
+|:-----------------------|:-------|:---------|:----------|:------------------|:-----|
+| MAGNA_OrigenEsteEste   | -68    | 4        | 39.0285   | -68.0775079166666 | 3118 |
+| MAGNA_OrigenEste       | -71    | 4        | 39.0285   | -71.0775079166666 | 3117 |
+| MAGNA_OrigenBogota     | -74    | 4        | 39.0285   | -74.0775079166666 | 3116 |
+| MAGNA_OrigenOeste      | -77    | 4        | 39.0285   | -77.0775079166666 | 3115 |
+| MAGNA_OrigenOesteOeste | -80    | 4        | 39.0285   | -80.0775079166666 | 3114 |
+
+Coordenadas Gauss – Krüger
+
+| Falso norte (m) | False este (m)  |
+|-----------------|-----------------|
+| 1000000         | 1000000         |
 
 </div>
+
+> Dado el requerimiento propio de la proyección Gauss – Krüger de introducir varios orígenes para la representación cartográfica del territorio colombiano, pueden presentarse puntos diferentes con valores de coordenadas idénticos, de allí debe prestarse especial atención al huso o zona en la que se encuentra el punto de interés, de modo que se eviten incongruencias al obtener coordenadas geográficas a partir de las planas (N, E).
+
+<div align="center"><img src="graph/IGACOrigenesGaussGruger.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Orígenes de la proyección Gauss-Krüger para Colombia <br>Tomado de: <a href="https://www.igac.gov.co/">https://www.igac.gov.co/</a></sub><br><br></div>
+
+<div align="center"><img src="graph/SRSGaussKruger.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
+
+
+###
 
 
 ## Referencias
