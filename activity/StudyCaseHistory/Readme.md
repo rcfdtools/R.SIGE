@@ -53,7 +53,7 @@ La zona rural del municipio está compuesta por diecisiete (17) veredas
 | San Isidro          | 2589900000011  |
 | San Jorge           | 2589900000014  |
 
-<img src="graph/25899Vereda.png" alt="R.SIGE" width="50%" border="0"/><br><sub>Veredas DANE (norte hacia arriba)<br>Expresión de rotulado en QGIS: QGIS: "nombre" ||'\n'|| 'A: ' ||Round("Akm2", 2) || 'km²'<br>Elaborado por rcfdtools</sub>
+<img src="graph/25899Vereda.png" alt="R.SIGE" width="70%" border="0"/><br><sub>Veredas DANE (norte hacia arriba)<br>Expresión de rotulado en QGIS: QGIS: "nombre" ||'\n'|| 'A: ' ||Round("Akm2", 2) || 'km²'<br>Elaborado por rcfdtools</sub>
 
 En la zona rural se encuentran los siguientes centros poblados
 
