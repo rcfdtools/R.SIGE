@@ -81,7 +81,7 @@ Un sistema de coordenadas proyectadas se define sobre una superficie plana de do
 
 <div align="center"><img src="graph/ProjectionFamilies.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
-<div align="center"><img src="graph/ProjectionDistortion.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/ProjectionDistortion.png" alt="R.SIGE" width="35%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 A diferencia de un sistema de coordenadas geográficas, un sistema de coordenadas proyectadas posee longitudes, ángulos y áreas constantes en las dos dimensiones. Sin embargo, todas las proyecciones de mapa que representan la superficie de la Tierra como un mapa plano crean distorsiones en algún aspecto de la distancia, el área, la forma o la dirección.
 
