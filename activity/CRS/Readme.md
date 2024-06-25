@@ -23,11 +23,9 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 
 La forma que convencionalmente se utiliza para definir la Tierra es el Geoide, qué se define teóricamente a partir del nivel medio de los mares. Debido a su forma irregular y para la definición de una forma geométrica que pueda ser resuelta matemáticamente de forma simple, se utilizan los conceptos de esfera y elipsoide.
 
-La georreferenciación es el proceso utilizado para determinar la posición de un objeto o un conjunto de datos mediante un sistema de coordenadas referidas a la superficie terrestre. Los sistemas de coordenadas son un conjunto de parámetros que permiten definir inequívocamente la posición de cualquier punto en un espacio geométrico respecto a un punto denominado origen.
+<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, el geoide y el elipsoide, necesarias para una cartografía de precisión<br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
 
-<div align="center"><img src="graph/Topografia-geoide-y-elipsoide.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Relaciones geométricas entre la superficie topográfica de la Tierra, 
-el geoide y el elipsoide, necesarias para una cartografía de precisión 
-<br>Tomado de: <a href="http://www.albireotopografia.es/topografia-basica-iii-la-forma-de-la-tierra/">www.albireotopografia.es</a></sub><br><br></div>
+La georreferenciación es el proceso utilizado para determinar la posición de un objeto o un conjunto de datos mediante un sistema de coordenadas referidas a la superficie terrestre. Los sistemas de coordenadas son un conjunto de parámetros que permiten definir inequívocamente la posición de cualquier punto en un espacio geométrico respecto a un punto denominado origen.
 
 La correcta descripción de la ubicación y la forma de entidades requiere un marco para definir ubicaciones del mundo real. Un sistema de coordenadas geográficas se utiliza para asignar ubicaciones geográficas a los objetos. Un sistema de coordenadas de latitud-longitud global es uno de esos marcos. Otro marco es un sistema de coordenadas cartesianas o planas que surge a partir del marco global.
 
