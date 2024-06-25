@@ -32,7 +32,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 1. xxx
 
-![R.SIGE](Screenshot/IGACGDB100k.png)
+<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+
 
 En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
 
