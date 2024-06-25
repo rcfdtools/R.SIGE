@@ -9,3 +9,5 @@
 * https://www.sirgas.org/fileadmin/docs/Boletines/Bol09/07_Martinez_Colombia.pdf
 * http://www.publicacions.ub.edu/liberweb/astronomia_esferica/material/version_pdf/Tomo%201/2.1%20Elipsoide%20terrestre.pdf
 * https://www.ant.gov.co/wp-content/uploads/2020/10/GINFO_I_006_REALIZACION_DE_LOS_LEVANTAMIENTOS_TOPOGRAFICOS_POR_METODOS_DIRECTOSV2.pdf
+* https://www.cvc.gov.co/sites/default/files/2021-07/GU.0130.03%20Lineamientos%20para%20el%20levantamiento%20info%20cartografica%20generada%20en%20la%20CVC%20V02.pdf
+* https://repository.udistrital.edu.co/bitstream/handle/11349/3248/ArenasAcostaJenifferAlexandraCardozoRojasJuanSebastian2016.pdf
