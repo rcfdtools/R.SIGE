@@ -97,7 +97,7 @@ Información geo-espacial específica del municipio que puede ser consultada en 
 
 [Colombia en Mapas](https://www.colombiaenmapas.gov.co/) es la colección más completa de mapas de Colombia. Es una herramienta en constante evolución. Construido para que todos los colombianos puedan consumir los datos, productos y servicios geográficos. No estamos solos en esto. Colombia en Mapas es el vehículo que dispone y centraliza la información geográfica producida por el IGAC y por todas las entidades nacionales, regionales y locales que generan datos del territorio, con el fin de promover la toma de decisiones efectivas del gobierno, las industrias y el ciudadano.
 
-<div align="center"><img src="graph/ColombiaEnMapas.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/IGAC_ColombiaEnMapas.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Zipaquirá en Colombia en Mapas del IGAC<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
 #### Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca
@@ -106,6 +106,7 @@ El mapa digital de Áreas Homogéneas de Tierras (AHT) con fines multipropósito
 
 Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi  - IGAC, para el municipio de Zipaquirá (Cundinamarca) a escala 1:25.000.
 
+<div align="center"><img src="graph/IGAC_AHT.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Áreas Homogéneas de Tierras. Municipio de Zipaquirá, Cundinamarca<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
 
 
