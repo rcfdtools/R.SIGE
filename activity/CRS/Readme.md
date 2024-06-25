@@ -58,7 +58,7 @@ Por encima y por debajo del ecuador, los círculos que definen las líneas paral
 
 Un sistema de coordenadas proyectadas es cualquier sistema de coordenadas diseñado para una superficie llana, como un mapa impreso o una pantalla de ordenador.
 
-Los sistemas de coordenadas cartesianas en 2D y 3D brindan el mecanismo para describir la ubicación y la forma geográfica de las entidades utilizando los valores x e y (y, como podrá leer más adelante, utilizando columnas y filas en rásteres).
+Los sistemas de coordenadas cartesianas en 2D y 3D brindan el mecanismo para describir la ubicación y la forma geográfica de las entidades utilizando los valores x e y (en grillas ráster, las coordenadas se representan por posiciones en columnas y filas).
 
 El sistema de coordenadas cartesianas utiliza dos ejes: uno horizontal (x), que representa el este y el oeste, y otro vertical (y), que representa el norte y el sur. El punto de intersección de los ejes se denomina el origen. Las ubicaciones de los objetos geográficos se definen en relación al origen, utilizando la notación (x,y), donde x se refiere a la distancia del eje horizontal, e y se refiere a la distancia del eje vertical. El origen se define como (0,0).
 
@@ -84,9 +84,9 @@ Debido a que la Tierra generalmente es considerada esférica, uno de los desafí
 
 Un sistema de coordenadas proyectadas se define sobre una superficie plana de dos dimensiones. Las coordenadas proyectadas se pueden definir en 2D (x,y) o 3D (x,y,z), donde las mediciones x,y representan la ubicación en la superficie de la Tierra y z representaría la altura por encima o por debajo del nivel del mar.
 
-<div align="center"><img src="graph/ProjectionFamilies.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/ProjectionFamilies.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Familias de proyecciones<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
-<div align="center"><img src="graph/ProjectionDistortion.png" alt="R.SIGE" width="35%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/ProjectionDistortion.png" alt="R.SIGE" width="35%" border="0" /><sub><br>Distorsiones<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 A diferencia de un sistema de coordenadas geográficas, un sistema de coordenadas proyectadas posee longitudes, ángulos y áreas constantes en las dos dimensiones. Sin embargo, todas las proyecciones de mapa que representan la superficie de la Tierra como un mapa plano crean distorsiones en algún aspecto de la distancia, el área, la forma o la dirección.
 
