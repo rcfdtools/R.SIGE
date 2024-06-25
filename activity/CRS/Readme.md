@@ -150,6 +150,21 @@ Visualización del sistema de proyección usando QGIS<br>
 </div>
 
 
+## Proyección cartesiana
+
+El sistema de proyección cartesiana equivale a una representación conforme del elipsoide sobre un plano paralelo al tangente que rozaría al elipsoide en el punto origen (φ0, λ0). La proyección del meridiano que pasa por este punto representa el eje de coordenada Norte. No obstante, los puntos sobre el elipsoide y los equivalentes proyectados sobre el plano no tienen una relación geométrica, Esta es puramente matemática. La proyección cartesiana es utilizada para la elaboración de planos de ciudades (cartografía a escalas mayores que 1: 5000), de allí, existen tantos orígenes de coordenadas cartesianas como ciudades o municipios. El plano de proyección se define sobre la altitud media de la zona poblacional a representar.
+
+Al igual que en el sistema de Gauss – Krüger, la proyección cartesiana puede presentarse para ambigüedades en la definición unívoca de coordenadas, por tal razón, Estas siempre van acompañadas del origen al que se refieren.
+
+Los parámetros de coordenadas geográficas y planas asignadas para el origen del sistema son suministrados por el Instituto Geográfico Agustín Codazzi, para cada proyecto, mediante certificado de Origen Cartesiano.
+
+<div align="center"><img src="graph/CartesianProjection.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Proyección cartesiana<br>Tomado de: <a href="https://www.igac.gov.co/</a></sub><br><br></div>
+
+
+
+
+
+
 ## Referencias
 
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm
