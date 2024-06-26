@@ -38,14 +38,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
 
 
-## Actividades complementarias :triangular_ruler:
+## Actividades de proyecto :triangular_ruler:
 
-En la siguiente tabla se listan las actividades complementarias que deben ser desarrolladas y documentadas por el estudiante en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (mostrar nombre completo, código y enlace a su cuenta de GitHub), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
+En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
+| Actividad     | Alcance                                                                                                                                                         |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
 
-| Actividad | Alcance |
-|:---------:|:--------|
-|     1     | ....    | 
 
 
 ## Compatibilidad

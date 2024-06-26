@@ -280,6 +280,21 @@ Coeficiente de forma dinámica
 > El WGS84 utiliza el meridiano de referencia IERS definido por la Oficina Internacional de l'Heure. Se definió por la compilación de las observaciones de estrellas en diferentes países. La media de estos datos causó un desplazamiento de unos 100 metros al este lejos del Meridiano de Greenwich en Greenwich en el Reino Unido. 
 
 
+## Actividades de proyecto :triangular_ruler:
+
+En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
+
+| Actividad     | Alcance                                                                                                                                                         |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
+
+
+## Referencias
+
+* https://es.wikipedia.org/wiki/Zipaquir%C3%A1
+* https://www.colombiaenmapas.gov.co/inicio/
+
+
 ## Referencias
 
 * https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm

@@ -273,6 +273,22 @@ La información geográfica puede ser consultada, transferida, transformada, sup
 | Librerías y extensiones espaciales                                             | Proporcionan características adicionales que no forman parte fundamental del programa ya que pueden no ser requeridas por un usuario medio de este tipo de software.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
+## Actividades de proyecto :triangular_ruler:
+
+En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
+
+| Actividad     | Alcance                                                                                                                                                         |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
+
+
+## Referencias
+
+* https://es.wikipedia.org/wiki/Zipaquir%C3%A1
+* https://www.colombiaenmapas.gov.co/inicio/
+
+
+
 ## Referencias
 
 * https://www.esri.com/es-es/what-is-gis/overview

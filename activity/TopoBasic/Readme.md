@@ -161,6 +161,15 @@ La combinación de las dos áreas de la topografía plana permite la elaboració
 <div align="center"><img src="graph/Altimetria.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Impresión 3D<br>Tomado de: <a href="https://opentopography.org/learn/3D_printing">https://opentopography.org</a></sub><br><br></div>
 
 
+## Actividades de proyecto :triangular_ruler:
+
+En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
+
+| Actividad     | Alcance                                                                                                                                                         |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
+
+
 ## Referencias
 
 * https://globalgpssystems.com/gnss/gnss-constellations-how-they-work-and-how-they-improve-gps
