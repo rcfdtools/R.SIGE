@@ -14,8 +14,8 @@ Corresponde a la administración municipal tener un adecuado conocimiento de la 
 
 ## Requerimientos
 
-* [Conocimientos básicos en estadística](https://edu.gcfglobal.org/es/estadistica-basica/)
 * Microsoft Excel 365
+* [Conocimientos básicos en estadística](https://edu.gcfglobal.org/es/estadistica-basica/)
 * Lectura - [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
 * Lectura - [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
 * Lectura - 
@@ -37,6 +37,10 @@ interacción entre la población y sus bases ambientales y socioeconómicas. [^4
 ### 1.2. ¿Qué es la dinámica geográfica?
 
 La población aumenta o disminuye en el tiempo. Tiene una composición por sexo, edad, etnia o condición social que también puede modificarse en el tiempo. Se localiza en un territorio y se moviliza sobre él. Este proceso de cambio permanente es lo que se denomina dinámica demográfica. [^5]
+
+
+<div align="center"><img src="graph/ComponentesBasicosDinamicaDemografica.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Tomado de: <a href="https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf">https://colombia.unfpa.org</a></sub><br><br></div>
+
 
 El crecimiento natural o vegetativo de la población resulta del balance entre los nacimientos y las defunciones que se observan en un territorio particular. La población puede también aumentar por inmigración o disminuir por emigración. El crecimiento total de la población resulta del balance entre el saldo vegetativo y el saldo migratorio. De estos factores y su constante cambio dependerá el tamaño de la población que reside en el territorio, así como su estructura por edad y sexo y su distribución espacial. [^4]
 
