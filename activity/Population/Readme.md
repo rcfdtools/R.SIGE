@@ -3,7 +3,7 @@ Keywords: `Population` `Census` `Projection`
 
 Corresponde a la administración municipal tener un adecuado conocimiento de la población y de sus dinámicas, ya que son el eje articulador de todos los procesos de desarrollo, teniendo como soporte físico el territorio.[^1]
 
-<div align="center"><img src="graph/Living_population_density.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Living_population_density.png">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Living_population_density.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Living_population_density.png">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Objetivos
