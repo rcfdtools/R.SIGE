@@ -11,3 +11,39 @@
 * https://www.ant.gov.co/wp-content/uploads/2020/10/GINFO_I_006_REALIZACION_DE_LOS_LEVANTAMIENTOS_TOPOGRAFICOS_POR_METODOS_DIRECTOSV2.pdf
 * https://www.cvc.gov.co/sites/default/files/2021-07/GU.0130.03%20Lineamientos%20para%20el%20levantamiento%20info%20cartografica%20generada%20en%20la%20CVC%20V02.pdf
 * https://repository.udistrital.edu.co/bitstream/handle/11349/3248/ArenasAcostaJenifferAlexandraCardozoRojasJuanSebastian2016.pdf
+* https://www.undp.org/sites/g/files/zskgke326/files/2022-09/PADIT_Gu%C3%ADa%20r%C3%A1pida%20sobre%20la%20din%C3%A1mica%20de%20la%20poblaci%C3%B3n.pdf
+
+
+Cartillas y manuales disponibles en Colombia OT
+
+* [KIT OT (Componente rural visión regional)](https://portalterritorial.dnp.gov.co/KitOT/Content/uploads/Componente_RVR.pdf)
+* [KIT OT (Suelo rural)](https://portalterritorial.dnp.gov.co/KitOT/Content/uploads/Suelo%20rural%20MVCT%20110518.pdf)
+* [KIT OT - Ordenamiento Social de la Propiedad Rural - OSPR](https://portalterritorial.dnp.gov.co/KitOT/Content/uploads/Cartilla%20OSPR.pdf)
+* Modelación Probabilística de riesgos naturales
+* [Guía técnica para la incorporación de los asuntos ambientales en el Plan de Ordenamiento Territorial (POT)](https://sie.car.gov.co/server/api/core/bitstreams/32bcd05e-80a2-44b9-afed-2a8f208150c1/content)
+* [Orientaciones para la inclusión del cambio climático en los Planes de Ordenamiento Territorial (POT, PBOT, EOT)](https://www.car.gov.co/uploads/files/5b070c9370ad3.pdf)
+* [Kit de Ordenamiento Territorial - Incorporación de la estructura ambiental integrada en el suelo urbano y de expansión del POT ](https://portalterritorial.dnp.gov.co/KitOT/Content/uploads/C%20AMBIENTAL.pdf)
+* Índice Municipal de Gestión del Riesgo
+* [Manual de la innovación - Movilidad y transporte](https://portalterritorial.dnp.gov.co/KitOT/Content/uploads/Manual%20innovacion%20Movilidad%20y%20Transporte%20PDF.pdf)
+* Kit de Ordenamiento Territorial -  Articulación metropolitana: redes de ciudades y territorios funcionales en el ordenamiento territorial
+* [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
+
+
+* Cartilla - Etapa Alistamiento - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla - Etapa Diagnóstico - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla - Etapa Formulación - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla - Etapa Adopción, Implementación y Seguimiento - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Componente general del POT Moderno - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Componente urbano y de expansión del POT Moderno - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Visión Regional - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Expansión urbana ordenada - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Gestión de la ciudad existente - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Gobernanza e instituciones - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Visión Regional - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Cartilla – Manual de la innovación Visión Regional - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
+* Guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal, Instituto Geográfico Agustín Codazzi. 1998.
+* Guía Metodológica 1 – Información práctica para formulación de Planes de Ordenamiento Territorial, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2004.
+* Guía Metodológica 2 – Revisión y Ajuste de Planes de Ordenamiento Territorial, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2005.
+* Guía Metodológica – Conformación y puesta en marcha del expediente municipal, Cuarta Edición, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2019.
+* 29 lineamientos para la formulación del proyecto de revisión y ajuste de planes de ordenamiento territorial (POT - PBOT - EOT) – Versión 1.0, Departamento Nacional de Planeación, Ministerio de Vivienda, Ciudad y Territorio. 2016.
+* Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi. 2019.
