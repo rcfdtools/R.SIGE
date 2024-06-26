@@ -14,17 +14,17 @@ Corresponde a la administración municipal tener un adecuado conocimiento de la 
 
 ## Requerimientos
 
-* Conocimientos básicos en estadística
+* [Conocimientos básicos en estadística](https://edu.gcfglobal.org/es/estadistica-basica/)
 * Microsoft Excel 365
 * Lectura - [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
-* Lectura - 
+* Lectura - [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
 * Lectura - 
 * Lectura -
 
 
 ## 1. Conceptos generales
 
-### ¿Qué es la población?
+### 1.1. ¿Qué es la población?
 
 La población es entendida como **“un conjunto orgánico de sujetos que interactúan entre sí y con el territorio para su reproducción biológica y social. El concepto de población humana, se refiere a un conjunto de sujetos vivos, cuya actividad necesariamente crea y recrea permanentemente el territorio en función de sus necesidades biológicas, socioculturales y políticas y, de manera determinante, en función de la organización para la apropiación, producción y consumo de bienes materiales y no materiales”**. [^2]
 
@@ -34,7 +34,7 @@ Para abordar adecuadamente el proceso de ordenamiento es necesario tomar en cons
 interacción entre la población y sus bases ambientales y socioeconómicas. [^4]
 
 
-### ¿Qué es la dinámica geográfica?
+### 1.2. ¿Qué es la dinámica geográfica?
 
 La población aumenta o disminuye en el tiempo. Tiene una composición por sexo, edad, etnia o condición social que también puede modificarse en el tiempo. Se localiza en un territorio y se moviliza sobre él. Este proceso de cambio permanente es lo que se denomina dinámica demográfica. [^5]
 
@@ -48,7 +48,7 @@ El crecimiento natural o vegetativo de la población resulta del balance entre l
 | Movilidad                | La movilidad hace referencia al desplazamiento de carácter temporal, estacional o intermitente de población residente y no residente en el municipio que hace uso del territorio en función de sus actividades. Es necesario precisar no solo la magnitud sino las razones de movilidad (salud, educación, trabajo, negocios) de la población a fin dimensionar adecuadamente la oferta de áreas y servicios según las necesidades.<br><br>_La información sobre movilidad de la población permite hacer una buena definición de suelo urbano, rural y de expansión y de los usos asociados. El conocimiento de la movilidad de la población dentro del municipio, y desde o hacia otros territorios vecinos, permite definir no sólo los equipamientos intramunicipales, sino también la necesidad de mejorar la conectividad entre áreas urbanas y rurales y de éstos con el nivel regional._                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 
-### ¿Qué es el enfoque poblacional?
+### 1.3. ¿Qué es el enfoque poblacional?
 
 Los cambios en el tamaño, crecimiento, estructura, localización o movilidad de la población municipal influyen sobre las condiciones socioeconómicas y ambientales en el territorio, de la misma manera que éstas afectan la dinámica demográfica. En la planeación del territorio las relaciones entre la dinámica demográfica y los demás aspectos del desarrollo (socioeconómicos y ambientales) no son evidentes a primera vista, por lo que es necesario hacer un esfuerzo para identificarlas y comprenderlas mejor. El enfoque poblacional ayuda a abordar los procesos de planeación del municipio desde una perspectiva integral al analizar sistemáticamente la dinámica poblacional e incorporarla en la toma de decisiones estratégicas y en la formulación de política pública. [^4]
 
