@@ -54,12 +54,12 @@ Los cambios en el tamaño, crecimiento, estructura, localización o movilidad de
 
 > El ordenamiento no solo regula las relaciones entre la población y el territorio haciendo cumplir la función social y ecológica de la propiedad, sino que busca generar las condiciones para un desarrollo sostenible, equitativo, y sustentable.
 
-| Dinámica    | Alcance  |
-|:------------|:---------|
-| Poblacional |          |
-| Ambiental   |          |
-| Social      |          |
-| Económica   |          |
+| Dinámica    | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Poblacional | Conjunto de interacciones entre la dinámica demográfica y otros factores de las dinámicas ambientales, sociales y económicas, de las cuales se derivan transformaciones tanto en la dinámica demográfica (tamaño, crecimiento, estructura, patrones de reproducción y mortalidad o en su movilidad y distribución territorial) como en las características del territorio (estructura ecológica, infraestructura, sistemas de movilidad y aprovisionamiento de servicios). [^7] |
+| Ambiental   | Se refiere a los cambios que se producen en los ecosistemas, derivados de las interacciones entre el ambiente, la población y su organización socioeconómica, así como los efectos del ambiente sobre ellos. [^4]                                                                                                                                                                                                                                                               |
+| Social      | Corresponde a las interacciones entre los individuos y comunidades con su base económica, demográfica y ambiental, las cuales determinan las formas de apropiación y uso del territorio para satisfacer sus necesidades sociales y culturales en ejercicio de sus derechos. [^8]                                                                                                                                                                                                |
+| Económica   | Relación entre los individuos, su organización social, el ambiente y el territorio para la producción de bienes y servicios materiales y no materiales necesarios para el ejercicio de sus derechos y satisfacción de sus necesidades. [^8]                                                                                                                                                                                                                                     |
 
 
 
@@ -127,3 +127,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 [^4]: Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial.
 [^5]: UNFPA, Guía para Alcaldes: El enfoque poblacional en la planeación del desarrollo, pp. 19, 2008.
 [^6]: Ver artículo 15 ley 388 de 1997.
+[^7]: Universidad Externado de Colombia, Materiales didácticos curso sobre población y ordenamiento territorial, 2007
+[^8]: MAVDT, UNFPA y Universidad del Externado, Guía metodológica 3, Metodología para el análisis de tensiones, interacciones y balances en dinámicas y desarrollos poblacionales, ambientales, sociales y económicos, Serie población y ordenamiento, pp.13-14, 2004; y UNFPA, Guía para Alcaldes: El enfoque poblacional en la planeación del desarrollo, pp. 20, 2008.
