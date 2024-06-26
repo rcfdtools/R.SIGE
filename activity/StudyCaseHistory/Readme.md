@@ -159,12 +159,11 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 ## Actividades de proyecto :triangular_ruler:
 
-En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada indicando el nombre del módulo y mostrar los nombres completos de los integrantes, numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
+En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-
-| Actividad | Alcance                                                                                                                                                                                                                |
-|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado. No es necesario presentar un documento de avance independiente, todos los avances de este módulo se integran en un único documento. | 
+| Actividad     | Alcance                                                                                                                                                                                                                 |
+|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado. No es necesario presentar un documento de avance independiente, todos los avances de este módulo se integran en un único documento.  | 
 
 
 ## Referencias
