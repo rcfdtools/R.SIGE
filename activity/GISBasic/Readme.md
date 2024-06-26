@@ -22,7 +22,7 @@ Los Sistemas de Información Geográficos (SIG o GIS), son un conjunto de equipo
 * Lectura - [¿Qué son los SIG](https://www.esri.com/es-es/what-is-gis/overview)
 
 
-## Historia de los SIG como ciencia[^1]
+## 1. Historia de los SIG como ciencia[^1]
 
 En las últimas décadas, los **_SIG han pasado de ser un concepto a convertirse en una ciencia_**. La espectacular evolución de los SIG de una herramienta rudimentaria a una plataforma moderna y potente para comprender y planear nuestro mundo está marcada por varios hitos clave.
 
@@ -40,10 +40,10 @@ Línea de tiempo
 |  Hoy  | Utilizados en la vida diaria y como herramienta tecnológica se utilizan en múltiples campos de la ingeniería y arquitectura.                                        |
 
 
-## Ciencias y tecnologías relacionadas[^2]
+## 2. Ciencias y tecnologías relacionadas[^2]
 
 
-### Estudio de la tierra sólida
+### 2.1. Estudio de la tierra sólida
 
 <div align="center"><img src="graph/Gunung_Bromo.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Gunung_Bromo.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -58,7 +58,7 @@ Línea de tiempo
 | [Ciencias del suelo](https://es.wikipedia.org/wiki/Ciencia_del_suelo)   | Estudia el suelo como recurso natural en la superficie de la Tierra incluyendo su formación (pedogénesis), su clasificación y cartografía, sus características, su composición química, su biología, su fertilidad y todo lo relacionado con el uso y a la gestión del suelo.                |
 
 
-### Estudio de la atmósfera, los océanos y los seres vivos
+### 2.2. Estudio de la atmósfera, los océanos y los seres vivos
 
 <div align="center"><img src="graph/Hurrican_Catarina_from_the_ISS_on_March_26_2004.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Hurrican_Catarina_from_the_ISS_on_March_26_2004.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -71,7 +71,7 @@ Línea de tiempo
 | [Biogeografía](https://es.wikipedia.org/wiki/Biogeograf%C3%ADa)                | Estudia la distribución de los seres vivos sobre la Tierra.                                                                                                                                                                                                                                                           |
 
 
-### Tecnologías relacionadas
+### 2.3. Tecnologías relacionadas
 
 <div align="center"><img src="graph/Ocean-O.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Ocean-O.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -82,16 +82,7 @@ Línea de tiempo
 | [Sistemas de información geográfica - GIS](https://es.wikipedia.org/wiki/Sistema_de_informaci%C3%B3n_geogr%C3%A1fica)          | Un sistema de información geográfica (SIG), también habitualmente citado como GIS por las siglas de su nombre en inglés Geographical Information System, es un conjunto de herramientas que integra y relaciona diversos componentes que permiten la organización, almacenamiento, manipulación, análisis y modelización de grandes cantidades de datos procedentes del mundo real que están vinculados a una referencia espacial, facilitando la incorporación de aspectos sociales-culturales, económicos y ambientales que conducen a la toma de decisiones de una manera más eficaz.     |
 
 
-## ¿Qué es un SIG?
-
-Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistema especializado en la captura, manejo y análisis de información geográfica geoespacial. Para su óptima implementación y operación, se requiere de la integración de los siguientes 4 elementos:
-
-<div align="center"><img src="graph/WhatIsGIS.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Diagrama por rcfdtools</sub><br><br></div>
-
-<div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas<br>Tomado de: <a href="https://flr2019.weebly.com/uploads/1/2/2/9/122916722/lulcc_tay_nguyen_uni._vietnam.pdf">https://flr2019.weebly.com</a></sub><br><br></div>
-
-
-### Diferencia entre geografía e información geográfica
+### 2.4. Diferencia entre geografía e información geográfica
 
 
 | Geografía                                                                                                                                                                                                                                                                                                                                                                                                                           | Información geográfica                                                                                                                                                                                                                                                                                                                 |
@@ -101,7 +92,16 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 > :bulb: Imagine por un instante que la semana anterior realizó un estudio hidráulico a partir del levantamiento topo-batimétrico de un tramo de río que contiene un meandro con la representación de esta información en un SIG. Una semana después, una lluvia extrema ocasionó una avenida torrencial y una avalancha que desplazo y corto el meandro en la zona levantada. Como observa, la geografía ha cambiado y el SIG creado ya no representa la condición actual del tramo de río en estudio. Para actualizar el sistema de información deberá realizar nuevamente el levantamiento y crear una nueva versión del estudio. 
 
 
-## Ventajas y desafíos de los SIG[^3]
+## 3. ¿Qué es un SIG?
+
+Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistema especializado en la captura, manejo y análisis de información geográfica geoespacial. Para su óptima implementación y operación, se requiere de la integración de los siguientes 4 elementos:
+
+<div align="center"><img src="graph/WhatIsGIS.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Diagrama por rcfdtools</sub><br><br></div>
+
+<div align="center"><img src="graph/GISLayers.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Modelo general de datos geográficos basado en un inventario de datos por capas<br>Tomado de: <a href="https://flr2019.weebly.com/uploads/1/2/2/9/122916722/lulcc_tay_nguyen_uni._vietnam.pdf">https://flr2019.weebly.com</a></sub><br><br></div>
+
+
+## 4. Ventajas y desafíos de los SIG [^3]
 
 La operación de los sistemas de información geográfica afrontan desafíos importantes que deben ser considerados antes de su implementación.
 
@@ -119,7 +119,7 @@ La operación de los sistemas de información geográfica afrontan desafíos imp
 |                   | Interoperabilidad y estándares            | La interoperabilidad entre diferentes sistemas y la adopción de estándares son desafíos en los SIG. La capacidad de compartir y utilizar datos geoespaciales entre diferentes plataformas y aplicaciones es crucial para una gestión eficiente y una toma de decisiones efectiva.                                     |
 
 
-## Aplicación y utilidad
+## 5. Aplicación y utilidad
 
 Los SIG son ampliamente utilizados en el desarrollo de:
 
@@ -142,7 +142,7 @@ Los SIG son ampliamente utilizados en el desarrollo de:
 <div align="center"><img src="graph/BasinB.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub><br><br></div>
 
 
-## Calidad de los datos[^4]
+## 6. Calidad de los datos[^4]
 
 ¿Qué conocemos como calidad?
 
@@ -155,17 +155,17 @@ Es importante no solo contar con datos de calidad en los que estos errores sean 
 <div align="center"><img src="graph/GISQualityColombia.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Estándares desarrollados para la evaluación de la calidad en la información geográfica<br>Tomado de: <a href="https://www.ideca.gov.co/sites/default/files/presentaciones/idecacursotallerestandarycalidad.pdf">https://www.ideca.gov.co</a></sub><br><br></div>
 
 
-## Funciones de un SIG
+## 7. Funciones de un SIG
 
 
-### Entrada, captura y almacenamiento de datos
+### 7.1. Entrada, captura y almacenamiento de datos
 
 * Digitalización directa (desde foto aérea, plano escaneado e imagen satelital)
 * Desde archivos digitales (Tablas, CAD y archivos vectoriales)
 * Teledetección (LIDAR, IKONOS o satélite comercial de teledetección)
 
 
-### Representación gráfica
+### 7.2. Representación gráfica
 
 * Visualización de datos geográficos (Visores y herramientas de edición)
 * Impresión cartográfica
@@ -174,7 +174,7 @@ Es importante no solo contar con datos de calidad en los que estos errores sean 
 * Listados, informes, tablas de datos, indicadores, resúmenes
 
 
-### Manejo de datos
+### 7.3. Manejo de datos
 
 * Transformación matemática de coordenadas: proyección, datum
 * Transformación geométrica: rotación, reducción, escalado…
@@ -183,7 +183,7 @@ Es importante no solo contar con datos de calidad en los que estos errores sean 
 * Importación y exportación
 
 
-### Análisis
+### 7.4. Análisis
 
 A partir de la información existente producir nueva información.
 
@@ -195,7 +195,7 @@ A partir de la información existente producir nueva información.
 | Sobreimposición                      | Uniones espaciales, intersecciones, transparencias, extracción, etc.                                                                              | Definir secciones transversales en canales y encontrar el punto de intersección con el eje para definir los tramos de modelación de la red pluvial. |
 
 
-## Algunas funciones espaciales de geo-procesamiento de los SIG
+## 8. Algunas funciones espaciales de geo-procesamiento de los SIG
 
 <div align="center"><img src="graph/GISAnswers.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Preguntas que pueden ser respondidas por un SIG<br>Elaborado por rcfdtools</sub><br><br></div>
 
@@ -217,10 +217,10 @@ Geo-procesos para responder estas preguntas:
 | <div align="center"><img src="graph/ZonalStatistic.png" alt="R.SIGE" width="200" border="0"/></div>                                                            | Estadísticas zonales [como grilla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics.htm) o [como tabla](https://pro.arcgis.com/es/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm)                                                                                                                                                                                                                                                                                                                                                                                | Resume el valor de un ráster dentro de las zonas de otro dataset o como una tabla con estadísticos característicos.                                                                                                                                                                                                                                                                                              |
 
 
-## Tipos de datos y formatos usados en SIG
+## 9. Tipos de datos y formatos usados en SIG
 
 
-### Datos según su codificación o representación
+### 9.1. Datos según su codificación o representación
 
 La codificación de datos geográficos empleados en un SIG proviene de dos tipos de representaciones principales:
 
@@ -230,7 +230,7 @@ La codificación de datos geográficos empleados en un SIG proviene de dos tipos
 | Ráster          | <div align="center"><img src="graph/Raster.png" alt="R.SIGE" width="400" border="0"/></div><br>Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y  precipitación, temperatura, acidez en suelos, etc.. |
 
 
-### Tipos de datos en registros de atributos
+### 9.2. Tipos de datos en registros de atributos
 
 <div align="center"><img src="graph/DataTypeRecord.png" alt="R.SIGE" width="80%" border="0"/><br><sub>Elaborado por rcfdtools</sub><br><br></div>
 
@@ -246,7 +246,7 @@ Los datos asociados a un elemento geográfico contenidos en los registros de atr
 > En representaciones catastrales, un predio que es dividido por una vía y que tiene una única matrícula inmobiliaria y un único código catastral, puede ser almacenado como una entidad multiparte, con lo que solo obtendrá un registro en la tabla de atributos.
 
 
-## Formatos para almacenamiento geográfico
+## 10. Formatos para almacenamiento geográfico
 
 | Formato                | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:-----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -256,7 +256,7 @@ Los datos asociados a un elemento geográfico contenidos en los registros de atr
 <div align="center"><img src="graph/GDBBenefits.png" alt="R.SIGE" width="60%" border="0"/><br><sub>Beneficios al usar una Geodatabase<br>Elaborado por rcfdtools</sub></div>
 
 
-## Tipos de herramientas SIG (públicas y comerciales)
+## 11. Tipos de herramientas SIG (públicas y comerciales)
 
 La información geográfica puede ser consultada, transferida, transformada, superpuesta, procesada y mostradas utilizando numerosas aplicaciones de software. Dentro de la industria empresas comerciales como [ESRI](https://www.esri.com/), [Intergraph de Hexagon](https://hexagon.com/intergraph), [Mapinfo](https://www.geobis.com/mapinfo-gis-software/), [Autodesk](https://www.autodesk.com/) o [Smallworld](https://www.ge.com/digital/applications/smallworld-gis-geospatial-asset-management) ofrecen un completo conjunto de aplicaciones. Los gobiernos suelen optar por modificaciones de programas SIG para una determinada tarea, productos de código abierto como [QGIS](https://qgis.org/) o software especializado que responda a una necesidad bien definida. A menudo se distinguen en grandes tipos de software informáticos, tales como:
 
