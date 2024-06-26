@@ -20,7 +20,7 @@ La topografía se trata de la medición de las características físicas o geom�
 
 
 
-## ¿Qué es la Topografía?[^2]
+## 1. ¿Qué es la Topografía?[^2]
 
 La topografía es una ciencia que estudia el conjunto de procedimientos para determinar las posiciones relativas de los puntos sobre la superficie de la tierra y debajo de la misma, mediante la combinación de las medidas según los tres elementos del espacio: 
 
@@ -36,7 +36,7 @@ La topografía es una ciencia que estudia el conjunto de procedimientos para det
 Las 3 ramas principales de la topografía son la geodesía, la fotogrametría y la topografía plana. Tenga en cuenta que la definición de estas ramas puede variar de un autor a otro y que estas han sido utilizadas para ilustrar esta actividad.
 
 
-## A. Geodesia[^2]
+## 2. Geodesia[^2]
 
 Trata de las mediciones de grandes extensiones de terreno, por ejemplo, para crear la carta geográfica de un país, para establecer fronteras y límites internos, para la determinación de líneas de navegación en ríos y lagos, etc. Estos levantamientos tienen en cuenta la verdadera forma de la tierra y requieren de gran precisión. 
 
@@ -47,14 +47,14 @@ Cuando la zona no es demasiado extensa, se puede obtener la precisión requerida
 <div align="center"><img src="graph/WGS84_mean_Earth_radius.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:WGS84_mean_Earth_radius.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-### Red geodésica de control
+### 2.1 Red geodésica de control
 
 Los levantamientos de grandes ciudades se hacen bajo el supuesto de que la tierra es perfectamente esférica. Este tipo de levantamiento está catalogado como de alta precisión e incluye el establecimiento de los puntos de control primario o puntos geodésicos, que son puntos debidamente materializados sobre la superficie de la tierra, es decir, con posiciones y elevaciones conocidas, las cuales son de gran importancia y trascendencia por constituir puntos o redes de apoyo y referencia confiables para todos los demás levantamientos de menor precisión. Los puntos fijados geodésicamente (levantamiento de control), como por ejemplo los vértices de triangulación, constituyen una red a la que puede referirse cualquier otro levantamiento sin temor a error alguno en distancias horizontal o vertical o en dirección, derivado de la diferencia entre la superficie de referencia y la verdadera superficie de la tierra. 
 
 <div align="center"><img src="graph/Ubersicht_der_Stationen.png" alt="R.SIGE" width="70%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:%C3%9Cbersicht_der_Stationen.PNG">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-### Sistema global de navegación por satélite - GNSS[^3]
+### 2.2. Sistema global de navegación por satélite - GNSS[^3]
 
 Los sistemas de navegación por satélite transmiten información de geolocalización altamente precisa a los dispositivos y receptores [GNSS](https://es.wikipedia.org/wiki/Sistema_global_de_navegaci%C3%B3n_por_sat%C3%A9lite) para determinar su ubicación actual, tales como [GPS](https://es.wikipedia.org/wiki/GPS), [GLONASS](https://es.wikipedia.org/wiki/GLONASS), [Galileo](https://es.wikipedia.org/wiki/Galileo_(navegaci%C3%B3n_por_sat%C3%A9lite)), [QZSS](https://es.wikipedia.org/wiki/Quasi-Zenith), [BeiDou](https://es.wikipedia.org/wiki/Beidou) y [NavIC](https://en.wikipedia.org/wiki/Indian_Regional_Navigation_Satellite_System).
 
@@ -69,7 +69,7 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 <div align="center"><img src="graph/DGPS_Reference_Station.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:DGPS_Reference_Station.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-## B. Fotogrametría[^2]
+## 3. Fotogrametría[^2]
 
 Es la disciplina que utiliza las fotografías para la obtención de mapas de terrenos. 
 
@@ -82,7 +82,7 @@ Los levantamientos fotogramétricos comprenden la obtención de datos y medicion
 > El trabajo consiste en esencia en tomar fotografías desde dos o más estaciones adecuadas y utilizarlas después para obtener los detalles del terreno fotografiado, tanto en planta como en alzado o perfil. 
 
 
-### Fotointerpretación
+### 3.1. Fotointerpretación
 
 Como una derivación de la fotogrametría, está la fotointerpretación que se emplea para el análisis cualitativo de los terrenos. La fotogrametría aérea se basa en fotografías tomadas desde aviones o drones equipados para el trabajo, en combinación de las técnicas de aerotriangulación analítica para establecer posiciones de control para la obtención de proyecciones reales del terreno y para hacer comprobaciones con una menor precisión que la obtenida en las redes primarias de control geodésico. 
 
@@ -91,7 +91,7 @@ Como una derivación de la fotogrametría, está la fotointerpretación que se e
 <div align="center"><img src="graph/NDVI.png" alt="R.SIGE" width="50%" border="0" /><sub><br>NVDI index<br>Tomado de: <a href="https://eightfourcapital.medium.com/why-we-use-ndvi-a0d5172e6e6">https://eightfourcapital.medium.com</a></sub><br><br></div>
 
 
-## C. Topografía plana
+## 4. Topografía plana
 
 El levantamiento topográfico plano tiene la misma finalidad de los levantamientos geodésicos, pero difiere en cuanto a la magnitud y precisión y por consiguiente en los métodos empleados.
 
@@ -127,14 +127,14 @@ Estos planos se utilizan como base para la mayoría de los trabajos y proyectos 
 * Actividades relacionadas con geología, arquitectura del paisaje, arqueología, etc.
 
 
-## Estudio de la topografía[^2]
+## 5. Estudio de la topografía[^2]
 
-### A. Planimetría o control horizontal
+### 5.1. Planimetría o control horizontal
 
 Solo tiene en cuenta la proyección del terreno sobre un plano horizontal imaginario (vista en planta) que se supone que es la superficie media de la tierra; esta proyección se denomina base productiva y es la que se considera cuando se miden distancias horizontales y se calcula el área de un terreno. Aquí no interesan las diferencias relativas de las elevaciones entre los diferentes puntos del terreno. La ubicación de los diferentes puntos sobre la superficie de la tierra se hace mediante la medición de ángulos y distancias a partir de puntos y líneas de referencia proyectadas sobre un plano horizontal.
 
 
-#### Poligonal abierta o cerrada
+#### 5.1.1. Poligonal abierta o cerrada
 
 <div align="center"><img src="graph/PoligonalAbierta.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal abierta<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
@@ -143,21 +143,21 @@ El conjunto de líneas que unen los puntos observados se denomina Poligonal Base
 <div align="center"><img src="graph/PoligonalCerrada.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal cerrada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co/</a></sub><br><br></div>
 
 
-#### Redes poligonales y ramificadas
+#### 5.1.2. Redes poligonales y ramificadas
 
 En algunos trabajos de gran extensión es recomendable establecer una red de polígonos dentro de una poligonal cerrada, para así tener una forma de acceder a lugares en los cuales se requiere tomar información que no puede ser vista desde las estaciones perimetrales de la poligonal.
 
 <div align="center"><img src="graph/PoligonalRamificada.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Poligonal ramificada<br>Tomado de: <a href="https://bdigital.uniquindio.edu.co/bitstream/handle/001/5932/Capitulo%206%20poligonales.pdf">https://bdigital.uniquindio.edu.co</a></sub><br><br></div>
 
 
-### B. Altimetría o control vertical
+### 5.2. Altimetría o control vertical
 
 La altimetría se encarga de la medición de las diferencias de nivel o de elevación entre los diferentes puntos del terreno, las cuales representan las distancias verticales medidas a partir de un plano horizontal de referencia. La determinación de las alturas o distancias verticales también se puede hacer a partir de las mediciones de las pendientes o grado de inclinación del terreno y de la distancia inclinada entre cada dos puntos. Como resultado se obtiene el esquema vertical.
 
 <div align="center"><img src="graph/Perfil_L-401.jpg" alt="R.SIGE" width="60%" border="0" /><sub><br>Perfil vial<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Perfil_L-401.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-### Planimetría y altimetría simultáneas
+### 5.3. Planimetría y altimetría simultáneas
 
 La combinación de las dos áreas de la topografía plana permite la elaboración o confección de un "plano topográfico", donde se muestra tanto la posición en planta como la elevación de cada uno de los diferentes puntos del terreno. La elevación o altitud de los diferentes puntos del terreno se representa mediante las curvas de nivel, que son líneas trazadas en el plano de planta con base en el esquema horizontal y que unen puntos que tienen igual altura. Las curvas de nivel sirven para reproducir en el dibujo la configuración topográfica o relieve del terreno.
 
