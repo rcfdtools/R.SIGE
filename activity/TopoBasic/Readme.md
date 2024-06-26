@@ -69,7 +69,7 @@ GNSS significa Sistema global de navegación por satélite y se utiliza para des
 <div align="center"><img src="graph/DGPS_Reference_Station.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Ejemplo de una estación de referencia GNSS<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:DGPS_Reference_Station.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-## 3. Fotogrametría[^2]
+## 3. Fotogrametría y Fotointerpretación [^2]
 
 Es la disciplina que utiliza las fotografías para la obtención de mapas de terrenos. 
 
@@ -79,10 +79,7 @@ Los levantamientos fotogramétricos comprenden la obtención de datos y medicion
 
 <div align="center"><img src="graph/Topografia-Con-Drones-Visual-Drone-t2.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Tomado de: <a href="https://visualdrone.co/">https://visualdrone.co/</a></sub><br><br></div>
 
-> El trabajo consiste en esencia en tomar fotografías desde dos o más estaciones adecuadas y utilizarlas después para obtener los detalles del terreno fotografiado, tanto en planta como en alzado o perfil. 
-
-
-### 3.1. Fotointerpretación
+> El trabajo consiste en esencia en tomar fotografías desde dos o más estaciones adecuadas y utilizarlas después para obtener los detalles del terreno fotografiado, tanto en planta como en alzado o perfil.
 
 Como una derivación de la fotogrametría, está la fotointerpretación que se emplea para el análisis cualitativo de los terrenos. La fotogrametría aérea se basa en fotografías tomadas desde aviones o drones equipados para el trabajo, en combinación de las técnicas de aerotriangulación analítica para establecer posiciones de control para la obtención de proyecciones reales del terreno y para hacer comprobaciones con una menor precisión que la obtenida en las redes primarias de control geodésico. 
 
