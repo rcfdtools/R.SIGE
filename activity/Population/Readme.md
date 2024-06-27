@@ -68,7 +68,7 @@ Los cambios en el tamaño, crecimiento, estructura, localización o movilidad de
 
 ## 2. Histórico de censos poblacionales y proyección
 
-A partir de los datos poblacionales recopilados, determinar la población futura del municipio (general, por vereda, por centro urbano principal y por centros poblados) con análisis de regresión y correlación a través de las tendencias: exponencial, lineal, logarítmica, polinómica y potencial. 
+A partir de los datos poblacionales recopilados, determinar la población futura del municipio (general, por vereda, por centro urbano principal y por centros poblados) con análisis de regresión y correlación a través de las tendencias: lineal, polinómica, logarítmica, potencial y exponencial. 
 
 
 ### 2.1. Libro de análisis y catálogo de objetos
@@ -91,6 +91,8 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 
 #### 2.1.2. Grupos etarios 
 
+<div align="center">
+
 | Rango de edad [^4] | Descripción                     |
 |:------------------:|:--------------------------------|
 |      0-6 años      | Primera infancia                |
@@ -99,17 +101,36 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 |     15-64 años     | Población económicamente activa |
 |      60+ años      | Adultos mayores                 |
 
+</div>
+
 
 #### 2.1.3. Catálogo de objetos
 
-Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálogo de objetos que será utilizado en el Libro de Microsoft Excel y las tablas para visualización de datos en el SIG:
+Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálogo de objetos para el Libro de Microsoft Excel y las tablas para visualización de datos en el SIG:
 
-| Campo  | Definición                                                 | Tipo       | Tabla en Libro de Excel |
-|:-------|------------------------------------------------------------|------------|-------------------------| 
-| Fuente | Fuente de información (DANE, SISBEN, Registraduría, otras) | Text (100) |                         |
-|        |                                                            |            |                         |
-
-
+| Campo   | Definición                                                                         | Tipo       | Tabla en Libro de Excel |
+|:--------|------------------------------------------------------------------------------------|------------|-------------------------| 
+| Fuente  | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal,                 |
+| Zona    | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal,                 |
+| Fecha   | Año de registro o de proyección                                                    | Short      | Censal,                 |
+| PTotal  | Total de población registrada o proyectada para la zona estudiada                  | Long       | Censal                  |
+| PTMasc  | Población total masculina                                                          | Long       | Censal                  |
+| PTFem   | Población total femenina                                                           | Long       | Censal                  |
+| PT0_6   | Población total 0-6 años                                                           | Long       | Censal                  |
+| PT7_12  | Población total 7-12 años                                                          | Long       | Censal                  |
+| PT13_18 | Población total 13-18 años                                                         | Long       | Censal                  |
+| PT15_64 | Población total 15-64 años                                                         | Long       | Censal                  |
+| PT60Max | Población total 60+ años                                                           | Long       | Censal                  |
+| PM0_6   | Población masculina 0-6 años                                                       | Long       | Censal                  |
+| PM7_12  | Población masculina 7-12 años                                                      | Long       | Censal                  |
+| PM13_18 | Población masculina 13-18 años                                                     | Long       | Censal                  |
+| PM15_64 | Población masculina 15-64 años                                                     | Long       | Censal                  |
+| PM60Max | Población masculina 60+ años                                                       | Long       | Censal                  |
+| PF0_6   | Población femenina 0-6 años                                                        | Long       | Censal                  |
+| PF7_12  | Población femenina 7-12 años                                                       | Long       | Censal                  |
+| PF13_18 | Población femenina 13-18 años                                                      | Long       | Censal                  |
+| PF15_64 | Población femenina 15-64 años                                                      | Long       | Censal                  |
+| PF60Max | Población femenina 60+ años                                                        | Long       | Censal                  |
 
 
 ### 2.2. DANE
