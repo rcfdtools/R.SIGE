@@ -76,7 +76,7 @@ A partir de los datos poblacionales recopilados, determinar la población futura
 
 #### 2.1.1. Libro de Microsoft Excel
 
-Para el análisis de datos y proyección de población, utilizaremos el libro de Excel _Poblacion.xlsx_ que contiene las siguientes hojas:
+Para el análisis de datos y proyección de población, utilizaremos el libro de Excel :open_file_folder:_[Poblacion.xlsx](Poblacion.xlsx)_ que contiene las siguientes hojas:
 
 | Hoja                 | Alcance                                                                                                                                                              |
 |:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
