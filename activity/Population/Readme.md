@@ -114,20 +114,21 @@ Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálo
 
 ### 2.2. DANE
 
+Fuente: Departamento Administrativo Nacional de Estadística - DANE 
+
 https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 
 
-### 2.3. Histórico de población beneficiaria SISBEN y proyección
+### 2.3. SISBEN
 
 
 
-### 4. Histórico Registraduría Nacional y potencial electoral y proyección
+### 2.4. Registraduría Nacional
+
+Potencial electoral y proyección
 
 
-### 5. Otras fuentes censales
-
-
-## 6. Proyección de población
+### 2.5. Otras fuentes censales
 
 
 
