@@ -155,6 +155,8 @@ https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 | DANE   | Municipio | 2005  | 100038  |
 | DANE   | Municipio | 2018  | 128968  |
 
+<div align="center"><img src="graph/DANE_Censal_Historico_Graph" alt="R.SIGE" width="60%" border="0" /><sub><br>Histórico municipal de censos DANE<br>Gráfico por rcfdtools</sub><br><br></div>
+
 
 ### 2.3. SISBEN
 
