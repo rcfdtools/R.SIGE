@@ -108,36 +108,45 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 
 Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálogo de objetos para el Libro de Microsoft Excel y las tablas para visualización de datos en el SIG:
 
-| Campo   | Definición                                                                         | Tipo       | Tabla en libro de Excel |
-|:--------|------------------------------------------------------------------------------------|------------|-------------------------| 
-| Fuente  | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal, PoblacionGIS    |
-| Zona    | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal, PoblacionGIS    |
-| Fecha   | Año de registro o de proyección                                                    | Short      | Censal, PoblacionGIS    |
-| PTotal  | Total de población registrada o proyectada para la zona estudiada                  | Long       | Censal, PoblacionGIS    |
-| PTMasc  | Población total masculina                                                          | Long       | Censal                  |
-| PTFem   | Población total femenina                                                           | Long       | Censal                  |
-| PT0_6   | Población total 0-6 años                                                           | Long       | Censal                  |
-| PT7_12  | Población total 7-12 años                                                          | Long       | Censal                  |
-| PT13_18 | Población total 13-18 años                                                         | Long       | Censal                  |
-| PT15_64 | Población total 15-64 años                                                         | Long       | Censal                  |
-| PT60Max | Población total 60+ años                                                           | Long       | Censal                  |
-| PM0_6   | Población masculina 0-6 años                                                       | Long       | Censal                  |
-| PM7_12  | Población masculina 7-12 años                                                      | Long       | Censal                  |
-| PM13_18 | Población masculina 13-18 años                                                     | Long       | Censal                  |
-| PM15_64 | Población masculina 15-64 años                                                     | Long       | Censal                  |
-| PM60Max | Población masculina 60+ años                                                       | Long       | Censal                  |
-| PF0_6   | Población femenina 0-6 años                                                        | Long       | Censal                  |
-| PF7_12  | Población femenina 7-12 años                                                       | Long       | Censal                  |
-| PF13_18 | Población femenina 13-18 años                                                      | Long       | Censal                  |
-| PF15_64 | Población femenina 15-64 años                                                      | Long       | Censal                  |
-| PF60Max | Población femenina 60+ años                                                        | Long       | Censal                  |
+| Campo    | Definición                                                                         | Tipo       | Tabla en libro de Excel |
+|:---------|------------------------------------------------------------------------------------|------------|-------------------------| 
+| Fuente   | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal, PoblacionGIS    |
+| Zona     | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal, PoblacionGIS    |
+| Fecha    | Año de registro o de proyección                                                    | Short      | Censal, PoblacionGIS    |
+| PTotal   | Total de población registrada o proyectada para la zona estudiada                  | Long       | Censal, PoblacionGIS    |
+| PTMasc   | Población total masculina                                                          | Long       | Censal                  |
+| PTFem    | Población total femenina                                                           | Long       | Censal                  |
+| PTUrbano | Población total urbana                                                             | Long       | Censal                  |
+| PTRural  | Población total rural dispersa                                                     | Long       | Censal                  |
+| PTCPR    | Población total centros poblados rurales                                           | Long       | Censal                  |
+| PT0_6    | Población total 0-6 años                                                           | Long       | Censal                  |
+| PT7_12   | Población total 7-12 años                                                          | Long       | Censal                  |
+| PT13_18  | Población total 13-18 años                                                         | Long       | Censal                  |
+| PT15_64  | Población total 15-64 años                                                         | Long       | Censal                  |
+| PT60Max  | Población total 60+ años                                                           | Long       | Censal                  |
+| PM0_6    | Población masculina 0-6 años                                                       | Long       | Censal                  |
+| PM7_12   | Población masculina 7-12 años                                                      | Long       | Censal                  |
+| PM13_18  | Población masculina 13-18 años                                                     | Long       | Censal                  |
+| PM15_64  | Población masculina 15-64 años                                                     | Long       | Censal                  |
+| PM60Max  | Población masculina 60+ años                                                       | Long       | Censal                  |
+| PF0_6    | Población femenina 0-6 años                                                        | Long       | Censal                  |
+| PF7_12   | Población femenina 7-12 años                                                       | Long       | Censal                  |
+| PF13_18  | Población femenina 13-18 años                                                      | Long       | Censal                  |
+| PF15_64  | Población femenina 15-64 años                                                      | Long       | Censal                  |
+| PF60Max  | Población femenina 60+ años                                                        | Long       | Censal                  |
 
 
-### 2.2. DANE
+### 2.2. Departamento Administrativo Nacional de Estadística - DANE
 
-Fuente: Departamento Administrativo Nacional de Estadística - DANE 
+Fuentes de datos
 
-https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
+* [Censos - DANE ](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion)
+* [Proyecciones de población - DANE](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion)
+
+El Departamento Administrativo Nacional de Estadística -DANE- es la entidad responsable de la planeación, levantamiento, procesamiento, análisis y difusión de las estadísticas oficiales de Colombia. Perteneciente a la Rama Ejecutiva del Estado Colombiano, con más de 50 años de experiencia. Cumple con los más altos estándares de calidad. El DANE ofrece al país y al mundo más de 30 investigaciones de todos los sectores de la economía, industria, población, sector agropecuario y calidad de vida, entre otras. [^9]
+
+Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, procesamiento y difusión, así como la calidad humana de todos los que participan en el proceso de la organización, permiten al DANE fortalecer el conocimiento, la confianza y la cultura estadística de los colombianos, reafirmando su condición de líder como rector de las estadísticas en Colombia. 
+
 
 #### 2.2.1. Tabla de datos censales
 
@@ -176,18 +185,29 @@ https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 <div align="center"><img src="graph/DANE_PTotal_DemographicDynamics.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Análisis de dinámica demográfica</sub><br><br></div>
 
 
+### 2.3. Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales - SISBEN
+
+Fuentes de datos
+
+* [Grupo SISBEN](https://www.sisben.gov.co/Paginas/consulta-tu-grupo.html)
+* [Mapas y estadísticas SISBEN - Gobernación de Cundinamarca](https://mapasyestadisticas-cundinamarca-map.opendata.arcgis.com/pages/c04dca50c16e4c50a3e359b9d54a7e1f)
+* [Mapas y estadísticas SISBEN - Gobernación de Cundinamarca - ArcGIS Insights](https://insights.arcgis.com/#/view/1343fd74a80645589406d7eba51ff079)
+* [Datos abiertos Colombia](https://datos.gov.co/)
+
+El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales, que permite clasificar a la población de acuerdo con sus condiciones de vida e ingresos. Esta clasificación se utiliza para focalizar la inversión social y garantizar que sea asignada a quienes más lo necesitan.
 
 
-### 2.3. SISBEN
 
 
+### 2.4. Registraduría Nacional del Estado Civil
 
-### 2.4. Registraduría Nacional
+Fuentes: [Registraduría Nacional del Estado Civil](https://registraduria.gov.co/)
 
-Potencial electoral y proyección
+La Registraduría Nacional del Estado Civil es una entidad con autonomía administrativa, contractual y presupuestal, organizada de manera desconcentrada, que tiene a su cargo el registro de la vida civil e identificación de los colombianos y la realización de los procesos electorales y los mecanismos de participación ciudadana, con plenas garantías para los colombianos.
 
 
 ### 2.5. Otras fuentes censales
+
 
 
 
@@ -238,3 +258,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 [^6]: Ver artículo 15 ley 388 de 1997.
 [^7]: Universidad Externado de Colombia, Materiales didácticos curso sobre población y ordenamiento territorial, 2007
 [^8]: MAVDT, UNFPA y Universidad del Externado, Guía metodológica 3, Metodología para el análisis de tensiones, interacciones y balances en dinámicas y desarrollos poblacionales, ambientales, sociales y económicos, Serie población y ordenamiento, pp.13-14, 2004; y UNFPA, Guía para Alcaldes: El enfoque poblacional en la planeación del desarrollo, pp. 20, 2008.
+[^9]: https://www.dane.gov.co/files/acerca/PF.pdf
+
