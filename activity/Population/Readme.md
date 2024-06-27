@@ -108,7 +108,7 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 
 Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálogo de objetos para el Libro de Microsoft Excel y las tablas para visualización de datos en el SIG:
 
-| Campo   | Definición                                                                         | Tipo       | Tabla en Libro de Excel |
+| Campo   | Definición                                                                         | Tipo       | Tabla en libro de Excel |
 |:--------|------------------------------------------------------------------------------------|------------|-------------------------| 
 | Fuente  | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal,                 |
 | Zona    | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal,                 |
@@ -138,6 +138,22 @@ Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálo
 Fuente: Departamento Administrativo Nacional de Estadística - DANE 
 
 https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
+
+#### 2.2.1. Tabla de datos censales
+
+| Fuente | Zona      | Fecha | PTotal  |
+|--------|-----------|-------|---------|
+| DANE   | Municipio | 1905  | 7108    |
+| DANE   | Municipio | 1928  | 11480   |
+| DANE   | Municipio | 1938  | 12273   |
+| DANE   | Municipio | 1951  | 20628   |
+| DANE   | Municipio | 1964  | 27775   |
+| DANE   | Municipio | 1973  | 39836   |
+| DANE   | Municipio | 1985  | 60202   |
+| DANE   | Municipio | 1993  | 69695   |
+| DANE   | Municipio | 1995  | 78923   |
+| DANE   | Municipio | 2005  | 100038  |
+| DANE   | Municipio | 2018  | 128968  |
 
 
 ### 2.3. SISBEN
@@ -175,6 +191,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * [Guía Metodológica 2 - Elementos Poblacionales Básicos para la planeación. Serie Población, Ordenamiento y Desarrollo. Ministerio de Ambiente, Vivienda y Desarrollo Territorial, Viceministerio de Vivienda y Desarrollo Territorial, Dirección de Desarrollo Territorial 1, República de Colombia. ](https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/ELEMENTOS%20POBLACIONALES%202%20-%20MVCT.pdf)
 * [Guía Metodológica 3 - Metodología para el análisis de tensiones, interacciones y balances en dinámicas y desarrollos poblacionales, ambientales, sociales y económicos. Serie Población, Ordenamiento y Desarrollo. Ministerio de Ambiente, Vivienda y Desarrollo Territorial, Viceministerio de Vivienda y Desarrollo Territorial, Dirección de Desarrollo Territorial 1, República de Colombia. ](https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/ELEMENTOS%20POBLACIONALES%203%20-%20MVCT.pdf)
 * [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
+* https://es.wikipedia.org/wiki/Censos_de_Colombia
 
 
 ## Control de versiones
