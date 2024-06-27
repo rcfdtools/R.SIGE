@@ -164,10 +164,10 @@ https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 
 #### 2.2.2. Análisis de tendencias y población proyectada
 
-<div align="center"><img src="graph/DANE_PTotal_Trend_Tables.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tabla de análisis de tendencias</sub><br><br></div>
+<div align="center"><img src="graph/DANE_PTotal_Trend_Table.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tabla de análisis de tendencias</sub><br><br></div>
 <div align="center"><img src="graph/DANE_PTotal_Projection_Table.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias</sub><br><br></div>
 <div align="center"><img src="graph/DANE_PTotal_Projection_Chart.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyecciones a partir de tendencias</sub><br><br></div>
-<div align="center"><img src="graph/DANE_PTotal_Projection_Table_GIS.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias para visualización en SIG</sub><br><br></div>
+<div align="center"><img src="graph/DANE_PTotal_Projection_Table_GIS.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias para visualización en SIG</sub><br><br></div>
 <div align="center"><img src="graph/DANE_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
 
 
