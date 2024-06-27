@@ -110,10 +110,10 @@ Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálo
 
 | Campo   | Definición                                                                         | Tipo       | Tabla en libro de Excel |
 |:--------|------------------------------------------------------------------------------------|------------|-------------------------| 
-| Fuente  | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal,                 |
-| Zona    | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal,                 |
-| Fecha   | Año de registro o de proyección                                                    | Short      | Censal,                 |
-| PTotal  | Total de población registrada o proyectada para la zona estudiada                  | Long       | Censal                  |
+| Fuente  | Fuente de información (DANE, SISBEN, Registraduría, otras)                         | Text (100) | Censal, PoblacionGIS    |
+| Zona    | Zona geográfica que cubre el análisis (Municipio, urbano, rural, centros poblados) | Text (100) | Censal, PoblacionGIS    |
+| Fecha   | Año de registro o de proyección                                                    | Short      | Censal, PoblacionGIS    |
+| PTotal  | Total de población registrada o proyectada para la zona estudiada                  | Long       | Censal, PoblacionGIS    |
 | PTMasc  | Población total masculina                                                          | Long       | Censal                  |
 | PTFem   | Población total femenina                                                           | Long       | Censal                  |
 | PT0_6   | Población total 0-6 años                                                           | Long       | Censal                  |
@@ -159,7 +159,7 @@ https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 
 </div>
 
-<div align="center"><img src="graph/DANE_Censal_Historico_Graph1.svg" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE<br>Gráfico por rcfdtools</sub><br><br></div>
+<div align="center"><img src="graph/DANE_Censal_Historico_Graph1.svg" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE - Gráfico por rcfdtools</sub><br><br></div>
 
 
 ### 2.3. SISBEN
