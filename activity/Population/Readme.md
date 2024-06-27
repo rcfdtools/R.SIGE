@@ -39,7 +39,7 @@ interacción entre la población y sus bases ambientales y socioeconómicas. [^4
 La población aumenta o disminuye en el tiempo. Tiene una composición por sexo, edad, etnia o condición social que también puede modificarse en el tiempo. Se localiza en un territorio y se moviliza sobre él. Este proceso de cambio permanente es lo que se denomina dinámica demográfica. [^5]
 
 
-<div align="center"><img src="graph/ComponentesBasicosDinamicaDemografica.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Tomado de: <a href="https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf">https://colombia.unfpa.org</a></sub><br><br></div>
+<div align="center"><img src="graph/ComponentesBasicosDinamicaDemografica.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial.<br>Tomado de: <a href="https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf">https://colombia.unfpa.org</a></sub><br><br></div>
 
 
 El crecimiento natural o vegetativo de la población resulta del balance entre los nacimientos y las defunciones que se observan en un territorio particular. La población puede también aumentar por inmigración o disminuir por emigración. El crecimiento total de la población resulta del balance entre el saldo vegetativo y el saldo migratorio. De estos factores y su constante cambio dependerá el tamaño de la población que reside en el territorio, así como su estructura por edad y sexo y su distribución espacial. [^4]
@@ -76,7 +76,7 @@ Los cambios en el tamaño, crecimiento, estructura, localización o movilidad de
 
 
 
-## 4. Histórico de potencial electoral
+## 4. Histórico Registraduría Nacional y potencial electoral
 
 
 ## 5. Otras fuentes censales
