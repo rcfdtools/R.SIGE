@@ -171,6 +171,10 @@ https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion
 <div align="center"><img src="graph/DANE_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
 
 
+### Ejemplo de análisis de dinámica demográfica
+
+<div align="center"><img src="graph/DANE_PTotal_DemographicDynamics.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Análisis de dinámica demográfica</sub><br><br></div>
+
 
 
 
