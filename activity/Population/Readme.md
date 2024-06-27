@@ -89,7 +89,7 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 | PoblacionGISChart    | Gráfico combinado con datos de población histórica y población proyectada para la tendencia seleccionada.                                                            |
 
 
-#### Grupos etarios 
+#### 2.1.2. Grupos etarios 
 
 | Rango de edad [^4] | Descripción                     |
 |:------------------:|:--------------------------------|
@@ -100,7 +100,7 @@ Para el análisis de datos y proyección de población, utilizaremos el libro de
 |      60+ años      | Adultos mayores                 |
 
 
-#### Catálogo de objetos
+#### 2.1.3. Catálogo de objetos
 
 Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálogo de objetos que será utilizado en el Libro de Microsoft Excel y las tablas para visualización de datos en el SIG:
 
