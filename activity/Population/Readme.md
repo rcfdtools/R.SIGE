@@ -168,7 +168,7 @@ Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, pr
 
 </div>
 
-<div align="center"><img src="graph/DANE_Censal_Historico_Graph.svg" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE - Gráfico por rcfdtools</sub><br><br></div>
+<div align="center"><img src="graph/DANE_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE - Gráfico por rcfdtools</sub><br><br></div>
 
 
 #### 2.2.2. Análisis de tendencias y población proyectada
