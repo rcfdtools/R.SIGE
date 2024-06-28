@@ -10,12 +10,15 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 
 ## Objetivos
 
-* 
+* Estudiar el marco normativo que reglamenta el ordenamiento territorial en Colombia.
+* Entender el objeto de los POT, sus denominaciones, las etapas desde el diagnóstico hasta la revisión, identificar los tipos de normas urbanísticas aplicables.
+* Comprender los conceptos de gestión del riesgo en el alcance de los POT.
 
 
 ## Requerimientos
 
 * Lectura - [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)
+* Recopilación de Acuerdos y Decretos municipales de Adopción del Plan de Ordenamiento para su caso de estudio.
 
 
 ## 1. Marco normativo
