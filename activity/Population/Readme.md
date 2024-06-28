@@ -223,13 +223,36 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 <div align="center"><img src="graph/SISBEN_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
 
 
-
-
 ### 2.4. Registraduría Nacional del Estado Civil
 
-Fuentes: [Registraduría Nacional del Estado Civil](https://registraduria.gov.co/)
+Fuentes
+* [Registraduría Nacional del Estado Civil](https://registraduria.gov.co/)
+* [Histórico de resultados electorales](https://observatorio.registraduria.gov.co)
+* https://estadisticaselectorales.registraduria.gov.co/
+* https://www.registraduria.gov.co/IMG/xlsx/
 
 La Registraduría Nacional del Estado Civil es una entidad con autonomía administrativa, contractual y presupuestal, organizada de manera desconcentrada, que tiene a su cargo el registro de la vida civil e identificación de los colombianos y la realización de los procesos electorales y los mecanismos de participación ciudadana, con plenas garantías para los colombianos.
+
+
+#### 2.4.1. Tabla de datos censales
+
+<div align="center">
+
+| Fuente               | Zona      | Fecha | PTotal |
+|----------------------|-----------|-------|--------|
+| RNEC Censo Electoral | Municipio | 2019  | 90014  |
+| RNEC Censo Electoral | Municipio | 2023  | 102858  |
+
+</div>
+
+<div align="center"><img src="graph/RNEC_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos SISBEN</sub><br><br></div>
+
+
+#### 2.4.2. Análisis de tendencias y población proyectada
+
+<div align="center"><img src="graph/RNEC_PTotal_Projection_Table_GIS.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias para visualización en SIG</sub><br><br></div>
+<div align="center"><img src="graph/RNEC_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
+
 
 
 ### 2.5. Otras fuentes censales
