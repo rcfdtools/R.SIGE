@@ -38,7 +38,7 @@ El POT Se define como el conjunto de objetivos, directrices, políticas, estrate
 
 ### 1.2. Objeto del Plan de Ordenamiento Territorial 
 
-Ley 388 de 1997, Capítulo III, Articulo 6.
+Ley 388 de 1997, Artículo 6.
 
 El ordenamiento del Territorio Municipal y Distrital tiene por objeto complementar la planificación económica y social con la dimensión territorial, identificar las necesidades de espacio público, priorizando los requerimientos de los niños, niñas, adolescentes, mujeres, adultos mayores y personas en condición de discapacidad, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible, mediante:
 
@@ -51,7 +51,7 @@ El ordenamiento del Territorio Municipal y Distrital tiene por objeto complement
 
 ### 1.3. Denominación: POT, PBOT, EOT
 
-Ley 388 de 1997, Capítulo III, Articulo 9.
+Ley 388 de 1997, Artículo 9.
 
 <div align="center">
 
@@ -66,7 +66,34 @@ Ley 388 de 1997, Capítulo III, Articulo 9.
 > Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
 
 
-### 2. Etapas del proceso de planificación territorial y revisión del POT
+### 1.4. Componentes y vigencias del POT
+
+Ley 388 de 1997, Artículo 13.
+
+La ley 388 de 1997 estableció los contenidos de los planes de ordenamiento territorial, los cuales se desarrollan durante la etapa de formulación y hacen referencia a lo siguiente
+
+| Componente                          | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Corto plazo | Mediano plazo | Largo plazo  |
+|:------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:-------------:|:------------:|
+| General                             | Contiene los objetivos y estrategias territoriales que complementarán diferentes acciones desde el punto de vista del manejo territorial, el desarrollo municipal y distrital. Contenido relacionado con la estructura urbano-rural e intraurbana con la correspondiente identificación de la naturaleza de las infraestructuras, redes de comunicación y servicios, así como otros elementos o equipamientos estructurantes de gran escala.                                          |             |               |      ✓       |
+| Urbano                              | Instrumento para la administración del desarrollo y la ocupación del espacio físico clasificado como suelo urbano y suelo de expansión urbana, que integra políticas de mediano y corto plazo, procedimientos e instrumentos de gestión y normas urbanísticas.                                                                                                                                                                                                                        |      ✓      |       ✓       |              |
+| Rural                               | Instrumento para garantizar la adecuada interacción entre los asentamientos rurales y la cabecera municipal, la conveniente utilización del suelo rural y las actuaciones públicas tendientes al suministro de infraestructuras y equipamientos básicos para el servicio de los pobladores rurales.                                                                                                                                                                                   |      ✓      |       ✓       |              |
+| Programas, proyectos e instrumentos |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |      ✓      |       ✓       |      ✓       |
+| Programa de ejecución               | El programa de ejecución define con carácter obligatorio, las actuaciones sobre el territorio previstas en el plan de ordenamiento, que serán ejecutadas durante el período de la correspondiente administración municipal o distrital, de acuerdo con lo definido en el correspondiente Plan de Desarrollo, señalando las prioridades, la programación de actividades, las entidades responsables y los recursos respectivos. Más información en artículo 18 de la Ley 388 de 1997.  |      ✓      |       ✓       |      ✓       |
+
+
+### 1.5. Normas urbanísticas
+
+Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del suelo y definen la naturaleza y las consecuencias de las actuaciones urbanísticas indispensables para la administración de estos procesos. Estas normas estarán jerarquizadas de acuerdo con los criterios de prevalencia aquí especificados y en su contenido quedarán establecidos los procedimientos para su revisión, ajuste o modificación, en congruencia con lo que a continuación se señala.
+
+| Tipo                                 | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|:-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Normas urbanísticas estructurales | Son las que aseguran la consecución de los objetivos y estrategias adoptadas en el componente general del plan y en las políticas y estrategias de mediano plazo del componente urbano. Prevalecen sobre las demás normas, en el sentido de que las regulaciones de los demás niveles no pueden adoptarse ni modificarse contraviniendo lo que en ellas se establece, y su propia modificación solo puede emprenderse con motivo de la revisión general del plan o excepcionalmente a iniciativa del alcalde municipal o distrital, con base en motivos y estudios técnicos debidamente sustentados.                                                                                                  |
+| 2. Normas urbanísticas generales     | Son aquellas que permiten establecer usos e intensidad de usos del suelo, así como actuaciones, tratamientos y procedimientos de parcelación, urbanización, construcción e incorporación al desarrollo de las diferentes zonas comprendidas dentro del perímetro urbano y suelo de expansión. Por consiguiente, otorgan derechos e imponen obligaciones urbanísticas a los propietarios de terrenos y a sus constructores, conjuntamente con la especificación de los instrumentos que se emplearán para que contribuyan eficazmente a los objetivos del desarrollo urbano y a sufragar los costos que implica tal definición de derechos y obligaciones.                                             |
+| 3. Normas complementarias            | Se trata de aquellas relacionadas con las actuaciones, programas y proyectos adoptados en desarrollo de las previsiones contempladas en los componentes general y urbano del plan de ordenamiento, y que deben incorporarse al Programa de ejecución que se establece en el artículo 18 de la presente ley. También forman parte de este nivel normativo, las decisiones sobre las acciones y actuaciones que por su propia naturaleza requieren ser ejecutadas en el corto plazo y todas las regulaciones que se expidan para operaciones urbanas específicas y casos excepcionales, de acuerdo con los parámetros, procedimientos y autorizaciones emanadas de las normas urbanísticas generales.   |
+
+
+
+## 2. Etapas del proceso de planificación territorial y revisión del POT
 
 | Etapa                        | Alcance                                                                                                             |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------|
@@ -100,6 +127,10 @@ Para la revisión del POT:
 
 
 ## 6. Relación del Plan de Desarrollo con el POT
+
+Ley 388 de 1997, Articulo 21.
+
+El plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
 
 
 ## 7. Roles de la ingeniería civil y ambiental en la elaboración de los POT
