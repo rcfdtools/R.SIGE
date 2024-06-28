@@ -225,7 +225,8 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 
 ### 2.4. Registraduría Nacional del Estado Civil
 
-Fuentes
+Fuentes de datos
+
 * [Registraduría Nacional del Estado Civil](https://registraduria.gov.co/)
 * [Histórico de resultados electorales](https://observatorio.registraduria.gov.co)
 * https://estadisticaselectorales.registraduria.gov.co/
