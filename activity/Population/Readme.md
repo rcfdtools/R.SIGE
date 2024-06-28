@@ -1,5 +1,5 @@
 # Estudio poblacional: censos y proyecciones
-Keywords: `Population` `Census` `Projection`
+Keywords: `Population` `Census` `Projection` `Linear` `Polynomial` `Logarithmic` `Exponential` `Power` `DANE` `SISBEN` `RNEC`
 
 Corresponde a la administración municipal tener un adecuado conocimiento de la población y de sus dinámicas, ya que son el eje articulador de todos los procesos de desarrollo, teniendo como soporte físico el territorio.[^1]
 
