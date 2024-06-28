@@ -130,6 +130,7 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 
 <div align="center"><img src="graph/AsentamientoZonaAltoRiesgo.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Asentamientos en zonas de alto riesgo por inudación o movimientos en masa<br>Tomado de: <a href="https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
+
 ### 7.1. Conceptos básicos
 
 | Concepto                         | Definición                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -142,19 +143,31 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 
 > La evaluación del riesgo establece una espacialización y categorización, indicando generalmente zonas de riesgo alto, medio y bajo. Se requiere que cada una de las zonas explicite claramente las características dadas por la categoría asignada, de manera que quienes toman decisiones cuenten con información que les permita establecer acciones adecuadas para avanzar en la reducción del riesgo.
 
+Para el análisis del riesgo se realizan dos tipos de estudios:
+
+Básicos
+
+* Se realizan como requisito para adelantar los procesos de revisión del POT.
+* Permiten priorizar las zonas en donde se requiere adelantar estudios que permitan categorizar el riesgo.
+
+Detallados
+
+* Se pueden plantear en el contenido programático del POT, con el fin de que se desarrollen en su implementación.
+* Permite categorizar el riesgo y establecer las medidas de intervención estructurales para su manejo.
+
 
 ### 7.2. Tipos de riesgos
 
-| Tipo de riesgo      | Alcance                                     | Estudio                                    | 
-|:--------------------|:--------------------------------------------|:-------------------------------------------|
-| Inundación          | Amenaza natural                             | Estudio hidráulico                         |
-| Movimiento en masa  | Amenaza natural. Derrumbes y deslizamientos | Estudios de riesgo por movimientos en masa |
-| Volcánico           | Amenaza natural                             |                                            |
-| Tsunami             | Amenaza natural                             |                                            |
-| Subsidencia         | Amenaza natural                             |                                            |
-| Tecnológico         | Amenaza natural                             |                                            |
-| Sísmico             | Amenaza natural                             |                                            |
-| Condición insalubre | Amenaza inducida                            |                                            |
+| Tipo de riesgo      | Tipo                                        |
+|:--------------------|:--------------------------------------------|
+| Inundación          | Amenaza natural                             |
+| Movimiento en masa  | Amenaza natural. Derrumbes y deslizamientos | 
+| Volcánico           | Amenaza natural                             | 
+| Tsunami             | Amenaza natural                             | 
+| Subsidencia         | Amenaza natural                             | 
+| Tecnológico         | Amenaza natural                             | 
+| Sísmico             | Amenaza natural                             |
+| Condición insalubre | Amenaza inducida                            |
 
 > De acuerdo a la Ley 388 de 1997, se deben determinar las medidas para el manejo de dichas zonas, incluídos los mecanísmos de reubicación de asentamientos cuando esto se requiera, así mismo se debe contemplar la transformación del uso asignado a tales zonas para evitar reasentamientos de alto riesgo; la constitución de reservas de tierras y la adquisición y expropiación de inmuebles que sean necesarios para reubicación de poblaciones de alto riesgo.
 
