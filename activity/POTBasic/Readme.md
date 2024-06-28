@@ -1,11 +1,9 @@
-# Plantilla para actividades
-Keywords: `DEM` `AgreeDEM`
+# Conceptos generales de Ordenamiento Territorial - OT
+Keywords: `EOT` `PBOT` `POT`
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+En esta actividad realizaremos una revisión del marco general de los POT y su normativa, etapas de desarrollo (Diagnóstico, Formulación, Implementación, Evaluación y Seguimiento), el alcance en la gestión del riesgo, su participación y las fuentes de financiación.
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
-
-
 
 
 ## Objetivos
@@ -15,10 +13,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Requerimientos
 
-* [ArcGIS Pro 2+](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm)
-* [ArcGIS for Desktop 10+](https://desktop.arcgis.com/es/desktop/) (opcional)
-* [QGIS 3+](https://qgis.org/) (opcional)
-* HEC-HMS 4.9+
 * Lectura - 
 
 
@@ -77,7 +71,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../Population/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|----------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
 [^1]: 

@@ -313,8 +313,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../StudyCaseHistory/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/6) | [Siguiente :arrow_forward:]() |
-|------------------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../StudyCaseHistory/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/6) | [Siguiente :arrow_forward:](../POTBasic/Readme.md) |
+|------------------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------|
 
 [^1]: https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf
 [^2]: Rubiano, Norma; González, Alejandro y otros, Población y Ordenamiento Territorial, Universidad del Externado, UNFPA, MAVDT, 2003
