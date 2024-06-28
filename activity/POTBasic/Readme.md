@@ -3,7 +3,7 @@ Keywords: `EOT` `PBOT` `POT`
 
 El ordenamiento del territorio comprende un conjunto de acciones político-administrativas y de planificación física concertadas, adelantadas por los municipios o distritos y áreas metropolitanas, en ejercicio de la función pública que les compete, dentro de los límites fijados por la Constitución y las leyes, en orden a disponer de instrumentos eficientes para orientar el desarrollo del territorio bajo su jurisdicción y regular la utilización, transformación y ocupación del espacio, de acuerdo con las estrategias de desarrollo socioeconómico y en armonía con el medio ambiente y las tradiciones históricas y culturales (art. 5 Ley 388 de 1997).
 
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Shanghai_Urban_Planning_Museum_city_model_4.jpg" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Shanghai_Urban_Planning_Museum_city_model_4.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 En esta actividad realizaremos una revisión del marco general de los POT y su normativa, etapas de desarrollo (Diagnóstico, Formulación, Implementación, Evaluación y Seguimiento), el alcance en la gestión del riesgo, su participación y las fuentes de financiación.
 
