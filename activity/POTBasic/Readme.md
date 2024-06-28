@@ -128,6 +128,7 @@ La gestión de riesgo de desastres es un proceso dinámico y permanente orientad
 
 Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesgo de Desastres, y mediante la [Resolución 448 de 2014 del Ministerio de Vivienda, Ciudad y Territorio](https://minvivienda.gov.co/normativa/resolucion-0448-2014), se definió la [metodología para realizar el inventario nacional de asentamientos humanos en zonas de alto riesgo](https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf) por su localización, contemplados en el artículo 56 de la Ley 9 de 1989 (modificada por el artículo 5 de la Ley 2 de 1991).
 
+<div align="center"><img src="graph/AsentamientoZonaAltoRiesgo.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Asentamientos en zonas de alto riesgo por inudación o movimientos en masa<br>Tomado de: <a href="https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 ### 7.1. Conceptos básicos
 
@@ -144,12 +145,16 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 
 ### 7.2. Tipos de riesgos
 
-| Tipo de riesgo          | Alcance          | Estudio                                    | 
-|:------------------------|:-----------------|:-------------------------------------------|
-| Inundación              | Amenaza natural  | Estudio de riesgo por inundaciones         |
-| Derrumbes               | Amenaza natural  | Estudios de riesgo por movimientos en masa |
-| Deslizamientos          | Amenaza natural  | Estudios de riesgo por movimientos en masa |
-| Condiciones insalubres  | Amenaza inducida |                                            |
+| Tipo de riesgo      | Alcance                                     | Estudio                                    | 
+|:--------------------|:--------------------------------------------|:-------------------------------------------|
+| Inundación          | Amenaza natural                             | Estudio hidráulico                         |
+| Movimiento en masa  | Amenaza natural. Derrumbes y deslizamientos | Estudios de riesgo por movimientos en masa |
+| Volcánico           | Amenaza natural                             |                                            |
+| Tsunami             | Amenaza natural                             |                                            |
+| Subsidencia         | Amenaza natural                             |                                            |
+| Tecnológico         | Amenaza natural                             |                                            |
+| Sísmico             | Amenaza natural                             |                                            |
+| Condición insalubre | Amenaza inducida                            |                                            |
 
 > De acuerdo a la Ley 388 de 1997, se deben determinar las medidas para el manejo de dichas zonas, incluídos los mecanísmos de reubicación de asentamientos cuando esto se requiera, así mismo se debe contemplar la transformación del uso asignado a tales zonas para evitar reasentamientos de alto riesgo; la constitución de reservas de tierras y la adquisición y expropiación de inmuebles que sean necesarios para reubicación de poblaciones de alto riesgo.
 
