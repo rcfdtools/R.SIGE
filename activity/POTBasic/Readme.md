@@ -141,6 +141,7 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 
 > La evaluación del riesgo establece una espacialización y categorización, indicando generalmente zonas de riesgo alto, medio y bajo. Se requiere que cada una de las zonas explicite claramente las características dadas por la categoría asignada, de manera que quienes toman decisiones cuenten con información que les permita establecer acciones adecuadas para avanzar en la reducción del riesgo.
 
+
 ### 7.2. Tipos de riesgos
 
 | Tipo de riesgo          | Alcance          | Estudio                                    | 
