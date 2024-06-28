@@ -30,6 +30,7 @@ El POT Se define como el conjunto de objetivos, directrices, políticas, estrate
 | [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)        | Obligatoriedad, forma y contenido de los POT, PBOT y EOT.                                             |
 | Ley 1454 de 2011                                                                               | Distribuye competencias en materia de ordenamiento territorial.                                       |
 | Ley 1551 de 2012                                                                               | Establece que es función de los municipios formular y adoptar los planes de ordenamiento territorial. |
+| Ley 2079 de 2021                                                                                |  |
 | Decreto 1077 de 2015                                                                           | Reglamenta y complementa las disposiciones de la Ley 388 de 1997.                                     |
 | Acuerdo o Decreto de planificación territorial del nivel municipal                             | Instrumento de planificación territorial del nivel municipal.                                         |
 |                                                                                                |                                                                                                       |
