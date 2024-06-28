@@ -76,7 +76,7 @@ A partir de los datos poblacionales recopilados, determinar la población futura
 
 #### 2.1.1. Libro de Microsoft Excel
 
-Para el análisis de datos y proyección de población, utilizaremos el libro de Excel :open_file_folder:_[Poblacion.xlsx](Poblacion.xlsx)_ que contiene las siguientes hojas:
+Para el análisis de datos y proyección de población, utilizaremos un libro de Excel que contiene las siguientes hojas:
 
 | Hoja                 | Alcance                                                                                                                                                              |
 |:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,6 +138,8 @@ Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálo
 
 ### 2.2. Departamento Administrativo Nacional de Estadística - DANE
 
+:open_file_folder:_[PoblacionDANE.xlsx](PoblacionDANE.xlsx)_
+
 Fuentes de datos
 
 * [Censos - DANE ](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion)
@@ -187,6 +189,8 @@ Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, pr
 
 ### 2.3. Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales - SISBEN
 
+:open_file_folder:_[PoblacionSISBEN.xlsx](PoblacionSISBEN.xlsx)_
+
 Fuentes de datos
 
 * [Grupo SISBEN](https://www.sisben.gov.co/Paginas/consulta-tu-grupo.html)
@@ -226,6 +230,8 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 
 
 ### 2.4. Registraduría Nacional del Estado Civil
+
+:open_file_folder:_[PoblacionRNEC.xlsx](PoblacionRNEC.xlsx)_
 
 Fuentes de datos
 
