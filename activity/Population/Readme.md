@@ -180,7 +180,7 @@ Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, pr
 <div align="center"><img src="graph/DANE_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
 
 
-### 2.2.3. Ejemplo de análisis de dinámica demográfica
+#### 2.2.3. Ejemplo de análisis de dinámica demográfica
 
 <div align="center"><img src="graph/DANE_PTotal_DemographicDynamics.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Análisis de dinámica demográfica</sub><br><br></div>
 
@@ -196,6 +196,9 @@ Fuentes de datos
 * [Diccionario de datos SISBEN](https://anda.dnp.gov.co/index.php/catalog/135/data_dictionary)
 
 El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales, que permite clasificar a la población de acuerdo con sus condiciones de vida e ingresos. Esta clasificación se utiliza para focalizar la inversión social y garantizar que sea asignada a quienes más lo necesitan.
+
+
+#### 2.3.1. Tabla de datos censales
 
 <div align="center">
 
