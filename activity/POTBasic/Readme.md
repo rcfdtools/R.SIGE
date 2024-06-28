@@ -25,15 +25,15 @@ El POT Se define como el conjunto de objetivos, directrices, políticas, estrate
 
 ### 1.1. Marco normativo
 
-| Norma                                                                                          | Alcance                                                                                                                                                                                                                                                                                                                                                                                  |
-|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Constitución política de Colombia ](http://www.secretariasenado.gov.co/constitucion-politica) | Establece la competencia de los municipios para el ordenamiento territorial (art. 311 y 318)                                                                                                                                                                                                                                                                                             |
-| [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)        | Obligatoriedad, forma y contenido de los POT, PBOT y EOT.                                                                                                                                                                                                                                                                                                                                |
-| [Ley 1454 de 2011](http://www.secretariasenado.gov.co/senado/basedoc/ley_1454_2011.html)       | Distribuye competencias en materia de ordenamiento territorial.                                                                                                                                                                                                                                                                                                                          |
-| [Ley 1551 de 2012](http://www.secretariasenado.gov.co/senado/basedoc/ley_1551_2012.html)       | Establece que es función de los municipios formular y adoptar los planes de ordenamiento territorial.                                                                                                                                                                                                                                                                                    |
-| [Ley 2079 de 2021](http://www.secretariasenado.gov.co/senado/basedoc/ley_2079_2021.html)                                                                               | Tiene por objeto reconocer la política pública de hábitat y vivienda como una política de Estado que diseñe y adopte normas destinadas a complementar el marco normativo dentro del cual se formula y ejecuta la política habitacional urbana y rural en el país, con el fin de garantizar el ejercicio efectivo del derecho a una vivienda y hábitat dignos para todos los colombianos. |
-| [Decreto 1077 de 2015](https://minvivienda.gov.co/sites/default/files/normativa/1077%20-%202015.pdf)                                                                           | Reglamenta y complementa las disposiciones de la Ley 388 de 1997.                                                                                                                                                                                                                                                                                                                        |
-| Acuerdo o Decreto de planificación territorial del nivel municipal                             | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                            |
+| Norma                                                                                                | Alcance                                                                                                                                                                                                                                                                                                                                                                                  |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Constitución política de Colombia ](http://www.secretariasenado.gov.co/constitucion-politica)       | Establece la competencia de los municipios para el ordenamiento territorial (art. 311 y 318)                                                                                                                                                                                                                                                                                             |
+| [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)              | Obligatoriedad, forma y contenido de los POT, PBOT y EOT.                                                                                                                                                                                                                                                                                                                                |
+| [Ley 1454 de 2011](http://www.secretariasenado.gov.co/senado/basedoc/ley_1454_2011.html)             | Distribuye competencias en materia de ordenamiento territorial.                                                                                                                                                                                                                                                                                                                          |
+| [Ley 1551 de 2012](http://www.secretariasenado.gov.co/senado/basedoc/ley_1551_2012.html)             | Establece que es función de los municipios formular y adoptar los planes de ordenamiento territorial.                                                                                                                                                                                                                                                                                    |
+| [Decreto 1077 de 2015](https://minvivienda.gov.co/sites/default/files/normativa/1077%20-%202015.pdf) | Reglamenta y complementa las disposiciones de la Ley 388 de 1997.                                                                                                                                                                                                                                                                                                                        |
+| [Ley 2079 de 2021](http://www.secretariasenado.gov.co/senado/basedoc/ley_2079_2021.html)             | Tiene por objeto reconocer la política pública de hábitat y vivienda como una política de Estado que diseñe y adopte normas destinadas a complementar el marco normativo dentro del cual se formula y ejecuta la política habitacional urbana y rural en el país, con el fin de garantizar el ejercicio efectivo del derecho a una vivienda y hábitat dignos para todos los colombianos. |
+| Acuerdo o Decreto de planificación territorial del nivel municipal                                   | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                            |
 
 
 ### 1.2. Objeto del Plan de Ordenamiento Territorial 
@@ -55,46 +55,38 @@ Ley 388 de 1997, Capítulo III, Articulo 9.
 
 <div align="center">
 
-| Denominación                                   | Población                       | Adoptan                | 
-|------------------------------------------------|---------------------------------|------------------------|
-| POT - Plan de ordenamiento territorial         | Superior a 100000 habitantes    | Distritos o municipios |
-| PBOT - Plan básico de ordenamiento territorial | Entre 30000 y 100000 habitantes | Municipios             |
-| EOT - Esquema de ordenamiento territorial      | Inferior a 30000 habitantes     | Municipios             |
+| Denominación                                    | Población                        | Adoptan                 | 
+|:------------------------------------------------|:---------------------------------|:------------------------|
+| POT - Plan de ordenamiento territorial          | Superior a 100000 habitantes     | Distritos o municipios  |
+| PBOT - Plan básico de ordenamiento territorial  | Entre 30000 y 100000 habitantes  | Municipios              |
+| EOT - Esquema de ordenamiento territorial       | Inferior a 30000 habitantes      | Municipios              |
 
 </div>
 
 > Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
 
 
-### 1.4. Etapas y revisión
+### 2. Etapas del proceso de planificación territorial y revisión del POT
 
-| Etapa                        | Alcance  |
-|:-----------------------------|:---------|
-| 1. Diagnóstico               |          |
-| 2. Formulación               |          |
-| 3. Implementación            |          |
-| 4. Seguimiento y evaluación  |          |
+| Etapa                        | Alcance                                                                                                             |
+|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| 1. Diagnóstico               |                                                                                                                     |
+| 2. Formulación               | Consejo de gobierno, Autoridad ambiental, Junta metropolitana, Consejo territorial de planeación, Concejo municipal |
+| 3. Implementación            |                                                                                                                     |
+| 4. Seguimiento y evaluación  |                                                                                                                     |
 
-Para la revisión del POT es necesario
+> La vigencia (corto, mediano y largo plazo) de los POT es de tres períodos constitucionales completos y estos se deben contar a partir del momento en que el municipio adopta el instrumento. Por ejemplo, si la adopción del POT se realizó a mediados de 2012, se entenderá que la vigencia de corto plazo incluirá todo el período constitucional hasta el 31/12/2019 y el siguiente período constitucional, ya que el período 2012-2015, no puede considerarse completo. Así mismo, la vigencia de mediano plazo se ejecutará en el período 2020-2023 y la de largo plazo en el período 2024-2027.
 
-| Requerimiento                        | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| a. Plan de desarrollo municipal      | En necesario que la revisión del POT haya quedado incluída en el plan de inversiones del Plan de desarrollo municipal - PDM.                                                                                                                                                                                                                                                                                                                                             |
-| b. Definir la fuente de financiación | El POT podrá financiarse a partir de una o diferentes fuentes, por ejemplo:<br>* Recursos propios que estén claramente identificados en el plan de inversiones del PDM.<br>* Recursos del sistema general de regalías SGR definidos en un capítulo especial del PDM <br>* Otras fuentes de financiación (convenios inter-administrativos, recursos de cooperación financiera internacional, créditos del Banco de Desarrollo Territorial - [Findeter]() y otros bancos). |
-| c. Contratación                      | Cuando el municipio no cuente con la capacidad operativa y técnica para adelantar la revisión del POT, podrá realizar la contratación, para lo cual es necesario realizar un estudio previo que determine las condiciones contractuales.                                                                                                                                                                                                                                 |
+Para la revisión del POT:
 
-> ¿Cuánto tiempo toma? Dependerá de la fuente de financiación, la cual puede implicar tiempos de acceso a los recursos. Además, se deben considerar los tiempos propios de la licitación de acuerdo a lo establecido en las normas vigentes.
+| Requerimiento                         | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a. Plan de desarrollo municipal       | En necesario que la revisión del POT haya quedado incluída en el plan de inversiones del Plan de desarrollo municipal - PDM.                                                                                                                                                                                                                                                                                                                                              |
+| b. Definir la fuente de financiación  | El POT podrá financiarse a partir de una o diferentes fuentes, por ejemplo:<br>* Recursos propios que estén claramente identificados en el plan de inversiones del PDM.<br>* Recursos del sistema general de regalías SGR definidos en un capítulo especial del PDM <br>* Otras fuentes de financiación (convenios inter-administrativos, recursos de cooperación financiera internacional, créditos del Banco de Desarrollo Territorial - [Findeter]() y otros bancos).  |
+| c. Contratación                       | Cuando el municipio no cuente con la capacidad operativa y técnica para adelantar la revisión del POT, podrá realizar la contratación, para lo cual es necesario realizar un estudio previo que determine las condiciones contractuales.                                                                                                                                                                                                                                  |
 
-### 1.3. Marco general
+> ¿Cuánto tiempo toma? Dependerá de la fuente de financiación, la cual puede implicar tiempos de acceso a los recursos. Además, se deben considerar los tiempos propios de la licitación de acuerdo a lo establecido en las 
 
-
-
-
-
-
-## 2. Etapas
-
-Diagnóstico, Formulación, Implementación, Evaluación y Seguimiento
 
 
 ## 3. Gestión del riesgo
@@ -104,6 +96,7 @@ Diagnóstico, Formulación, Implementación, Evaluación y Seguimiento
 
 
 ## 5. Fuentes de financiación
+
 
 
 ## 6. Relación del Plan de Desarrollo con el POT
