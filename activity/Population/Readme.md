@@ -283,6 +283,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 | Avance **P1** | Investigue, documente y realice proyecciones de población total, por género, por zona (total municipal, urbana, rural total, rural por vereda, centros poblados) hasta 50 años a partir de las fuentes censales indicadas en esta actividad (DANE, SISBEN, RNEC). Incluya tablas y gráficos de datos censales y de proyección. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
+> 
+> En el informe único incluya un numeral para esta actividad y subnumerales para el desarrollo de las diferentes actividades siguiendo en el mismo orden indicado en esta actividad.
 
 
 ## Referencias
