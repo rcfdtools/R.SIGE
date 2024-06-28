@@ -146,8 +146,6 @@ Fuentes de datos
 
 El Departamento Administrativo Nacional de Estadística -DANE- es la entidad responsable de la planeación, levantamiento, procesamiento, análisis y difusión de las estadísticas oficiales de Colombia. Perteneciente a la Rama Ejecutiva del Estado Colombiano, con más de 50 años de experiencia. Cumple con los más altos estándares de calidad. El DANE ofrece al país y al mundo más de 30 investigaciones de todos los sectores de la economía, industria, población, sector agropecuario y calidad de vida, entre otras. [^9]
 
-Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, procesamiento y difusión, así como la calidad humana de todos los que participan en el proceso de la organización, permiten al DANE fortalecer el conocimiento, la confianza y la cultura estadística de los colombianos, reafirmando su condición de líder como rector de las estadísticas en Colombia. 
-
 
 #### 2.2.1. Tabla de datos censales
 
@@ -281,6 +279,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Avance **P1** | Investigue, documente y realice proyecciones de población total, por género, por zona (total municipal, urbana, rural total, rural por vereda, centros poblados) hasta 50 años a partir de las fuentes censales indicadas en esta actividad (DANE, SISBEN, RNEC). Incluya tablas y gráficos de datos censales y de proyección. | 
 | Avance **P1** | Identifique las principales dinámicas poblacionales de la zona de estudio de su proyecto, e indique cual puede ser su relación con el desarrollo y ordenamiento territorial local.                                                                                                                                             | 
+| Avance **P1** | Realice un análisis gráfico por grupos etarios para cualquier año censal.                                                                                                                                                                                                                                                      | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
