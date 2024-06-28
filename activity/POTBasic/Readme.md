@@ -18,7 +18,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 * Lectura - 
 
 
-### 1. Marco normativo
+## 1. Marco normativo
 
 | Norma                                                                                                | Alcance                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 | Acuerdo o Decreto de planificación territorial del nivel municipal                                   | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                            |
 
 
-### 2. Objeto del Plan de Ordenamiento Territorial 
+## 2. Objeto del Plan de Ordenamiento Territorial 
 
 Ley 388 de 1997, Artículo 6.
 
@@ -46,7 +46,7 @@ El ordenamiento del Territorio Municipal y Distrital tiene por objeto complement
 > El ordenamiento del territorio municipal y distrital se hará tomando en consideración las relaciones intermunicipales, metropolitanas y regionales; deberá dar prelación a los espacios públicos, atender las condiciones de diversidad étnica y cultural, reconociendo el pluralismo y el respeto a las diferencias; e incorporará instrumentos que regulen las dinámicas de transformación territorial de manera que se optimice la utilización de los recursos naturales, humanos y tecnológicos para el logro de condiciones de vida dignas para la población actual y las generaciones futuras.
 
 
-### 3. Denominación POT, PBOT, EOT
+## 3. Denominación POT, PBOT, EOT
 
 Ley 388 de 1997, Artículo 9.
 
@@ -63,7 +63,7 @@ Ley 388 de 1997, Artículo 9.
 > Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
 
 
-### 4. Componentes y vigencias del POT
+## 4. Componentes y vigencias del POT
 
 Ley 388 de 1997, Artículo 13.
 
@@ -78,7 +78,7 @@ La ley 388 de 1997 estableció los contenidos de los planes de ordenamiento terr
 | Programa de ejecución               | El programa de ejecución define con carácter obligatorio, las actuaciones sobre el territorio previstas en el plan de ordenamiento, que serán ejecutadas durante el período de la correspondiente administración municipal o distrital, de acuerdo con lo definido en el correspondiente Plan de Desarrollo, señalando las prioridades, la programación de actividades, las entidades responsables y los recursos respectivos. Más información en artículo 18 de la Ley 388 de 1997.  |      ✓      |       ✓       |      ✓       |
 
 
-### 5. Normas urbanísticas
+## 5. Normas urbanísticas
 
 Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del suelo y definen la naturaleza y las consecuencias de las actuaciones urbanísticas indispensables para la administración de estos procesos. Estas normas estarán jerarquizadas de acuerdo con los criterios de prevalencia aquí especificados y en su contenido quedarán establecidos los procedimientos para su revisión, ajuste o modificación, en congruencia con lo que a continuación se señala.
 
