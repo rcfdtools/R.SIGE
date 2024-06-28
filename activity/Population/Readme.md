@@ -213,6 +213,8 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 
 <div align="center"><img src="graph/SISBEN_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos SISBEN</sub><br><br></div>
 
+> Tenga en cuenta que la información del SISBEN incluye periódicamente actualizaciones (por demanda) debidas a cambios en los núcleos familiares, lugares de residencia y cambio de condiciones de vida.
+
 
 #### 2.3.2. Análisis de tendencias y población proyectada
 
@@ -248,6 +250,8 @@ La Registraduría Nacional del Estado Civil es una entidad con autonomía admini
 
 <div align="center"><img src="graph/RNEC_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos SISBEN</sub><br><br></div>
 
+> La Registraduría también dispone de información relacionada con los registros civiles de nacimientos y defunciones que pueden ser utilizados para análisis demográfico.
+
 
 #### 2.4.2. Análisis de tendencias y población proyectada
 
@@ -255,20 +259,24 @@ La Registraduría Nacional del Estado Civil es una entidad con autonomía admini
 <div align="center"><img src="graph/RNEC_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
 
 
-
 ### 2.5. Otras fuentes censales
 
+Existen otras fuentes censales de información que pueden ayudar a entender las dinámicas poblacionales, tales como:
 
+* Encuestas DANE a hogares
+* Censos municipales
+* Usuarios de servicios públicos domiciliarios
 
 
 ## Actividades de proyecto :triangular_ruler:
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                                                                         |
-|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
+| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                        |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Investigue, documente y realice proyecciones de población total, por género, por zona (total municipal, urbana, rural total, rural por vereda, centros poblados) hasta 50 años a partir de las fuentes censales indicadas en esta actividad (DANE, SISBEN, RNEC). Incluya tablas y gráficos de datos censales y de proyección. | 
 
+> No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 
 
 ## Referencias
@@ -288,17 +296,18 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción     | Autor                                      | Horas |
-|------------|:----------------|--------------------------------------------|:-----:|
-| 2022.07.20 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   0   |
+| Versión    | Descripción                                                | Autor                                      | Horas |
+|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../StudyCaseHistory/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|----------------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../StudyCaseHistory/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/6) | [Siguiente :arrow_forward:]() |
+|------------------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf
 [^2]: Rubiano, Norma; González, Alejandro y otros, Población y Ordenamiento Territorial, Universidad del Externado, UNFPA, MAVDT, 2003

@@ -167,9 +167,11 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                                                                                                                                            |
-|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado. No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento. | 
+| Actividad     | Alcance                                                                                                      |
+|:--------------|:-------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado.                           | 
+
+> No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 
 
 ## Referencias
@@ -190,7 +192,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../CRS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/5) | [Siguiente :arrow_forward:](../Population/Readme.md) |
-|---------------------------------------|-------------------|----------------------------------------------------------------------------------|----------------------------------------------|
+| [:arrow_backward: Anterior](../CRS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/5)  | [Siguiente :arrow_forward:](../Population/Readme.md) |
+|-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------|
 
 [^1]: Tomado o adaptado de https://es.wikipedia.org/wiki/Zipaquir%C3%A1
