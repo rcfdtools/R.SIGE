@@ -214,6 +214,16 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 <div align="center"><img src="graph/SISBEN_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos SISBEN</sub><br><br></div>
 
 
+#### 2.3.2. Análisis de tendencias y población proyectada
+
+<div align="center"><img src="graph/SISBEN_PTotal_Trend_Table.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tabla de análisis de tendencias</sub><br><br></div>
+<div align="center"><img src="graph/SISBEN_PTotal_Projection_Table.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias</sub><br><br></div>
+<div align="center"><img src="graph/SISBEN_PTotal_Projection_Chart.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyecciones a partir de tendencias</sub><br><br></div>
+<div align="center"><img src="graph/SISBEN_PTotal_Projection_Table_GIS.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Tabla de proyecciones a partir de tendencias para visualización en SIG</sub><br><br></div>
+<div align="center"><img src="graph/SISBEN_PTotal_Projection_Chart_Selected.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Gráfico de proyección a partir de tendencia seleccionada</sub><br><br></div>
+
+
+
 
 ### 2.4. Registraduría Nacional del Estado Civil
 
