@@ -124,6 +124,8 @@ Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del 
 
 ## 7. Gestión del riesgo
 
+La gestión de riesgo de desastres es un proceso dinámico y permanente orientado a definir, ejecutar y evaluar acciones para avanzar en el conocimiento, la reducción del riesgo y el manejo de desastres. En este orden de ideas, la Ley 388 de 1997 reconoce la prevención de amenazas y riesgos como un determinante para  el  ordenamiento del territorio, estableciendo los alcances jurídicos y técnicos para su incorporación en  as decisiones que se planteen en los Planes de Ordenamiento Territorial, por tanto, su inclusión es obligatoria e inaplazable y debe ser verificada por la autoridad ambiental en el trámite de concertación de los asuntos ambientales.
+
 
 ## 8. Participación
 
