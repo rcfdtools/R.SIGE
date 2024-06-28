@@ -18,9 +18,10 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 * Lectura - 
 
 
-## 1. Marco general y normativa
+## 1. Marco general y normativa [^1]
 
 El POT Se define como el conjunto de objetivos, directrices, políticas, estrategias, metas, programas, actuaciones y normas adoptadas para orientar y administrar el desarrollo físico del territorio y la utilización del suelo.
+
 
 ### 1.1. Marco normativo
 
@@ -35,7 +36,17 @@ El POT Se define como el conjunto de objetivos, directrices, políticas, estrate
 | Acuerdo o Decreto de planificación territorial del nivel municipal                             | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                            |
 
 
-### 1.2. Marco general
+### 1.2. Objeto del Plan de Ordenamiento Territorial 
+
+Ley 388 de 1997, Capítulo III, Articulo 6.
+
+El ordenamiento del Territorio Municipal y Distrital tiene por objeto complementar la planificación económica y social con la dimensión territorial, identificar las necesidades de espacio público, priorizando los requerimientos de los niños, niñas, adolescentes, mujeres, adultos mayores y personas en condición de discapacidad, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible, mediante:
+
+1. La definición de las estrategias territoriales de uso, ocupación y manejo del suelo, en función de los objetivos económicos, sociales, urbanísticos y ambientales.
+2. El diseño y adopción de los instrumentos y procedimientos de gestión y actuación que permitan ejecutar actuaciones urbanas integrales y articular las actuaciones sectoriales que afectan la estructura del territorio municipal o distrital.
+3. La definición de los programas y proyectos que concretan estos propósitos.
+
+> El ordenamiento del territorio municipal y distrital se hará tomando en consideración las relaciones intermunicipales, metropolitanas y regionales; deberá dar prelación a los espacios públicos, atender las condiciones de diversidad étnica y cultural, reconociendo el pluralismo y el respeto a las diferencias; e incorporará instrumentos que regulen las dinámicas de transformación territorial de manera que se optimice la utilización de los recursos naturales, humanos y tecnológicos para el logro de condiciones de vida dignas para la población actual y las generaciones futuras.
 
 
 ### 1.3. Denominación: POT, PBOT, EOT
@@ -51,6 +62,35 @@ Ley 388 de 1997, Capítulo III, Articulo 9.
 | EOT - Esquema de ordenamiento territorial      | Inferior a 30000 habitantes     | Municipios             |
 
 </div>
+
+> Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
+
+
+### 1.4. Etapas y revisión
+
+| Etapa                        | Alcance  |
+|:-----------------------------|:---------|
+| 1. Diagnóstico               |          |
+| 2. Formulación               |          |
+| 3. Implementación            |          |
+| 4. Seguimiento y evaluación  |          |
+
+Para la revisión del POT es necesario
+
+| Requerimiento                        | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a. Plan de desarrollo municipal      | En necesario que la revisión del POT haya quedado incluída en el plan de inversiones del Plan de desarrollo municipal - PDM.                                                                                                                                                                                                                                                                                                                                             |
+| b. Definir la fuente de financiación | El POT podrá financiarse a partir de una o diferentes fuentes, por ejemplo:<br>* Recursos propios que estén claramente identificados en el plan de inversiones del PDM.<br>* Recursos del sistema general de regalías SGR definidos en un capítulo especial del PDM <br>* Otras fuentes de financiación (convenios inter-administrativos, recursos de cooperación financiera internacional, créditos del Banco de Desarrollo Territorial - [Findeter]() y otros bancos). |
+| c. Contratación                      | Cuando el municipio no cuente con la capacidad operativa y técnica para adelantar la revisión del POT, podrá realizar la contratación, para lo cual es necesario realizar un estudio previo que determine las condiciones contractuales.                                                                                                                                                                                                                                 |
+
+> ¿Cuánto tiempo toma? Dependerá de la fuente de financiación, la cual puede implicar tiempos de acceso a los recursos. Además, se deben considerar los tiempos propios de la licitación de acuerdo a lo establecido en las normas vigentes.
+
+### 1.3. Marco general
+
+
+
+
+
 
 ## 2. Etapas
 
@@ -106,4 +146,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../Population/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |----------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: 
+[^1]: https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot
