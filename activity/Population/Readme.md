@@ -168,7 +168,7 @@ Toda esta labor, sumada a la aplicación de modernas tecnologías de captura, pr
 
 </div>
 
-<div align="center"><img src="graph/DANE_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE - Gráfico por rcfdtools</sub><br><br></div>
+<div align="center"><img src="graph/DANE_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos DANE</sub><br><br></div>
 
 
 #### 2.2.2. Análisis de tendencias y población proyectada
@@ -192,10 +192,23 @@ Fuentes de datos
 * [Grupo SISBEN](https://www.sisben.gov.co/Paginas/consulta-tu-grupo.html)
 * [Mapas y estadísticas SISBEN - Gobernación de Cundinamarca](https://mapasyestadisticas-cundinamarca-map.opendata.arcgis.com/pages/c04dca50c16e4c50a3e359b9d54a7e1f)
 * [Mapas y estadísticas SISBEN - Gobernación de Cundinamarca - ArcGIS Insights](https://insights.arcgis.com/#/view/1343fd74a80645589406d7eba51ff079)
-* [Datos abiertos Colombia](https://datos.gov.co/)
+* [Datos abiertos Colombia, dataset: DNP - Sisbén Personas](https://datos.gov.co/)
+* [Diccionario de datos SISBEN](https://anda.dnp.gov.co/index.php/catalog/135/data_dictionary)
 
 El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales, que permite clasificar a la población de acuerdo con sus condiciones de vida e ingresos. Esta clasificación se utiliza para focalizar la inversión social y garantizar que sea asignada a quienes más lo necesitan.
 
+<div align="center">
+
+| Fuente  | Zona      | Fecha | PTotal |
+|---------|-----------|-------|--------|
+| SISBEN  | Municipio | 2000  | 41271  |
+| SISBEN  | Municipio | 2016  | 90300  |
+| SISBEN  | Municipio | 2017  | 93328  |
+| SISBEN  | Municipio | 2018  | 96476  |
+
+</div>
+
+<div align="center"><img src="graph/SISBEN_Censal_Historico_Graph.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Histórico municipal de censos SISBEN</sub><br><br></div>
 
 
 
