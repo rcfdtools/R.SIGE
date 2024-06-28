@@ -14,6 +14,7 @@
 * https://www.undp.org/sites/g/files/zskgke326/files/2022-09/PADIT_Gu%C3%ADa%20r%C3%A1pida%20sobre%20la%20din%C3%A1mica%20de%20la%20poblaci%C3%B3n.pdf
 * [Resultados SISBEN año 2000, Departamento Nacional de Planeación - DNP](https://www.acnur.org/fileadmin/Documentos/Publicaciones/2007/5682.pdf)
 * https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf
+* https://minvivienda.gov.co/sites/default/files/normativa/0448%20-%202014.pdf
 
 
 Cartillas y manuales disponibles en Colombia OT
