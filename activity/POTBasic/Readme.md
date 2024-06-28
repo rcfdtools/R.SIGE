@@ -145,22 +145,16 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 
 Para el análisis del riesgo se realizan dos tipos de estudios:
 
-Básicos
+| Básicos                                                                                                                                                                                     | Detallados                                                                                                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Se realizan como requisito para adelantar los procesos de revisión del POT.<br><br>Permiten priorizar las zonas en donde se requiere adelantar estudios que permitan categorizar el riesgo. | Se pueden plantear en el contenido programático del POT, con el fin de que se desarrollen en su implementación.<br><br>* Permite categorizar el riesgo y establecer las medidas de intervención estructurales para su manejo.  |
 
-* Se realizan como requisito para adelantar los procesos de revisión del POT.
-* Permiten priorizar las zonas en donde se requiere adelantar estudios que permitan categorizar el riesgo.
-
-Detallados
-
-* Se pueden plantear en el contenido programático del POT, con el fin de que se desarrollen en su implementación.
-* Permite categorizar el riesgo y establecer las medidas de intervención estructurales para su manejo.
 
 La incorporación de la gestión en la planificación del ordenamiento territorial se debe realizar en cada una de sus etapas con el fin de garantizar que este sea un proceso integral, gradual, continuo y sistemático, para lo cual, en la etapa de formulación del POT se debe definir las medidas de intervención en función de los objetivos, estrategias y prioridades adoptados para la concreción del modelo de ocupación territorial.
 
 Para esto, en suelo urbano, de expansión urbana, centros poblados y suelo suburbano se deben delimitar las áreas con condición de riesgo y las áreas con condición de amenaza, las cuales se definen según el Artículo 2.2.2.1.3.1.3 del Decreto 1077 de 2015, como: 
 
 * Áreas con condición de amenaza, son las zonas o áreas del territorio municipal zonificadas como de amenaza alta y media en las que se establezca en la revisión o expedición de un nuevo POT la necesidad de clasificarlas como suelo urbano, de expansión urbana, rural suburbano o centros poblados rurales para permitir su desarrollo.
-
 * Áreas con condición de riesgo, corresponden a las zonas o áreas del territorio municipal clasificadas como de amenaza alta que estén urbanizadas, ocupadas o edificadas, así como en las que se encuentren elementos del sistema vial, equipamientos (salud, educación, otros) e infraestructura de servicios públicos.
 
 La determinación de las medidas específicas para su mitigación, las cuales deben incluirse en la cartografía correspondiente.
