@@ -46,6 +46,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
 
+> No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
+> 
+> En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
 ## Compatibilidad
@@ -62,9 +65,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción     | Autor                                      | Horas |
-|------------|:----------------|--------------------------------------------|:-----:|
-| 2022.07.20 | Versión inicial | [rcfdtools](https://github.com/rcfdtools)  |   0   |
+| Versión    | Descripción                                                | Autor                                      | Horas |
+|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._

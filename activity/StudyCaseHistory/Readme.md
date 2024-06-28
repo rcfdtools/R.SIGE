@@ -172,6 +172,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 | Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado.                           | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
+> 
+> En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
 ## Referencias
