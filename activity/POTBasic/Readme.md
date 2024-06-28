@@ -18,12 +18,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 * Lectura - 
 
 
-## 1. Marco general y normativa [^1]
-
-El POT Se define como el conjunto de objetivos, directrices, políticas, estrategias, metas, programas, actuaciones y normas adoptadas para orientar y administrar el desarrollo físico del territorio y la utilización del suelo.
-
-
-### 1.1. Marco normativo
+### 1. Marco normativo
 
 | Norma                                                                                                | Alcance                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,9 +31,11 @@ El POT Se define como el conjunto de objetivos, directrices, políticas, estrate
 | Acuerdo o Decreto de planificación territorial del nivel municipal                                   | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                            |
 
 
-### 1.2. Objeto del Plan de Ordenamiento Territorial 
+### 2. Objeto del Plan de Ordenamiento Territorial 
 
 Ley 388 de 1997, Artículo 6.
+
+El POT Se define como el conjunto de objetivos, directrices, políticas, estrategias, metas, programas, actuaciones y normas adoptadas para orientar y administrar el desarrollo físico del territorio y la utilización del suelo.
 
 El ordenamiento del Territorio Municipal y Distrital tiene por objeto complementar la planificación económica y social con la dimensión territorial, identificar las necesidades de espacio público, priorizando los requerimientos de los niños, niñas, adolescentes, mujeres, adultos mayores y personas en condición de discapacidad, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible, mediante:
 
@@ -49,7 +46,7 @@ El ordenamiento del Territorio Municipal y Distrital tiene por objeto complement
 > El ordenamiento del territorio municipal y distrital se hará tomando en consideración las relaciones intermunicipales, metropolitanas y regionales; deberá dar prelación a los espacios públicos, atender las condiciones de diversidad étnica y cultural, reconociendo el pluralismo y el respeto a las diferencias; e incorporará instrumentos que regulen las dinámicas de transformación territorial de manera que se optimice la utilización de los recursos naturales, humanos y tecnológicos para el logro de condiciones de vida dignas para la población actual y las generaciones futuras.
 
 
-### 1.3. Denominación: POT, PBOT, EOT
+### 3. Denominación POT, PBOT, EOT
 
 Ley 388 de 1997, Artículo 9.
 
@@ -66,7 +63,7 @@ Ley 388 de 1997, Artículo 9.
 > Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
 
 
-### 1.4. Componentes y vigencias del POT
+### 4. Componentes y vigencias del POT
 
 Ley 388 de 1997, Artículo 13.
 
@@ -81,7 +78,7 @@ La ley 388 de 1997 estableció los contenidos de los planes de ordenamiento terr
 | Programa de ejecución               | El programa de ejecución define con carácter obligatorio, las actuaciones sobre el territorio previstas en el plan de ordenamiento, que serán ejecutadas durante el período de la correspondiente administración municipal o distrital, de acuerdo con lo definido en el correspondiente Plan de Desarrollo, señalando las prioridades, la programación de actividades, las entidades responsables y los recursos respectivos. Más información en artículo 18 de la Ley 388 de 1997.  |      ✓      |       ✓       |      ✓       |
 
 
-### 1.5. Normas urbanísticas
+### 5. Normas urbanísticas
 
 Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del suelo y definen la naturaleza y las consecuencias de las actuaciones urbanísticas indispensables para la administración de estos procesos. Estas normas estarán jerarquizadas de acuerdo con los criterios de prevalencia aquí especificados y en su contenido quedarán establecidos los procedimientos para su revisión, ajuste o modificación, en congruencia con lo que a continuación se señala.
 
@@ -93,7 +90,7 @@ Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del 
 
 
 
-## 2. Etapas del proceso de planificación territorial y revisión del POT
+## 6. Etapas del proceso de planificación territorial y revisión del POT
 
 | Etapa                        | Alcance                                                                                                             |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------|
@@ -116,24 +113,24 @@ Para la revisión del POT:
 
 
 
-## 3. Gestión del riesgo
+## 7. Gestión del riesgo
 
 
-## 4. Participación
+## 8. Participación
 
 
-## 5. Fuentes de financiación
+## 9. Fuentes de financiación
 
 
 
-## 6. Relación del Plan de Desarrollo con el POT
+## 10. Relación del Plan de Desarrollo con el POT
 
 Ley 388 de 1997, Articulo 21.
 
 El plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
 
 
-## 7. Roles de la ingeniería civil y ambiental en la elaboración de los POT
+## 11. Roles de la arquitectura, ingeniería civil y ambiental en la elaboración de los POT
 
 
 ## Actividades de proyecto :triangular_ruler:
