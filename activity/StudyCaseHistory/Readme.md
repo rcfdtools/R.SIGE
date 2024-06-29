@@ -167,9 +167,9 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                      |
-|:--------------|:-------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado.                           | 
+| Actividad     | Alcance                                                                                                                                                                                                                                                                                          |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Investigue y documente la reseña histórica municipal del caso de estudio asignado. Consulte y documente que información geográfica puede ser consultada o descargada desde las plataformas indicadas en esta actividad o desde plataformas que utilice frecuentemente en su trabajo profesional. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
