@@ -66,7 +66,7 @@ Ley 388 de 1997, Artículo 9.
 > Todos los tipos de planes de ordenamiento territorial tienen los mismos contenidos.
 
 
-## 4. Etapas del proceso de planificación territorial y revisión del POT
+## 4. Etapas del proceso de planificación territorial y revisión
 
 
 ### 4.1. Etapas
@@ -80,7 +80,7 @@ Ley 388 de 1997, Artículo 9.
 > No se incluye la etapa de adopción debido a que en el país ya han sido implementados los POT en la mayoría de municipios.
 
 
-### 4.2. Revisión del POT
+### 4.2. Revisión
 
 
 El municipio debe proceder a la revisión del POT por los siguientes motivos:
@@ -98,7 +98,7 @@ En cuanto a los requerimientos para iniciar la revisión:
 > ¿Cuánto tiempo toma? Dependerá de la fuente de financiación, la cual puede implicar tiempos de acceso a los recursos. Además, se deben considerar los tiempos propios de la licitación de acuerdo a lo establecido en las 
 
 
-## 5. Componentes y vigencias del POT
+## 5. Componentes y vigencias
 
 Ley 388 de 1997, Artículo 13.
 
