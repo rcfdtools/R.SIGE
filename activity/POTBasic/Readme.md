@@ -120,7 +120,7 @@ La Ley 388 de 1997 en el Artículo 13 estableció los contenidos de los planes d
 
  La vigencia (corto, mediano y largo plazo) de los POT es de tres períodos constitucionales completos y estos se deben contar a partir del momento en que el municipio adopta el instrumento. Por ejemplo, si la adopción del POT se realizó a mediados de 2012, se entenderá que la vigencia de corto plazo incluirá todo el período constitucional hasta el 31/12/2019 y el siguiente período constitucional, ya que el período 2012-2015, no puede considerarse completo. Así mismo, la vigencia de mediano plazo se ejecutará en el período 2020-2023 y la de largo plazo en el período 2024-2027.
 
-<div align="center"><img src="graph/Instrumentos.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Instrumentos de gestión y financiación de los POT<br>Tomado de: <a href="https://www.minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/etapas-pot/instrumentos">https://minvivienda.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/Instrumentos.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Instrumentos de gestión y financiación de los POT<br>Tomado de: <a href="https://www.minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/etapas-pot/instrumentos">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ## 6. Normas urbanísticas
