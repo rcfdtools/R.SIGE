@@ -134,7 +134,20 @@ Las normas urbanísticas regulan el uso, la ocupación y el aprovechamiento del 
 | 3. Normas complementarias            | Se trata de aquellas relacionadas con las actuaciones, programas y proyectos adoptados en desarrollo de las previsiones contempladas en los componentes general y urbano del plan de ordenamiento, y que deben incorporarse al Programa de ejecución que se establece en el artículo 18 de la presente ley. También forman parte de este nivel normativo, las decisiones sobre las acciones y actuaciones que por su propia naturaleza requieren ser ejecutadas en el corto plazo y todas las regulaciones que se expidan para operaciones urbanas específicas y casos excepcionales, de acuerdo con los parámetros, procedimientos y autorizaciones emanadas de las normas urbanísticas generales.   |
 
 
-## 7. Gestión del riesgo
+## 7. Participación
+
+De acuerdo al Artículo 4 de la Ley 388 de 1997, en ejercicio de las diferentes actividades que conforman la acción urbanística, las administraciones municipales, distritales y metropolitanas deberán fomentar la concertación entre los intereses sociales, económicos y urbanísticos, mediante la participación de los pobladores y sus organizaciones.
+
+Esta concertación tendrá por objeto asegurar la eficacia de las políticas públicas respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social relacionados con el ordenamiento del territorio municipal, teniendo en cuenta los principios señalados en el artículo 2º de la presente ley.
+
+La participación ciudadana podrá desarrollarse mediante el derecho de petición, la celebración de audiencias públicas, el ejercicio de la acción de cumplimiento, la intervención en la formulación, discusión y ejecución de los planes de ordenamiento y en los procesos de otorgamiento, modificación, suspensión o revocatoria de las licencias urbanísticas, en los términos establecidos en la ley y sus reglamentos.
+
+Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social de un contexto específico. El alcalde distrital o municipal, a través de las oficinas de planeación o de las dependencias que hagan sus veces, será responsable de coordinar la formulación oportuna del proyecto de Plan de Ordenamiento Territorial y de someterlo a consideración del consejo de gobierno.
+
+<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a></sub><br><br></div>
+
+
+## 8. Gestión del riesgo
 
 La gestión de riesgo de desastres es un proceso dinámico y permanente orientado a definir, ejecutar y evaluar acciones para avanzar en el conocimiento, la reducción del riesgo y el manejo de desastres. En este orden de ideas, la Ley 388 de 1997 reconoce la prevención de amenazas y riesgos como un determinante para el ordenamiento del territorio, estableciendo los alcances jurídicos y técnicos para su incorporación en  as decisiones que se planteen en los Planes de Ordenamiento Territorial, por tanto, su inclusión es obligatoria e inaplazable y debe ser verificada por la autoridad ambiental en el trámite de concertación de los asuntos ambientales.
 
@@ -143,7 +156,7 @@ Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesg
 <div align="center"><img src="graph/AsentamientoZonaAltoRiesgo.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Asentamientos en zonas de alto riesgo por inudación o movimientos en masa<br>Tomado de: <a href="https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
-### 7.1. Conceptos básicos
+### 8.1. Conceptos básicos
 
 | Concepto                         | Definición                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:---------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -172,7 +185,7 @@ Para esto, en suelo urbano, de expansión urbana, centros poblados y suelo subur
 > La determinación de las medidas específicas para su mitigación, las cuales deben incluirse en la cartografía correspondiente.
 
 
-### 7.2. Tipos de riesgos
+### 8.2. Tipos de riesgos
 
 | Tipo de riesgo      | Tipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -186,19 +199,6 @@ Para esto, en suelo urbano, de expansión urbana, centros poblados y suelo subur
 | Condición insalubre | Falta de condiciones higiénicas mínimas que son necesarias para que una edificación o un terreno pueda ser ocupado o utilizado para fines determinados. Cuando se da la insalubridad, suelen aparecer distintos conflictos relacionados con problemas de salud, daños en edificaciones, aparición de agentes contaminantes o incluso presencia de bichos y animales. <sub>(Tomado de [Perito Judicial Group](https://peritojudicial.com/informe-insalubridad/))</sub>                                                                                                                                                                                                                                                                   |
 
 > De acuerdo a la Ley 388 de 1997, se deben determinar las medidas para el manejo de dichas zonas, incluídos los mecanísmos de reubicación de asentamientos cuando esto se requiera, así mismo se debe contemplar la transformación del uso asignado a tales zonas para evitar reasentamientos de alto riesgo; la constitución de reservas de tierras y la adquisición y expropiación de inmuebles que sean necesarios para reubicación de poblaciones de alto riesgo.
-
-
-## 8. Participación
-
-De acuerdo al Artículo 4 de la Ley 388 de 1997, en ejercicio de las diferentes actividades que conforman la acción urbanística, las administraciones municipales, distritales y metropolitanas deberán fomentar la concertación entre los intereses sociales, económicos y urbanísticos, mediante la participación de los pobladores y sus organizaciones.
-
-Esta concertación tendrá por objeto asegurar la eficacia de las políticas públicas respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social relacionados con el ordenamiento del territorio municipal, teniendo en cuenta los principios señalados en el artículo 2º de la presente ley.
-
-La participación ciudadana podrá desarrollarse mediante el derecho de petición, la celebración de audiencias públicas, el ejercicio de la acción de cumplimiento, la intervención en la formulación, discusión y ejecución de los planes de ordenamiento y en los procesos de otorgamiento, modificación, suspensión o revocatoria de las licencias urbanísticas, en los términos establecidos en la ley y sus reglamentos.
-
-Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social de un contexto específico. El alcalde distrital o municipal, a través de las oficinas de planeación o de las dependencias que hagan sus veces, será responsable de coordinar la formulación oportuna del proyecto de Plan de Ordenamiento Territorial y de someterlo a consideración del consejo de gobierno.
-
-<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ## 9. Relación entre el Plan de Desarrollo Municipal - PDM y el Plan de Ordenamiento Territorial - POT
