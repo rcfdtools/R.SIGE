@@ -33,6 +33,8 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 | [Ley 2079 de 2021](http://www.secretariasenado.gov.co/senado/basedoc/ley_2079_2021.html)              | Tiene por objeto reconocer la política pública de hábitat y vivienda como una política de Estado que diseñe y adopte normas destinadas a complementar el marco normativo dentro del cual se formula y ejecuta la política habitacional urbana y rural en el país, con el fin de garantizar el ejercicio efectivo del derecho a una vivienda y hábitat dignos para todos los colombianos.  |
 | Acuerdo o Decreto de planificación territorial del nivel municipal                                    | Instrumento de planificación territorial del nivel municipal.                                                                                                                                                                                                                                                                                                                             |
 
+> En la jurisprudencia existen diferentes normas que complementan los alcances definidos en el ordenamiento territorial, la lista anterior solo presenta algunas de las normas principales.
+
 
 ## 2. Objeto del Plan de Ordenamiento Territorial 
 
@@ -80,7 +82,7 @@ Ley 388 de 1997, Artículo 9.
 > No se incluye la etapa de adopción debido a que en el país ya han sido implementados los POT en la mayoría de municipios.
 
 
-### 4.2. Revisión
+### 4.2. Revisión y fuentes de financiación
 
 
 El municipio debe proceder a la revisión del POT por los siguientes motivos:
@@ -89,13 +91,21 @@ El municipio debe proceder a la revisión del POT por los siguientes motivos:
 
 En cuanto a los requerimientos para iniciar la revisión:
 
-| Requerimiento                         | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| a. Plan de desarrollo municipal       | En necesario que la revisión del POT haya quedado incluída en el plan de inversiones del Plan de desarrollo municipal - PDM.                                                                                                                                                                                                                                                                                                                                              |
-| b. Definir la fuente de financiación  | El POT podrá financiarse a partir de una o diferentes fuentes, por ejemplo:<br>* Recursos propios que estén claramente identificados en el plan de inversiones del PDM.<br>* Recursos del sistema general de regalías SGR definidos en un capítulo especial del PDM <br>* Otras fuentes de financiación (convenios inter-administrativos, recursos de cooperación financiera internacional, créditos del Banco de Desarrollo Territorial - [Findeter]() y otros bancos).  |
-| c. Contratación                       | Cuando el municipio no cuente con la capacidad operativa y técnica para adelantar la revisión del POT, podrá realizar la contratación, para lo cual es necesario realizar un estudio previo que determine las condiciones contractuales.                                                                                                                                                                                                                                  |
+| Requerimiento                         | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:--------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a. Plan de desarrollo municipal       | En necesario que la revisión del POT haya quedado incluída en el plan de inversiones del Plan de desarrollo municipal - PDM.                                                                                                                                                                                                                                                                                                                                               |
+| b. Definir la fuente de financiación  | El POT podrá financiarse a partir de una o diferentes fuentes, por ejemplo:<br>* Recursos propios que estén claramente identificados en el plan de inversiones del PDM.<br>* Recursos del sistema general de regalías - SGR definidos en un capítulo especial del PDM <br>* Otras fuentes de financiación (convenios inter-administrativos, recursos de cooperación financiera internacional, créditos del Banco de Desarrollo Territorial - [Findeter]() y otros bancos). |
+| c. Contratación                       | Cuando el municipio no cuente con la capacidad operativa y técnica para adelantar la revisión del POT, podrá realizar la contratación, para lo cual es necesario realizar un estudio previo que determine las condiciones contractuales.                                                                                                                                                                                                                                   |
 
 > ¿Cuánto tiempo toma? Dependerá de la fuente de financiación, la cual puede implicar tiempos de acceso a los recursos. Además, se deben considerar los tiempos propios de la licitación de acuerdo a lo establecido en las 
+
+Para revisiones en las que se contemple la financiación a través de recursos provenientes de regalías, es importante considerar los alcances definidos las siguientes normas y orientaciones:
+
+* Ley 2056 de 2020: regula la organización y el funcionamiento del sistema geneal de regalías.
+* Decreto 1821 de 2021: decreto único reglamentario del sistema general de regalías.
+* Orientaciones transitorias para la gestión de proyectos de inversión (2021): documento del Departamento Nacional de Planeación que establece los requisitos para la esructuración de los proyectos en el SGR.
+
+<div align="center"><img src="graph/SGR.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Financiación con recursos del SGR<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/fuentes-de-financiacion">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
 ## 5. Componentes y vigencias
@@ -193,15 +203,19 @@ Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respec
 <div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
-## 9. Fuentes de financiación
-
-
-
-## 10. Relación del Plan de Desarrollo con el POT
+## 9. Relación entre el Plan de Desarrollo Municipal PDM y el POT
 
 Ley 388 de 1997, Articulo 21.
 
 El plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
+
+|                 | PDM                                                                                                                                                                                                                                                                                                                | POT                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fines           | Desempeñar adecuadamente las funciones para garantízar los derechos a cargo del Municipio en busca del bienestar general y el mejoramiento de la calidad de vida de la población en su respectivo territorio.<br><br>Desarrollar estrategias de lucha contra la pobreza.<br><br>Art 339 CP, art 1 Ley 136 de 1994. | Posibilitar a los habitantes el acceso a vias, transporte, espacios públicos y hacer efectivos los derechos a la vivienda y servicios públicos domiciliarios.<br><br>Buscar el desarrollo sostenible.<br><br>Propender por el mejoramiento de la calidad de vida de los habitandesarrollo y la preservación del patrimonio cultural y natural.<br><br>Mejorar la seguridad de los asentamientos humanos ante riesgos naturales.<br><br>Art 3 Ley 388 de 1997.  |
+| Objetivos       |                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Diagnóstico     |                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Visión integral |                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
 
 
 ## 11. Roles de la arquitectura y la ingeniería en la elaboración de los POT
