@@ -1,7 +1,7 @@
 # Conceptos generales de Ordenamiento Territorial - OT
 Keywords: `EOT` `PBOT` `POT`
 
-El ordenamiento del territorio comprende un conjunto de acciones político-administrativas y de planificación física concertadas, adelantadas por los municipios o distritos y áreas metropolitanas, en ejercicio de la función pública que les compete, dentro de los límites fijados por la Constitución y las leyes, en orden a disponer de instrumentos eficientes para orientar el desarrollo del territorio bajo su jurisdicción y regular la utilización, transformación y ocupación del espacio, de acuerdo con las estrategias de desarrollo socioeconómico y en armonía con el medio ambiente y las tradiciones históricas y culturales (art. 5 Ley 388 de 1997).
+El ordenamiento del territorio comprende un conjunto de acciones político-administrativas y de planificación física concertadas, adelantadas por los municipios o distritos y áreas metropolitanas, en ejercicio de la función pública que les compete, dentro de los límites fijados por la Constitución y las leyes, en orden a disponer de instrumentos eficientes para orientar el desarrollo del territorio bajo su jurisdicción y regular la utilización, transformación y ocupación del espacio, de acuerdo con las estrategias de desarrollo socioeconómico y en armonía con el medio ambiente y las tradiciones históricas y culturales (Art. 5 Ley 388 de 1997).
 
 <div align="center"><img src="graph/Shanghai_Urban_Planning_Museum_city_model_4.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Shanghai_Urban_Planning_Museum_city_model_4.jpg">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -38,9 +38,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 
 ## 2. Objeto del Plan de Ordenamiento Territorial 
 
-Ley 388 de 1997, Artículo 6.
-
-El POT Se define como el conjunto de objetivos, directrices, políticas, estrategias, metas, programas, actuaciones y normas adoptadas para orientar y administrar el desarrollo físico del territorio y la utilización del suelo.
+Según la Ley 388 de 1997, Artículo 6, el POT Se define como el conjunto de objetivos, directrices, políticas, estrategias, metas, programas, actuaciones y normas adoptadas para orientar y administrar el desarrollo físico del territorio y la utilización del suelo.
 
 El ordenamiento del Territorio Municipal y Distrital tiene por objeto complementar la planificación económica y social con la dimensión territorial, identificar las necesidades de espacio público, priorizando los requerimientos de los niños, niñas, adolescentes, mujeres, adultos mayores y personas en condición de discapacidad, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible, mediante:
 
@@ -53,7 +51,7 @@ El ordenamiento del Territorio Municipal y Distrital tiene por objeto complement
 
 ## 3. Denominación POT, PBOT, EOT
 
-Ley 388 de 1997, Artículo 9.
+De acuerdo a la Ley 388 de 1997, Artículo 9, las denominaciones de los POT son las siguientes:
 
 <div align="center">
 
@@ -110,9 +108,7 @@ Para revisiones en las que se contemple la financiación a través de recursos p
 
 ## 5. Componentes y vigencias
 
-Ley 388 de 1997, Artículo 13.
-
-La ley 388 de 1997 estableció los contenidos de los planes de ordenamiento territorial, los cuales se desarrollan durante la etapa de formulación y hacen referencia a lo siguiente
+La Ley 388 de 1997 en el Artículo 13 estableció los contenidos de los planes de ordenamiento territorial, los cuales se desarrollan durante la etapa de formulación y hacen referencia a lo siguiente
 
 | Componente                          | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Corto plazo | Mediano plazo | Largo plazo  |
 |:------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|:-------------:|:------------:|
@@ -205,9 +201,7 @@ Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respec
 
 ## 9. Relación entre el Plan de Desarrollo Municipal - PDM y el Plan de Ordenamiento Territorial - POT
 
-Ley 388 de 1997, Articulo 21.
-
-El plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
+Seguin lo establecido en la Ley 388 de 1997, Artículo 21, el plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
 
 Articulación [^2]
 
