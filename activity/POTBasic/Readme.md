@@ -180,9 +180,17 @@ La determinación de las medidas específicas para su mitigación, las cuales de
 > De acuerdo a la Ley 388 de 1997, se deben determinar las medidas para el manejo de dichas zonas, incluídos los mecanísmos de reubicación de asentamientos cuando esto se requiera, así mismo se debe contemplar la transformación del uso asignado a tales zonas para evitar reasentamientos de alto riesgo; la constitución de reservas de tierras y la adquisición y expropiación de inmuebles que sean necesarios para reubicación de poblaciones de alto riesgo.
 
 
-
-
 ## 8. Participación
+
+De acuerdo al Artículo 4 de la Ley 388 de 1997, en ejercicio de las diferentes actividades que conforman la acción urbanística, las administraciones municipales, distritales y metropolitanas deberán fomentar la concertación entre los intereses sociales, económicos y urbanísticos, mediante la participación de los pobladores y sus organizaciones.
+
+Esta concertación tendrá por objeto asegurar la eficacia de las políticas públicas respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social relacionados con el ordenamiento del territorio municipal, teniendo en cuenta los principios señalados en el artículo 2º de la presente ley.
+
+La participación ciudadana podrá desarrollarse mediante el derecho de petición, la celebración de audiencias públicas, el ejercicio de la acción de cumplimiento, la intervención en la formulación, discusión y ejecución de los planes de ordenamiento y en los procesos de otorgamiento, modificación, suspensión o revocatoria de las licencias urbanísticas, en los términos establecidos en la ley y sus reglamentos.
+
+Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social de un contexto específico. El alcalde distrital o municipal, a través de las oficinas de planeación o de las dependencias que hagan sus veces, será responsable de coordinar la formulación oportuna del proyecto de Plan de Ordenamiento Territorial y de someterlo a consideración del consejo de gobierno.
+
+<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
 ## 9. Fuentes de financiación
