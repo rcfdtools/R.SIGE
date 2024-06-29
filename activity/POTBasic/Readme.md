@@ -103,7 +103,7 @@ Para revisiones en las que se contemple la financiación a través de recursos p
 * [Decreto 1821 de 2021](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=154466): decreto único reglamentario del sistema general de regalías.
 * [Orientaciones transitorias para la gestión de proyectos de inversión (2021)](https://www.minvivienda.gov.co/sites/default/files/documentos/orientaciones-transitorias-gestion-proyectos-v-2.0-08-04-2021.pdf): documento del Departamento Nacional de Planeación que establece los requisitos para la esructuración de los proyectos en el SGR.
 
-<div align="center"><img src="graph/SGR.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Financiación con recursos del SGR<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/fuentes-de-financiacion">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
+<div align="center"><img src="graph/SGR.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Financiación con recursos del SGR<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/fuentes-de-financiacion">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ## 5. Componentes y vigencias
@@ -119,6 +119,8 @@ La Ley 388 de 1997 en el Artículo 13 estableció los contenidos de los planes d
 | Programa de ejecución               | El programa de ejecución define con carácter obligatorio, las actuaciones sobre el territorio previstas en el plan de ordenamiento, que serán ejecutadas durante el período de la correspondiente administración municipal o distrital, de acuerdo con lo definido en el correspondiente Plan de Desarrollo, señalando las prioridades, la programación de actividades, las entidades responsables y los recursos respectivos. Más información en artículo 18 de la Ley 388 de 1997.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |      ✓      |       ✓       |      ✓       |
 
  La vigencia (corto, mediano y largo plazo) de los POT es de tres períodos constitucionales completos y estos se deben contar a partir del momento en que el municipio adopta el instrumento. Por ejemplo, si la adopción del POT se realizó a mediados de 2012, se entenderá que la vigencia de corto plazo incluirá todo el período constitucional hasta el 31/12/2019 y el siguiente período constitucional, ya que el período 2012-2015, no puede considerarse completo. Así mismo, la vigencia de mediano plazo se ejecutará en el período 2020-2023 y la de largo plazo en el período 2024-2027.
+
+<div align="center"><img src="graph/Instrumentos.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Instrumentos de gestión y financiación de los POT<br>Tomado de: <a href="https://www.minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/etapas-pot/instrumentos">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ## 6. Normas urbanísticas
@@ -138,7 +140,7 @@ La gestión de riesgo de desastres es un proceso dinámico y permanente orientad
 
 Mediante la Ley 1523 de 2012, se creó el Sistema Nacional de Gestión del Riesgo de Desastres, y mediante la [Resolución 448 de 2014 del Ministerio de Vivienda, Ciudad y Territorio](https://minvivienda.gov.co/normativa/resolucion-0448-2014), se definió la [metodología para realizar el inventario nacional de asentamientos humanos en zonas de alto riesgo](https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf) por su localización, contemplados en el artículo 56 de la Ley 9 de 1989 (modificada por el artículo 5 de la Ley 2 de 1991).
 
-<div align="center"><img src="graph/AsentamientoZonaAltoRiesgo.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Asentamientos en zonas de alto riesgo por inudación o movimientos en masa<br>Tomado de: <a href="https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
+<div align="center"><img src="graph/AsentamientoZonaAltoRiesgo.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Asentamientos en zonas de alto riesgo por inudación o movimientos en masa<br>Tomado de: <a href="https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ### 7.1. Conceptos básicos
@@ -196,7 +198,7 @@ La participación ciudadana podrá desarrollarse mediante el derecho de petició
 
 Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social de un contexto específico. El alcalde distrital o municipal, a través de las oficinas de planeación o de las dependencias que hagan sus veces, será responsable de coordinar la formulación oportuna del proyecto de Plan de Ordenamiento Territorial y de someterlo a consideración del consejo de gobierno.
 
-<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
+<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a></sub><br><br></div>
 
 
 ## 9. Relación entre el Plan de Desarrollo Municipal - PDM y el Plan de Ordenamiento Territorial - POT
