@@ -18,6 +18,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 ## Requerimientos
 
 * Lectura - [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)
+* Lectura - [Guía simplificada para la elaboración del plan de ordenamiento territorial municipal guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal](https://www.faoswalim.org/resources/Land/Land_resource_Mgt/pdfdocs/guia_sim.pdf)
 * Recopilación de Acuerdos y Decretos municipales de Adopción del Plan de Ordenamiento para su caso de estudio.
 
 
@@ -205,7 +206,7 @@ Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respec
 
 Seguin lo establecido en la Ley 388 de 1997, Artículo 21, el plan de ordenamiento territorial define a largo y mediano plazo un modelo de ocupación del territorio municipal y distrital, señalando su estructura básica y las acciones territoriales necesarias para su adecuada organización, el cual estará vigente mientras no sea modificado o sustituido. En tal sentido, en la definición de programas y proyectos de los planes de desarrollo de los municipios se tendrán en cuenta las definiciones de largo y mediano plazo de ocupación del territorio.
 
-Articulación [^2]
+<div align="center">Articulación [^2]</div>
 
 |                 | PDM                                                                                                                                                                                                                                                                                                                  | POT                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -213,6 +214,11 @@ Articulación [^2]
 | Objetivos       | Señalar los propósitos, objetivos, políticas y estrategias en materia social, económica y ambiental en busca de los fines de desarrollo. Art. 339 CP.                                                                                                                                                                | Complementa la planificación económica y social con la dimensión territorial, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible. Art. 5 ley 388 de 1997.                                                                                                                                                                                                                                               |
 | Diagnóstico     | **Bases del Plan**<br><br>Básicos demográficos.<br><br>Básicos sociales, económicos y ambientales.<br><br>Análisis de dinámica demográfica y poblacional.<br><br>Análisis de interacciones, balances y tensiones.<br><br>Grandes retos.                                                                              | **Documento Técnico de Soporte (DTS)**<br><br>Básicos demográficos.<br><br>Básicos sociales, económicos y ambientales.<br><br>Análisis de dinámica demográfica y poblacional.<br><br>Análisis de interacciones, balances y tensiones.<br><br>Grandes retos.                                                                                                                                                                                                    |
 | Visión integral | Visión de desarrollo.                                                                                                                                                                                                                                                                                                | Visión de territorio.<br><br>Objetivos y estrategias territoriales.                                                                                                                                                                                                                                                                                                                                                                                            |
+
+
+## 10. Planes de ordenamiento y cambio climático
+
+De acuerdo al Artículo 10 de la Ley 388 de 1997, una de las determinantes de Nivel 1 del ordenamiento territorial es la gestión del cambio climático
 
 
 ## 11. Roles de la arquitectura y la ingeniería en la elaboración de los POT
