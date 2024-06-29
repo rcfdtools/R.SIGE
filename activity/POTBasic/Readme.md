@@ -218,7 +218,7 @@ Seguin lo establecido en la Ley 388 de 1997, Artículo 21, el plan de ordenamien
 
 ## 10. Planes de ordenamiento y cambio climático
 
-<div align="center"><img src="graph/Change_in_Average_Temperature_With_Fahrenheit.svg" alt="R.SIGE" width="40%" border="0" /><sub><br>Cambio en la temperatura planetaria en los últimos 50 años<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Change_in_Average_Temperature_With_Fahrenheit.svg">https://commons.wikimedia.org/</a></sub><br><br></div>
+<div align="center"><img src="graph/Change_in_Average_Temperature_With_Fahrenheit.svg" alt="R.SIGE" width="40%" border="0" /><sub><br>Cambio en la temperatura planetaria en los últimos 50 años<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Change_in_Average_Temperature_With_Fahrenheit.svg">https://data.giss.nasa.gov/gistemp/maps/index_v4.html</a></sub><br><br></div>
 
 <sub>Tomado y adaptado de: Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi, 2019.</sub> [^3]
 
