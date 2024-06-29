@@ -200,7 +200,7 @@ La participación ciudadana podrá desarrollarse mediante el derecho de petició
 
 Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respecto de las necesidades y aspiraciones de los diversos sectores de la vida económica y social de un contexto específico. El alcalde distrital o municipal, a través de las oficinas de planeación o de las dependencias que hagan sus veces, será responsable de coordinar la formulación oportuna del proyecto de Plan de Ordenamiento Territorial y de someterlo a consideración del consejo de gobierno.
 
-<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
+<div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
 ## 9. Relación entre el Plan de Desarrollo Municipal PDM y el POT
