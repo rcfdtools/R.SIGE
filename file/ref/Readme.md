@@ -44,9 +44,9 @@ Cartillas y manuales disponibles en Colombia OT
 * Cartilla – Manual de la innovación Gobernanza e instituciones - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
 * Cartilla – Manual de la innovación Visión Regional - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
 * Cartilla – Manual de la innovación Visión Regional - KIT de Ordenamiento Territorial – Versión 1.0, Departamento Nacional de Planeación, Colombia. 2017. 
-* Guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal, Instituto Geográfico Agustín Codazzi. 1998.
+* [Guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal, Instituto Geográfico Agustín Codazzi. 1998.](https://www.faoswalim.org/resources/Land/Land_resource_Mgt/pdfdocs/guia_sim.pdf)
 * Guía Metodológica 1 – Información práctica para formulación de Planes de Ordenamiento Territorial, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2004.
 * Guía Metodológica 2 – Revisión y Ajuste de Planes de Ordenamiento Territorial, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2005.
 * Guía Metodológica – Conformación y puesta en marcha del expediente municipal, Cuarta Edición, Ministerio de Medio Ambiente, Vivienda y Desarrollo Territorial, República de Colombia. 2019.
 * 29 lineamientos para la formulación del proyecto de revisión y ajuste de planes de ordenamiento territorial (POT - PBOT - EOT) – Versión 1.0, Departamento Nacional de Planeación, Ministerio de Vivienda, Ciudad y Territorio. 2016.
-* Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi. 2019.
+* [Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi. 2019.](https://www.colombiaot.gov.co/docs/cartilla_pot.pdf)

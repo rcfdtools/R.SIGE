@@ -218,7 +218,36 @@ Seguin lo establecido en la Ley 388 de 1997, Artículo 21, el plan de ordenamien
 
 ## 10. Planes de ordenamiento y cambio climático
 
-De acuerdo al Artículo 10 de la Ley 388 de 1997, una de las determinantes de Nivel 1 del ordenamiento territorial es la gestión del cambio climático
+<sub>Tomado y adaptado de: Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi, 2019.</sub> [^3]
+
+De acuerdo al Artículo 10 de la Ley 388 de 1997, una de las determinantes de Nivel 1 del ordenamiento territorial es la gestión del cambio climático.
+
+De manera natural, las condiciones climáticas se encuentran en constante cambio, sin embargo, se han encontrado evidencias de que el clima en el planeta está cambiando a un ritmo más acelerado de lo esperado, lo que es atribuido directa o indirectamente a actividades humanas como las de producción, extracción, asentamiento y consumo, que se reflejan en el aumento de los niveles de los gases efecto invernadero - GEI en la atmósfera y en cambios en los usos de los suelos. A este fenómeno se le conoce como Cambio Climático - CC y su estudio, de acuerdo con las metodologías del Grupo Intergubernamental de Expertos sobre el Cambio Climático (The Intergovernmental Panel on Climate Change – IPCC), se basa en prever alteraciones en los regímenes de temperatura y precipitación. 
+
+El cambio climático toma relevancia en la medida en que las comunidades estén preparadas o no para asumir sus consecuencias que para Colombia pueden incluir: 
+
+* Aumento del nivel del mar
+* Derretimiento de glaciares y nevados
+* Retroceso de los sistemas de páramos
+* Reducción en la productividad agropecuaria
+* Mayor afectación por eventos climáticos como La Niña y El Niño
+
+Por esto, es necesario incorporar, desde el diagnóstico territorial del componente rural, información relacionada a los niveles de riesgo a los efectos adversos del cambio climático sobre las infraestructuras (derrumbes en vías, colapso de puentes vehiculares y por el aumento de los niveles de los cuerpos de agua), sobre los sistemas productivos (inundaciones y pérdida de cultivos y cabezas de ganado) y otros efectos, que llevan a la pérdida de vidas humanas para, finalmente, establecer medidas de adaptación en las zonas que se consideren prioritarias. 
+
+Es importante resaltar que, en el componente rural del ordenamiento territorial municipal, se pueden definir acciones para ejecutarse en el mediano y corto plazo; y es precisamente para esta temporalidad que se debe evaluar este fenómeno atendiendo a momento en el que se realizan los estudios y la clara necesidad de incorporar el cambio climático en el proceso de revisión y ajuste de los planes de ordenamiento territorial. Para estudiar este fenómeno, es necesario, en primer lugar, identificar y espacializar los elementos de interés por su probabilidad de verse afectados por el cambio climático, entre ellos se pueden tener en cuenta: 
+
+* Asentamientos humanos como zonas urbanas, de expansión urbana y centros poblados rurales. 
+* Infraestructura de servicios como PTAR, PTAP, tanques de almacenamiento, cuerpos de agua para la producción energética. 
+* Equipamientos regionales como los corredores viales, puertos, aeropuertos, zonas francas, puntos de acopio. 
+* Zonas susceptibles a amenazas de origen natural como inundaciones, fenómenos de remoción en masa, avenidas torrenciales, incendios. 
+* Estructura ecológica, conformada por los ecosistemas estratégicos presentes en el municipio, su sistema de áreas protegidas, humedales, etc. 
+*Todos aquellos que se consideren necesarios por las particularidades del municipio. 
+
+Estos se pueden traer de otros estudios de riesgo por amenazas naturales, en escalas detalladas o semidetalladas. Además, se pueden identificar a través de información geográfica básica disponible como las bases de datos catastrales o la cartografía básica. Con estos elementos caracterizados, es posible, en segundo lugar, superponer la zonificación de los niveles de riesgo por cambio climático, a partir de los resultados del “Análisis de Vulnerabilidad y Riesgo por Cambio Climático en Colombia”, haciendo uso de la información geográfica del estudio: calificación alta y muy alta, y teniendo en cuenta su temporalidad.
+
+Sin embargo, existen herramientas metodológicas más detalladas para la incorporación del cambio climático al ordenamiento del territorio municipal dadas desde el nivel nacional, a través de las Consideraciones de Cambio Climático para el Ordenamiento Territorial (Ministerio de Ambiente y Desarrollo Sostenible, 2018) y para el nivel local con las Orientaciones para la Inclusión del Cambio Climático en los Planes de Ordenamiento Territorial (CAR, 2018), que son referentes para esta investigación y orientan a profundidad este importante tema.
+
+Los municipios que tienen influencia de la dinámica marino-costera deberán incorporar información relacionada a posibles cambios en el nivel del mar o cambios en la línea costera en sus análisis de cambio climático. 
 
 
 ## 11. Roles de la arquitectura y la ingeniería en la elaboración de los POT
@@ -276,3 +305,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 [^1]: https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot
 [^2]: Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial.
+[^3]: [Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial – POT, Instituto Geográfico Agustín Codazzi. 2019.](https://www.colombiaot.gov.co/docs/cartilla_pot.pdf)
