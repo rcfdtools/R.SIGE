@@ -87,7 +87,7 @@ Ley 388 de 1997, Artículo 9.
 
 El municipio debe proceder a la revisión del POT por los siguientes motivos:
 
-<div align="center"><img src="graph/MotivosRevisionPOT.png" alt="R.SIGE" width="95%" border="0" /><sub><br>Motivos de revisión del POT<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot">https://minvivienda.gov.co</a></sub><br><br></div>
+<div align="center"><img src="graph/MotivosRevisionPOT.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Motivos de revisión del POT<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot">https://minvivienda.gov.co</a></sub><br><br></div>
 
 En cuanto a los requerimientos para iniciar la revisión:
 
@@ -105,7 +105,7 @@ Para revisiones en las que se contemple la financiación a través de recursos p
 * Decreto 1821 de 2021: decreto único reglamentario del sistema general de regalías.
 * Orientaciones transitorias para la gestión de proyectos de inversión (2021): documento del Departamento Nacional de Planeación que establece los requisitos para la esructuración de los proyectos en el SGR.
 
-<div align="center"><img src="graph/SGR.png" alt="R.SIGE" width="80%" border="0" /><sub><br>Financiación con recursos del SGR<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/fuentes-de-financiacion">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
+<div align="center"><img src="graph/SGR.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Financiación con recursos del SGR<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/fuentes-de-financiacion">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
 ## 5. Componentes y vigencias
@@ -217,7 +217,6 @@ Articulación [^2]
 | Objetivos       | Señalar los propósitos, objetivos, políticas y estrategias en materia social, económica y ambiental en busca de los fines de desarrollo. Art. 339 CP.                                                                                                                                                                | Complementa la planificación económica y social con la dimensión territorial, racionalizar las intervenciones sobre el territorio y orientar su desarrollo y aprovechamiento sostenible. Art. 5 ley 388 de 1997.                                                                                                                                                                                                                                               |
 | Diagnóstico     | **Bases del Plan**<br><br>Básicos demográficos.<br><br>Básicos sociales, económicos y ambientales.<br><br>Análisis de dinámica demográfica y poblacional.<br><br>Análisis de interacciones, balances y tensiones.<br><br>Grandes retos.                                                                              | **Documento Técnico de Soporte (DTS)**<br><br>Básicos demográficos.<br><br>Básicos sociales, económicos y ambientales.<br><br>Análisis de dinámica demográfica y poblacional.<br><br>Análisis de interacciones, balances y tensiones.<br><br>Grandes retos.                                                                                                                                                                                                    |
 | Visión integral | Visión de desarrollo.                                                                                                                                                                                                                                                                                                | Visión de territorio.<br><br>Objetivos y estrategias territoriales.                                                                                                                                                                                                                                                                                                                                                                                            |
-
 
 
 ## 11. Roles de la arquitectura y la ingeniería en la elaboración de los POT
