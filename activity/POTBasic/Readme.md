@@ -203,7 +203,7 @@ Lo anterior, permite asegurar la eficacia del ordenamiento del territorio respec
 <div align="center"><img src="graph/Participacion.png" alt="R.SIGE" width="90%" border="0" /><sub><br>Mecanismos de participación<br>Tomado de: <a href="https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/participacion-pot">https://minvivienda.gov.co</a>https://minvivienda.gov.co</sub><br><br></div>
 
 
-## 9. Relación entre el Plan de Desarrollo Municipal PDM y el POT
+## 9. Relación entre el Plan de Desarrollo Municipal - PDM y el Plan de Ordenamiento Territorial - POT
 
 Ley 388 de 1997, Articulo 21.
 
