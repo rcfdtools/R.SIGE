@@ -292,6 +292,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot
 * https://www.colombiaot.gov.co/
 * https://minvivienda.gov.co/sites/default/files/documentos/guia-aplicacion-asentamientos.pdf
+* https://recursos.ccb.org.co/ccb/pot/IPAD/files/2pot.html
 
 
 ## Control de versiones
