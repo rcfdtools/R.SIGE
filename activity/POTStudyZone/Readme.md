@@ -32,13 +32,16 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Para la evaluación del alcance y cumplimiento de los componentes definidos en la Ley 388 de 1997, cada uno de los numerales siguientes contiene una tabla de análisis en la que se revisan y evalúan:
 
-* Acción o alcance: contenidos explícitos solicitados en la Ley 388 de 1997.
-* Art. Ley 388/97: artículos en los que se definen alcances específicos para cada componente.
-* POT: indica si aplica a municipios con denominación de Plan de Ordenamiento Territorial.
-* PBOT: indica si aplica a municipios con denominación de Plan Básico de Ordenamiento Territorial.
-* EOT: indica si aplica a municipios con denominación de Esquema de Ordenamiento Territorial.
-* Alcance SIG: elementos a ser desarrollados o evaluados mediante tecnologías de sistemas de información geográfica.
-* Mapa POT municipal: mapa incluído en la cartografía oficial del municipio que contiene la localización o delimitación de los elementos geográficos. 
+| Columna             | Alcance de evaluación                                                                                                            |
+|:--------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| Acción o alcance    | Contenidos explícitos solicitados en la Ley 388 de 1997.                                                                         |
+| Art. Ley 388/97     | Artículos en los que se definen alcances específicos para cada componente.                                                       |
+| POT                 | Indica si aplica a municipios con denominación de Plan de Ordenamiento Territorial.                                              |
+| PBOT                | Indica si aplica a municipios con denominación de Plan Básico de Ordenamiento Territorial.                                       |
+| EOT                 | Indica si aplica a municipios con denominación de Esquema de Ordenamiento Territorial.                                           |
+| Alcance SIG         | Elementos a ser desarrollados o evaluados mediante tecnologías de sistemas de información geográfica.                            |
+| Mapa POT municipal  | Mapa incluído en la cartografía oficial del municipio que contiene la localización o delimitación de los elementos geográficos.  |
+
 
 
 ## 2. Evaluación Componente General
