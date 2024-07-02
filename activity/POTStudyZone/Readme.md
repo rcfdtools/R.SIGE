@@ -57,8 +57,6 @@ Para la evaluación de denominación y alcance del plan de ordenamiento adoptado
 
 ## 2. Revisión de denominación de ordenamiento (POT, PBOT, EOT)
 
-<div align="center">
-
 Población y dinámica de crecimiento urbano
 
 | Parámetro                       | Valor o condición                                                                    |
@@ -73,8 +71,6 @@ Denominación y adopción local
 | POT - Plan de ordenamiento territorial          | Superior a 100000 habitantes     |    ✓    |    Sí    |
 | PBOT - Plan básico de ordenamiento territorial  | Entre 30000 y 100000 habitantes  |         |          |
 | EOT - Esquema de ordenamiento territorial       | Inferior a 30000 habitantes      |         |          |
-
-</div>
 
 > Dentro del análisis se debe considerar que si el municipio tiene una población interior a 30000 habitantes y una dinámica importante de crecimiento poblacional, puede implementar un PBOT en vez de un EOT según el Art. 17 Ley 388 de 1997.
 
