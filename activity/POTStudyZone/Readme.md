@@ -1,13 +1,14 @@
 # Ordenamiento Territorial de la zona de estudio
 Keywords: `soil-classification` `pot-implementation`
 
-En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ordenamiento territorial del municipio del caso de estudio en función del último registro censal y evaluaremos los diferentes alcances establecidos en la Ley 388 de 1997 para los componentes general, urbano y rural, y su adopción a nivel municipal.
+En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ordenamiento territorial del municipio del caso de estudio en función de la población del último registro censal y evaluaremos los diferentes alcances establecidos en la Ley 388 de 1997 para los componentes general, urbano y rural, y su adopción a nivel municipal.
 
 <div align="center"><img src="graph/CG-01.jpg" alt="R.SIGE" width="80%" border="0" /><sub><br>Tomado de: <a href="https://www.zipaquira-cundinamarca.gov.co/planes/plan-de-ordenamiento-territorial-361636">Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013</a></sub><br><br></div>
 
 
 ## Objetivos
 
+* Evaluar la denominación (POT, PBOT, EOT) aplicable al municipio en función de la población del último registro censal.
 * Identificar los contenidos requeridos por la Ley 388 de 1997 aplicables a las diferentes denominaciones del plan de ordenamiento (POT, PBOT, EOT).
 * Revisar los contenidos implementados de la Ley 33 de 1997 en los acuerdos o decretos de adopción o modificación de los planes de ordenamiento.
 
@@ -43,7 +44,33 @@ Para la evaluación del alcance y cumplimiento de los componentes definidos en l
 | Mapa POT municipal  | Mapa incluído en la cartografía oficial del municipio que contiene la localización o delimitación de los elementos geográficos.  |
 
 
-## 2. Evaluación Componente General
+## 2. Revisión de denominación de ordenamiento (POT, PBOT, EOT)
+
+Población y dinámica de crecimiento urbano
+
+<div align="center">
+
+| Parámetro                      | Valor o condición                                                                   |
+|--------------------------------|-------------------------------------------------------------------------------------|
+| Población                      | 128968 (correspondiente al último registro censal DANE del año 2018)                |
+| Dinámica de crecimiento urbano | Importante (debido al desarrollo masivo de proyectos de vivienda de interés social) |
+
+</div>
+
+<div align="center">
+
+| Denominación                                    | Población                        | Aplica  | Adoptado |
+|:------------------------------------------------|:---------------------------------|:-------:|:--------:|
+| POT - Plan de ordenamiento territorial          | Superior a 100000 habitantes     |    ✓    |    Sí    |
+| PBOT - Plan básico de ordenamiento territorial  | Entre 30000 y 100000 habitantes  |         |          |
+| EOT - Esquema de ordenamiento territorial       | Inferior a 30000 habitantes      |         |          |
+
+</div>
+
+> Dentro del análisis se debe considerar que si el municipio tiene una población interior a 30000 habitantes y una dinámica importante de crecimiento poblacional, puede implementar un PBOT en vez de un EOT según el Art. 17 Ley 388 de 1997.
+
+
+## 3. Evaluación Componente General
 
 **Alcance de este componente**: contiene los objetivos y estrategias territoriales que complementarán diferentes acciones desde el punto de vista del manejo territorial, el desarrollo municipal y distrital. Contenido relacionado con la estructura urbano-rural e intraurbana con la correspondiente identificación de la naturaleza de las infraestructuras, redes de comunicación y servicios, así como otros elementos o equipamientos estructurantes de gran escala.
 
@@ -67,7 +94,7 @@ Para la evaluación del alcance y cumplimiento de los componentes definidos en l
 > Algunos usos del suelo identificados: residencial, comercial y de servicios, dotacional, recreacional, industrial, agropecuario, forestal protector productor y minero.
 
 
-## 3. Evaluación Componente Urbano
+## 4. Evaluación Componente Urbano
 
 **Alcance de este componente**: Instrumento para la administración del desarrollo y la ocupación del espacio físico clasificado como suelo urbano y suelo de expansión urbana, que integra políticas de mediano y corto plazo, procedimientos e instrumentos de gestión y normas urbanísticas.
 
@@ -90,7 +117,7 @@ Para la evaluación del alcance y cumplimiento de los componentes definidos en l
 > Dentro de la cartografía oficial no se pudieron encontrar mapas de: rutas de aseo, red de energía eléctrica, red de gas natural, redes de telecomunicaciones, la localización de los terrenos para reubicación de asentamientos localizados en zonas de alto riesgo y la dentificación de predios objeto de plusvalía.
 
 
-## 4. Evaluación Componente Rural
+## 5. Evaluación Componente Rural
 
 **Alcance de este componente**: Instrumento para garantizar la adecuada interacción entre los asentamientos rurales y la cabecera municipal, la conveniente utilización del suelo rural y las actuaciones públicas tendientes al suministro de infraestructuras y equipamientos básicos para el servicio de los pobladores rurales.
 
