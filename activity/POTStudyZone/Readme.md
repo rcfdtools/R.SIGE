@@ -81,6 +81,8 @@ Denominación y adopción local
 
 ## 3. Evaluación Componente General
 
+<div align="center"><img src="graph/Long_exposure_of_highway_and_skyscraper_with_bright_sky.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Long exposure of highway and skyscraper with bright sky<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Long_exposure_of_highway_and_skyscraper_with_bright_sky.jpg">https://commons.wikimedia.org/</a></sub><br><br></div>
+
 **Alcance de este componente**: contiene los objetivos y estrategias territoriales que complementarán diferentes acciones desde el punto de vista del manejo territorial, el desarrollo municipal y distrital. Contenido relacionado con la estructura urbano-rural e intraurbana con la correspondiente identificación de la naturaleza de las infraestructuras, redes de comunicación y servicios, así como otros elementos o equipamientos estructurantes de gran escala.
 
 **Se evalúan**: objetivos, estrategias y contenidos estructurales de largo plazo.
