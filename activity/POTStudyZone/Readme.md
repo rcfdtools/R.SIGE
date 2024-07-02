@@ -154,7 +154,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://www.colombiaot.gov.co/pot/
+* https://www.zipaquira-cundinamarca.gov.co/tema/normatividad
 
 
 ## Control de versiones
