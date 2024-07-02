@@ -5,6 +5,7 @@ En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ord
 
 <div align="center"><img src="graph/CG-01.jpg" alt="R.SIGE" width="80%" border="0" /><sub><br>Tomado de: <a href="https://www.zipaquira-cundinamarca.gov.co/planes/plan-de-ordenamiento-territorial-361636">Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013</a></sub><br><br></div>
 
+> Los alcances y contenidos analizados en esta actividad se utilizan para ejemplificar el caso de estudio, por lo que se recomienda, verificar, actualizar y complementar los contenidos aquí desarrollados.
 
 ## Objetivos
 
