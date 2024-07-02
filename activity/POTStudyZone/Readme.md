@@ -8,14 +8,14 @@ En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ord
 
 ## Objetivos
 
-* Evaluar la denominación (POT, PBOT, EOT) aplicable al municipio en función de la población del último registro censal.
+* Evaluar la denominación (POT, PBOT, EOT) aplicable al municipio del caso de estudio en función de la población del último registro censal.
 * Identificar los contenidos requeridos por la Ley 388 de 1997 aplicables a las diferentes denominaciones del plan de ordenamiento (POT, PBOT, EOT).
-* Revisar los contenidos implementados de la Ley 33 de 1997 en los acuerdos o decretos de adopción o modificación de los planes de ordenamiento.
+* Revisar los contenidos implementados de la Ley 33 de 1997, en los acuerdos o decretos de adopción o modificación de los planes de ordenamiento de la zona de estudio.
 
 
 ## Requerimientos
 
-* Recopilación de Acuerdos, Decretos y Resoluciones municipales de adopción del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
+* Recopilación de Acuerdos, Decretos y Resoluciones municipales y demás normativa local relacionada con la adopción y modificación del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
 * Lectura de Acuerdos, Decretos y Resoluciones municipales.  
 
 
