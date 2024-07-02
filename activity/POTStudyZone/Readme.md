@@ -61,10 +61,10 @@ Para la evaluación de denominación y alcance del plan de ordenamiento adoptado
 
 Población y dinámica de crecimiento urbano
 
-| Parámetro                      | Valor o condición                                                                   |
-|--------------------------------|-------------------------------------------------------------------------------------|
-| Población                      | 128968 (correspondiente al último registro censal DANE del año 2018)                |
-| Dinámica de crecimiento urbano | Importante (debido al desarrollo masivo de proyectos de vivienda de interés social) |
+| Parámetro                       | Valor o condición                                                                    |
+|:--------------------------------|:-------------------------------------------------------------------------------------|
+| Población                       | 128968 (correspondiente al último registro censal DANE del año 2018)                 |
+| Dinámica de crecimiento urbano  | Importante (debido al desarrollo masivo de proyectos de vivienda de interés social)  |
 
 Denominación y adopción local
 
