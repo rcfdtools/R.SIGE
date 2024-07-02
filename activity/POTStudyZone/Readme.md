@@ -50,7 +50,9 @@ Para la evaluación del alcance y cumplimiento de los componentes definidos en l
 | Alcance SIG         | Elementos a ser desarrollados o evaluados mediante tecnologías de sistemas de información geográfica.                            |
 | Mapa POT municipal  | Mapa incluído en la cartografía oficial del municipio que contiene la localización o delimitación de los elementos geográficos.  |
 
-:open_file_folder: [POTStudyZone.xlsx](POTStudyZone.xlsx): para la evaluación de denominación y alcance del plan de ordenamiento adoptado, se suministra este libro de Microsoft Excel. 
+Para la evaluación de denominación y alcance del plan de ordenamiento adoptado, se suministra el libro de Microsoft Excel:
+
+:open_file_folder: [POTStudyZone.xlsx](POTStudyZone.xlsx) 
 
 
 ## 2. Revisión de denominación de ordenamiento (POT, PBOT, EOT)
