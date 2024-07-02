@@ -105,6 +105,8 @@ Denominación y adopción local
 
 ## 4. Evaluación Componente Urbano
 
+<div align="center"><img src="graph/The_urban_lateral_view_of_Jiangzicui_redevelopment_zone_D_to_F_in_Banqiao_dist.,_New_Taipei_city.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>Cambio en la temperatura planetaria en los últimos 50 años<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:The_urban_lateral_view_of_Jiangzicui_redevelopment_zone_D_to_F_in_Banqiao_dist.,_New_Taipei_city.jpg">https://commons.wikimedia.org/</a></sub><br><br></div>
+
 **Alcance de este componente**: Instrumento para la administración del desarrollo y la ocupación del espacio físico clasificado como suelo urbano y suelo de expansión urbana, que integra políticas de mediano y corto plazo, procedimientos e instrumentos de gestión y normas urbanísticas.
 
 **Se evalúan**: políticas, acciones, programas y normas para encauzar y administrar el desarrollo físico urbano y de expansión urbana.
