@@ -6,18 +6,49 @@ A partir de la cartografía citada en el documento del Plan de Ordenamiento, rea
 <div align="center"><img src="graph/Kepler-world.jpg" alt="R.SIGE" width="100%" border="0" /><sub><br>World map in "Tabulae Rudolphinae: quibus astronomicae...." by Johannes Kepler, 1627.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Kepler-world.jpg">https://commons.wikimedia.org/</a></sub><br><br></div>
 
 
-
 ## Objetivos
 
-* 
+* Revisar el contenido temático de los mapas digitales del POT.
+* Identificar las propiedades cartográficas de los mapas digitales del POT.
+* Identificar las fuentes de información utilizadas.
 
 
 ## Requerimientos
 
-* [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
+* [:mortar_board:Actividad](../POTStudyZone): Revisión y documentación del ordenamiento territorial de la zona de estudio.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
+* [:open_file_folder:POT_Cartografia.xlsx](POT_Cartografia.xlsx): libro para registro y revisión de cartografía POT impresa digitalmente.
+
+
+## 1. Especificaciones para revisión
+
+En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se registran los siguientes atributos:
+
+| Columna                                | Alcance de evaluación                                                                                                                                                                      |
+|:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No.                                    | Consecutivo numérico para verificar el número de mapas disponibles en las etapas de diagnóstico y formulación.                                                                             |
+| Etapa                                  | Diagnóstico, Formulación.                                                                                                                                                                  |
+| Componente                             | General, Urbano, Rural.                                                                                                                                                                    |
+| Código                                 | Código del Mapa. Debe corresponder con la codificación indicada en el Acuerdo o Decreto del POT.                                                                                           |
+| Nombre                                 | Nombre o alcance del mapa.                                                                                                                                                                 |
+| Fecha                                  | Fecha de elaboración.                                                                                                                                                                      |
+| Disponible                             | Sí, No. Disponible y descargado.                                                                                                                                                           |
+| Formato archivo                        | Formato digital del archivo: pdf - Adobe Acrobat, jpg/png/tif - Imagen digital, cad - Autocad.                                                                                             |
+| Fuente base cartográfica               | Fuente cartográfica nacional, planchas cartográficas y/o bases de datos.                                                                                                                   |
+| Fuente temática                        | Fuente de capas vectoriales o grillas utilizadas para la producción del mapa.                                                                                                              |
+| CRS                                    | Sistema de proyección de coordenadas. Indicar solo el código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset).                                                        |
+| Escala de Impresión                    | 1:n. Escala de impresión principal.                                                                                                                                                        |
+| Barra de escala                        | Sí, No. Incluye o no barra de escala.                                                                                                                                                      |
+| Separación horizontal grilla en metros | Espaciamiendo horizontal de la grilla principal.                                                                                                                                           |
+| Separación vertical grilla en metros   | Espaciamiendo vertical de la grilla principal.                                                                                                                                             |
+| Orientación norte                      | Sí, No. Norte orientada hacia arriba.                                                                                                                                                      |
+| Incluye convenciones                   | Sí, No. Indicar si incluye convenciones generales.                                                                                                                                         |
+| Incluye leyenda temática               | Sí, No. Indicar si incluye leyenda temática.                                                                                                                                               |
+| Leyenda temática con áreas             | Sí, No. Indicar si incluye áreas en leyenda temática.                                                                                                                                      |
+| Tamaño de página en milímetros         | Tamaño de impresión digital en milímetros. Visible desde las propiedades de archivo o documento de Adobe Acrobat Reader.                                                                   |
+| Observaciones                          | Observaciones: indicar si el mapa representa correctamente su temática, rótulos legibles, separación de grilla adecuada, escala adecuada para visualización completa del contenido, etc... |
+
+
 
 
 
