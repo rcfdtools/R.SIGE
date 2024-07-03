@@ -177,11 +177,14 @@ En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad
 
 ## 4. Sistema de proyección y elementos cartográficos
 
-* CRS: para todos los mapas corresponde al EPSG 3116 ó MAGNA Origen Bogota Colombia, 2011.
-* Barra de escala: presente en todos los mapas.
-* Orientación norte: hacia arriba en todos los mapas.
-* Convenciones: presentes en todos los mapas.
+Propiedades comunes en todos los mapas revisados:
+
+* CRS: EPSG 3116 ó MAGNA Origen Bogota Colombia, 2011.
+* Barra de escala: presente.
+* Orientación norte: hacia arriba.
+* Convenciones: presentes.
 * Tamaño de impresión: 1000 x 600 milímetros.
+
 
 | No.  | Etapa       | Componente | Código | Nombre                                                               | Separación horizontal grilla en metros | Separación vertical grilla en metros | Incluye leyenda temática | Leyenda temática con áreas y/o longitudes | 
 |------|-------------|------------|--------|----------------------------------------------------------------------|----------------------------------------|--------------------------------------|--------------------------|-------------------------------------------| 
