@@ -16,8 +16,8 @@ En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ord
 
 ## Requerimientos
 
-* Recopilación de Acuerdos, Decretos y Resoluciones municipales relacionada con la adopción y modificación del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
-* Lectura de Acuerdos, Decretos y Resoluciones municipales.
+* :notebook:Recopilación de Acuerdos, Decretos y Resoluciones municipales relacionada con la adopción y modificación del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
+* :notebook:Lectura de Acuerdos, Decretos y Resoluciones municipales.
 * :open_file_folder:[POTStudyZone.xlsx](POTStudyZone.xlsx): libro para evaluación de denominación y alcance del plan de ordenamiento adoptado.
 
 

@@ -14,11 +14,11 @@ Corresponde a la administración municipal tener un adecuado conocimiento de la 
 
 ## Requerimientos
 
-* Microsoft Excel 365
-* [Conocimientos básicos en estadística](https://edu.gcfglobal.org/es/estadistica-basica/)
-* Lectura - [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
-* Lectura - [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
-* Lectura - [Guía Metodológica 1 - Elementos Poblacionales Básicos para la planeación. Serie Población, Ordenamiento y Desarrollo. Ministerio de Ambiente, Vivienda y Desarrollo Territorial, Viceministerio de Vivienda y Desarrollo Territorial, Dirección de Desarrollo Territorial, República de Colombia. ](https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/ELEMENTOS%20POBLACIONALES%20-%20MVCT.pdf)
+* :toolbox:Microsoft Excel 365
+* :notebook:Lectura - [Conocimientos básicos en estadística](https://edu.gcfglobal.org/es/estadistica-basica/)
+* :notebook:Lectura - [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
+* :notebook:Lectura - [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
+* :notebook:Lectura - [Guía Metodológica 1 - Elementos Poblacionales Básicos para la planeación. Serie Población, Ordenamiento y Desarrollo. Ministerio de Ambiente, Vivienda y Desarrollo Territorial, Viceministerio de Vivienda y Desarrollo Territorial, Dirección de Desarrollo Territorial, República de Colombia. ](https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/ELEMENTOS%20POBLACIONALES%20-%20MVCT.pdf)
 * :open_file_folder:[PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 * :open_file_folder:[PoblacionSISBEN.xlsx](PoblacionSISBEN.xlsx): libro para registro y proyección de población SISBEN.
 * :open_file_folder:[PoblacionRNEC.xlsx](PoblacionRNEC.xlsx): libro para registro y proyección de población RNEC.

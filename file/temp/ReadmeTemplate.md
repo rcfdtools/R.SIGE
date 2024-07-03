@@ -15,11 +15,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Requerimientos
 
+* :toolbox:Herramienta
+* :notebook:Lectura - 
 * [ArcGIS Pro 2+](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm)
 * [ArcGIS for Desktop 10+](https://desktop.arcgis.com/es/desktop/) (opcional)
 * [QGIS 3+](https://qgis.org/) (opcional)
-* HEC-HMS 4.9+
-* Lectura - 
+
 
 
 ## Diagrama general de procesos
