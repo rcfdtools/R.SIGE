@@ -19,6 +19,8 @@ En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ord
 * :pencil2:Recopilación y lectura de Acuerdos, Decretos y Resoluciones municipales relacionada con la adopción y modificación del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
 * [:open_file_folder:POTStudyZone.xlsx](POTStudyZone.xlsx): libro para evaluación de denominación y alcance del plan de ordenamiento adoptado.
 
+> Los documentos del Plan de Ordenamiento de la Zona de estudio han sido descargados de www.colombiaot.gov.co y de www.zipaquira-cundinamarca.gov.co.
+
 
 ## 1. Normatividad municipal
 
