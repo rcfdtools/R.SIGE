@@ -26,11 +26,12 @@ En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad
 | Columna       | Alcance de evaluación                                                                                                                                                                 |
 |:--------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo          | Vector, Tabla, Ráster.                                                                                                                                                                |
-| Dataset       | Nombre de GDB / Nombre del grupo de capas. Para archivos que no estén contenidos dentro de una GDB indicar el nombre de la carpeta que contiene el elemento.                          |
 | Nombre        | Nombre del elemento. Para archivos que no estén contenidos dentro de una GDB incluir la extensión primaria, p. ej.: .shp, .tif, .dbf, dwg.                                            |
 | Alias         | Nombre corto utilizado en listas de elementos sobre mapas. En caso de que no disponga de nombre corto, incluir el Nombre sin extensión.                                               |
+| Dataset       | Nombre de GDB / Nombre del grupo de capas. Para archivos que no estén contenidos dentro de una GDB indicar el nombre de la carpeta que contiene el elemento.                          |
 | Descripción   | Evalúe la espacialidad de la capa y sus atributos para identificar que contiene y representa.                                                                                         |
 | Geometría     | Punto 2D, Punto 3D, Línea 2D, Línea 3D, Polígono 2D, Polígono 3D, N/A o no aplica. Grillas ráster y tablas de datos no contienen geometría.                                           |
+| Fuente datos  | Fuente de datos original de la capa.                                                                                                                                                  |
 | Registros     | Total de entidades contenidas dentro de la tabla de atributos. Para grillas incluir en una fórmula el resultado obtenido de multiplicae el número de filas por el número de columnas. |
 | CRS           | Sistema de proyección de coordenadas                                                                                                                                                  |
 | Límite norte  | Extensión espacial al norte en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            |
