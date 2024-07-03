@@ -18,8 +18,8 @@ Los Sistemas de Información Geográficos (SIG o GIS), son un conjunto de equipo
 
 ## Requerimientos
 
-* [Conceptos básicos de topografía, fotogrametría y fotointerpretación](../TopoBasic/Readme.md)
-* Lectura - [¿Qué son los SIG](https://www.esri.com/es-es/what-is-gis/overview)
+* [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
+* [:notebook:Lectura](https://www.esri.com/es-es/what-is-gis/overview): ¿Qué son los SIG?
 
 
 ## 1. Historia de los SIG como ciencia[^1]
