@@ -15,8 +15,8 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 
 ## Requerimientos
 
-*[:notebook:Lectura](https://resources.arcgis.com/es/help/main/10.1/index.html#//003r00000001000000): ¿Qué son las proyecciones cartográficas?
-*[:notebook:Lectura](https://es.wikipedia.org/wiki/Forma_de_la_Tierra): Forma de la tierra.
+* [:notebook:Lectura](https://resources.arcgis.com/es/help/main/10.1/index.html#//003r00000001000000): ¿Qué son las proyecciones cartográficas?
+* [:notebook:Lectura](https://es.wikipedia.org/wiki/Forma_de_la_Tierra): Forma de la tierra.
 
 
 ## 1. ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas?[^1]
