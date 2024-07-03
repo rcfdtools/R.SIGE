@@ -313,64 +313,45 @@ Propiedades comunes en todos los mapas revisados:
 ## 6. Mapas disponibles
 
 <div align="center">
-DR-01a Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01a.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-01b Áreas protegidas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01b.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-02 Estructura ecológica principal rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-02.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-03 Hidrografía y delimitación de cuencas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-03.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-04 Geomorfología<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-04.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-05 Suelos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-05.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-06 Pendientes<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-06.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-07 Zonificación agroclimática<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-07.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-08 Uso potencial del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-08.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-09 Cobertura y uso actual del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-09.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-10 Conflictos de uso del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-10.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-11 Zonificación de amenazas naturales y antrópicas en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-11.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-12 Sistema vial rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-12.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-13 Equipamientos colectivos rurales y elementos patrimoniales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-13.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-14 Clasificación general del territorio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-14.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-15 Asentamientos humanos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-15.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-16 Límites y división política rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-16.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-17 Predios de propiedad del Municipio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-17.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-18 Uso actual del suelo en Centros Poblados Rurales (CPR)<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-18.jpg' alt='R.SIGE' width='100%' border='0' />
-DR-19 Altura de edificaciones en Centros Poblados Rurales (CPR)<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-19.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-01 Estructura ecológica principal urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-01.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-02 Zonificación de amenazas naturales y antrópicas en suelo urbano<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-02.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-03 Sistema urbano de acueducto<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-03.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-04 Sistema urbano de alcantarillado<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-04.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-05 Sistema vial urbano existente<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-05.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-06 Sistema vial urbano proyectado en POT vigente y plan de movilidad<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-06.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-07 Sistemas urbanos de espacio público y equipamientos colectivos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-07.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-08 Uso actual de suelo urbano<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-08.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-09 Conflictos por uso del suelo urbano<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-09.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-10 Ocupación en áreas de ronda<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-10.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-11 Altura de edificaciones<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-11.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-12 Unidades morfológicas homogéneas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-12.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-13 Perímetro y división política urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-13.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-14 Conflictos POT vigente y expectativas ajuste<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-14.jpg' alt='R.SIGE' width='100%' border='0' />
-DU-15 Usos por Planes Parciales y Especiales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-15.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-01 Clasificación general del territorio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-02 Asentamientos humanos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-02.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-03 Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-03.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-04 Estructura ecológica principal urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-04.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-05 Modelo de ocupación del territorio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-05.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-06 División política rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-06.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-07 División política urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-07.jpg' alt='R.SIGE' width='100%' border='0' />
-CG-08 Estructura ecológica principal rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-08.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-01 Áreas morfológicas homogéneas en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-01.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-02 Tratamientos en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-02.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-03 Áreas de actividad en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-03.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-04 Plan vial en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-04.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-05 Plan de espacio público en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-05.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-06 Plan de equipamientos comunitarios<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-06.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-07 Plan parcial La Fraguita<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-07.jpg' alt='R.SIGE' width='100%' border='0' />
-CU-08 Localización de áreas para VIS y VIP<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-08.jpg' alt='R.SIGE' width='100%' border='0' />
-GR-01 Mapa de gestión del riesgo. Zonificación de riesgos en suelo urbano.<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/GR-01.jpg' alt='R.SIGE' width='100%' border='0' />
-CR-01 Áreas de actividad en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-01.jpg' alt='R.SIGE' width='100%' border='0' />
-CR-02a Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02a.jpg' alt='R.SIGE' width='100%' border='0' />
-CR-02b Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02b.jpg' alt='R.SIGE' width='100%' border='0' />
-CR-03 Plan vial rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-03.jpg' alt='R.SIGE' width='100%' border='0' />
-GR-02 Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural.<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/GR-02.jpg' alt='R.SIGE' width='100%' border='0' />
-
+DR-01a Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01a.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-01b Áreas protegidas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01b.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-02 Estructura ecológica principal rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-03 Hidrografía y delimitación de cuencas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-04 Geomorfología<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-04.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-05 Suelos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-05.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-06 Pendientes<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-06.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-07 Zonificación agroclimática<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-07.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-08 Uso potencial del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-08.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-09 Cobertura y uso actual del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-09.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-10 Conflictos de uso del suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-10.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-01 Estructura ecológica principal urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-02 Zonificación de amenazas naturales y antrópicas en suelo urbano<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-03 Sistema urbano de acueducto<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-04 Sistema urbano de alcantarillado<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-04.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-05 Sistema vial urbano existente<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-05.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-06 Sistema vial urbano proyectado en POT vigente y plan de movilidad<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-06.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DU-07 Sistemas urbanos de espacio público y equipamientos colectivos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DU-07.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-01 Clasificación general del territorio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-02 Asentamientos humanos<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-03 Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-04 Estructura ecológica principal urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-04.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-05 Modelo de ocupación del territorio<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-05.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-06 División política rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-06.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-07 División política urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-07.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CG-08 Estructura ecológica principal rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-08.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-01 Áreas morfológicas homogéneas en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-02 Tratamientos en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-03 Áreas de actividad en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-04 Plan vial en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-04.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-05 Plan de espacio público en suelo urbano y de expansión urbana<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-05.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-06 Plan de equipamientos comunitarios<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-06.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-07 Plan parcial La Fraguita<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-07.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CU-08 Localización de áreas para VIS y VIP<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-08.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-01 Áreas de actividad en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-02a Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02a.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-02b Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02b.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-03 Plan vial rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+GR-02 Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural.<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/GR-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 </div>
 
 
