@@ -18,8 +18,8 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 
 ## Requerimientos
 
-* Lectura - [Ley 388 de 1997](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)
-* Lectura - [Guía simplificada para la elaboración del plan de ordenamiento territorial municipal guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal](https://www.faoswalim.org/resources/Land/Land_resource_Mgt/pdfdocs/guia_sim.pdf)
+* [:notebook:Lectura](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html): Ley 388 de 1997.
+* [:notebook:Lectura](https://www.faoswalim.org/resources/Land/Land_resource_Mgt/pdfdocs/guia_sim.pdf): Guía simplificada para la elaboración del plan de ordenamiento territorial municipal guía simplificada para la elaboración del Plan de Ordenamiento Territorial Municipal.
 
 
 ## 1. Marco normativo
