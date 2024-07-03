@@ -28,7 +28,7 @@ Corresponde a la administración municipal tener un adecuado conocimiento de la 
 
 ### 1.1. ¿Qué es la población?
 
-La población es entendida como **“un conjunto orgánico de sujetos que interactúan entre sí y con el territorio para su reproducción biológica y social. El concepto de población humana, se refiere a un conjunto de sujetos vivos, cuya actividad necesariamente crea y recrea permanentemente el territorio en función de sus necesidades biológicas, socioculturales y políticas y, de manera determinante, en función de la organización para la apropiación, producción y consumo de bienes materiales y no materiales”**. [^2]
+La población es entendida como _**“un conjunto orgánico de sujetos que interactúan entre sí y con el territorio para su reproducción biológica y social. El concepto de población humana, se refiere a un conjunto de sujetos vivos, cuya actividad necesariamente crea y recrea permanentemente el territorio en función de sus necesidades biológicas, socioculturales y políticas y, de manera determinante, en función de la organización para la apropiación, producción y consumo de bienes materiales y no materiales”**_. [^2]
 
 Esta definición pone el acento en las relaciones entre los seres humanos y entre estos y su hábitat. La población humana tiene características propias que difieren de las características de los individuos particulares que la componen. A estas características del colectivo poblacional se les denominan características demográficas. Puesto que estas se transforman permanentemente en el tiempo hay lugar a reconocerlas como dinámica demográfica. [^3]
 
