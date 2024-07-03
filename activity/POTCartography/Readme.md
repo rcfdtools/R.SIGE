@@ -313,8 +313,8 @@ Propiedades comunes en todos los mapas revisados:
 ## 6. Mapas disponibles
 
 <div align="center">
-DR-01a Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01a.jpg' alt='R.SIGE' width='100%' border='0' /><br>
-DR-01b Áreas protegidas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01b.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-01A Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01A.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+DR-01B Áreas protegidas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01B.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 DR-02 Estructura ecológica principal rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 DR-03 Hidrografía y delimitación de cuencas<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 DR-04 Geomorfología<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-04.jpg' alt='R.SIGE' width='100%' border='0' /><br>
@@ -348,8 +348,8 @@ CU-06 Plan de equipamientos comunitarios<br><img src='../../file/data/POT/Anexo_
 CU-07 Plan parcial La Fraguita<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-07.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 CU-08 Localización de áreas para VIS y VIP<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CU-08.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 CR-01 Áreas de actividad en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
-CR-02a Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02a.jpg' alt='R.SIGE' width='100%' border='0' /><br>
-CR-02b Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02b.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-02A Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02A.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+CR-02B Áreas de actividad en Centros Poblados Rurales<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-02B.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 CR-03 Plan vial rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CR-03.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 GR-02 Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural.<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/GR-02.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 </div>
