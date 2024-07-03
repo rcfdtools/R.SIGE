@@ -24,32 +24,92 @@ A partir de la cartografía citada en el documento del Plan de Ordenamiento, rea
 
 En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se registran los siguientes atributos:
 
-| Columna                                | Alcance de evaluación                                                                                                                                                                      |
-|:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| No.                                    | Consecutivo numérico para verificar el número de mapas disponibles en las etapas de diagnóstico y formulación.                                                                             |
-| Etapa                                  | Diagnóstico, Formulación.                                                                                                                                                                  |
-| Componente                             | General, Urbano, Rural.                                                                                                                                                                    |
-| Código                                 | Código del Mapa. Debe corresponder con la codificación indicada en el Acuerdo o Decreto del POT.                                                                                           |
-| Nombre                                 | Nombre o alcance del mapa.                                                                                                                                                                 |
-| Fecha                                  | Fecha de elaboración.                                                                                                                                                                      |
-| Disponible                             | Sí, No. Disponible y descargado.                                                                                                                                                           |
-| Formato archivo                        | Formato digital del archivo: pdf - Adobe Acrobat, jpg/png/tif - Imagen digital, cad - Autocad.                                                                                             |
-| Fuente base cartográfica               | Fuente cartográfica nacional, planchas cartográficas y/o bases de datos.                                                                                                                   |
-| Fuente temática                        | Fuente de capas vectoriales o grillas utilizadas para la producción del mapa.                                                                                                              |
-| CRS                                    | Sistema de proyección de coordenadas. Indicar solo el código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset).                                                        |
-| Escala de Impresión                    | 1:n. Escala de impresión principal.                                                                                                                                                        |
-| Barra de escala                        | Sí, No. Incluye o no barra de escala.                                                                                                                                                      |
-| Separación horizontal grilla en metros | Espaciamiendo horizontal de la grilla principal.                                                                                                                                           |
-| Separación vertical grilla en metros   | Espaciamiendo vertical de la grilla principal.                                                                                                                                             |
-| Orientación norte                      | Sí, No. Norte orientada hacia arriba.                                                                                                                                                      |
-| Incluye convenciones                   | Sí, No. Indicar si incluye convenciones generales.                                                                                                                                         |
-| Incluye leyenda temática               | Sí, No. Indicar si incluye leyenda temática.                                                                                                                                               |
-| Leyenda temática con áreas             | Sí, No. Indicar si incluye áreas en leyenda temática.                                                                                                                                      |
-| Tamaño de página en milímetros         | Tamaño de impresión digital en milímetros. Visible desde las propiedades de archivo o documento de Adobe Acrobat Reader.                                                                   |
-| Observaciones                          | Observaciones: indicar si el mapa representa correctamente su temática, rótulos legibles, separación de grilla adecuada, escala adecuada para visualización completa del contenido, etc... |
+| Columna                                   | Alcance de evaluación                                                                                                                                                                      |
+|:------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No.                                       | Consecutivo numérico para verificar el número de mapas disponibles en las etapas de diagnóstico y formulación.                                                                             |
+| Etapa                                     | Diagnóstico, Formulación.                                                                                                                                                                  |
+| Componente                                | General, Urbano, Rural.                                                                                                                                                                    |
+| Código                                    | Código del Mapa. Debe corresponder con la codificación indicada en el Acuerdo o Decreto del POT.                                                                                           |
+| Nombre                                    | Nombre o alcance del mapa.                                                                                                                                                                 |
+| Disponible                                | Sí, No. Disponible y descargado.                                                                                                                                                           |
+| Fecha                                     | Fecha de elaboración.                                                                                                                                                                      |
+| Formato archivo                           | Formato digital del archivo: pdf - Adobe Acrobat, jpg/png/tif - Imagen digital, cad - Autocad.                                                                                             |
+| Fuente base cartográfica                  | Fuente cartográfica nacional, planchas cartográficas y/o bases de datos.                                                                                                                   |
+| Fuente temática                           | Fuente de capas vectoriales o grillas utilizadas para la producción del mapa.                                                                                                              |
+| CRS                                       | Sistema de proyección de coordenadas. Indicar solo el código [EPSG](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset).                                                        |
+| Escala de Impresión                       | 1:n. Escala de impresión principal.                                                                                                                                                        |
+| Barra de escala                           | Sí, No. Incluye o no barra de escala.                                                                                                                                                      |
+| Separación horizontal grilla en metros    | Espaciamiendo horizontal de la grilla principal.                                                                                                                                           |
+| Separación vertical grilla en metros      | Espaciamiendo vertical de la grilla principal.                                                                                                                                             |
+| Orientación norte                         | Sí, No. Norte orientada hacia arriba.                                                                                                                                                      |
+| Incluye convenciones                      | Sí, No. Indicar si incluye convenciones generales.                                                                                                                                         |
+| Incluye leyenda temática                  | Sí, No. Indicar si incluye leyenda temática.                                                                                                                                               |
+| Leyenda temática con áreas y/o longitudes | Sí, No. Indicar si incluye áreas en leyenda temática.                                                                                                                                      |
+| Tamaño de página en milímetros            | Tamaño de impresión digital en milímetros. Visible desde las propiedades de archivo o documento de Adobe Acrobat Reader.                                                                   |
+| Observaciones                             | Observaciones: indicar si el mapa representa correctamente su temática, rótulos legibles, separación de grilla adecuada, escala adecuada para visualización completa del contenido, etc... |
 
 
+## Cartografía disponible y formato
 
+| No.   | Etapa       | Componente | Código | Nombre                                                               | Disponible (Sí/No) | Fecha      |
+|-------|-------------|------------|--------|----------------------------------------------------------------------|--------------------|------------|
+| 1     | Diagnóstico | Rural      | DR-01a | Categorías de protección y desarrollo restringido en suelo rural     | Sí                 | 31/07/2010 |
+| 2     | Diagnóstico | Rural      | DR-01b | Áreas protegidas                                                     | Sí                 | 31/07/2010 |
+| 3     | Diagnóstico | Rural      | DR-02  | Estructura ecológica principal rural                                 | Sí                 | 31/07/2010 |
+| 4     | Diagnóstico | Rural      | DR-03  | Hidrografía y delimitación de cuencas                                | Sí                 | 31/07/2010 |
+| 5     | Diagnóstico | Rural      | DR-04  | Geomorfología                                                        | Sí                 | 31/07/2010 |
+| 6     | Diagnóstico | Rural      | DR-05  | Suelos                                                               | Sí                 | 31/07/2010 |
+| 7     | Diagnóstico | Rural      | DR-06  | Pendientes                                                           | Sí                 | 31/07/2010 |
+| 8     | Diagnóstico | Rural      | DR-07  | Zonificación agroclimática                                           | Sí                 | 31/07/2010 |
+| 9     | Diagnóstico | Rural      | DR-08  | Uso potencial del suelo rural                                        | Sí                 | 31/07/2010 |
+| 10    | Diagnóstico | Rural      | DR-09  | Cobertura y uso actual del suelo rural                               | Sí                 | 31/07/2010 |
+| 11    | Diagnóstico | Rural      | DR-10  | Conflictos de uso del suelo rural                                    | Sí                 | 31/07/2010 |
+| 12    | Diagnóstico | Rural      | DR-11  | Zonificación de amenazas naturales y antrópicas en suelo rural       | No                 |            |
+| 13    | Diagnóstico | Rural      | DR-12  | Sistema vial rural                                                   | No                 |            |
+| 14    | Diagnóstico | Rural      | DR-13  | Equipamientos colectivos rurales y elementos patrimoniales           | No                 |            |
+| 15    | Diagnóstico | Rural      | DR-14  | Clasificación general del territorio                                 | No                 |            |
+| 16    | Diagnóstico | Rural      | DR-15  | Asentamientos humanos                                                | No                 |            |
+| 17    | Diagnóstico | Rural      | DR-16  | Límites y división política rural                                    | No                 |            |
+| 18    | Diagnóstico | Rural      | DR-17  | Predios de propiedad del Municipio                                   | No                 |            |
+| 19    | Diagnóstico | Rural      | DR-18  | Uso actual del suelo en Centros Poblados Rurales (CPR)               | No                 |            |
+| 20    | Diagnóstico | Rural      | DR-19  | Altura de edificaciones en Centros Poblados Rurales (CPR)            | No                 |            |
+| 23    | Diagnóstico | Urbano     | DU-01  | Estructura ecológica principal urbana                                | Sí                 | 31/07/2010 |
+| 24    | Diagnóstico | Urbano     | DU-02  | Zonificación de amenazas naturales y antrópicas en suelo urbano      | Sí                 | 31/07/2010 |
+| 25    | Diagnóstico | Urbano     | DU-03  | Sistema urbano de acueducto                                          | Sí                 | 31/07/2010 |
+| 26    | Diagnóstico | Urbano     | DU-04  | Sistema urbano de alcantarillado                                     | Sí                 | 31/07/2010 |
+| 27    | Diagnóstico | Urbano     | DU-05  | Sistema vial urbano existente                                        | Sí                 | 31/07/2010 |
+| 28    | Diagnóstico | Urbano     | DU-06  | Sistema vial urbano proyectado en POT vigente y plan de movilidad    | Sí                 | 31/07/2010 |
+| 29    | Diagnóstico | Urbano     | DU-07  | Sistemas urbanos de espacio público y equipamientos colectivos       | Sí                 | 31/07/2010 |
+| 30    | Diagnóstico | Urbano     | DU-08  | Uso actual de suelo urbano                                           | No                 |            |
+| 31    | Diagnóstico | Urbano     | DU-09  | Conflictos por uso del suelo urbano                                  | No                 |            |
+| 32    | Diagnóstico | Urbano     | DU-10  | Ocupación en áreas de ronda                                          | No                 |            |
+| 33    | Diagnóstico | Urbano     | DU-11  | Altura de edificaciones                                              | No                 |            |
+| 34    | Diagnóstico | Urbano     | DU-12  | Unidades morfológicas homogéneas                                     | No                 |            |
+| 35    | Diagnóstico | Urbano     | DU-13  | Perímetro y división política urbana                                 | No                 |            |
+| 36    | Diagnóstico | Urbano     | DU-14  | Conflictos POT vigente y expectativas ajuste                         | No                 |            |
+| 37    | Diagnóstico | Urbano     | DU-15  | Usos por Planes Parciales y Especiales                               | No                 |            |
+| 1     | Formulación | General    | CG-01  | Clasificación general del territorio                                 | Sí                 | 31/06/2013 |
+| 2     | Formulación | General    | CG-02  | Asentamientos humanos                                                | Sí                 | 31/06/2013 |
+| 3     | Formulación | General    | CG-03  | Categorías de protección y desarrollo restringido en suelo rural     | Sí                 | 31/06/2013 |
+| 4     | Formulación | General    | CG-04  | Estructura ecológica principal urbana                                | Sí                 | 31/06/2013 |
+| 5     | Formulación | General    | CG-05  | Modelo de ocupación del territorio                                   | Sí                 | 31/06/2013 |
+| 6     | Formulación | General    | CG-06  | División política rural                                              | Sí                 | 31/06/2013 |
+| 7     | Formulación | General    | CG-07  | División política urbana                                             | Sí                 | 31/06/2013 |
+| 8     | Formulación | General    | CG-08  | Estructura ecológica principal rural                                 | Sí                 | 31/06/2013 |
+| 9     | Formulación | Urbano     | CU-01  | Áreas morfológicas homogéneas en suelo urbano y de expansión urbana  | Sí                 | 31/06/2013 |
+| 10    | Formulación | Urbano     | CU-02  | Tratamientos en suelo urbano y de expansión urbana                   | Sí                 | 31/06/2013 |
+| 11    | Formulación | Urbano     | CU-03  | Áreas de actividad en suelo urbano y de expansión urbana             | Sí                 | 31/06/2013 |
+| 12    | Formulación | Urbano     | CU-04  | Plan vial en suelo urbano y de expansión urbana                      | Sí                 | 31/06/2013 |
+| 13    | Formulación | Urbano     | CU-05  | Plan de espacio público en suelo urbano y de expansión urbana        | Sí                 | 31/06/2013 |
+| 14    | Formulación | Urbano     | CU-06  | Plan de equipamientos comunitarios                                   | Sí                 | 31/06/2013 |
+| 15    | Formulación | Urbano     | CU-07  | Plan parcial La Fraguita                                             | Sí                 | 31/06/2013 |
+| 16    | Formulación | Urbano     | CU-08  | Localización de áreas para VIS y VIP                                 | Sí                 | 31/06/2013 |
+| 17    | Formulación | Urbano     | GR-01  | Mapa de gestión del riesgo. Zonificación de riesgos en suelo urbano. | No                 |            |
+| 18    | Formulación | Rural      | CR-01  | Áreas de actividad en suelo rural                                    | Sí                 | 31/06/2013 |
+| 19    | Formulación | Rural      | CR-02a | Áreas de actividad en Centros Poblados Rurales                       | Sí                 | 31/06/2013 |
+| 20    | Formulación | Rural      | CR-02b | Áreas de actividad en Centros Poblados Rurales                       | Sí                 | 31/06/2013 |
+| 21    | Formulación | Rural      | CR-03  | Plan vial rural                                                      | Sí                 | 31/06/2013 |
+| 22    | Formulación | Rural      | GR-02  | Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural.  | Sí                 | 31/06/2013 |
 
 
 
