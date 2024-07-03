@@ -17,7 +17,8 @@ En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ord
 ## Requerimientos
 
 * Recopilación de Acuerdos, Decretos y Resoluciones municipales relacionada con la adopción y modificación del Plan de Ordenamiento Territorial, planes parciales, unidades de planeamiento zonal, unidades de actuación urbanística, asignación de tratamientos urbanísticos y demás normativa municipal.
-* Lectura de Acuerdos, Decretos y Resoluciones municipales.  
+* Lectura de Acuerdos, Decretos y Resoluciones municipales.
+* :open_file_folder:[POTStudyZone.xlsx](POTStudyZone.xlsx): libro para evaluación de denominación y alcance del plan de ordenamiento adoptado.
 
 
 ## 1. Normatividad municipal
@@ -53,10 +54,6 @@ Para la evaluación del alcance y cumplimiento de los componentes definidos en l
 | EOT                 | Indica si aplica a municipios con denominación de Esquema de Ordenamiento Territorial.                                           |
 | Alcance SIG         | Elementos a ser desarrollados o evaluados mediante tecnologías de sistemas de información geográfica.                            |
 | Mapa POT municipal  | Mapa incluído en la cartografía oficial del municipio que contiene la localización o delimitación de los elementos geográficos.  |
-
-Para la evaluación de denominación y alcance del plan de ordenamiento adoptado, se suministra el libro de Microsoft Excel:
-
-:open_file_folder: [POTStudyZone.xlsx](POTStudyZone.xlsx) 
 
 
 ## 2. Revisión de denominación de ordenamiento (POT, PBOT, EOT)

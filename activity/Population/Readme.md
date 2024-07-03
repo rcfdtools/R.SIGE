@@ -19,6 +19,9 @@ Corresponde a la administración municipal tener un adecuado conocimiento de la 
 * Lectura - [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
 * Lectura - [Guía para análisis demográfico local - Herramientas para incluir el enfoque poblacional en los procesos de planeación del desarrollo integral](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gui%CC%81a-Dina%CC%81micas-Demografi%CC%81a.pdf)
 * Lectura - [Guía Metodológica 1 - Elementos Poblacionales Básicos para la planeación. Serie Población, Ordenamiento y Desarrollo. Ministerio de Ambiente, Vivienda y Desarrollo Territorial, Viceministerio de Vivienda y Desarrollo Territorial, Dirección de Desarrollo Territorial, República de Colombia. ](https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/ELEMENTOS%20POBLACIONALES%20-%20MVCT.pdf)
+* :open_file_folder:[PoblacionDANE.xlsx](PoblacionDANE.xlsx): Libro para registro y proyección de población DANE.
+* :open_file_folder:[PoblacionSISBEN.xlsx](PoblacionSISBEN.xlsx): Libro para registro y proyección de población SISBEN.
+* :open_file_folder:[PoblacionRNEC.xlsx](PoblacionRNEC.xlsx): Libro para registro y proyección de población RNEC.
 
 
 ## 1. Conceptos generales
@@ -137,8 +140,6 @@ Para el desarrollo de los diferentes análisis utilizaremos el siguiente catálo
 
 ### 2.2. Departamento Administrativo Nacional de Estadística - DANE
 
-:open_file_folder:_[PoblacionDANE.xlsx](PoblacionDANE.xlsx)_
-
 Fuentes de datos
 
 * [Censos - DANE ](https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion)
@@ -186,8 +187,6 @@ El Departamento Administrativo Nacional de Estadística -DANE- es la entidad res
 
 ### 2.3. Sistema de Identificación de Potenciales Beneficiarios de Programas Sociales - SISBEN
 
-:open_file_folder:_[PoblacionSISBEN.xlsx](PoblacionSISBEN.xlsx)_
-
 Fuentes de datos
 
 * [Grupo SISBEN](https://www.sisben.gov.co/Paginas/consulta-tu-grupo.html)
@@ -227,8 +226,6 @@ El SISBEN es el Sistema de Identificación de Potenciales Beneficiarios de Progr
 
 
 ### 2.4. Registraduría Nacional del Estado Civil
-
-:open_file_folder:_[PoblacionRNEC.xlsx](PoblacionRNEC.xlsx)_
 
 Fuentes de datos
 
