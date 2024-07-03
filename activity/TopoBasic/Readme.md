@@ -15,8 +15,8 @@ La topografía se trata de la medición de las características físicas o geom�
 
 ## Requerimientos
 
-* Lectura - [Resolución de problemas con un enfoque geográfico](https://www.esri.com/es-es/geographic-approach/overview).
-* Lectura - [Geografía y Gobierno](https://www.esri.com/es-es/geographic-approach/case-studies/government).
+* [:notebook:Lectura](https://www.esri.com/es-es/geographic-approach/overview): Resolución de problemas con un enfoque geográfico.
+* [:notebook:Lectura](https://www.esri.com/es-es/geographic-approach/case-studies/government): Geografía y Gobierno.
 
 
 
