@@ -16,7 +16,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 ## Requerimientos
 
 * :toolbox:Herramienta
-* :notebook:Lectura - 
+* :notebook:Lectura
 * [ArcGIS Pro 2+](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm)
 * [ArcGIS for Desktop 10+](https://desktop.arcgis.com/es/desktop/) (opcional)
 * [QGIS 3+](https://qgis.org/) (opcional)
