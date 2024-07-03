@@ -16,8 +16,8 @@ Zipaquirá es un municipio de Colombia ubicado en el departamento de Cundinamarc
 
 ## Requerimientos
 
-* [Grupo de trabajo](https://forms.office.com/r/kQMcvm3awd) con código asignado para el desarrollo del proyecto
-* Caso de estudio propuesto, revisado y aprobado
+* [:people_holding_hands:Grupo de trabajo](https://forms.office.com/r/kQMcvm3awd): integrantes y código asignado para desarrollo del proyecto.
+* :label:Caso de estudio: revisado y aprobado para el grupo de trabajo.
 
 
 ## 1. Historía del municipio [^1]
