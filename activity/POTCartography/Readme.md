@@ -51,6 +51,8 @@ En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad
 
 ## 2. Cartografía disponible y formato
 
+Cartografía tomada del Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013, listada en el Artículo 1. Descargada desde www.colombiaot.gov.co.
+
 | No.   | Etapa       | Componente | Código | Nombre                                                                | Disponible  | Fecha      |
 |-------|-------------|------------|--------|:----------------------------------------------------------------------|:-----------:|------------|
 | 1     | Diagnóstico | Rural      | DR-01a | Categorías de protección y desarrollo restringido en suelo rural      |     Sí      | 31/07/2010 |
@@ -355,14 +357,14 @@ GR-02 Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural..<br>
 </div>
 
 
-
 ## Actividades de proyecto :triangular_ruler:
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                                                                         |
-|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad. | 
+| Actividad     | Alcance                                                                                                                                                                                                                      |
+|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Recopile la cartografía digital impresa del plan de ordenamiento de su caso de estudio y convierta a formato .jpg.                                                                                                           | 
+| Avance **P1** | Utilizando el libro de Microsoft Excel suministrado, revise y verifique todos los atributos indicados, en caso de encontrar inconsincias, errores o ilegibilidad, registre estas anotaciones en la columna de observaciones. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
@@ -371,7 +373,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://www.colombiaot.gov.co/pot/
+* Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.
 
 
 ## Control de versiones
