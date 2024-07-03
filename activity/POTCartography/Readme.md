@@ -310,7 +310,7 @@ Propiedades comunes en todos los mapas revisados:
 | 22   | Formulación | Rural      | GR-02  | Mapa de gestión del riesgo. Zonificación de riesgos en suelo rural.   | Legible. Red de drenaje incompleta o discontinua.                                                                                                                                    | 
 
 
-6. Mapas disponibles
+## 6. Mapas disponibles
 
 <div align="center">
 DR-01a Categorías de protección y desarrollo restringido en suelo rural<br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/DR-01a.jpg' alt='R.SIGE' width='100%' border='0' />
