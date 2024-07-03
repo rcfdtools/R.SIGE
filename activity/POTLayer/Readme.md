@@ -1,7 +1,7 @@
-# Plantilla para actividades
+# Inventario de información geo-espacial recopilada 
 Keywords: `DEM` `AgreeDEM`
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+En esta actividad se presenta una tabla resumen de la información geo-espacial vectorial, ráster y tablas anexas al POT.
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -15,29 +15,34 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Requerimientos
 
-* [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
+* [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas y grillas recopiladas del POT.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
+* [:toolbox:Herramienta](https://qgis.org/): QGIS
 
 
+## 1. Especificaciones para revisión
 
-## Diagrama general de procesos
+En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se registran los siguientes atributos:
 
-<div align="center">
-<br><img alt="R.SIGE" src="Graph/AgreeDEMFlowchart.svg" width="80%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo, procesos automáticos o semiautomáticos en guiones rojos y procesos manuales en amarillo. Líneas conectoras con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
+| Columna       | Alcance de evaluación                                                                                                                            |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo          | Vector, Tabla, Ráster.                                                                                                                           |
+| Formato       | Shapefile, Feature Class, Grid. Feature class corrresponde a capas dentro de una base de datos.                                                  |
+| Dataset       | Nombre del grupo. Para archivos que no estén contenidos dentro de una GDB indicar el nombre de la carpeta que contiene el elemento.              |
+| Nombre        | Nombre del elemento. Para archivos que no estén contenidos dentro de una GDB incluir la extensión primaria, p. ej.: .shp, .tif, .dbf.            |
+| Descripción   | Evalúe la espacialidad de la capa y sus atributos para identificar que contiene y representa.                                                    |
+| Alias         | Nombre corto utilizado en listas de elementos sobre mapas. En caso de que no disponga de nombre corto, incluir el Nombre sin extensión.          |
+| Geometría     | Punto 2D, Punto 3D, Línea 2D, Línea 3D, Polígono 2D, Polígono 3D, N/A o no aplica. Grillas ráster y tablas de datos no contienen geometría.      |
+| Registros     | Total de entidades contenidas dentro de la tabla de atributos. Para grillas incluir en una fórmula el número de filas por el número de columnas. |
+| CRS           | Sistema de proyección de coordenadas                                                                                                             |
+| Límite norte  | Extensión espacial al norte en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                       |
+| Límite sur    | Extensión espacial al sur en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                         |
+| Límite este   | Extensión espacial al este en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                        |
+| Límite oeste  | Extensión espacial al oeste en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                       ||               |                                                                                                                                                  |
+| Observaciones | Observaciones relacionadas con el contenido y su visualización                                                                                   |
 
 
-## Procedimiento general
-
-1. xxx
-
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
-
-
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
 
 
 ## Actividades de proyecto :triangular_ruler:

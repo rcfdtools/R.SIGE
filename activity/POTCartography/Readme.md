@@ -1,5 +1,5 @@
 # Revisión de cartografía impresa digitalmente
-Keywords: `cartography` `POT`
+Keywords: `cartography` `POT` `scale-text` `scale-bar` `north` `grid-interval` 
 
 A partir de la cartografía citada en el documento del Plan de Ordenamiento, realice una revisión general que incluya los siguientes elementos: Etapa, Suelo o componente al que aplica, Nombre del mapa, código del mapa, disponible para descarga y consulta, fuente base cartográfica, fuente temática, sistema de proyección de coordenadas CRS, Escala de Impresión (1:n), Barra de escala (Sí/No), Separación horizontal grilla en metros, Separación vertical grilla en metros, Orientación norte, Elementos en legenda temática, Tamaño de página en milímetros. Incluya una columna de observaciones e indique si el mapa representa correctamente la temática presentada y si los rótulos y elementos del mapa son legibles. 
 
