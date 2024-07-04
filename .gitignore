@@ -41,6 +41,7 @@ Lib/
 *.shp.*
 # Geodatabases
 *.gdb*
+*.mdb*
 
 # Video exclusions
 #Section02/FdrDEM/FdrDEM.mp4
