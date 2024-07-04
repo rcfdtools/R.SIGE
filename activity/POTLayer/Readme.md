@@ -24,22 +24,23 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 
 En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se registran los siguientes atributos:
 
-| Columna       | Alcance de evaluación                                                                                                                                                                 |
-|:--------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo          | Vector, Tabla, Ráster.                                                                                                                                                                |
-| Nombre        | Nombre del elemento. Para archivos que no estén contenidos dentro de una GDB incluir la extensión primaria, p. ej.: .shp, .tif, .dbf, dwg.                                            |
-| Alias         | Nombre corto utilizado en listas de elementos sobre mapas. En caso de que no disponga de nombre corto, incluir el Nombre sin extensión.                                               |
-| Dataset       | Nombre de GDB / Nombre del grupo de capas. Para archivos que no estén contenidos dentro de una GDB indicar el nombre de la carpeta que contiene el elemento.                          |
-| Descripción   | Evalúe la espacialidad de la capa y sus atributos para identificar que contiene y representa.                                                                                         |
-| Geometría     | Punto 2D, Punto 3D, Línea 2D, Línea 3D, Polígono 2D, Polígono 3D, N/A o no aplica. Grillas ráster y tablas de datos no contienen geometría.                                           |
-| Fuente datos  | Fuente de datos original de la capa.                                                                                                                                                  |
-| Registros     | Total de entidades contenidas dentro de la tabla de atributos. Para grillas incluir en una fórmula el resultado obtenido de multiplicae el número de filas por el número de columnas. |
-| CRS           | Sistema de proyección de coordenadas                                                                                                                                                  |
-| Límite norte  | Extensión espacial al norte en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            |
-| Límite sur    | Extensión espacial al sur en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                              |
-| Límite este   | Extensión espacial al este en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                             |
-| Límite oeste  | Extensión espacial al oeste en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            ||               |                                                                                                                                                  |
-| Observaciones | Observaciones relacionadas con el contenido y su visualización.                                                                                                                       |
+| Columna              | Alcance de evaluación                                                                                                                                                                 |
+|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo                 | Vector, Tabla, Ráster.                                                                                                                                                                |
+| Nombre               | Nombre del elemento. Para archivos que no estén contenidos dentro de una GDB incluir la extensión primaria, p. ej.: .shp, .tif, .dbf, dwg.                                            |
+| Alias                | Nombre corto utilizado en listas de elementos sobre mapas. En caso de que no disponga de nombre corto, incluir el Nombre sin extensión.                                               |
+| Dataset              | Nombre de GDB / Nombre del grupo de capas. Para archivos que no estén contenidos dentro de una GDB indicar el nombre de la carpeta que contiene el elemento.                          |
+| Descripción          | Evalúe la espacialidad de la capa y sus atributos para identificar que contiene y representa.                                                                                         |
+| Geometría            | Punto 2D, Punto 3D, Línea 2D, Línea 3D, Polígono 2D, Polígono 3D, N/A o no aplica. Grillas ráster y tablas de datos no contienen geometría.                                           |
+| Fuente datos         | Fuente de datos original de la capa.                                                                                                                                                  |
+| Registros            | Total de entidades contenidas dentro de la tabla de atributos. Para grillas incluir en una fórmula el resultado obtenido de multiplicae el número de filas por el número de columnas. |
+| CRS                  | Sistema de proyección de coordenadas                                                                                                                                                  |
+| Límite norte         | Extensión espacial al norte en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            |
+| Límite sur           | Extensión espacial al sur en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                              |
+| Límite este          | Extensión espacial al este en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                             |
+| Límite oeste         | Extensión espacial al oeste en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            |                                                                                                                                               |
+| Área envolvente (ha) | Tamaño del área envolvente en hectáreas `A = (Norte-Sur) * (Oeste-Este) / 10000`                                                                                                      |
+| Observaciones        | Observaciones relacionadas con el contenido y su visualización.                                                                                                                       |
 
 
 ## 2. Descarga de información
@@ -98,7 +99,7 @@ Listado de archivos obtenidos
 <div align="center"><img src="graph/Data_POT_gdb.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## 3. Procedimiento en ArcGIS Pro
+## 3. Procedimiento de visualización y consulta de propiedades en ArcGIS Pro
 
 Para la visualización preliminar y consulta de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
@@ -131,18 +132,34 @@ En las propiedades de la capa podrá observar los siguientes contenidos:
 
 A través del clic derecho sobre el nombre de la capa, también podrá obtener la vista de metadatos que contiene la información detallada de la fuente de datos y sus autores si esta ha sido editada e incluída en un archivo `.xml`. 
 
-<div align="center"><img src="graph/ArcGISPro_LayerMetadata.png" alt="R.SIGE" width="60%" border="0"/></div>
+<div align="center"><img src="graph/ArcGISPro_LayerMetadata.png" alt="R.SIGE" width="80%" border="0"/></div>
 
 > Como observa, en ninguna de las propiedades anteriores podrá conocer el número de registros o entidades asociadas a cada capa.
 
-5. Agregue la capa de Barrios al mapa arrastrándola desde el _Catalog Pane_ al mapa o a la tabla de contenido localizada a la izquierda y visualice las entidades contenidas. Para consultar la tabla de atributos, de clic derecho en la capa desde la tabla de contenido y seleccione la opción _Attribute Table_. En la parte inferior de la tabla podrá observar el total de registro o vectores contenidos en la capa.
+5. Agregue la capa de Barrios, arrastrándola desde el _Catalog Pane_ al mapa, o a la tabla de contenido localizada a la izquierda y visualice las entidades contenidas. Para consultar la tabla de atributos, de clic derecho en la capa desde la tabla de contenido y seleccione la opción _Attribute Table_. En la parte inferior de la tabla podrá observar el total de registro o vectores contenidos en la capa. Seleccione en la tabla de atributos la capa y utilizando el rotulador de entidades disponible en el menú _Labeling_, rotule las entidades utilizando alguno de los atributos principales de la capa. Acceda a la simbología de la capa dando clic derecho en la tabla de contenido, remueva el relleno en polígonos y establezca los contornos de entidades en color negro.
 
 <div align="center"><img src="graph/ArcGISPro_LayerViewTable.png" alt="R.SIGE" width="100%" border="0"/></div>
-
 
 6. Para cada uno de los archivos Shapefile y de las Clases de Entidad contenidas en la base de datos `gdb`, consulte sus propiedades y registre los datos obtenidos en el Libro de revisión _POT_Layer.xlsx_.
 
 
+<div align="center">
+Visualización de elementos recopilados<br>
+BARRIOS.shp<br>Formulación POT - Barrios zona urbana<br><img src='graph/ArcGISPro_Layer_BARRIOS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+COMUNAS.shp<br>Formulación POT - Comunas urbanas<br><img src='graph/ArcGISPro_Layer_COMUNAS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+EXP_URBANA_AJUSTADA_PREDIOS.shp<br>Formulación POT - Límite zona de expansión urbana a partir de predios<br><img src='graph/ArcGISPro_Layer_EXP_URBANA_AJUSTADA_PREDIOS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+HIDROGRAFIA.shp<br>Formulación POT - Red hidrográfica<br><img src='graph/ArcGISPro_Layer_HIDROGRAFIA.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+MOT.shp<br>Formulación POT - Modelo de ocupación del territorio<br><img src='graph/ArcGISPro_Layer_MOT.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+ORDEN_VIAL.shp<br>Formulación POT - Orden vial rural<br><img src='graph/ArcGISPro_Layer_ORDEN_VIAL.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+RIO_BOGOTA.shp<br>Formulación POT - Tramo Río Bogotá sobre municipio<br><img src='graph/ArcGISPro_Layer_RIO_BOGOTA.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VEREDA.shp<br>Formulación POT - Límites veredales ajustados<br><img src='graph/ArcGISPro_Layer_VEREDA.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VIAS.shp<br>Formulación POT - Vías principales proyectadas<br><img src='graph/ArcGISPro_Layer_VIAS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VIAS_PERIMETRO.shp<br>Formulación POT - Vías perímetro urbano principal<br><img src='graph/ArcGISPro_Layer_VIAS_PERIMETRO.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VIAS_PERIMETRO_URBANO.shp<br>Formulación POT - Vías perímetro urbano y vías proyectadas. Incluye la zona urbana central, La Paz, Villa del Rosario y Barandillas<br><img src='graph/ArcGISPro_Layer_VIAS_PERIMETRO_URBANO.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VIAS_RURALES.shp<br>Formulación POT - Vías rurales<br><img src='graph/ArcGISPro_Layer_VIAS_RURALES.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+VIAS_URBANAS.shp<br>Formulación POT - Vías urbanas<br><img src='graph/ArcGISPro_Layer_VIAS_URBANAS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+ZONA_URBANA_AJUSTADA_PREDIOS.shp<br>Formulación POT - Límite zona urbana ajustada a partir de predios<br><img src='graph/ArcGISPro_Layer_ZONA_URBANA_AJUSTADA_PREDIOS.shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+</div>
 
 
 ## Actividades de proyecto :triangular_ruler:
