@@ -110,11 +110,11 @@ Para la visualización preliminar y consulta de los datos geo-espaciales descarg
 
 > Para ejemplificar este curso, la carpeta de proyecto es `C:\R.SIGUE`.
 
-<div align="center"><img src="graph/AArcGISPro_AddFolderConnection.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/ArcGISPro_AddFolderConnection.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 3. Expanda el árbol de _Folders_, podrá observar que se encuentran dos carpetas asociadas. La carpeta `ArcGISPro` corresponde a la carpeta por defecto que se genera al crear un proyecto nuevo en ArcGIS Pro, y la carpeta _R.SIGUE_ es la carpeta general del proyecto.
 
-<div align="center"><img src="graph/AArcGISPro_Folders.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/ArcGISPro_Folders.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
 
