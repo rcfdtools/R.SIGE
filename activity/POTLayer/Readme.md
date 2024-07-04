@@ -145,7 +145,8 @@ A través del clic derecho sobre el nombre de la capa, también podrá obtener l
 
 <div align="center">
 Visualización de elementos recopilados<br>
-BARRIOS.shp<br>Formulación POT - Barrios zona urbana<br><img src='graph/ArcGISPro_Layer_BARRIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+
+BARRIOS.shp: Formulación POT - Barrios zona urbana<br><img src='graph/ArcGISPro_Layer_BARRIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 COMUNAS.shp<br>Formulación POT - Comunas urbanas<br><img src='graph/ArcGISPro_Layer_COMUNAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 EXP_URBANA_AJUSTADA_PREDIOS.shp<br>Formulación POT - Límite zona de expansión urbana a partir de predios<br><img src='graph/ArcGISPro_Layer_EXP_URBANA_AJUSTADA_PREDIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 HIDROGRAFIA.shp<br>Formulación POT - Red hidrográfica<br><img src='graph/ArcGISPro_Layer_HIDROGRAFIA_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
@@ -159,6 +160,7 @@ VIAS_PERIMETRO_URBANO.shp<br>Formulación POT - Vías perímetro urbano y vías 
 VIAS_RURALES.shp<br>Formulación POT - Vías rurales<br><img src='graph/ArcGISPro_Layer_VIAS_RURALES_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 VIAS_URBANAS.shp<br>Formulación POT - Vías urbanas<br><img src='graph/ArcGISPro_Layer_VIAS_URBANAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 ZONA_URBANA_AJUSTADA_PREDIOS.shp<br>Formulación POT - Límite zona urbana ajustada a partir de predios<br><img src='graph/ArcGISPro_Layer_ZONA_URBANA_AJUSTADA_PREDIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
+
 </div>
 
 
