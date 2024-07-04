@@ -85,7 +85,7 @@ Listado de archivos obtenidos
 
 </div>
 
-> Renombre los archivos comprimidos con los nombres indicados en la tabla anterior.
+> Renombre los archivos comprimidos con los nombres indicados en la tabla anterior. Se ha incluído en la lista la base de datos convertida a formato `.gdb`. 
 
 3. En su repositorio de proyecto y dentro de la carpeta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, guarde y descomprima los archivos vectoriales en formato Shapefile.
 
@@ -98,7 +98,7 @@ Listado de archivos obtenidos
 <div align="center"><img src="graph/Data_POT_gdb.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## 2. Procedimiento en ArcGIS Pro
+## 3. Procedimiento en ArcGIS Pro
 
 Para la visualización preliminar de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
