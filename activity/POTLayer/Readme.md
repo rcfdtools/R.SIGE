@@ -17,6 +17,7 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
 * [:toolbox:Herramienta](https://qgis.org/): QGIS
+* Datos recopilados
 
 
 ## 1. Especificaciones para revisión
@@ -39,6 +40,23 @@ En el libro de Microsoft Excel suministrado para el desarrollo de esta actividad
 | Límite este   | Extensión espacial al este en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                             |
 | Límite oeste  | Extensión espacial al oeste en metros o en grados decimales. Depende del sistema de coordenadas utilizado.                                                                            ||               |                                                                                                                                                  |
 | Observaciones | Observaciones relacionadas con el contenido y su visualización.                                                                                                                       |
+
+
+## 2. Descarga de información
+
+Información geo-espacial del Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013 disponibles.
+
+1. Ingrese a www.colombiaot.gov.co y de clic en la opción _Los POT del País_
+
+<div align="center"><img src="graph/ColombiaOT_1.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+
+## 2. Procedimiento en ArcGIS Pro
+
+1. Descargue los 
+
+
+
 
 
 ## Actividades de proyecto :triangular_ruler:
