@@ -64,23 +64,23 @@ Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargu
 
 Listado de archivos obtenidos
 
-| Archivo                                                                                 | Formato   | Tamaño (KB) | 
-|:----------------------------------------------------------------------------------------|:----------|:------------|
-| [:floppy_disk:Barrios.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Barrios.zip)  | Shapefile | 19          |
-| [:floppy_disk:Comunas.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Comunas.zip]) | Shapefile | 7           |
-| Expansion_Urbana_Ajustada_Predios.zip                                                   | Shapefile | 10          |
-| Hidrografia.zip                                                                         | Shapefile | 263         |
-| ModeloOrdenamientoTerritorial.zip                                                       | Shapefile | 1031        |
-| Orden_Vial.zip                                                                          | Shapefile | 184         |
-| Rio_Bogota.zip                                                                          | Shapefile | 52          |
-| Vereda.zip                                                                              | Shapefile | 535         |
-| Vias.zip                                                                                | Shapefile | 3           |
-| Vias_Perimetro.zip                                                                      | Shapefile | 64          |
-| Vias_Perimetro_Urbano.zip                                                               | Shapefile | 77          |
-| Vias_Rurales.zip                                                                        | Shapefile | 184         |
-| Vias_Urbanas.zip                                                                        | Shapefile | 73          |
-| Zona_Urbana_Ajustada_Predios.zip                                                        | Shapefile | 29          |
-| 25899.zip                                                                               | GDB       | 57464       |
+| Archivo                                                                                                                                     | Formato   | Tamaño (KB) | 
+|:--------------------------------------------------------------------------------------------------------------------------------------------|:----------|:------------|
+| [:floppy_disk:Barrios.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Barrios.zip)                                                      | Shapefile | 19          |
+| [:floppy_disk:Comunas.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Comunas.zip])                                                     | Shapefile | 7           |
+| [:floppy_disk:Expansion_Urbana_Ajustada_Predios.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Expansion_Urbana_Ajustada_Predios.zip ) | Shapefile | 10          |
+| [:floppy_disk:Hidrografia.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Hidrografia.zip)                                              | Shapefile | 263         |
+| [:floppy_disk:ModeloOrdenamientoTerritorial.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/ModeloOrdenamientoTerritorial.zip)          | Shapefile | 1031        |
+| [:floppy_disk:Orden_Vial.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Orden_Vial.zip)                                                | Shapefile | 184         |
+| [:floppy_disk:Rio_Bogota.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Rio_Bogota.zip)                                                | Shapefile | 52          |
+| [:floppy_disk:Vereda.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vereda.zip)                                                        | Shapefile | 535         |
+| [:floppy_disk:Vias.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vias.zip)                                                            | Shapefile | 3           |
+| [:floppy_disk:Vias_Perimetro.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vias_Perimetro.zip)                                        | Shapefile | 64          |
+| [:floppy_disk:Vias_Perimetro_Urbano.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vias_Perimetro_Urbano.zip)                          | Shapefile | 77          |
+| [:floppy_disk:Vias_Rurales.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vias_Rurales.zip)                                            | Shapefile | 184         |
+| [:floppy_disk:Vias_Urbanas.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Vias_Urbanas.zip)                                            | Shapefile | 73          |
+| [:floppy_disk:Zona_Urbana_Ajustada_Predios.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Zona_Urbana_Ajustada_Predios.zip)            | Shapefile | 29          |
+| [:floppy_disk:25899.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/25899.zip)                                                          | GDB       | 57464       |
 
 </div>
 
