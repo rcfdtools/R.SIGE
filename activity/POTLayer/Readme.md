@@ -50,6 +50,42 @@ Información geo-espacial del Plan de Ordenamiento Territorial Municipio de Zipa
 
 <div align="center"><img src="graph/ColombiaOT_1.png" alt="R.SIGE" width="100%" border="0"/></div>
 
+2. En el buscador de Colombia OT, realizar los siguientes filtros:
+
+* Filtra por entidad territorial: Zipaquirá 
+* Forma de representación: Cartografía
+* Tipo: Dato
+
+Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargue estos archivos.
+
+<div align="center"><img src="graph/ColombiaOT_2.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+Listado de archivos obtenidos:
+
+| Archivo                               | Formato   | Tamaño (KB) | 
+|:--------------------------------------|:----------|:------------|
+| Barrios.zip                           | Shapefile | 19          |
+| Comunas.zip                           | Shapefile | 7           |
+| Expansion_Urbana_Ajustada_Predios.zip | Shapefile | 10          |
+| Hidrografia.zip                       | Shapefile | 263         |
+| ModeloOrdenamientoTerritorial.zip     | Shapefile | 1031        |
+| Orden_Vial.zip                        | Shapefile | 184         |
+| Rio_Bogota.zip                        | Shapefile | 52          |
+| Vereda.zip                            | Shapefile | 535         |
+| Vias.zip                              | Shapefile | 3           |
+| Vias_Perimetro.zip                    | Shapefile | 64          |
+| Vias_Perimetro_Urbano.zip             | Shapefile | 77          |
+| Vias_Rurales.zip                      | Shapefile | 184         |
+| Vias_Urbanas.zip                      | Shapefile | 73          |
+| Zona_Urbana_Ajustada_Predios.zip      | Shapefile | 29          |
+| Zona_Urbana_Ajustada_Predios.zip      | Shapefile | 29          |
+| 25899.zip                             | GDB       | 57464       |
+
+3. En su repositorio de proyecto y dentro de la carpeta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, guarde los archivos vectoriales en formato Shapefile.
+
+
+
+
 
 ## 2. Procedimiento en ArcGIS Pro
 
