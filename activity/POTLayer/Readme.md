@@ -84,10 +84,11 @@ Listado de archivos obtenidos
 
 </div>
 
-> Renombre los archivos comprimidos con los indicados en la tabla anterior.
+> Renombre los archivos comprimidos con los nombres indicados en la tabla anterior.
 
-3. En su repositorio de proyecto y dentro de la carpeta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, guarde los archivos vectoriales en formato Shapefile.
+3. En su repositorio de proyecto y dentro de la carpeta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, guarde y descomprima los archivos vectoriales en formato Shapefile.
 
+<div align="center"><img src="graph/Data_POT_shp.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
 
