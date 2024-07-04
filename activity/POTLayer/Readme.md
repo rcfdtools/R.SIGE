@@ -116,6 +116,31 @@ Para la visualización preliminar y consulta de los datos geo-espaciales descarg
 
 <div align="center"><img src="graph/ArcGISPro_Folders.png" alt="R.SIGE" width="100%" border="0"/></div>
 
+4. En _R.SIGUE_, expanda el arból de la carpeta _file_ hasta el subnivel `\data\POT\`, la carpeta del Acuerdo y las subcarpetas _shp_ y _gdb_. Podrá observar que se encuentran las diferentes capas descomprimidas y la base de datos. De clic derecho en la capa _BARRIOS.shp_ y seleccione la opción _Properties_.
+
+<div align="center"><img src="graph/ArcGISPro_LayerProperties.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+En las propiedades de la capa podrá observar los siguientes contenidos:
+
+* Source \ Data Source: fuente de datos y geometría.
+* Source \ Extent: extensión espacial de la capa (top, bottom, left, right) en función del CRS de la capa.
+* Source \ Spatial Reference: sistema de proyección de coordenadas - CRS. 
+* Source \ Domain, Resolution and Tolerance: extensión máxima del dominio de proyección, resolución y tolerancias geométricas. 
+* Indexes \ Attribute Index: campos de atributos indexados.  
+* Indexes \ Spatial Index:  indice o llave espacial geométrica.
+
+A través del clic derecho sobre el nombre de la capa, también podrá obtener la vista de metadatos que contiene la información detallada de la fuente de datos y sus autores si esta ha sido editada e incluída en un archivo `.xml`. 
+
+<div align="center"><img src="graph/ArcGISPro_LayerMetadata.png" alt="R.SIGE" width="60%" border="0"/></div>
+
+> Como observa, en ninguna de las propiedades anteriores podrá conocer el número de registros o entidades asociadas a cada capa.
+
+5. Agregue la capa de Barrios al mapa arrastrándola desde el _Catalog Pane_ al mapa o a la tabla de contenido localizada a la izquierda y visualice las entidades contenidas. Para consultar la tabla de atributos, de clic derecho en la capa desde la tabla de contenido y seleccione la opción _Attribute Table_. En la parte inferior de la tabla podrá observar el total de registro o vectores contenidos en la capa.
+
+<div align="center"><img src="graph/ArcGISPro_LayerViewTable.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+
+6. Para cada uno de los archivos Shapefile y de las Clases de Entidad contenidas en la base de datos `gdb`, consulte sus propiedades y registre los datos obtenidos en el Libro de revisión _POT_Layer.xlsx_.
 
 
 
