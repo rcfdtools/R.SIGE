@@ -143,7 +143,6 @@ A través del clic derecho sobre el nombre de la capa, también podrá obtener l
 6. Para cada uno de los archivos Shapefile y de las Clases de Entidad contenidas en la base de datos `gdb`, consulte sus propiedades y registre los datos obtenidos en el Libro de revisión _POT_Layer.xlsx_.
 
 
-<div align="center">
 Visualización de elementos recopilados<br>
 
 BARRIOS.shp: Formulación POT - Barrios zona urbana<br><img src='graph/ArcGISPro_Layer_BARRIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
@@ -161,7 +160,6 @@ VIAS_RURALES.shp<br>Formulación POT - Vías rurales<br><img src='graph/ArcGISPr
 VIAS_URBANAS.shp<br>Formulación POT - Vías urbanas<br><img src='graph/ArcGISPro_Layer_VIAS_URBANAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 ZONA_URBANA_AJUSTADA_PREDIOS.shp<br>Formulación POT - Límite zona urbana ajustada a partir de predios<br><img src='graph/ArcGISPro_Layer_ZONA_URBANA_AJUSTADA_PREDIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 
-</div>
 
 
 ## Actividades de proyecto :triangular_ruler:
