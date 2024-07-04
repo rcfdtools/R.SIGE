@@ -100,13 +100,21 @@ Listado de archivos obtenidos
 
 ## 3. Procedimiento en ArcGIS Pro
 
-Para la visualización preliminar de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
+Para la visualización preliminar y consulta de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
 1. En ArcGIS Pro, cree un proyecto nuevo en blanco con el nombre `ArcGISPro` y guarde dentro de la carpeta `\file\map`.
 
 <div align="center"><img src="graph/ArcGISPro_NewMap.png" alt="R.SIGE" width="100%" border="0"/></div>
 
+2. En el menú _View_, de clic en el botón _Catalog Pane_ que activará el panel lateral derecho de su catálogo de datos. De clic derecho en la carpeta _Folders_, seleccione la opción _Add Folder Connection_ y seleccione su directorio de proyecto.
 
+> Para ejemplificar este curso, la carpeta de proyecto es `C:\R.SIGUE`.
+
+<div align="center"><img src="graph/AArcGISPro_AddFolderConnection.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+3. Expanda el árbol de _Folders_, podrá observar que se encuentran dos carpetas asociadas. La carpeta `ArcGISPro` corresponde a la carpeta por defecto que se genera al crear un proyecto nuevo en ArcGIS Pro, y la carpeta _R.SIGUE_ es la carpeta general del proyecto.
+
+<div align="center"><img src="graph/AArcGISPro_Folders.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
 
