@@ -64,23 +64,23 @@ Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargu
 
 Listado de archivos obtenidos
 
-| Archivo                               | Formato   | Tamaño (KB) | 
-|:--------------------------------------|:----------|:------------|
-| Barrios.zip                           | Shapefile | 19          |
-| Comunas.zip                           | Shapefile | 7           |
-| Expansion_Urbana_Ajustada_Predios.zip | Shapefile | 10          |
-| Hidrografia.zip                       | Shapefile | 263         |
-| ModeloOrdenamientoTerritorial.zip     | Shapefile | 1031        |
-| Orden_Vial.zip                        | Shapefile | 184         |
-| Rio_Bogota.zip                        | Shapefile | 52          |
-| Vereda.zip                            | Shapefile | 535         |
-| Vias.zip                              | Shapefile | 3           |
-| Vias_Perimetro.zip                    | Shapefile | 64          |
-| Vias_Perimetro_Urbano.zip             | Shapefile | 77          |
-| Vias_Rurales.zip                      | Shapefile | 184         |
-| Vias_Urbanas.zip                      | Shapefile | 73          |
-| Zona_Urbana_Ajustada_Predios.zip      | Shapefile | 29          |
-| 25899.zip                             | GDB       | 57464       |
+| Archivo                                                                   | Formato   | Tamaño (KB) | 
+|:--------------------------------------------------------------------------|:----------|:------------|
+| [Barrios.zip](../../file/data/POT/Anexo_Acuerdo_012_2013/shp/Barrios.zip) | Shapefile | 19          |
+| Comunas.zip                                                               | Shapefile | 7           |
+| Expansion_Urbana_Ajustada_Predios.zip                                     | Shapefile | 10          |
+| Hidrografia.zip                                                           | Shapefile | 263         |
+| ModeloOrdenamientoTerritorial.zip                                         | Shapefile | 1031        |
+| Orden_Vial.zip                                                            | Shapefile | 184         |
+| Rio_Bogota.zip                                                            | Shapefile | 52          |
+| Vereda.zip                                                                | Shapefile | 535         |
+| Vias.zip                                                                  | Shapefile | 3           |
+| Vias_Perimetro.zip                                                        | Shapefile | 64          |
+| Vias_Perimetro_Urbano.zip                                                 | Shapefile | 77          |
+| Vias_Rurales.zip                                                          | Shapefile | 184         |
+| Vias_Urbanas.zip                                                          | Shapefile | 73          |
+| Zona_Urbana_Ajustada_Predios.zip                                          | Shapefile | 29          |
+| 25899.zip                                                                 | GDB       | 57464       |
 
 </div>
 
