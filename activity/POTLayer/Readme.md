@@ -60,7 +60,9 @@ Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargu
 
 <div align="center"><img src="graph/ColombiaOT_2.png" alt="R.SIGE" width="100%" border="0"/></div>
 
-Listado de archivos obtenidos:
+<div align="center">
+
+Listado de archivos obtenidos
 
 | Archivo                               | Formato   | Tamaño (KB) | 
 |:--------------------------------------|:----------|:------------|
@@ -78,8 +80,11 @@ Listado de archivos obtenidos:
 | Vias_Rurales.zip                      | Shapefile | 184         |
 | Vias_Urbanas.zip                      | Shapefile | 73          |
 | Zona_Urbana_Ajustada_Predios.zip      | Shapefile | 29          |
-| Zona_Urbana_Ajustada_Predios.zip      | Shapefile | 29          |
 | 25899.zip                             | GDB       | 57464       |
+
+</div>
+
+> Renombre los archivos comprimidos con los indicados en la tabla anterior.
 
 3. En su repositorio de proyecto y dentro de la carpeta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, guarde los archivos vectoriales en formato Shapefile.
 

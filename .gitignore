@@ -30,15 +30,15 @@ Lib/
 *.tif.ovr
 *Copia_de_seguridad_de*
 #Shapefiles uncompressed
-.shp/*.shp
-.shp/*.shx
-.shp/*.dbf
-.shp/*.prj
-.shp/*.CPG
-.shp/*.sbn
-.shp/*.sbx
-.shp/*.shp.*
-ReadmeLTWB.md
+*.shp
+*.shx
+*.dbf
+*.prj
+*.CPG
+*.sbn
+*.sbx
+*.shp.*
+*.gdb*
 
 # Video exclusions
 #Section02/FdrDEM/FdrDEM.mp4
