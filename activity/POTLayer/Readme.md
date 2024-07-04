@@ -98,10 +98,15 @@ Listado de archivos obtenidos
 <div align="center"><img src="graph/Data_POT_gdb.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-
 ## 2. Procedimiento en ArcGIS Pro
 
-1. Descargue los 
+Para la visualización preliminar de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
+
+1. En ArcGIS Pro, cree un proyecto nuevo en blanco con el nombre `ArcGISPro` y guarde dentro de la carpeta `\file\map`.
+
+<div align="center"><img src="graph/ArcGISPro_NewMap.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+
 
 
 
