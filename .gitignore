@@ -19,7 +19,8 @@ Lib/
 *__pycache__*
 # Compiled Python Files
 *.pyc
-# TIFF world file
+# TIFF
+*.tif
 *.tfw
 # Grid temporal metadata
 *.aux.xml
@@ -29,7 +30,7 @@ Lib/
 *.tif.vat.dbf
 *.tif.ovr
 *Copia_de_seguridad_de*
-#Shapefiles uncompressed
+# Shapefiles uncompressed
 *.shp
 *.shx
 *.dbf
@@ -38,6 +39,7 @@ Lib/
 *.sbn
 *.sbx
 *.shp.*
+# Geodatabases
 *.gdb*
 
 # Video exclusions
