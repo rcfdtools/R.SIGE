@@ -228,8 +228,8 @@ Propiedades comúnes:
 
 | GIS                                            | Nombre    | Descripción                                                   | Geometría | Registros | 
 |------------------------------------------------|-----------|---------------------------------------------------------------|-----------|-----------| 
-| ![R.SIGE](graph/ArcGISPro_Layer_Regis_shp.png) | Registro1 | Tabla registro catastral 1 con descriptores de predio         | N/A       | 46305     | 
-| ![R.SIGE](graph/ArcGISPro_Layer_Regis_shp.png) | Registro2 | Tabla registro catastral 2 con descriptores de construcciones | N/A       | 31599     | 
+| ![R.SIGE](graph/ArcGISPro_Table_Registro1.png) | Registro1 | Tabla registro catastral 1 con descriptores de predio         | N/A       | 46305     | 
+| ![R.SIGE](graph/ArcGISPro_Table_Registro2.png) | Registro2 | Tabla registro catastral 2 con descriptores de construcciones | N/A       | 31599     | 
 
 
 
