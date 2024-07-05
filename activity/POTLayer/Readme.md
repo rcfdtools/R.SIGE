@@ -226,10 +226,10 @@ Propiedades comúnes:
 
 #### 3.1.5. Tablas
 
-| GIS                                            | Nombre    | Descripción                                                   | Geometría | Registros | 
-|------------------------------------------------|-----------|---------------------------------------------------------------|-----------|-----------| 
-| ![R.SIGE](graph/ArcGISPro_Table_Registro1.png) | Registro1 | Tabla registro catastral 1 con descriptores de predio         | N/A       | 46305     | 
-| ![R.SIGE](graph/ArcGISPro_Table_Registro2.png) | Registro2 | Tabla registro catastral 2 con descriptores de construcciones | N/A       | 31599     | 
+| GIS                                            | Nombre    | Descripción                                                   | Registros  | 
+|------------------------------------------------|-----------|---------------------------------------------------------------|------------| 
+| ![R.SIGE](graph/ArcGISPro_Table_Registro1.png) | Registro1 | Tabla registro catastral 1 con descriptores de predio         | 46305      | 
+| ![R.SIGE](graph/ArcGISPro_Table_Registro2.png) | Registro2 | Tabla registro catastral 2 con descriptores de construcciones | 31599      | 
 
 
 
