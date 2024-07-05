@@ -156,7 +156,7 @@ Propiedades comúnes:
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
 
-#### 3.1.1. Dataset **Cartografía**
+#### 3.1.1. Dataset - Cartografía
 
 | GIS                                                        | Nombre              | Descripción                                                                                                                                                          | Geometría   | Registros | 
 |------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
@@ -180,7 +180,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
-#### 3.1.2. Dataset **Entidades Territoriales y Administrativas**
+#### 3.1.2. Dataset - Entidades Territoriales
 
 | GIS                                                           | Nombre                 | Descripción                                                            | Geometría   | Registros | 
 |---------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
@@ -197,7 +197,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
 
 
-#### 3.1.3. Dataset **Rural**
+#### 3.1.3. Dataset - Rural
 
 | GIS                                                                      | Nombre                             | Descripción                            | Geometría   | Registros | 
 |--------------------------------------------------------------------------|------------------------------------|----------------------------------------|-------------|-----------| 
@@ -208,7 +208,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_GEOECONOMICA_RURAL.png) | ZONA_HOMOGENEA _GEOECONOMICA_RURAL | Zonas homogéneas geoeconómicas rurales | Polígono 2D | 80        | 
 
 
-#### 3.1.4. Dataset **Urbano**
+#### 3.1.4. Dataset - Urbano
 
 | GIS                                                                 | Nombre                        | Descripción                                                         | Geometría   | Registros | 
 |---------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------|-------------|-----------| 
@@ -312,6 +312,7 @@ Propiedades comúnes:
 
 
 #### 3.2.2. Límites espaciales y observaciones
+
 
 
 
