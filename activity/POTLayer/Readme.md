@@ -155,7 +155,7 @@ Propiedades comúnes:
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
 
-#### 3.1.1. Dataset CARTOGRAFIA
+#### 3.1.1. Dataset CARTOGRAFÍA
 
 | GIS                                                        | Nombre              | Descripción                                                                                                                                                          | Geometría   | Registros | 
 |------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
@@ -179,7 +179,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
-#### 3.1.1. Dataset ENTIDADES_TERRITORIALES_Y_ADMINISTRATIVAS
+#### 3.1.1. Dataset ENTIDADES TERRITORIALES Y ADMINISTRATIVAS
 
 | Markdown graph                                                              | Nombre                 | Descripción                                                            | Geometría   | Registros | 
 |-----------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
