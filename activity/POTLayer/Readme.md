@@ -103,7 +103,7 @@ Listado de archivos obtenidos
 <div align="center"><img src="graph/Data_POT_gdb.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## 3. Visualización y consulta de propiedades en ArcGIS Pro
+## 3. Visualización y consulta en ArcGIS Pro
 
 Para la visualización preliminar y consulta de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
