@@ -157,7 +157,7 @@ Propiedades comúnes:
 
 #### 3.1.1. Dataset CARTOGRAFIA
 
-| Markdown graph                                             | Nombre              | Descripción                                                                                                                                                          | Geometría   | Registros | 
+| GIS                                                        | Nombre              | Descripción                                                                                                                                                          | Geometría   | Registros | 
 |------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ANDENES.png)             | ANDENES             | Andenes zona urbana y centros poblados rurales próximos al área urbana                                                                                               | Línea 2D    | 766       | 
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ANDENES_CPR.png)         | ANDENES_CPR         | Andenes en centros poblados rurales próximos al área urbana                                                                                                          | Línea 2D    | 162       | 
