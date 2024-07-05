@@ -145,7 +145,7 @@ A través del clic derecho sobre el nombre de la capa, también podrá obtener l
 6. Para cada uno de los archivos Shapefile y de las Clases de Entidad contenidas en la base de datos `gdb`, consulte sus propiedades y registre los datos obtenidos en el Libro de revisión _POT_Layer.xlsx_.
 
 
-## 3.1. Capas y tablas utilizadas en diagnóstico
+### 3.1. Capas y tablas utilizadas en diagnóstico
 
 Propiedades comúnes:
 
@@ -153,8 +153,6 @@ Propiedades comúnes:
 * CRS: EPSG 3116 o MAGNA Origen Bogota Colombia, 2011.
 * Fuente de datos: sin metadatos disponibles para verificación de fuentes originales de datos.
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
-
-
 
 | Dataset                                   | Nombre                            | Descripción                                                                                                                                                          | Geometría   | Registros | Observaciones                                                                                                                                                                             | 
 |-------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
@@ -206,7 +204,7 @@ Propiedades comúnes:
 | N/A                                       | Registro2                         | Tabla registro catastral 2 con descriptores de construcciones                                                                                                        | N/A         | 31599     |                                                                                                                                                                                           | 
 
 
-## 3.2. Capas utilizadas en formulación
+### 3.2. Capas utilizadas en formulación
 
 * Data source: \file\data\POT\Anexo_Acuerdo_012_2013\shp\
 * CRS: EPSG 3116 o MAGNA Origen Bogota Colombia, 2011.
