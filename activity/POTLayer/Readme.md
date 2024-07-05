@@ -154,7 +154,8 @@ Propiedades comúnes:
 * Fuente de datos: sin metadatos disponibles para verificación de fuentes originales de datos.
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
-Dataset, geometría y registros
+
+#### 3.1.1. Dataset, geometría y registros
 
 | Dataset                                     | Nombre                            | Descripción                                                                                                                                                          | Geometría   | Registros | 
 |---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
@@ -205,7 +206,8 @@ Dataset, geometría y registros
 | N/A                                         | Registro1                         | Tabla registro catastral 1 con descriptores de predio                                                                                                                | N/A         | 46305     | 
 | N/A                                         | Registro2                         | Tabla registro catastral 2 con descriptores de construcciones                                                                                                        | N/A         | 31599     | 
 
-Límites espaciales y observaciones
+
+#### 3.1.2. Límites espaciales y observaciones
 
 | Nombre | Límite norte | Límite sur | Límite este | Límite oeste | Área envolvente (ha) | Observaciones |
 | ANDENES | 1049280.2 | 1044508.9 | 1006307.3 | 1013626.4 | 3492.1 | Corresponde a ejes viales con caracterización de si tienen andén o no y su estado y no a lineas de anden en cada costado de vía, no se indica si el ande se ubica en ambos costados o no. |
