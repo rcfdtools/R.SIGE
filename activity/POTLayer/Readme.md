@@ -265,6 +265,14 @@ Propiedades comúnes:
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
 
+#### 3.2.1. Dataset, geometría y registros
+
+
+
+
+#### 3.2.2. Límites espaciales y observaciones
+
+
 
 
 <div align="center">Visualización de elementos recopilados</div>
