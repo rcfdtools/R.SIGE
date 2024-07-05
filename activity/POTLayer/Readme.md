@@ -179,7 +179,6 @@ Propiedades comúnes:
 | ![:globe_with_meridians:](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
-
 #### 3.1.2. Límites espaciales y observaciones
 
 | Nombre                              | Límite norte | Límite sur | Límite este | Límite oeste | Área envolvente (ha) | Observaciones                                                                                                                                                                              |
