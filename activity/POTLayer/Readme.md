@@ -179,6 +179,22 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
+#### 3.1.1. Dataset ENTIDADES_TERRITORIALES_Y_ADMINISTRATIVAS
+
+| Markdown graph                                                              | Nombre                 | Descripción                                                            | Geometría   | Registros | 
+|-----------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_BARRIOS.png)                | BARRIOS                | Barrios zona urbana                                                    | Polígono 2D | 49        | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_Centrospobladosrurales.png) | Centrospobladosrurales | Predios en centros poblados rurales                                    | Polígono 2D | 3615      | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_COMUNAS.png)                | COMUNAS                | Comunas urbanas                                                        | Polígono 2D | 4         | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_NBR.png)                    | NBR                    | Núcleo básico rural - Predios                                          | Polígono 2D | 282       | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_NucleosBasicosRurales.png)  | NucleosBasicosRurales  | Núcleo básico rural - Límites de vías y predios                        | Polígono 2D | 146       | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO.png)              | PERIMETRO              | Perímetro urbano                                                       | Polígono 2D | 1         | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO_CPR.png)          | PERIMETRO_CPR          | Perímetro de centros poblados rurales y asentamientos humanos cercanos | Polígono 2D | 26        | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO_SymDiff.png)      | PERIMETRO_SymDiff      | Diferencias entre límite de perímetro urbano y predios                 | Polígono 2D | 14        | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_UNIDAD_MORFOLOGICA.png)     | UNIDAD_MORFOLOGICA     | Unidades morfológicas urbanas                                          | Polígono 2D | 37        | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_ZONA_URBANA.png)            | ZONA_URBANA            | Límite de zona urbana                                                  | Polígono 2D | 5         | 
+| ![:globe_with_meridians:](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
+
 
 
 
@@ -246,26 +262,6 @@ Propiedades comúnes:
 
 
 #### 3.2.2. Límites espaciales y observaciones
-
-
-
-
-<div align="center">Visualización de elementos recopilados</div>
-
-**BARRIOS.shp**: Formulación POT - Barrios zona urbana<br><img src='graph/ArcGISPro_Layer_BARRIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**COMUNAS.shp**: Formulación POT - Comunas urbanas<br><img src='graph/ArcGISPro_Layer_COMUNAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**EXP_URBANA_AJUSTADA_PREDIOS.shp**: Formulación POT - Límite zona de expansión urbana a partir de predios<br><img src='graph/ArcGISPro_Layer_EXP_URBANA_AJUSTADA_PREDIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**HIDROGRAFIA.shp**: Formulación POT - Red hidrográfica<br><img src='graph/ArcGISPro_Layer_HIDROGRAFIA_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**MOT.shp**: Formulación POT - Modelo de ocupación del territorio<br><img src='graph/ArcGISPro_Layer_MOT_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**ORDEN_VIAL.shp**: Formulación POT - Orden vial rural<br><img src='graph/ArcGISPro_Layer_ORDEN_VIAL_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**RIO_BOGOTA.shp**: Formulación POT - Tramo Río Bogotá sobre municipio<br><img src='graph/ArcGISPro_Layer_RIO_BOGOTA_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VEREDA.shp**: Formulación POT - Límites veredales ajustados<br><img src='graph/ArcGISPro_Layer_VEREDA_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VIAS.shp**: Formulación POT - Vías principales proyectadas<br><img src='graph/ArcGISPro_Layer_VIAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VIAS_PERIMETRO.shp**: Formulación POT - Vías perímetro urbano principal<br><img src='graph/ArcGISPro_Layer_VIAS_PERIMETRO_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VIAS_PERIMETRO_URBANO.shp**: Formulación POT - Vías perímetro urbano y vías proyectadas. Incluye la zona urbana central, La Paz, Villa del Rosario y Barandillas<br><img src='graph/ArcGISPro_Layer_VIAS_PERIMETRO_URBANO_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VIAS_RURALES.shp**: Formulación POT - Vías rurales<br><img src='graph/ArcGISPro_Layer_VIAS_RURALES_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**VIAS_URBANAS.shp**: Formulación POT - Vías urbanas<br><img src='graph/ArcGISPro_Layer_VIAS_URBANAS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
-**ZONA_URBANA_AJUSTADA_PREDIOS.shp**: Formulación POT - Límite zona urbana ajustada a partir de predios<br><img src='graph/ArcGISPro_Layer_ZONA_URBANA_AJUSTADA_PREDIOS_shp.png' alt='R.SIGE' width='100%' border='0' /><br><br>
 
 
 
