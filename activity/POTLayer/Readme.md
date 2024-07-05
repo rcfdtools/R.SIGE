@@ -153,7 +153,7 @@ Propiedades comúnes:
 * Data source: file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb
 * CRS: EPSG 3116 o MAGNA Origen Bogota Colombia, 2011.
 * Fuente de datos: sin metadatos disponibles para verificación de fuentes originales de datos.
-* Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
+* Alias: igual al nombre de la capa, sin metadatos para asociación.
 
 
 #### 3.1.1. Dataset - Cartografía
@@ -288,7 +288,7 @@ Propiedades comúnes:
 * Data source: \file\data\POT\Anexo_Acuerdo_012_2013\shp\
 * CRS: EPSG 3116 o MAGNA Origen Bogota Colombia, 2011.
 * Fuente de datos: sin metadatos disponibles para verificación de fuentes originales de datos.
-* Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
+* Alias: igual al nombre de la capa, sin metadatos para asociación.
 
 
 #### 3.2.1. Capas shapefile
@@ -313,6 +313,22 @@ Propiedades comúnes:
 
 #### 3.2.2. Límites espaciales y observaciones
 
+| Nombre                           | Límite norte | Límite sur | Límite este | Límite oeste | Área envolvente (ha) | Observaciones                                                                                                                                                                                |
+|----------------------------------|--------------|------------|-------------|--------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| BARRIOS.shp                      | 1049014.3    | 1045711.5  | 1007244.5   | 1010930.5    | 1217.4               |                                                                                                                                                                                              |
+| COMUNAS.shp                      | 1049154.9    | 1044686.5  | 1007244.5   | 1010935.3    | 1649.2               | Sin código DANE, sin barrios asociados en todas las comunas.                                                                                                                                 |
+| EXP_URBANA_AJUSTADA_PREDIOS.shp  | 1049186      | 1044897.4  | 1008014.7   | 1010777.5    | 1184.9               | Zona sur y oriental.                                                                                                                                                                         |
+| HIDROGRAFIA.shp                  | 1063045.1    | 1040394.3  | 997235.6    | 1018799.4    | 48843.8              | Red discontinua en varias zonas. Incluye nombres de algunos cauces principales. Sin pendiente media, ancho promedio del cauce.                                                               |
+| MOT.shp                          | 1062201.9    | 1040543.8  | 998131.3    | 1018799.4    | 44763                | Sin descripción del procedimiento de delimitación de cada categoría.                                                                                                                         |
+| ORDEN_VIAL.shp                   | 1062201.9    | 1040543.8  | 998131.3    | 1018799.4    | 44763                | Con atributos provenientes de CAD. Nombre solo en 3 entidades. Sin indicación de sentido vial, restricción vehicular, velocidad permitida.                                                   |
+| RIO_BOGOTA.shp                   | 1044274.2    | 1041161.9  | 1008907.3   | 1015090.5    | 1924.4               | Sin nombre, pendiente media, ancho promedio del cauce.                                                                                                                                       |
+| VEREDA.shp                       | 1062201.9    | 1040543.8  | 998131.3    | 1018799.4    | 44763                |                                                                                                                                                                                              |
+| VIAS.shp                         | 1049280.7    | 1045802.3  | 1008012.4   | 1010934      | 1016.2               | Con ancho de perfil transversal en metros en 11 entidades, con definición de tipo en 2 entidades. Sin nombre de vía, indicación de sentido vial, restricción vehicular, velocidad permitida. |
+| VIAS_PERIMETRO.shp               | 1050000.5    | 1043600    | 1007307.9   | 1012355.8    | 3230.9               | Contiene nombre de vía, tipo, estado y clasificación.                                                                                                                                        |
+| VIAS_PERIMETRO_URBANO.shp        | 1050076.1    | 1040688.4  | 1007307.9   | 1014935.2    | 7160.3               | Contiene nombre de vía, tipo, estado,  clasificación y destinación Sin indicación de sentido vial, restricción vehicular, velocidad permitida.                                               |
+| VIAS_RURALES.shp                 | 1062201.9    | 1040543.8  | 998131.3    | 1018799.4    | 44763                | Con atributos provenientes de CAD. Nombre solo en 3 entidades. Sin indicación de sentido vial, restricción vehicular, velocidad permitida. Capa similar o idéntica a ORDEN_VIAL.shp.         |
+| VIAS_URBANAS.shp                 | 1050000.5    | 1043600    | 1006307.3   | 1013626.4    | 4684.6               | Contiene nombre de vía, tipo, estado y  clasificación. Sin indicación de sentido vial, restricción vehicular, velocidad permitida.                                                           |
+| ZONA_URBANA_AJUSTADA_PREDIOS.shp | 1049261.9    | 1045672.3  | 1007255.7   | 1012738.1    | 1967.9               |                                                                                                                                                                                              |
 
 
 
