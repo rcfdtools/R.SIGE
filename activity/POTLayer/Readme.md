@@ -61,6 +61,8 @@ Información geo-espacial del Plan de Ordenamiento Territorial Municipio de Zipa
 
 Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargue estos archivos.
 
+> Si su municipio no cuenta con información publicada en la plataforma _Colombia OT_, realice la solicitud de la información del POT directamente a la Secretaría de Planeación.
+
 <div align="center"><img src="graph/ColombiaOT_2.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 <div align="center">
