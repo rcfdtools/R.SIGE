@@ -14,7 +14,7 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 
 ## Requerimientos
 
-* [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas y grillas recopiladas del POT.
+* [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas, grillas y tablas recopiladas.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
@@ -335,7 +335,19 @@ Propiedades comúnes:
 
 ## 4. Visualización y consulta en QGIS
 
-En QGIS podrá realizar la visualización de los diferentes elementos
+En QGIS podrá realizar la visualización de los diferentes elementos siguiendo estos pasos:
+
+1. Cree un projecto nuevo en blanco, menú Project / New. En el panel lateral denominado _Browser_, abra la carpeta donde están contenidos los archivos de proyecto, seleccione una de las capas y arrástrela al mapa, podrá observar que se ajusta automáticamente a la ventada.
+
+<div align="center"><img src="graph/QGIS_NewMap.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+2. Desde el panel lateral _Layers_, de clic derecho en la capa y abra la tabla de atributos (Open Attribute Table). Utilizando el último botón de opciones de la ventana de tabla, podrá acoplarla a la parte inferior de la ventana. Podrá observar que esta capa contiene 49 registros.
+
+<div align="center"><img src="graph/QGIS_LayerViewTable.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+3. Para consultar las propiedades de la capa, desde el panel lateral _Layers_, de clic derecho en la capa y seleccione la opción _Propiedades_ (Properties). Encontrará diferentes pestañas y en _Information_ podrá consultar un resumen general de la capa indicando la ruta de datos, tamaño en disco, sistema de proyección, campos de atributos, extensión espacial o límites y algunos metadatos complementarios.
+
+<div align="center"><img src="graph/QGIS_LayerProperties.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
 
