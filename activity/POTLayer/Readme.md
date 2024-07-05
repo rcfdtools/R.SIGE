@@ -209,18 +209,18 @@ Propiedades comúnes:
 
 #### 3.1.2. Dataset URBANO
 
-| GIS | Nombre | Descripción | Geometría | Registros | 
-| --- | --- | --- | --- | --- | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_CONSTRUCCION_ANEXA.png) | CONSTRUCCION_ANEXA | Construcciones anexas urbanas | Polígono 2D | 7893 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_EDIFICACION.png) | EDIFICACION | Edificaciones urbanas | Polígono 2D | 33984 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_Edificacion_Altura.png) | Edificacion_Altura | Predios con asociación de altura en edificación por número de pisos | Polígono 2D | 3165 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_MANZANA.png) | MANZANA | Manzanas catastrales | Polígono 2D | 711 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_DOMICILIARIA.png) | NOMENCLATURA_DOMICILIARIA | Líneas con identificación de nomenclatura de direcciones urbanas | Línea 2D | 15144 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_VIAL.png) | NOMENCLATURA_VIAL | Nomenclatura de vías urbanas | Línea 2D | 593 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_SECTOR_URBANO.png) | SECTOR_URBANO | Límite catastral zona urbana | Polígono 2D | 1 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_TERRENO_PREDIO_URBANO.png) | TERRENO_PREDIO_URBANO | Predios urbanos | Polígono 2D | 16750 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_GEOECONOMICA_URBANA.png) | ZONA_GEOECONOMICA_URBANA | Zonas homogéneas geoeconómicas urbanas | Polígono 2D | 107 | 
-| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_FISICA_URBANA.png) | ZONA_HOMOGENEA_FISICA_URBANA | Zonas homogéneas físicas urbanas | Polígono 2D | 107 | 
+| GIS                                                                 | Nombre                       | Descripción                                                         | Geometría   | Registros | 
+|---------------------------------------------------------------------|------------------------------|---------------------------------------------------------------------|-------------|-----------| 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_CONSTRUCCION_ANEXA.png)           | CONSTRUCCION_ANEXA           | Construcciones anexas urbanas                                       | Polígono 2D | 7893      | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_EDIFICACION.png)                  | EDIFICACION                  | Edificaciones urbanas                                               | Polígono 2D | 33984     | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_Edificacion_Altura.png)           | Edificacion_Altura           | Predios con asociación de altura en edificación por número de pisos | Polígono 2D | 3165      | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_MANZANA.png)                      | MANZANA                      | Manzanas catastrales                                                | Polígono 2D | 711       | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_DOMICILIARIA.png)    | NOMENCLATURA_DOMICILIARIA    | Líneas con identificación de nomenclatura de direcciones urbanas    | Línea 2D    | 15144     | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_VIAL.png)            | NOMENCLATURA_VIAL            | Nomenclatura de vías urbanas                                        | Línea 2D    | 593       | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_SECTOR_URBANO.png)                | SECTOR_URBANO                | Límite catastral zona urbana                                        | Polígono 2D | 1         | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_TERRENO_PREDIO_URBANO.png)        | TERRENO_PREDIO_URBANO        | Predios urbanos                                                     | Polígono 2D | 16750     | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_GEOECONOMICA_URBANA.png)     | ZONA_GEOECONOMICA_URBANA     | Zonas homogéneas geoeconómicas urbanas                              | Polígono 2D | 107       | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_FISICA_URBANA.png) | ZONA_HOMOGENEA_FISICA_URBANA | Zonas homogéneas físicas urbanas                                    | Polígono 2D | 107       | 
 
 
 
