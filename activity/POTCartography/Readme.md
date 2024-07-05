@@ -181,7 +181,7 @@ Cartografía tomada del Plan de Ordenamiento Territorial Municipio de Zipaquirá
 
 Propiedades comunes en todos los mapas revisados:
 
-* CRS: EPSG 3116 ó MAGNA Origen Bogota Colombia, 2011.
+* CRS: EPSG 3116 o MAGNA Origen Bogota Colombia, 2011.
 * Barra de escala: presente.
 * Orientación norte: hacia arriba.
 * Convenciones: presentes.
