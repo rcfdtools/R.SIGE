@@ -337,7 +337,7 @@ Propiedades comúnes:
 
 En QGIS podrá realizar la visualización de los diferentes elementos siguiendo estos pasos:
 
-1. Cree un projecto nuevo en blanco, menú Project / New. En el panel lateral denominado _Browser_, abra la carpeta donde están contenidos los archivos de proyecto, seleccione una de las capas y arrástrela al mapa, podrá observar que se ajusta automáticamente a la ventada.
+1. Cree un projecto nuevo en blanco, menú Project / New. En el panel lateral denominado _Browser_, abra la carpeta donde están contenidos los archivos de proyecto, seleccione una de las capas y arrástrela al mapa, podrá observar que se ajusta automáticamente a la ventana.
 
 <div align="center"><img src="graph/QGIS_NewMap.png" alt="R.SIGE" width="100%" border="0"/></div>
 
