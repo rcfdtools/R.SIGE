@@ -156,7 +156,7 @@ Propiedades comúnes:
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
 
-#### 3.1.1. Dataset CARTOGRAFÍA
+#### 3.1.1. Clases de entidad en dataset **Cartografía**
 
 | GIS                                                        | Nombre              | Descripción                                                                                                                                                          | Geometría   | Registros | 
 |------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
@@ -180,7 +180,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
-#### 3.1.2. Dataset ENTIDADES TERRITORIALES Y ADMINISTRATIVAS
+#### 3.1.2. Clases de entidad en dataset **Entidades Territoriales y Administrativas**
 
 | GIS                                                           | Nombre                 | Descripción                                                            | Geometría   | Registros | 
 |---------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
@@ -197,7 +197,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
 
 
-#### 3.1.3. Dataset RURAL
+#### 3.1.3. Clases de entidad en dataset **Rural**
 
 | GIS                                                                      | Nombre                             | Descripción                            | Geometría   | Registros | 
 |--------------------------------------------------------------------------|------------------------------------|----------------------------------------|-------------|-----------| 
@@ -208,7 +208,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_GEOECONOMICA_RURAL.png) | ZONA_HOMOGENEA _GEOECONOMICA_RURAL | Zonas homogéneas geoeconómicas rurales | Polígono 2D | 80        | 
 
 
-#### 3.1.4. Dataset URBANO
+#### 3.1.4. Clases de entidad en dataset **Urbano**
 
 | GIS                                                                 | Nombre                        | Descripción                                                         | Geometría   | Registros | 
 |---------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------|-------------|-----------| 
@@ -236,7 +236,7 @@ Propiedades comúnes:
 #### 3.1.6. Límites espaciales y observaciones
 
 | Nombre                             | Límite norte | Límite sur | Límite este | Límite oeste | Área envolvente (ha) | Observaciones                                                                                                                                                                              |
-|:-----------------------------------|:-------------|:-----------|:------------|:-------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:-----------------------------------|:-------------|:-----------|:------------|:-------------|:---------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ANDENES                            | 1049280.2    | 1044508.9  | 1006307.3   | 1013626.4    | 3492.1               | Corresponde a ejes viales con caracterización de si tienen andén o no y su estado, y no a líneas de anden en cada costado de vía, no se indica si el ande se ubica en ambos costados o no. |
 | ANDENES_CPR                        | 1049010.3    | 1044930.9  | 1006307.3   | 1013626.4    | 2985.7               | Corresponde a ejes viales con caracterización de si tienen andén o no y su estado, y no a líneas de anden en cada costado de vía, no se indica si el ande se ubica en ambos costados o no. |
 | ANDENES_PERIMETRO                  | 1049280.2    | 1044508.9  | 1007307.9   | 1010919.7    | 1723.3               | Corresponde a ejes viales con caracterización de si tienen andén o no y su estado, y no a líneas de anden en cada costado de vía, no se indica si el ande se ubica en ambos costados o no. |
@@ -291,7 +291,7 @@ Propiedades comúnes:
 * Alias: igual al nombre de la capa, sin metadatos para asociación de alias.
 
 
-#### 3.2.1. Dataset, geometría y registros
+#### 3.2.1. Capas, geometría y registros
 
 
 
