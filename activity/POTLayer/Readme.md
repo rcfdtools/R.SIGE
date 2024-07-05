@@ -179,7 +179,7 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_VIAS_URBANAS_Buffer.png) | VIAS_URBANAS_Buffer | Aferencia en vías urbanas a 20 metros y solo en 1 costado                                                                                                            | Polígono 2D | 784       | 
 
 
-#### 3.1.1. Dataset ENTIDADES TERRITORIALES Y ADMINISTRATIVAS
+#### 3.1.2. Dataset ENTIDADES TERRITORIALES Y ADMINISTRATIVAS
 
 | GIS                                                           | Nombre                 | Descripción                                                            | Geometría   | Registros | 
 |---------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
@@ -196,9 +196,36 @@ Propiedades comúnes:
 | ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
 
 
+#### 3.1.2. Dataset RURAL
+
+| GIS                                                                      | Nombre                            | Descripción                            | Geometría   | Registros | 
+|--------------------------------------------------------------------------|-----------------------------------|----------------------------------------|-------------|-----------| 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_SECTOR_RURAL.png)                      | SECTOR_RURAL                      | Límite catastral zona rural            | Polígono 2D | 1         | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_TERRENO_PREDIO_RURAL.png)              | TERRENO_PREDIO_RURAL              | Predios rurales                        | Polígono 2D | 9554      | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_VEREDA.png)                            | VEREDA                            | Límites veredales                      | Polígono 2D | 14        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_FISICA_RURAL.png)       | ZONA_HOMOGENEA_FISICA_RURAL       | Zonas homogéneas físicas rurales       | Polígono 2D | 58        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_GEOECONOMICA_RURAL.png) | ZONA_HOMOGENEA_GEOECONOMICA_RURAL | Zonas homogéneas geoeconómicas rurales | Polígono 2D | 80        | 
 
 
-#### 3.1.2. Límites espaciales y observaciones
+#### 3.1.2. Dataset URBANO
+
+| GIS | Nombre | Descripción | Geometría | Registros | 
+| --- | --- | --- | --- | --- | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_CONSTRUCCION_ANEXA.png) | CONSTRUCCION_ANEXA | Construcciones anexas urbanas | Polígono 2D | 7893 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_EDIFICACION.png) | EDIFICACION | Edificaciones urbanas | Polígono 2D | 33984 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_Edificacion_Altura.png) | Edificacion_Altura | Predios con asociación de altura en edificación por número de pisos | Polígono 2D | 3165 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_MANZANA.png) | MANZANA | Manzanas catastrales | Polígono 2D | 711 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_DOMICILIARIA.png) | NOMENCLATURA_DOMICILIARIA | Líneas con identificación de nomenclatura de direcciones urbanas | Línea 2D | 15144 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NOMENCLATURA_VIAL.png) | NOMENCLATURA_VIAL | Nomenclatura de vías urbanas | Línea 2D | 593 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_SECTOR_URBANO.png) | SECTOR_URBANO | Límite catastral zona urbana | Polígono 2D | 1 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_TERRENO_PREDIO_URBANO.png) | TERRENO_PREDIO_URBANO | Predios urbanos | Polígono 2D | 16750 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_GEOECONOMICA_URBANA.png) | ZONA_GEOECONOMICA_URBANA | Zonas homogéneas geoeconómicas urbanas | Polígono 2D | 107 | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_HOMOGENEA_FISICA_URBANA.png) | ZONA_HOMOGENEA_FISICA_URBANA | Zonas homogéneas físicas urbanas | Polígono 2D | 107 | 
+
+
+
+
+#### 3.1.3. Límites espaciales y observaciones
 
 | Nombre                              | Límite norte | Límite sur | Límite este | Límite oeste | Área envolvente (ha) | Observaciones                                                                                                                                                                              |
 |:------------------------------------|:-------------|:-----------|:------------|:-------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
