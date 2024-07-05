@@ -3,7 +3,7 @@ Keywords: `DEM` `AgreeDEM`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
 
-<div align="center"><img src="graph/POT_Layer.png" alt="R.SIGE" width="100%" border="0" /><br><br></div>
+<div align="center"><img src="graph/POTLayer.png" alt="R.SIGE" width="100%" border="0" /><br><br></div>
 
 
 ## Objetivos
