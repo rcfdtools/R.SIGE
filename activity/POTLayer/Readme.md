@@ -3,7 +3,7 @@ Keywords: `DEM` `AgreeDEM`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
 
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/POT_Layer.png" alt="R.SIGE" width="100%" border="0" /><br><br></div>
 
 
 ## Objetivos
@@ -61,7 +61,7 @@ Información geo-espacial del Plan de Ordenamiento Territorial Municipio de Zipa
 
 Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargue estos archivos.
 
-> :bulb: Si su municipio no cuenta con información publicada en la plataforma _Colombia OT_, realice directamente la solicitud de la información del POT a la Secretaría de Planeación.
+> :bulb: Si su municipio no cuenta con información publicada en la plataforma _Colombia OT_, realice directamente la solicitud de información del POT a la Secretaría de Planeación.
 
 <div align="center"><img src="graph/ColombiaOT_2.png" alt="R.SIGE" width="100%" border="0"/></div>
 
@@ -345,7 +345,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Para su caso de estudio, descargue, descomprima y organice los diferentes datos (vectores, tablas, grillas) utilizados para la elaboración del POT. Revise todos los elementos y en el libro de Excel registre los datos indicados en esta actividad. En el informe final y siguiendo el mismo orden de esta actividad, incluya tablas resumen y previsualizaciones de cada elemento.                                                               | 
+| Avance **P1** | Para su caso de estudio, descargue, descomprima y organice los diferentes datos (vectores, tablas, grillas) utilizados en la elaboración del POT. Revise todos los elementos y en el libro de Excel suministrado, registre los datos indicados en esta actividad. En el informe final y siguiendo el mismo orden de esta actividad, incluya tablas resumen y previsualizaciones de cada elemento.                                                   | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. |
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -353,24 +353,18 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
-
-
 ## Referencias
 
-* 
+* www.colombiaot.gov.co
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.03.07 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.07.05 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
