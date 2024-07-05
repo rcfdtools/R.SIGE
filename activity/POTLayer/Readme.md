@@ -8,16 +8,16 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 
 ## Objetivos
 
-* 
+* Revisar el contenido geográfico (geometría, límite espacial, número de vectores, CRS, tamaño del área envolvente) y los atributos contenidos en las diferentes capas utilizadas en la elaboración del POT en sus etapas de diagnóstico y formulación.
+* Revisar las tablas de datos y su contenido.
 
 
 ## Requerimientos
 
 * [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas y grillas recopiladas del POT.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
-* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
-* [:toolbox:Herramienta](https://qgis.org/): QGIS
-* Datos recopilados
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
+* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
 ## 1. Especificaciones para revisión
@@ -331,6 +331,11 @@ Propiedades comúnes:
 | ZONA_URBANA_AJUSTADA _PREDIOS.shp | 1049261.9    | 1045672.3  | 1007255.7   | 1012738.1    | 1967.9               |                                                                                                                                                                                              |
 
 
+## 4. Visualización y consulta en QGIS
+
+En QGIS podrá realizar la visualización de los diferentes elementos
+
+
 
 ## Actividades de proyecto :triangular_ruler:
 
@@ -338,7 +343,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                     | 
+| Avance **P1** | Para su caso de estudio, descargue, descomprima y organice los diferentes datos (vectores, tablas, grillas) utilizados para la elaboración del POT. Revise todos los elementos y en el libro de Excel registre los datos indicados en esta actividad. En el informe final y siguiendo el mismo orden de esta actividad, incluya tablas resumen y previsualizaciones de cada elemento.                                                               | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. |
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
