@@ -181,19 +181,19 @@ Propiedades comúnes:
 
 #### 3.1.1. Dataset ENTIDADES TERRITORIALES Y ADMINISTRATIVAS
 
-| Markdown graph                                                              | Nombre                 | Descripción                                                            | Geometría   | Registros | 
-|-----------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_BARRIOS.png)                | BARRIOS                | Barrios zona urbana                                                    | Polígono 2D | 49        | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_Centrospobladosrurales.png) | Centrospobladosrurales | Predios en centros poblados rurales                                    | Polígono 2D | 3615      | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_COMUNAS.png)                | COMUNAS                | Comunas urbanas                                                        | Polígono 2D | 4         | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_NBR.png)                    | NBR                    | Núcleo básico rural - Predios                                          | Polígono 2D | 282       | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_NucleosBasicosRurales.png)  | NucleosBasicosRurales  | Núcleo básico rural - Límites de vías y predios                        | Polígono 2D | 146       | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO.png)              | PERIMETRO              | Perímetro urbano                                                       | Polígono 2D | 1         | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO_CPR.png)          | PERIMETRO_CPR          | Perímetro de centros poblados rurales y asentamientos humanos cercanos | Polígono 2D | 26        | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_PERIMETRO_SymDiff.png)      | PERIMETRO_SymDiff      | Diferencias entre límite de perímetro urbano y predios                 | Polígono 2D | 14        | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_UNIDAD_MORFOLOGICA.png)     | UNIDAD_MORFOLOGICA     | Unidades morfológicas urbanas                                          | Polígono 2D | 37        | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_ZONA_URBANA.png)            | ZONA_URBANA            | Límite de zona urbana                                                  | Polígono 2D | 5         | 
-| ![:globe_with_meridians:](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
+| GIS                                                           | Nombre                 | Descripción                                                            | Geometría   | Registros | 
+|---------------------------------------------------------------|------------------------|------------------------------------------------------------------------|-------------|-----------| 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_BARRIOS.png)                | BARRIOS                | Barrios zona urbana                                                    | Polígono 2D | 49        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_Centrospobladosrurales.png) | Centrospobladosrurales | Predios en centros poblados rurales                                    | Polígono 2D | 3615      | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_COMUNAS.png)                | COMUNAS                | Comunas urbanas                                                        | Polígono 2D | 4         | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NBR.png)                    | NBR                    | Núcleo básico rural - Predios                                          | Polígono 2D | 282       | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_NucleosBasicosRurales.png)  | NucleosBasicosRurales  | Núcleo básico rural - Límites de vías y predios                        | Polígono 2D | 146       | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_PERIMETRO.png)              | PERIMETRO              | Perímetro urbano                                                       | Polígono 2D | 1         | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_PERIMETRO_CPR.png)          | PERIMETRO_CPR          | Perímetro de centros poblados rurales y asentamientos humanos cercanos | Polígono 2D | 26        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_PERIMETRO_SymDiff.png)      | PERIMETRO_SymDiff      | Diferencias entre límite de perímetro urbano y predios                 | Polígono 2D | 14        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_UNIDAD_MORFOLOGICA.png)     | UNIDAD_MORFOLOGICA     | Unidades morfológicas urbanas                                          | Polígono 2D | 37        | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_URBANA.png)            | ZONA_URBANA            | Límite de zona urbana                                                  | Polígono 2D | 5         | 
+| ![[R.SIGE]](graph/ArcGISPro_Layer_ZONA_URBANA_EXPANSION.png)  | ZONA_URBANA_EXPANSION  | Límite zona urbana ajustada a partir de predios                        | Polígono 2D | 2         | 
 
 
 
