@@ -34,12 +34,12 @@ La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordiller
 
 Información [DANE](https://www.dane.gov.co/)
 
-| Localización                 | Descripción                                |
-|------------------------------|:-------------------------------------------|
-| Departamento de Cundinamarca | Código DANE: 25                            |
-| Municipio de Zipaquirá       | Código DANE: 899                           |
-| Dirección territorial        | Gestor territorial: Municipio de Zipaquirá |
-| Categoría                    | 1                                          |
+| Localización                 | Descripción                                                                                  |
+|------------------------------|:---------------------------------------------------------------------------------------------|
+| Departamento de Cundinamarca | Código DANE: 25                                                                              |
+| Municipio de Zipaquirá       | Código DANE: 899                                                                             |
+| Dirección territorial        | Gestor territorial: Municipio de Zipaquirá según Resolución IGAC 96 del 9 de Febrero de 2021 |
+| Categoría                    | 1                                                                                            |
 
 > Direcciones territoriales tomadas de www.colombiaenmapas.gov.co
 

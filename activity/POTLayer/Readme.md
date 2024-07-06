@@ -9,7 +9,7 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 ## Objetivos
 
 * Revisar el contenido geográfico (geometría, límite espacial, número de vectores, CRS, tamaño del área envolvente) y los atributos contenidos en las diferentes capas utilizadas en la elaboración del POT en sus etapas de diagnóstico y formulación.
-* Revisar las tablas de datos y su contenido.
+* Revisar las tablas de datos complementarias y su contenido.
 
 
 ## Requerimientos
