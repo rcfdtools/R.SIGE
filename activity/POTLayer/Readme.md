@@ -370,7 +370,7 @@ En un diccionario de datos deben ser incluídos los siguientes grupos de element
 | Grillas            | Descripción detallada de grillas ráster incluyendo nu nombre, descripción, fuente, formato, cubrimiento, temporalidad.                              |
 | Setup              | Tablas para generación de listas desplegables para selección de atributos comunes en el diccionario.                                                |
 
-> :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad. También pueden ser incluído el responsable de mantener la información actualizada en cada elemento, el nombre del dataset asociado, la escala de visualización y una ilustración mostrando la capa.
+> :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad. También pueden ser incluído el responsable de mantener la información actualizada de cada elemento, el nombre del dataset asociado, la escala de visualización y una ilustración geográfica.
 
 Para el catálogo de objetos de capas y tablas, se deben incluir:
 
@@ -383,12 +383,12 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 | Dominio      | Si el campo se encuentra normalizado a través de un dominio (campo codificado con valores repetidos), debe ser incluído el nombre del dominio asociado.                                                                                                                                                                                                                                                      |
 | Obligatorio  | Sí/No. Indicar si el campo debe contener siempre un valor.                                                                                                                                                                                                                                                                                                                                                   |
 
-> :lady_beetle:En nombres de campos debe evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
+> :lady_beetle:En nombres de campos, deben evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
 
 
 ### 5.2. Ejemplos
 
-Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica)
+Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica)  
 [:floppy_disk:Diccionario en Excel](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
@@ -397,7 +397,7 @@ Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https:
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Dominios.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
 
-Diccionario de datos Universidad Escuela Colombiana de Ingeniería - [UECIJG](https://www.escuelaing.edu.co/es/)
+Diccionario de datos Universidad Escuela Colombiana de Ingeniería - [UECIJG](https://www.escuelaing.edu.co/es/)  
 [:floppy_disk:Diccionario en Excel](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
