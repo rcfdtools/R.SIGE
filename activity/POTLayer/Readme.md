@@ -357,7 +357,7 @@ El diccionario de datos es un documento en el cual se establecen las especificac
 > Metadatos (.xml): para complementar el diccionario de datos, se recomienda editar el diccionario de datos asociado a cada elemento geográfico e incluir información relacionada con autores, licencia, restricciones de uso, versión, fecha de creación, fecha de actualización y demás información relevante.
 
 
-## 5.1. Elementos descriptivos
+### 5.1. Elementos descriptivos
 
 En un diccionario de datos deben ser incluídos los siguientes grupos de elementos:
 
@@ -386,7 +386,7 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 > :lady_bug:En nombres de campos debe evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
 
 
-## 5.2. Ejemplos
+### 5.2. Ejemplos
 
 
 
@@ -411,6 +411,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * www.colombiaot.gov.co
+* [Diccionario de datos geográficos ENARGAS - Argentina](https://www.enargas.gob.ar/secciones/informacion-geografica/documentacion/Diccionario.pdf)
 
 
 ## Control de versiones
