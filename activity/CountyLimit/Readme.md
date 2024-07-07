@@ -42,12 +42,16 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 5. En el panel _Contents_, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos y guarde las modificaciones realizadas en la tabla cerrando la ventana de modificación o mediante la opción guardar o _Save_ que aparece en el menú superior:
 
+<div align="center">
+
 | Campo | Descripción                   | Tipo    | Propiedad ArcGIS Pro        | 
 |-------|-------------------------------|---------|-----------------------------| 
 | APha  | Área planar en hectáreas      | Double  | Area                        |
 | AGha  | Área geodésica en hectáreas   | Double  | Area (geodesic)             |
 | PPm   | Perímetro planar en metros    | Double  | Perimeter length            |
 | PGm   | Perímetro geodésico en metros | Double  | Perimeter length (geodesic) |
+
+</div>
 
 > Tenga en cuenta que al crear los campos no se calculan automáticamente estas propiedades geométricas.  
 > Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.  
@@ -58,7 +62,6 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 
 <div align="center"><img src="graph/ArcGISPro_Table1.png" alt="R.SIGE" width="100%" border="0" /></div>
-
 
 6. En la tabla de atributos y dando clic sobre el campo `APha`, seleccione la opción _Calculate Geometry_ que le permitirá calcular las propiedades geométricas asociadas a las entidades.
 
