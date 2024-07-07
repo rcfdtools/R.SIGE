@@ -361,36 +361,51 @@ El diccionario de datos, es un documento o un libro en el cual se establecen las
 
 En un diccionario de datos deben ser incluídos los siguientes grupos de elementos:
 
-| Grupo             | Alcance                                                                                                                                            |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Estructura        | Tabla hipervinculada a elementos (capas vectoriales, tablas, grillas) del diccionario con resumen de elementos.                                    |
-| Capas geográficas | Descripción detallada de las capas geográficas vectoriales incluyendo su nombre, descripción, fuente, geometría y catálogo de objetos o atributos. |
-| Tablas            | Descripción detallada de las tablas de atributos y su catálogo de objetos o atributos.                                                             |
-| Dominios          | Descripción detallada de las tablas de dominio codificadas.                                                                                        |
-| Grillas           | Descripción detallada de grillas ráster incluyendo nu nombre, descripción, fuente, formato, cubrimiento, temporalidad.                             |
-| Setup             | Tablas para generación de listas desplegables para selección de atributos comunes en el diccionario.                                               |
+| Grupo              | Alcance                                                                                                                                             |
+|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Estructura         | Tabla hipervinculada a elementos (capas vectoriales, tablas, grillas) del diccionario con resumen de elementos.                                     |
+| Capas geográficas  | Descripción detallada de las capas geográficas vectoriales incluyendo su nombre, descripción, fuente, geometría y catálogo de objetos o atributos.  |
+| Tablas             | Descripción detallada de las tablas de atributos y su catálogo de objetos o atributos.                                                              |
+| Dominios           | Descripción detallada de las tablas de dominio codificadas.                                                                                         |
+| Grillas            | Descripción detallada de grillas ráster incluyendo nu nombre, descripción, fuente, formato, cubrimiento, temporalidad.                              |
+| Setup              | Tablas para generación de listas desplegables para selección de atributos comunes en el diccionario.                                                |
 
 > :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad.
+> 
+> En el diccionario de datos también pueden ser incluído el responsable de mantener la información actualizada en cada elemento, el nombre del dataset asociado, la escala de visualización y una ilustración mostrando la capa.
 
 Para el catálogo de objetos de capas y tablas, se deben incluir:
 
-| Objeto      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                        |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre      | Nombre del campo de atributos. Se recomienda definir el nombre de los campos de elementos con no más de 10 caracteres alfanuméricos. Lo anterior debido a que al realizar exportaciones desde bases de datos espaciales que permiten nombres largos, a archivos de formas geométricas en formato shapefile, el nombre de los campos es truncado a 10 caracteres debido a que son almacenados en archivos de DBase. |
-| Tipo        | Tipo de datos: text, int, long, simple, double, date, boolean. Para campos asociados a geometrías y campos para cálculo de valores a partir de otros campos, se recomienda utilizar formato numérico doble.                                                                                                                                                                                                        |
-| Tamaño      | Longitud del campo. Aplica solo para campos tipo texto.                                                                                                                                                                                                                                                                                                                                                            |
-| Descripción | Descripción del contenido del campo.                                                                                                                                                                                                                                                                                                                                                                               |
-| Dominio     | Si el campo se encuentra normalizado a través de un dominio (campo codificado con valores repetidos), debe ser incluído el nombre del dominio asociado.                                                                                                                                                                                                                                                            |
-| Obligatorio | Sí/No. Indicar si el campo debe contener siempre un valor.                                                                                                                                                                                                                                                                                                                                                         |
+| Objeto       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre       | Nombre del campo de atributos. Se recomienda definir el nombre de los campos de elementos con no más de 10 caracteres alfanuméricos, lo anterior debido a que al realizar exportaciones desde bases de datos espaciales que permiten nombres largos, a archivos de formas geométricas en formato shapefile, el nombre de los campos es truncado a 10 caracteres porque son almacenados en archivos de DBase. |
+| Tipo         | Tipo de datos: text, int, long, simple, double, date, boolean. Para campos asociados a geometrías y campos para cálculo de valores a partir de otros campos, se recomienda utilizar formato numérico doble.                                                                                                                                                                                                  |
+| Tamaño       | Longitud del campo (hasta 255 caracteres). Aplica solo para campos tipo texto.                                                                                                                                                                                                                                                                                                                               |
+| Descripción  | Descripción del contenido del campo.                                                                                                                                                                                                                                                                                                                                                                         |
+| Dominio      | Si el campo se encuentra normalizado a través de un dominio (campo codificado con valores repetidos), debe ser incluído el nombre del dominio asociado.                                                                                                                                                                                                                                                      |
+| Obligatorio  | Sí/No. Indicar si el campo debe contener siempre un valor.                                                                                                                                                                                                                                                                                                                                                   |
 
-> :lady_bug:En nombres de campos debe evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
+> :lady_beetle:En nombres de campos debe evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
 
 
 ### 5.2. Ejemplos
 
+Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica)
+[:floppy_disk:Diccionario en Excel](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)
 
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Tablas.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Dominios.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
 
+Diccionario de datos Universidad Escuela Colombiana de Ingeniería - [UECIJG](https://www.escuelaing.edu.co/es/)
+[:floppy_disk:Diccionario en Excel](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)
 
+<div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Tablas.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
 ## Actividades de proyecto :triangular_ruler:
