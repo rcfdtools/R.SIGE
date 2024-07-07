@@ -388,8 +388,7 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 
 ### 5.2. Ejemplos
 
-Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica)  
-[:floppy_disk:Diccionario en Excel](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)
+* [:floppy_disk:Diccionario en Excel](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)Diccionario de datos Autoridad Nacional de Licencias Ambientales - ANLA  
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
@@ -397,8 +396,8 @@ Diccionario de datos Autoridad Nacional de Licencias Ambientales - [ANLA](https:
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Dominios.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
 
-Diccionario de datos Universidad Escuela Colombiana de Ingeniería - [UECIJG](https://www.escuelaing.edu.co/es/)  
-[:floppy_disk:Diccionario en Excel](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)
+
+* [:floppy_disk:](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)Diccionario de datos Universidad Escuela Colombiana de Ingeniería - UECIJG
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
@@ -425,6 +424,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * www.colombiaot.gov.co
 * [Diccionario de datos geográficos ENARGAS - Argentina](https://www.enargas.gob.ar/secciones/informacion-geografica/documentacion/Diccionario.pdf)
+* https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica
+* https://www.escuelaing.edu.co/es/
 
 
 ## Control de versiones
