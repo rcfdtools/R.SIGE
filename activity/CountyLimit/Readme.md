@@ -34,7 +34,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 3. Desde el Panel de Catálogo (_Catalog_) localizado a la derecha, cargue al mapa desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, la clase de entidad denominada _VEREDA_. De clic en el ícono de simbología de la capa y establezca borde negro y sin relleno.
 
-<div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer_Vereda.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. Seleccione en _Contents_ la capa _VEREDA_, en la parte superior podrá observar que se activan opciones específicas para esta capa, vaya al menú _Labeling_ y establezca el rotulado de la capa utilizando a partir del nombre de la vereda.
 
@@ -95,11 +95,30 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 <div align="center"><img src="graph/ArcGISPro_Vereda1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-
-
 ### 1.2. Mapa veredal a partir de predios diagnóstico POT año 2010
+
+Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
+
+1. Desde la misma ruta anterior _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, agregue la clase de entidad _TERRENO_PREDIO_RURAL_. Cambie la simbología a polígonos sin relleno.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Abra la tabla de atributos e identifique el campo que contiene el código de identificación de vereda y cambie la simbología de representación de símbolo simple a valores únicos utilizando este campo. Podrá observar que los polígonos de predios de una misma vereda tienen el mismo color.
+
+<div align="center"><img src="graph/ArcGISPro_Symbology_UniqueValues_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En el menú superior, de clic en el grupo _Analysis_ y de clic en _Tools_. Podrá observar que a la derecha aparece el panel _Geoprocessing_. En el campo de búsqueda, ingrese la palabra _Dissolve_, obtendrá diferentes resultados.
+
+<div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En la ventana de resultados, seleccione la herramienta _Dissolve_ asociada al grupo _Data Management Tools_ e ingrese los parámetros definidos en la siguiente imagen. Nombre la capa como _Vereda_DiagnosticoPOT_TerrenoPredioRural.shp_
+
+> Para la ruta de salida de todas las capas en formato shapefile a generar en este curso, utilizaremos la ruta _\R.SIGE\file\shp_.
+
+<div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Como puede observar, se han creado 14 veredas, sin embargo, contienen regiones internas vacías debidas a los corredores viales que no se incluyen en las capas de predios catastrales como unidades prediales, por lo que es necesario editar la geometría de la capa y eliminar manualmente los nodos internos para crear una región contínua.
+
 
 
 
@@ -120,6 +139,16 @@ https://www.colombiaenmapas.gov.co
 
 
 > Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
+
+
+## Elementos a incluir en el diccionario de datos
+
+| Nombre                                       | Descripción                                                                                                                           | Geometría   | Registros | 
+|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios \R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\RURAL\25899.gdbTERRENO_PREDIO_RURAL | Polígono 2D | 14        | 
+
+
+
 
 
 ## Actividades de proyecto :triangular_ruler:
