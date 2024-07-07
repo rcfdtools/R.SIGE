@@ -394,9 +394,10 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Tablas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Dominios.png" alt="R.SIGE" width="100%" border="0"/></div>
-<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div><br><br>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div><br>
 
-[:floppy_disk:](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)Diccionario de datos Universidad Escuela Colombiana de Ingeniería - UECIJG
+[:floppy_disk:](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)Diccionario de datos Universidad Escuela Colombiana de Ingeniería - UECIJG    
+Versión en [.pdf](https://github.com/rcfdtools/R.AmazonChingaza/blob/main/R.AmazonasChingazaGIS.pdf)
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
