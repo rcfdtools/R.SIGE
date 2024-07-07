@@ -350,13 +350,45 @@ En QGIS podrá realizar la visualización de los diferentes elementos siguiendo 
 <div align="center"><img src="graph/QGIS_LayerProperties.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## Diccionario de datos
+## 5. Diccionario de datos
 
 El diccionario de datos es un documento en el cual se establecen las especificaciones de los objetos espaciales y tablas geocodificadas, manipulados en un Sistema de Información Geográfica. La aplicación de este documento es primordial para los procesos de producción, actualización, consulta, análisis y distribución de datos espaciales debido a que se contribuye a mejorar su calidad y administración, evitando de esta manera ambiguedades e inconsistencias que puedan surgir en su interpretación.
 
-> Para la creación de campos de atributos en tablas asociadas a datos geográficos, se recomienda definir el nombre de los elementos con no más de 10 caracteres alfanuméricos. Lo anterior debido a que al realizar exportaciones desde bases de datos espaciales que permiten nombres largos, a archivos de formas geométricas en formato shapefile, el nombre de los campos es truncado a 10 caracteres debido a que son almacenados en archivos de DBase.
+> Metadatos (.xml): para complementar el diccionario de datos, se recomienda editar el diccionario de datos asociado a cada elemento geográfico e incluir información relacionada con autores, licencia, restricciones de uso, versión, fecha de creación, fecha de actualización y demás información relevante.
 
-Elementos descriptivos que deben ser incluídos en un diccionario de datos:
+
+## 5.1. Elementos descriptivos
+
+En un diccionario de datos deben ser incluídos los siguientes grupos de elementos:
+
+| Grupo             | Alcance                                                                                                                                            |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Estructura        | Tabla hipervinculada a elementos (capas vectoriales, tablas, grillas) del diccionario con resumen de elementos.                                    |
+| Capas geográficas | Descripción detallada de las capas geográficas vectoriales incluyendo su nombre, descripción, fuente, geometría y catálogo de objetos o atributos. |
+| Tablas            | Descripción detallada de las tablas de atributos y su catálogo de objetos o atributos.                                                             |
+| Dominios          | Descripción detallada de las tablas de dominio codificadas.                                                                                        |
+| Grillas           | Descripción detallada de grillas ráster incluyendo nu nombre, descripción, fuente, formato, cubrimiento, temporalidad.                             |
+| Setup             | Tablas para generación de listas desplegables para selección de atributos comunes en el diccionario.                                               |
+
+> :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad.
+
+Para el catálogo de objetos de capas y tablas, se deben incluir:
+
+| Objeto      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre      | Nombre del campo de atributos. Se recomienda definir el nombre de los campos de elementos con no más de 10 caracteres alfanuméricos. Lo anterior debido a que al realizar exportaciones desde bases de datos espaciales que permiten nombres largos, a archivos de formas geométricas en formato shapefile, el nombre de los campos es truncado a 10 caracteres debido a que son almacenados en archivos de DBase. |
+| Tipo        | Tipo de datos: text, int, long, simple, double, date, boolean. Para campos asociados a geometrías y campos para cálculo de valores a partir de otros campos, se recomienda utilizar formato numérico doble.                                                                                                                                                                                                        |
+| Tamaño      | Longitud del campo. Aplica solo para campos tipo texto.                                                                                                                                                                                                                                                                                                                                                            |
+| Descripción | Descripción del contenido del campo.                                                                                                                                                                                                                                                                                                                                                                               |
+| Dominio     | Si el campo se encuentra normalizado a través de un dominio (campo codificado con valores repetidos), debe ser incluído el nombre del dominio asociado.                                                                                                                                                                                                                                                            |
+| Obligatorio | Sí/No. Indicar si el campo debe contener siempre un valor.                                                                                                                                                                                                                                                                                                                                                         |
+
+> :lady_bug:En nombres de campos debe evitarse el uso de caracteres diferentes a los contenidos en el idioma inglés, tales como: tildes y/o acentos, eñes, caracteres especiales (&*%$#@!+=) y espacios. No se recomienda que el nombre de los campos inicie con un número. 
+
+
+## 5.2. Ejemplos
+
+
 
 
 
