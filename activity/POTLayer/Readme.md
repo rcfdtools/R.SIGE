@@ -1,4 +1,4 @@
-# Inventario de información geo-espacial recopilada y diccionario de datos
+# Inventario de información geo-espacial recopilada del POT y diccionario de datos
 Keywords: `pot` `data-gis-dictionaty` `shapefile` `feature-class` `layer` `grid` `tiff` `geodatabase` `gdb` `CRS` `envelope` `geotable`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
@@ -107,7 +107,7 @@ Listado de archivos obtenidos
 
 Para la visualización preliminar y consulta de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
-1. En ArcGIS Pro, cree un proyecto nuevo en blanco con el nombre `ArcGISPro` y guarde dentro de la carpeta `\file\map`.
+1. En ArcGIS Pro, cree un proyecto nuevo en blanco con el nombre `ArcGISPro` y guarde dentro de la carpeta `\file\map`. Renombre el mapa inicial como _POTLayer_. Podrá observar que automáticamente se agrega al mapa la capa _Topographic_ que corresponde al mapa topográfico del mundo creado por ESRI.
 
 <div align="center"><img src="graph/ArcGISPro_NewMap.png" alt="R.SIGE" width="100%" border="0"/></div>
 
@@ -433,7 +433,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
 | 2024.03.07 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 | 2024.07.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-| 2024.07.05 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| 2024.07.05 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
