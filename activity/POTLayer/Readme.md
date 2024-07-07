@@ -352,9 +352,9 @@ En QGIS podrá realizar la visualización de los diferentes elementos siguiendo 
 
 ## 5. Diccionario de datos
 
-El diccionario de datos es un documento en el cual se establecen las especificaciones de los objetos espaciales y tablas geocodificadas, manipulados en un Sistema de Información Geográfica. La aplicación de este documento es primordial para los procesos de producción, actualización, consulta, análisis y distribución de datos espaciales debido a que se contribuye a mejorar su calidad y administración, evitando de esta manera ambiguedades e inconsistencias que puedan surgir en su interpretación.
+El diccionario de datos, es un documento o un libro en el cual se establecen las especificaciones de los objetos espaciales y tablas geo-codificadas, manipulados en un Sistema de Información Geográfica. La aplicación de este documento es primordial para los procesos de producción, actualización, consulta, análisis y distribución de datos espaciales, debido a que se contribuye a mejorar su calidad y administración, evitando de esta manera ambiguedades e inconsistencias que puedan surgir en su interpretación.
 
-> Metadatos (.xml): para complementar el diccionario de datos, se recomienda editar el diccionario de datos asociado a cada elemento geográfico e incluir información relacionada con autores, licencia, restricciones de uso, versión, fecha de creación, fecha de actualización y demás información relevante.
+> Metadatos (.xml): para complementar el diccionario de datos, se recomienda editar los metadatos asociados a cada elemento geográfico e incluir información relacionada con autores, licencia, restricciones de uso, versión, fecha de creación, fecha de actualización y demás información relevante.
 
 
 ### 5.1. Elementos descriptivos
