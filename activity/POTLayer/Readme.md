@@ -388,16 +388,15 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 
 ### 5.2. Ejemplos
 
-* [:floppy_disk:](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)Diccionario de datos Autoridad Nacional de Licencias Ambientales - ANLA  
+[:floppy_disk:](../../file/data/ANLA/DiccionarioDatosANLA.xlsx)Diccionario de datos Autoridad Nacional de Licencias Ambientales - ANLA  
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Tablas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Dominios.png" alt="R.SIGE" width="100%" border="0"/></div>
-<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
+<div align="center"><img src="graph/Excel_DiccionarioDatosANLA_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div><br><br>
 
-
-* [:floppy_disk:](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)Diccionario de datos Universidad Escuela Colombiana de Ingeniería - UECIJG
+[:floppy_disk:](../../file/data/UECIJG/DiccionarioDatosUECIJG.xlsx)Diccionario de datos Universidad Escuela Colombiana de Ingeniería - UECIJG
 
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Estructura.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
