@@ -1,5 +1,5 @@
 # Inventario de información geo-espacial recopilada y diccionario de datos
-Keywords: `DEM` `AgreeDEM`
+Keywords: `pot` `data-gis-dictionaty` `shapefile` `feature-class` `layer` `grid` `tiff` `geodatabase` `gdb` `CRS` `envelope` `geotable`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
 
