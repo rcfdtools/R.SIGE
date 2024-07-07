@@ -32,11 +32,32 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 <div align="center"><img src="graph/ArcGISPro_CoordinateSystem9377.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Desde el Panel de Catálogo (_Catalog_) localizado a la derecha, cargue al mapa desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, la clase de entidad denominada _VEREDA_. De clic en el ícono de simbología de la capa y establezca borde negro y sin relleno.
 
-3. Desde el Panel de Catálogo (_Catalog_) localizado a la derecha, cargue al mapa desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, la clase de entidad denominada _VEREDA_.
+<div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Seleccione en _Contents_ la capa _VEREDA_, en la parte superior podrá observar que se activan opciones específicas para esta capa, vaya al menú _Labeling_ y establezca el rotulado de la capa utilizando a partir del nombre de la vereda.
+
+<div align="center"><img src="graph/ArcGISPro_LayerLabelBasic.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En el panel contents, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl<kbd>+<kbd>T<kbd> y con la opción _Add_ agregue los siguientes campos:
+
+| Campo | Descripción                    | Tipo    |
+|-------|--------------------------------|---------|
+| APha  | Área planar en hectáreas       | Double  |
+| AGha  | Área geográfica en hectáreas   | Double  |
+| PPm   | Perímetro planar en metros     | Double  |
+| PGm   | Perímetro geográfico en metros | Double  |
+
+> Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.
+> Los valores geográficos corresponden a los calculados teniendo en cuenta la curvatura terrestre.
+
+En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
+
+<div align="center"><img src="graph/ArcGISPro_TableAddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
+> Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
 
 ### 1.2. Mapa veredal a partir de predios diagnóstico POT año 2010
 
