@@ -53,9 +53,12 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 > Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.  
 > Los valores geodésicos corresponden a los calculados teniendo en cuenta la curvatura terrestre.
 
+<div align="center"><img src="graph/ArcGISPro_TableAddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 
-<div align="center"><img src="graph/ArcGISPro_TableAddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Table1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 6. En la tabla de atributos y dando clic sobre el campo `APha`, seleccione la opción _Calculate Geometry_ que le permitirá calcular las propiedades geométricas asociadas a las entidades.
 
