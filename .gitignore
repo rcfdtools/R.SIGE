@@ -39,6 +39,7 @@ Lib/
 *.sbn
 *.sbx
 *.shp.*
+*.xml
 # Geodatabases
 *.gdb*
 *.mdb*
