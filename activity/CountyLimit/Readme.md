@@ -40,7 +40,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 <div align="center"><img src="graph/ArcGISPro_LayerLabelBasic.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En el panel contents, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl<kbd>+<kbd>T<kbd> y con la opción _Add_ agregue los siguientes campos:
+5. En el panel contents, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos:
 
 | Campo | Descripción                    | Tipo    |
 |-------|--------------------------------|---------|
