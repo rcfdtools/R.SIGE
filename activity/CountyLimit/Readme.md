@@ -116,8 +116,19 @@ Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
 > Para la ruta de salida de todas las capas en formato shapefile a generar en este curso, utilizaremos la ruta _\R.SIGE\file\shp_.
 
 <div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural_Zoom.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> Como puede observar, se han creado 14 veredas, sin embargo, contienen regiones internas vacías debidas a los corredores viales que no se incluyen en las capas de predios catastrales como unidades prediales, por lo que es necesario editar la geometría de la capa y eliminar manualmente los nodos internos para crear una región contínua.
+> Como puede observar, se han creado 14 veredas, sin embargo, contienen regiones internas vacías debidas a los corredores viales que no se incluyen en las capas de predios catastrales como unidades prediales, por lo que será necesario editar la geometría de la capa y eliminar manualmente los nodos internos para crear una región contínua. Para este ejercicio, no eliminaremos estos nodos internos.
+
+5. En la tabla de contenido, desplace el mapa _VEREDA_ y ubíquelo sobre el mapa de veredas creadas a partir de predios, podrá observar que existe correspondencia exterior en casi todas las zonas.
+
+<div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural_Check1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Se recomienda recorrer todos los bordes perimetrales e identificar en que zonas existen diferencias importantes entre estas dos capas.
+
+6. En la tabla de atributos, agregue los campos requeridos (APha, AGha, PPm, PGm, Nodos) y realice los cálculos geométricos utilizando el CRS 9377.
+
+
 
 
 
