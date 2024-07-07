@@ -370,9 +370,7 @@ En un diccionario de datos deben ser incluídos los siguientes grupos de element
 | Grillas            | Descripción detallada de grillas ráster incluyendo nu nombre, descripción, fuente, formato, cubrimiento, temporalidad.                              |
 | Setup              | Tablas para generación de listas desplegables para selección de atributos comunes en el diccionario.                                                |
 
-> :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad.
-> 
-> En el diccionario de datos también pueden ser incluído el responsable de mantener la información actualizada en cada elemento, el nombre del dataset asociado, la escala de visualización y una ilustración mostrando la capa.
+> :bulb:Para las capas geográficas, tablas y grillas ráster, se recomienda incluir las columnas definidas en la tabla de recopilación utilizada en esta actividad. También pueden ser incluído el responsable de mantener la información actualizada en cada elemento, el nombre del dataset asociado, la escala de visualización y una ilustración mostrando la capa.
 
 Para el catálogo de objetos de capas y tablas, se deben incluir:
 
