@@ -1,4 +1,4 @@
-# Inventario de información geo-espacial recopilada 
+# Inventario de información geo-espacial recopilada y diccionario de datos
 Keywords: `DEM` `AgreeDEM`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
