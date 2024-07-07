@@ -66,15 +66,32 @@ Calcule las propiedades solicitadas indicando las unidades de cálculo y el sist
 > En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.  
 > Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos Shape_Area y Shape_length (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
 
+Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el editor de geometría, calcule el número de nodos que componen cada entidad.
+
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometryRun.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> :bulb:Recuerde que luego de incluir o modificar campos de atributos en tablas o capas, estos deben ser documentados en el diccionario de datos.
+
+7. Modifique el rótulo agregando el campo de área y perímetro geodésico, utilice una de las siguientes expresiones:
+
+| Lenguaje | Sentencia                                                                                                                                       |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Arcade   | `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`  |
+| VBScript | `[nombre] & VbNewLine & "A (ha): " & Round([AGha],2) & VbNewLine & "P (m):" & Round([PGm], 2)`                                                  |
+| Python   | `[nombre] + "\nA (ha): " + str(round(float([AGha]), 2)) + "\nP (m):" + str(round(float([PGm]), 2))`                                             |
+| JScript  | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                           |
+
+
+<div align="center"><img src="graph/ArcGISPro_TableAddFieldAdvanced.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. En el panel lateral *Contents*, de clic derecho en _VEREDA_ y seleccione la opción _Create Chart / Bar Chart_, cree una gráfica en orden descendente para los valores de área geográfica, podrá observar que la vereda Páramo de Guerrero es la de mayor extensión.
+
+<div align="center"><img src="graph/ArcGISPro_Vereda1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
 
-
-> Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
 
 ### 1.2. Mapa veredal a partir de predios diagnóstico POT año 2010
 
@@ -95,6 +112,8 @@ https://www.colombiaenmapas.gov.co
 
 ### 
 
+
+> Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
 
 
 ## Actividades de proyecto :triangular_ruler:
