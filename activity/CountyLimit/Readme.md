@@ -40,7 +40,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 <div align="center"><img src="graph/ArcGISPro_LayerLabelBasic.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En el panel contents, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos:
+5. En el panel _Contents_, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos:
 
 | Campo | Descripción                    | Tipo    |
 |-------|--------------------------------|---------|
@@ -49,7 +49,8 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 | PPm   | Perímetro planar en metros     | Double  |
 | PGm   | Perímetro geográfico en metros | Double  |
 
-> Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.
+> Tenga en cuenta que al crear los campos no se calculan automáticamente estas propiedades geométricas.  
+> Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.  
 > Los valores geográficos corresponden a los calculados teniendo en cuenta la curvatura terrestre.
 
 En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
