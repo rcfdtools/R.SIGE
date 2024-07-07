@@ -40,22 +40,38 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 <div align="center"><img src="graph/ArcGISPro_LayerLabelBasic.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En el panel _Contents_, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos:
+5. En el panel _Contents_, seleccione la capa, abra la tabla de atributos u oprima <kbd>Ctrl</kbd>+<kbd>T</kbd> y con la opción _Add_ agregue los siguientes campos y guarde las modificaciones realizadas en la tabla cerrando la ventana de modificación o mediante la opción guardar o _Save_ que aparece en el menú superior:
 
-| Campo | Descripción                    | Tipo    |
-|-------|--------------------------------|---------|
-| APha  | Área planar en hectáreas       | Double  |
-| AGha  | Área geográfica en hectáreas   | Double  |
-| PPm   | Perímetro planar en metros     | Double  |
-| PGm   | Perímetro geográfico en metros | Double  |
+| Campo | Descripción                   | Tipo    | Propiedad ArcGIS Pro        | 
+|-------|-------------------------------|---------|-----------------------------| 
+| APha  | Área planar en hectáreas      | Double  | Area                        |
+| AGha  | Área geodésica en hectáreas   | Double  | Area (geodesic)             |
+| PPm   | Perímetro planar en metros    | Double  | Perimeter length            |
+| PGm   | Perímetro geodésico en metros | Double  | Perimeter length (geodesic) |
 
 > Tenga en cuenta que al crear los campos no se calculan automáticamente estas propiedades geométricas.  
 > Los valores planares corresponden a los calculados a partir de la proyección de la capa sobre un plano horizontal.  
-> Los valores geográficos corresponden a los calculados teniendo en cuenta la curvatura terrestre.
+> Los valores geodésicos corresponden a los calculados teniendo en cuenta la curvatura terrestre.
 
 En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 
 <div align="center"><img src="graph/ArcGISPro_TableAddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En la tabla de atributos y dando clic sobre el campo `APha`, seleccione la opción _Calculate Geometry_ que le permitirá calcular las propiedades geométricas asociadas a las entidades.
+
+<div align="center"><img src="graph/ArcGISPro_CalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Calcule las propiedades solicitadas indicando las unidades de cálculo y el sistema de proyección 9377, correspondiente a MAGNA Orígen Único Nacional de Colombia.
+
+> En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.  
+> Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos Shape_Area y Shape_length (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
+
+<div align="center"><img src="graph/ArcGISPro_CalculateGeometryRun.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
 
 
 > Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
