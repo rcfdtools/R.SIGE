@@ -72,7 +72,7 @@ Calcule las propiedades solicitadas indicando las unidades de cálculo y el sist
 > En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.  
 > Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos Shape_Area y Shape_length (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
 
-Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el editor de geometría, calcule el número de nodos que componen cada entidad.
+Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el editor de geometría, calcule el número de nodos que componen cada entidad, utilizando para ello la propiedad geométrica número de vértices (_Number of Vertices_).
 
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometryRun.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -88,7 +88,7 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 | JScript  | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                           |
 
 
-<div align="center"><img src="graph/ArcGISPro_TableAddFieldAdvanced.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_TableLabelAdvanced1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 8. En el panel lateral *Contents*, de clic derecho en _VEREDA_ y seleccione la opción _Create Chart / Bar Chart_, cree una gráfica en orden descendente para los valores de área geográfica, podrá observar que la vereda Páramo de Guerrero es la de mayor extensión.
 
@@ -126,9 +126,19 @@ Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
 
 > Se recomienda recorrer todos los bordes perimetrales e identificar en que zonas existen diferencias importantes entre estas dos capas.
 
-6. En la tabla de atributos, agregue los campos requeridos (APha, AGha, PPm, PGm, Nodos) y realice los cálculos geométricos utilizando el CRS 9377.
+6. En la tabla de atributos, agregue los campos requeridos (APha, AGha, PPm, PGm, Nodos) y realice los cálculos geométricos utilizando el CRS 9377. 
 
+Rotule la capa de veredas utilizando la expresión Arcade: `$feature.vereda_id + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)` 
 
+> En la tabla de atributos podrá observar que a partir de la disolución hemos obtenido el conteo de predios en cada vereda, encontrando que la vereda Paso Ancho es la que tiene el mayor número de divisiones prediales con 2775 predios.
+
+<div align="center"><img src="graph/ArcGISPro_TableLabelAdvanced2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Como observa en la imagen, los valores de área de las veredas calculadas previamente son diferentes a los obtenidos a partir de predios. Para conocer el área correspondiente a vías + corredores de cauces + espacios públicos sin predio catastral, puede restar los valores de estas dos áreas.
+
+En la tabla podrá observar que esta capa también se compone de 14 entidades o veredas.
+
+<div align="center"><img src="graph/ArcGISPro_Table2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
