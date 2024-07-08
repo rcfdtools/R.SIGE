@@ -88,7 +88,7 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 | JScript  | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                           |
 
 
-<div align="center"><img src="graph/ArcGISPro_TableLabelAdvanced1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LabelAdvanced1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 8. En el panel lateral *Contents*, de clic derecho en _VEREDA_ y seleccione la opción _Create Chart / Bar Chart_, cree una gráfica en orden descendente para los valores de área geográfica, podrá observar que la vereda Páramo de Guerrero es la de mayor extensión.
 
@@ -132,7 +132,7 @@ Rotule la capa de veredas utilizando la expresión Arcade: `$feature.vereda_id +
 
 > En la tabla de atributos podrá observar que a partir de la disolución hemos obtenido el conteo de predios en cada vereda, encontrando que la vereda Paso Ancho es la que tiene el mayor número de divisiones prediales con 2775 predios.
 
-<div align="center"><img src="graph/ArcGISPro_TableLabelAdvanced2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LabelAdvanced2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 > Como observa en la imagen, los valores de área de las veredas calculadas previamente son diferentes a los obtenidos a partir de predios. Para conocer el área correspondiente a vías + corredores de cauces + espacios públicos sin predio catastral, puede restar los valores de estas dos áreas.
 
@@ -148,8 +148,9 @@ Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la ca
 
 > Para diferenciar las capas de veredas, utilice diferentes colores de borde y desde la tabla de contenido renombre las capas. Por ejemplo, la capa _VEREDA_ de la formulación puede ser renombrada como _Veredas (2013 formulación POT)_. 
 
-<div align="center"><img src="graph/ArcGISPro_Table2.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_Vereda2Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LabelAdvanced3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Table3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Vereda3Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
