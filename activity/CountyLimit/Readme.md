@@ -247,6 +247,8 @@ Límite municipal a partir de modelo de ordenamiento territorial 2013 MOT: Mpio2
 Seleccione la herramienta de eliminación de nodos (puntero de edición con símbolo menos) y elimine los nodos internos. Tenga cuidado de eliminar nodos en la zona perimetral externa a conservar.
 
 
+Para terminar la edición, en el panel superior del menú _Edit_, seleccione la opción de guardado o _Save_.
+
 
 
 3. Recalcule las propiedades geométricas de cada capa obtenida.
