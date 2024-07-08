@@ -157,11 +157,31 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 
 ### 1.5. Mapa veredal DANE 2022
 
-1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas de Colombia en formato shapefile. Obtendrá un archivo comprimido, descomprima y guarde en la carpeta _\R.SIGE\file\data\DANE\_ de su repositorio de datos. 
+1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la carpeta _\R.SIGE\file\data\DANE\_ de su repositorio de datos. 
 
 > Para la descarga se requiere de inicio de sesión de usuario utilizando por ejemplo una cuenta activa de Google.
 
 <div align="center"><img src="graph/ColombiaMapa1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde la ruta de descompresión, cargue la capa de veredas de Colombia al mapa, cambie la simpobología de representación y abra la tabla de atributos.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer_VeredaDANE.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> En la tabla de atributos podrá observar que existen diferentes campos asociados a los municipios de Colombia.
+
+3. Desde la tabla de contenido, de clic derecho en la capa y seleccione la opción de propiedades, de clic en la pestaña de creación de consultas o _Definition Query_ y establezca un filtro para nombre de municipio igual a Zipaquirá.
+
+Query filter: `NOMB_MPIO = 'ZIPAQUIRÁ'`
+
+Podrá observar que se obtienen 14 resultados correspondientes a las veredas del municipio del caso de estudio.
+
+<div align="center"><img src="graph/ArcGISPro_QueryBuilder_VeredaDANE.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
 
 
 
