@@ -61,8 +61,6 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 
-<div align="center"><img src="graph/ArcGISPro_Table1.png" alt="R.SIGE" width="100%" border="0" /></div>
-
 6. En la tabla de atributos y dando clic sobre el campo `APha`, seleccione la opción _Calculate Geometry_ que le permitirá calcular las propiedades geométricas asociadas a las entidades.
 
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -77,6 +75,8 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometryRun.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 > :bulb:Recuerde que luego de incluir o modificar campos de atributos en tablas o capas, estos deben ser documentados en el diccionario de datos.
+
+<div align="center"><img src="graph/ArcGISPro_Table1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 7. Modifique el rótulo agregando el campo de área y perímetro geodésico, utilice una de las siguientes expresiones:
 
@@ -141,9 +141,12 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 <div align="center"><img src="graph/ArcGISPro_Table2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
 ### 1.3. Mapa veredal formulación POT año 2013
+
+1. Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_. Cambie la simbología a polígonos sin relleno.
+
+2. Agregue los campos de atributos y realice la rotulación.
+
 
 
 
