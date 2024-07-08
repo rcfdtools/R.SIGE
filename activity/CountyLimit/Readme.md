@@ -211,9 +211,42 @@ Con respecto a las áreas veredales del diagnóstico 210 vs. DANE 2020, se puede
 
 ### 1.6. Obtención de límites territoriales
 
-A partir de las capas de veredas y utilizando la capa del modelo de ordenamiento territorial - MOT, cree los polígonos de delimitación del municipio.
+A partir de las capas de veredas evaluadas en los numerales anteriores y utilizando la capa del modelo de ordenamiento territorial - MOT disponible en la información recopilada del POT en la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp_, cree los polígonos de delimitación del municipio. El proceso consiste en utilizar la herramienta Data _Management Tools / Dissolve_ utilizada anteriormente en esta actividad. 
 
-1.
+1. Disuelva las capas veredales, guarde en la carpeta _\R.SIGE\file\shp\_ y nombre como:
+
+| Capa veredal                                                                                       | Límite territorial disuelto      |
+|----------------------------------------------------------------------------------------------------|----------------------------------|
+| Veredas (2010 diagnóstico POT): \file\data\POT\ Anexo_Acuerdo_012_2013\gdb\ 25899.gdb\RURAL\VEREDA | Mpio25899_DiagnosticoPOT2010.shp |
+| Veredas (2013 formulación POT): \file\data\POT\ Anexo_Acuerdo_012_2013\shp\VEREDA.shp              | Mpio25899_FormulacionPOT2013.shp |
+| Veredas (DANE 2020): \file\shp\VeredasDANE2020.shp                                                 | Mpio25899_DANE2020.shp           |
+| Modelo de ordenamiento territorial 2013 - MOT: \file\data\POT\ Anexo_Acuerdo_012_2013\shp\MOT.shp  | Mpio25899_MOT2013.shp            |
+
+
+Límite municipal a partir de veredas diagnóstico 2010 POT: Mpio25899_DiagnosticoPOT2010.shp      
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DiagnosticoPOT2010_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Límite municipal a partir de veredas formulación 2013 POT: Mpio25899_FormulacionPOT2013.shp    
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_FormulacionPOT2013_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Límite municipal a partir de veredas DANE 2020: Mpio25899_DANE2020.shp  
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DANE2020_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Límite municipal a partir de modelo de ordenamiento territorial 2013 MOT: Mpio25899_MOT2013.shp
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_MOT2013_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Observará que a nivel interno aparece la región vacía correspondiente a los límites urbanos. A partir de diferencia entre el área del límite municipal y el límite veredal, podrá obtener el tamaño del área urbana.  
+> En las ilustraciones, podrá observar que internamente existen otras subzonas o puntos correspondientes a errores de digitalización por falta de coalineación entre los bordes de las entidades a partir de las cuales se realizo la disolución.
+
+2. Desde el menú _Edit_, seleccione la herramienta _Modify_ que le permitirá modificar los vértices de las entidades 
+
+
+
+3. Recalcule las propiedades geométricas de cada capa obtenida.
+
+
+
+
 
 
 
@@ -228,12 +261,10 @@ https://www.colombiaenmapas.gov.co
 
 ## Elementos a incluir en el diccionario de datos
 
-| Nombre                                       | Descripción                                                                             | Geometría   | Registros | 
-|----------------------------------------------|-----------------------------------------------------------------------------------------|-------------|-----------| 
-| Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios catastro 2010 (_TERRENO_PREDIO_RURAL_) | Polígono 2D | 14        | 
-
-
-
+| Nombre                                       | Descripción                                                                                                                  | Geometría   | Registros | 
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios catastro 2010 (_TERRENO_PREDIO_RURAL_)                                      | Polígono 2D | 14        | 
+| VeredasDANE2020.shp                          | Veredas DANE 2020 Municipio de Zipaquirá a partir de la capa de veredas de Colombia disponible en www.colombiaenmapas.gov.co | Polígono 2D | 14        | 
 
 
 ## Actividades de proyecto :triangular_ruler:
