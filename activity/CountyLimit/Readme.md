@@ -157,7 +157,14 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 
 ### 1.5. Mapa veredal DANE 2022
 
-Desde la plataforma de 
+1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas de Colombia en formato shapefile. Obtendrá un archivo comprimido, descomprima y guarde en la carpeta _\R.SIGE\file\data\DANE\_ de su repositorio de datos. 
+
+> Para la descarga se requiere de inicio de sesión de usuario utilizando por ejemplo una cuenta activa de Google.
+
+<div align="center"><img src="graph/ColombiaMapa1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 ### 1.4. Análisis de diferencias encontradas
