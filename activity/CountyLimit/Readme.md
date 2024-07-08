@@ -144,7 +144,7 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 
 ### 1.3. Mapa veredal formulación POT año 2013
 
-Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
+Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
 Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
 
@@ -155,13 +155,16 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ArcGISPro_Vereda3Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-### 1.4. Mapa veredal a partir de predios año 2020
-
-
-
 ### 1.5. Mapa veredal DANE 2022
+
+Desde la plataforma de 
+
+
+### 1.4. Análisis de diferencias encontradas
+
+
+
+
 
 https://www.colombiaenmapas.gov.co
 
@@ -188,7 +191,12 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
+| Avance **P1** | Para su caso de estudio, evalúe las capas de veredas del diagnóstico y la formulación.                                                                                                                                                                                                                                                                                                                                                              | 
+| Avance **P1** | A partir de la base predial utilizada en el diagnóstico y la formulación, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                  | 
+| Avance **P1** | Utilizando la base de datos predial más reciente, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                                          | 
+| Avance **P1** | Descargue y extraiga las veredas a partir de la última versión DANE disponible.                                                                                                                                                                                                                                                                                                                                                                     | 
+| Avance **P1** | Compare todos los límites veredales obtenidos e identifique y evalúe en que zonas se han realizado mutaciones de suelo rural a urbano.                                                                                                                                                                                                                                                                                                              | 
+| Avance **P1** | Cree diferentes perímetros urbanos a partir de la capas veredales y utilizando el mapa del modelo de ordenamiento territorial vigente, analice y explique sus diferencias.                                                                                                                                                                                                                                                                          | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
