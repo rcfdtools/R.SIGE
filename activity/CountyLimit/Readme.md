@@ -144,9 +144,12 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 
 ### 1.3. Mapa veredal formulación POT año 2013
 
-1. Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_. Cambie la simbología a polígonos sin relleno.
+Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
-2. Agregue los campos de atributos y realice la rotulación.
+> Para diferenciar las capas de veredas, utilice diferentes colores de borde y desde la tabla de contenido renombre las capas. Por ejemplo, la capa _VEREDA_ de la formulación puede ser renombrada como _Veredas (2013 formulación POT)_. 
+
+<div align="center"><img src="graph/ArcGISPro_Table2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Vereda2Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
