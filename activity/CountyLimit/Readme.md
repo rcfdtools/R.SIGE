@@ -254,6 +254,12 @@ Para terminar la edición, en el panel superior del menú _Edit_, seleccione la 
 
 3. Agregue los campos para el cálculo de las propiedades geométricas y obtenga estos valores. Rotule las entidades.
 
+Rótulo Arcade: `"A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 
