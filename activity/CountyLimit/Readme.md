@@ -238,7 +238,14 @@ Límite municipal a partir de modelo de ordenamiento territorial 2013 MOT: Mpio2
 > Observará que a nivel interno aparece la región vacía correspondiente a los límites urbanos. A partir de diferencia entre el área del límite municipal y el límite veredal, podrá obtener el tamaño del área urbana.  
 > En las ilustraciones, podrá observar que internamente existen otras subzonas o puntos correspondientes a errores de digitalización por falta de coalineación entre los bordes de las entidades a partir de las cuales se realizo la disolución.
 
-2. Desde el menú _Edit_, seleccione la herramienta _Modify_ que le permitirá modificar los vértices de las entidades 
+2. En la tala de contenido, seleccione una de las capas de límites disueltos y desde el menú _Edit_, seleccione la herramienta _Modify / Edit Vertices_ que le permitirá modificar los vértices de las entidades. Al seleccionar una entidad y activar el modo de edición de vértices, los nodos perimetrales son activados y también el despliegue de la barra inferior de edición de nodos.
+
+> La herramienta de edición de vértices solo se activará si primero selecciona una entidad con la herramienta _Select_.
+
+<div align="center"><img src="graph/ArcGISPro_EditVertices1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Seleccione la herramienta de eliminación de nodos (puntero de edición con símbolo menos) y elimine los nodos internos. Tenga cuidado de eliminar nodos en la zona perimetral externa a conservar.
+
 
 
 
