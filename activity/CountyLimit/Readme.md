@@ -155,7 +155,7 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ArcGISPro_Vereda3Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.5. Mapa veredal DANE 2022
+### 1.4. Mapa veredal DANE 2022
 
 1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la carpeta _\R.SIGE\file\data\DANE\_ de su repositorio de datos. 
 
@@ -192,14 +192,24 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ArcGISPro_Table4.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Vereda4Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Si revisa con atención la tabla veredal, podrá observar que los códigos catastrales y los nombres de las veredas han sido modificados. En las versiones utilizadas para la elaboración del POT, las veredas iniciaban en el código catastral 02 y en esta versión en 01.
+
+
+### 1.5. Análisis de diferencias veredales encontradas
+
+Con respecto a las áreas veredales del diagnóstico vs. formulación del POT, se puede observar en las tablas de resultados que el área aumentó en las veredas: Portachuelo, El Tunal, La Granja, El Cedro y Paso Ancho. No existen áreas con disminución debido a que en la modificación se ajustó el límite catastral veredal con incorporaciónes sobre el área catastral.
+
+<div align="center"><img src="graph/ArcGISPro_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
+### 1.6. Obtención de límites territoriales
 
-### 1.4. Análisis de diferencias encontradas
+A partir de las capas de veredas y utilizando la capa del modelo de ordenamiento territorial - MOT, cree los polígonos de delimitación del municipio.
 
-
+1.
 
 
 
