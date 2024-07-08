@@ -15,6 +15,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:open_file_folder:VeredaLimite.xlsx](VeredaLimite.xlsx): libro para registro y análisis de áreas veredales y límite territorial
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
 * [:toolbox:Herramienta](https://qgis.org/): QGIS
 
@@ -197,12 +198,15 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 
 ### 1.5. Análisis de diferencias veredales encontradas
 
-Con respecto a las áreas veredales del diagnóstico vs. formulación del POT, se puede observar en las tablas de resultados que el área aumentó en las veredas: Portachuelo, El Tunal, La Granja, El Cedro y Paso Ancho. No existen áreas con disminución debido a que en la modificación se ajustó el límite catastral veredal con incorporaciónes sobre el área catastral.
+Con respecto a las áreas veredales del diagnóstico 2010 vs. formulación 2013 del POT, se puede observar en las tablas de resultados que el área aumentó en las veredas: Portachuelo, El Tunal, La Granja, El Cedro y Paso Ancho. No existen áreas con disminución debido a que en la modificación se ajustó el límite catastral veredal con incorporaciónes sobre el área catastral.
 
 <div align="center"><img src="graph/ArcGISPro_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Con respecto a las áreas veredales del diagnóstico 210 vs. DANE 2020, se puede observar en las tablas de resultados que el área aumentó y disminuyo, asjustándose los límites territoriales. También, los códigos catastrales han cambiado y se han renombrado algunas veredas.
 
+<div align="center"><img src="graph/ArcGISPro_VeredaDiagnosticoVsDANE2020.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_VeredaDiagnosticoVsDANE2020.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 1.6. Obtención de límites territoriales
