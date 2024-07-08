@@ -139,6 +139,7 @@ Rotule la capa de veredas utilizando la expresión Arcade: `$feature.vereda_id +
 En la tabla podrá observar que esta capa también se compone de 14 entidades o veredas.
 
 <div align="center"><img src="graph/ArcGISPro_Table2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Vereda2Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 1.3. Mapa veredal formulación POT año 2013
