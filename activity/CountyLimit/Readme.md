@@ -8,7 +8,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 ## Objetivos
 
-* Evaluar los límites geopolíticos veredales e identificar sus diferencias.
+* Evaluar los límites geopolíticos veredales e identificar y entender sus diferencias.
 * Crear el límite municipal global.
 
 
