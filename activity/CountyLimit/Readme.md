@@ -258,23 +258,9 @@ Rótulo Arcade: `"A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine +
 
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+<div align="center"><img src="graph/ArcGISPro_Mpio25899Limits.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-
-
-
-
-
-
-
-https://www.colombiaenmapas.gov.co
-
-
-### 
-
-
-> Como observa, el área urbana no esta incluída en los límites geográficos de la capa, sin embargo, podrá calcular su área restando
+Como observa, existen algunas diferencias en los valores de área calculados y los límites son diferentes en algunas zonas.
 
 
 ## Elementos a incluir en el diccionario de datos
