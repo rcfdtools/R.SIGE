@@ -144,7 +144,7 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 
 ### 1.3. Mapa veredal formulación POT año 2013
 
-Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
+Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
 Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
 
@@ -164,7 +164,9 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ColombiaMapa1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Desde la ruta de descompresión, cargue la capa de veredas de Colombia al mapa, cambie la simpobología de representación y abra la tabla de atributos.
+Veredas DANE: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
+
+2. Desde la ruta de descompresión, cargue la capa de veredas de Colombia al mapa, cambie la simbología de representación y abra la tabla de atributos.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer_VeredaDANE.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -178,9 +180,17 @@ Podrá observar que se obtienen 14 resultados correspondientes a las veredas del
 
 <div align="center"><img src="graph/ArcGISPro_QueryBuilder_VeredaDANE.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Desde la tabla de contenido, de clic derecho en la capa y seleccione la opción _Data / Export Featues_ y exporte los resultados del filtro a una nueva capa, guarde dentro del directorio \R.SIGE\file\shp\ como _VeredasDANE2020.shp_.
 
+<div align="center"><img src="graph/ArcGISPro_ExportFeatues_VeredaDANE.png" alt="R.SIGE" width="40%" border="0" /></div>
 
+5. Cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
+Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_LabelAdvanced4.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Table4.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Vereda4Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
