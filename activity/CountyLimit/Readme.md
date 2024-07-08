@@ -228,9 +228,9 @@ https://www.colombiaenmapas.gov.co
 
 ## Elementos a incluir en el diccionario de datos
 
-| Nombre                                       | Descripción                                                                                                                           | Geometría   | Registros | 
-|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios \R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\RURAL\25899.gdbTERRENO_PREDIO_RURAL | Polígono 2D | 14        | 
+| Nombre                                       | Descripción                                                                             | Geometría   | Registros | 
+|----------------------------------------------|-----------------------------------------------------------------------------------------|-------------|-----------| 
+| Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios catastro 2010 (_TERRENO_PREDIO_RURAL_) | Polígono 2D | 14        | 
 
 
 
