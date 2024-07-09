@@ -182,7 +182,7 @@ Podrá observar que se obtienen 14 resultados correspondientes a las veredas del
 
 <div align="center"><img src="graph/ArcGISPro_QueryBuilder_VeredaDANE.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Desde la tabla de contenido, de clic derecho en la capa y seleccione la opción _Data / Export Featues_ y exporte los resultados del filtro a una nueva capa, guarde dentro del directorio \R.SIGE\file\shp\ como _VeredasDANE2020.shp_.
+4. Desde la tabla de contenido, de clic derecho en la capa y seleccione la opción _Data / Export Featues_ y exporte los resultados del filtro a una nueva capa, guarde en la ruta `\R.SIGE\file\shp\` como _VeredasDANE2020.shp_.
 
 <div align="center"><img src="graph/ArcGISPro_ExportFeatues_VeredaDANE.png" alt="R.SIGE" width="40%" border="0" /></div>
 
@@ -204,7 +204,7 @@ Con respecto a las áreas veredales del diagnóstico 2010 vs. formulación 2013 
 <div align="center"><img src="graph/ArcGISPro_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_VeredaDiagnosticoVsFormulacion.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Con respecto a las áreas veredales del diagnóstico 210 vs. DANE 2020, se puede observar en las tablas de resultados que el área aumentó y disminuyo, asjustándose los límites territoriales. También, los códigos catastrales han cambiado y se han renombrado algunas veredas.
+Con respecto a las áreas veredales del diagnóstico 2010 vs. DANE 2020, se puede observar en las tablas de resultados que el área aumentó y disminuyo, asjustándose los límites territoriales. También, los códigos catastrales han cambiado y se han renombrado algunas veredas.
 
 <div align="center"><img src="graph/ArcGISPro_VeredaDiagnosticoVsDANE2020.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_VeredaDiagnosticoVsDANE2020.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -218,12 +218,12 @@ A partir de las capas de veredas evaluadas en los numerales anteriores y utiliza
 
 1. Disuelva las capas veredales, guarde en la ruta `\R.SIGE\file\shp\` y nombre como:
 
-| Capa veredal                                                                                     | Límite territorial disuelto      |
-|--------------------------------------------------------------------------------------------------|----------------------------------|
-| Veredas (2010 diagnóstico POT): \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL\VEREDA | Mpio25899_DiagnosticoPOT2010.shp |
-| Veredas (2013 formulación POT): \file\data\POT\Anexo_Acuerdo_012_2013\shp\VEREDA.shp             | Mpio25899_FormulacionPOT2013.shp |
-| Veredas (DANE 2020): \file\shp\VeredasDANE2020.shp                                               | Mpio25899_DANE2020.shp           |
-| Modelo de ordenamiento territorial 2013 - MOT: \file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp | Mpio25899_MOT2013.shp            |
+| Capa veredal                                                                                      | Límite territorial disuelto       |
+|:--------------------------------------------------------------------------------------------------|:----------------------------------|
+| Veredas (2010 diagnóstico POT): \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL\VEREDA  | Mpio25899_DiagnosticoPOT2010.shp  |
+| Veredas (2013 formulación POT): \file\data\POT\Anexo_Acuerdo_012_2013\shp\VEREDA.shp              | Mpio25899_FormulacionPOT2013.shp  |
+| Veredas (DANE 2020): \file\shp\VeredasDANE2020.shp                                                | Mpio25899_DANE2020.shp            |
+| Modelo de ordenamiento territorial 2013 - MOT: \file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp  | Mpio25899_MOT2013.shp             |
 
 
 Límite municipal a partir de veredas diagnóstico 2010 POT: Mpio25899_DiagnosticoPOT2010.shp      
@@ -241,7 +241,7 @@ Límite municipal a partir de modelo de ordenamiento territorial 2013 MOT: Mpio2
 > Observará que a nivel interno aparece la región vacía correspondiente a los límites urbanos. A partir de diferencia entre el área del límite municipal y el límite veredal, podrá obtener el tamaño del área urbana.  
 > En las ilustraciones, podrá observar que internamente existen otras subzonas o puntos correspondientes a errores de digitalización por falta de coalineación entre los bordes de las entidades a partir de las cuales se realizo la disolución.
 
-2. En la tala de contenido, seleccione una de las capas de límites disueltos y desde el menú _Edit_, seleccione la herramienta _Modify / Edit Vertices_ que le permitirá modificar los vértices de las entidades. Al seleccionar una entidad y activar el modo de edición de vértices, los nodos perimetrales son activados y también el despliegue de la barra inferior de edición de nodos.
+2. En la tabla de contenido, seleccione una de las capas de límites disueltos y desde el menú _Edit_, seleccione la herramienta _Modify / Edit Vertices_ que le permitirá modificar los vértices de las entidades. Al seleccionar una entidad y activar el modo de edición de vértices, los nodos perimetrales son activados y también el despliegue de la barra inferior de edición de nodos.
 
 > La herramienta de edición de vértices solo se activará si primero selecciona una entidad con la herramienta _Select_.
 
@@ -265,13 +265,17 @@ Rótulo Arcade: `"A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine +
 
 Como observa en las ilustraciones, existen algunas diferencias en los valores de área calculados y los límites son diferentes en algunas zonas.
 
-| Límite territorial disuelto      | APha     | AGha     | PPm       | PGm       | Nodos | 
-|----------------------------------|----------|----------|-----------|-----------|-------|
-| Mpio25899_DiagnosticoPOT2010.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 |
-| Mpio25899_FormulacionPOT2013.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 |
-| Mpio25899_DANE2020.shp           | 19457.06 | 19482.02 | 107445.24 | 107514.37 | 13292 |
-| Mpio25899_MOT2013.shp            | 19497.39 | 19522.39 | 107576.30 | 107645.57 | 22966 |
+| Límite territorial disuelto      | APha     | AGha     | PPm       | PGm       | Nodos | AGha veredal  | AGha urbana | % cambio urbano |
+|----------------------------------|----------|----------|-----------|-----------|-------|---------------|-------------|-----------------|
+| Mpio25899_DiagnosticoPOT2010.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 | 18726.86      | 795.52      | 0.0%            |
+| Mpio25899_FormulacionPOT2013.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 | 18582.34      | 940.04      | 18.2%           |
+| Mpio25899_MOT2013.shp            | 19497.39 | 19522.39 | 107576.30 | 107645.57 | 22966 | 18586.90      | 935.49      | 17.6%           |
+| Mpio25899_DANE2020.shp           | 19457.06 | 19482.02 | 107445.24 | 107514.37 | 13292 | 18457.49      | 1024.53     | 28.8%           |
 
+Como observa en la tabla, los valores del área municipal son similares o idénticas en la información utilizada para la elaboración del POT y el área DANE 2020 es inferior debido a actualización de límites catastrales perimetrales a partir de predios. Con respecto al tamaño del área urbana, el área veredal de la formulación aumento, sin embargo, el área final definida en el MOT es un poco inferior a la definida en la formulación. Con respecto al área DANE 2020, se puede evidenciar que catastralmente ha aumentado en 229 hectáreas (28.8%) con respecto al área veredal catastral 2010.
+
+> AGha veredal: obtenida de la sumatoria de valores obtenidos en áreas de cada vereda.
+> AGha urbana: obtenida a partir de la diferencia del área total municipal y área veredal. 
 > Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
 
