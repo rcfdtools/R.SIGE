@@ -3,7 +3,7 @@ Keywords: rural-limit geopolitical-limit rural-zone
 
 En esta actividad evaluaremos los límites veredales y sus diferencias a partir del análisis de diferentes fuentes de información. Luego, crearemos el límite territorial municipal global que será utilizado para el recorte de la información geo-espacial obtenida en actividades posteriores.
 
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/CountyLimit.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Objetivos
@@ -15,7 +15,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:open_file_folder:VeredaLimite.xlsx](VeredaLimite.xlsx): libro para registro y análisis de áreas veredales y límite territorial
+* [:open_file_folder:VeredaLimite.xlsx](VeredaLimite.xlsx): libro para registro y análisis de áreas veredales
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
 * [:toolbox:Herramienta](https://qgis.org/): QGIS
 
