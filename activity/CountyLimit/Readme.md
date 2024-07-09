@@ -215,12 +215,12 @@ A partir de las capas de veredas evaluadas en los numerales anteriores y utiliza
 
 1. Disuelva las capas veredales, guarde en la carpeta _\R.SIGE\file\shp\_ y nombre como:
 
-| Capa veredal                                                                                       | Límite territorial disuelto      |
-|----------------------------------------------------------------------------------------------------|----------------------------------|
-| Veredas (2010 diagnóstico POT): \file\data\POT\ Anexo_Acuerdo_012_2013\gdb\ 25899.gdb\RURAL\VEREDA | Mpio25899_DiagnosticoPOT2010.shp |
-| Veredas (2013 formulación POT): \file\data\POT\ Anexo_Acuerdo_012_2013\shp\VEREDA.shp              | Mpio25899_FormulacionPOT2013.shp |
-| Veredas (DANE 2020): \file\shp\VeredasDANE2020.shp                                                 | Mpio25899_DANE2020.shp           |
-| Modelo de ordenamiento territorial 2013 - MOT: \file\data\POT\ Anexo_Acuerdo_012_2013\shp\MOT.shp  | Mpio25899_MOT2013.shp            |
+| Capa veredal                                                                                     | Límite territorial disuelto      |
+|--------------------------------------------------------------------------------------------------|----------------------------------|
+| Veredas (2010 diagnóstico POT): \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL\VEREDA | Mpio25899_DiagnosticoPOT2010.shp |
+| Veredas (2013 formulación POT): \file\data\POT\Anexo_Acuerdo_012_2013\shp\VEREDA.shp             | Mpio25899_FormulacionPOT2013.shp |
+| Veredas (DANE 2020): \file\shp\VeredasDANE2020.shp                                               | Mpio25899_DANE2020.shp           |
+| Modelo de ordenamiento territorial 2013 - MOT: \file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp | Mpio25899_MOT2013.shp            |
 
 
 Límite municipal a partir de veredas diagnóstico 2010 POT: Mpio25899_DiagnosticoPOT2010.shp      
@@ -260,32 +260,62 @@ Rótulo Arcade: `"A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine +
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899Limits.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Como observa, existen algunas diferencias en los valores de área calculados y los límites son diferentes en algunas zonas.
+Como observa en las ilustraciones, existen algunas diferencias en los valores de área calculados y los límites son diferentes en algunas zonas.
+
+| Límite territorial disuelto      | APha     | AGha     | PPm       | PGm       | Nodos | 
+|----------------------------------|----------|----------|-----------|-----------|-------|
+| Mpio25899_DiagnosticoPOT2010.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 |
+| Mpio25899_FormulacionPOT2013.shp | 19497.37 | 19522.38 | 107553.74 | 107623.00 | 25951 |
+| Mpio25899_DANE2020.shp           | 19457.06 | 19482.02 | 107445.24 | 107514.37 | 13292 |
+| Mpio25899_MOT2013.shp            | 19497.39 | 19522.39 | 107576.30 | 107645.57 | 22966 |
+
+> Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
 
+## Elementos a incluir en el diccionario de datos :green_book:
 
-
-## Elementos a incluir en el diccionario de datos
+Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
 | Nombre                                       | Descripción                                                                                                                  | Geometría   | Registros | 
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
 | Vereda_DiagnosticoPOT_TerrenoPredioRural.shp | Veredas generadas a partir de la capa de predios catastro 2010 (_TERRENO_PREDIO_RURAL_)                                      | Polígono 2D | 14        | 
 | VeredasDANE2020.shp                          | Veredas DANE 2020 Municipio de Zipaquirá a partir de la capa de veredas de Colombia disponible en www.colombiaenmapas.gov.co | Polígono 2D | 14        | 
+| Mpio25899_DiagnosticoPOT2010.shp             | Límite municipal obtenido a partir de la disolución del mapa veredal del diagnóstico 2010 del POT                            | Polígono 2D | 1         | 
+| Mpio25899_FormulacionPOT2013.shp             | Límite municipal obtenido a partir de la disolución del mapa veredal de la formulación 2013 del POT                          | Polígono 2D | 1         | 
+| Mpio25899_DANE2020.shp                       | Límite municipal obtenido a partir del mapa veredal DANE 2020                                                                | Polígono 2D | 1         | 
+| Mpio25899_MOT2013.shp                        | Límite municipal obtenido a partir del mapa del Modelo de Ordenamiento Territorial 2013 - MOT                                | Polígono 2D | 1         | 
+
+> Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
+
+
+## 1.2. Herramientas a utilizar en QGIS
+
+Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
+
+| Herramienta  | Alcance  |
+|:-------------|:---------|
+|              |          |
+|              |          |
+|              |          |
+|              |          |
+|              |          |
+
+
 
 
 ## Actividades de proyecto :triangular_ruler:
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad  | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| P1 Avance  | Para su caso de estudio, evalúe las capas de veredas del diagnóstico y la formulación.                                                                                                                                                                                                                                                                                                                                                              | 
-| P1 Avance  | A partir de la base predial utilizada en el diagnóstico y la formulación, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                  | 
-| P1 Avance  | Utilizando la base de datos predial más reciente, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                                          | 
-| P1 Avance  | Descargue y extraiga las veredas a partir de la última versión DANE disponible.                                                                                                                                                                                                                                                                                                                                                                     | 
-| P1 Avance  | Compare todos los límites veredales obtenidos e identifique y evalúe en que zonas se han realizado mutaciones de suelo rural a urbano.                                                                                                                                                                                                                                                                                                              | 
-| P1 Avance  | Cree diferentes perímetros urbanos a partir de la capas veredales y utilizando el mapa del modelo de ordenamiento territorial vigente, analice y explique sus diferencias.                                                                                                                                                                                                                                                                          | 
-| P1 Avance | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
+| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Para su caso de estudio, evalúe las capas de veredas utilizadas en el diagnóstico y la formulación.                                                                                                                                                                                                                                                                                                                                                | 
+| Avance **P1** | A partir de la base predial utilizada en el diagnóstico y la formulación, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                  | 
+| Avance **P1** | Utilizando la base de datos predial más reciente, cree la capa de veredas.                                                                                                                                                                                                                                                                                                                                                                          | 
+| Avance **P1** | Descargue y extraiga las veredas a partir de la última versión DANE disponible.                                                                                                                                                                                                                                                                                                                                                                     | 
+| Avance **P1** | Compare todos los límites veredales obtenidos e identifique y evalúe en que zonas se han realizado mutaciones de suelo rural a urbano.                                                                                                                                                                                                                                                                                                              | 
+| Avance **P1** | Cree diferentes perímetros urbanos a partir de la capas veredales y utilizando el mapa del modelo de ordenamiento territorial vigente, analice y explique sus diferencias.                                                                                                                                                                                                                                                                          | 
+| Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
