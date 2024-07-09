@@ -333,7 +333,7 @@ Propiedades comúnes:
 | ZONA_URBANA_AJUSTADA _PREDIOS.shp | 1049261.9    | 1045672.3  | 1007255.7   | 1012738.1    | 1967.9               |                                                                                                                                                                                              |
 
 
-## 4. Visualización y consulta en QGIS
+## 4. Análisis usando software libre - QGIS
 
 En QGIS podrá realizar la visualización de los diferentes elementos siguiendo estos pasos:
 

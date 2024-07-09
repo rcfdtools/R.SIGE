@@ -272,7 +272,7 @@ Como observa en las ilustraciones, existen algunas diferencias en los valores de
 > Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
 
-## 2. Herramientas para desarrollo en QGIS
+## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
