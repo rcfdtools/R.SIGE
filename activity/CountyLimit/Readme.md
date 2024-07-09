@@ -16,8 +16,9 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:open_file_folder:VeredaLimite.xlsx](VeredaLimite.xlsx): libro para registro y análisis de áreas veredales
-* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ArcGIS Pro de ESRI
-* [:toolbox:Herramienta](https://qgis.org/): QGIS
+* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
+* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
 ## 1. Procedimiento general en ArcGIS Pro
