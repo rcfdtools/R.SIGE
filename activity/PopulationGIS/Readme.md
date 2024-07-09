@@ -22,6 +22,9 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 ## 1. Procedimiento general en ArcGIS Pro
 
+
+### 1.1. Obtención de polígono urbano y rural
+
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -30,7 +33,33 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 <div align="center"><img src="graph/ArcGISPro_MOT_UrbanoRural_Dissolve_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Para la obtención de los dos polígonos, urbano (urbano y expansión) y rural (rural, protección y suburbano), es necesario realizar ahora una unión de entidades o Merge.
+3. Para la obtención de los polígonos, urbano (urbano y expansión) y rural (rural, protección y suburbano), es necesario realizar ahora una unión de entidades o Merge.
+
+En la tabla de atributos de la capa disuelta, seleccione los registros correspondientes a urbano y expansión. Utilice la tecla <kbd>Shift</kbd> o la tecla <kbd>Ctrl</kbd> para la selección.
+
+En el menú superior, de clic en _Edit_, expanda el grupo de opciones _Tools_ y seleccione la herramienta _Merge_.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Merge1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En el panel lateral derecho, de clic en el botón _Merge_ para aceptar la fusión manual de estas dos áreas. En la tabla de atributos, modifique el nombre a _Urbano_ y rotule a partir del campo `SUELO`.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Merge2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita el procedimiento anterior para integrar los polígonos _Rural, Protección y Suburbano_ y nombre como _Rural_. Ajuste la simpología para obtener una visualización adecuada.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Merge3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Como puede observar, el área urbana se compone de dos partes y en la tabla de atributos solo aparece un registro, este tipo de geometría se denomina _multiparte_. También podrá observar que en la zona rural existen rebordes internos correspondientes a errores de digitalización.
+
+4. Utilizando el editor de vértices, elimine los nodos internos de la zona rural correspondientes a errores de digitalización o de construcción de la capa. Una vez eliminados, de clic en _Save_ en el menu _Edit_.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_EditVertices.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+### 1.2. Distribución de población censal en urbana y rural
+
+A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn discriminación en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales. A partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE.
+
 
 
 
