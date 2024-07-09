@@ -34,7 +34,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 
 <div align="center"><img src="graph/ArcGISPro_CoordinateSystem9377.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Desde el Panel de Catálogo (_Catalog_) localizado a la derecha, cargue al mapa desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, la clase de entidad denominada _VEREDA_. De clic en el ícono de simbología de la capa y establezca borde negro y sin relleno.
+3. Desde el Panel de Catálogo (_Catalog_) localizado a la derecha, cargue al mapa desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\`, la clase de entidad denominada _VEREDA_. De clic en el ícono de simbología de la capa y establezca borde negro y sin relleno.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer_Vereda.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -70,7 +70,7 @@ En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 Calcule las propiedades solicitadas indicando las unidades de cálculo y el sistema de proyección 9377, correspondiente a MAGNA Orígen Único Nacional de Colombia.
 
 > En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.  
-> Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos Shape_Area y Shape_length (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
+> Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos `Shape_Area` y `Shape_length` (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
 
 Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el editor de geometría, calcule el número de nodos que componen cada entidad, utilizando para ello la propiedad geométrica número de vértices (_Number of Vertices_).
 
@@ -101,7 +101,7 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 
 Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
 
-1. Desde la misma ruta anterior _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\_, agregue la clase de entidad _TERRENO_PREDIO_RURAL_. Cambie la simbología a polígonos sin relleno.
+1. Desde la misma ruta anterior `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\Rural\`, agregue la clase de entidad _TERRENO_PREDIO_RURAL_. Cambie la simbología a polígonos sin relleno.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -115,7 +115,7 @@ Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
 
 4. En la ventana de resultados, seleccione la herramienta _Dissolve_ asociada al grupo _Data Management Tools_ e ingrese los parámetros definidos en la siguiente imagen. Nombre la capa como _Vereda_DiagnosticoPOT_TerrenoPredioRural.shp_
 
-> Para la ruta de salida de todas las capas en formato shapefile a generar en este curso, utilizaremos la ruta _\R.SIGE\file\shp_.
+> Para la ruta de salida de todas las capas en formato shapefile a generar en este curso, utilizaremos `\R.SIGE\file\shp`.
 
 <div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Geoprocessing_Dissolve_TerrenoPredioRural_Zoom.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -146,7 +146,7 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 
 ### 1.3. Mapa veredal formulación POT año 2013
 
-Desde la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\_, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
+Desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
 Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
 
@@ -214,7 +214,7 @@ Con respecto a las áreas veredales del diagnóstico 210 vs. DANE 2020, se puede
 
 ### 1.6. Obtención de límites territoriales
 
-A partir de las capas de veredas evaluadas en los numerales anteriores y utilizando la capa del modelo de ordenamiento territorial - MOT disponible en la información recopilada del POT en la ruta _\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp_, cree los polígonos de delimitación del municipio. El proceso consiste en utilizar la herramienta Data _Management Tools / Dissolve_ utilizada anteriormente en esta actividad. 
+A partir de las capas de veredas evaluadas en los numerales anteriores y utilizando la capa del modelo de ordenamiento territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`, cree los polígonos de delimitación del municipio. El proceso consiste en utilizar la herramienta Data _Management Tools / Dissolve_ utilizada anteriormente en esta actividad. 
 
 1. Disuelva las capas veredales, guarde en la carpeta _\R.SIGE\file\shp\_ y nombre como:
 
