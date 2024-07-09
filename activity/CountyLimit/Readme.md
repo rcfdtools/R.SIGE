@@ -272,7 +272,20 @@ Como observa en las ilustraciones, existen algunas diferencias en los valores de
 > Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
 
-## Elementos a incluir en el diccionario de datos :green_book:
+## 1.2. Herramientas a utilizar en QGIS
+
+Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
+
+| Herramienta  | Alcance  |
+|:-------------|:---------|
+|              |          |
+|              |          |
+|              |          |
+|              |          |
+|              |          |
+
+
+## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
@@ -286,19 +299,6 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 | Mpio25899_MOT2013.shp                        | Límite municipal obtenido a partir del mapa del Modelo de Ordenamiento Territorial 2013 - MOT                                | Polígono 2D | 1         | 
 
 > Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
-
-## 1.2. Herramientas a utilizar en QGIS
-
-Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
-
-| Herramienta  | Alcance  |
-|:-------------|:---------|
-|              |          |
-|              |          |
-|              |          |
-|              |          |
-|              |          |
 
 
 
