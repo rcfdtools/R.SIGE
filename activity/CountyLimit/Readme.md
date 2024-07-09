@@ -279,15 +279,15 @@ Como observa en las ilustraciones, existen algunas diferencias en los valores de
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                               | Procedimiento                                                                                                                                                                                                                                   |
-|:------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Definición de CRS                                     | En la parte inferior derecha de QGIS se encuentra la opción _EPSG_ que permite cambiar el sistema de proyección del mapa.                                                                                                                       |
-| Simbología                                            | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                              | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
-| Agregar campo                                         | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                              |
-| Cálculos geométricos o de campo                       | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                             |
-| Disolución                                            | Se ejecuta desde el _Processing Toolbox / Vector Geometry / Dissolve_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                |
-| Edición geométrica para eliminación de zonas internas | Activar modo de edición en la capa o _Toggle Editing_, luego en la barra de edición seleccionar la herramienta _Vertex Tool_, oprimir y mantener la tecla <kbd>Shift</kbd> y seleccionar los nodos a eliminar, oprimir tecla <kbd>Delete</kbd>. |
+| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
+|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Definición de CRS                                                                                               | En la parte inferior derecha de QGIS se encuentra la opción _EPSG_ que permite cambiar el sistema de proyección del mapa.                                                                                                                       |
+| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
+| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Agregar campo                                                                                                   | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                              |
+| Cálculos geométricos o de campo                                                                                 | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                             |
+| [Disolución](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)  | Se ejecuta desde el _Processing Toolbox / Vector Geometry / Dissolve_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                |
+| Edición geométrica para eliminación de zonas internas                                                           | Activar modo de edición en la capa o _Toggle Editing_, luego en la barra de edición seleccionar la herramienta _Vertex Tool_, oprimir y mantener la tecla <kbd>Shift</kbd> y seleccionar los nodos a eliminar, oprimir tecla <kbd>Delete</kbd>. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -306,8 +306,6 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 | Mpio25899_MOT2013.shp                        | Límite municipal obtenido a partir del mapa del Modelo de Ordenamiento Territorial 2013 - MOT                                | Polígono 2D | 1         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -333,6 +331,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * https://www.colombiaenmapas.gov.co/
 * https://www.qgis.org/en/docs/index.html
+* https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html
 
 
 ## Control de versiones
