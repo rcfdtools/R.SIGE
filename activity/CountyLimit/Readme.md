@@ -19,6 +19,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* :open_file_folder:Veredas DANE 2020: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
 
 
 ## 1. Procedimiento general en ArcGIS Pro
@@ -164,9 +165,8 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 > Para la descarga se requiere de inicio de sesión de usuario utilizando, por ejemplo, una cuenta activa de Google.
 
 <div align="center"><img src="graph/ColombiaMapa1.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-:open_file_folder:Descarga local veredas DANE 2020: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
 
 2. Desde la ruta de descompresión, cargue la capa de veredas de Colombia al mapa, cambie la simbología de representación y abra la tabla de atributos.
 
