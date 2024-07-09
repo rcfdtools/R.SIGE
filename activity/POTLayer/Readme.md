@@ -14,10 +14,10 @@ En esta actividad se presenta una tabla resumen de la información geo-espacial 
 
 ## Requerimientos
 
-* [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas, grillas y tablas recopiladas.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:open_file_folder:POT_Layer.xlsx](PoblacionDANE.xlsx): libro para registro de capas, grillas y tablas recopiladas.
 
 
 ## 1. Especificaciones para revisión
