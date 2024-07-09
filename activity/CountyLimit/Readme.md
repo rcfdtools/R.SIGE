@@ -274,7 +274,7 @@ Como observa en las ilustraciones, existen algunas diferencias en los valores de
 
 Como observa en la tabla, los valores del área municipal son similares o idénticas en la información utilizada para la elaboración del POT y el área DANE 2020 es inferior debido a actualización de límites catastrales perimetrales a partir de predios. Con respecto al tamaño del área urbana, el área veredal de la formulación aumento, sin embargo, el área final definida en el MOT es un poco inferior a la definida en la formulación. Con respecto al área DANE 2020, se puede evidenciar que catastralmente ha aumentado en 229 hectáreas (28.8%) con respecto al área veredal catastral 2010.
 
-> AGha veredal: obtenida de la sumatoria de valores obtenidos en áreas de cada vereda.
+> AGha veredal: obtenida de la sumatoria de valores obtenidos en áreas de cada vereda.  
 > AGha urbana: obtenida a partir de la diferencia del área total municipal y área veredal. 
 > Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
