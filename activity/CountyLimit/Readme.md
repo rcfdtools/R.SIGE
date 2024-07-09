@@ -82,12 +82,12 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 
 7. Modifique el rótulo agregando el campo de área y perímetro geodésico, utilice una de las siguientes expresiones:
 
-| Lenguaje | Sentencia                                                                                                                                       |
-|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arcade   | `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`  |
-| VBScript | `[nombre] & VbNewLine & "A (ha): " & Round([AGha],2) & VbNewLine & "P (m):" & Round([PGm], 2)`                                                  |
-| Python   | `[nombre] + "\nA (ha): " + str(round(float([AGha]), 2)) + "\nP (m):" + str(round(float([PGm]), 2))`                                             |
-| JScript  | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                           |
+| Lenguaje  | Sentencia                                                                                                                                        |
+|:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Arcade    | `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`   |
+| VBScript  | `[nombre] & VbNewLine & "A (ha): " & Round([AGha],2) & VbNewLine & "P (m):" & Round([PGm], 2)`                                                   |
+| Python    | `[nombre] + "\nA (ha): " + str(round(float([AGha]), 2)) + "\nP (m):" + str(round(float([PGm]), 2))`                                              |
+| JScript   | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                            |
 
 
 <div align="center"><img src="graph/ArcGISPro_LabelAdvanced1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -159,14 +159,14 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 
 ### 1.4. Mapa veredal DANE 2022
 
-1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la carpeta _\R.SIGE\file\data\DANE\_ de su repositorio de datos. 
+1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la ruta `\R.SIGE\file\data\DANE\` de su repositorio de datos. 
 
-> Para la descarga se requiere de inicio de sesión de usuario utilizando por ejemplo una cuenta activa de Google.
+> Para la descarga se requiere de inicio de sesión de usuario utilizando, por ejemplo, una cuenta activa de Google.
 
 <div align="center"><img src="graph/ColombiaMapa1.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ColombiaMapa2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-Veredas DANE: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
+:open_file_folder:Descarga local veredas DANE 2020: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
 
 2. Desde la ruta de descompresión, cargue la capa de veredas de Colombia al mapa, cambie la simbología de representación y abra la tabla de atributos.
 
@@ -216,7 +216,7 @@ Con respecto a las áreas veredales del diagnóstico 210 vs. DANE 2020, se puede
 
 A partir de las capas de veredas evaluadas en los numerales anteriores y utilizando la capa del modelo de ordenamiento territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`, cree los polígonos de delimitación del municipio. El proceso consiste en utilizar la herramienta Data _Management Tools / Dissolve_ utilizada anteriormente en esta actividad. 
 
-1. Disuelva las capas veredales, guarde en la carpeta _\R.SIGE\file\shp\_ y nombre como:
+1. Disuelva las capas veredales, guarde en la ruta `\R.SIGE\file\shp\` y nombre como:
 
 | Capa veredal                                                                                     | Límite territorial disuelto      |
 |--------------------------------------------------------------------------------------------------|----------------------------------|
