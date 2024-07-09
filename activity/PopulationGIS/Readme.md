@@ -56,9 +56,13 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 <div align="center"><img src="graph/ArcGISPro_MOT_EditVertices.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.2. Distribución de población censal en urbana y rural
+### 1.2. Distribución de población censal urbana y rural
 
-A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn discriminación en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales. A partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE.
+A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn discriminación en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales. A partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, como se muestra en el libro de Excel suministrado.
+
+<div align="center"><img src="graph/Excel_PoblacionPorcentajeDistribucion.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_PoblacionDistribuida.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Excel_PoblacionDistribuidaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
