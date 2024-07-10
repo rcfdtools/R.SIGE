@@ -58,7 +58,7 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
 
 <div align="center"><img src="graph/Excel_PoblacionPorcentajeDistribucion.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/Excel_PoblacionDistribuida.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Excel_PoblacionDistribuida.png" alt="R.SIGE" width="70%" border="0" /></div>
 <div align="center"><img src="graph/Excel_PoblacionDistribuidaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
@@ -67,7 +67,7 @@ A partir de la información censal analizada en la actividad [Estudio poblaciona
 Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada y las áreas obtenidas a partir del análisis realizado previamente a partir de las veredas DANE 2020.
 
 <div align="center"><img src="graph/Excel_TipoSueloTendencia.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/Excel_DensidadPoblacional.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Excel_DensidadPoblacional.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_DensidadPoblacionalChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
