@@ -75,4 +75,4 @@
 * [Como orientar la gestión del riesgo de desastres por incendios forestales a nivel municipal](Como-orientar-la-gestion-del-riesgo-de-desastres-por-incendios-forestales-a-nivel-municipal.pdf) 
 * [Integración de la Gestión del Riesgo y el Ordenamiento Territorial Municipal - UNGRD](Integracion_Gestion_del_Riesgo_y_el_Ordenamiento_Territorial_Municipal.pdf)
 * Índice Municipal de Gestión del Riesgo
-
+* http://www.ukmaburbanforum.co.uk/docunents/other/nature_nearby.pdf

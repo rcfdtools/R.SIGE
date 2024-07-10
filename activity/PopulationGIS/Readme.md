@@ -67,20 +67,24 @@ A partir de la información censal analizada en la actividad [Estudio poblaciona
 
 ### 1.3. Análisis de densidad poblacional
 
-Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada urbana y rural, y el área urbana y rural, obtenida a partir de la veredas DANE 2020.
-
-Inicialmente, se buscó evaluar la tendencia de mutación urbana a rural, sin embargo, no se pudo observar una tendencia coherente de crecimiento de la zona urbana a partir de los datos disponibles, por lo cual, para el análisis de densidad, se utilizará como referencia el área urbana y rural DANE 2020, y sin predicción de cambio.
+Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada y las áreas obtenidas a partir del análisis realizado previamente a partir de las veredas DANE 2020.
 
 <div align="center"><img src="graph/Excel_TipoSueloTendencia.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_DensidadPoblacional.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Excel_DensidadPoblacionalChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+### 1.4. Análisis de espacio público efectivo por habitante
 
+De acuerdo al [Ministerio de Vivienda de Colombia](https://minvivienda.gov.co/proyectos-de-espacio-urbano-y-territorial-sgr/espacio-publico), el índice mínimo efectivo de espacio público es de 15m² por habitante. Este indicador establece la relación entre el Espacio Público Efectivo frente a la población habitante; se define Espacio Público Efectivo como el “espacio público de carácter permanente, conformado por zonas verdes, parques, plazas y plazoletas”. [Documento CONPES 3718](https://www.minambiente.gov.co/wp-content/uploads/2021/10/Conpes-3718-de-2012.pdf), Bogotá 2012.
 
-Tenga en cuenta que para este análisis
+Este indicador muestra la suficiente o insuficiente disponibilidad de espacio público susceptible a la medición del déficit cuantitativo del espacio público de carácter permanente - Artículo 12 Decreto 1504 de 1998. El artículo 14 del mismo Decreto considera como índice mínimo de Espacio Público Efectivo de 15m².
 
+Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviendas en zonas verdes y el fomento de vías peatonales mejoran la calidad del aire y estimulan la actividad física, al tiempo que reducen las lesiones y los efectos de la isla de calor urbana. De tal forma, dicha Organización fijó un indicador óptimo entre 10 m² y 15 m² de zonas verdes por habitante, con el fin de que estos mitiguen los impactos generados por la contaminación de las ciudades y cumplan una función de amortiguamiento. [^1]
 
+<div align="center"><img src="graph/Excel_EPE.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/Excel_EPEChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-### 1.4. Análisis de espacio público por habitante
 
 
 ## Elementos requeridos en diccionario de datos
@@ -114,16 +118,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
-
 
 ## Referencias
 
-* 
+* [Nature Nearby - Accessible Natural Greenspace Guidance](http://www.ukmaburbanforum.co.uk/docunents/other/nature_nearby.pdf)
 
 
 ## Control de versiones
@@ -141,4 +139,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../CountyLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
-[^1]: 
+[^1]: Organización Mundial de la Salud. La salud en la economía verde. Los co-beneficios de la mitigación al cambio climático para la salud. Sector de la vivienda. 
