@@ -77,3 +77,4 @@
 * Índice Municipal de Gestión del Riesgo
 * http://www.ukmaburbanforum.co.uk/docunents/other/nature_nearby.pdf
 * https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
+* https://minvivienda.gov.co/sites/default/files/documentos/guia-ras_001.pdf
