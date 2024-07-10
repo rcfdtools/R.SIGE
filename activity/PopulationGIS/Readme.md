@@ -174,6 +174,11 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Desde la tabla de contenido, seleccione la capa geográfica _MOT_UrbanoRural_Dissolve_, de clic derecho y seleccione la opción _Add Join_.
+
+<div align="center"><img src="graph/ArcGISPro_AddJoin1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+Establezca la siguiente unión.
 
 
 
