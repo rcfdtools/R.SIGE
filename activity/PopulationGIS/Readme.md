@@ -160,7 +160,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center"><img src="graph/Excel_PoblacionGIS.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+2. En el mapa de ArcGIS Pro, 
 
 
 
