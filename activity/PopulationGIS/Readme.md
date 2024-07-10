@@ -182,7 +182,8 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 Establezca la siguiente unión, podrá observar que ahora la tabla de atributos de la disolución que tenía solo dos registros, ahora tiene 44 elementos y que los rótulos aparecen múltiples veces.
 
-<div align="center"><img src="graph/ArcGISPro_AddJoin2.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddJoin2a.png" alt="R.SIGE" width="60%" border="0" /></div>
+
 
 
 
