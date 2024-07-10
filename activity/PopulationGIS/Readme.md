@@ -23,7 +23,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 ## 1. Procedimiento general en ArcGIS Pro
 
 
-### 1.1. Obtención de polígono urbano y rural
+### 1.1. Obtención de polígono urbano y rural POT
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
@@ -58,17 +58,29 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 
 ### 1.2. Distribución de población censal urbana y rural
 
-A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn discriminación en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales. A partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, como se muestra en el libro de Excel suministrado.
+A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
 
 <div align="center"><img src="graph/Excel_PoblacionPorcentajeDistribucion.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_PoblacionDistribuida.png" alt="R.SIGE" width="80%" border="0" /></div>
 <div align="center"><img src="graph/Excel_PoblacionDistribuidaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+### 1.3. Análisis de densidad poblacional
+
+Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada urbana y rural, y el área urbana y rural, obtenida a partir de la veredas DANE 2020.
+
+Inicialmente, se buscó evaluar la tendencia de mutación urbana a rural, sin embargo, no se pudo observar una tendencia coherente de crecimiento de la zona urbana a partir de los datos disponibles, por lo cual, para el análisis de densidad, se utilizará como referencia el área urbana y rural DANE 2020, y sin predicción de cambio.
+
+<div align="center"><img src="graph/Excel_TipoSueloTendencia.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
+Tenga en cuenta que para este análisis
+
+
+
+### 1.4. Análisis de espacio público por habitante
 
 
 ## Elementos requeridos en diccionario de datos
