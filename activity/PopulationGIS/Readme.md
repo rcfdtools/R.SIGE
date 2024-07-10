@@ -20,10 +20,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 * [:open_file_folder:PoblacionDANE_GIS.xlsx](PoblacionDANE_GIS.xlsx): libro para registro y distribución urbana y rural de población DANE censal y proyectada.
 
 
-## 1. Procedimiento general en ArcGIS Pro
-
-
-### 1.1. Obtención de polígono urbano y rural POT
+## 1. Obtención de polígono urbano y rural POT
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
@@ -56,7 +53,7 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 <div align="center"><img src="graph/ArcGISPro_MOT_EditVertices.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.2. Distribución de población censal urbana y rural
+## 2. Distribución de población censal urbana y rural
 
 A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
 
@@ -65,7 +62,7 @@ A partir de la información censal analizada en la actividad [Estudio poblaciona
 <div align="center"><img src="graph/Excel_PoblacionDistribuidaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.3. Análisis de densidad poblacional
+## 3. Análisis de densidad poblacional
 
 Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada y las áreas obtenidas a partir del análisis realizado previamente a partir de las veredas DANE 2020.
 
@@ -74,7 +71,7 @@ Para el análisis de densidad poblacional, es necesario tener en cuenta la mutac
 <div align="center"><img src="graph/Excel_DensidadPoblacionalChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.4. Análisis de espacio público efectivo por habitante - EPE
+## 4. Análisis de espacio público efectivo por habitante - EPE
 
 De acuerdo al [Ministerio de Vivienda de Colombia](https://minvivienda.gov.co/proyectos-de-espacio-urbano-y-territorial-sgr/espacio-publico), el índice mínimo efectivo de espacio público es de 15m² por habitante. Este indicador establece la relación entre el Espacio Público Efectivo frente a la población habitante; se define Espacio Público Efectivo como el “espacio público de carácter permanente, conformado por zonas verdes, parques, plazas y plazoletas”. [Documento CONPES 3718](https://www.minambiente.gov.co/wp-content/uploads/2021/10/Conpes-3718-de-2012.pdf), Bogotá 2012.
 
@@ -86,11 +83,10 @@ Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviend
 <div align="center"><img src="graph/Excel_EPEChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.5. Análisis de demanda de agua potable y retornada en aguas servidas
+## 5. Análisis de demanda de agua potable y retornada en aguas servidas
 
 Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de dotación neta por habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia. Para la estimación de los caudales domésticos retornados al sistema de alcantarillado utilizaremos los valores de referencia establecidos en el [Título D](https://www.minvivienda.gov.co/sites/default/files/documentos/titulo_d.pdf) del mismo reglamento.
 
-  
 <div align="center">Parámetros generales<br><img src="graph/Excel_AguaPotSanBas_Parameters.png" alt="R.SIGE" width="80%" border="0" /></div><br>
 <div align="center">Asignación del nivel de complejidad - Título A RAS<br><img src="graph/Excel_AguaPotSanBas_NivelComplejidad.png" alt="R.SIGE" width="90%" border="0" /></div><br>
 <div align="center">Dotación neta por habitante y clima - Título B RAS (L/hab/día) y coeficientes de retorno aguas residuales domésticas QD - Título D RAS<br><img src="graph/Excel_AguaPotSanBas_DotacionRetorno.png" alt="R.SIGE" width="90%" border="0" /></div><br>
@@ -99,16 +95,15 @@ Para la estimación del caudal total demandado de agua potable, utilizaremos com
 <div align="center"><img src="graph/Excel_AguaPotBasChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_AguaRetornadaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
 > Se considera como clima cálido aquella zona del territorio nacional que se encuentre por debajo de 1000 m.s.n.m. 
 
 
+## 6. Visualización dinámica en ArcGIS Pro
 
 
-### 1.6. Visualización dinámica en ArcGIS Pro
 
 
-## 2. Análisis usando software libre - QGIS
+## 7. Análisis usando software libre - QGIS
 
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
