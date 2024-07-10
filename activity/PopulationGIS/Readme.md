@@ -74,7 +74,7 @@ Para el análisis de densidad poblacional, es necesario tener en cuenta la mutac
 <div align="center"><img src="graph/Excel_DensidadPoblacionalChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.4. Análisis de espacio público efectivo por habitante
+### 1.4. Análisis de espacio público efectivo por habitante - EPE
 
 De acuerdo al [Ministerio de Vivienda de Colombia](https://minvivienda.gov.co/proyectos-de-espacio-urbano-y-territorial-sgr/espacio-publico), el índice mínimo efectivo de espacio público es de 15m² por habitante. Este indicador establece la relación entre el Espacio Público Efectivo frente a la población habitante; se define Espacio Público Efectivo como el “espacio público de carácter permanente, conformado por zonas verdes, parques, plazas y plazoletas”. [Documento CONPES 3718](https://www.minambiente.gov.co/wp-content/uploads/2021/10/Conpes-3718-de-2012.pdf), Bogotá 2012.
 
@@ -86,8 +86,11 @@ Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviend
 <div align="center"><img src="graph/Excel_EPEChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.5. Análisis de demanda de agua potable y aguas servidas
+### 1.5. Análisis de demanda de agua potable y retorno en aguas servidas
 
+
+
+### 1.6. Visualización dinámica en ArcGIS Pro
 
 
 
