@@ -94,7 +94,10 @@ Para la estimación del caudal total demandado de agua potable, utilizaremos com
 <div align="center">Parámetros generales<br><img src="graph/Excel_AguaPotSanBas_Parameters.png" alt="R.SIGE" width="80%" border="0" /></div><br>
 <div align="center">Asignación del nivel de complejidad - Título A RAS<br><img src="graph/Excel_AguaPotSanBas_NivelComplejidad.png" alt="R.SIGE" width="90%" border="0" /></div><br>
 <div align="center">Dotación neta por habitante y clima - Título B RAS (L/hab/día) y coeficientes de retorno aguas residuales domésticas QD - Título D RAS<br><img src="graph/Excel_AguaPotSanBas_DotacionRetorno.png" alt="R.SIGE" width="90%" border="0" /></div><br>
-<div align="center"><img src="graph/Excel_AguaPotSanBas_DotacionChart.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/Excel_AguaPotSanBas_DotacionChart.png" alt="R.SIGE" width="50%" border="0" /></div><br>
+<div align="center">Caudales demandados y retornados<img src="graph/Excel_AguaPotSanBas.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/Excel_AguaPotBasChart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_AguaRetornadaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 > Se considera como clima cálido aquella zona del territorio nacional que se encuentre por debajo de 1000 m.s.n.m. 
