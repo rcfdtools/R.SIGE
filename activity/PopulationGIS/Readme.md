@@ -158,9 +158,19 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 > Los valores de densidad urbana entre los años 1905 y 1973, han sido modificados incluyendo el valor obtenido en 1985. Lo anterior debido a que a partir de la regresión, no se obtuvieron valores positivos de área urbana.
 
-<div align="center"><img src="graph/Excel_PoblacionGIS.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_PoblacionGIS.png" alt="R.SIGE" width="70%" border="0" /></div>
 
-2. En el mapa de ArcGIS Pro, 
+2. En el mapa de ArcGIS Pro y desde el panel de catálogo localizado a la derecha, seleccione el archivo de Excel _PoblacionDANE_GIS.xlsx_ desde la ruta mostrada, expanda su contenido y seleccione la hoja _PoblacionGIS$_.
+
+<div align="center"><img src="graph/ArcGISPro_ExcelDataPoblacionGIS.png" alt="R.SIGE" width="70%" border="0" /></div>
+
+3. De clic derecho en la hoja _PoblacionGIS_ del libro de Excel y seleccione la opción _Export / Table to Table_.
+
+<div align="center"><img src="graph/ArcGISPro_TableToTable.png" alt="R.SIGE" width="70%" border="0" /></div>
+
+4. En _Table to Table_, en _Fields_, modifique el campo `Fecha` a formato _Date_ y defina como ruta de salida y nombre de archivo la ruta `\file\table\PopulationGIS.dbf`.
+
+<div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="70%" border="0" /></div>
 
 
 
