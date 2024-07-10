@@ -90,14 +90,10 @@ Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviend
 
 Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de Dotación Neta por Habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia.
 
-Parámetros generales  
-<div align="center"><img src="graph/Excel_AguaPotSanBas_Parameters.png" alt="R.SIGE" width="80%" border="0" /></div>
-
-Asignación del nivel de complejidad - Título A RAS  
-<div align="center"><img src="graph/Excel_AguaPotSanBas_NivelComplejidad.png" alt="R.SIGE" width="90%" border="0" /></div>
-
-Dotación neta por habitante y clima - Título B RAS (L/hab/día) y coeficientes de retorno aguas residuales domésticas QD - Título D RAS  
-<div align="center"><img src="graph/Excel_AguaPotSanBas_DotacionRetorno.png" alt="R.SIGE" width="90%" border="0" /></div>
+  
+<div align="center">Parámetros generales<br><img src="graph/Excel_AguaPotSanBas_Parameters.png" alt="R.SIGE" width="80%" border="0" /></div><br>
+<div align="center">Asignación del nivel de complejidad - Título A RAS<br><img src="graph/Excel_AguaPotSanBas_NivelComplejidad.png" alt="R.SIGE" width="90%" border="0" /></div><br>
+<div align="center">Dotación neta por habitante y clima - Título B RAS (L/hab/día) y coeficientes de retorno aguas residuales domésticas QD - Título D RAS<br><img src="graph/Excel_AguaPotSanBas_DotacionRetorno.png" alt="R.SIGE" width="90%" border="0" /></div><br>
 <div align="center"><img src="graph/Excel_AguaPotSanBas_DotacionChart.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 
