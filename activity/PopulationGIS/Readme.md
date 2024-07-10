@@ -162,7 +162,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 2. En el mapa de ArcGIS Pro y desde el panel de catálogo localizado a la derecha, seleccione el archivo de Excel _PoblacionDANE_GIS.xlsx_ desde la ruta mostrada, expanda su contenido y seleccione la hoja _PoblacionGIS$_.
 
-<div align="center"><img src="graph/ArcGISPro_ExcelDataPoblacionGIS.png" alt="R.SIGE" width="70%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExcelDataPoblacionGIS.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. De clic derecho en la hoja _PoblacionGIS_ del libro de Excel y seleccione la opción _Export / Table to Table_.
 
@@ -172,7 +172,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 > Para utilizar campos tipo fecha, guardar la tabla dentro de la base de datos GDB temporal del proyecto.
 
-<div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
