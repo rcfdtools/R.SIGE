@@ -184,6 +184,12 @@ Establezca la siguiente unión, podrá observar que ahora la tabla de atributos 
 
 <div align="center"><img src="graph/ArcGISPro_AddJoin2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Ajuste el rótulo indicando el nombre del suelo y el valor de población.
+
+Rótulo Arcado: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.NewLine +"Año: "+ year($feature['PopulationGIS.Fecha']) + textformatting.NewLine +"Población: " + round($feature['PopulationGIS.Poblacion'], 0)`
+
+<div align="center"><img src="graph/ArcGISPro_Label_Poblacion1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
