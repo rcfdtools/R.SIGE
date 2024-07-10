@@ -1,4 +1,4 @@
-# Plantilla para actividades
+# Representación geográfica de censos y proyecciones poblacionales, cálculo de densidad poblacional y espacio público por habitante
 Keywords: `population-gis` `public-space`
 
 A partir de la delimitación de límites geopolíticos internos y utilizando los datos de población proyectada, crear una representación visual dinámica de su crecimiento y la demanda de espacio público.                                                                                                                                                                                   
