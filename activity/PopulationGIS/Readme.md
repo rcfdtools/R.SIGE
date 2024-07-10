@@ -168,9 +168,12 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center"><img src="graph/ArcGISPro_TableToTable.png" alt="R.SIGE" width="40%" border="0" /></div>
 
-4. En _Table to Table_, en _Fields_, modifique el campo `Fecha` a formato _Date_ y defina como ruta de salida y nombre de archivo la ruta `\file\table\PopulationGIS.dbf`.
+4. En _Table to Table_, en _Fields_, modifique el campo `Fecha` a formato _Date_ y defina como ruta de salida y nombre de tabla la ruta `\file\map\ArcGISPro\ArcGISPro.gdb\PopulationGIS`. Al terminar será cargada automáticamente la tabla al proyecto, abrala para verificar su contenido.
+
+> Para utilizar campos tipo fecha, guardar la tabla dentro de la base de datos GDB temporal del proyecto.
 
 <div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="40%" border="0" /></div>
+
 
 
 
