@@ -88,6 +88,18 @@ Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviend
 
 ### 1.5. Análisis de demanda de agua potable y retorno en aguas servidas
 
+Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de Dotación Neta por Habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia.
+
+| Nivel de complejidad del sistema | Dotación neta (L/hab•día)<br>climas templado y frío | Dotación neta (L/hab•día)<br>clima cálido |
+|----------------------------------|-----------------------------------------------------|-------------------------------------------|
+| Bajo                             | 90                                                  | 100                                       |
+| Medio                            | 115                                                 | 125                                       |
+| Medio alto                       | 125                                                 | 135                                       |
+| Alto                             | 140                                                 | 150                                       |
+
+> Se considera como clima cálido aquella zona del territorio nacional que se encuentre por debajo de 1000 m.s.n.m. 
+
+
 
 
 ### 1.6. Visualización dinámica en ArcGIS Pro
@@ -146,6 +158,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * [Nature Nearby - Accessible Natural Greenspace Guidance](http://www.ukmaburbanforum.co.uk/docunents/other/nature_nearby.pdf)
+* https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
 
 
 ## Control de versiones

@@ -76,3 +76,4 @@
 * [Integración de la Gestión del Riesgo y el Ordenamiento Territorial Municipal - UNGRD](Integracion_Gestion_del_Riesgo_y_el_Ordenamiento_Territorial_Municipal.pdf)
 * Índice Municipal de Gestión del Riesgo
 * http://www.ukmaburbanforum.co.uk/docunents/other/nature_nearby.pdf
+* https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
