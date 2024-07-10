@@ -57,6 +57,19 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 
 A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
 
+En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluído los siguientes atributos:
+
+<div align="center">
+
+| Columna | Descripción                                            |
+|:--------|:-------------------------------------------------------|
+| PTotal  | Población total municipal                              |
+| PorcUrb | Porcentaje de población correspondiente al área urbana |
+| PUrbana | Población urbana = población total por % urbano        |
+| PRural  | Población rural = población total - población urbana   |
+
+</div>
+
 <div align="center"><img src="graph/Excel_PoblacionPorcentajeDistribucion.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_PoblacionDistribuida.png" alt="R.SIGE" width="70%" border="0" /></div>
 <div align="center"><img src="graph/Excel_PoblacionDistribuidaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -66,12 +79,26 @@ A partir de la información censal analizada en la actividad [Estudio poblaciona
 
 Para el análisis de densidad poblacional, es necesario tener en cuenta la mutación del suelo rural a urbano a través del tiempo. Para este análisis, utilizaremos la población proyectada y las áreas obtenidas a partir del análisis realizado previamente a partir de las veredas DANE 2020.
 
+En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluído los siguientes atributos:
+
+<div align="center">
+
+| Columna   | Descripción                                                                                                                         |
+|:----------|:------------------------------------------------------------------------------------------------------------------------------------|
+| AreaUrbPL | Tamaño del área urbana en hectáreas a partir del total del área municipal menos el área rural.                                      |
+| AreaRurPL | Tamaño del área urbana en hectáreas proyectada linealmente. Utilizando la regresión, al menos se debe dejar 1 ha para suelo urbano. |
+| DensTotal | Densidad total municipal en habitantes / hectárea: población total / área total municipal.                                          |
+| DensUrb   | Densidad urbana en habitantes / hectárea: población urbana / área urbana                                                            |
+| DensRur   | Densidad rural en habitantes / hectárea: población rural / área rural                                                               |
+
+</div>
+
 <div align="center"><img src="graph/Excel_TipoSueloTendencia.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_DensidadPoblacional.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_DensidadPoblacionalChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 4. Análisis de espacio público efectivo por habitante - EPE
+## 4. Análisis de espacio público efectivo urbano requerido - EPE
 
 De acuerdo al [Ministerio de Vivienda de Colombia](https://minvivienda.gov.co/proyectos-de-espacio-urbano-y-territorial-sgr/espacio-publico), el índice mínimo efectivo de espacio público es de 15m² por habitante. Este indicador establece la relación entre el Espacio Público Efectivo frente a la población habitante; se define Espacio Público Efectivo como el “espacio público de carácter permanente, conformado por zonas verdes, parques, plazas y plazoletas”. [Documento CONPES 3718](https://www.minambiente.gov.co/wp-content/uploads/2021/10/Conpes-3718-de-2012.pdf), Bogotá 2012.
 
@@ -79,13 +106,41 @@ Este indicador muestra la suficiente o insuficiente disponibilidad de espacio p�
 
 Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviendas en zonas verdes y el fomento de vías peatonales mejoran la calidad del aire y estimulan la actividad física, al tiempo que reducen las lesiones y los efectos de la isla de calor urbana. De tal forma, dicha Organización fijó un indicador óptimo entre 10 m² y 15 m² de zonas verdes por habitante, con el fin de que estos mitiguen los impactos generados por la contaminación de las ciudades y cumplan una función de amortiguamiento. [^1]
 
+En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluído los siguientes atributos:
+
+<div align="center">
+
+| Columna   | Descripción                                                                           |
+|:----------|:--------------------------------------------------------------------------------------|
+| EPEUrbHa  | Espacio público efectivo urbano requerido en ha: población urbana * 15 / 10000 |
+|           |                                                                                       |
+
+</div>
+
 <div align="center"><img src="graph/Excel_EPE.png" alt="R.SIGE" width="60%" border="0" /></div>
 <div align="center"><img src="graph/Excel_EPEChart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Este indicador también puede ser estimado para centros poblados en la implementación de planes parciales.
 
 
 ## 5. Análisis de demanda de agua potable y retornada en aguas servidas
 
 Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de dotación neta por habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia. Para la estimación de los caudales domésticos retornados al sistema de alcantarillado utilizaremos los valores de referencia establecidos en el [Título D](https://www.minvivienda.gov.co/sites/default/files/documentos/titulo_d.pdf) del mismo reglamento.
+
+En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluído los siguientes atributos:
+
+<div align="center">
+
+| Columna   | Descripción                                                                                                                         |
+|:----------|:------------------------------------------------------------------------------------------------------------------------------------|
+| QAcuTotal | Caudal total municipal en lps-día demandado de sistemas de acueducto: población total * dotación neta / 86400                       |
+| QAcuUrb   | Caudal urbano en lps-día demandado de sistemas de acueducto: población urbana * dotación neta / 86400                               |
+| QAcuRur   | Caudal rural en lps-día demandado de sistemas de acueducto: población rural * dotación neta / 86400                                 |
+| QAlcTotal | Caudal total municipal en lps-día retornado a sistemas de alcantarillado: caudal total municipal demandado * coeficiente de retorno |
+| QAlcUrb   | Caudal urbano en lps-día retornado a sistemas de alcantarillado: caudal urbano demandado * coeficiente de retorno                   |
+| QAlcRur   | Caudal rural en lps-día retornado a sistemas de alcantarillado: caudal rural demandado * coeficiente de retorno                     |
+
+</div>
 
 <div align="center">Parámetros generales<br><img src="graph/Excel_AguaPotSanBas_Parameters.png" alt="R.SIGE" width="80%" border="0" /></div><br>
 <div align="center">Asignación del nivel de complejidad - Título A RAS<br><img src="graph/Excel_AguaPotSanBas_NivelComplejidad.png" alt="R.SIGE" width="90%" border="0" /></div><br>
@@ -99,6 +154,8 @@ Para la estimación del caudal total demandado de agua potable, utilizaremos com
 
 
 ## 6. Visualización dinámica en ArcGIS Pro
+
+Para la visualización es requerido crear una tabla apilada de resultados para datos totales, urbanos y rurales.
 
 
 
