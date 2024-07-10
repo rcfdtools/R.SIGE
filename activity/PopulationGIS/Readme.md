@@ -86,6 +86,11 @@ Según la Organización Mundial de la Salud (OMS) el agrupamiento de las viviend
 <div align="center"><img src="graph/Excel_EPEChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+### 1.5. Análisis de demanda de agua potable y aguas servidas
+
+
+
+
 
 ## Elementos requeridos en diccionario de datos
 
