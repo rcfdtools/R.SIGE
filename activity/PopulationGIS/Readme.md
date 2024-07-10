@@ -17,7 +17,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE_GIS.xlsx](PoblacionDANE_GIS.xlsx): libro para registro y distribución urbana y rural de población DANE censal y proyectada.
+* [:open_file_folder:PoblacionDANE_GIS.xlsx](PoblacionDANE_GIS.xlsx): libro para registro, distribución urbana y rural de población DANE censal y proyectada, cálculo de índices y caudales.
 
 
 ## 1. Obtención de polígono urbano y rural POT
@@ -113,7 +113,6 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 | Columna   | Descripción                                                                           |
 |:----------|:--------------------------------------------------------------------------------------|
 | EPEUrbHa  | Espacio público efectivo urbano requerido en ha: población urbana * 15 / 10000 |
-|           |                                                                                       |
 
 </div>
 
@@ -155,7 +154,11 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 ## 6. Visualización dinámica en ArcGIS Pro
 
-Para la visualización es requerido crear una tabla apilada de resultados para datos totales, urbanos y rurales.
+1. Para la visualización en GIS, es necesario crear una copia de la tabla de población, organizando de forma apilada los resultados obtenidos. Para ello, es necesario crear una columna adicional denominada `Suelo` indicando si corresponde a Total, Urbano o Rural y ajustar la columna fecha incluyendo el día y el mes (`=CONCAT(C2,"/12/31")`).
+
+> Los valores de densidad urbana entre los años 1905 y 1973, han sido modificados incluyendo el valor obtenido en 1985. Lo anterior debido a que a partir de la regresión, no se obtuvieron valores positivos de área urbana.
+
+<div align="center"><img src="graph/Excel_PoblacionGIS.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
