@@ -26,7 +26,9 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ordenamiento Territorial - MOT a partir del campo de atributos `SUELO`. Nombre la capa como `\file\shp\MOT_UrbanoRural_Dissolve.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
+2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ordenamiento Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante dentro de la base de datos GDB temporal del mapa con el nombre `\file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
+
+> El alcacenamiento de la capa dentro de la GDB del mapa actual, le permitirá posteriormente realizar uniones de multiples registros y visualizaciones temporales.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_UrbanoRural_Dissolve_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -176,9 +178,10 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 5. Desde la tabla de contenido, seleccione la capa geográfica _MOT_UrbanoRural_Dissolve_, de clic derecho y seleccione la opción _Add Join_.
 
-<div align="center"><img src="graph/ArcGISPro_AddJoin1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddJoin1.png" alt="R.SIGE" width="60%" border="0" /></div>
 
 Establezca la siguiente unión.
+
 
 
 
