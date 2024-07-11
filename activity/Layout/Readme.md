@@ -25,9 +25,19 @@ Creación de plantillas con inclusión de elementos dinámicos para impresión d
 
 <div align="center"><img src="graph/ArcGISPro_NewLayout.png" alt="R.SIGE" width="90%" border="0" /></div>
 
-2. En la parte superior, seleccione el menú _Insert_ y de clic en _Map Frame_. Podrá observar que se encuentran los mapas creados en actividades anteriores y una opción adicional para incluir otro mapa.
+2. En la parte superior, seleccione el menú _Insert_ y de clic en _Map Frames / Map Frame_. Podrá observar que se encuentran los mapas creados en actividades anteriores y una opción adicional para incluir otro mapa. Seleccione, por ejemplo, el mapa _CountyLimit_ que contiene los límites veredales y municipales evaluados previamente, y dibuje un rectángulo con que cubra casi la totalidad de la plantilla.
 
 <div align="center"><img src="graph/ArcGISPro_MapFrame1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MapFrameCountyLimit.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Acceda a las propiedades del _Map Frame_ y defina el tamaño del recuadro en 925 mm x 800 mm.
+
+<div align="center"><img src="graph/ArcGISPro_MapFrameSize.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En la parte superior, seleccione el menú _Insert_, de clic en _Map Frames / Grid_ y seleccione el estilo _Measure Grid / Black Vertical Label Grid_.
+
+<div align="center"><img src="graph/ArcGISPro_MapFrameGrid.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
