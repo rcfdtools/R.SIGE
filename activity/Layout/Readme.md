@@ -131,11 +131,11 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Impresión digital de mapas veredales con representación de usos del MOT
+## 3. Impresión digital de mapas por vereda con representación de usos del MOT
 
 > Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
 
-1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0.
+1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0 y transparencia de 30%. Active el mapa topográfico de fondo.
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOT.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -145,7 +145,16 @@ Rótulo Arcade: `"Suelo: " + $feature.SUELO + textformatting.Newline + "Cat.: " 
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOTLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. 
+2. Abra la plantilla o _Layout_ de impresión creado previamente, podrá observar que ya se encuentra la representación incluyendo el MOT. Ajuste la escala a 1:25700. El el menu superior _Share_, de clic en _Print Layout_, ajuste los parámetros de acuerdo a los valores mostrados en la ilustración y guarde como _MapaGeneralVeredaMOT.pdf_.
+
+<div align="center"><img src="graph/ArcGISPro_LayoutPrint1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MapaGeneralVeredaMOT_pdf1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MapaGeneralVeredaMOT_pdf2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> :bulb: Como observa en el mapa impreso general, los rótulos cubren en gran parte la representación del mapa, se recomienda incluir en la capa _MOT.shp_ una columna de atributos con la sigla representativa relacionada a cada actividad e imprimir el mapa solo con estos valores. 
+
+3. Para la impresión de un mapa único por vereda, utilizaremos la herramienta
+
 
 
 
