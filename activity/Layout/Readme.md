@@ -64,7 +64,7 @@ Desde las propiedades de la grilla, desactive la casilla _Automatically Adjust_ 
 * Número de mapa.
 * Espacio para firmas oficiales.
 
-> :idea: Para la creación tome como guía los mapas digitales impresos del caso de estudio.  
+> :bulb:Para la creación tome como guía los mapas digitales impresos del caso de estudio.  
 
 <div align="center">Legenda<br><img src="graph/ArcGISPro_Layout_Legend.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 <div align="center">Logotipo<br><img src="graph/ArcGISPro_Layout_Logo.png" alt="R.SIGE" width="100%" border="0" /></div><br>
