@@ -34,11 +34,48 @@ Creación de plantillas con inclusión de elementos dinámicos para impresión d
 
 <div align="center"><img src="graph/ArcGISPro_MapFrameSize.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. En la parte superior, seleccione el menú _Insert_, de clic en _Map Frames / Grid_ y seleccione el estilo _Measure Grid / Black Vertical Label Grid_.
+4. En la parte superior, seleccione el menú _Insert_, de clic en _Map Frames / Grid_ y seleccione el estilo _Measure Grid / Black Vertical Label Grid_. Observará que automáticamente se define un intervalo de espaciamiento. En la parte inferior de la ventana de ArcGIS Pro, defina escala 1:30000.
 
 <div align="center"><img src="graph/ArcGISPro_MapFrameGrid.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MapFrameGrid1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Desde las propiedades de la grilla, desactive la casilla _Automatically Adjust_ y defina un intervalo de grilla equivalente a `1/10` de la escala de visualización, que para el ejemplo corresponde a 3000 metros.
+
+<div align="center"><img src="graph/ArcGISPro_MapFrameGrid2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Inserte ahora el símbolo norte desde el menú _Insert / Map Surrounds / North Arrow_. Defina un tamaño de 50 mm x 50 mm.
+
+<div align="center"><img src="graph/ArcGISPro_North.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Inserte uno de los gráficos creados previamente, por ejemplo el de Veredas DANE 2020. Para que sea visible, la capa de veredas debe activarse en la tabla de contenido.
+
+<div align="center"><img src="graph/ArcGISPro_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. En la zona remanente de la plantilla localizada a la derecha y utilizando los elementos gráficos y de texto, cree rectángulos para crear el marco detallado del mapa, incluya por ejemplo secciones o grupos para:
+
+* Logo y nombre del municipio o la entidad.
+* Proyecto: indicando el Acuerdo o Decreto, el título del documento, el nombre del mapa temático y las convenciones.
+* Mapa de localización general con ubicación en el país y en el departamento.
+* Fuente base cartográfica y temática.
+* Parámetros cartográficos o sistema de proyección.
+* Escala de impresión: texto y barra de escala gráfica en metros.
+* Fecha de elaboración.
+* Responsable(s).
+* Número de mapa.
+* Espacio para firmas oficiales.
+
+> :idea: Para la creación tome como guía los mapas digitales impresos del caso de estudio.  
+
+<div align="center">Legenda<br><img src="graph/ArcGISPro_Layout_Legend.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Logotipo<br><img src="graph/ArcGISPro_Layout_Logo.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Barra de escala<br><img src="graph/ArcGISPro_Layout_ScaleBar.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Textos dinámicos<br><img src="graph/ArcGISPro_Layout_DynamicText.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Plantilla preliminar<br><img src="graph/ArcGISPro_Layout1.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+8. Para la creación de los mapas de localización, 
 
 
+ 
 
 
 
