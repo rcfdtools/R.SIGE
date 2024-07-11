@@ -190,6 +190,17 @@ Rótulo Arcado: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.New
 
 <div align="center"><img src="graph/ArcGISPro_Label_Poblacion1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+7. En la tabla de contenido, acceda a las propiedades de la capa y seleccione la pestaña _Time_, realice la configuración mostrada a continuación.
+
+> Debido a que el intervalo de tiempo no es constante, es necesario marcar la casilla _View using unique items with the data_, esto permitirá realizar el salto de tiempo variable.
+
+<div align="center"><img src="graph/ArcGISPro_Time1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En pantalla podrá observar que ahora aparece el deslizador de tiempo y que solo aparece un rótulo para cada entidad. En la parte superior de la pantalla, vaya al menu _Time_ y en la sección _Step_, seleccione la capa _MOT_UrbanoRural_Dissolve_. 
+
+<div align="center"><img src="graph/ArcGISPro_Time2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Ahora, podrá activar la visualización de tiempo, observe que los rótulos y los registros de la tabla van cambiando a medida que avanza el tiempo.
 
 
 
