@@ -8,7 +8,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 ## Objetivos
 
-* Representar el crecimiento poblacional en el suelo urbano y rural definido en el Modelo de Ordenamiento Territorial - MOT a partir de los datos estadísticos y de proyección poblacional.
+* Representar el crecimiento poblacional municipal en el suelo urbano y rural definido en el Modelo de Ordenamiento Territorial - MOT, a partir de datos estadísticos y de proyección poblacional.
 * Estimar el espacio público efectivo - EPE requerido en la zona urbana a partir de datos de población.
 * Estimar la demanda de servicios de agua potable y retorno en aguas servidas residenciales.
 
@@ -60,7 +60,7 @@ Repita el procedimiento anterior para integrar los polígonos _Rural, Protecció
 
 ## 2. Distribución de población censal urbana y rural
 
-A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sn distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
+A partir de la información censal analizada en la actividad [Estudio poblacional: censos y proyecciones](../Population/Readme.md), se obtuvieron solo los datos consolidados de población del municipio, pero sin distinción en urbano o rural. En la tabla de recopilación de información SISBEN, registramos en 2000 y 2018, datos distribuídos de población por zonas en urbano, rural y centros poblados rurales; a partir de los porcentajes de distribución de estos valores, realizaremos la distribución de los datos censales DANE, tal como se muestra en el libro de Excel suministrado.
 
 En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluído los siguientes atributos:
 
@@ -88,13 +88,13 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center">
 
-| Columna   | Descripción                                                                                                                         |
-|:----------|:------------------------------------------------------------------------------------------------------------------------------------|
-| AreaUrbPL | Tamaño del área urbana en hectáreas a partir del total del área municipal menos el área rural.                                      |
-| AreaRurPL | Tamaño del área urbana en hectáreas proyectada linealmente. Utilizando la regresión, al menos se debe dejar 1 ha para suelo urbano. |
-| DensTotal | Densidad total municipal en habitantes / hectárea: población total / área total municipal.                                          |
-| DensUrb   | Densidad urbana en habitantes / hectárea: población urbana / área urbana                                                            |
-| DensRur   | Densidad rural en habitantes / hectárea: población rural / área rural                                                               |
+| Columna   | Descripción                                                                                                                                                                |
+|:----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AreaUrbPL | Tamaño del área urbana en hectáreas a partir del total del área municipal menos el área rural.                                                                             |
+| AreaRurPL | Tamaño del área urbana en hectáreas proyectada linealmente. Utilizando la regresión, al menos se debe reservar 1 ha de suelo urbano para realizar los cálculos requeridos. |
+| DensTotal | Densidad total municipal en habitantes / hectárea: población total / área total municipal.                                                                                 |
+| DensUrb   | Densidad urbana en habitantes / hectárea: población urbana / área urbana                                                                                                   |
+| DensRur   | Densidad rural en habitantes / hectárea: población rural / área rural                                                                                                      |
 
 </div>
 
@@ -161,7 +161,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 1. Para la visualización en GIS, es necesario crear una copia de la tabla de población, organizando de forma apilada los resultados obtenidos. Para ello, es necesario crear una columna adicional denominada `Suelo` indicando si corresponde a Total, Urbano o Rural y ajustar la columna fecha incluyendo el día y el mes (`=CONCAT(C2,"/12/31")`).
 
-> Los valores de densidad urbana entre los años 1905 y 1973, han sido modificados incluyendo el valor obtenido en 1985. Lo anterior debido a que a partir de la regresión, no se obtuvieron valores positivos de área urbana.
+> Los valores de densidad urbana entre los años 1905 y 1973, han sido modificados incluyendo el valor obtenido en 1985. Lo anterior debido a que a partir de la regresión, no se obtuvieron valores positivos urbanos.
 
 <div align="center"><img src="graph/Excel_PoblacionGIS.png" alt="R.SIGE" width="70%" border="0" /></div>
 
@@ -178,6 +178,8 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 > Para utilizar campos tipo fecha y optimizar la visualización temporal de elementos, se recomienda guardar la tabla dentro de la base de datos GDB temporal del proyecto. (no requiere extensión)
 
 <div align="center"><img src="graph/ArcGISPro_TableToTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> El campo EPEUrbHa, también requiere ser ajustado a tipo numérico para su exportación.
 
 5. Desde la tabla de contenido, seleccione la capa geográfica _MOT_UrbanoRural_Dissolve_, de clic derecho y seleccione la opción _Add Join_.
 
@@ -230,15 +232,15 @@ Rótulo Arcade: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.New
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                        | Procedimiento                                                                                                                                                                                                                                   |
-|:---------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                     | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                       | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
-| Agregar campo                                                                                                  | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                              |
-| [Disolución](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve) | Se ejecuta desde el _Processing Toolbox / Vector Geometry / Dissolve_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                |
-| Edición geométrica para eliminación de zonas internas                                                          | Activar modo de edición en la capa o _Toggle Editing_, luego en la barra de edición seleccionar la herramienta _Vertex Tool_, oprimir y mantener la tecla <kbd>Shift</kbd> y seleccionar los nodos a eliminar, oprimir tecla <kbd>Delete</kbd>. |
-| Conversión de tablas                                                                                           |                                                                                                                                                                                                                                                 |
-| Unión de tablas                                                                                                |                                                                                                                                                                                                                                                 |
+| Proceso                                               | Procedimiento                                                                                                                                                                                                                                                                  |
+|:------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                            | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                        |
+| Rotulado                                              | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                           |
+| Agregar campo                                         | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                                                             |
+| Disolución                                            | Se ejecuta desde el _Processing Toolbox / Vector Geometry / Dissolve_ o desde el menú _Vector / Geoprocessing Tools / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_.                                           |
+| Edición geométrica para eliminación de zonas internas | Activar modo de edición en la capa o _Toggle Editing_, luego en la barra de edición seleccionar la herramienta _Vertex Tool_, oprimir y mantener la tecla <kbd>Shift</kbd> y seleccionar los nodos a eliminar, oprimir tecla <kbd>Delete</kbd>.                                |
+| Conversión de tablas                                  | Exportable desde las propiedades de la capa con _Export / Save Features As_, luego seleccionar el formato Comma Separated Values (CSV) o ESRI File Geodatabase o SpatialLite o SQLite dependiendo de si dispono o no de una base de datos.                                     |
+| Unión de tablas                                       | En las propiedades de capa geográfica, seleccionar la pestaña _Join_ y realizar la unión. Solo se mostrarán los registros correspondientes a la primer coincidencia encontrada. Para visualizar o representar otros valores, es necesario filtrar previamente la tabla a unir. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
