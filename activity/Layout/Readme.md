@@ -125,7 +125,10 @@ Abra el _Layout_ de impresión creado previamente e inserte dos nuevos _Map Fram
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_Departamento.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_Municipio.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Como observa, los mapas de localización incluyen el borde del _Map Frama_, desde sus propiedades se puede retirar el color del contorno.
 
+<div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Impresión digital de usos por predio
