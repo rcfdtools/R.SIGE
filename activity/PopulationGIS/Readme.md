@@ -194,13 +194,28 @@ Rótulo Arcado: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.New
 
 > Debido a que el intervalo de tiempo no es constante, es necesario marcar la casilla _View using unique items with the data_, esto permitirá realizar el salto de tiempo variable.
 
-<div align="center"><img src="graph/ArcGISPro_Time1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Time1.png" alt="R.SIGE" width="60%" border="0" /></div>
 
 En pantalla podrá observar que ahora aparece el deslizador de tiempo y que solo aparece un rótulo para cada entidad. En la parte superior de la pantalla, vaya al menu _Time_ y en la sección _Step_, seleccione la capa _MOT_UrbanoRural_Dissolve_. 
 
 <div align="center"><img src="graph/ArcGISPro_Time2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Ahora, podrá activar la visualización de tiempo, observe que los rótulos y los registros de la tabla van cambiando a medida que avanza el tiempo.
+
+8. Cambie la simbología de representación a símbolos proporcionales utilizando la variable _Población_ con símbolos entre 12 y 90 puntos de tamaño. De esta forma podrá comparar la proporcionalidad entre los valores urbanos y rurales. De clic en Play de la barra de tiempo y observe el resultado
+
+<div align="center">Población por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Realice el mismo análisis para las demás variables, modifique el rótulo incluyendo los valores de densidad, espacio público y caudales estimados.
+
+Rótulo Arcade: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.NewLine +"Año: "+ year($feature['PopulationGIS.Fecha']) + textformatting.NewLine +"Población: " + round($feature['PopulationGIS.Poblacion'], 0) + textformatting.NewLine + "Densidad (hab/ha): " + round($feature['PopulationGIS.Densidad'], 2) + textformatting.NewLine + "EPE (ha): " + round($feature['PopulationGIS.EPEUrbHa'], 2) + textformatting.NewLine + "QAcu (lps): " + round($feature['PopulationGIS.QAcu'], 2) + textformatting.NewLine + "QAlc (lps): " + round($feature['PopulationGIS.QAlc'], 2)`
+
+<div align="center">Densidad por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Observe como la densidad urbana disminuye y como la rural se mantiene creciendo a un ritmo lento.
+
+<div align="center">Demanda de agua potable por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Caudal retornado a alcantarillado por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
