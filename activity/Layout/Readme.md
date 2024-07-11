@@ -3,7 +3,7 @@ Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `crs` `map
 
 Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapas por vereda con representación de clasificación del suelo y categorías de uso del Modelo de Ocupación del Territorio - MOT.                 
 
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Layout.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 ## Objetivos
 
