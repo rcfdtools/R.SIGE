@@ -125,7 +125,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 > Este indicador también puede ser estimado para centros poblados en la implementación de planes parciales.
 
 
-## 5. Análisis de demanda de agua potable y retornada en aguas servidas
+## 5. Análisis de demanda de agua potable y aguas servidas residenciales
 
 Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de dotación neta por habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia. Para la estimación de los caudales domésticos retornados al sistema de alcantarillado utilizaremos los valores de referencia establecidos en el [Título D](https://www.minvivienda.gov.co/sites/default/files/documentos/titulo_d.pdf) del mismo reglamento.
 
