@@ -174,7 +174,6 @@ Ejemplo de mapas impresos digitalmente
 * [:closed_book:Adobe Acrobat:](pdfsample/MapaSerieVeredaMOT.pdf) Vereda en series (ejemplo con 5 veredas)
 
 
-
 ## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
@@ -213,6 +212,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
+> 
+> A partir de este momento, las actividades deben ser soportadas con mapas digitales impresos que deben estar embebidos dentro del informe final como una imágen y referenciados como anexo.
 
 
 ## Compatibilidad
