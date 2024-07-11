@@ -163,7 +163,7 @@ Realice la siguiente configuración basada en la capa de Veredas de DANE 2020.
 
 Luego de aceptar la configuración, podrá observar que automáticamente se cream los mapas de series con una impresión para cada vereda. Observe que el gráfico de barras se ha ajustado automáticamente para mostrar solo las veredas que aparecen en cada impreso.
 
-<div align="center"><img src="graph/ArcGISPro_MapSeries3.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MapSeries3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Para imprimir en digital, solo basta con dar clic en el botón _Print_ localizado en el panel derecho de impresión. Imprima y guarde como _MapaSerieVeredaMOT.pdf_.
 
