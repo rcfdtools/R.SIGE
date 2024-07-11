@@ -1,7 +1,7 @@
 # Creación de plantillas para impresión digital
 Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `CRS`
 
-Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapa de usos por predio.                 
+Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapa de predios por usos del MOT.                 
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -131,7 +131,7 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Impresión digital de usos por predio
+## 3. Impresión digital de predios con usos del MOT
 
 
 
