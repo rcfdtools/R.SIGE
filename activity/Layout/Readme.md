@@ -21,9 +21,13 @@ Creación de plantillas con inclusión de elementos dinámicos para impresión d
 
 ## 1. Creación de plantilla
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ seleccione _New Layout_ y tamaño de papel A0 (841 mm x 1189 mm).  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ seleccione _New Layout_ y tamaño de papel A0 (841 mm x 1189 mm) landscape u horizontal.  
 
 <div align="center"><img src="graph/ArcGISPro_NewLayout.png" alt="R.SIGE" width="90%" border="0" /></div>
+
+2. En la parte superior, seleccione el menú _Insert_ y de clic en _Map Frame_. Podrá observar que se encuentran los mapas creados en actividades anteriores y una opción adicional para incluir otro mapa.
+
+<div align="center"><img src="graph/ArcGISPro_MapFrame1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
