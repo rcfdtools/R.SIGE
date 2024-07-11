@@ -146,7 +146,7 @@ Rótulo Arcade: `"Suelo: " + $feature.SUELO + textformatting.Newline + "Cat.: " 
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOTLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Abra la plantilla o _Layout_ de impresión creado previamente, podrá observar que ya se encuentra la representación incluyendo el MOT. Ajuste la escala a 1:25700. El el menu superior _Share_, de clic en _Print Layout_, ajuste los parámetros de acuerdo a los valores mostrados en la ilustración y guarde como _MapaGeneralVeredaMOT.pdf_.
+2. Abra la plantilla o _Layout_ de impresión creado previamente, podrá observar que ya se encuentra la representación incluyendo el MOT. Ajuste la escala a 1:25700. En el menu superior _Share_, de clic en _Print Layout_, ajuste los parámetros de acuerdo a los valores mostrados en la ilustración, imprima digitalmente y guarde como _MapaGeneralVeredaMOT.pdf_.
 
 <div align="center"><img src="graph/ArcGISPro_LayoutPrint1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MapaGeneralVeredaMOT_pdf1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -171,7 +171,7 @@ Para imprimir en digital, solo basta con dar clic en el botón _Print_ localizad
 
 Ejemplo de mapas impresos digitalmente 
 * [:closed_book:Adobe Acrobat](pdfsample/MapaGeneralVeredaMOT.pdf): Veredal general
-* :closed_book:Adobe Acrobat: Vereda en series
+* [:closed_book:Adobe Acrobat:](pdfsample/MapaSerieVeredaMOT.pdf) Vereda en series (ejemplo con 5 veredas)
 
 
 
