@@ -1,5 +1,5 @@
 # Creación de plantillas para impresión digital
-Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `CRS`
+Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `crs` `map-series`
 
 Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapa de predios por usos del MOT.                 
 
@@ -131,7 +131,14 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Impresión digital de predios con usos del MOT
+## 3. Impresión digital de mapas veredales con representación de usos del MOT
+
+> Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
+
+Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0.
+
+<div align="center"><img src="graph/ArcGISPro_CountyLimitMOT.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
