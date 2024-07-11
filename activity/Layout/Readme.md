@@ -132,7 +132,7 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 <div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_MunicipioNoFrameColor1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Impresión digital de mapas por vereda con representación de usos del MOT
+## 3. Impresión digital de series de mapas por vereda con representación de usos del MOT
 
 > Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
 
