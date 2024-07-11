@@ -86,7 +86,24 @@ Para salir del modo de ajuste del marco de impresión del mapa, de clic en la fl
 
 ### 2.1. Mapa departamental
 
-Desde el menú _Insert_, cree un mapa nuevo y nómbrelo como _Localizacion Departamento_, ajuste el CRS a 9377 correspondiente al Orígen Único Nacional de Colombia.
+Desde el menú _Insert_, cree un mapa nuevo y nómbrelo como _Localizacion Departamental_, ajuste el CRS a 9377 correspondiente al Orígen Único Nacional de Colombia.
+
+Desde https://www.colombiaenmapas.gov.co/, descargue como shapefile el mapa de Departamentos de Colombia y guarde el comprimido en la ruta `\file\data\IGAC\` como _Departamentos_Agosto_2023.zip_, descomprima y agregue la capa _Depto.shp_ al mapa.
+
+<div align="center"><img src="graph/ColombiaMapas_Departamentos2023.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Simbolice por valores únicos a partir del nombre del departamento estableciendo color gris claro para todos los municipios excepto Cundinamarca y gris oscuro para este departamento. 
+
+<div align="center"><img src="graph/ArcGISPro_Layer_MapaDepartamental.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para el mapa de localización solo es necesario rotular el departamento de Cundinamarca, para ello, en el rotulador, filtre mediante una expresión SQL, el departamento utilizando la expresión: `DeNombre = 'Cundinamarca'` .
+
+<div align="center"><img src="graph/ArcGISPro_Layer_MapaDepartamental_Label.png" alt="R.SIGE" width="30%" border="0" /></div>
+
+
+### 2.2. Mapa municipal
+
+Desde el menú _Insert_, cree un mapa nuevo y nómbrelo como _Localizacion Departamental_, ajuste el CRS a 9377 correspondiente al Orígen Único Nacional de Colombia.
 
 Desde https://www.colombiaenmapas.gov.co/, descargue como shapefile el mapa de Departamentos de Colombia y guarde el comprimido en la ruta `\file\data\IGAC\` como _Departamentos_Agosto_2023.zip_, descomprima y agregue la capa _Depto.shp_ al mapa.
 
@@ -99,7 +116,7 @@ Simbolice por valores únicos a partir del nombre del departamento estableciendo
 <div align="center"><img src="graph/ArcGISPro_Layer_MapaDepartamental.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 2.2. Mapa municipal
+
 
 
 ## 3. Impresión digital de usos por predio
