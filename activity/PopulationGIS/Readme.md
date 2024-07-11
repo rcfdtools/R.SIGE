@@ -249,10 +249,10 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                                                     | Descripción                                                                                                                       | Geometría   | Registros | 
-|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| \file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve | Disolución polígonos MOT en área urbana y área rural.                                                                             | Polígono 2D | 2         | 
-| \file\map\ArcGISPro\ArcGISPro.gdb\PopulationGIS            | Tabla con resultados de proyección de población, área urbana y rural, densidad de población, espacio público efectivo y caudales. | N/A         | 66        | 
+| Nombre                                                      | Descripción                                                                                                                       | Geometría   | Registros | 
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| \file\map\ArcGISPro\ArcGISPro.gdb\ MOT_UrbanoRural_Dissolve | Disolución polígonos MOT en área urbana y área rural.                                                                             | Polígono 2D | 2         | 
+| \file\map\ArcGISPro\ArcGISPro.gdb\ PopulationGIS            | Tabla con resultados de proyección de población, área urbana y rural, densidad de población, espacio público efectivo y caudales. | N/A         | 66        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
