@@ -22,10 +22,7 @@ En esta actividad evaluaremos los límites veredales y sus diferencias a partir 
 * :open_file_folder:Veredas DANE 2020: [Parte1](../../file/data/DANE/CRVeredas_2020.part1.rar), [Parte2](../../file/data/DANE/CRVeredas_2020.part2.rar)
 
 
-## 1. Procedimiento general en ArcGIS Pro
-
-
-### 1.1. Mapa veredal diagnóstico POT año 2010
+## 1. Mapa veredal diagnóstico POT año 2010
 
 1. Abra el proyecto de ArcGIS Pro creado en la actividad anterior y desde el menú _Insert_ cree un nuevo mapa _New Map_ y renombre como _CountyLimit_. Podrá observar que ahora disponemos de dos mapas en el panel del catálogo. 
 
@@ -98,7 +95,7 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 <div align="center"><img src="graph/ArcGISPro_Vereda1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.2. Mapa veredal a partir de predios diagnóstico POT año 2010
+## 2. Mapa veredal a partir de predios diagnóstico POT año 2010
 
 Para iniciar, en el panel lateral _Contents_, apague la capa VEREDA.
 
@@ -145,7 +142,7 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 <div align="center"><img src="graph/ArcGISPro_Vereda2Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.3. Mapa veredal formulación POT año 2013
+## 3. Mapa veredal formulación POT año 2013
 
 Desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
@@ -158,7 +155,7 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ArcGISPro_Vereda3Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.4. Mapa veredal DANE 2022
+## 4. Mapa veredal DANE 2022
 
 1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la ruta `\R.SIGE\file\data\DANE\` de su repositorio de datos. 
 
@@ -197,7 +194,7 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 > Si revisa con atención la tabla veredal, podrá observar que los códigos catastrales y los nombres de las veredas han sido modificados. En las versiones utilizadas para la elaboración del POT, las veredas iniciaban en el código catastral 02 y en esta versión en 01.
 
 
-### 1.5. Análisis de diferencias veredales encontradas
+## 5. Análisis de diferencias veredales encontradas
 
 Con respecto a las áreas veredales del diagnóstico 2010 vs. formulación 2013 del POT, se puede observar en las tablas de resultados que el área aumentó en las veredas: Portachuelo, El Tunal, La Granja, El Cedro y Paso Ancho. No existen áreas con disminución debido a que en la modificación se ajustó el límite catastral veredal con incorporaciónes sobre el área catastral.
 
@@ -212,7 +209,7 @@ Con respecto a las áreas veredales del diagnóstico 2010 vs. DANE 2020, se pued
 > Registre el resumen de cálculo de propiedades geométricas por vereda en el libro [VeredaLimite.xlsx](VeredaLimite.xlsx). 
 
 
-### 1.6. Obtención de límites territoriales
+## 6. Obtención de límites territoriales
 
 A partir de las capas de veredas evaluadas en los numerales anteriores y utilizando la capa del modelo de ordenamiento territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`, cree los polígonos de delimitación del municipio. El proceso consiste en utilizar la herramienta Data _Management Tools / Dissolve_ utilizada anteriormente en esta actividad. 
 
@@ -279,7 +276,7 @@ Como observa en la tabla, los valores del área municipal son similares o idént
 > Para los posteriores análisis realizados en este curso, utilizaremos como máscara de referencia, el polígono obtenido a partir de los límites del Modelo de Ordenamiento Territorial - MOT.
 
 
-## 2. Análisis usando software libre - QGIS
+## 7. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
