@@ -1,4 +1,4 @@
-# Representación geográfica de censos y proyecciones poblacionales, densidad poblacional, espacio público efectivo (EPE) y demanda de servicios públicos
+# Representación geográfica de población, densidad poblacional, espacio público efectivo (EPE) y demanda de servicios públicos
 Keywords: `population-gis` `public-space` `epe` `water-demand` `water-return` `proportional-symbol` `time-view` `dynamic-view`
 
 A partir de la delimitación de límites geopolíticos internos y utilizando los datos de población proyectada, crear una representación visual dinámica de su crecimiento y la demanda de espacio público efectivo y servicios públicos domiciliarios.                          
@@ -294,7 +294,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../CountyLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../CountyLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:](../Layout/Readme.md) |
+|-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------|
 
 [^1]: Organización Mundial de la Salud. La salud en la economía verde. Los co-beneficios de la mitigación al cambio climático para la salud. Sector de la vivienda. 
