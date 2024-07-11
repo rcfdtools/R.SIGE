@@ -1,7 +1,7 @@
 # Creación de plantillas para impresión digital
 Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `crs` `map-series`
 
-Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapa de predios por usos del MOT.                 
+Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapas por vereda con representación de clasificación del suelo y categorías de uso del Modelo de Ocupación del Territorio - MOT.                 
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
@@ -135,7 +135,7 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 
 > Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
 
-1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0 y transparencia de 30%. Active el mapa topográfico de fondo.
+1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ocupación Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0 y transparencia de 30%. Active el mapa topográfico de fondo.
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOT.png" alt="R.SIGE" width="100%" border="0" /></div>
 
