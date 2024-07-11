@@ -135,11 +135,17 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 
 > Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
 
-Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0.
+1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ordenamiento Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0.
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOT.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Rotule utilizando un rótulo compuesto que contenga la clasificación del suelo y las categorías del MOT.
 
+Rótulo Arcade: `"Suelo: " + $feature.SUELO + textformatting.Newline + "Cat.: " + $feature.catego + textformatting.Newline + $feature.NOMBRE`
+
+<div align="center"><img src="graph/ArcGISPro_CountyLimitMOTLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. 
 
 
 
@@ -192,7 +198,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* [Easily Create a Spatial Map Series in ArcGIS Pro](https://www.youtube.com/watch?v=HcESlqEBebU)
 
 
 ## Control de versiones
