@@ -72,19 +72,29 @@ Desde las propiedades de la grilla, desactive la casilla _Automatically Adjust_ 
 <div align="center">Textos dinámicos<br><img src="graph/ArcGISPro_Layout_DynamicText.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 <div align="center">Plantilla preliminar<br><img src="graph/ArcGISPro_Layout1.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-8. Para la creación de los mapas de localización, 
+8. En algunos casos, es conveniente rotar la vista del mapa para ajustar el contenido al tamaño del papel y así poder utilizar una escala menor, para ello, seleccione el _Map Frame_ o marco de mapa, de clic derecho y seleccione la opción _Activate_ que le permitirá cambiar manualmente la posición dentro del mapa, la escala y la rotación. Para la rotación, en la tabla de contenido de doble clic en el nombre del mapa _CountyLimit_ y en la pestaña general establezca la rotación requerida, por ejemplo, 45 grados. Podrá observar que el mapa, la grilla y el norte, ahora se ajustan a la rotación indicada.
 
+<div align="center"><img src="graph/ArcGISPro_Layout_Rotate.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para salir del modo de ajuste del marco de impresión del mapa, de clic en la flecha de retorno de layout localizada en la parte superior.
+
+<div align="center"><img src="graph/ArcGISPro_Layout_Rotate1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 2. Creación de mapas de localización
+
+1. En el menú _Insert_, 
 
  
 
 
 
-## 2. Impresión digital de usos por predio
+## 3. Impresión digital de usos por predio
 
 
 
 
-## 3. Análisis usando software libre - QGIS
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
