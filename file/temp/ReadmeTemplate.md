@@ -84,8 +84,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-> 
-> :world_map:Las actividades deben ser soportadas con mapas digitales impresos embebidos dentro del informe final como una imágen y referenciados como anexo.
 
 
 ## Compatibilidad
