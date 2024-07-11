@@ -113,6 +113,17 @@ Simbolice por valores únicos a partir del nombre del municipio estableciendo co
 
 <div align="center"><img src="graph/ArcGISPro_Layer_MapaMunicipal.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Para resaltar el contorno del departamento, agregue la capa _Depto.shp_, filtre solo Cundinamarca, establezca la simbología con borde de grosor 2 negro y sin relleno.
+
+<div align="center"><img src="graph/ArcGISPro_Layer_MapaMunicipalDepartamento.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+### 2.3. Inserción en la plantilla de impresión
+
+Abra el _Layout_ de impresión creado previamente e inserte dos nuevos _Map Frame_, el primero para la localización departamental, y el segundo para la municipal.
+
+<div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_Departamento.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Layer_MapFrame_Municipio.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
