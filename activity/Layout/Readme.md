@@ -153,7 +153,9 @@ Rótulo Arcade: `"Suelo: " + $feature.SUELO + textformatting.Newline + "Cat.: " 
 
 > :bulb: Como observa en el mapa impreso general, los rótulos cubren en gran parte la representación del mapa, se recomienda incluir en la capa _MOT.shp_ una columna de atributos con la sigla representativa relacionada a cada actividad e imprimir el mapa solo con estos valores. 
 
-3. Para la impresión de un mapa único por vereda, utilizaremos la herramienta
+3. Para la impresión de un mapa único por vereda, utilizaremos la herramienta _Map Series_ disponible en el menu _Insert_ de la plantilla de impresión.
+
+<div align="center"><img src="graph/ArcGISPro_MapSeries1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
