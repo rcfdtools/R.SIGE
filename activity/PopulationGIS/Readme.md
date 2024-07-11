@@ -217,7 +217,9 @@ Rótulo Arcade: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.New
 <div align="center">Demanda de agua potable por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 <div align="center">Caudal retornado a alcantarillado por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+> Observe como la demanda de servicios es creciente a través del tiempo.
+>
+> :bulb:Para la representación de valores totales, disuelva la capa del MOT en un único polígono, cree un campo con el nombre `Suelo` y establezca su valor como _Total_, luego, realice la unión con la tabla de población y represente los valores obtenidos.
 
 
 ## 7. Análisis usando software libre - QGIS
@@ -242,17 +244,12 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                                     | Descripción                                                                                                                       | Geometría   | Registros | 
+|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| \file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve | Disolución polígonos MOT en área urbana y área rural.                                                                             | Polígono 2D | 2         | 
+| \file\map\ArcGISPro\ArcGISPro.gdb\PopulationGIS            | Tabla con resultados de proyección de población, área urbana y rural, densidad de población, espacio público efectivo y caudales. | N/A         | 66        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
-
-
-
 
 
 ## Actividades de proyecto :triangular_ruler:
