@@ -8,7 +8,8 @@ Creación de plantillas con inclusión de elementos dinámicos para impresión d
 ## Objetivos
 
 * Crear una plantilla para impresión digital de mapas.
-* 
+* Crear mapas embebidos de localización departamental y municipal.
+* Imprimir digitalmente mapas generales y de series basados en elementos geométricos de capas.
 
 
 ## Requerimientos
