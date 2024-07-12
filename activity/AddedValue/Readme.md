@@ -5,9 +5,9 @@ A partir de la combinación de predios con el mapa del Modelo de Ocupación Terr
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
-En esta actividad, utilizaremos como referencia la zonificación urbana y rural definida en los registros catastrales de predios del IGAC utilizados en el diagnóstico del estudio del Plan de Ordenamiento Territorial de la zona de estudio, e identificaremos a partir del cruce con el mapa del Modelo de Ocupación Territorial, los predios objeto de plusvalía por el efecto del primer hecho generador, correspondiente a la incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano. .
+En esta actividad, utilizaremos como referencia la zonificación urbana y rural definida en los registros catastrales de predios del IGAC, utilizados en el diagnóstico del estudio del Plan de Ordenamiento Territorial de la zona de estudio, e identificaremos a partir del cruce con el mapa del Modelo de Ocupación Territorial, los predios objeto de plusvalía por el efecto del primer hecho generador, correspondiente a la incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano.
 
-> :blue_heart:Para la evaluación del efecto plusvalia en su caso de estudio, se recomienda obtener la cartografía (vectores y bases de datos) de la primera adopción del plan de ordenamiento territorial y la siguiente correspondiente a la revisión y ajuste del POT adoptada posteriormente. Utilizando estos dos insumos, podrá identificar los predios objeto de plusvalia.
+> :blue_heart:Para la evaluación del efecto plusvalía en su caso de estudio, se recomienda obtener la cartografía (predios, mapas de zonificación y bases de datos) de la primera adopción del plan de ordenamiento territorial y la siguiente correspondiente a la revisión y ajuste del POT adoptada posteriormente. Utilizando estos dos insumos, podrá identificar los predios objeto de plusvalía.
 
 
 ## Objetivos
