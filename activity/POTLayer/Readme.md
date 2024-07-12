@@ -103,7 +103,7 @@ Listado de archivos obtenidos
 <div align="center"><img src="graph/Data_POT_gdb.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## 3. Visualización y consulta en ArcGIS Pro
+## 3. Visualización y consulta
 
 Para la visualización preliminar y consulta de los datos geo-espaciales descargados y descomprimidos, siga este procedimiento:
 
@@ -148,7 +148,7 @@ A través del clic derecho sobre el nombre de la capa, también podrá obtener l
 
 > No se han incluído en la revisión las siguientes clases de entidad de la base de datos geográfica, debido a que no contienen entidades, o por que no se dispone de metadatos asociados que expliquen su contenido o propósito: AREA_HOMOGENEA_TIERRA, CONSTRUCCION_ANEXA_AMPLIACION, EDIFICACION_AMPLIACION, MANZANA_AMPLIACION, NOMENCLATURA_DOMICILIARIA_AMPLIACIONES, NOMENCLATURA_VIAL_AMPLIACIONES, TERRENO_PREDIO_RURAL_AMPLIACION, TERRENO_PREDIO_RURAL_Interse, TERRENO_PREDIO_RURAL_Interse1, TERRENO_PREDIO_RURAL_Interse2, AREA_COMUN_URBANA, TERRENO_PREDIO_URBANO_AMPLIACION.
 
-### 3.1. Capas y tablas utilizadas en diagnóstico
+### 3.1. Capas y tablas utilizadas en el diagnóstico
 
 Propiedades comúnes:
 
