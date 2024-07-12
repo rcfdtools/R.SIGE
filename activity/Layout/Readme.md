@@ -15,7 +15,6 @@ Creación de plantillas con inclusión de elementos dinámicos para impresión d
 ## Requerimientos
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
@@ -215,16 +214,11 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
-
-
 ## Referencias
 
 * [Easily Create a Spatial Map Series in ArcGIS Pro](https://www.youtube.com/watch?v=HcESlqEBebU)
+* https://pro.arcgis.com/es/pro-app/latest/help/layouts/add-a-layout-to-your-project.htm
+* https://docs.qgis.org/3.34/en/docs/training_manual/map_composer/map_composer.html
 
 
 ## Control de versiones
