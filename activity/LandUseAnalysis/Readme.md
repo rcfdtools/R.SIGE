@@ -9,6 +9,8 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 ## Objetivos
 
 * El mapa CG-01 de Clasificación general del territorio anexo al Plan de Ordenamiento, contiene los valores de áreas y porcentajes de distribución territorial calculadas a partir del CRS 3116. A partir de la capa del Modelo de Ocupación Territorial - MOT, generaremos los polígonos de clasificación y calcularemos las áreas y dis distribuciones porcentuales usando el CRS 9377.
+* Identificar las diferencias geográficas entre el mapa oficial CG-01 del POT y las clasificaciones realizadas en el Modelo de Ocupación Territorial - MOT.
+* Entender la diferencia entre cálculo geométrico planar y geodésico.
 
 
 ## Requerimientos
@@ -108,40 +110,39 @@ Otendrá los siguientes valores:
 
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. Para verificar que las distribuciones porcentuales son correctas, de clic derecho en el campo `APhaDP3116`, seleccione la opción 
+7. Para verificar que las distribuciones porcentuales son correctas, de clic derecho en el campo `APhaDP3116`, seleccione la opción _Visual Statistics_ y verifique que el total de la distribución sea 100%. Verifique también las demás distribuciones.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Análisis de diferencias
 
+En la siguiente tabla resumen e ilustración, podrá observar las diferencias encontradas entre las áreas por clasificación de suelo a partir de los datos mostrados en el mapa oficial del POT CG-01, con respecto a las asignaciones de categoría de suelo contenidas en la capa _MOT.shp_.
 
-
-
-
-
-## 1.1. Análisis de diferencias
-
-En la siguiente ilustración se pueden observar las diferencias de identificación por categoría del mapa oficial CG-01 con respecto a las asignaciones de categoría de suelo contenidas en la capa _MOT.shp_.
-
+<div align="center"><img src="graph/Excel_MOT_ClasificacionSuelo_Diferencias1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_Diferencias1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-## 2. Áreas y porcentajes en mapa del modelo ocupación territorial - MOT
-
-Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
-
-
-
-
+Diferencias:  
+* Existe una diferencia de aproximadamente 4.7 hectáreas, entre el área total municipal mostrada en el mapa oficial y en los totales calculados a partir de la capa del MOT.
+* En la capa MOT y a partir de los valores obtenidos con el CRS 3116, los suelos clasificados como suburbanos son 3.93 ha mayores a los mostrados en el mapa oficial CG-01.
+* En la capa MOT y a partir de los valores obtenidos con el CRS 3116, los suelos clasificados como protección son 1949.82 ha menores a los mostrados en el mapa oficial CG-01.
+* En la capa MOT y a partir de los valores obtenidos con el CRS 3116, los suelos clasificados como rural son 1950.62 ha mayores a los mostrados en el mapa oficial CG-01.
+* En la ilustración mostrada, se puede observar que algunas de las categorías del MOT han sido catalogadas en una clasificación de suelo diferente a la mostrada en el mapa oficial CG-01.
+ 
+> Para los análisis de Plusvalía, es necesario verificar las clasificaciones de suelo del MOT para poder identificar y asociar correctamente el hecho generador (plusvalía o minusvalía). 
 
 
 ## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso    | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                                                                                                                                                              |
+| Rotulado   | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                                                                                                                                                                 |
+| Disolución | Se ejecuta desde el _Processing Toolbox / Vector Geometry / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                                                                                                 |
+
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
