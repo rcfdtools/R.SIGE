@@ -22,6 +22,8 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 ## 1. Áreas y porcentajes por clasificación general del territorio
 
+Mapa CG-01 Clasificación general del territorio.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br><br>
+
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandUseAnalysis_ y establezca el CRS 9377. En la parte superior de la ventana se encuentran los diferentes mapas y la plantilla de impresión creados en actividades anteriores, ciérrelos.
 
 > Los mapas y plantillas de impresión son almacenados dentro de la estructura del proyecto de ArcGIS Pro, estos pueden ser abiertos directamente desde el arbol de catálogo o _Catalog Pane_.
@@ -30,9 +32,11 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante en la ruta `\file\shp\MOT_ClasificacionSuelo_Dissolve.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
+2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante en la ruta `\file\shp\MOT_ClasificacionSuelo.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
 
-<div align="center"><img src="graph/ArcGISPro_MOT_UrbanoRural_Dissolve_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
