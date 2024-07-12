@@ -76,6 +76,27 @@ Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Para el cálculo de porcentajes de distribución, es necesario primero obtener los valores totales de áreas de todo el municipio. Desde la tabla de contenido, de clic derecho en la capa _MOT_ClasificacionSuelo_ y seleccione la opción _Data Engeneering_.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. Podrá observar que se calculan los estadísticos característicos de cada una de las variables, incluído la sumatoria, obteniendo los siguientes valores:
+
+<div align="center">
+
+| Campo      | Descripción                                           | Área (ha)          | 
+|------------|-------------------------------------------------------|--------------------| 
+| APha3116   | Área planar en hectáreas a partir de CRS 3116         | 19527.141294129    |
+| AGha3116   | Área geodésica en hectáreas a partir de CRS 3116      | 19527.113533120002 |
+| APha9377   | Área planar en hectáreas a partir de CRS 9377         | 19502.102995412    |
+| AGha9377   | Área geodésica en hectáreas a partir de CRS 9377      | 19527.113536283    |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Para calcular el porcentaje de distribución en el campo 
+
 
 
 ## 1.1. Análisis de diferencias
