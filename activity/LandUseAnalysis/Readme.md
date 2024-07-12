@@ -73,7 +73,7 @@ Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
 
 4. Desde la tabla de atributos, calcule las propiedades geométricas de los campos `APha3116`, `AGha3116`, `APha9377` y `AGha9377`. Como observa, los valores de las áreas planares y geográficas son diferentes en un mismo sistema y también entre los dos CRS calculados.
 
-<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry1a.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
