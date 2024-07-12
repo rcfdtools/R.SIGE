@@ -80,7 +80,11 @@ Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
 
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. Podrá observar que se calculan los estadísticos característicos de cada una de las variables, incluído la sumatoria, obteniendo los siguientes valores:
+Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. Podrá observar que se calculan los estadísticos característicos de cada una de las variables, incluída la sumatoria.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Otendrá los siguientes valores:
 
 <div align="center">
 
@@ -94,8 +98,6 @@ Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. P
 </div>
 
 > Como aprecia, los valores del área total municipal también son diferentes dependiendo del sistema de proyección utilizado. 
-
-<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 6. Para calcular el porcentaje de distribución, de clic derecho en el campo `APhaDP3116`, seleccione la opción _Calculate Field_ y establezca los parámetros mostrados en la ilustración, correspondientes a dividir cada área entre su sumatoria x 100. Repita el procedimiento anterior para las demás campos de atributos de distribución porcentual.
 
