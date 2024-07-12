@@ -99,14 +99,14 @@ Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. P
 
 6. Para calcular el porcentaje de distribución, de clic derecho en el campo `APhaDP3116`, seleccione la opción _Calculate Field_ y establezca los parámetros mostrados en la ilustración, correspondientes a dividir cada área entre su sumatoria x 100. Repita el procedimiento anterior para las demás campos de atributos de distribución porcentual.
 
-`APhaDP3116 = (!APha3116!/19527.141294129)*100`
+`APhaDP3116 = (!APha3116!/19527.141294129)*100`  
 `AGha3116 = (!AGha3116!/19527.113533120002)*100`  
-`APha9377 = (!APha9377!/19502.102995412)*100` 
-`AGha9377 = (!AGha9377!/19527.113536283)*100`
+`APha9377 = (!APha9377!/19502.102995412)*100`  
+`AGha9377 = (!AGha9377!/19527.113536283)*100`  
 
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+7. Para verificar que las distribuciones porcentuales son correctas, de clic derecho en el campo `APhaDP3116`, seleccione la opción 
 
 
 
