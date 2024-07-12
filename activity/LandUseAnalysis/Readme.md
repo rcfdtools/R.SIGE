@@ -115,6 +115,10 @@ Otendrá los siguientes valores:
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic.png" alt="R.SIGE" width="80%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+8. Para visualizar los resultados obtenidos, cree gráficos de pastel representado las áreas obtenidas.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 2. Análisis de diferencias
 
@@ -165,7 +169,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Desarrollar los numerales descritos en esta actividad incluyendo: mapa detallado que represente las categorías del MOT utilizando los mismos colores definidos en el mapa CG-01 del POT, tabla de resumen estadístico y gráficos de barras, y Tabla de comparación entre el análisis realizado y los valores reportados en el mapa CG-01 del POT. Explique las diferencias encontradas.                                                             | 
+| Avance **P1** | Desarrollar los numerales descritos en esta actividad incluyendo: mapa detallado que represente las categorías del MOT utilizando los mismos colores definidos en el mapa CG-01 del POT, tabla de resumen estadístico y gráficos de barras, y tabla de comparación entre el análisis realizado y los valores reportados en el mapa CG-01 del POT. Explique las diferencias encontradas.                                                             | 
 | Avance **P1** | :compass:Mapa digital impreso _P2-3: Categorías de suelo con tabla de distribución y comparación_<br>(Incluir tablas de resultados y gráficos de análisis. Embebidos dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                           | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
