@@ -82,7 +82,7 @@ Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
 
 5. Para el cálculo de porcentajes de distribución, es necesario primero obtener los valores totales de áreas de todo el municipio. Desde la tabla de contenido, de clic derecho en la capa _MOT_ClasificacionSuelo_ y seleccione la opción _Data Engeneering_.
 
-<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_DataEngeeniering1.png" alt="R.SIGE" width="80%" border="0" /></div>
 
 Arrastre los campos de atributos de áreas calculadas y de clic en _Calcular_. Podrá observar que se calculan los estadísticos característicos de cada una de las variables, incluída la sumatoria.
 
