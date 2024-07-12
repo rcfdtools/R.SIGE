@@ -177,6 +177,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#basic-statistics-for-fields
+* https://pro.arcgis.com/es/pro-app/latest/help/analysis/geoprocessing/data-engineering/what-is-data-engineering.htm
 
 
 ## Control de versiones
