@@ -171,7 +171,7 @@ Para imprimir en digital, solo basta con dar clic en el botón _Print_ localizad
 
 Ejemplo de mapas impresos digitalmente 
 * [:closed_book:Adobe Acrobat](pdfsample/MapaGeneralVeredaMOT.pdf): Veredal general
-* [:closed_book:Adobe Acrobat:](pdfsample/MapaSerieVeredaMOT.pdf) Vereda en series (ejemplo con 5 veredas)
+* [:closed_book:Adobe Acrobat](pdfsample/MapaSerieVeredaMOT.pdf): Vereda en series (ejemplo con 5 veredas)
 
 
 ## 4. Análisis usando software libre - QGIS
