@@ -8,7 +8,7 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 ## Objetivos
 
-* 
+* El mapa CG-01 de Clasificación general del territorio anexo al Plan de Ordenamiento, contiene los valores de áreas y porcentajes de distribución territorial calculadas a partir del CRS 3116. A partir de la capa del Modelo de Ocupación Territorial - MOT, generaremos los polígonos de clasificación y calcularemos las áreas y dis distribuciones porcentuales usando el CRS 9377.
 
 
 ## Requerimientos
@@ -20,7 +20,7 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 * [:open_file_folder:PoblacionDANE.xlsx](LandUseAnalysis.xlsx): libro para comparación de áreas.
 
 
-## 1. Áreas y porcentajes en mapa del modelo ocupación territorial - MOT
+## 1. Áreas y porcentajes por clasificación general del territorio
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandUseAnalysis_ y establezca el CRS 9377. En la parte superior de la ventana se encuentran los diferentes mapas y la plantilla de impresión creados en actividades anteriores, ciérrelos.
 
@@ -30,17 +30,13 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante dentro de la base de datos GDB temporal del mapa con el nombre `\file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
-
-> El almacenamiento de la capa dentro de la GDB del mapa actual, le permitirá posteriormente realizar uniones de multiples registros y visualizaciones temporales.
+2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante en la ruta `\file\shp\MOT_ClasificacionSuelo_Dissolve.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_UrbanoRural_Dissolve_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
-## 2. Áreas y porcentajes en mapa del modelo de ocupación del territorio
+## 2. Áreas y porcentajes en mapa del modelo ocupación territorial - MOT
 
 Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
