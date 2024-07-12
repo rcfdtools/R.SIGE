@@ -22,7 +22,7 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 ## 1. Áreas y porcentajes por clasificación general del territorio
 
-Mapa CG-01 Clasificación general del territorio.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br><br>
+Mapa CG-01 Clasificación general del territorio.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandUseAnalysis_ y establezca el CRS 9377. En la parte superior de la ventana se encuentran los diferentes mapas y la plantilla de impresión creados en actividades anteriores, ciérrelos.
 
@@ -36,7 +36,22 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. En la tabla de atributos de la capa disuelta, cree los siguientes campos:
+
+<div align="center">
+
+| Campo    | Descripción                                                                              | Tipo    | Propiedad ArcGIS Pro        | 
+|----------|------------------------------------------------------------------------------------------|---------|-----------------------------| 
+| APha3116 | Área planar en hectáreas a partir de CRS 9377 MAGNA Sirgas orígen Bogota                 | Double  | Area                        |
+| AGha3116 | Área geodésica en hectáreas a partir de CRS 9377 MAGNA Sirgas orígen Bogota              | Double  | Area (geodesic)             |
+| PPm3116  | Perímetro planar en metros a partir de CRS 9377 MAGNA Sirgas orígen Bogota               | Double  | Perimeter length            |
+| PGm3116  | Perímetro geodésico en metros a partir de CRS 9377 MAGNA Sirgas orígen Bogota            | Double  | Perimeter length (geodesic) |
+| APha9377 | Área planar en hectáreas a partir de CRS 9377 MAGNA Colombia orígen único nacional       | Double  | Area                        |
+| AGha9377 | Área geodésica en hectáreas a partir de CRS 9377 MAGNA Colombia orígen único nacional    | Double  | Area (geodesic)             |
+| PPm9377  | Perímetro planar en metros a partir de CRS 9377 MAGNA Colombia orígen único nacional     | Double  | Perimeter length            |
+| PGm9377  | Perímetro geodésico en metros a partir de CRS 9377 MAGNA Colombia orígen único nacional  | Double  | Perimeter length (geodesic) |
+
+</div>
 
 
 
