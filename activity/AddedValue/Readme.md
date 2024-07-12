@@ -1,11 +1,11 @@
 # Identificación de predios en plusvalía por cambio de clasificación o categoría de suelo
-Keywords: `land-added-value` `land-appreciation` 'land-betterment'
+Keywords: `land-added-value` `land-appreciation` `land-betterment`
 
 A partir de la combinación de predios con el mapa del Modelo de Ocupación Territorial - MOT, se realiza la identificación de predios rurales con cambio de categoría a expansión urbana, suburbano o urbano y/o por modificación de la zonificación de usos del suelo.
 
 <div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
-En esta actividad, utilizaremos como referencia la zonificación urbana y rural establecida en los registros catastrales de predios, e identificaremos a partir del cruce con el mapa del Modelo de Ocupación Territorial, los predios objeto de plusvalía por el primer hecho generador correspondiente a la incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano. .
+En esta actividad, utilizaremos como referencia la zonificación urbana y rural establecida en los registros catastrales de predios utilizados en el diagnóstico del estudio del Plan de Ordenamiento Territorial de la zona de estudio, e identificaremos a partir del cruce con el mapa del Modelo de Ocupación Territorial, los predios objeto de plusvalía por el primer hecho generador correspondiente a la incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano. .
 
 > :blue_heart:Para la evaluación del efecto plusvalia en su caso de estudio, se recomienda obtener la cartografía (vectores y bases de datos) de la primera adopción del plan de ordenamiento territorial y la siguiente correspondiente a la revisión y ajuste del POT adoptada posteriormente. Utilizando estos dos insumos, podrá identificar los predios objeto de plusvalia.
 
