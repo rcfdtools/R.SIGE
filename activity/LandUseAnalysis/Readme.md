@@ -24,7 +24,7 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 ## 1. Áreas y porcentajes por clasificación general del territorio
 
-Mapa CG-01 Clasificación general del territorio.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
+Mapa CG-01 Clasificación general del territorio a ser utilizado como referente para la comparación de áreas y distribuciones porcentuales.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandUseAnalysis_ y establezca el CRS 9377. En la parte superior de la ventana se encuentran los diferentes mapas y la plantilla de impresión creados en actividades anteriores, ciérrelos.
 
@@ -112,7 +112,7 @@ Otendrá los siguientes valores:
 
 7. Para verificar que las distribuciones porcentuales son correctas, de clic derecho en el campo `APhaDP3116`, seleccione la opción _Visual Statistics_ y verifique que el total de la distribución sea 100%. Verifique también las demás distribuciones.
 
-<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic.png" alt="R.SIGE" width="80%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_VisualStatistic1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
@@ -137,12 +137,13 @@ Diferencias:
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso    | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                                                                                                                                                              |
-| Rotulado   | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                                                                                                                                                                 |
-| Disolución | Se ejecuta desde el _Processing Toolbox / Vector Geometry / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                                                                                                 |
-
+| Proceso                         | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                                                                                                                                                            |
+| Rotulado                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                                                                                                                                                               |
+| Disolución                      | Se ejecuta desde el _Processing Toolbox / Vector Geometry / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                                                                                               |
+| Cálculos geométricos o de campo | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                                                                                                                                                                                                                |
+| Estadísticas de campo           | Se obtienen desde el menú _Vector_ a través de la opción _Analysis Tools / Basic Statistics for Fields_. Obtendrá: Count, Unique, Empty, Filled, Min, Max, Cv, Sum, Mean, Std_Dev, Range, Median, Minority, Majority, Firstquartile, Thirdquartile, IQR.                                                                                                                                                                           |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
