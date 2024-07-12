@@ -8,8 +8,8 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 ## Objetivos
 
-* El mapa CG-01 de Clasificación general del territorio anexo al Plan de Ordenamiento, contiene los valores de áreas y porcentajes de distribución territorial calculadas a partir del CRS 3116. A partir de la capa del Modelo de Ocupación Territorial - MOT, generaremos los polígonos de clasificación y calcularemos las áreas y dis distribuciones porcentuales usando el CRS 9377.
-* Identificar las diferencias geográficas entre el mapa oficial CG-01 del POT y las clasificaciones realizadas en el Modelo de Ocupación Territorial - MOT.
+* Disolver los polígonos de subcategorías del Modelo de Ocupación Territorial - MOT para obtener el mapa de clasificación del suelo.
+* Calcular las áreas de los polígonos de clasificación e identificar las diferencias geográficas entre el mapa oficial CG-01 del POT y las clasificaciones realizadas en el Modelo de Ocupación Territorial - MOT.
 * Entender la diferencia entre cálculo geométrico planar y geodésico.
 
 
@@ -23,6 +23,8 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 
 
 ## 1. Áreas y porcentajes por clasificación general del territorio
+
+El mapa CG-01 de Clasificación general del territorio anexo al Plan de Ordenamiento, contiene los valores de áreas y porcentajes de distribución territorial calculadas a partir del CRS 3116. A partir de la capa del Modelo de Ocupación Territorial - MOT, generaremos los polígonos de clasificación y calcularemos las áreas y distribuciones porcentuales usando el CRS 9377.
 
 Mapa CG-01 Clasificación general del territorio a ser utilizado como referente para la comparación de áreas y distribuciones porcentuales.<br><sub>Tomado de: Plan de Ordenamiento Territorial Municipio de Zipaquirá, Acuerdo 012 de 2013.</sub><br><img src='../../file/data/POT/Anexo_Acuerdo_012_2013/CG-01.jpg' alt='R.SIGE' width='100%' border='0' /><br>
 
