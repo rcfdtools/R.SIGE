@@ -8,7 +8,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 ## Objetivos
 
-* Representar el crecimiento poblacional municipal en el suelo urbano y rural definido en el Modelo de Ordenamiento Territorial - MOT, a partir de datos estadísticos y de proyección poblacional.
+* Representar el crecimiento poblacional municipal en el suelo urbano y rural definido en el Modelo de Ocupación Territorial - MOT, a partir de datos estadísticos y de proyección poblacional.
 * Estimar el espacio público efectivo - EPE requerido en la zona urbana a partir de datos de población.
 * Estimar la demanda de servicios de agua potable y retorno en aguas servidas residenciales.
 
@@ -25,13 +25,13 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 ## 1. Obtención de polígono urbano y rural POT
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ordenamiento Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ordenamiento Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante dentro de la base de datos GDB temporal del mapa con el nombre `\file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
+2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante dentro de la base de datos GDB temporal del mapa con el nombre `\file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
 
-> El alcacenamiento de la capa dentro de la GDB del mapa actual, le permitirá posteriormente realizar uniones de multiples registros y visualizaciones temporales.
+> El almacenamiento de la capa dentro de la GDB del mapa actual, le permitirá posteriormente realizar uniones de multiples registros y visualizaciones temporales.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_UrbanoRural_Dissolve_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 

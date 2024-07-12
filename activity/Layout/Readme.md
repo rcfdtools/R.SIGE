@@ -216,8 +216,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* [Easily Create a Spatial Map Series in ArcGIS Pro](https://www.youtube.com/watch?v=HcESlqEBebU)
 * https://pro.arcgis.com/es/pro-app/latest/help/layouts/add-a-layout-to-your-project.htm
+* [Easily Create a Spatial Map Series in ArcGIS Pro](https://www.youtube.com/watch?v=HcESlqEBebU)
 * https://docs.qgis.org/3.34/en/docs/training_manual/map_composer/map_composer.html
 
 
@@ -233,7 +233,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../PopulationGIS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/13) | [Siguiente :arrow_forward:]() |
-|---------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../PopulationGIS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/13) | [Siguiente :arrow_forward:](../LandUseAnalysis/Readme.md |
+|---------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------|
 
 [^1]: 
