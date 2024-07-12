@@ -32,7 +32,7 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante en la ruta `\file\shp\MOT_ClasificacionSuelo.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
+2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`, defina en _Environments_ el sistema de proyección 9377 asignado al mapa. Guarde la capa o clase de entidad resultante en la ruta `\file\shp\MOT_ClasificacionSuelo.shp` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -58,7 +58,30 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. 
+4. Desde la tabla de atributos, calcule las propiedades geométricas de los campos `APha3116`, `AGha3116`, `APha9377` y `AGha9377`. Como observa, los valores de las áreas planares y geográficas son diferentes en un mismo sistema y también entre los dos CRS calculados.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_CalculateGeometry2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Ajuste los colores del mapa 
+
+<div align="center">
+
+| Categoría        | HEX color |
+|------------------|-----------|
+| Urbano           | #CDCDCD   |
+| Expansión urbana | #D69DBE   |
+| Suburbano        | #D6C29F   |
+| Protección       | #74B273   |
+| Rural            | #FFEABE   |
+
+</div>
+
+## 1.1. Análisis de diferencias
+
+En la siguiente ilustración se pueden observar las diferencias de identificación por categoría del mapa oficial CG-01 con respecto a las asignaciones de categoría de suelo contenidas en la capa _MOT.shp_.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_Diferencias1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
