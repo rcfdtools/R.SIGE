@@ -75,7 +75,7 @@ Query: `SUELO IN ('EXPANSION', 'SUBURBANO', 'URBANO')`
 
 Para continuar, desactive el filtro realizado en la capa MOT.
 
-4. Para la identificación de cuáles predios son objeto de plusvalía e identificar su hecho generador, crearemos una copia de la capa de predios rurales y modificaremos su tabla incluyendo algunos atributos adicionales. De clic derecho en la capa de predios rurales, cree una copia de la capa utilizando la opción _Data / Export Features_, guarde en la ruta `\file\shp\` como _Predios_Rurales.shp_, excluya de la exportación todos los campos actuales relacionados con áreas y perímetros, y defina en _Environments_ el CRS 9377. Agregue la capa al mapa.
+4. Para la identificación de cuáles predios son objeto de plusvalía e identificar su hecho generador, crearemos primero una copia de la capa de predios rurales y modificaremos su tabla incluyendo algunos atributos adicionales. De clic derecho en la capa de predios rurales, cree una copia de la capa utilizando la opción _Data / Export Features_, guarde en la ruta `\file\shp\` como _Predios_Rurales.shp_, excluya de la exportación todos los campos actuales relacionados con áreas y perímetros, y defina en _Environments_ el CRS 9377. Agregue la capa al mapa.
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_ExportFeatures.png" alt="R.SIGE" width="40%" border="0" /></div>
 
@@ -87,11 +87,11 @@ Agregue los siguientes campos de atributos:
 
 <div align="center">
 
-| Campo      | Descripción                                                                                                            | Tipo   | Propiedad ArcGIS Pro | 
-|------------|------------------------------------------------------------------------------------------------------------------------|--------|----------------------| 
-| ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Long   | N/A                  |
-| ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.   | Text   | 100                  |
-| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377                                                                       | Double | Area (geodesic)      |
+| Campo      | Descripción                                                                                                           | Tipo       | Propiedad ArcGIS Pro | 
+|------------|-----------------------------------------------------------------------------------------------------------------------|------------|----------------------| 
+| ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia. | Long       | N/A                  |
+| ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Text (100) | N/A                  |
+| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377.                                                                     | Double     | Area (geodesic)      |
 
 </div>
 
@@ -101,6 +101,33 @@ Para todos los elementos y utilizando el _Field Calculator_ o calculadora de cam
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Para continuar con la identificación de los hechos generadores, cree también una copia completa de la capa *MOT* (desactive los filtros previamente realizados utilizando el _Definition Query_) y guarde en la ruta `\file\shp\` como _MOT_Plusvalia.shp_, excluya de la exportación todos los campos actuales relacionados con áreas y perímetros, y defina en _Environments_ el CRS 9377. Agregue la capa al mapa.
+
+> Para el desarrollo de esta actividad, no es necesario disolver los polígonos del MOT debido a que en los hechos generadores, debemos incluir el detalle de las categorías aplicables y el nombre de las zonas.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Agregue el siguiente campo de atributos:
+
+<div align="center">
+
+| Campo         | Descripción                                                                 | Tipo       | Propiedad ArcGIS Pro | 
+|---------------|-----------------------------------------------------------------------------|------------|----------------------| 
+| SueloID       | 0 - Rural, 1 - Urbano, 2 - Expansión urbana, 3 - Suburbano, 4 - Protección. | Long       | N/A                  |
+
+</div>
+
+> No es necesario agregar el campo `Suelo` debido a que ya estaba incluído en la capa MOT y tampoco es necesario agregar campos para el cálculo del área de cada polígono debido a que los valores de las áreas correspondientes a las sub-actividades asociadas a cada predio, serán calculadas luego de su intersección espacial.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Debido a que la capa _MOT_Plusvalia.shp_ contiene 80 entidades, de las cuales múltiples están asociadas a un mismo _Suelo_, es necesario realizar la codificación del campo _SueloID_ a través del uso de selecciones por atributos. Cierre el editor de tabla, y en el menú, de clic en el botón _Selection / Select By Attributes_, seleccione primero los registros correspondientes a `SUELO = 'RURAL'`, podrá observar que se han seleccionado 39 elementos. Utilizando el calculador de campo, asigne a _SueloID_ el valor 0, correspondiente a _Rural_ en la codificación establecida para este campo.
+
+> De forma predeterminada, se ha establecido 0 en el campo _SueloID_ que según la codificación establecida para la clasificación del suelo, corresponde a Rural, sin embargo, se recomienda seleccionar y volver a asignar los valores codificados.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_SelectCalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita el procedimiento anterior asignando los códigos establecidos en SueloID, para las demás clasificaciones del suelo.
 
 
 ## 3. Análisis usando software libre - QGIS
