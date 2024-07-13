@@ -135,6 +135,8 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_GraphCount.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Tenga en cuenta que el conteo mostrado en la gráfica no corresponde al número de predios asociados a cada clasificación del suelo, sino al número de categorías contenidas en cada clasificación.
+
 6. La identificación de predios objeto de plusvalía, es necesario identificar las combinaciones de los códigos xxx que definen los hechos generadores.
 
 
