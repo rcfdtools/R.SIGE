@@ -69,6 +69,20 @@ Query: `SUELO IN ('EXPANSION', 'SUBURBANO', 'URBANO')`
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Query.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Ahora, identifique visualmente, qué predios catastralmente urbanos se encuentran ahora definidos como rurales (rural, protección, suburbano). Podrá observar que ningún predio urbano ha sido incluído dentro de estas clasificaciones.
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Query1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para continuar, desactive el filtro realizado en la capa MOT.
+
+4. Para la identificación de cuáles predios son objeto de plusvalía e identificar su hecho generador, crearemos una copia de la capa de predios rurales y modificaremos su tabla incluyendo algunos atributos adicionales. De clic derecho en la capa de predios rurales, cree una copia de la capa utilizando la opción _Data / Export Features_, guarde en la ruta `\file\shp\` como _Predios_Rurales.shp_, excluya de la exportación todos los campos actuales relacionados con áreas y perímetros, y defina en _Environments_ el CRS 9377. Agregue la capa al mapa.
+
+<div align="center"><img src="graph/ArcGISPro_PrediosRurales_ExportFeatures.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+Abra la tabla de atributos e identifique que campos están vacíos y elimínelos dando clic derecho sobre la cabecera de columna y seleccionando la opción _Delete_.
+
+<div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
