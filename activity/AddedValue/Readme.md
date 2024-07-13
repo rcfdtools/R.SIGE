@@ -44,9 +44,28 @@ Hechos generadores (adaptado para el desarrollo de esta actividad)
 
 ## 2. Procedimiento general
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Plusvalia_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT, la capa de predios rurales y predios urbanos disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Plusvalia_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT (_MOT.shp_), la capa de predios rurales (TERRENO_PREDIO_RURAL) y predios urbanos (TERRENO_PREDIO_URBANO) disponibles en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, ajuste la simbología del MOT a valores únicos representando el campo de atributos `SUELO` y rotule usando el mismo campo. Establezca simbología única en los predios utilizando solo su contorno. 
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">
+Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
+
+| Categoría        | HEX color |
+|------------------|-----------|
+| Urbano           | #CDCDCD   |
+| Expansión urbana | #D69DBE   |
+| Suburbano        | #D6C29F   |
+| Protección       | #74B273   |
+| Rural            | #FFEABE   |
+
+</div>
+
+> :bulb:Como los colores ya fueron definidos en el mapa de la actividad anterior, puede copiar y pegar la capa incluyendo colores y rótulos.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. 
+
+
 
 
 
