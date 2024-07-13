@@ -63,10 +63,11 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
-* [Microsoft Office 365](https://www.office.com/)
-* [ESRI ArcGIS Pro 3.3](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) con licencia de Spatial Analyst, 3D Analyst y Network Analyst
-* [QGIS 3.34](https://qgis.org/) o superior
-* [Notepad++](https://notepad-plus-plus.org/)
+* [:toolbox:Herramienta](https://www.office.com/): Microsoft Office 365.
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
+* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:toolbox:Herramienta](https://notepad-plus-plus.org/): Notepad++.
+* [:toolbox:Herramienta](https://www.itc.nl/ilwis/download/): ILWIS 3.3.
 
 
 ## Caso de estudio general
@@ -217,8 +218,8 @@ _Clonación: para compatibilidad completa de las rutas utilizadas en los scripts
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:sun_with_face: Iniciar curso](Section01) | [:infinity: Otros cursos](https://github.com/rcfdtools) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/1) | [:notebook: Referencias](References.md) | [:label: Abreviaturas y definiciones](Definitios.md) |
-|--------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------|------------------------------------------------------|
+| [:sun_with_face: Iniciar curso](Section01) | [:infinity: Otros cursos](https://github.com/rcfdtools) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/1) | [:notebook: Referencias](file/ref/Readme.md) | [:label: Abreviaturas y definiciones](Definitios.md) |
+|--------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------|------------------------------------------------------|
 
 
 
