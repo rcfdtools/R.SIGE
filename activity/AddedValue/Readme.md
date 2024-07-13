@@ -118,6 +118,8 @@ Agregue el siguiente campo de atributos:
 </div>
 
 > No es necesario agregar el campo `Suelo` debido a que ya estaba incluído en la capa MOT y tampoco es necesario agregar campos para el cálculo del área de cada polígono debido a que los valores de las áreas correspondientes a las sub-actividades asociadas a cada predio, serán calculadas luego de su intersección espacial.
+> 
+> Como observa en la codificación establecida para `SueloID`, hemos asignado el código 0 a suelo rural y 1 a suelo urbano, lo anterior con el fín de exista una correspondencia primaria con el campo `ZonaID` de la base predial.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -127,7 +129,15 @@ Debido a que la capa _MOT_Plusvalia.shp_ contiene 80 entidades, de las cuales m�
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_SelectCalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Repita el procedimiento anterior asignando los códigos establecidos en SueloID, para las demás clasificaciones del suelo.
+Repita el procedimiento anterior asignando los códigos establecidos en SueloID, para las demás clasificaciones del suelo e incluya en el rótulo el código asignado. Cree una gráfica que permita identificar el número de elementos por cada clase de suelo.
+
+Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_GraphCount.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. La identificación de predios objeto de plusvalía, es necesario identificar las combinaciones de los códigos xxx que definen los hechos generadores.
+
+
 
 
 ## 3. Análisis usando software libre - QGIS
