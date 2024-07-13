@@ -79,13 +79,27 @@ Para continuar, desactive el filtro realizado en la capa MOT.
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_ExportFeatures.png" alt="R.SIGE" width="40%" border="0" /></div>
 
-Abra la tabla de atributos e identifique que campos están vacíos o con valores idénticos repetidos, y elimínelos dando clic derecho sobre la cabecera de columna y seleccionando la opción _Delete_. Elimine los campos: tipo_avalu, UPR, IDUPR_1, 
+Abra la tabla de atributos e identifique que campos están vacíos o con valores idénticos repetidos (tipo_avalu, condicion_, UPR, IDUPR_1) y elimínelos dando clic derecho sobre la cabecera de columna y seleccionando la opción _Delete_. 
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Agregue los siguientes campos de atributos:
 
+<div align="center">
 
+| Campo      | Descripción                                                                                                            | Tipo   | Propiedad ArcGIS Pro | 
+|------------|------------------------------------------------------------------------------------------------------------------------|--------|----------------------| 
+| ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Long   | N/A                  |
+| ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.   | Text   | 100                  |
+| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377                                                                       | Double | Area (geodesic)      |
 
+</div>
+
+> Para este ejercicio se ha definido el campo `ZonaID` tipo entero largo. Catastralmente, este campo se define de tipo texto con longitud de 2 caracteres alfanuméricos.
+
+Para todos los elementos y utilizando el _Field Calculator_ o calculadora de campo, establezca `ZonaID = 0` y `ZonaNombre="Rural"`. Utilizando el calculador de geometría o _Geometry Calculator_, calcule el área geodésica en m² de cada predio, utilizando el CRS 9377. 
+
+<div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
