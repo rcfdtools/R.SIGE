@@ -79,7 +79,7 @@ Para continuar, desactive el filtro realizado en la capa MOT.
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_ExportFeatures.png" alt="R.SIGE" width="40%" border="0" /></div>
 
-Abra la tabla de atributos e identifique que campos están vacíos y elimínelos dando clic derecho sobre la cabecera de columna y seleccionando la opción _Delete_.
+Abra la tabla de atributos e identifique que campos están vacíos o con valores idénticos repetidos, y elimínelos dando clic derecho sobre la cabecera de columna y seleccionando la opción _Delete_. Elimine los campos: tipo_avalu, UPR, IDUPR_1, 
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
