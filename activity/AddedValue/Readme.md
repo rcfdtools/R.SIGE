@@ -47,7 +47,7 @@ Hechos generadores (adaptado para el desarrollo de esta actividad)
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Plusvalia_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT (_MOT.shp_), la capa de predios rurales (TERRENO_PREDIO_RURAL) y predios urbanos (TERRENO_PREDIO_URBANO) disponibles en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, ajuste la simbología del MOT a valores únicos representando el campo de atributos `SUELO` y rotule usando el mismo campo. Establezca simbología única en los predios utilizando solo su contorno. 
 
 <div align="center">
-Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
+Ajuste los colores del mapa utilizando los siguientes valores hexadecimales, correspondientes al mapa oficial CG-01 de Clasificación general del territorio anexo al POT.<br>
 
 | Categoría        | HEX color |
 |------------------|-----------|
@@ -63,7 +63,13 @@ Ajuste los colores del mapa utilizando los siguientes valores hexadecimales.<br>
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. 
+2. Utilizando el _Query Builder_ de la capa MOT, filtre las clasificaciones de uso correspondientes a Expansión, Urbano y Suburbano. Evalúe visualmente qué predios de la zona rural se encuentran sobre los polígonos filtrados. Como puede observar, existen gran cantidad de predios que total o parcialmente se encuentran sobre estas zonificaciones definidas en el POT.  
+
+Query: `SUELO IN ('EXPANSION', 'SUBURBANO', 'URBANO')`
+
+<div align="center"><img src="graph/ArcGISPro_MOT_Query.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
