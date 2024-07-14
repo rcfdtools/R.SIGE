@@ -14,7 +14,7 @@ En esta actividad, utilizaremos como referencia la zonificación urbana y rural 
 
 * Entender los conceptos generales y hechos generales para la aplicación de la plusvalía.
 * Identificar los predios rurales objeto de plusvalía, debidos a la incorporación de suelo rural a suelo urbano, de expansión urbana o la consideración de parte del suelo rural como suburbano.
-* Calcular las áreas y los porcentajes de las fracciones de cada predio objeto de plusvalía según los tipos de hechos generadores.
+* Calcular las áreas y los porcentajes de las fracciones de cada predio objeto de plusvalía, según los tipos de hechos generadores.
 
 
 ## Requerimientos
@@ -227,19 +227,18 @@ Para este ejercicio, excluiremos del rotulado, todas las fracciones objeto de pl
 
 <div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-
+> :bulb:Luego de finalizado el proceso de identificación, podrá generar [reportes directamente en ArcGIS Pro](https://pro.arcgis.com/es/pro-app/latest/help/reports/reports-in-arcgis-pro.htm) o exportar la tabla de resultados a Excel.
 
 
 ## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso                         | Procedimiento                                                                                  |
+|:--------------------------------|:-----------------------------------------------------------------------------------------------|
+| Simbología                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                        |
+| Rotulado                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                           |
+| Intersección espacial           | Se realizan desde el menú _Vector_ a través de la opción _Geoprocessing Tools / Intersection_. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -248,14 +247,13 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                        | Descripción                                                                                                                                 | Geometría   | Registros | 
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Predios_Rurales.shp           | Predios rurales con codificación de zonas. Copia a partir de la capa de predios utilizada en el diagnóstico del POT.                        | Polígono 2D | 9554      | 
+| MOT_Plusvalia.shp             | Modelo de Ocupación Territorial - MOT con codificación de tipos de suelo. Copia a partir de la capa MOT generada en la formulación del POT. | Polígono 2D | 80        | 
+| Predios_Rurales_Plusvalia.shp | Identificación de predios en plusvalía a partir de intersección de predios rurales y el MOT.                                                | Polígono 2D | 10953     | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -264,8 +262,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P2** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P2** | :compass:Mapa digital impreso _P1-1: xxxx_<br>(Incluir xxxxx. Embebidos dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                        | 
+| Avance **P2** | Desarrolle las actividades descritas en esta clase para identificación de predios rurales en plusvalía.                                                                                                                                                                                                                                                                                                                                             | 
+| Avance **P2** | A partir de los conceptos aprendidos en esta clase, desarrolle un procedimiento que permita identificar los predios en plusvalía por el hecho generador 2, correspondiente al establecimiento o modificación del régimen o la zonificación de las subcategorías de usos del suelo, cuando se autorice el cambio de uso a uno más rentable.                                                                                                          | 
+| Avance **P2** | :compass:Mapa digital impreso _P2-4: Predios rurales en plusvalía_<br>(Incluir tablas resúmen y gráfico consolidado de resultados. Embebidos dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                   | 
 | Avance **P2** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -292,7 +291,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../LandUseAnalysis/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/15) | [Siguiente :arrow_forward:]() |
+|-----------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
