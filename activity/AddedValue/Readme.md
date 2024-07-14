@@ -141,20 +141,24 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 
 6. Para la identificación de predios objeto de plusvalía, es necesario evaluar las combinaciones de los códigos _ZonaID_ de la base predial y SueloID de la capa del Modelo de Ocupación Territorial - MOT, que definen los hechos generadores.
 
-| ZonaID - Zona                                             | SueloID - Suelo      | PlusvID - Hecho generador                        |
-|-----------------------------------------------------------|----------------------|--------------------------------------------------|
-| 0 - Predio Rural                                          | 0 - Rural Rural      | 0 - No genera plusvalía                          |
-| 0 - Predio Rural                                          | 1 - Urbano           | 1 - Plusvalía por cambio de clasificación de uso |
-| 0 - Predio Rural                                          | 2 - Expansión urbana | 1 - Plusvalía por cambio de clasificación de uso |
-| 0 - Predio Rural                                          | 3 - Rural Suburbano  | 1 - Plusvalía por cambio de clasificación de uso |
-| 0 - Predio Rural                                          | 4 - Rural Protección | 0 - No genera plusvalía                          |
-| 1 - Predio Urbano                                         | 0 - Rural Rural      | 0 - No genera plusvalía                          |
-| 1 - Predio Urbano                                         | 1 - Urbano           | 0 - No genera plusvalía                          |
-| 1 - Predio Urbano                                         | 2 - Expansión urbana | 0 - No genera plusvalía                          |
-| 1 - Predio Urbano                                         | 3 - Rural Suburbano  | 0 - No genera plusvalía                          |
-| 1 - Predio Urbano                                         | 4 - Rural Protección | 0 - No genera plusvalía                          |
-| 2 a 99 - Predio en otros núcleos catalogados como rurales | Ver Nota 1           | Ver Nota 1                                       |
-| 2 a 99 - Predio en otros núcleos catalogados como urbanos | Ver Nota 2           | Ver Nota 2                                       |
+<div align="center">
+
+| ZonaID - Zona                                              | SueloID - Suelo       | PlusvID - Hecho generador                         |
+|:-----------------------------------------------------------|:----------------------|:--------------------------------------------------|
+| 0 - Predio Rural                                           | 0 - Rural Rural       | 0 - No genera plusvalía                           |
+| 0 - Predio Rural                                           | 1 - Urbano            | 1 - Plusvalía por cambio de clasificación de uso  |
+| 0 - Predio Rural                                           | 2 - Expansión urbana  | 1 - Plusvalía por cambio de clasificación de uso  |
+| 0 - Predio Rural                                           | 3 - Rural Suburbano   | 1 - Plusvalía por cambio de clasificación de uso  |
+| 0 - Predio Rural                                           | 4 - Rural Protección  | 0 - No genera plusvalía                           |
+| 1 - Predio Urbano                                          | 0 - Rural Rural       | 0 - No genera plusvalía                           |
+| 1 - Predio Urbano                                          | 1 - Urbano            | 0 - No genera plusvalía                           |
+| 1 - Predio Urbano                                          | 2 - Expansión urbana  | 0 - No genera plusvalía                           |
+| 1 - Predio Urbano                                          | 3 - Rural Suburbano   | 0 - No genera plusvalía                           |
+| 1 - Predio Urbano                                          | 4 - Rural Protección  | 0 - No genera plusvalía                           |
+| 2 a 99 - Predio en otros núcleos catalogados como rurales  | Ver Nota 1            | Ver Nota 1                                        |
+| 2 a 99 - Predio en otros núcleos catalogados como urbanos  | Ver Nota 2            | Ver Nota 2                                        |
+
+</div>
 
 > **Nota 1**: aplican las mismas combinaciones aplicadas a la zona 0 - Predio Rural.
 > 
