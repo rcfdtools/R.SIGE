@@ -223,6 +223,13 @@ Para este ejercicio, excluiremos del rotulado, todas las fracciones objeto de pl
 
 <div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Label4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+13. Para conocer el área total por clase de suelo objeto de plusvalía, filtre en la tabla de atributos los códigos de suelo con hecho generador, luego cree una gráfica de barras a partir del campo `Suelo` y totalice a partir de las áreas contenidas en el campo `AGmPlv9377`.
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
 
 
 ## 3. Análisis usando software libre - QGIS
