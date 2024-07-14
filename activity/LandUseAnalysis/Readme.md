@@ -44,16 +44,16 @@ Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en
 
 <div align="center">
 
-| Campo      | Descripción                                           | Tipo    | Propiedad ArcGIS Pro        | 
-|------------|-------------------------------------------------------|---------|-----------------------------| 
-| APha3116   | Área planar en hectáreas a partir de CRS 3116         | Double  | Area                        |
-| AGha3116   | Área geodésica en hectáreas a partir de CRS 3116      | Double  | Area (geodesic)             |
-| APha9377   | Área planar en hectáreas a partir de CRS 9377         | Double  | Area                        |
-| AGha9377   | Área geodésica en hectáreas a partir de CRS 9377      | Double  | Area (geodesic)             |
-| APhaDP3116 | Distribución porcentual de áreas a partir de APha3116 | Double  | Area (geodesic)             |
-| AGhaDP3116 | Distribución porcentual de áreas a partir de AGha3116 | Double  | Area (geodesic)             |
-| APhaDP9377 | Distribución porcentual de áreas a partir de APha9377 | Double  | Area (geodesic)             |
-| AGhaDP9377 | Distribución porcentual de áreas a partir de AGha9377 | Double  | Area (geodesic)             |
+| Campo      | Descripción                                           | Tipo    | Propiedad ArcGIS Pro | 
+|------------|-------------------------------------------------------|---------|----------------------| 
+| APha3116   | Área planar en hectáreas a partir de CRS 3116         | Double  | Area                 |
+| AGha3116   | Área geodésica en hectáreas a partir de CRS 3116      | Double  | Area (geodesic)      |
+| APha9377   | Área planar en hectáreas a partir de CRS 9377         | Double  | Area                 |
+| AGha9377   | Área geodésica en hectáreas a partir de CRS 9377      | Double  | Area (geodesic)      |
+| APhaDP3116 | Distribución porcentual de áreas a partir de APha3116 | Double  | N/A                  |
+| AGhaDP3116 | Distribución porcentual de áreas a partir de AGha3116 | Double  | N/A                  |
+| APhaDP9377 | Distribución porcentual de áreas a partir de APha9377 | Double  | N/A                  |
+| AGhaDP9377 | Distribución porcentual de áreas a partir de AGha9377 | Double  | N/A                  |
 
 </div>
 

@@ -93,7 +93,7 @@ Agregue los siguientes campos de atributos:
 |------------|-----------------------------------------------------------------------------------------------------------------------|:-----------:|----------------------| 
 | ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia. |    Long     | N/A                  |
 | ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Text (100)  | N/A                  |
-| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377.                                                                     |   Double    | Area (geodesic)      |
+| AGm9377    | Área geodésica en m² a partir de CRS 9377.                                                                            |   Double    | Area (geodesic)      |
 
 </div>
 
@@ -174,6 +174,36 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 
 Como puede observar en la imagen, algunos predios rurales tienen una fracción sobre suelo de expansión, sobre suelo urbano o ambos.
 
+8. Abra la tabla de atributos de la intersección, podrá observar que en cada fracción de predio, se pueden identificar los códigos y valores de zona y uso, además de la categoría de suelo y su nombre. Rotule la capa de predios utilizando la combinación de códigos de Zona y Suelo.
+
+> El proceso de intersección espacial, genera un mayor número de entidades en la capa resultante. Por ejemplo, inicialmente la capa de predios contenía 9554 predios, la capa de intersección contiene 10953 polígonos o fracciones, por lo que se han generado 1399 fraccionamientos. Un único predio puede ser intersecado una o múltiples veces. 
+
+Rótulo Arcade: `"z" + $feature.ZonaID + "-" + "s"+ $feature.SueloID`
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Label1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. En la rotulación, rotule solo los predios o sus fracciones que son objeto de plusvalía, correspondientes a los códigos `SueloID IN (1, 2, 3)`, ajuste la posición del rótulo para que solo aparezca cuando pueda ser contenida dentro del polígono o cuando no se traslape con otro rótulo.
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Para el cálculo del área objeto de plusvalía por cada categoría de uso y su porcentaje con respecto al total del área del predio, cree en la tabla de atributos de la intersección, los siguientes campos:
+
+<div align="center">
+
+| Campo      | Descripción                                                                          | Tipo       | Propiedad ArcGIS Pro | 
+|------------|--------------------------------------------------------------------------------------|------------|----------------------| 
+| AGmPlv9377 | Área geodésica en m² del subpolígono de plusvalía a partir de CRS 9377.              |   Double    | Area (geodesic)      |
+| AGmDP9377  | Distribución porcentual del área de la fracción del predio respecto a su área total. |   Double    | Area (geodesic)      |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+11. Utilizando el calculador de geometría sobre el campo `AGmPlv9377`, calcule el área geodésica en m² utilizando el CRS 9377.
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_GeometryCalculator.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Luego
 
 
 
@@ -222,6 +252,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * [Ley 388 de 1998, Colombia.](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)
+* https://community.esri.com/t5/arcgis-pro-questions/only-show-labels-that-fit-within-polygons-in/td-p/705022
 
 
 
