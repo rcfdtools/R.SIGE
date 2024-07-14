@@ -81,4 +81,5 @@
 * https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
 * https://www.minvivienda.gov.co/sites/default/files/documentos/titulo_d.pdf
 * https://minvivienda.gov.co/sites/default/files/documentos/guia-ras_001.pdf
-* [Resolución 070 de 2011 - IGAC Colombia:](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) Resolución por la cual se reglamenta técnicamente la formación catastral, la actualización de la formación catastral y la conservación catastral
+* [Resolución 070 de 2011 - IGAC Colombia. Estructura del código catastral](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) Resolución por la cual se reglamenta técnicamente la formación catastral, la actualización de la formación catastral y la conservación catastral
+* https://www.minvivienda.gov.co/sites/default/files/documentos/guia-para-la-participacion-en-plusvalia.pdf

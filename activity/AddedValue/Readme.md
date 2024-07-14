@@ -17,6 +17,7 @@ En esta actividad, utilizaremos como referencia la zonificación urbana y rural 
 
 ## Requerimientos
 
+* [:notebook:Lectura](https://www.minvivienda.gov.co/sites/default/files/documentos/guia-para-la-participacion-en-plusvalia.pdf): Guía para la implementación de la participación de plusvalía. Ministerio de Vivienda, Ciudad y Territorio.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
@@ -30,12 +31,12 @@ Según el Capítulo IX y el Artículo 73 de la Ley 388 de 1997 de Colombia y de 
 
 Hechos generadores (adaptado para el desarrollo de esta actividad)
 
-| # | Hecho                                                                                                                                                        | Aplicabilidad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | Incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano.                                         | Cambio de clasificación de uso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 2 | Establecimiento o modificación del régimen o la zonificación de las subcategorías de usos del suelo, cuando se autorice el cambio de uso a uno más rentable. | Modificación de la zonificación de las categorías o subcategorías de uso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| 3 | Autorización de un mayor aprovechamiento del suelo en edificación, bien sea elevando el índice de ocupación o el índice de construcción, o ambos a la vez.   | Mayor edificabilidad, identificable en las fichas urbanísticas, entre la adopción inicial y la revisión y/o ajuste del POT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| 4 | Participación por ejecución de obras públicas.                                                                                                               | Aunque no es un hecho generador directo, se puede evaluar el efecto plusvalía cuando se ejecuten obras públicas previstas en el plan de ordenamiento territorial o en los planes parciales o en los instrumentos que los desarrollen, y no se haya utilizado para su financiación la contribución de valorización, las correspondientes autoridades distritales, municipales o  metropolitanas ejecutoras, podrán determinar el mayor valor adquirido por los predios en razón de tales obras, y liquidar la participación que corresponde al respectivo municipio, distrito o área metropolitana. |
+| PlusvID | Hecho                                                                                                                                                        | Aplicabilidad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1       | Incorporación de suelo rural a suelo de expansión urbana o la consideración de parte del suelo rural como suburbano.                                         | Cambio de clasificación de uso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 2       | Establecimiento o modificación del régimen o la zonificación de las subcategorías de usos del suelo, cuando se autorice el cambio de uso a uno más rentable. | Modificación de la zonificación de las categorías o subcategorías de uso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 3       | Autorización de un mayor aprovechamiento del suelo en edificación, bien sea elevando el índice de ocupación o el índice de construcción, o ambos a la vez.   | Mayor edificabilidad, identificable en las fichas urbanísticas, entre la adopción inicial y la revisión y/o ajuste del POT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 4       | Participación por ejecución de obras públicas.                                                                                                               | Aunque no es un hecho generador directo, se puede evaluar el efecto plusvalía cuando se ejecuten obras públicas previstas en el plan de ordenamiento territorial o en los planes parciales o en los instrumentos que los desarrollen, y no se haya utilizado para su financiación la contribución de valorización, las correspondientes autoridades distritales, municipales o  metropolitanas ejecutoras, podrán determinar el mayor valor adquirido por los predios en razón de tales obras, y liquidar la participación que corresponde al respectivo municipio, distrito o área metropolitana. |
 
 > El número total de metros cuadrados que se considerará como objeto de la participación en la plusvalía será, para el caso de cada inmueble, igual al área total del mismo destinada al nuevo uso o mejor aprovechamiento, descontada la superficie correspondiente a las cesiones urbanísticas obligatorias para espacio público de la ciudad, así como el área de eventuales afectaciones sobre el inmueble en razón del plan vial u otras obras públicas, las cuales deben estar contempladas en el plan de ordenamiento o en los instrumentos que lo desarrollen.
 >
@@ -46,7 +47,7 @@ Hechos generadores (adaptado para el desarrollo de esta actividad)
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Plusvalia_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT (_MOT.shp_), la capa de predios rurales (TERRENO_PREDIO_RURAL) y predios urbanos (TERRENO_PREDIO_URBANO) disponibles en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\`, ajuste la simbología del MOT a valores únicos representando el campo de atributos `SUELO` y rotule usando el mismo campo. Establezca simbología única en los predios, utilizando solo su contorno. 
 
-Ajuste los colores del mapa utilizando los siguientes valores hexadecimales, correspondientes al mapa oficial CG-01 de Clasificación general del territorio anexo al POT.
+Ajuste los colores del mapa utilizando los siguientes valores hexadecimales, correspondientes al mapa oficial CG-01 de Clasificación general del territorio anexo al POT y elimine el color del contorno para obtener una mejor visualización de las zonas.
 
 <div align="center">
 
@@ -88,17 +89,17 @@ Agregue los siguientes campos de atributos:
 
 <div align="center">
 
-| Campo      | Descripción                                                                                                           | Tipo       | Propiedad ArcGIS Pro | 
-|------------|-----------------------------------------------------------------------------------------------------------------------|------------|----------------------| 
-| ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia. | Long       | N/A                  |
-| ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Text (100) | N/A                  |
-| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377.                                                                     | Double     | Area (geodesic)      |
+| Campo      | Descripción                                                                                                           |    Tipo     | Propiedad ArcGIS Pro | 
+|------------|-----------------------------------------------------------------------------------------------------------------------|:-----------:|----------------------| 
+| ZonaID     | 0 - Rural, 1 - Urbano, 2 a 99 - Otros núcleos y corregimientos. Artículo 159, Resolución 0070 de 2011, IGAC Colombia. |    Long     | N/A                  |
+| ZonaNombre | Rural - 0, Urbano - 1, Otros núcleos y corregimientos -2 a 99. Artículo 159, Resolución 0070 de 2011, IGAC Colombia.  | Text (100)  | N/A                  |
+| AGm9377    | Área geodésica en hectáreas a partir de CRS 9377.                                                                     |   Double    | Area (geodesic)      |
 
 </div>
 
 > Para este ejercicio se ha definido el campo `ZonaID` tipo entero largo. Catastralmente, este campo se define de tipo texto con longitud de 2 caracteres alfanuméricos.
 
-Para todos los elementos y utilizando el _Field Calculator_ o calculadora de campo, establezca `ZonaID = 0` y `ZonaNombre="Rural"`. Utilizando el calculador de geometría o _Geometry Calculator_, calcule el área geodésica en m² de cada predio, utilizando el CRS 9377. 
+Para todos los elementos y utilizando el _Field Calculator_ o calculadora de campo, establezca `ZonaID = 0` y `ZonaNombre="Rural"`. Utilizando el calculador de geometría o _Geometry Calculator_, calcule el área geodésica en m² de cada predio utilizando el CRS 9377. 
 
 <div align="center"><img src="graph/ArcGISPro_PrediosRurales_shp_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -120,17 +121,17 @@ Agregue el siguiente campo de atributos:
 
 > No es necesario agregar el campo `Suelo` debido a que ya estaba incluído en la capa MOT y tampoco es necesario agregar campos para el cálculo del área de cada polígono debido a que los valores de las áreas correspondientes a las sub-actividades asociadas a cada predio, serán calculadas luego de su intersección espacial.
 > 
-> Como observa en la codificación establecida para `SueloID`, hemos asignado el código 0 a suelo rural y 1 a suelo urbano, lo anterior con el fín de exista una correspondencia primaria con el campo `ZonaID` de la base predial.
+> Como observa en la codificación establecida para `SueloID`, hemos asignado el código 0 a suelo rural y 1 a suelo urbano, lo anterior con el fín de que exista correspondencia primaria con el campo `ZonaID` de la base predial.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Debido a que la capa _MOT_Plusvalia.shp_ contiene 80 entidades, de las cuales múltiples están asociadas a un mismo _Suelo_, es necesario realizar la codificación del campo _SueloID_ a través del uso de selecciones por atributos. Cierre el editor de tabla, y en el menú, de clic en el botón _Selection / Select By Attributes_, seleccione primero los registros correspondientes a `SUELO = 'RURAL'`, podrá observar que se han seleccionado 39 elementos. Utilizando el calculador de campo, asigne a _SueloID_ el valor 0, correspondiente a _Rural_ en la codificación establecida para este campo.
+Debido a que la capa _MOT_Plusvalia.shp_ contiene 80 entidades, de las cuales múltiples están asociadas a un mismo _Suelo_, es necesario realizar la codificación del campo _SueloID_ a través del uso de selecciones por atributos. Cierre el editor de tabla, y en el menú superior, de clic en el botón _Selection / Select By Attributes_, seleccione primero los registros correspondientes a `SUELO = 'RURAL'`, podrá observar que se han seleccionado 39 elementos. Utilizando el calculador de campo, asigne a _SueloID_ el valor 0, correspondiente a _Rural_ en la codificación establecida para este campo.
 
-> De forma predeterminada, se ha establecido 0 en el campo _SueloID_ que según la codificación establecida para la clasificación del suelo, corresponde a Rural, sin embargo, se recomienda seleccionar y volver a asignar los valores codificados.
+> De forma predeterminada, se ha establecido 0 en el campo _SueloID_ que según la codificación establecida para la clasificación del suelo, corresponde a _Rural_, sin embargo, se recomienda seleccionar y volver a asignar los valores codificados.
 
 <div align="center"><img src="graph/ArcGISPro_MOT_Plusvalia_shp_SelectCalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Repita el procedimiento anterior asignando los códigos establecidos en SueloID, para las demás clasificaciones del suelo e incluya en el rótulo el código asignado. Cree una gráfica que permita identificar el número de elementos por cada clase de suelo.
+Repita el procedimiento anterior, asignando los códigos establecidos en SueloID para las demás clasificaciones del suelo, e incluya en el rótulo el código asignado. Cree una gráfica que permita identificar el número de elementos por cada clase de suelo.
 
 Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 
@@ -138,8 +139,28 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 
 > Tenga en cuenta que el conteo mostrado en la gráfica no corresponde al número de predios asociados a cada clasificación del suelo, sino al número de categorías contenidas en cada clasificación.
 
-6. La identificación de predios objeto de plusvalía, es necesario identificar las combinaciones de los códigos xxx que definen los hechos generadores.
+6. Para la identificación de predios objeto de plusvalía, es necesario evaluar las combinaciones de los códigos _ZonaID_ de la base predial y SueloID de la capa del Modelo de Ocupación Territorial - MOT, que definen los hechos generadores.
 
+| ZonaID - Zona                                             | SueloID - Suelo      | PlusvID - Hecho generador                        |
+|-----------------------------------------------------------|----------------------|--------------------------------------------------|
+| 0 - Predio Rural                                          | 0 - Rural Rural      | 0 - No genera plusvalía                          |
+| 0 - Predio Rural                                          | 1 - Urbano           | 1 - Plusvalía por cambio de clasificación de uso |
+| 0 - Predio Rural                                          | 2 - Expansión urbana | 1 - Plusvalía por cambio de clasificación de uso |
+| 0 - Predio Rural                                          | 3 - Rural Suburbano  | 1 - Plusvalía por cambio de clasificación de uso |
+| 0 - Predio Rural                                          | 4 - Rural Protección | 0 - No genera plusvalía                          |
+| 1 - Predio Urbano                                         | 0 - Rural Rural      | 0 - No genera plusvalía                          |
+| 1 - Predio Urbano                                         | 1 - Urbano           | 0 - No genera plusvalía                          |
+| 1 - Predio Urbano                                         | 2 - Expansión urbana | 0 - No genera plusvalía                          |
+| 1 - Predio Urbano                                         | 3 - Rural Suburbano  | 0 - No genera plusvalía                          |
+| 1 - Predio Urbano                                         | 4 - Rural Protección | 0 - No genera plusvalía                          |
+| 2 a 99 - Predio en otros núcleos catalogados como rurales | Ver Nota 1           | Ver Nota 1                                       |
+| 2 a 99 - Predio en otros núcleos catalogados como urbanos | Ver Nota 2           | Ver Nota 2                                       |
+
+> Nota 1: aplican las mismas combinaciones aplicadas a la zona 0 - Predio Rural.  
+> Nota 2: aplican las mismas combinaciones aplicadas a la zona 1 - Predio Urbano.  
+> Recuerde que un hecho generador indirecto para el cobro de plusvalía se da por la ejecución de obras públicas desarrolladas con recursos diferentes de contribuciones por valorización, y que es posible que en cualquier clasificación del suelo pueda ser aplicable. En este ejercicio, solo se evalúan los hechos generadores directos.
+
+7. 
 
 
 
