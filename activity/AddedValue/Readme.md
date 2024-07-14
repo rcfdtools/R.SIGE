@@ -156,8 +156,10 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 | 2 a 99 - Predio en otros núcleos catalogados como rurales | Ver Nota 1           | Ver Nota 1                                       |
 | 2 a 99 - Predio en otros núcleos catalogados como urbanos | Ver Nota 2           | Ver Nota 2                                       |
 
-> Nota 1: aplican las mismas combinaciones aplicadas a la zona 0 - Predio Rural.  
-> Nota 2: aplican las mismas combinaciones aplicadas a la zona 1 - Predio Urbano.  
+> **Nota 1**: aplican las mismas combinaciones aplicadas a la zona 0 - Predio Rural.
+> 
+> **Nota 2**: aplican las mismas combinaciones aplicadas a la zona 1 - Predio Urbano.  
+> 
 > Recuerde que un hecho generador indirecto para el cobro de plusvalía se da por la ejecución de obras públicas desarrolladas con recursos diferentes de contribuciones por valorización, y que es posible que en cualquier clasificación del suelo pueda ser aplicable. En este ejercicio, solo se evalúan los hechos generadores directos.
 
 7. 
