@@ -166,7 +166,15 @@ Rótulo Arcade: `$feature.SueloID + " - " + $feature.SUELO`
 > 
 > Recuerde que un hecho generador indirecto para el cobro de plusvalía se da por la ejecución de obras públicas desarrolladas con recursos diferentes de contribuciones por valorización, y que es posible que en cualquier clasificación del suelo pueda ser aplicable. En este ejercicio, solo se evalúan los hechos generadores directos.
 
-7. 
+7. Utilizando la herramienta _Analysis Tools / Intersect_ disponible en el _Geoprocessing Toolbox_, cree una intersección espacial de las capas de _Predios_Rurales_ y _MOT_Plusvalia_, guarde en la ruta `\file\shp\` como _Predios_Rurales_Plusvalia.shp_. Agregue la capa resultante al mapa, simbolice solo por contornos de color rojo y ubique la capa debajo de la capa de predios.
+
+> La intersección espacial subdividirá cada predio en las fracciones correspondientes a cada categoría de la capa MOT_Plusvalía. Sí un predio se encuentra dentro de una única categoría, no será dividido, pero si se incluirán los atributos del MOT.
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Intersect.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Como puede observar en la imagen, algunos predios rurales tienen una fracción sobre suelo de expansión, sobre suelo urbano o ambos.
+
+
 
 
 
