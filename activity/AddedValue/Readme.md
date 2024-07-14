@@ -209,8 +209,19 @@ Luego, con el calculador de campo, calcule en _AGmDP9377_, el porcentaje de la f
 
 <div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_CalculeField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> Predios con porcentaje calculado en 100, pertenecen completamente a una única categoría de suelo.
+> Predios con porcentaje calculado igual al 100% indica que pertenecen completamente a una única categoría de suelo.
 
+Ajuste el rótulo incluyendo el área y el porcentaje del predio objeto de plusvalía.
+
+Rótulo Arcade: `"z" + $feature.ZonaID + "-" + "s"+ $feature.SueloID + " (" + round($feature.AGmDP9377, 1) + "%)" +  textformatting.Newline + "A (m²): " + Round($feature.AGmPlv9377, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Label3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+12. Debido a errores topológicos en la digitalización de la capa del MOT, es posible que existan pequeñas fracciones de los predios sobre zonas con hechos generadores de plusvalía, estos elementos pueden ser identificados y excluídos definiendo un umbral de área o porcentaje. Por ejemplo, fracciones con áreas iguales o inferiores a 1 m² o con porcentajes iguales o inferiores al 1% solo en predios con áreas totales de predio iguales o inferiores a 100 m².
+
+Para este ejercicio, excluiremos del rotulado, todas las fracciones objeto de plusvalía con áreas inferiores a 1 m². Para ello, ajustar la expresión SQL de rotulado con `SueloID IN (1, 2, 3) And AGmPlv9377 > 1`. Como puede observar, con respecto a la imagen anterior, se han exluído algunos rótulos.
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_Label4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
