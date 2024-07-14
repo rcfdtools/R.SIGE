@@ -199,11 +199,17 @@ Rótulo Arcade: `"z" + $feature.ZonaID + "-" + "s"+ $feature.SueloID`
 
 <div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-11. Utilizando el calculador de geometría sobre el campo `AGmPlv9377`, calcule el área geodésica en m² utilizando el CRS 9377.
+11. Utilizando el calculador de geometría sobre el campo `AGmPlv9377`, calcule el área geodésica en m² de cada fracción de predio utilizando el CRS 9377.
 
 <div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_GeometryCalculator.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Luego
+Luego, con el calculador de campo, calcule en _AGmDP9377_, el porcentaje de la fracción sobre el total del área del predio global, utilice la siguiente expresión:
+
+`AGmDP9377 = (!AGmPlv9377! / !AGm9377!) * 100`
+
+<div align="center"><img src="graph/ArcGISPro_Predios_Rurales_Plusvalia_shp_CalculeField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Predios con porcentaje calculado en 100, pertenecen completamente a una única categoría de suelo.
 
 
 
