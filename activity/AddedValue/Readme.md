@@ -1,5 +1,5 @@
 # Identificación de predios en plusvalía por cambio de clasificación o categoría de suelo
-Keywords: `land-added-value` `land-appreciation` `land-betterment`
+Keywords: `land-added-value` `land-appreciation` `land-betterment` `intersect` 
 
 A partir de la combinación de predios con el mapa del Modelo de Ocupación Territorial - MOT, se realiza la identificación de predios rurales con cambio de categoría a expansión urbana, suburbano o urbano y/o por modificación de la zonificación de usos del suelo.
 
@@ -12,17 +12,17 @@ En esta actividad, utilizaremos como referencia la zonificación urbana y rural 
 
 ## Objetivos
 
-* 
+* Entender los conceptos generales y hechos generales para la aplicación de la plusvalía.
+* Identificar los predios rurales objeto de plusvalía, debidos a la incorporación de suelo rural a suelo urbano, de expansión urbana o la consideración de parte del suelo rural como suburbano.
+* Calcular las áreas y los porcentajes de las fracciones de cada predio objeto de plusvalía según los tipos de hechos generadores.
 
 
 ## Requerimientos
 
 * [:notebook:Lectura](https://www.minvivienda.gov.co/sites/default/files/documentos/guia-para-la-participacion-en-plusvalia.pdf): Guía para la implementación de la participación de plusvalía. Ministerio de Vivienda, Ciudad y Territorio.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](Plusvalia.xlsx): libro con hechos generadores y homologación de clasificación y categorías del suelo.
 
 
 ## 1. Conceptos generales de plusvalía
