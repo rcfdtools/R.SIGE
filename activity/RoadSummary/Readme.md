@@ -82,9 +82,29 @@ Para finalizar la edición y guardar los cambios, en el menú _Edit_ de clic en 
 Seleccione los tramos a ajustar y desde la tabla de atributos asigne la zona.
 
 <div align="center"><img src="graph/ArcGISPro_ZonaNombre1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Una vez terminada la reasignación de zonas, obtendremos la siguiente visualización de la red vial.
+
 <div align="center"><img src="graph/ArcGISPro_ZonaNombre2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. 
+8. Para los análisis estadísticos a realizar, es necesario completar, homologar o ajustar los atributos definidos en la tabla de la capa integrada de vías, lo anterior debido a los ajustes realizados en la edición vectorial y porque no todas las vías contienen las definiciones de Tipo, Estado, Clasificación y Orden vial. Para este ejemplo, ajustaremos solo el atributo correspondiente a orden vial.
+
+Utilizando la herramienta de selección por atributos disponible en el menú Map, seleccione todas las vías urbanas cuyo orden vial está vacío.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Utilizando el calculador de campo, establezca `ORDEN_VIAL = "Vía Urbana"`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Simbolice la capa por valores únicos utilizando el campo `ORDEN_VIAL`, establezca color negro y grosor 2 para todas las vías sin orden vial. Podrá observar que las vías ajustadas por zona, no contienen orden vial. Utilizando los ordenes viales de las vías próximas, establezca el orden víal sobre estas vías.
+
+<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Una vez finalizada la asignación, obtendrá la siguiente visualización de la capa.
+
+
+
 
 
 
