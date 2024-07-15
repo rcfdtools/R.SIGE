@@ -35,11 +35,15 @@ Desde la tabla de contenido y utilizando la herramienta _Data / Export Features_
 
 3. Para las dos capas, cree los siguientes campos en la tabla de atributos:
 
+<div align="center">
+
 | Campo      | Descripción                      | Tipo       | Propiedad ArcGIS Pro | 
 |------------|----------------------------------|------------|----------------------| 
 | ZonaNombre | Rural, Urbano                    | Text (100) | N/A                  |
 | NombreVia  | Nombre de la vía                 | Text (100) | N/A                  |
 | LGkm       | Longitud geodésica en kilómetros | Double     | Area (geodesic)      |
+
+</div>
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
