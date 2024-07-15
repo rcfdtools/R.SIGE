@@ -124,6 +124,10 @@ Desde la tabla de contenido, renombre la capa _Red_Vial_ a _Red Vial (Orden)_. C
 
 <div align="center"><img src="graph/ArcGISPro_OrdenVial_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Para generar una tabla con el resultado de los análisis, desde la tabla de atributos y sobre el campo _ORDEN_VIAL_, obtenga un resumen estadístico a través de la opción _Summarize_. Nombre como `\file\data\table\Red_Vial_Orden_Stat.dbf`
+
+<div align="center"><img src="graph/ArcGISPro_OrdenVial_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_OrdenVial_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 ### 2.2. Vías por tipo
 
@@ -149,11 +153,6 @@ Desde la tabla de atributos, cree una copia de la capa _Red Vial (Orden)_ y nomb
 * Barras totalizando la longitud de los tramos.
 
 <div align="center"><img src="graph/ArcGISPro_Estado_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-
-
-
-
 
 
 
