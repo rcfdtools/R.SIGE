@@ -20,7 +20,7 @@ A partir de las capas orden vial y red vial urbana, contenidas en los anexos de 
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general
+## 1. Integración y ajuste de vias urbanas y rurales
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadSummary_ y establezca el CRS 9377. Agregue al mapa desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\` las capas VIAS_PERIMETRO_URBANO.shp, ORDEN_VIAL.shp y MOT.shp, ajuste los colores para diferenciar las vías urbanas de las rurales y en el MOT, filtre la zona urbana y de expansión. 
 
@@ -106,7 +106,12 @@ Una vez finalizada la asignación, obtendrá la siguiente visualización de la c
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-9. 
+
+## 2. Análisis estadístico
+
+1. 
+
+
 
 
 ## 2. Análisis usando software libre - QGIS
