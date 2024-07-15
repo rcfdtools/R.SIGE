@@ -156,7 +156,7 @@ Desde la tabla de atributos, cree una copia de la capa _Red Vial (Orden)_ y nomb
 <div align="center"><img src="graph/ArcGISPro_Estado_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Análisis usando software libre - QGIS
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
