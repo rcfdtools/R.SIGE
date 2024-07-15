@@ -156,18 +156,17 @@ Desde la tabla de atributos, cree una copia de la capa _Red Vial (Orden)_ y nomb
 <div align="center"><img src="graph/ArcGISPro_Estado_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-
-
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso                                          | Procedimiento                                                                                                                                                                                                                                                        |
+|:-------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                       | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                              |
+| Rotulado                                         | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                 |
+| Edición geométrica para eliminación de elementos | Activar modo de edición en la capa o _Toggle Editing_, luego en la barra de edición seleccionar la herramienta _Vertex Tool_, oprimir y mantener la tecla <kbd>Shift</kbd>, seleccionar los nodos a eliminar, oprimir tecla <kbd>Delete</kbd>.                       |
+| Fraccionar o segmentar una entidad (Split)       | Activar el modo de edición de la capa y activar la barra _[Advanced Digitizing Toolbar](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html#advanced-digitizing)_y las herramientas_Slipt Features_ o _Split Parts_. |
+| Resumen estadístico (Summarize)                  | Disponible en _Processing Toolbox / Vector Analysis / [Statistics by categories](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#statistics-by-categories)_.                                                                 |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -176,14 +175,13 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre          | Descripción                                                                                              | Geometría | Registros | 
+|-----------------|----------------------------------------------------------------------------------------------------------|-----------|-----------| 
+| Vial_Urbano.shp | Copia depurada de la capa VIAS_PERIMETRO_URBANO.shp, utilizada en la formulación del POT.                | Línea 2D  | 764       | 
+| Vial_Rural.shp  | Copia depurada de la capa ORDEN_VIAL.shp, utilizada en la formulación del POT.                           | Línea 2D  | 775       | 
+| Red_vial.shp    | Integración de red vial urbana y rural a partir de las capas depuradas Vial_Urbano.shp y Vial_Rural.shp. | Línea 2D  | 1541      | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -201,10 +199,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-
 ## Referencias
 
-* 
+* https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#statistics-by-categories
+* https://docs.qgis.org/3.34/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html#advanced-digitizing
 
 
 ## Control de versiones
@@ -219,7 +217,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../AddedValue/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
