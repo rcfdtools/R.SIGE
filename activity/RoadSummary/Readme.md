@@ -26,6 +26,23 @@ A partir de las capas orden vial y red vial urbana, contenidas en los anexos de 
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Verifique las vías en el contorno de la zona urbana, podrá observar que varios de los tramos rurales se extienden dentro de esta zona y que en la mayoría de los casos, en la red vial urbana, ya se encuentran digitalizados. Para integrar estas dos capas en una única capa de análisis, primero crearemos una copia de las capas para editar su contenido.
+
+Desde la tabla de contenido y utilizando la herramienta _Data / Export Features_, exporte en la carpeta `\file\data\shp\`, las capas viales como _Vial_Urbano.shp_ y _Vial_Rural.shp_, asigne desde Environments el CRS 9377. En las vías rurales, conserve únicamente los atributos `Layer`, _ORDEN_VIAL_ y `VIAS_`. En la capa Vial_Urbano, elimine los campos `OBJECTID_1`, `SHAPE_Leng` y `LONGI`.  
+
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para las dos capas, cree los siguientes campos en la tabla de atributos:
+
+| Campo      | Descripción                      | Tipo       | Propiedad ArcGIS Pro | 
+|------------|----------------------------------|------------|----------------------| 
+| ZonaNombre | Rural, Urbano                    | Text (100) | N/A                  |
+| NombreVia  | Nombre de la vía                 | Text (100) | N/A                  |
+| LGkm       | Longitud geodésica en kilómetros | Double     | Area (geodesic)      |
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
