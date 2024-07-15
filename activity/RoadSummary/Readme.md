@@ -42,6 +42,41 @@ Desde la tabla de contenido y utilizando la herramienta _Data / Export Features_
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Con el calculador de campo o _Field Calculator_, en la capa de vías urbanas, asigne _Urbano_ en el campo `ZonaNombre` y establezca para todos los elementos en el campo `NombreVia`, los valores contenidos en el campo denominado `TEXTO`. Una vez asignados los nombres, elimine el campo `TEXTO`. 
+
+> En este momento, no es necesario calcular la longitud de cada tramo debido a que es necesario editar y ajustar las vías localizadas en el contorno del perímetro urbano.
+
+<div align="center"><img src="graph/ArcGISPro_VialUrbanoTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la capa de vías rurales, asigne _Rural_ en el campo `ZonaNombre` y asigne los nombres de las vías tomando como referencia los valores contenidos en los campos `Layer` y `VIAS_`. una vez asignados los nombres, elimine los campos `Layer` y `VIAS_`. 
+
+<div align="center"><img src="graph/ArcGISPro_VialRuralTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando las herramientas de edición disponibles en el menú _Edit_, elimine o recorte los tramos duplicados y divida los tramos urbanos y rurales de cada capa, a partir de los polígonos que delimitan la zona urbana y de expansión.
+
+> Para facilitar el trabajo de edición y ajuste, en la tabla de contenido y en _List By Selection_, deje únicamente la capa Vial_Rural activa. Luego de terminada la edición rural, deje seleccionable solo la capa urbana hasta terminar de ajustar la capa.
+> 
+> Otra herramienta útil en el proceso de edición, es la herramienta de encajado o _Snapping_, se encuentra disponible en el menú _Edit_, deje activo, por ejemplo, el encajado por intersección y el de vértice.
+
+Para el ejemplo mostrado en la ilustración, es necesario recortar y eliminar el tramo de la vía rural que se encuentra dentro de la zona urbana, debido a que ya se encuentra digitalizada en la capa _Vial_Urbano_. Para ello, utilizaremos la herramienta _Divide / Split_. 
+
+<div align="center"><img src="graph/ArcGISPro_Edit1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Edit2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita este mismo procedimiento sobre todas las vías rurales que están sobre o que atraviesan el contorno urbano. Una vez terminada la edición rural, proceda con la revisión de las vías urbanas, asegúrese de que las vías urbanas y rurales se empalmen a partir de los nodos finales de sus tramos. Para facilitar la edición, puede ajustar el color y grosor de las vías rurales.
+
+En la siguiente imagen, podrá visualizar una versión preliminar de las dos capas editadas, como observa, en la capa de vías urbanas se encuentran elementos correspondientes a las vías rurales y viceversa. Se ha seleccionado y resaltado el corredor férreo, para este análisis, consideraremos este eje como parte de las vías rurales.
+
+<div align="center"><img src="graph/ArcGISPro_Edit3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para finalizar la edición y guardar los cambios, en el menú _Edit_ de clic en el botón _Save_.
+
+7. Integración víal en una única capa. Utilizando la herramienta _Data Management Tools / Merge_, integre las dos redes viales en una única capa. Guarde en la carpeta `\file\data\shp\` como _Red_vial.shp_. En _Environmets_, establezca el CRS 9377. Abra la tabla de atributos.
+
+<div align="center"><img src="graph/ArcGISPro_Merge.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 
