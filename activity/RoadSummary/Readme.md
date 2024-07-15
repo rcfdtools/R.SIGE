@@ -109,7 +109,53 @@ Una vez finalizada la asignación, obtendrá la siguiente visualización de la c
 
 ## 2. Análisis estadístico
 
-1. 
+Para la obtención de estadísticos por campo de atributo, calcule en el campo `LGkm`, la longitud geodésica (CRS 9377) de cada tramo de vía en kilómetros, utilice para ello el _Geometry Calculator_.
+
+
+### 2.1. Vías por orden
+
+Desde la tabla de contenido, renombre la capa _Red_Vial_ a _Red Vial (Orden)_. Cree gráficos de análisis:
+
+* Barras contando el número de tramos.
+
+<div align="center"><img src="graph/ArcGISPro_OrdenVial_Chart_Count.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+* Barras totalizando la longitud de los tramos.
+
+<div align="center"><img src="graph/ArcGISPro_OrdenVial_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+### 2.2. Vías por tipo
+
+Desde la tabla de atributos, cree una copia de la capa _Red Vial (Orden)_ y nombre como _Red Vial (Tipo)_. Ajuste la simbología por valores únicos a partir del campo `TIPO`. Podrá observar que múltiples vías no tienen asignada esta propiedad. Cree gráficos de análisis.
+
+* Barras contando el número de tramos.
+
+<div align="center"><img src="graph/ArcGISPro_Tipo_Chart_Count.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+* Barras totalizando la longitud de los tramos.
+
+<div align="center"><img src="graph/ArcGISPro_Tipo_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+### 2.3. Vías por estado
+
+Desde la tabla de atributos, cree una copia de la capa _Red Vial (Orden)_ y nombre como _Red Vial (Estado)_. Ajuste la simbología por valores únicos a partir del campo `ESTADO`. Podrá observar que múltiples vías no tienen asignada esta propiedad. Cree gráficos de análisis.
+
+* Barras contando el número de tramos.
+
+<div align="center"><img src="graph/ArcGISPro_Estado_Chart_Count.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+* Barras totalizando la longitud de los tramos.
+
+<div align="center"><img src="graph/ArcGISPro_Estado_Chart_Long.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
+
+
 
 
 
