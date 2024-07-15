@@ -3,24 +3,25 @@ Keywords: `road-summary` `summarize`
 
 A partir de las capas orden vial y red vial urbana, contenidas en los anexos de formulación del POT, realice un análisis estadístico de longitud de vías por orden vial y longitud de vías urbanas por tipo.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/RoadSummary.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
 
-* 
+* Integrar y homologar los vectores y atributos de la red vial urbana y rural en una única capa.
+* Editar la geometría de los elementos contenidos en las capas urbanas y rurales, eliminando tramos superpuestos.
+* Crear tablas y gráficos de análisis estadístico para evaluar el orden, estado y tipo de vías. 
 
 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Integración y ajuste de vias urbanas y rurales
+## 1. Integración y ajuste de vías urbanas y rurales
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadSummary_ y establezca el CRS 9377. Agregue al mapa desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\` las capas VIAS_PERIMETRO_URBANO.shp, ORDEN_VIAL.shp y MOT.shp, ajuste los colores para diferenciar las vías urbanas de las rurales y en el MOT, filtre la zona urbana y de expansión. 
 
