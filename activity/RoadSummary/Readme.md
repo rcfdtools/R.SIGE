@@ -100,12 +100,13 @@ Utilizando el calculador de campo, establezca `ORDEN_VIAL = "Vía Urbana"`.
 Simbolice la capa por valores únicos utilizando el campo `ORDEN_VIAL`, establezca color negro y grosor 2 para todas las vías sin orden vial. Podrá observar que las vías ajustadas por zona, no contienen orden vial. Utilizando los ordenes viales de las vías próximas, establezca el orden víal sobre estas vías.
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Una vez finalizada la asignación, obtendrá la siguiente visualización de la capa.
 
+<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
+9. 
 
 
 ## 2. Análisis usando software libre - QGIS
