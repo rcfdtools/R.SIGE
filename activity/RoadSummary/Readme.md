@@ -41,7 +41,7 @@ Desde la tabla de contenido y utilizando la herramienta _Data / Export Features_
 |------------|----------------------------------|------------|----------------------| 
 | ZonaNombre | Rural, Urbano                    | Text (100) | N/A                  |
 | NombreVia  | Nombre de la vía                 | Text (100) | N/A                  |
-| LGkm       | Longitud geodésica en kilómetros | Double     | Area (geodesic)      |
+| LGkm       | Longitud geodésica en kilómetros | Double     | Length (geodesic)    |
 
 </div>
 
