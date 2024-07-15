@@ -65,7 +65,7 @@ Para el ejemplo mostrado en la ilustración, es necesario recortar y eliminar el
 
 Repita este mismo procedimiento sobre todas las vías rurales que están sobre o que atraviesan el contorno urbano. Una vez terminada la edición rural, proceda con la revisión de las vías urbanas, asegúrese de que las vías urbanas y rurales se empalmen a partir de los nodos finales de sus tramos. Para facilitar la edición, puede ajustar el color y grosor de las vías rurales.
 
-En la siguiente imagen, podrá visualizar una versión preliminar de las dos capas editadas, como observa, en la capa de vías urbanas se encuentran elementos correspondientes a las vías rurales y viceversa. Se ha seleccionado y resaltado el corredor férreo, para este análisis, consideraremos este eje como parte de las vías rurales.
+En la siguiente imagen, podrá visualizar una versión preliminar de las dos capas editadas, como observa, en la capa de vías urbanas se encuentran elementos correspondientes a las vías rurales y viceversa. Se ha seleccionado y resaltado el corredor férreo, para este análisis consideraremos este eje como parte de las vías rurales, así como la vía variante a Ubaté.
 
 <div align="center"><img src="graph/ArcGISPro_Edit3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -75,9 +75,16 @@ Para finalizar la edición y guardar los cambios, en el menú _Edit_ de clic en 
 
 <div align="center"><img src="graph/ArcGISPro_Merge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+8. Simbolice la capa de unión por valores únicos a partir del campo _ZonaNombre_, podrá observar que es necesario redefinir la zona en varios tramos.
 
+<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Seleccione los tramos a ajustar y desde la tabla de atributos asigne la zona.
 
+<div align="center"><img src="graph/ArcGISPro_ZonaNombre1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ZonaNombre2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. 
 
 
 
