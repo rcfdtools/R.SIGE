@@ -82,16 +82,16 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 <div align="center">
 
-| Campo       | Descripción                                                                                                                  |    Tipo    | Propiedad<br>ArcGIS Pro | 
-|:------------|:-----------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
-| DrenajeID   | Código de identificación del drenaje.                                                                                        |    Long    |           N/A           |
-| DrenajeNom  | Nombre del drenaje principal.                                                                                                | Text (100) |           N/A           |
-| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                              | Text (100) |           N/A           |
-| CotaInicio  | Cota punto inicial en metros.                                                                                                |   Double   |           N/A           |
-| CotaFin     | Cota punto final en metros.                                                                                                  |   Double   |           N/A           |
-| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                   |   Double   |           N/A           |
-| IndSinuoso  | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. |   Double   |           N/A           |
-| LGm         | Longitud geodésica en metros                                                                                                 |   Double   |    Length (geodesic)    |
+| Campo       | Descripción                                                                                                                                                                             |    Tipo    | Propiedad<br>ArcGIS Pro | 
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
+| DrenajeID   | Código de identificación del drenaje.                                                                                                                                                   |    Long    |           N/A           |
+| DrenajeNom  | Nombre del drenaje principal.                                                                                                                                                           | Text (100) |           N/A           |
+| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                                                                                         | Text (100) |           N/A           |
+| CotaInicio  | Cota punto inicial en metros.                                                                                                                                                           |   Double   |           N/A           |
+| CotaFin     | Cota punto final en metros.                                                                                                                                                             |   Double   |           N/A           |
+| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                                                                              |   Double   |           N/A           |
+| IndSinuoso  | [Índice de sinuosidad](https://es.wikipedia.org/wiki/Sinuosidad_de_un_r%C3%ADo), calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. |   Double   |           N/A           |
+| LGm         | Longitud geodésica en metros                                                                                                                                                            |   Double   |    Length (geodesic)    |
 
 </div>
 
@@ -130,13 +130,32 @@ Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u op
 
 7. Desde la tabla de atributos y utilizando el calculador de geometría, calcule las coordenadas y la longitud geodésica `LGm` del tramo digitalizado.
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_GeometryCalculator.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_GeometryCalculator.png" alt="R.SIGE" width="60%" border="0" /></div>
 
+8. Utilizando el calculador de campo o _Calculate Field_ sobre `LEuclm`, calcule la longitud euclidiana utilizando la siguiente expresión en Python, correspondiente al Teorema de Pitágoras:
 
+`LEuclm = ((!CxInicio!-!CxFin!)**2+(!CyInicio!-!CyFin!)**2)**0.5`
 
+Podrá observar que la longitud euclidiana es menor que la longitud total del cauce.
 
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_LEuclm.png" alt="R.SIGE" width="60%" border="0" /></div>
 
-Calcular el índice de sinuosidad.
+9. Para el cálculo del índice de sinuosidad en el campo `IndSinuoso`, divida la longitud del río `LGm` entre la longitud euclidiana `LEuclm`. Para este ejemplo, el valor obtenido es 2.18.
+
+`IndSinuoso =  !LGm!/!LEuclm!`
+
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_IndSinuoso.png" alt="R.SIGE" width="60%" border="0" /></div>
+
+La interpretación usual del índice de sinuosidad (IS) puede ser establecida a partir de las siguientes clases:
+
+| Clase | Rango           | Descripción                        |
+|-------|-----------------|------------------------------------|
+| 1     | IS < 1.05       | Casi rectilíneo<br>Almost straight |
+| 2     | 1.05 ≤ IS <1.25 | Tortuoso<br>winding                |
+| 3     | 1.25 ≤ IS <1.50 | Trenzado<br>twisty                 |
+| 4     | 1.50 ≤ IS       | Meandriforme<br>meandering         |
+
+De acuerdo al valor obtenido y a los rangos definidos, el tramo digitalizado del Río Neusa, corresponde a un cauce meandriforme.
 
 
 ## 3. Digitalización de predios
@@ -191,7 +210,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://es.wikipedia.org/wiki/Sinuosidad_de_un_r%C3%ADo
+* https://en.wikipedia.org/wiki/Sinuosity
 
 
 ## Control de versiones
