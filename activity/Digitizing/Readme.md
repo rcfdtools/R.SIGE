@@ -151,8 +151,8 @@ La interpretación usual del índice de sinuosidad (IS) puede ser establecida a 
 | Clase | Rango           | Descripción                        |
 |-------|-----------------|------------------------------------|
 | 1     | IS < 1.05       | Casi rectilíneo<br>Almost straight |
-| 2     | 1.05 ≤ IS <1.25 | Tortuoso<br>winding                |
-| 3     | 1.25 ≤ IS <1.50 | Trenzado<br>twisty                 |
+| 2     | 1.05 ≤ IS <1.25 | Ligeramente sinuoso<br>winding     |
+| 3     | 1.25 ≤ IS <1.50 | Altamente sinuoso<br>twisty        |
 | 4     | 1.50 ≤ IS       | Meandriforme<br>meandering         |
 
 De acuerdo al valor obtenido y a los rangos definidos, el tramo digitalizado del Río Neusa, corresponde a un cauce meandriforme.
