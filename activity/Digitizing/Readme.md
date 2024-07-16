@@ -150,12 +150,12 @@ La interpretación usual del índice de sinuosidad (IS) puede ser establecida a 
 
 <div align="center">
 
-| Clase | Rango           | Descripción                        |
-|-------|-----------------|------------------------------------|
-| 1     | IS < 1.05       | Casi rectilíneo<br>Almost straight |
-| 2     | 1.05 ≤ IS <1.25 | Ligeramente sinuoso<br>winding     |
-| 3     | 1.25 ≤ IS <1.50 | Altamente sinuoso<br>twisty        |
-| 4     | 1.50 ≤ IS       | Meandriforme<br>meandering         |
+| Clase | Rango           | Descripción                          |
+|-------|-----------------|--------------------------------------|
+| 1     | IS < 1.05       | Casi rectilíneo<br>(Almost straight) |
+| 2     | 1.05 ≤ IS <1.25 | Ligeramente sinuoso<br>(Winding)     |
+| 3     | 1.25 ≤ IS <1.50 | Altamente sinuoso<br>(Twisty)        |
+| 4     | 1.50 ≤ IS       | Meandriforme<br>(Meandering)         |
 
 </div>
 
