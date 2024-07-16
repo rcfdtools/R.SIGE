@@ -298,6 +298,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * [Enfoque poblacional para revisión y ajustes de Planes de Ordenamiento Territorial. Guía de aplicación. Ministerio de Ambiente, Vivienda y Desarrollo Territorial](https://colombia.unfpa.org/sites/default/files/pub-pdf/Gu%C3%ADa%20Enfoque%20Poblacional%20para%20Revisi%C3%B3n%20y%20Ajuste.pdf)
 * https://es.wikipedia.org/wiki/Censos_de_Colombia
 * https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
+* https://geoportal.dane.gov.co/
 
 
 ## Control de versiones

@@ -38,6 +38,8 @@ Es de aclarar que, en el ámbito municipal, para el ejercicio del ordenamiento t
 
 En la siguiente tabla se relaciona la escala ideal de trabajo recomendada a escala rural de acuerdo con las características mencionadas.
 
+<div align="center">
+
 | Escala    | Pendientes           | Densidad de la<br>red hidrográfica | Densidad de la infra-<br>estructura vial | Tamaño predios                    |
 |-----------|----------------------|------------------------------------|------------------------------------------|-----------------------------------|
 | 1:100.000 | Moderada: hasta 12%  | Baja: <3 km/km2                    | Baja: <3 km/km2                          | Latifundio: >200 Ha               |
@@ -45,7 +47,9 @@ En la siguiente tabla se relaciona la escala ideal de trabajo recomendada a esca
 | 1:10.000  | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Minifundio: De 3 a 10 Ha          |
 | 1:5.000   | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Microfundio: <3 Ha                |
 
-Con base en la información de la Tabla 3, se recomienda que para el suelo rural de aquellos municipios localizados en las zonas montañosas, se utilice cartografía básica a escala 1:10.000 y para los ubicados sobre los valles interandinos y las costas Caribe y Pacífica, cartografía básica a escala 1:25.000. Por otro lado, para la mayoría de municipios del oriente del país, en donde existen características homogéneas de cobertura boscosa y territorios colectivos, se considera suficiente la cartografía a escala 1:100.000. 
+</div>
+
+Con base en la información de la tabla anterior, se recomienda que para el suelo rural de aquellos municipios localizados en las zonas montañosas, se utilice cartografía básica a escala 1:10.000 y para los ubicados sobre los valles interandinos y las costas Caribe y Pacífica, cartografía básica a escala 1:25.000. Por otro lado, para la mayoría de municipios del oriente del país, en donde existen características homogéneas de cobertura boscosa y territorios colectivos, se considera suficiente la cartografía a escala 1:100.000. 
 
 Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomienda que para las áreas urbanas, de expansión urbana y centros poblados, se utilice información geográfica con escalas entre 1:1.000 y 1:5.000. Adicionalmente, para definir la escala, se deben tener en cuenta las dinámicas de urbanización y las relaciones del sistema de asentamientos, lo que permitirá un análisis detallado de la distribución de los procesos físicos, ambientales, y sociales que allí se presentan. Además, se debe contemplar la información catastral, de gran importancia y utilidad para el conocimiento de las estructuras y las dinámicas urbanas.
 
