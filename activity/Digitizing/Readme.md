@@ -138,13 +138,13 @@ Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u op
 
 Podrá observar que la longitud euclidiana es menor que la longitud total del cauce.
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_LEuclm.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_LEuclm.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 9. Para el cálculo del índice de sinuosidad en el campo `IndSinuoso`, divida la longitud del río `LGm` entre la longitud euclidiana `LEuclm`. Para este ejemplo, el valor obtenido es 2.18.
 
 `IndSinuoso =  !LGm!/!LEuclm!`
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_IndSinuoso.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CalculateField_IndSinuoso.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 La interpretación usual del índice de sinuosidad (IS) puede ser establecida a partir de las siguientes clases:
 
