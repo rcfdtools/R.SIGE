@@ -95,7 +95,12 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 </div>
 
+<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField.png" alt="R.SIGE" width="50%" border="0" /></div>
 
+4. Para la digitalización, acérquese a escala 1:1000 y en el menú _Edit_ de clic en 
+
+
+> Se recomienda digitalizar los drenajes en el sentido del flujo.
 
 
 Calcular el índice de sinuosidad.
