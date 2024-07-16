@@ -82,22 +82,33 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 <div align="center">
 
-| Campo       | Descripción                                                                                                                   |    Tipo    | Propiedad<br>ArcGIS Pro | 
-|:------------|:------------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
-| DrenajeID   | Código de identificación del drenaje.                                                                                         |    Long    |           N/A           |
-| DrenajeNom  | Nombre del drenaje.                                                                                                           | Text (100) |           N/A           |
-| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                               | Text (100) |           N/A           |
-| CotaInicio  | Cota punto inicial en metros.                                                                                                 |   Double   |           N/A           |
-| CotaFin     | Cota punto final en metros.                                                                                                   |   Double   |           N/A           |
-| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                    |   Double   |           N/A           |
-| IndSinuoso  | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final.  |   Double   |           N/A           |
-| LGm         | Longitud geodésica en metros                                                                                                  |   Double   |    Length (geodesic)    |
+| Campo       | Descripción                                                                                                                  |    Tipo    | Propiedad<br>ArcGIS Pro | 
+|:------------|:-----------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
+| DrenajeID   | Código de identificación del drenaje.                                                                                        |    Long    |           N/A           |
+| DrenajeNom  | Nombre del drenaje principal.                                                                                                | Text (100) |           N/A           |
+| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                              | Text (100) |           N/A           |
+| CotaInicio  | Cota punto inicial en metros.                                                                                                |   Double   |           N/A           |
+| CotaFin     | Cota punto final en metros.                                                                                                  |   Double   |           N/A           |
+| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                   |   Double   |           N/A           |
+| IndSinuoso  | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. |   Double   |           N/A           |
+| LGm         | Longitud geodésica en metros                                                                                                 |   Double   |    Length (geodesic)    |
 
 </div>
 
 <div align="center"><img src="graph/ArcGISPro_Drenaje_AddField.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-4. Para la digitalización, acérquese a escala 1:1000 y en el menú _Edit_ de clic en 
+4. Para la digitalización, acérquese a escala 1:1000 y en el menú _Edit_ de clic en _Create_. Para la digitalización, puede desactivar la capa _HIDROGRAFIA_. En la parte derecha de su ventana, aparecerá el panel de creación de entidades, de clic en la capa _Drenaje_ y seleccione la primera opción, correspondiente a _Line_. Digitalice el eje del drenaje tomando como referencia el espejo de agua que en la imagen aparece en color cafe claro. Agregue tantos nodos como sea posible para representar correctamente las curvas del drenaje.
+
+> Para desplazarse por el mapa, utilice clic sostenido en la rueda de su mouse.  
+> Para deshacer el último punto ingresado, oprima <kbd>Ctrl</kbd> + <kbd>Z</kbd>. 
+
+<div align="center"><img src="graph/ArcGISPro_Drenaje_Create1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u oprima la tecla <kbd>F2</kbd>. Podrá observar que ahora, en la tabla de atributos de la capa, aparece un nuevo registro. Ingrese el código del drenaje, nombre del cauce principal y nombre del tramo. Compare con el tramo utilizado en la formulación del POT, podrá observar que existen diferencias importantes.
+
+5. Para calcular 
+
+
 
 
 > Se recomienda digitalizar los drenajes en el sentido del flujo.
