@@ -66,9 +66,15 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 <div align="center"><img src="graph/ArcGISPro_Hidrografia_RioNeusa1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Si bien, según la recomendación del IGAC es utilizar información a escala 1:5000 para zonas rurales con características similares a las mostradas en la imagen, para este ejercicio, realizaremos la digitalización a escala 1:1000 del tramo comprendido entre la descarga del Río Susagua al Río Neusa, hasta la descarga en el Río Bogotá.
+
+<div align="center"><img src="graph/ArcGISPro_Hidrografia_RioNeusa2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
+Calcular el índice de sinuosidad.
 
 
 ## 3. Digitalización de predios
