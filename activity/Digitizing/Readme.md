@@ -70,7 +70,31 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 <div align="center"><img src="graph/ArcGISPro_Hidrografia_RioNeusa2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Para la creación de la nueva capa de drenajes, en el _Catalog Pane_ localizado en la parte derecha de la ventana de ArcGIS Pro, de clic derecho sobre la carpeta `\R.SIGE\file\shp\` y seleccione la opción  
+3. Para la creación de la nueva capa de drenajes, en el _Catalog Pane_ localizado en la parte derecha de la ventana de ArcGIS Pro, de clic derecho sobre la carpeta `\R.SIGE\file\shp\` y seleccione la opción _New / New Shapefile_. Nombre la nueva capa como _Drenaje.shp_.
+
+<div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+Para esta nueva capa, defina la geometría tipo Polilínea, sin propiedades de medición (M), sin valores 3D (Z) y establezca el CRS 9377. Agregue la capa al mapa.
+
+<div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+Abra la tabla de atributos y cree los siguientes campos:
+
+<div align="center">
+
+| Campo      | Descripción                                                                                                                  | Tipo       | Propiedad ArcGIS Pro | 
+|------------|------------------------------------------------------------------------------------------------------------------------------|------------|----------------------| 
+| DrenajeID  | Código de identificación del drenaje.                                                                                        | Long       | N/A                  |
+| DrenajeNom | Nombre del drenaje.                                                                                                          | Text (100) | N/A                  |
+| DrenajeSub | Nombre del subtramo de drenaje.                                                                                              | Text (100) | N/A                  |
+| CotaInicio | Cota punto inicial en metros.                                                                                                | Double     | N/A                     |
+| CotaFin    | Cota punto final en metros.                                                                                                  | Double     | N/A                     |
+| Pendiente  | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                   | Double     | N/A                     |
+| IndSinuoso | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. | Double     | N/A                     |
+| LGm        | Longitud geodésica en metros                                                                                                 | Double     | Length (geodesic)    |
+
+</div>
+
 
 
 
