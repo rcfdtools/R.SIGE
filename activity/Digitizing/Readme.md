@@ -70,7 +70,7 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 <div align="center"><img src="graph/ArcGISPro_Hidrografia_RioNeusa2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Para la creación de la nueva capa de drenajes, en el _Catalog Pane_ localizado en la parte derecha de la ventana de ArcGIS Pro, de clic derecho sobre la carpeta `\R.SIGE\file\shp\` y seleccione la opción  
 
 
 
