@@ -13,13 +13,16 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Requerimientos
 
+* [:notebook:Lectura](../../file/ref/cartilla_pot.pdf): Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial.
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Conceptos generales de escala[^1]
+## 1. Conceptos generales de escala
+
+Tomado o adaptado de: Lineamientos para el uso de información geográfica en el desarrollo del componente rural de los Planes de Ordenamiento Territorial, IGAC.[^1]
 
 La escala (entendida como la relación existente entre la distancia en el terreno y su equivalente en el mapa) de la cartografía básica es un aspecto de gran relevancia a la hora de planear el ordenamiento del territorio, pues dependiendo de esta, es posible apreciar mayor o menor cantidad de elementos del paisaje. Así, a mayor escala, se aprecian más elementos y con mayor detalle, mientras que, a menor escala, la información será más general y con menor detalle.
 
@@ -31,7 +34,20 @@ La cartografía básica de Colombia creada por el [Instituto Geográfico Agustí
 
 <div align="center"><img src="graph/CartografiaBasicaIGAC.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Es de aclarar que, en el ámbito municipal, para el ejercicio del ordenamiento territorial, tradicionalmente se ha privilegiado el uso de cartografía a escala 1:25.000 para el sector rural y 1:5.000 o 1:2.000 en el sector urbano. Sin embargo, el IGAC recomienda que para la formulación y/o procesos de revisión y ajuste de los POT, la escala de la cartografía se defina en función de los procesos y dinámicas de cada territorio. En este sentido, se propone que para el suelo rural se contemplen factores como el área municipal, la pendiente, el tamaño de los predios, la densidad de la red hidrográfica y de la infraestructura vial, entre otros.
 
+En la siguiente tabla se relaciona la escala ideal de trabajo recomendada a escala rural de acuerdo con las características mencionadas.
+
+| Escala    | Pendientes           | Densidad de la<br>red hidrográfica | Densidad de la infra-<br>estructura vial | Tamaño predios                    |
+|-----------|----------------------|------------------------------------|------------------------------------------|-----------------------------------|
+| 1:100.000 | Moderada: hasta 12%  | Baja: <3 km/km2                    | Baja: <3 km/km2                          | Latifundio: >200 Ha               |
+| 1:25.000  | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Mediano a pequeño: De 10 a 200 Ha |
+| 1:10.000  | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Minifundio: De 3 a 10 Ha          |
+| 1:5.000   | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Microfundio: <3 Ha                |
+
+Con base en la información de la Tabla 3, se recomienda que para el suelo rural de aquellos municipios localizados en las zonas montañosas, se utilice cartografía básica a escala 1:10.000 y para los ubicados sobre los valles interandinos y las costas Caribe y Pacífica, cartografía básica a escala 1:25.000. Por otro lado, para la mayoría de municipios del oriente del país, en donde existen características homogéneas de cobertura boscosa y territorios colectivos, se considera suficiente la cartografía a escala 1:100.000. 
+
+Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomienda que para las áreas urbanas, de expansión urbana y centros poblados, se utilice información geográfica con escalas entre 1:1.000 y 1:5.000. Adicionalmente, para definir la escala, se deben tener en cuenta las dinámicas de urbanización y las relaciones del sistema de asentamientos, lo que permitirá un análisis detallado de la distribución de los procesos físicos, ambientales, y sociales que allí se presentan. Además, se debe contemplar la información catastral, de gran importancia y utilidad para el conocimiento de las estructuras y las dinámicas urbanas.
 
 
 
