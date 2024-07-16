@@ -95,14 +95,14 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 </div>
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. Para la digitalización, acérquese a escala 1:1000 y en el menú _Edit_ de clic en _Create_. Para la digitalización, puede desactivar la capa _HIDROGRAFIA_. En la parte derecha de su ventana, aparecerá el panel de creación de entidades, de clic en la capa _Drenaje_ y seleccione la primera opción, correspondiente a _Line_. Digitalice el eje del drenaje tomando como referencia el espejo de agua que en la imagen aparece en color cafe claro. Agregue tantos nodos como sea posible para representar correctamente las curvas del drenaje.
 
 > Para desplazarse por el mapa, utilice clic sostenido en la rueda de su mouse.  
 > Para deshacer el último punto ingresado, oprima <kbd>Ctrl</kbd> + <kbd>Z</kbd>. 
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_Create1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_Create1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u oprima la tecla <kbd>F2</kbd>. Podrá observar que ahora, en la tabla de atributos de la capa, aparece un nuevo registro. Ingrese el código del drenaje, nombre del cauce principal y nombre del tramo. Compare con el tramo utilizado en la formulación del POT, podrá observar que existen diferencias importantes.
 
@@ -110,7 +110,7 @@ Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u op
 
 5. Para estimar la cota inicial y final de este tramo, utilizaremos como referencia el mapa topográfico de ESRI que puede ser agregado al mapa desde el menú _Map / Basemap_ y las curvas de nivel utilizadas en el diagnóstico del POT disponibles en `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\CURVAS_NIVEL`. Como observa en la imagen, la información topográfica no es lo suficientemente detallada para obtener valores precisos, adicionalmente, la información topográfica de estas fuentes, no representa el fondo de los ríos. Para este ejemplo, definiremos 2580 m.s.n.m. como cota de inicio y fin debido a que es un cauce que se encuentra en zona de llanura. Para el cálculo de pendiente, se utiliza la diferencia de cotas (Δy = inicio - fin) entre la longitud del tramo (Δx), debido a que Δy es cero, definiremos una pendiente de 0.001 m/m.
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_CotaPendiente.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CotaPendiente.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 6. Para calcular el índice de sinuosidad, es necesario conocer la longitud del río y la longitud de la longitud euclidiana entre el punto inicial y final del río. En la tabla de atributos, agregue los siguientes campos complementarios.
 
@@ -126,11 +126,11 @@ Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u op
 
 </div>
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 7. Desde la tabla de atributos y utilizando el calculador de geometría, calcule las coordenadas y la longitud geodésica `LGm` del tramo digitalizado.
 
-<div align="center"><img src="graph/ArcGISPro_Drenaje_GeometryCalculator.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Drenaje_GeometryCalculator.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 
 
