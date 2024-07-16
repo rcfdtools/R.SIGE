@@ -106,12 +106,34 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u oprima la tecla <kbd>F2</kbd>. Podrá observar que ahora, en la tabla de atributos de la capa, aparece un nuevo registro. Ingrese el código del drenaje, nombre del cauce principal y nombre del tramo. Compare con el tramo utilizado en la formulación del POT, podrá observar que existen diferencias importantes.
 
-5. Para calcular 
-
-
-
-
 > Se recomienda digitalizar los drenajes en el sentido del flujo.
+
+5. Para estimar la cota inicial y final de este tramo, utilizaremos como referencia el mapa topográfico de ESRI que puede ser agregado al mapa desde el menú _Map / Basemap_ y las curvas de nivel utilizadas en el diagnóstico del POT disponibles en `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\CURVAS_NIVEL`. Como observa en la imagen, la información topográfica no es lo suficientemente detallada para obtener valores precisos, adicionalmente, la información topográfica de estas fuentes, no representa el fondo de los ríos. Para este ejemplo, definiremos 2580 m.s.n.m. como cota de inicio y fin debido a que es un cauce que se encuentra en zona de llanura. Para el cálculo de pendiente, se utiliza la diferencia de cotas (Δy = inicio - fin) entre la longitud del tramo (Δx), debido a que Δy es cero, definiremos una pendiente de 0.001 m/m.
+
+<div align="center"><img src="graph/ArcGISPro_Drenaje_CotaPendiente.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+6. Para calcular el índice de sinuosidad, es necesario conocer la longitud del río y la longitud de la longitud euclidiana entre el punto inicial y final del río. En la tabla de atributos, agregue los siguientes campos complementarios.
+
+<div align="center">
+
+| Campo    | Descripción                                                 |  Tipo   | Propiedad<br>ArcGIS Pro | 
+|:---------|:------------------------------------------------------------|:-------:|:-----------------------:| 
+| CxInicio | Coordenada x o este del punto inicial del tramo de río.     | Double  | Line start x-coordinate |
+| CyInicio | Coordenada y o norte del punto inicial del tramo de río.    | Double  | Line start y-coordinate |
+| CxFin    | Coordenada x o este del punto de final del tramo de río.    | Double  |  Line end x-coordinate  |
+| CyFin    | Coordenada y o norte del punto de final del tramo de río.   | Double  |  Line end y-coordinate  |
+| LEuclm   | Longitud euclidiana en metros, usando teorema de pitágoras. | Double  |           N/A           |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_Drenaje_AddField1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+7. Desde la tabla de atributos y utilizando el calculador de geometría, calcule las coordenadas y la longitud geodésica `LGm` del tramo digitalizado.
+
+<div align="center"><img src="graph/ArcGISPro_Drenaje_GeometryCalculator.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
+
 
 
 Calcular el índice de sinuosidad.
