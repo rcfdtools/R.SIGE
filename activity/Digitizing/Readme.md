@@ -82,16 +82,16 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 <div align="center">
 
-| Campo      | Descripción                                                                                                                  | Tipo       | Propiedad<br>ArcGIS Pro | 
-|------------|------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------| 
-| DrenajeID  | Código de identificación del drenaje.                                                                                        | Long       | N/A                      |
-| DrenajeNom | Nombre del drenaje.                                                                                                          | Text (100) | N/A                      |
-| DrenajeSub | Nombre del subtramo de drenaje.                                                                                              | Text (100) | N/A                      |
-| CotaInicio | Cota punto inicial en metros.                                                                                                | Double     | N/A                      |
-| CotaFin    | Cota punto final en metros.                                                                                                  | Double     | N/A                      |
-| Pendiente  | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                   | Double     | N/A                      |
-| IndSinuoso | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. | Double     | N/A                      |
-| LGm        | Longitud geodésica en metros                                                                                                 | Double     | Length (geodesic)        |
+| Campo       | Descripción                                                                                                                   |    Tipo    | Propiedad<br>ArcGIS Pro | 
+|:------------|:------------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
+| DrenajeID   | Código de identificación del drenaje.                                                                                         |    Long    |           N/A           |
+| DrenajeNom  | Nombre del drenaje.                                                                                                           | Text (100) |           N/A           |
+| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                               | Text (100) |           N/A           |
+| CotaInicio  | Cota punto inicial en metros.                                                                                                 |   Double   |           N/A           |
+| CotaFin     | Cota punto final en metros.                                                                                                   |   Double   |           N/A           |
+| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                    |   Double   |           N/A           |
+| IndSinuoso  | Índice de sinuosidad, calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final.  |   Double   |           N/A           |
+| LGm         | Longitud geodésica en metros                                                                                                  |   Double   |    Length (geodesic)    |
 
 </div>
 
