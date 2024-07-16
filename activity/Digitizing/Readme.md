@@ -1,5 +1,5 @@
-# Plantilla para actividades
-Keywords: `DEM` `AgreeDEM`
+# Digitalización de vectores: drenajes, vías y predios
+Keywords: `digitizing` `polyline` `polygon` `sinuosity` `euclidian-distance`
 
 Conceptos de escala. Tomado como referencia los vectores de la red hidrográfica, la red vial y la base predial y utilizando como mapa base la imágen satelital mundial de ESRI o Google, realice la digitalización de un tramo de drenaje de al menos 1 kilómetro y luego digitalice las vías y predios próximos y/o que están ubicados lateralmente.
 
@@ -8,7 +8,10 @@ Conceptos de escala. Tomado como referencia los vectores de la red hidrográfica
 
 ## Objetivos
 
-* 
+* Entender los conceptos generales de escala en la digitalización de entidades y en la utilización de mapas base.
+* Digitalizar entidades y calcular sus propiedades geométricas.
+* Calcular propiedades geométricas derivadas, como la longitud euclidiana y el índice de sinuosidad.
+* Analizar las diferencias entre la cartografía básica del IGAC y vectores digitalizados.
 
 
 ## Requerimientos
@@ -203,8 +206,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P1** | :compass:Mapa digital impreso _P1-1: xxxx_<br>Incluir xxxxx.<br>Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                      | 
+| Avance **P1** | Descargue en formato de base de datos (Geodatabase o GDB), la cartografía general a escala 1:500000, 1:100000 y 1:25000, cargue los drenajes al mapa y compárelos con los utilizados en el diagnóstico y formulación del POT.                                                                                                                                                                                                                       | 
+| Avance **P1** |                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 
+| Avance **P1** | :compass:Mapa digital impreso _P1-1: xxxx_<br>Incluir xxxxx.<br>Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                       | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
