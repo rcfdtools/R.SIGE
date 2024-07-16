@@ -1,7 +1,7 @@
 # Plantilla para actividades
 Keywords: `DEM` `AgreeDEM`
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+Conceptos de escala. Tomado como referencia los vectores de la red hidrográfica, la red vial y la base predial y utilizando como mapa base la imágen satelital mundial de ESRI o Google, realice la digitalización de un tramo de drenaje de al menos 1 kilómetro y luego digitalice las vías y predios próximos y/o que están ubicados lateralmente.
 
 <div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -54,14 +54,19 @@ Con base en la información de la tabla anterior, se recomienda que para el suel
 Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomienda que para las áreas urbanas, de expansión urbana y centros poblados, se utilice información geográfica con escalas entre 1:1.000 y 1:5.000. Adicionalmente, para definir la escala, se deben tener en cuenta las dinámicas de urbanización y las relaciones del sistema de asentamientos, lo que permitirá un análisis detallado de la distribución de los procesos físicos, ambientales, y sociales que allí se presentan. Además, se debe contemplar la información catastral, de gran importancia y utilidad para el conocimiento de las estructuras y las dinámicas urbanas.
 
 
-
-
-
 ## 2. Digitalización de drenajes
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Digitizing_, establezca el CRS 9377. Agregue al mapa la capa de drenajes disponible en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\HIDROGRAFIA.shp`, ajuste la simbología y rotule a partir del campo `NOMBRE`.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Hidrografia_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el menú _Map_, cambie el mapa base por _Imagery_ y acérquese al mapa a escala 1:5000 en la coordenada: 4892883.22E, 2111592.87N. Como puede observar, la digitalización existente del Río Neusa, no representa con precisión el eje del cauce.
+
+> Para la localización de la coordenada indicada puede dar clic derecho sobre cualquier zona del mapa, y utilizar la opción _Go To XY_.
+
+<div align="center"><img src="graph/ArcGISPro_Hidrografia_RioNeusa1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
