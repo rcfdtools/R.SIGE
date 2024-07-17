@@ -282,14 +282,14 @@ Para la medición del ancho promedio, utilice la herramienta _Map / Measure_.
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                      | Procedimiento                                                                                                                                                                                                                     |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                   | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                           |
-| Rotulado                     | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                              |
-| Agregar campo                | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                |
-| Crear una capa               | Desde el panel lateral _Browser_, seleccione una carpeta destino y dando clic derecho, seleccione _New / Shapefile_. Defina la geometría, CRS y atributos que contendrá la capa.                                                  |
-| Digitalización               | Activar modo de edición de capa o _Toggle Editing_, luego desde la barra _Digitizing Toolbar_ trace los vectores o dibuje los elementos requeridos a través del botón _Add Feature_.                                              |
-| Convertir líneas a polígonos | Herramienta disponible en el Processing _Toolbox / Vector Geometry / Polygonize_.                                                                                                                                                 |
+| Proceso                      | Procedimiento                                                                                                                                                                        |
+|:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                   | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                              |
+| Rotulado                     | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                 |
+| Agregar campo                | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                   |
+| Crear una capa               | Desde el panel lateral _Browser_, seleccione una carpeta destino y dando clic derecho, seleccione _New / Shapefile_. Defina la geometría, CRS y atributos que contendrá la capa.     |
+| Digitalización               | Activar modo de edición de capa o _Toggle Editing_, luego desde la barra _Digitizing Toolbar_ trace los vectores o dibuje los elementos requeridos a través del botón _Add Feature_. |
+| Convertir líneas a polígonos | Herramienta disponible en _Processing Toolbox / Vector Geometry / Polygonize_.                                                                                                       |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
