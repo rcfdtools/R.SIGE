@@ -1,4 +1,4 @@
-# Estructura de datos
+# Estructura de directorios
 
 Para el desarrollo del caso de estudio y del proyecto de clase, es necesario crear la siguiente estructura en su repositorio de proyecto.
 

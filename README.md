@@ -61,7 +61,7 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 * Funcionarios públicos y/o gestores territoriales en carrera administrativa, consultores, contratistas y asesores municipales
 
 
-## Software y estructura de datos requeridos
+## Software requerido y estructura de directorios
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
@@ -70,7 +70,7 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 * [:toolbox:Herramienta](https://notepad-plus-plus.org/): Notepad++.
 * [:toolbox:Herramienta](https://www.itc.nl/ilwis/download/): ILWIS 3.3.
-* [:open_file_folder:Estructura de datos requerida](file/Readme.md)
+* [:open_file_folder:Estructura de directorios](file/Readme.md)
 
 
 ## Caso de estudio general y grupos de proyecto
