@@ -45,10 +45,10 @@ En la siguiente tabla se relaciona la escala ideal de trabajo recomendada a esca
 
 | Escala    | Pendientes           | Densidad de la<br>red hidrográfica | Densidad de la infra-<br>estructura vial | Tamaño predios                    |
 |-----------|----------------------|------------------------------------|------------------------------------------|-----------------------------------|
-| 1:100.000 | Moderada: hasta 12%  | Baja: <3 km/km2                    | Baja: <3 km/km2                          | Latifundio: >200 Ha               |
-| 1:25.000  | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Mediano a pequeño: De 10 a 200 Ha |
-| 1:10.000  | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Minifundio: De 3 a 10 Ha          |
-| 1:5.000   | Montañosa: >12%      | Alta: >3 km/km2                    | Alta: >3 km/km2                          | Microfundio: <3 Ha                |
+| 1:100.000 | Moderada: hasta 12%  | Baja: <3 km/km²                    | Baja: <3 km/km²                          | Latifundio: >200 Ha               |
+| 1:25.000  | Montañosa: >12%      | Alta: >3 km/km²                    | Alta: >3 km/km²                          | Mediano a pequeño: De 10 a 200 Ha |
+| 1:10.000  | Montañosa: >12%      | Alta: >3 km/km²                    | Alta: >3 km/km²                          | Minifundio: De 3 a 10 Ha          |
+| 1:5.000   | Montañosa: >12%      | Alta: >3 km/km²                    | Alta: >3 km/km²                          | Microfundio: <3 Ha                |
 
 </div>
 
@@ -59,7 +59,7 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 ## 2. Digitalización de drenajes
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Digitizing_, establezca el CRS 9377. Agregue al mapa la capa de drenajes disponible en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\HIDROGRAFIA.shp`, ajuste la simbología y rotule a partir del campo `NOMBRE`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Digitizing_, establezca el CRS 9377. Agregue al mapa la capa de drenajes disponible en la ruta `\R.SIGE\file\data\POT\ Anexo_Acuerdo_012_2013\shp\HIDROGRAFIA.shp`, ajuste la simbología y rotule a partir del campo `NOMBRE`.  
 
 <div align="center"><img src="graph/ArcGISPro_Hidrografia_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
