@@ -79,7 +79,7 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 Para esta nueva capa, defina geometría tipo Poli-línea, sin propiedades de medición (M), sin valores 3D (Z) y establezca el CRS 9377. Agregue la capa al mapa.
 
-<div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje1.png" alt="R.SIGE" width="45%" border="0" /></div>
 
 Abra la tabla de atributos y cree los siguientes campos:
 
@@ -153,12 +153,12 @@ La interpretación usual del índice de sinuosidad (IS) puede ser establecida a 
 
 <div align="center">
 
-| Clase | Rango           | Descripción                          |
-|-------|-----------------|--------------------------------------|
-| 1     | IS < 1.05       | Casi rectilíneo<br>(Almost straight) |
-| 2     | 1.05 ≤ IS <1.25 | Ligeramente sinuoso<br>(Winding)     |
-| 3     | 1.25 ≤ IS <1.50 | Altamente sinuoso<br>(Twisty)        |
-| 4     | 1.50 ≤ IS       | Meandriforme<br>(Meandering)         |
+|  Clase  |       Rango       | Descripción                           |
+|:-------:|:-----------------:|:--------------------------------------|
+|    1    |     IS < 1.05     | Casi rectilíneo<br>(Almost straight)  |
+|    2    |  1.05 ≤ IS <1.25  | Ligeramente sinuoso<br>(Winding)      |
+|    3    |  1.25 ≤ IS <1.50  | Altamente sinuoso<br>(Twisty)         |
+|    4    |     1.50 ≤ IS     | Meandriforme<br>(Meandering)          |
 
 </div>
 
