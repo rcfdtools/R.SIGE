@@ -206,7 +206,7 @@ Podra observar que todo el tramo del río, está en la capa de predio y que es n
 
 <div align="center"><img src="graph/ArcGISPro_PredioLinea_shp5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de digitalización.
+Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de análisis y comparando con la capa oficial predial, son evidentes las diferencias entre estos dos vectores.
 <div align="center"><img src="graph/ArcGISPro_PredioLinea_shp6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
