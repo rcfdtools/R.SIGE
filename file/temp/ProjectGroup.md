@@ -1,4 +1,4 @@
-# Integrantes de grupos de proyecto
+# Grupos de proyecto
 
 En la siguiente tabla, podrá encontrar los códigos de los grupos del proyecto de clase y sus integrantes. 
 
