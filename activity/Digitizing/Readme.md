@@ -77,7 +77,7 @@ Asimismo, teniendo en cuenta los factores mencionados en la anterior, se recomie
 
 <div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-Para esta nueva capa, defina la geometría tipo Polilínea, sin propiedades de medición (M), sin valores 3D (Z) y establezca el CRS 9377. Agregue la capa al mapa.
+Para esta nueva capa, defina geometría tipo Poli-línea, sin propiedades de medición (M), sin valores 3D (Z) y establezca el CRS 9377. Agregue la capa al mapa.
 
 <div align="center"><img src="graph/ArcGISPro_NewShapefile_Drenaje1.png" alt="R.SIGE" width="50%" border="0" /></div>
 
@@ -166,6 +166,53 @@ De acuerdo al valor obtenido y a los rangos definidos, el tramo digitalizado del
 
 
 ## 3. Digitalización de predios
+
+1. Agregue al mapa la capa de drenajes disponible en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL\TERRENO_PREDIO_RURAL`, ajuste la simbología dejando solo el contorno, filtre solo los predios de la vereda 2589900000004 y rotule utilizando solo los 4 últimos caracteres del campo _codigo_. Como observa, alrededor del tramo de drenaje digitalizado, existen algunos predios cuyo límite es el río, también este corresponde a un límite veredal y los predios no se adaptan a la verdadera forma del cauce. 
+
+Rótulo Arcade: `Right($feature.codigo, 4)`
+
+<div align="center"><img src="graph/ArcGISPro_TerrenoPredioRural1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Debido a que digitalizaremos los predios utilizando como referencia el límite definido por los drenajes, crearemos primero una capa de líneas de contorno de predio y luego las convertiremos a polígonos.
+
+2. Cree una nueva capa shapefile en la ruta `\R.SIGE\file\shp\` con el nombre _PredioLinea.shp_, establezca geometría de poli-línea. 
+
+> Debido a que esta capa es temporal y solo se utiliza para delimitar bordes de predios, no es necesaria la inclusión de atributos adicionales.
+
+Para esta nueva capa, defina geometría tipo Poli-línea, sin propiedades de medición (M), sin valores 3D (Z) y establezca el CRS 9377. Agregue la capa al mapa.
+
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Acérquese a escala 1:1000 en la coordenada 4892118.05E y 2111702.02N, que corresponde a una de las esquinas del predio 0195, desde el menu _Edit_ y utilizando la herramienta _Create_, digitalice el borde predio hasta llegar al río previamente digitalizado y tome como límite el costado de la vía correspondiente al predio.  
+
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para completar la digitalización del primer tramo hasta el río, active en _Edit_ las opciones de encajado por vértice y por lado. Para finalizar la edición oprima la tecla <kbd>F2</kbd>.
+
+<div align="center"><img src="graph/ArcGISPro_Snapping1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Ahora, vuelva a la esquina desde donde inicio la digitalización de este primer lado, repita el procedimiento por el lado contrario hasta el río, tome como referencia, la línea central de la vía terciaria que divide los predios 0195 y 0125, y la vegetación.
+
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Apague la capa de predios rurales que utilizamos como referencia para la digitalización, seleccione la línea del eje del río digitalizado y en el menú _Edit_ seleccione _Copy_, luego en el mismo menú despliegue las opciones disponibles en _Paste / Paste Special_ y pegue el drenaje en la capa _PredioLinea_. No es necesario llevar los atributos. Una vez pegado, apague la capa _Drenaje_.
+
+<div align="center"><img src="graph/ArcGISPro_PasteSpecial1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Podra observar que todo el tramo del río, está en la capa de predio y que es necesario recortar los extremos.
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Para recortar los extremos del tramo reciclado del río que hemos utilizado como divisoria, desde el menú _Edit_, utilice la opción _Divide / Split_. Para que el fraccionamiento sea correcto, es necesario desactivar el _Snapping_ de lado y dejar únicamente el de vértice. Una vez segmentado, seleccione los extremos que no pertenecen al predio y elimínelos oprimiendo la tecla <kbd>Delete</kbd> o desde el menú _Edit / Delete_.
+
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de digitalización.
+<div align="center"><img src="graph/ArcGISPro_PredioLinea_shp6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
 
 
 
