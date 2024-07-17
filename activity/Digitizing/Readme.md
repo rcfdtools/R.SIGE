@@ -293,6 +293,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
+
 
 ## Elementos requeridos en diccionario de datos
 
@@ -329,7 +331,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * https://es.wikipedia.org/wiki/Sinuosidad_de_un_r%C3%ADo
 * https://en.wikipedia.org/wiki/Sinuosity
-* https://docs.qgis.org/3.34/en/docs/training_manual/
 
 
 ## Control de versiones

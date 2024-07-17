@@ -242,6 +242,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
+
 
 ## Elementos requeridos en diccionario de datos
 
@@ -276,7 +278,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * [Ley 388 de 1998, Colombia.](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html)
 * https://community.esri.com/t5/arcgis-pro-questions/only-show-labels-that-fit-within-polygons-in/td-p/705022
-
 
 
 ## Control de versiones
