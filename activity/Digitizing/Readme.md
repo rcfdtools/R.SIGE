@@ -275,8 +275,10 @@ Agregue los siguientes atributos:
 Para la medición del ancho promedio, utilice la herramienta _Map / Measure_.
 <div align="center"><img src="graph/ArcGISPro_Via_Measure.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> :pencil2:Para su caso de estudio, repita el procedimiento de digitalización de vías hasta obtener todos los alineamientos que bordean, que están entre los predios digitalizados o que cruzan el tramo de cauce en estudio.
 
-## 2. Análisis usando software libre - QGIS
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
