@@ -209,7 +209,7 @@ Podra observar que todo el tramo del río, está en la capa de predio y que es n
 Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de análisis y comparando con la capa oficial predial, son evidentes las diferencias entre estos dos vectores.
 <div align="center"><img src="graph/ArcGISPro_PredioLinea_shp6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Ahora, necesitamos convertir el predio en un polígono, para ello, en el panel derecho de _Geoprocessing_ utilice la herramienta _Data Management Tools / Feature to Polygon_. Guarde la capa resultante como `\R.SIGE\file\shp\Predio.shp` definiendo en _Environments_ el CRS 9377. 
+6. Ahora, necesitamos convertir el predio en un polígono, para ello, en el panel derecho de _Geoprocessing_, utilice la herramienta _Data Management Tools / Feature to Polygon_. Guarde la capa resultante como `\R.SIGE\file\shp\Predio.shp` definiendo en _Environments_ el CRS 9377. 
 
 >  :lady_beetle:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entre sí.
 
@@ -240,7 +240,41 @@ Incluya el código predial y utilizado el calculador de geometría, obtenga el �
 
 ## 4. Digitalización de vías
 
-Medianeras entre manzanas urbanas o predios
+El proceso de digitalización de ejes viales, se realiza a partir de las medianeras entre manzanas urbanas o entre predios. Catastralmente, los corredores viales no son considerados como una unidad predial.
+
+1. Agregue al mapa la capa de vías rurales por orden disponible en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\ shp\ORDEN_VIAL.shp`, ajuste la simbología y rotule a partir del campo _ORDEN_VIAL_. Acérquese a escala 1:1000 en la coordenada 4893271.14E y 2110830.90N. Como puede observar, la red vial no se encuentra correctamente digitalizada y está incompleta.
+
+<div align="center"><img src="graph/ArcGISPro_OrdenVial1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Cree una nueva capa shapefile en la ruta `\R.SIGE\file\shp\` con el nombre _Via.shp_, establezca geometría de poli-línea y CRS 9377. Al igual que en las capas anteriores, no incluya las propiedades M y Z.
+
+<div align="center"><img src="graph/ArcGISPro_Via_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Agregue los siguientes atributos:
+
+<div align="center">
+
+| Campo     | Descripción                                |    Tipo    | Propiedad<br>ArcGIS Pro | 
+|:----------|:-------------------------------------------|:----------:|:------------------------| 
+| ViaID     | Código de la vía.                          |    Long    | N/A                     |
+| Nomenclat | Nomenclatura o nombre vial.                | Text (200) | N/A                     |
+| Tipo      | Tipo de vía (sin pavimentar, pavimentada). | Text (100) | N/A                     |
+| Estado    | Estado de la vía (texto descriptivo).      | Text (200) | N/A                     |
+| OrdenVial | Orden o jerarquía vial.                    | Text (100) | N/A                     |
+| Ancho     | Ancho promedio del tramo.                  | Text (200) | N/A                     |
+| Ancho     | Nomenclatura o nombre vial.                | Text (200) | N/A                     |
+| LGm       | Longitud geodésica en m.                   |   Double   | Length (geodesic)       |
+
+</div>
+
+
+
+3. Realice la digitalización del tramo de vía que atraviesa el río digitalizado hasta el extremo de la vía a la cual conecta. Use las mismas herramientas que 
+utilizamos para la digitalización del tramo de río.
+
+<div align="center"><img src="graph/ArcGISPro_Via_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 ## 2. Análisis usando software libre - QGIS
