@@ -85,16 +85,16 @@ Abra la tabla de atributos y cree los siguientes campos:
 
 <div align="center">
 
-| Campo       | Descripción                                                                                                                                                                             |    Tipo    | Propiedad<br>ArcGIS Pro | 
-|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------:| 
-| DrenajeID   | Código de identificación del drenaje.                                                                                                                                                   |    Long    |           N/A           |
-| DrenajeNom  | Nombre del drenaje principal.                                                                                                                                                           | Text (100) |           N/A           |
-| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                                                                                         | Text (100) |           N/A           |
-| CotaInicio  | Cota punto inicial en metros.                                                                                                                                                           |   Double   |           N/A           |
-| CotaFin     | Cota punto final en metros.                                                                                                                                                             |   Double   |           N/A           |
-| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                                                                              |   Double   |           N/A           |
-| IndSinuoso  | [Índice de sinuosidad](https://es.wikipedia.org/wiki/Sinuosidad_de_un_r%C3%ADo), calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. |   Double   |           N/A           |
-| LGm         | Longitud geodésica en metros                                                                                                                                                            |   Double   |    Length (geodesic)    |
+| Campo       | Descripción                                                                                                                                                                             |    Tipo    | Propiedad<br>ArcGIS Pro  | 
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-------------------------| 
+| DrenajeID   | Código de identificación del drenaje.                                                                                                                                                   |    Long    | N/A                      |
+| DrenajeNom  | Nombre del drenaje principal.                                                                                                                                                           | Text (100) | N/A                      |
+| DrenajeSub  | Nombre del subtramo de drenaje.                                                                                                                                                         | Text (100) | N/A                      |
+| CotaInicio  | Cota punto inicial en metros.                                                                                                                                                           |   Double   | N/A                      |
+| CotaFin     | Cota punto final en metros.                                                                                                                                                             |   Double   | N/A                      |
+| Pendiente   | Pendiente media del cauce, calculada a partir de la diferencia de cotas entre la longitud.                                                                                              |   Double   | N/A                      |
+| IndSinuoso  | [Índice de sinuosidad](https://es.wikipedia.org/wiki/Sinuosidad_de_un_r%C3%ADo), calculada a partir de la longitud del rio entre la longitud euclidiana entre el punto inicial y final. |   Double   | N/A                      |
+| LGm         | Longitud geodésica en metros                                                                                                                                                            |   Double   | Length (geodesic)        |
 
 </div>
 
@@ -209,11 +209,9 @@ Podra observar que todo el tramo del río, está en la capa de predio y que es n
 Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de análisis y comparando con la capa oficial predial, son evidentes las diferencias entre estos dos vectores.
 <div align="center"><img src="graph/ArcGISPro_PredioLinea_shp6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> Para su caso de estudio, repita el procedimiento de digitalización de predios hasta obtener todos los predios que se encuentran al rededor del río.
-
 6. Ahora, necesitamos convertir el predio en un polígono, para ello, en el panel derecho de _Geoprocessing_ utilice la herramienta _Data Management Tools / Feature to Polygon_. Guarde la capa resultante como `\R.SIGE\file\shp\Predio.shp` definiendo en _Environments_ el CRS 9377. 
 
-> :ladybug:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entresi.
+>  :lady_beetle:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entresi.
 
 <div align="center"><img src="graph/ArcGISPro_Predio_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -221,11 +219,11 @@ Como observa, ya tenemos completamente digitalizado uno de los predios que se en
 
 <div align="center">
 
-| Campo     | Descripción                                                                               |   Tipo   | Propiedad<br>ArcGIS Pro | 
-|:----------|:------------------------------------------------------------------------------------------|:--------:|:-----------------------:| 
-| CodigoAnt | Código catastral de 17 dígitos y sin código de mejora o propiedad horizontal (3 dígitos). | text(17) | N/A |
-| PGm       | Perímetro geodésico en metros.                                                            |  Double  | Line start y-coordinate |
-| AGm       | Área geodésica en m².                                                                     |  Double  |  Line end x-coordinate  |
+| Campo     | Descripción                                                                               |   Tipo   | Propiedad<br>ArcGIS Pro     | 
+|:----------|:------------------------------------------------------------------------------------------|:--------:|:----------------------------| 
+| CodigoAnt | Código catastral de 17 dígitos y sin código de mejora o propiedad horizontal (3 dígitos). | text(17) | N/A                         |
+| PGm       | Perímetro geodésico en metros.                                                            |  Double  | Perimeter length (geodesic) |
+| AGm       | Área geodésica en m².                                                                     |  Double  | Area (geodesic)             |
 
 </div>
 
@@ -233,12 +231,11 @@ Como observa, ya tenemos completamente digitalizado uno de los predios que se en
 
 <div align="center"><img src="graph/ArcGISPro_Predio_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Incluya el código predial y utilizado el calculador de geometría, obtenga el área y perímetro. Compare con los valores contenidos en la capa de la base predial del IGAC.
+Incluya el código predial y utilizado el calculador de geometría, obtenga el área y perímetro. Compare con los valores contenidos en la capa de la base predial del IGAC. Como observa, el área del predio digitalizado es de 440885.3 m² y la del predio de catastro es 432943.85 m², con una diferencia de +7941.45 m². 
 
+<div align="center"><img src="graph/ArcGISPro_Predio_GeometryCalculator.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-
+> :pencil2:Para su caso de estudio, repita el procedimiento de digitalización de predios hasta obtener todos los predios que se encuentran al rededor del río.
 
 ## 4. Digitalización de vías
 
