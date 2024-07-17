@@ -209,6 +209,14 @@ Podra observar que todo el tramo del río, está en la capa de predio y que es n
 Como observa, ya tenemos completamente digitalizado uno de los predios que se encuentran en la zona de análisis y comparando con la capa oficial predial, son evidentes las diferencias entre estos dos vectores.
 <div align="center"><img src="graph/ArcGISPro_PredioLinea_shp6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Para su caso de estudio, repita el procedimiento de digitalización de predios hasta obtener todos los predios que se encuentran al rededor del río.
+
+6. Ahora, necesitamos convertir el predio en un polígono, para ello, en el panel derecho de _Geoprocessing_ utilice la herramienta _Data Management Tools / Feature to Polygon_. Guarde la capa resultante como `\R.SIGE\file\shp\Predio.shp` definiendo en _Environments_ el CRS 9377. 
+
+> :ladybug:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entresi.
+
+<div align="center"><img src="graph/ArcGISPro_Predio_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
