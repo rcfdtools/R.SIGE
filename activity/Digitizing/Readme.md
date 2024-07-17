@@ -119,13 +119,13 @@ Para terminar la edición, de clic derecho y seleccione la opción _Finish_ u op
 
 <div align="center">
 
-| Campo    | Descripción                                                 |  Tipo   | Propiedad<br>ArcGIS Pro | 
-|:---------|:------------------------------------------------------------|:-------:|:-----------------------:| 
-| CxInicio | Coordenada x o este del punto inicial del tramo de río.     | Double  | Line start x-coordinate |
-| CyInicio | Coordenada y o norte del punto inicial del tramo de río.    | Double  | Line start y-coordinate |
-| CxFin    | Coordenada x o este del punto de final del tramo de río.    | Double  |  Line end x-coordinate  |
-| CyFin    | Coordenada y o norte del punto de final del tramo de río.   | Double  |  Line end y-coordinate  |
-| LEuclm   | Longitud euclidiana en metros, usando teorema de pitágoras. | Double  |           N/A           |
+| Campo    | Descripción                                                 |  Tipo   | Propiedad<br>ArcGIS Pro  | 
+|:---------|:------------------------------------------------------------|:-------:|:-------------------------| 
+| CxInicio | Coordenada x o este del punto inicial del tramo de río.     | Double  | Line start x-coordinate  |
+| CyInicio | Coordenada y o norte del punto inicial del tramo de río.    | Double  | Line start y-coordinate  |
+| CxFin    | Coordenada x o este del punto de final del tramo de río.    | Double  | Line end x-coordinate    |
+| CyFin    | Coordenada y o norte del punto de final del tramo de río.   | Double  | Line end y-coordinate    |
+| LEuclm   | Longitud euclidiana en metros, usando teorema de pitágoras. | Double  | N/A                      |
 
 </div>
 
@@ -296,26 +296,26 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre          | Descripción                                                                                    | Geometría     | Registros | 
+|-----------------|------------------------------------------------------------------------------------------------|---------------|-----------| 
+| Drenaje.shp     | Capa de drenajes digitalizados a escala 1:1000.                                                | Poli-línea 2D | 1         | 
+| PredioLinea.shp | Capa de delimitación perimetral de predios digitalizados a escala 1:1000.                      | Poli-línea 2D | 3         | 
+| Predio.shp      | Capa de predios digitalizados a escala 1:1000 y generados a partir de la capa PredioLinea.shp. | Polígono 2D   | 1         | 
+| Via.shp         | Capa de vías digitalizados a escala 1:1000.                                                    | Poli-línea 2D | 1         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P1** | Descargue en formato de base de datos (Geodatabase o GDB), la cartografía general a escala 1:500000, 1:100000 y 1:25000, cargue los drenajes al mapa y compárelos con los utilizados en el diagnóstico y formulación del POT.                                                                                                                                                                                                                       | 
-| Avance **P1** |                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 
-| Avance **P1** | :compass:Mapa digital impreso _P1-1: xxxx_<br>Incluir xxxxx.<br>Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                       | 
-| Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
+| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P1** | Identifique un tramo de río en el cual existan diferencias visibles entre la imagen satelital y los vectores utilizados en el POT. Realice la digitalización a escala 1:1000 de al menos 1 kilómetro del tramo de río identificado, luego digitalice los predios que se encuentran al rededor o sobre el río y las vías internas, perimetrales y/o que cruzan el rio. Compare con los vectores utilizados en el POT y explique las diferencias encontradas. | 
+| Avance **P1** | Descargue de www.colombiaenmapas.gov.co/ y en formato de base de datos (Geodatabase o GDB), la cartografía general a escala 1:500000, 1:100000 y 1:25000, cargue los drenajes, vías y predios al mapa y compárelos con los utilizados en el diagnóstico y formulación del POT. Explique las diferencias encontradas.                                                                                                                                        | 
+| Avance **P1** | :compass:Mapa digital impreso _P1-1: xxxx_<br>Incluir xxxxx.<br>Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                               | 
+| Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas.         | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
@@ -330,10 +330,11 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión     | Descripción                                                                                                      | Autor                                      | Horas |
+|-------------|:-----------------------------------------------------------------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.03.14  | Versión inicial con alcance de la actividad                                                                      | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.16  | Investigación y documentación para caso de estudio general. Conceptos de escala, digitalización de tramo de río. | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| 2024.07.17  | Digitalización de predio, vía y documentación complementaria.                                                    | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
