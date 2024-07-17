@@ -261,18 +261,16 @@ Agregue los siguientes atributos:
 | Tipo      | Tipo de vía (sin pavimentar, pavimentada). | Text (100) | N/A                     |
 | Estado    | Estado de la vía (texto descriptivo).      | Text (200) | N/A                     |
 | OrdenVial | Orden o jerarquía vial.                    | Text (100) | N/A                     |
-| Ancho     | Ancho promedio del tramo.                  | Text (200) | N/A                     |
-| Ancho     | Nomenclatura o nombre vial.                | Text (200) | N/A                     |
+| Ancho     | Ancho promedio del tramo.                  |   Double   | N/A                     |
 | LGm       | Longitud geodésica en m.                   |   Double   | Length (geodesic)       |
 
 </div>
 
+<div align="center"><img src="graph/ArcGISPro_Via_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Realice la digitalización del tramo de vía que atraviesa el río digitalizado hasta el extremo de la vía a la cual conecta. Utilice las mismas herramientas que utilizamos para la digitalización del tramo de río.
 
-3. Realice la digitalización del tramo de vía que atraviesa el río digitalizado hasta el extremo de la vía a la cual conecta. Use las mismas herramientas que 
-utilizamos para la digitalización del tramo de río.
-
-<div align="center"><img src="graph/ArcGISPro_Via_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Via1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
