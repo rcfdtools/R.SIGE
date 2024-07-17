@@ -268,11 +268,12 @@ Agregue los siguientes atributos:
 
 <div align="center"><img src="graph/ArcGISPro_Via_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Realice la digitalización del tramo de vía que atraviesa el río digitalizado hasta el extremo de la vía a la cual conecta. Utilice las mismas herramientas que utilizamos para la digitalización del tramo de río.
+3. Realice a escala 1:1000, la digitalización del tramo de vía que atraviesa el río digitalizado hasta el extremo de la vía a la cual conecta. Utilice las mismas herramientas que utilizamos para la digitalización del tramo de río. Luego de la digitalización, podrá observar que existen diferencias entre el tramo de vía utilizado en la formulación del POT, y la vía digitalizada a escala 1:1000.
 
 <div align="center"><img src="graph/ArcGISPro_Via1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+Para la medición del ancho promedio, utilice la herramienta _Map / Measure_.
+<div align="center"><img src="graph/ArcGISPro_Via_Measure.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
