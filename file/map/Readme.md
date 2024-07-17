@@ -1,6 +1,6 @@
 # Mapas de proyecto
 
-`\map`: carpeta para el almacenamiento de los mapas de proyecto, vistas de globo y escenas.
+`\map`: carpeta para el almacenamiento de mapas de proyecto, vistas de globo y escenas geográficas.
 
 Tipos de archivos o directorio
 

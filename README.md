@@ -61,7 +61,7 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 * Funcionarios públicos y/o gestores territoriales en carrera administrativa, consultores, contratistas y asesores municipales
 
 
-## Software requerido
+## Software y estructura de datos requeridos
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
@@ -70,11 +70,14 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 * [:toolbox:Herramienta](https://notepad-plus-plus.org/): Notepad++.
 * [:toolbox:Herramienta](https://www.itc.nl/ilwis/download/): ILWIS 3.3.
+* [:open_file_folder:Estructura de datos requerida](file/Readme.md)
 
 
-## Caso de estudio general
+## Caso de estudio general y grupos de proyecto
 
 El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
+
+:busts_in_silhouette:Consulta los integrantes y grupos de proyecto [aquí]().
 
 
 ## Módulo I – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
