@@ -217,7 +217,23 @@ Como observa, ya tenemos completamente digitalizado uno de los predios que se en
 
 <div align="center"><img src="graph/ArcGISPro_Predio_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+7. Abra la tabla de atributos y agregue los siguientes campos:
 
+<div align="center">
+
+| Campo     | Descripción                                                                               |   Tipo   | Propiedad<br>ArcGIS Pro | 
+|:----------|:------------------------------------------------------------------------------------------|:--------:|:-----------------------:| 
+| CodigoAnt | Código catastral de 17 dígitos y sin código de mejora o propiedad horizontal (3 dígitos). | text(17) | N/A |
+| PGm       | Perímetro geodésico en metros.                                                            |  Double  | Line start y-coordinate |
+| AGm       | Área geodésica en m².                                                                     |  Double  |  Line end x-coordinate  |
+
+</div>
+
+> Tenga en cuenta que los códigos catastrales en Colombia cambiaron de 20 a 30 dígitos. (Resolución 070 de 2011 - IGAC Colombia. Estructura del código catastral).
+
+<div align="center"><img src="graph/ArcGISPro_Predio_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Incluya el código predial y utilizado el calculador de geometría, obtenga el área y perímetro. Compare con los valores contenidos en la capa de la base predial del IGAC.
 
 
 
