@@ -211,7 +211,7 @@ Como observa, ya tenemos completamente digitalizado uno de los predios que se en
 
 6. Ahora, necesitamos convertir el predio en un polígono, para ello, en el panel derecho de _Geoprocessing_ utilice la herramienta _Data Management Tools / Feature to Polygon_. Guarde la capa resultante como `\R.SIGE\file\shp\Predio.shp` definiendo en _Environments_ el CRS 9377. 
 
->  :lady_beetle:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entresi.
+>  :lady_beetle:Sí la digitalización del contorno fue correcta y las poli-líneas se empalman, se generará correctamente el polígono, de lo contrario no se podrá realizar la conversión. En caso de que no haya sido generado el polígono, verifique los extremos de los tramos de poli-línea y asegúrese de que se empalman entre sí.
 
 <div align="center"><img src="graph/ArcGISPro_Predio_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -235,7 +235,8 @@ Incluya el código predial y utilizado el calculador de geometría, obtenga el �
 
 <div align="center"><img src="graph/ArcGISPro_Predio_GeometryCalculator.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> :pencil2:Para su caso de estudio, repita el procedimiento de digitalización de predios hasta obtener todos los predios que se encuentran al rededor del río.
+> :pencil2:Para su caso de estudio, repita el procedimiento de digitalización de predios hasta obtener todos los predios que se encuentran al rededor del tramo de río digitalizado.
+
 
 ## 4. Digitalización de vías
 
