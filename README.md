@@ -77,7 +77,7 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
 El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
 
-:busts_in_silhouette:Consulte código de grupo, integrantes y casos de estudio particulares [Aquí](file/temp/ProjectGroup.md).
+:busts_in_silhouette:Consulte el código de grupo, integrantes y casos de estudio particulares [Aquí](file/temp/ProjectGroup.md).
 
 
 ## Módulo I – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
