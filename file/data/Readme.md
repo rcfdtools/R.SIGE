@@ -1,8 +1,7 @@
-Study case 2024-01
-	Zipaquirá - Cundinamarca - Colombia
-	https://www.registraduria.gov.co/-Censo-electoral-918-.html
-	POT: https://www.colombiaot.gov.co/
-	Veredas de Colombia 2020: https://www.colombiaenmapas.gov.co/
+# Data  source
 
+'\data': carpeta para el almacenamiento de los datos base suministrados o descargados para cada taller o para el proyecto.
+
+> No incluya en esta carpeta documentos de referencias bibliográficas, tales como libros de uso libre, artículos, informes técnicos recopilados. Utilice la carpeta \ref.
 
 	
