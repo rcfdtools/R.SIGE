@@ -229,7 +229,6 @@ Rótulo Arcade: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.New
 
 ## 7. Análisis usando software libre - QGIS
 
-
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
 | Proceso                                               | Procedimiento                                                                                                                                                                                                                                                                  |
@@ -243,6 +242,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 | Unión de tablas                                       | En las propiedades de capa geográfica, seleccionar la pestaña _Join_ y realizar la unión. Solo se mostrarán los registros correspondientes a la primer coincidencia encontrada. Para visualizar o representar otros valores, es necesario filtrar previamente la tabla a unir. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
+
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
 
 
 ## Elementos requeridos en diccionario de datos
