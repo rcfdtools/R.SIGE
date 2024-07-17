@@ -278,7 +278,7 @@ Para la medición del ancho promedio, utilice la herramienta _Map / Measure_.
 > :pencil2:Para su caso de estudio, repita el procedimiento de digitalización de vías hasta obtener todos los alineamientos que bordean, que están entre los predios digitalizados o que cruzan el tramo de cauce en estudio.
 
 
-## 4. Análisis usando software libre - QGIS
+## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -286,6 +286,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 |:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
 | Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+
+
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
