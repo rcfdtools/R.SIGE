@@ -57,7 +57,7 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 
 <div align="center">Tabla resumen en suelo de expansión urbana y número de nodos<br><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="60%" border="0" /></div><br>
 
-<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="75%" border="0" /></div><br>
+<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="70%" border="0" /></div><br>
 
 <div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
@@ -66,11 +66,25 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 
 ## 2. Creación y re-proyección de polígonos
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _GeoTable_ y establezca el CRS 9377. Desde el _Catalog Pane_, agregue al proyecto la hoja _POTGeoTable_ del libro de Excel y verifique que contenga todos los 2085 registros incorporados. 
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Excel_POTGeoTable.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. En la tabla de contenido, de clic derecho en la tabla _POTGeoTable$_, seleccione la opción _Create Points From Table / XY Table To Point_
+
+<div align="center"><img src="graph/ArcGISPro_XYTableToPoint.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la ventana de la herramienta _XY Table To Point_, defina como nombre de salida `\file\shp\POTGeoTablePunto3116.shp`, seleccione los campos de coordenadas CX y CY y defina como sistema de coordenadas el EPSG 3116 correspondiente a MAGNA_Colombia_Bogota.
+
+> Las coordenadas definidas en el documento del Acuerdo del POT, fueron registradas utilizando el CRS 3116, debido a esto, la capa geográfica de nodos, primero debe ser creada utilizando este sistema y luego debe ser re-proyectada al sistema definido para el caso de estudio, correspondiente al EPSG 9377.
+
+<div align="center"><img src="graph/ArcGISPro_XYTableToPoint1.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por valores únicos a partir de `ZonaNombre` y rotule utilizando la secuencia contenida en el campo `Punto`.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto3116_shp.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
 
 
 ## 3. Verificación de límites utilizando imágenes satelitales
