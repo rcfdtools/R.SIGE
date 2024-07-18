@@ -53,22 +53,15 @@ Por ejemplo, para el artículo 12 correspondiente a la delimitación del suelo u
 
 Repita el mismo procedimiento para los demás artículos que incluyen tablas geo-codificadas. Una vez terminado, obtendrá para este Acuerdo, los registros de localización para 35 zonas diferentes.
 
-Tabla resumen en suelo urbano y número de nodos  
-<div align="center"><img src="graph/Excel_POTGeoTableUrbano.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center">Tabla resumen en suelo urbano y número de nodos<br><img src="graph/Excel_POTGeoTableUrbano.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
-Tabla resumen en suelo de expansión urbana y número de nodos  
-<div align="center"><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center">Tabla resumen en suelo de expansión urbana y número de nodos<br><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
-Tabla resumen en suelo suburbano y número de nodos  
-<div align="center"><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
 > Tenga en cuenta, que el suelo suburbano también hace parte de la zona rural.
 
-Tabla resumen en suelo rural y número de nodos  
-<div align="center"><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="40%" border="0" /></div>
-
-
-
+<div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
 
 ## 2. Procedimiento general en ArcGIS Pro
