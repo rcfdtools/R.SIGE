@@ -64,7 +64,7 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 <div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
 
-## 2. Procedimiento general en ArcGIS Pro
+## 2. Creación y re-proyección de polígonos
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
@@ -73,11 +73,13 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 <div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+## 3. Verificación de límites utilizando imágenes satelitales
 
 
 
-## 3. Análisis usando software libre - QGIS
+
+
+## 34. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
