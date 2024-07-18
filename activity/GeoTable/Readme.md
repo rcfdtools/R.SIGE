@@ -8,7 +8,10 @@ A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que re
 
 ## Objetivos
 
-* 
+* Integrar las tablas geo-codificadas incluídas en el Acuerdo o Decreto de adopción del POT, que delimitan las clasificaciones del suelo.
+* Crear una capa con los nodos perimetrales asociados a cada zona geo-codificada.
+* Crear los polígonos perimetrales y validar su correspondencia con respecto a los polígonos presentados en la cartografía oficial del POT.
+* Identificar errores de secuencia, nodos perimetrales faltantes, zonas intermedia vacías o no coalineadas. 
 
 
 ## Requerimientos
