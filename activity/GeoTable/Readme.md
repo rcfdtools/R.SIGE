@@ -55,13 +55,13 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 
 <div align="center">Tabla resumen en suelo urbano y número de nodos<br><img src="graph/Excel_POTGeoTableUrbano.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
-<div align="center">Tabla resumen en suelo de expansión urbana y número de nodos<br><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="40%" border="0" /></div><br>
+<div align="center">Tabla resumen en suelo de expansión urbana y número de nodos<br><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="60%" border="0" /></div><br>
 
-<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="40%" border="0" /></div><br>
+<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+<div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
 > Tenga en cuenta, que el suelo suburbano también hace parte de la zona rural.
-
-<div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="40%" border="0" /></div><br>
 
 
 ## 2. Creación y re-proyección de polígonos
