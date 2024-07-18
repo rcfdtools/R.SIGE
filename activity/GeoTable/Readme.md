@@ -128,6 +128,13 @@ En la tabla de atributos de la capa _POTGeoTablePunto9377_, filtre los registros
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377Nodo1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Luego del filtro, realice una unión entre la capa de polígonos y la capa de nodos. En la tabla de contenido, de clic derecho en la capa de polígonos y seleccione la opción _Joins and Relates / Add Join_, utilice como llave de unión el campo _ZonaNombre_.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377Join1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+Podrá observar que para los 35 registros de polígonos, se encuentra ahora la información relacionada con la clase de suelo, norma y demás propiedades contenidas en el nodo 1 de cada entidad.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377Join2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
