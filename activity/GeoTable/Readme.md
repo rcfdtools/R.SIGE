@@ -155,8 +155,8 @@ Verificaciones a realizar:
 
 * Utilizando la imágen satelital de ESRI, Google Maps y el POT, evalué la espacialidad de los polígonos creados.
 * Revise y valide los límites y áreas de cada polígono, compare con la capa del Modelo de Ocupación Territorial - MOT. 
-* Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados.
-* Consulte los Acuerdos Municipales posteriores al año 2013, e indique si han sido objeto de modificación o ajuste del POT. 
+* Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados. (Actividad de proyecto).
+* Consulte los Acuerdos Municipales posteriores al año 2013, e indique si han sido objeto de modificación o ajuste del POT. (Actividad de proyecto). 
 
 En la tabla de atributos, agregue un nuevo campo numérico doble con el nombre `AGha` y calcule el área geodésica en hectáreas de los polígonos creados. Modifique el rótulo incluyendo el área calculada
 
@@ -167,7 +167,21 @@ Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre + textformatting.N
 
 ### 3.1. Polígonos urbanos
 
-1. Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI y desactive los rótulos en la capa de nodos. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. 
+Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI y desactive los rótulos en la capa de nodos. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. Agregue la capa `\file\shp\MOT_ClasificacionSuelo.shp` adaptada por clasificación del suelo en el ejercicio de Plusvalía y simbolice sin relleno y con bordes en color blanco.
+
+Rótulo Arcade para MOT: `"MOT - " + $feature.SUELO  + textformatting.Newline + "A (ha): " + Round($feature.AGha9377, 2)`
+
+> En el rótulo de la capa _MOT_ClasificacionSuelo_, los valores de área corresponden al total de toda la clase.
+
+* Zona urbana Central: en general, se acopla correctamente a los límites perimetrales de los polígonos perimetrales y al límite definido en el MOT. 
+
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaA.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+* Zona urbana Barandillas: existen diferencias en el borde perimetral con respecto al límite del MOT.
+
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaB.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
