@@ -109,11 +109,11 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 6. Utilizando el calculador de geometría de campo, calcule las coordenadas de localización en los dos campos creados, utilizando el CRS 9377 y definiendo el formato de salida en grados decimales.
 
-<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CalculateGeometry.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 7. Cree los polígonos de delimitación utilizando la herramienta de geoprocesamiento _Defense Tools / Coordinate Table to Polygon_, nombre la capa de salida como `\file\shp\POTGeoTablePoligono9377.shp`.
 
-<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CoordinateTableToPolygon.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CoordinateTableToPolygon.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 8. Simbolice los polígonos por valores únicos con contornos de color negro, establezca transparencia en 40% y rotule a partir del campo _ZonaNombre_.
 
