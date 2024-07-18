@@ -136,6 +136,16 @@ Podrá observar que para los 35 registros de polígonos, se encuentra ahora la i
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377Join2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+En la tabla de atributos de la capa de polígonos, cree como tipo texto de 200 caracteres, los campos de atributos `Suelo` y `Norma`, y con el calculador de campo, lleve los valores de las columnas agregadas en la unión a los campos de la capa de polígonos.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377CalculateField.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para terminar, desde las opciones de la capa de polígonos, remueva la unión o Join y desactive el filtro realizado a la capa de nodos. Verifique la tabla de atributos, encontrará que ahora todos los elementos tienen el descriptor de Suelo y Norma. Ajuste el rótulo incluyendo la clase de suelo.
+
+Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre`
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 ## 3. Verificación de límites
