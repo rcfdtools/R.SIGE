@@ -84,6 +84,34 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto3116_shp.png" alt="R.SIGE" width="40%" border="0" /></div>
 
+3. Reproyecte la capa de puntos al CRS 9377, para ello, desde la tabla de contenido, cree una copia de la capa y en _Environmets_ establezca el CRS requerido. Nombre la capa como `\file\shp\POTGeoTablePunto9377.shp`
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377_shp.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+> :ladybeetle:Una vez terminado el proceso de generación de la capa de puntos, se recomienda retirar de la tabla de contenido, la hoja del libro de Excel. En algunas versiones de ArcGIS Pro, se bloquea la apertura del mapa de proyecto cuando se utilizan fuentes externas de datos contenidas en libros de Excel.
+
+4. Desde la capa _POTGeoTablePunto9377_, cree una gráfica de barras por _ZonaNombre_ y mediante un conteo de elementos, verifique que todos los nodos hayan sido cargados.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377Chart.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+5. Abra la tabla de atributos de la capa _POTGeoTablePunto9377_ y cree los siguientes campos de atributos:
+
+<div align="center">
+
+| Campo     | Descripción                                            |   Tipo    | Propiedad<br>ArcGIS Pro  | 
+|:----------|:-------------------------------------------------------|:---------:|:-------------------------| 
+| Latitude  | Latitud de localización del punto en grados decimales. |  Double   | N/A                      |
+| Longitude | Latitud de localización del punto en grados decimales. |  Double   | N/A                      |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377AddField.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+6. Utilizando el calculador de geometría de campo, calcule las coordenadas de localización en los dos campos creados.
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CalculateGeometry.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
 
 
 
