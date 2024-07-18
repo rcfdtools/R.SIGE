@@ -120,12 +120,44 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> :idea:Luego de la creación de los polígonos, se recomienda verifique y ajuste manualmente con el Editor, los polígonos con zonas internas vacías o regiones y polígonos con secuencias erradas. Utilice los conceptos aprendidos en la actividad [Digitalización de vectores: drenajes, vías y predios](../Digitizing/Readme.md).
+
+9. Revisando la tabla de atributos, podrá darse cuenta qué únicamente aparecen los nombre de las zonas, y que durante el proceso de generación de los polígonos, no fueron incorporados los atributos de la clase de suelo y la norma que reglamento la zona. 
+
+En la tabla de atributos de la capa _POTGeoTablePunto9377_, filtre los registros con Punto = 1. Podrá observar que en cada zona solo aparece el primer nodo de la secuencia de construcción de cada polígono (35 nodos iniciales).
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377Nodo1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
-## 3. Verificación de límites utilizando imágenes satelitales
+
+## 3. Verificación de límites
+
+> Según lo establecido en la Ley 388 de 1997, cuando existan inconsistencias entre lo señalado en el acuerdo que adopta el plan de ordenamiento territorial y su cartografía oficial, prevalecerá lo establecido en el texto del acuerdo y corresponderá al alcalde municipal o distrital, o la entidad delegada para el efecto, corregir las inconsistencias cartográficas, siempre que no impliquen modificación al articulado del Plan de Ordenamiento Territorial. En el acto administrativo que realice lprecisión cartográfica se definirán, con fundamento en las disposiciones del Plan de Ordenamiento Territorial y sus reglamentaciones, las normas urbanísticas aplicables al área objeto de la precisión. Una vez expedido el acto administrativo, el mismo deberá ser registrado en todos los planos de la cartografía oficial del correspondiente plan y sus instrumentos reglamentarios y complementarios. Esta disposición también será aplicable para precisar la cartografía oficial cuando los estudios de detalle permitan determinar con mayor exactitud las condiciones jurídicas, físicas, geológicas y morfológicas de los terrenos.
+
+Verificaciones a realizar:
+
+* Utilizando la imágen satelital de ESRI, Google Maps y el POT, evalué la espacialidad de los polígonos creados.
+* Revise y valide los límites de cada polígono, compare con la capa del Modelo de Ocupación Territorial - MOT. 
+* Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados.
+* Consulte los Acuerdos Municipales posteriores al año 2013, e indique si han sido objeto de modificación o ajuste del POT. 
 
 
+### 3.1. Polígonos urbanos
+
+1. Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. 
+
+
+
+### 3.2. Polígonos expansión urbana
+
+
+
+### 3.3. Polígonos suburbanos
+
+
+
+### 3.4. Polígonos rurales
 
 
 
