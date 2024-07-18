@@ -115,9 +115,10 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CoordinateTableToPolygon.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Simbolice los polígonos por valores únicos con contornos de color negro, establezca transparencia en 40% y rotule a partir del campo _ZonaNombre_.
+8. Simbolice los polígonos por valores únicos con contornos de color negro, establezca transparencia en 40% y rotule a partir del campo _ZonaNombre_. Verifique que en la tabla de atributos aparezcan 35 registros o polígonos. Podrá observar que entre algunas zonas existen zonas intermedias vacías o que no se coalinean correctamente.
 
-
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
