@@ -50,8 +50,8 @@ A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que re
 
 Por ejemplo, para el artículo 12 correspondiente a la delimitación del suelo urbano:
 
-<div align="center"><img src="graph/Acuerdo012_Art12.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/Acuerdo012_Art12Table.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Acuerdo012_Art12.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Acuerdo012_Art12Table.png" alt="R.SIGE" width="90%" border="0" /></div>
 <div align="center"><img src="graph/Excel_POTGeoTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Repita el mismo procedimiento para los demás artículos que incluyen tablas geo-codificadas. Una vez terminado, obtendrá para este Acuerdo, los registros de localización para 35 zonas diferentes.
