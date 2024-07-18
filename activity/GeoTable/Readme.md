@@ -158,16 +158,13 @@ Verificaciones a realizar:
 * Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados. (Actividad de proyecto).
 * Consulte los Acuerdos Municipales posteriores al año 2013, e indique si han sido objeto de modificación o ajuste del POT. (Actividad de proyecto). 
 
-En la tabla de atributos, agregue un nuevo campo numérico doble con el nombre `AGha` y calcule el área geodésica en hectáreas de los polígonos creados. Modifique el rótulo incluyendo el área calculada
+1. En la tabla de atributos, agregue un nuevo campo numérico doble con el nombre `AGha` y calcule el área geodésica en hectáreas de los polígonos creados. Modifique el rótulo incluyendo el área calculada
 
 Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre + textformatting.Newline + "A (ha): " + Round($feature.AGha, 2)`
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-### 3.1. Polígonos urbanos
-
-Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI y desactive los rótulos en la capa de nodos. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. Agregue la capa `\file\shp\MOT_ClasificacionSuelo.shp` adaptada por clasificación del suelo en el ejercicio de Plusvalía y simbolice sin relleno y con bordes en color blanco.
+2. Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI y desactive los rótulos en la capa de nodos. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. Agregue la capa `\file\shp\MOT_ClasificacionSuelo.shp` adaptada por clasificación del suelo en el ejercicio de Plusvalía y simbolice sin relleno y con bordes en color blanco.
 
 Rótulo Arcade para MOT: `"MOT - " + $feature.SUELO  + textformatting.Newline + "A (ha): " + Round($feature.AGha9377, 2)`
 
@@ -181,23 +178,24 @@ Rótulo Arcade para MOT: `"MOT - " + $feature.SUELO  + textformatting.Newline + 
 
 <div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaB.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+* Zona urbana Villas del Rosario: errores en la secuencia de los puntos, faltan nodos de detalle en contorno.
+
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaC.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+* Zona urbana la Paz / Santa Isabel: zonas vacías colindantes con suelo de expansión urbana, faltan nodos de detalle en contorno.
+
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaD.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Repita la revisión anterior para las demás clasificaciones de suelo: expansión urbana, suburbano y rural. Podrá observar que se presentan múltiples errores de coalineación, secuenciamiento y nodos de detalle perimetrales faltantes con respecto al MOT.
+
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaE.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaF.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaG.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaH.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_EvalZonaUrbanaI.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-### 3.2. Polígonos expansión urbana
-
-
-
-### 3.3. Polígonos suburbanos
-
-
-
-### 3.4. Polígonos rurales
-
-
-
-## 34. Análisis usando software libre - QGIS
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
