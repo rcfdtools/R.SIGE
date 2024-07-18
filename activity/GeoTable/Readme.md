@@ -57,7 +57,7 @@ Repita el mismo procedimiento para los demás artículos que incluyen tablas geo
 
 <div align="center">Tabla resumen en suelo de expansión urbana y número de nodos<br><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="60%" border="0" /></div><br>
 
-<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">Tabla resumen en suelo suburbano y número de nodos<br><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="75%" border="0" /></div><br>
 
 <div align="center">Tabla resumen en suelo rural y número de nodos<br><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
