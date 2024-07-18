@@ -202,10 +202,14 @@ Rótulo Arcade para MOT: `"MOT - " + $feature.SUELO  + textformatting.Newline + 
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso                         | Procedimiento                                                                                                                                                                                                       |
+|:--------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                             |
+| Rotulado                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                |
+| Tabla a puntos                  | Herramienta disponible en el _Processing Toolbox / Vector Creation / Create points layer from table_.                                                                                                               |
+| Convertir puntos a líneas       | Herramienta disponible en el _Processing Toolbox / Vector Creation / Points to path_.                                                                                                                               |
+| Convertir líneas a polígonos    | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Polygonize_.                                                                                                                                   |
+| Cálculos geométricos o de campo | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -216,14 +220,14 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                        | Descripción                                                                                                                        | Geometría | Registros                               | 
+|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------------------------| 
+| POTGeoTablePunto3116.shp      | Puntos de localización perimetral en CRS 3116 creados a partir de tablas geo-codificadas contenidas en el acuerdo del POT.         | Punto 2D  | 2085                                    | 
+| POTGeoTablePunto9377.shp      | Puntos de localización perimetral en CRS 9377 reproyectados a partir de la capa _POTGeoTablePunto3116.shp_.                        | Punto 2D  | 2085                                    | 
+| POTGeoTablePoligono9377.shp   | Polígonos de delimitación de zonas generados a partir del secuenciamiento de puntos contenido en _POTGeoTablePunto9377.shp_.       | Punto 2D  | 35                                      | 
+| POTZonaUrbanizadaExcluida.shp | Puntos de localización de zonas urbanizadas no delimitadas como tabla geo-codificada en el Acuerdo o Decreto de adopción del POT.  | Punto 2D  | Indicar el número de zonas encontradas. | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -232,14 +236,17 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
+| Avance **P3** | Para su caso de estudio, íncluya todos los registros geo-codificados contenidos en el Acuerdo o Decreto de adopción del POT, genere las capas de nodos y polígonos perimetrales.                                                                                                                                                                                                                                                                    | 
+| Avance **P3** | Para cada polígono generado, revise su delimitación perimetral e interna e identifique errores de secuenciamiento, zonas vacías no coalineadas y nodos faltantes.                                                                                                                                                                                                                                                                                   | 
+| Avance **P3** | Compare con la capa del modelo de ocupación territorial y sin eliminar o agregar nodos, ajuste la secuencia de los puntos para obtener la delimitación perimetral correcta.                                                                                                                                                                                                                                                                         | 
+| Avance **P3** | Cree una capa de puntos con el nombre _POTZonaUrbanizadaExcluida.shp_,Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados.                                                                                                                                                                                                                                                                                  | 
+| Avance **P3** | Consulte los Acuerdos Municipales posteriores a la adopción del POT, e indique si las áreas generadas y tablas geo-codificadas han sido objeto de modificación o ajuste.                                                                                                                                                                                                                                                                    | 
 | Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx.<br>Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                       | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
 
 
 ## Referencias
@@ -251,8 +258,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.03.15 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.18 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
