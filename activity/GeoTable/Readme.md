@@ -1,5 +1,5 @@
 # Tablas geo-codificadas del POT
-Keywords: `geo-table` `table-to-point` `point-to-line` `line-to-polygon`
+Keywords: `geo-table` `table-to-point` `point-to-line` `line-to-polygon` `coordinate-table`
 
 A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que reglamenta el POT, cree una tabla integrada con diferentes atributos y secuencias, que permitan generar los nodos y polígonos de la zona urbana, zona de expansión urbana, centros poblados, áreas institucionales, recreativas, culturales, de servicios, distritos especiales, zonas de vivienda y otra áreas de interés especial. Utilizando imágenes satelitales y los polígonos de la cartografía del POT, evalué la espacialidad de los polígonos creados. 
 
@@ -26,7 +26,7 @@ A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que re
 
 ## 1. Creación de tabla geo-codificada
 
-La geo-codificación, es el proceso de transformar una descripción de una ubicación (por ejemplo, un par de coordenadas, una dirección o un nombre de un lugar) en una ubicación de la superficie de la Tierra. Se puede geo-codificar introduciendo una descripción de una ubicación a la vez o proporcionando muchas de ellas al mismo tiempo en una tabla. Las ubicaciones que se obtienen se transforman en entidades geográficas con atributos, que se pueden utilizar para la representación cartográfica o él para análisis espacial. Con la geoc-odificación, puede buscar varios tipos de ubicaciones de manera rápida. Los tipos de ubicaciones que puede buscar incluyen: puntos de interés o nombres de un diccionario geográfico, como montañas, puentes y negocios; coordenadas basadas en latitud y longitud o en otros sistemas de referencia.[^1]
+> La geo-codificación, es el proceso de transformar una descripción de una ubicación (por ejemplo, un par de coordenadas, una dirección o un nombre de un lugar) en una ubicación de la superficie de la Tierra. Se puede geo-codificar introduciendo una descripción de una ubicación a la vez o proporcionando muchas de ellas al mismo tiempo en una tabla. Las ubicaciones que se obtienen se transforman en entidades geográficas con atributos, que se pueden utilizar para la representación cartográfica o él para análisis espacial. Con la geoc-odificación, puede buscar varios tipos de ubicaciones de manera rápida. Los tipos de ubicaciones que puede buscar incluyen: puntos de interés o nombres de un diccionario geográfico, como montañas, puentes y negocios; coordenadas basadas en latitud y longitud o en otros sistemas de referencia.[^1]
 
 1. A partir de las tablas geo-codificadas contenidas en los Artículos 12, 13, 14, 15 y 134 del Acuerdo Municipal 012 de 2013, cree un libro de Microsoft Excel con el nombre [POTGeoTable.xlsx](POTGeoTable.xlsx) (guarde en la carpeta _\table_) que contenga una hoja con el nombre _POTGeoTable_ y que incluya las siguientes columnas de atributos:
 
