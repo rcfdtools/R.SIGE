@@ -147,7 +147,6 @@ Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre`
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 3. Verificación de límites
 
 > Según lo establecido en la Ley 388 de 1997, cuando existan inconsistencias entre lo señalado en el acuerdo que adopta el plan de ordenamiento territorial y su cartografía oficial, prevalecerá lo establecido en el texto del acuerdo y corresponderá al alcalde municipal o distrital, o la entidad delegada para el efecto, corregir las inconsistencias cartográficas, siempre que no impliquen modificación al articulado del Plan de Ordenamiento Territorial. En el acto administrativo que realice lprecisión cartográfica se definirán, con fundamento en las disposiciones del Plan de Ordenamiento Territorial y sus reglamentaciones, las normas urbanísticas aplicables al área objeto de la precisión. Una vez expedido el acto administrativo, el mismo deberá ser registrado en todos los planos de la cartografía oficial del correspondiente plan y sus instrumentos reglamentarios y complementarios. Esta disposición también será aplicable para precisar la cartografía oficial cuando los estudios de detalle permitan determinar con mayor exactitud las condiciones jurídicas, físicas, geológicas y morfológicas de los terrenos.
@@ -155,14 +154,20 @@ Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre`
 Verificaciones a realizar:
 
 * Utilizando la imágen satelital de ESRI, Google Maps y el POT, evalué la espacialidad de los polígonos creados.
-* Revise y valide los límites de cada polígono, compare con la capa del Modelo de Ocupación Territorial - MOT. 
+* Revise y valide los límites y áreas de cada polígono, compare con la capa del Modelo de Ocupación Territorial - MOT. 
 * Identifique zonas urbanizadas que no están dentro de los límites de los polígonos generados.
 * Consulte los Acuerdos Municipales posteriores al año 2013, e indique si han sido objeto de modificación o ajuste del POT. 
+
+En la tabla de atributos, agregue un nuevo campo numérico doble con el nombre `AGha` y calcule el área geodésica en hectáreas de los polígonos creados. Modifique el rótulo incluyendo el área calculada
+
+Rótulo Arcade: `$feature.Suelo + " / " + $feature.ZonaNombre + textformatting.Newline + "A (ha): " + Round($feature.AGha, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 3.1. Polígonos urbanos
 
-1. Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. 
+1. Cambie el mapa de fondo o Basemap, por el de la imágen satelital mundial de ESRI y desactive los rótulos en la capa de nodos. Utilizando la herramienta de selección por atributos, seleccione todos los polígonos correspondientes a clasificación de suelo urbano. 
 
 
 
