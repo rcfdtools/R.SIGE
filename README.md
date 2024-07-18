@@ -75,7 +75,9 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
 ## Caso de estudio general y grupos de proyecto
 
-El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares. :busts_in_silhouette:Consulte el código de grupo, integrantes y casos de estudio particulares [Aquí](file/temp/ProjectGroup.md).
+El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
+
+:busts_in_silhouette:Consulte el código de grupo, integrantes y casos de estudio particulares [Aquí](file/temp/ProjectGroup.md).
 
 <div align="center"><img src="file/graph/StudyCaseHistory.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Áreas homogéneas de tierra - Municipio de Zipaquirá (norte hacia arriba)<br>Tomado de: <a href="https://www.colombiaenmapas.gov.co">https://www.colombiaenmapas.gov.co</a></sub><br><br></div>
 
