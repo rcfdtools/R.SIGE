@@ -3,7 +3,7 @@ Keywords: `geo-table` `table-to-point` `point-to-line` `line-to-polygon`
 
 A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que reglamenta el POT, cree una tabla integrada con diferentes atributos y secuencias, que permitan generar los nodos y polígonos de la zona urbana, zona de expansión urbana, centros poblados, áreas institucionales, recreativas, culturales, de servicios, distritos especiales, zonas de vivienda y otra áreas de interés especial. Utilizando imágenes satelitales y los polígonos de la cartografía del POT, evalué la espacialidad de los polígonos creados. 
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/GeoTable.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -18,10 +18,59 @@ A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que re
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
+* [:open_file_folder:POTGeoTable.xlsx](POTGeoTable.xlsx): libro con tablas geo-codificadas del POT.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de tabla geo-codificada
+
+La geo-codificación, es el proceso de transformar una descripción de una ubicación (por ejemplo, un par de coordenadas, una dirección o un nombre de un lugar) en una ubicación de la superficie de la Tierra. Se puede geo-codificar introduciendo una descripción de una ubicación a la vez o proporcionando muchas de ellas al mismo tiempo en una tabla. Las ubicaciones que se obtienen se transforman en entidades geográficas con atributos, que se pueden utilizar para la representación cartográfica o él para análisis espacial. Con la geoc-odificación, puede buscar varios tipos de ubicaciones de manera rápida. Los tipos de ubicaciones que puede buscar incluyen: puntos de interés o nombres de un diccionario geográfico, como montañas, puentes y negocios; coordenadas basadas en latitud y longitud o en otros sistemas de referencia.[^1]
+
+1. A partir de las tablas geo-codificadas contenidas en los Artículos 12, 13, 14, 15 y 134 del Acuerdo Municipal 012 de 2013, cree un libro de Microsoft Excel con el nombre [POTGeoTable.xlsx](POTGeoTable.xlsx) (guarde en la carpeta _\table_) que contenga una hoja con el nombre _POTGeoTable_ y que incluya las siguientes columnas de atributos:
+
+<div align="center">
+
+| Columna    | Descripción                                                                           |
+|------------|---------------------------------------------------------------------------------------|
+| Suelo      | Clasificación de suelo: Urbano, Rural, Expansión urbana, Suburbano.                   |
+| ZonaID     | Numero consecutivo por cada zona identificada.                                        |
+| ZonaNombre | Nombre de la zona.                                                                    |
+| Punto      | Número de punto, 1 a n por zona.                                                      |
+| CX         | Coordenada X en metros. Para el caso de estudio corresponde a valores en el CRS 3116. |
+| CY         | Coordenada Y en metros. Para el caso de estudio corresponde a valores en el CRS 3116. |
+| Norma      | Artículo del Acuerdo o Decreto Municipal.                                             |
+
+</div>
+
+2. Desde el Acuerdo Municipal, registre los valores en el libro de Excel.
+
+> Es recomendable convertir el documento de Adobe Acrobat a un formato editable, para de poder copiar correctamente los elementos multilínea contenidos en las tablas.
+
+Por ejemplo, para el artículo 12 correspondiente a la delimitación del suelo urbano:
+
+<div align="center"><img src="graph/Acuerdo012_Art12.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Acuerdo012_Art12Table.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_POTGeoTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita el mismo procedimiento para los demás artículos que incluyen tablas geo-codificadas. Una vez terminado, obtendrá para este Acuerdo, los registros de localización para 35 zonas diferentes.
+
+Tabla resumen en suelo urbano y número de nodos  
+<div align="center"><img src="graph/Excel_POTGeoTableUrbano.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+Tabla resumen en suelo de expansión urbana y número de nodos  
+<div align="center"><img src="graph/Excel_POTGeoTableExpansionUrbana.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+Tabla resumen en suelo suburbano y número de nodos  
+<div align="center"><img src="graph/Excel_POTGeoTableSuburbano.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+> Tenga en cuenta, que el suelo suburbano también hace parte de la zona rural.
+
+Tabla resumen en suelo rural y número de nodos  
+<div align="center"><img src="graph/Excel_POTGeoTableRural.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
+
+
+## 2. Procedimiento general en ArcGIS Pro
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
@@ -34,7 +83,7 @@ En este momento ya dispone de la grilla de terreno reacondicionada requerida par
 
 
 
-## 2. Análisis usando software libre - QGIS
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -80,7 +129,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* [¿Qué es la geocodificación?](https://desktop.arcgis.com/es/arcmap/latest/manage-data/geocoding/what-is-geocoding.htm)
 
 
 ## Control de versiones
@@ -98,4 +147,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../Digitizing/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
-[^1]: 
+[^1]: https://desktop.arcgis.com/es/arcmap/latest/manage-data/geocoding/what-is-geocoding.htm
