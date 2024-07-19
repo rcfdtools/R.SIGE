@@ -132,14 +132,25 @@ Calle 8, editada y ajustada
 
 <div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen. Nombre la capa como `\file\shp\Red_Vial_Buffer.shp`. Rotule utilizando el campo PerfilVial
+4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen, nombre la capa como `\file\shp\Red_Vial_Buffer.shp` y rotule utilizando el campo PerfilVial
+
+Rótulo Arcade: `"(" + $feature.Red_vial_P + ") " + $feature.PerfilVial`
+
+> Tenga en cuenta que la disolución de los buffers, deberá ser realizada utilizando los campos `PerfilNum` y `ViaTipo`. De esta forma podrá identificar la afectación sobre la construcción y conocer cuál perfil y vía lo generó.  
 
 <div align="center"><img src="graph/ArcGISPro_Buffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En la capa buffer, cree un campo de atributos numérico doble, con el nombre `AGha` y calcule el área 
+5. En la capa buffer, cree un campo de atributos numérico doble, con el nombre `AGha` y calcule el área geodésica. Simbolice a partir del tipo de perfil. Luego, cree una gráfica que permita validar el área total de corredores viales por cada tipo de perfil.
+
+<div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Análisis usando software libre - QGIS
+## 5. Identificación y evaluación de construcciones afectadas
+
+
+
+
+## 6. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
