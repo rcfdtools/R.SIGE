@@ -109,9 +109,29 @@ Calle 8, editada y ajustada
 
 > Para vías con varios perfiles definidos, edite y ajuste los tramos requeridos para asignar los códigos correspondientes.
 
-3. Una vez finalizada la asociación de código de perfil y editados e integrados los tramos, recalcula las longitudes contenidas en el campo `LGkm`.
+3. Una vez finalizada la asociación de código de perfil y editados e integrados los tramos, guarde los cambios realizados en la capa, y recalcule las longitudes contenidas en el campo `LGkm`.
 
 <div align="center"><img src="graph/ArcGISPro_CalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Cree una gráfica de barras con la longitud total de vías asociadas por cada código homologado en `PerfilNum`. Simbolice la red vial a partir de los códigos asignados. Podrá observar que los códigos 4, 15 y 20, no tienen vectores asociados debido a que no se encontraban digitalizados o caracterizados en la red víal. También podrá observar que el código 23, correspondiente a vías de cuarto orden, contiene la mayor longitud de tramos, seguido del código 0, correspondiente a vías urbanas sin perfil específico definido.  
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 4. Creación de buffers
+
+1. Agregue al mapa la tabla de Excel _RoadBuffer.xlsx_, que contiene la descripción detallada de cada perfil. Abra la tabla y verifique que estén todos los registros de perfiles creados.
+
+<div align="center"><img src="graph/ArcGISPro_ExcelRoadBuffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando el campo `PerfilNum`, cree una unión o _Join_ entre la capa de vías y la tabla de Excel.
+
+<div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
+Desde el panel _Geoprocessing_, ejecute  
+
+<div align="center"><img src="graph/ArcGISPro_ExcelRoadBuffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
