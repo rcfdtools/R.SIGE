@@ -24,13 +24,11 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 
 ## 1. Creación de tabla de perfiles viales
 
-> En las vías rurales aplican los perfiles que se presentan en el siguiente cuadro, de conformidad con lo regulado por la Ley 1228 de 2008 en materia de franjas de retiro.
+> En las vías rurales, aplican los perfiles que se presentan en el siguiente cuadro, de conformidad con lo regulado por la Ley 1228 de 2008 en materia de franjas de retiro.
+> 
+> En cuanto a las vías urbanas que no son de carácter departamental o nacional, sus especificaciones son definidas directamente en el POT.
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `TIPO_FOR` y rotule a partir del nombre de la vía.  
-
-<div align="center"><img src="graph/ArcGISPro_Red_vial_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-2. Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga sus valores y las siguientes columnas:
+Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga sus valores y las siguientes columnas:
 
 | Columna    | Descripción                                                                                                                                            | Urbano y Expansión | Rural |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
@@ -60,7 +58,12 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 
 ## 2. Homologación de vías rurales
 
-1. En la tabla de atributos de la capa de la red vial, cree un campo numérico entero corto (short) con el nombre `PerfilNum`. Luego, utilizando la herramienta de selección por atributos, seleccione todas las vías rurales cuyo orden sea 1 y con el calculador de campo establezca el código de perfil número 19.
+
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `TIPO_FOR` y rotule a partir del nombre de la vía.  
+
+<div align="center"><img src="graph/ArcGISPro_Red_vial_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la tabla de atributos de la capa de la red vial, cree un campo numérico entero corto (short) con el nombre `PerfilNum`. Luego, utilizando la herramienta de selección por atributos, seleccione todas las vías rurales cuyo orden sea 1 y con el calculador de campo establezca el código de perfil número 19.
 
 <div align="center"><img src="graph/ArcGISPro_PerfilNum19.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -74,7 +77,7 @@ Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL =
 
 <div align="center"><img src="graph/ArcGISPro_PerfilNum19Proyectada.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Para la vía férrea, establezca el código 24, correspondiente a este corredor. 
+3. Para la vía férrea, establezca el código 24, correspondiente a este corredor. 
 
 > De conformidad con lo dispuesto en el artículo 3 de la Ley 76 de 1929, en una franja de 20 metros cuyo centro es el eje de la vía, no es posible realizar excavaciones, construcciones u otras obras que comprometan la estabilidad de la vía.
 > 
@@ -82,7 +85,7 @@ Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL =
 
 <div align="center"><img src="graph/ArcGISPro_PerfilNum24Ferrea.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3Para las vías rurales proyectadas, establezca el código 23, correspondiente a vías de cuarto orden.
+4. Para las vías rurales proyectadas, establezca el código 23, correspondiente a vías de cuarto orden.
 
 <div align="center"><img src="graph/ArcGISPro_PerfilNum23Proyectada.png" alt="R.SIGE" width="100%" border="0" /></div>
 
