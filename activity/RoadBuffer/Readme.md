@@ -144,6 +144,8 @@ Rótulo Arcade: `"(" + $feature.Red_vial_P + ") " + $feature.PerfilVial`
 
 <div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Para continuar, remueva la unión realizada sobre la capa de vías a partir del archivo de Excel.
+
 
 ## 5. Identificación y evaluación de construcciones afectadas
 
