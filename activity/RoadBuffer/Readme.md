@@ -53,7 +53,6 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 | PerfilTot  | Ancho total del perfil en metros.                                                                                                                      |         ✓          |   ✓   |
 | BufferGIS  | Ancho del buffer geográfico en metros. `BufferGIS =  PerfilTot / 2`                                                                                    |         ✓          |   ✓   |
 
-
 <div align="center"><img src="graph/POT_Articulo48.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/POT_Articulo110.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Excel_RoadBuffer.png" alt="R.SIGE" width="100%" border="0" /></div>
