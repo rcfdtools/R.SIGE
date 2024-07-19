@@ -22,7 +22,7 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 * [:open_file_folder:RoadBuffer.xlsx](RoadBuffer.xlsx): libro con especificaciones de perfiles viales.
 
 
-## 1. Procedimiento general
+## 1. Creación de tabla de perfiles viales
 
 > En las vías rurales aplican los perfiles que se presentan en el siguiente cuadro, de conformidad con lo regulado por la Ley 1228 de 2008 en materia de franjas de retiro.
 
@@ -30,7 +30,7 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 
 <div align="center"><img src="graph/ArcGISPro_Red_vial_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga estos valores y las siguientes columnas:
+2. Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga sus valores y las siguientes columnas:
 
 | Columna    | Descripción                                                                                                                                            | Urbano y Expansión | Rural |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
@@ -58,14 +58,38 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 <div align="center"><img src="graph/Excel_RoadBuffer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
- en la tabla de atributos un campo numérico doble con el nombre `LmBuffer`. En este campo se almacena la mitad del ancho establecido, para de esta forma crear la aferencia al rededor de los ejes con su ancho total. 
+## 2. Homologación de vías rurales
+
+1. En la tabla de atributos de la capa de la red vial, cree un campo numérico entero corto (short) con el nombre `PerfilNum`. Luego, utilizando la herramienta de selección por atributos, seleccione todas las vías rurales cuyo orden sea 1 y con el calculador de campo establezca el código de perfil número 19.
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum19.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita el procedimiento anterior para las demás vías rurales y los órdenes viales 2 a 4. Modifique el rótulo incluyendo entre paréntesis, el código de perfil asignado.
+
+Rótulo Arcade: `"(" + $feature.PerfilNum + ") " +$feature.NombreVia`
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum21a23.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL = 'Primer Orden-Via Proyectada'`), aplique el código 19.
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum19Proyectada.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para la vía férrea, establezca el código 24, correspondiente a este corredor. 
+
+> De conformidad con lo dispuesto en el artículo 3 de la Ley 76 de 1929, en una franja de 20 metros cuyo centro es el eje de la vía, no es posible realizar excavaciones, construcciones u otras obras que comprometan la estabilidad de la vía.
+> 
+> En la tabla de Excel, las vías férreas se han incluído como parte de los corredores rurales y su ancho se ha sido definido en la columna `Separador`. 
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum24Ferrea.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3Para las vías rurales proyectadas, establezca el código 23, correspondiente a vías de cuarto orden.
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum23Proyectada.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 3. Homologación de vías urbanas
 
-
-
-
-> Para vías sin ancho de corredor definido, establezca 6 metros
+1. Para las 
 
 
 
