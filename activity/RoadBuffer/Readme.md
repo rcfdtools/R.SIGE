@@ -128,10 +128,13 @@ Calle 8, editada y ajustada
 
 <div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin.png" alt="R.SIGE" width="40%" border="0" /></div>
 
+3. Abra la tabla de atributos de la capa de vías y asegúrese que para todos los registros, se encuentran asociados los valores de los perfiles establecidos, verifique el campo `BufferGIS`.
 
-Desde el panel _Geoprocessing_, ejecute  
+<div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ArcGISPro_ExcelRoadBuffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen. Nombre la capa como `\file\shp\Red_Vial_Buffer.shp`. 
+
+<div align="center"><img src="graph/ArcGISPro_Buffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
