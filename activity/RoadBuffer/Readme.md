@@ -19,18 +19,54 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 * [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:open_file_folder:RoadBuffer.xlsx](RoadBuffer.xlsx): libro con especificaciones de perfiles viales.
 
 
 ## 1. Procedimiento general
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `ZonaNombre` y rotule a partir del nombre de la vía.  
+> En las vías rurales aplican los perfiles que se presentan en el siguiente cuadro, de conformidad con lo regulado por la Ley 1228 de 2008 en materia de franjas de retiro.
+
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `TIPO_FOR` y rotule a partir del nombre de la vía.  
 
 <div align="center"><img src="graph/ArcGISPro_Red_vial_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Para este ejemplo, realizaremos solo el análisis de la red urbana. Desde las propiedades de la capa de vías y utilizando el _Definition Query_, filtre solo las vías urbanas.
+2. Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga estos valores y las siguientes columnas:
+
+| Columna    | Descripción                                                                                                                                            | Urbano y Expansión | Rural |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
+| PerfilNum  | Código consecutivo de perfil. De 0 a n. El PerfiNum = 0, es utilizado para aplicar un perfil genérico a las vías urbanas sin perfil directo asociado.  |         ✓          |   ✓   |
+| Zona       | Zona de aplicación: Urbano y expansión urbana, Rural.                                                                                                  |         ✓          |   ✓   |
+| ViaTipo    | Descripción de la vía o nomenclatura al cual aplica el perfil vial.                                                                                    |         ✓          |   ✓   |
+| Jerarquia  | Jerarquía vial. En vías urbanas corresponde a local, arterial o zonal. En vías rurales, corresponde al orden vial.                                     |         ✓          |   ✓   |
+| Definicion | Definición detallada del corredor.                                                                                                                     |         ✓          |   ✓   |
+| Descripc   | Descripción detallada del tramo al cual aplica.                                                                                                        |         ✓          |   ✓   |
+| ZVerdeIzq  | Ancho de zona verde al lado izquierdo del perfil en metros.                                                                                            |                    |   ✓   |
+| BermaCIzq  | Ancho de berma y cuneta al lado izquierdo del perfil en metros.                                                                                        |                    |   ✓   |
+| AndenIzq   | Ancho del andén al lado izquierdo del perfil en metros.                                                                                                |         ✓          |       |
+| CalzadaIzq | Ancho de calzada o sub-calzada al lado izquierdo del perfil en metros.                                                                                 |         ✓          |   ✓   |
+| Separador  | Ancho de separador central del perfil en metros.                                                                                                       |         ✓          |   ✓   |
+| CalzadaDer | Ancho de calzada o sub-calzada al lado derecho del perfil en metros.                                                                                   |         ✓          |   ✓   |
+| Cicloruta  | Ancho de cicloruta al lado derecho del perfil en metros.                                                                                               |         ✓          |       |
+| AndenDer   | Ancho del andén al lado derecho del perfil en metros.                                                                                                  |         ✓          |       |
+| BermaCDer  | Ancho de berma y cuneta al lado derecho del perfil en metros.                                                                                          |                    |   ✓   |
+| ZVerdeDer  | Ancho de zona verde al lado derecho del perfil en metros.                                                                                              |                    |   ✓   |
+| PerfilTot  | Ancho total del perfil en metros.                                                                                                                      |         ✓          |   ✓   |
+| BufferGIS  | Ancho del buffer geográfico en metros. `BufferGIS =  PerfilTot / 2`                                                                                    |         ✓          |   ✓   |
+
+
+<div align="center"><img src="graph/POT_Articulo48.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/POT_Articulo110.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_RoadBuffer.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+ en la tabla de atributos un campo numérico doble con el nombre `LmBuffer`. En este campo se almacena la mitad del ancho establecido, para de esta forma crear la aferencia al rededor de los ejes con su ancho total. 
 
 
 
+
+
+
+> Para vías sin ancho de corredor definido, establezca 6 metros
 
 
 
