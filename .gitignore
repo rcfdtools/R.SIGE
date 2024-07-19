@@ -43,6 +43,11 @@ Lib/
 # Geodatabases
 *.gdb*
 *.mdb*
+# Audio y video
+*.avi
+*.mp4
+*.mp3
+*.mkv
 
 # Video exclusions
 #Section02/FdrDEM/FdrDEM.mp4
