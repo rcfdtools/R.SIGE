@@ -126,17 +126,17 @@ Calle 8, editada y ajustada
 
 2. Utilizando el campo `PerfilNum`, cree una unión o _Join_ entre la capa de vías y la tabla de Excel.
 
-<div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 3. Abra la tabla de atributos de la capa de vías y asegúrese que para todos los registros, se encuentran asociados los valores de los perfiles establecidos, verifique el campo `BufferGIS`.
 
 <div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen. Nombre la capa como `\file\shp\Red_Vial_Buffer.shp`. 
+4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen. Nombre la capa como `\file\shp\Red_Vial_Buffer.shp`. Rotule utilizando el campo PerfilVial
 
 <div align="center"><img src="graph/ArcGISPro_Buffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+5. En la capa buffer, cree un campo de atributos numérico doble, con el nombre `AGha` y calcule el área 
 
 
 ## 2. Análisis usando software libre - QGIS
