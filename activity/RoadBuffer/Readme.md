@@ -59,7 +59,7 @@ Siguiendo las especificaciones de perfiles viales establecidas en los Artículos
 ## 2. Homologación de vías rurales
 
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `TIPO_FOR` y rotule a partir del nombre de la vía.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadBuffer_ y establezca el CRS 9377. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\data\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `TIPO_FOR` y rotule a partir del nombre de la vía.  
 
 <div align="center"><img src="graph/ArcGISPro_Red_vial_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -132,7 +132,7 @@ Calle 8, editada y ajustada
 
 <div align="center"><img src="graph/ArcGISPro_ExcelRoadJoin1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen, nombre la capa como `\file\shp\Red_Vial_Buffer.shp` y rotule utilizando el campo PerfilVial
+4. Desde el panel _Geoprocessing_, ejecute la herramienta _Analysis Tools / Buffer_, utilice los parámetros mostrados en la siguiente imagen, nombre la capa como `\file\data\shp\Red_Vial_Buffer.shp` y rotule utilizando el campo PerfilVial
 
 Rótulo Arcade: `"(" + $feature.Red_vial_P + ") " + $feature.PerfilVial`
 
@@ -148,6 +148,17 @@ Para continuar, remueva la unión realizada sobre la capa de vías a partir del 
 
 
 ## 5. Identificación y evaluación de construcciones afectadas
+
+1. Desde la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\URBANO\`, agregue al mapa las clases de entidad _EDIFICACION_ y _CONSTRUCCION_ANEXA_ que contienen los polígonos de las edificaciones urbanas y las construcciones anexadas. Ajuste la simbología y establezca transparencia del 40% en la capa de aferencias viales.
+
+> Para este ejercicio de clase, no utilizaremos las construcciones rurales, sin embargo, para su caso de estudio, todas las edificaciones del municipio, deberán ser incorporadas en el análisis. 
+
+<div align="center"><img src="graph/ArcGISPro_AddConstruccion.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, integre las dos capas de construcciones en una única capa, nombre la capa integrada como `\file\data\shp\Construccion.shp`. Asegúrese de marcar la casilla _Add source information to output_, para conocer la capa fuente a partir de la cual se obtuvo cada construcción. Simbolice por valores únicos a partir del campo `MERGE_SRC`.
+
+<div align="center"><img src="graph/ArcGISPro_ConstruccionMerge.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
