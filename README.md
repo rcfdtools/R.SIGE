@@ -60,6 +60,12 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 * Técnicos y tecnólogos en ingeniería civil, arquitectura y profesiones afines.
 * Funcionarios públicos y/o gestores territoriales en carrera administrativa, consultores, contratistas y asesores municipales
 
+Requisitos académicos: 
+
+* Conocimientos básicos en computación y ofimática.
+* Conocimientos básicos de geografía.
+* Conocimientos básicos de estadística.
+
 
 ## Software requerido y estructura de directorios
 
