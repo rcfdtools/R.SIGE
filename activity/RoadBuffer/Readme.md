@@ -159,8 +159,25 @@ Para continuar, remueva la unión realizada sobre la capa de vías a partir del 
 
 <div align="center"><img src="graph/ArcGISPro_ConstruccionMerge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Agregue a la capa _Construccion_, un campo de atributos numérico doble con el nombre `AGm2` y calcule el área geodésica de cada elemento. Podrá observar que en la tabla de atributos se han calculado las áreas de 41887 construcciones.
 
+<div align="center"><img src="graph/ArcGISPro_ConstruccionCalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, genere la intersección espacial entre las construcciones y los corredores viales. Nombre la capa como `\file\data\shp\Construccion_PerfilVialAfectacion.shp`. simbolice el resultado en color rojo. Podrá observar que múltiples construcciones se encuentran dentro de los corredores definidos.
+
+<div align="center"><img src="graph/ArcGISPro_ConstruccionIntersect.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ConstruccionIntersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ConstruccionIntersect2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Para conocer el área y porcentaje afectado en cada construcción, en la capa _Construccion_PerfilVialAfectacion_, cree dos campos numéricos dobles con los nombres `AGAfecm2` y `AGAfecPorc`, calculé el área geodésica de cada fracción y para el porcentaje, divida el valor de los campos `AGm2` y `AGAfecm2`. Rotule cada área afectada incluyendo el área original, el área afectada y su porcentaje.
+
+Rótulo Arcade: `"Ap (m²): " + Round($feature.AGm2, 1) + textformatting.NewLine + "Aa (m²): " + Round($feature.AGAfecm2, 1) + " (" + Round($feature.AGAfecPorc, 1) + "%)"`
+
+<div align="center"><img src="graph/ArcGISPro_ConstruccionPorcentaje.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Cree una gráfica que muestre el total de las áreas afectadas por cada tipo de perfil y compare con el gráfico del total de áreas por perfil.
+
+<div align="center"><img src="graph/ArcGISPro_ConstruccionChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 6. Análisis usando software libre - QGIS
