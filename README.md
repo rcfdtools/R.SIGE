@@ -63,8 +63,10 @@ Los contenidos presentados en este curso están dirigidos a funcionarios públic
 Requisitos académicos: 
 
 * Conocimientos básicos en computación y ofimática.
-* Conocimientos básicos de geografía.
+* Conocimientos básicos de geografía. 
 * Conocimientos básicos de estadística.
+
+> Para tomar este curso, no se requiere de conocimiento o certificaciones previas en el uso de herramientas computacionales SIG, tales como ArcGIS Pro o QGIS.
 
 
 ## Software requerido y estructura de directorios
