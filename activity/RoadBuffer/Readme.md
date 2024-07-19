@@ -28,7 +28,7 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 > 
 > En cuanto a las vías urbanas que no son de carácter departamental o nacional, sus especificaciones son definidas directamente en el POT.
 
-Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel que contenga sus valores y las siguientes columnas:
+Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel ([RoadBuffer.xlsx](RoadBuffer.xlsx)) que contenga sus valores y las siguientes columnas:
 
 | Columna    | Descripción                                                                                                                                            | Urbano y Expansión | Rural |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
@@ -92,7 +92,27 @@ Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL =
 
 ## 3. Homologación de vías urbanas
 
-1. Para las 
+1. Para las vías urbanas, realice selecciones por atributos para cada perfil definido en el POT y aplique el código correspondiente. Por ejemplo, para la _Alameda del Zipa_, el código a aplicar es `PerfilNum = 1`. Repita este procedimiento para las demás vías.
+
+<div align="center"><img src="graph/ArcGISPro_PerfilNum1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_PerfilNum2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> La Avenida Algarra contiene dos perfiles diferentes y desde calle 8 hasta su terminación, no ha sido incluída en la capa de vías del POT.
+
+2. En cuanto a la Calle 8, esta ha sido definida a partir de dos perfiles diferentes, entre la carrera 5 y via férrea, y entre vía férrea carrera 36. Los vectores encontrados no están segmentados hasta el límite de la vía férrea, por lo que deberá utilizar lad herramientas de edición _Explode_ para separar entidades multiparte, _Merge_ para unir los tramos de cada lado de la vía férres y _Split_ para segmentar la vía en la vía férrea.
+
+Calle 8 inicial  
+<div align="center"><img src="graph/ArcGISPro_Calle8Inicial.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Calle 8, editada y ajustada  
+<div align="center"><img src="graph/ArcGISPro_Calle8Ajustada.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Para vías con varios perfiles definidos, edite y ajuste los tramos requeridos para asignar los códigos correspondientes.
+
+3. Una vez finalizada la asociación de código de perfil y editados e integrados los tramos, recalcula las longitudes contenidas en el campo `LGkm`.
+
+<div align="center"><img src="graph/ArcGISPro_CalculateGeometry.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
