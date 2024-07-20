@@ -25,12 +25,21 @@ Utilizando la capa vial y la localización de los diferentes equipamientos, real
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, integre las 3 capas de puntos en una única capa, nombre como `\file\data\shp\POI.shp`. Asegúrese de marcar la casilla _Add source information to output_ para incluir el nombre de cada capa fuente en la nueva capa integrada. Simbolice por valores únicos utilizando el campo `MERGE_SRC`.
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, integre las 3 capas de puntos en una única capa, nombre como `\file\data\shp\POI.shp`. Asegúrese de marcar la casilla _Add source information to output_ para incluir el nombre de cada capa fuente en la nueva capa integrada y no incluya el campo `CODIGO_USO_EDIFICACION`. Simbolice por valores únicos utilizando el campo `MERGE_SRC`.
 
 <div align="center"><img src="graph/ArcGISPro_Merge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Abra la tabla de atributos y utilizando la herramienta de selección por atributos, seleccione todos los POI con `NOMBRE` vacío.
 
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando el calculador de campo y para solo los puntos seleccionados, asigne al campo `NOMBRE`, los valores contenidos en el campo `Nombre_Geo`. Esta acción se realizará sobre 1925 puntos.
+
+<div align="center"><img src="graph/ArcGISPro_CalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Seleccione y elimine los POI que no tienen `NOMBRE` y `Nombre_Geo` definido. Esta acción eliminará 1668 puntos que no tienen información descriptiva y en la capa obtendremos 415 elementos. Luego de eliminados los nodos, elimine el campo Nombre_Geo.
+
+<div align="center"><img src="graph/ArcGISPro_DeleteField2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
