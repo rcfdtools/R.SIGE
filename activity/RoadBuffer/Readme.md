@@ -28,28 +28,28 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 > 
 > En cuanto a las vías urbanas que no son de carácter departamental o nacional, sus especificaciones son definidas directamente en el POT.
 
-Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel ([RoadBuffer.xlsx](RoadBuffer.xlsx)) que contenga sus valores y las siguientes columnas:
+Siguiendo las especificaciones de perfiles viales establecidas en los Artículos 48 y 110 del POT, cree una tabla detallada en Excel denominada [RoadBuffer.xlsx](RoadBuffer.xlsx), que contenga las siguientes columnas:
 
-| Columna    | Descripción                                                                                                                                            | Urbano y Expansión | Rural |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
-| PerfilNum  | Código consecutivo de perfil. De 0 a n. El PerfiNum = 0, es utilizado para aplicar un perfil genérico a las vías urbanas sin perfil directo asociado.  |         ✓          |   ✓   |
-| Zona       | Zona de aplicación: Urbano y expansión urbana, Rural.                                                                                                  |         ✓          |   ✓   |
-| ViaTipo    | Descripción de la vía o nomenclatura al cual aplica el perfil vial.                                                                                    |         ✓          |   ✓   |
-| Jerarquia  | Jerarquía vial. En vías urbanas corresponde a local, arterial o zonal. En vías rurales, corresponde al orden vial.                                     |         ✓          |   ✓   |
-| Definicion | Definición detallada del corredor.                                                                                                                     |         ✓          |   ✓   |
-| Descripc   | Descripción detallada del tramo al cual aplica.                                                                                                        |         ✓          |   ✓   |
-| ZVerdeIzq  | Ancho de zona verde al lado izquierdo del perfil en metros.                                                                                            |                    |   ✓   |
-| BermaCIzq  | Ancho de berma y cuneta al lado izquierdo del perfil en metros.                                                                                        |                    |   ✓   |
-| AndenIzq   | Ancho del andén al lado izquierdo del perfil en metros.                                                                                                |         ✓          |       |
-| CalzadaIzq | Ancho de calzada o sub-calzada al lado izquierdo del perfil en metros.                                                                                 |         ✓          |   ✓   |
-| Separador  | Ancho de separador central del perfil en metros.                                                                                                       |         ✓          |   ✓   |
-| CalzadaDer | Ancho de calzada o sub-calzada al lado derecho del perfil en metros.                                                                                   |         ✓          |   ✓   |
-| Cicloruta  | Ancho de cicloruta al lado derecho del perfil en metros.                                                                                               |         ✓          |       |
-| AndenDer   | Ancho del andén al lado derecho del perfil en metros.                                                                                                  |         ✓          |       |
-| BermaCDer  | Ancho de berma y cuneta al lado derecho del perfil en metros.                                                                                          |                    |   ✓   |
-| ZVerdeDer  | Ancho de zona verde al lado derecho del perfil en metros.                                                                                              |                    |   ✓   |
-| PerfilTot  | Ancho total del perfil en metros.                                                                                                                      |         ✓          |   ✓   |
-| BufferGIS  | Ancho del buffer geográfico en metros. `BufferGIS =  PerfilTot / 2`                                                                                    |         ✓          |   ✓   |
+| Columna    | Descripción                                                                                                                                               | Urbano y Expansión | Rural |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----:|
+| PerfilNum  | Código consecutivo de perfil. De 0 a n. PerfiNum = 0, es utilizado para aplicar un perfil genérico a las vías urbanas sin perfil específicamente definido. |         ✓          |   ✓   |
+| Zona       | Zona de aplicación: Urbano y expansión urbana, Rural.                                                                                                     |         ✓          |   ✓   |
+| ViaTipo    | Descripción de la vía o nomenclatura al cual aplica el perfil vial.                                                                                       |         ✓          |   ✓   |
+| Jerarquia  | Jerarquía vial. En vías urbanas corresponde a local, arterial o zonal. En vías rurales, corresponde al orden vial.                                        |         ✓          |   ✓   |
+| Definicion | Definición detallada del corredor.                                                                                                                        |         ✓          |   ✓   |
+| Descripc   | Descripción detallada del tramo al cual aplica.                                                                                                           |         ✓          |   ✓   |
+| ZVerdeIzq  | Ancho de zona verde al lado izquierdo del perfil en metros.                                                                                               |                    |   ✓   |
+| BermaCIzq  | Ancho de berma + cuneta al lado izquierdo del perfil en metros.                                                                                           |                    |   ✓   |
+| AndenIzq   | Ancho del andén al lado izquierdo del perfil en metros.                                                                                                   |         ✓          |       |
+| CalzadaIzq | Ancho de calzada o sub-calzada al lado izquierdo del perfil en metros.                                                                                    |         ✓          |   ✓   |
+| Separador  | Ancho de separador central en metros.                                                                                                           |         ✓          |   ✓   |
+| CalzadaDer | Ancho de calzada o sub-calzada al lado derecho del perfil en metros.                                                                                      |         ✓          |   ✓   |
+| Cicloruta  | Ancho de cicloruta al lado derecho del perfil en metros.                                                                                                  |         ✓          |       |
+| AndenDer   | Ancho del andén al lado derecho del perfil en metros.                                                                                                     |         ✓          |       |
+| BermaCDer  | Ancho de berma + cuneta al lado derecho del perfil en metros.                                                                                             |                    |   ✓   |
+| ZVerdeDer  | Ancho de zona verde al lado derecho del perfil en metros.                                                                                                 |                    |   ✓   |
+| PerfilTot  | Ancho total del perfil en metros.                                                                                                                         |         ✓          |   ✓   |
+| BufferGIS  | Ancho del buffer geográfico en metros. `BufferGIS =  PerfilTot / 2`                                                                                       |         ✓          |   ✓   |
 
 <div align="center"><img src="graph/POT_Articulo48.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/POT_Articulo110.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -79,7 +79,7 @@ Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL =
 
 3. Para la vía férrea, establezca el código 24, correspondiente a este corredor. 
 
-> De conformidad con lo dispuesto en el artículo 3 de la Ley 76 de 1929, en una franja de 20 metros cuyo centro es el eje de la vía, no es posible realizar excavaciones, construcciones u otras obras que comprometan la estabilidad de la vía.
+> Para las vías férreas y de conformidad con lo dispuesto en el artículo 3 de la Ley 76 de 1929, en una franja de 20 metros cuyo centro es el eje de la vía, no es posible realizar excavaciones, construcciones u otras obras que comprometan la estabilidad de la vía.
 > 
 > En la tabla de Excel, las vías férreas se han incluído como parte de los corredores rurales y su ancho se ha sido definido en la columna `Separador`. 
 
@@ -184,10 +184,17 @@ Rótulo Arcade: `"Ap (m²): " + Round($feature.AGm2, 1) + textformatting.NewLine
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso                          | Procedimiento                                                                                                                                                                                                                                                                                                                                                                    |
+|:---------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                       | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                                                                                                          |
+| Rotulado                         | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                                                                                                             |
+| Estadísticas de campo            | Se obtienen desde el menú _Vector_ a través de la opción _Analysis Tools / [Basic Statistics for Fields](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#basic-statistics-for-fields)_. Obtendrá: Count, Unique, Empty, Filled, Min, Max, Cv, Sum, Mean, Std_Dev, Range, Median, Minority, Majority, Firstquartile, Thirdquartile, IQR.  |
+| Intersección espacial            | Se realizan desde el menú _Vector_ a través de la opción _Geoprocessing Tools / Intersection_.                                                                                                                                                                                                                                                                                   |
+| Unión de tablas                  | En las propiedades de capa geográfica, seleccionar la pestaña _Join_ y realizar la unión. Solo se mostrarán los registros correspondientes a la primer coincidencia encontrada. Para visualizar o representar otros valores, es necesario filtrar previamente la tabla a unir.                                                                                                   |
+| Agregar campo                    | Modificable desde las propiedades de la capa en la pestaña _Fields_ o desde la tabla de atributos.                                                                                                                                                                                                                                                                               |
+| Cálculos geométricos o de campo  | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                                                                                                                                                              |
+| Resumen estadístico (Summarize)  | Disponible en _Processing Toolbox / Vector Analysis / [Statistics by categories](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#statistics-by-categories)_.                                                                                                                                                                             |
+| Area aferente (Buffer)           | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Buffer_.                                                                                                                                                                                                                                                                                                    |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -198,14 +205,13 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                | Descripción                                                                                                                            | Geometría   | Registros | 
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Red_Vial_Buffer.shp                   | Buffers o aferencias viales generadas a partir de la capa _Perfil_Vial.shp_ y los perfiles definidos en la tabla _RoadBuffer.xlsx_.    | Polígono 2D | 22        | 
+| Construccion.shp                      | Integración de construcciones a partir de las clases de entidad EDIFICACION_ y _CONSTRUCCION_ANEXA.                                    | Polígono 2D | 41887     | 
+| Construccion_PerfilVialAfectacion.shp | Polígonos de intersección de corredores viales y construcciones generado a partir de las capas Construccion.shp y Red_Vial_Buffer.shp. | Polígono 2D | 11041     | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -214,7 +220,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
+| Avance **P3** |                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 
 | Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
