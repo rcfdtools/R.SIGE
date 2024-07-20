@@ -116,7 +116,7 @@ Rótulo Arcade: `"d (m): "+ ROund($feature.LGm, 2) +  textformatting.NewLine + "
 
 ## 4. Cobertura geográfica por POI
 
-Para la estimación de la cobertura geográfica en cada POI, crearemos zonas de múltiples anillos, considerando tiempos de desplazamiento caminando de 5, 10 y 15 minutos. Utilizaremos como referencia, una velocidad de desplazamiento de 4.54 km/h.
+1. Para la estimación de la cobertura geográfica en cada POI, crearemos zonas de múltiples anillos, considerando tiempos de desplazamiento caminando de 5, 10 y 15 minutos. Utilizaremos como referencia, una velocidad de desplazamiento de 4.54 km/h.
 
 <div align="center">
 
@@ -130,7 +130,24 @@ Para la estimación de la cobertura geográfica en cada POI, crearemos zonas de 
 
 > La distancia desde el punto ha sido calculada multiplicando la velocidad (convertida a m/h) por el tiempo (convertido a horas). `distancia = Velocidad*1000*(tiempo/60)`.
 
-1.  
+2. Para la creación múltiples anillos, en las herramientas de geo-procesamiento, ejecute la opción _Analysis Tools / Multiple Ring Buffer_, nombre la capa como `\file\data\shp\POI_Coverage.shp` y simbolice por categorías utilizando el campo `Distance`.
+
+<div align="center"><img src="graph/ArcGISPro_MultipleRing1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Tenga en cuenta que al igual que en el análisis anterior de distancia y el tiempo de desplazamiento, no se evalúan los obstáculos geográficos (orografía, ríos, depresiones, cuerpos de agua intermedios) desde el punto hacia su área cubierta.
+
+3. Filtre la primera distancia correspondiente a 5 minutos de desplazamiento a pie, podrá observar que en la zona urbana existen algunas zonas no cubiertas y que en la zona rural exísten múltiples áreas vacías.
+
+<div align="center"><img src="graph/ArcGISPro_MultipleRing2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Filtre ahora la primera y segunda distancia, podrá observar que toda el área urbana esta cubierta y que en la zona rural existen algunos vacíos.
+
+<div align="center"><img src="graph/ArcGISPro_MultipleRing3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En cuanto a la cobertura rural de los 3 anillos, en la zona rural podrá observar que en algunas zonas no existen áreas cubiertas por puntos de interés.
+
+<div align="center"><img src="graph/ArcGISPro_MultipleRing4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
