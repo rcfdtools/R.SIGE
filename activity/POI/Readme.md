@@ -80,6 +80,7 @@ Como observa, se han agregado los siguientes atributos:
 2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / XY To Line_, cree líneas conectoras entre las coordenadas del punto y las coordenadas del punto de proximidad de vía, nombre la capa como `\file\data\shp\POI_OD_Vial.shp` y simbolice utilizando flechas direccionales hacia el final.
 
 <div align="center"><img src="graph/ArcGISPro_XYToLine.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_XYToLine1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. Calcule el tiempo de desplazamiento caminando desde cada POI a la vía más cercana, suponga que la población tiene una edad promedio de 35 años y utilice como referencia las velocidades presentadas en la siguiente tabla[^1]:
 
