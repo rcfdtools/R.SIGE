@@ -220,20 +220,13 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** |                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 
+| Avance **P3** | Desarrolle las actividades descritas en esta clase, incluyendo y evaluando también las afectaciones en las construcciones rurales.                                                                                                                                                                                                                                                                                                                  | 
 | Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
-
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
 
 
 ## Referencias
@@ -254,6 +247,6 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 | [:arrow_backward: Anterior](../GeoTable/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+|----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
