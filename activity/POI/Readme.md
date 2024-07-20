@@ -149,11 +149,7 @@ En cuanto a la cobertura rural de los 3 anillos, en la zona rural podrá observa
 <div align="center"><img src="graph/ArcGISPro_MultipleRing4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-
-
-## 2. Análisis usando software libre - QGIS
+## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -171,11 +167,11 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre            | Descripción                                                                                                                                       | Geometría     | Registros |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----------|
+| POI.shp           | Puntos de interés a partir de la integración de las clases de entidad _ANOTACION, ANOTACION_URBANO, EDUCATIVO_ obtenidas del diagnóstico del POT. | Punto 2D      | 415       |
+| POI_OD_Vial.shp   | Líneas conectoras origen destino desde puntos de interés _POI.shp_ hasta _Red_vial.shp_.                                                          | Poli-línea 2D | 415       |
+| POI_Coverage.shp  | Anillos de cobertura a partir de POT.shp, para tiempos de desplazamiento a pie de 5, 10 y 15 minutos.                                             | Polígono 2D   | 3         |
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
