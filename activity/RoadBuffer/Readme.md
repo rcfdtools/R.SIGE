@@ -205,11 +205,11 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                                | Descripción                                                                                                                            | Geometría   | Registros | 
-|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Red_Vial_Buffer.shp                   | Buffers o aferencias viales generadas a partir de la capa _Perfil_Vial.shp_ y los perfiles definidos en la tabla _RoadBuffer.xlsx_.    | Polígono 2D | 22        | 
-| Construccion.shp                      | Integración de construcciones a partir de las clases de entidad EDIFICACION_ y _CONSTRUCCION_ANEXA.                                    | Polígono 2D | 41887     | 
-| Construccion_PerfilVialAfectacion.shp | Polígonos de intersección de corredores viales y construcciones generado a partir de las capas Construccion.shp y Red_Vial_Buffer.shp. | Polígono 2D | 11041     | 
+| Nombre                                | Descripción                                                                                                                            | Geometría    | Registros | 
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------| 
+| Red_Vial_Buffer.shp                   | Buffers o aferencias viales generadas a partir de la capa _Perfil_Vial.shp_ y los perfiles definidos en la tabla _RoadBuffer.xlsx_.    | Polilínea 2D | 22        | 
+| Construccion.shp                      | Integración de construcciones a partir de las clases de entidad EDIFICACION_ y _CONSTRUCCION_ANEXA.                                    | Polígono 2D  | 41887     | 
+| Construccion_PerfilVialAfectacion.shp | Polígonos de intersección de corredores viales y construcciones generado a partir de las capas Construccion.shp y Red_Vial_Buffer.shp. | Polígono 2D  | 11041     | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
