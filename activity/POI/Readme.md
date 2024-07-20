@@ -216,4 +216,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../RoadBuffer/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
-[^1]: 
+[^1]: https://www.medicalnewstoday.com/articles/average-walking-speed#average-speed-by-age
