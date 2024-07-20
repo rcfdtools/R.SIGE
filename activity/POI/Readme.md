@@ -84,6 +84,35 @@ Como observa, se han agregado los siguientes atributos:
 
 3. Calcule el tiempo de desplazamiento caminando desde cada POI a la vía más cercana, suponga que la población tiene una edad promedio de 35 años y utilice como referencia las velocidades presentadas en la siguiente tabla[^1]:
 
+|  Edad  |  Velocidad (km/h)   |  Velocidad (mph)   |
+|:------:|:-------------------:|:------------------:|
+|  < 30  |        4.82         |         3          |
+| 30–39  |        4.54         |        2.8         |
+| 40–49  |        4.54         |        2.8         |
+| 50–59  |        4.43         |        2.75        |
+| 60–64  |        4.34         |        2.7         |
+|  >65   |        3.42         |        2.1         |
+
+Para el caso de estudio, la velocidad a emplear es de 4.54 km/h.
+
+En la tabla de atributos de la capa de líneas de proximidad, cree dos campos de atributos numéricos dobles con los nombres `LGm` y `Tmin`, correspondientes a la longitud geodésica de la línea y el tiempo de desplazamiento caminando en minutos. Utilice el calculador de geometría de campo para obtener la longitud y calcule el tiempo con la siguiente expresión:
+
+Tmin = `((!LGm!/1000)/4.54)*60`
+
+> La distancia se ha convertido de metros a kilómetros dividiendo por 1000, y el tiempo obtenido se ha convertido en minutos al multiplicar por 60.
+
+Rotule la línea de proximidad incluyendo la distancia y el tiempo.
+
+Rótulo Arcade: `"d (m): "+ ROund($feature.LGm, 2) +  textformatting.NewLine + "t (min): " + Round($feature.Tmin, 1)`
+
+<div align="center"><img src="graph/ArcGISPro_DistanciaTiempoLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 4. Cobertura geográfica por POI
+
+
+1. 
+
 
 
 
