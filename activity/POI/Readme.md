@@ -84,6 +84,8 @@ Como observa, se han agregado los siguientes atributos:
 
 3. Calcule el tiempo de desplazamiento caminando desde cada POI a la vía más cercana, suponga que la población tiene una edad promedio de 35 años y utilice como referencia las velocidades presentadas en la siguiente tabla[^1]:
 
+<div align="center">
+
 |  Edad  |  Velocidad (km/h)   |  Velocidad (mph)   |
 |:------:|:-------------------:|:------------------:|
 |  < 30  |        4.82         |         3          |
@@ -92,6 +94,8 @@ Como observa, se han agregado los siguientes atributos:
 | 50–59  |        4.43         |        2.75        |
 | 60–64  |        4.34         |        2.7         |
 |  >65   |        3.42         |        2.1         |
+
+</div>
 
 Para el caso de estudio, la velocidad a emplear es de 4.54 km/h.
 
@@ -107,11 +111,26 @@ Rótulo Arcade: `"d (m): "+ ROund($feature.LGm, 2) +  textformatting.NewLine + "
 
 <div align="center"><img src="graph/ArcGISPro_DistanciaTiempoLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Tenga en cuenta que la distancia y el tiempo de desplazamiento no evalúa los obstáculos geográficos (orografía, ríos, depresiones, cuerpos de agua intermedios) desde el punto de localización hasta la vía.
+
 
 ## 4. Cobertura geográfica por POI
 
+Para la estimación de la cobertura geográfica en cada POI, crearemos zonas de múltiples anillos, considerando tiempos de desplazamiento caminando de 5, 10 y 15 minutos. Utilizaremos como referencia, una velocidad de desplazamiento de 4.54 km/h.
 
-1. 
+<div align="center">
+
+|  Tiempo de desplazamiento (min)   |  Velocidad (km/h)   |  Distancia desde el punto (m)   |
+|:---------------------------------:|:-------------------:|:-------------------------------:|
+|                 5                 |        4.54         |             378.33              |
+|                10                 |        4.54         |             756.67              |
+|                15                 |        4.54         |              1135               |
+
+</div>
+
+> La distancia desde el punto ha sido calculada multiplicando la velocidad (convertida a m/h) por el tiempo (convertido a horas). `distancia = Velocidad*1000*(tiempo/60)`.
+
+1.  
 
 
 
