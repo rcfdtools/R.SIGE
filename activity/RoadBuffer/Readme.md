@@ -232,6 +232,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * https://www.ani.gov.co/cual-es-la-franja-de-seguridad-de-los-corredores-ferreos-administrados-por-la-ani
+* [Ley 1228 de 2008, Colombia](http://www.secretariasenado.gov.co/senado/basedoc/ley_1228_2008.html)
 
 
 ## Control de versiones
