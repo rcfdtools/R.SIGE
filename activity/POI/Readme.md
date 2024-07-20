@@ -3,7 +3,7 @@ Keywords: `poi` `point-of-interest` `facilities`
 
 Utilizando la capa vial y la localización de los diferentes equipamientos, realice un análisis de proximidad para identificar la vía más próxima y cree un buffer de proximidad por categoría.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/POI.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
