@@ -282,11 +282,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                            | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.03.12 | Versión inicial con alcance de la actividad                            | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.07.13 | Investigación, documentación y desarrollo para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-| 2024.07.14 | Investigación, documentación y desarrollo para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| Versión    | Descripción                                                            | Autor                                      | Horas  |
+|------------|:-----------------------------------------------------------------------|--------------------------------------------|:------:|
+| 2024.07.13 | Investigación, documentación y desarrollo para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8    |
+| 2024.07.14 | Investigación, documentación y desarrollo para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8    |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
