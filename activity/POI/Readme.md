@@ -25,7 +25,7 @@ Utilizando la capa vial y la localización de los diferentes equipamientos, real
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, integre las 3 capas de puntos en una única capa, nombre como `\file\data\shp\POI.shp`. Asegúrese de marcar la casilla _Add source information to output_ para incluir el nombre de cada capa fuente en la nueva capa integrada y no incluya el campo `CODIGO_USO_EDIFICACION`. Simbolice por valores únicos utilizando el campo `MERGE_SRC`.
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, integre las 3 capas de puntos en una única capa, nombre como `\file\data\shp\POI.shp` y utilice el CRS 9377. Asegúrese de marcar la casilla _Add source information to output_ para incluir el nombre de cada capa fuente en la nueva capa integrada y no incluya el campo `CODIGO_USO_EDIFICACION`. Simbolice por valores únicos utilizando el campo `MERGE_SRC`.
 
 <div align="center"><img src="graph/ArcGISPro_Merge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -37,9 +37,53 @@ Utilizando la capa vial y la localización de los diferentes equipamientos, real
 
 <div align="center"><img src="graph/ArcGISPro_CalculateField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Seleccione y elimine los POI que no tienen `NOMBRE` y `Nombre_Geo` definido. Esta acción eliminará 1668 puntos que no tienen información descriptiva y en la capa obtendremos 415 elementos. Luego de eliminados los nodos, elimine el campo Nombre_Geo.
+5. Seleccione y elimine los POI que no tienen `NOMBRE` y `Nombre_Geo` definido. Esta acción eliminará 1668 puntos que no tienen información descriptiva y en la capa obtendremos 415 elementos.
 
 <div align="center"><img src="graph/ArcGISPro_DeleteField2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Luego de eliminados los nodos, guarde los cambios realizados en la capa y elimine el campo `Nombre_Geo`.
+
+<div align="center"><img src="graph/ArcGISPro_DeleteField3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 2. Análisis de proximidad POI a Vía
+
+1. Agregue al mapa la capa vías municipales creada en la actividad [Análisis estadístico de la red vial](../RoadSummary/Readme.md), desde la ruta `\file\data\shp\Red_vial.shp`, ajuste la simbología a valores únicos representando el campo de atributos `ORDEN_VIAL` y rotule a partir del nombre de la vía. Opcionalmente, puede rotular los POI usando su nombre.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayerRedVial.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Proximity / Near_, agregué a la capa de puntos de interés POI, los atributos de proximidad a la vía más cercana. Esta herramienta no crea una nueva capa, únicamente agrega atributos adicionales a la tabla.
+
+<div align="center"><img src="graph/ArcGISPro_Near.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Como observa, se han agregado los siguientes atributos:
+
+* NEAR_FID: identificador de objeto espacial de la vía.
+* NEAR_DIST: distancia en las unidades de distancia seleccionadas.
+* NEAR_X: coordenada de localización X del punto próximo sobre la vía. 
+* NEAR_Y: coordenada de localización Y del punto próximo sobre la vía.
+* NEAR_ANGLE: ángulo de inclinación de la línea imaginaria de proximidad.
+
+3. Para verificar la localización de las coordenadas de proximidad, en el menú _Map_, seleccione la herramienta _Go To XY_ e ingrese las coordenadas de uno de los puntos. Por ejemplo, para el POI identificado como _Cerro la Peña_, la vía más próxima se encuentra a 354.47 metros de distancia.
+
+<div align="center"><img src="graph/ArcGISPro_Near1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> En ArcGIS Pro, la herramienta _Analysis / Generate Origin-Destination Links_ permite generar las líneas conectoras desde el POI a la vía más cercana, sin embargo, en actualizaciones recientes, las líneas conectoras no se dibujan perpendiculares a la vía o sin dibujadas hasta su centroide.
+
+
+## 3. Creación de líneas conectoras y cálculo de desplazamiento
+
+1. En la tabla de atributos de la capa POI, cree los campos numéricos dobles CX y CY, calcule sus valores geométricos utilizando la herramienta cálculo de geometría.
+
+<div align="center"><img src="graph/ArcGISPro_CalculateGeometry1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / XY To Line_, cree líneas conectoras entre las coordenadas del punto y las coordenadas del punto de proximidad de vía, nombre la capa como `\file\data\shp\POI_OD_Vial.shp` y simbolice utilizando flechas direccionales hacia el final.
+
+<div align="center"><img src="graph/ArcGISPro_XYToLine.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Calcule el tiempo de desplazamiento caminando desde cada POI a la vía más cercana, suponga que la población tiene una edad promedio de 35 años y utilice como referencia las velocidades presentadas en la siguiente tabla[^1]:
+
+
 
 
 
@@ -88,7 +132,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://www.medicalnewstoday.com/articles/average-walking-speed#average-speed-by-age
 
 
 ## Control de versiones
