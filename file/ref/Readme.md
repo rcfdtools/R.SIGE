@@ -86,3 +86,6 @@
 * [Resolución 070 de 2011 - IGAC Colombia. Estructura del código catastral](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) Resolución por la cual se reglamenta técnicamente la formación catastral, la actualización de la formación catastral y la conservación catastral
 * https://www.minvivienda.gov.co/sites/default/files/documentos/guia-para-la-participacion-en-plusvalia.pdf
 * https://www.medicalnewstoday.com/articles/average-walking-speed#average-speed-by-age
+* https://www.minambiente.gov.co/wp-content/uploads/2022/07/LINEAMIENTO-MANEJO-DE-SEDIMENTOS_FINAL.pdf
+* https://www.minambiente.gov.co/wp-content/uploads/2021/10/18.-Anexo-18-Guia-Criterios-para-el-acotamiento-de-las-Rondas-Hidricas-1.pdf
+* https://deca.upc.edu/es/el-departamento/secciones/itcg/docencia/asignaturas/geolquat/teoria/T5
