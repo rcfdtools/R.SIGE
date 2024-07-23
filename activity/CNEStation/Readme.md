@@ -177,17 +177,26 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/Excel_CNE_Colombia_20240702a.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Realice las siguientes verificaciones:
+4. Realice las siguientes verificaciones en la tabla integrada:
 
 * La columna `Codigo`, debe ser establecida en formato de texto.
 * En los campos `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
 * Los campos `LatDD` y `LongDD` deben contener siempre valores. 
 
+5. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _CNEStation_ y establezca el CRS 9377. Agregue y abra en el mapa la tabla integrada creada en Excel`, verifique que contenga 9107 registros.
+
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20240702$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\shp\CNE_Colombia_20240702.shp`.
+
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702a.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9107 estaciones.
+
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702b.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _CNEStation_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.
-
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 3. Desde la carpeta _.shp_, agregue al mapa el archivo shapefile [CNE_IDEAM.shp](../../.shp/CNE_IDEAM.zip), [ZonaEstudio.shp](../../.shp/ZonaEstudio.zip) y [ZonaEstudioEnvelope.shp](../../.shp/ZonaEstudioEnvelope.zip). Modifique la simbología de representación de _ZonaEstudioEnvelope_ sin relleno - línea contorno rojo - grosor 3 y _ZonaEstudio_ sin relleno - línea contorno negro - grosor 2. Simbolice las estaciones con puntos color gris 30% - sin contorno - tamaño 6, rotular por el campo `CODIGO` y acercar a la zona de estudio. 
 
