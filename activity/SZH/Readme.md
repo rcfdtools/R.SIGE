@@ -1,7 +1,7 @@
 # Análisis de sub-zonas hidrográficas
 Keywords: `colombia` `ideam` `hydrologic-area` `feature-envelope-to-polygon` `bounding-box`
 
-A partir de la capa de zonificación hidrográfica de Colombia del IDEAM, seleccione y obtenga a partir del límite municipal, las subzonas hidrográficas con cubrimiento en la zona de estudio, exporte las sub-zonas identificadas, evalúe si las zub-zonas obtenidas permiten definir las subcuencas de los ríos principales identificados en el POT del municipio.
+A partir de la capa de zonificación hidrográfica de Colombia del IDEAM, seleccione y obtenga a partir del límite municipal, las subzonas hidrográficas con cubrimiento en la zona de estudio, exporte las sub-zonas identificadas, evalúe si las zub-zonas obtenidas permiten definir las subcuencas de los ríos principales identificados en el POT del municipio y genere un polígono envolvente.
 
 <div align="center"><img src="graph/SZH.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -13,7 +13,7 @@ A partir de la capa de zonificación hidrográfica de Colombia del IDEAM, selecc
 * Estudiar la estructura general de la zonificación hidrográfica de Colombia.
 * Crear una capa geográfica que delimite la zona hidro-geográfica de estudio.
 * Crear el polígono regular del dominio espacial que envuelve la zona de estudio.
-* Calcular el área y perímetro de la zona de estudio y su dominio espacial.
+* Calcular las sub-áreas y porcentajes de distribución de las subzonas obtenidas.
 
 > El polígono regular permitirá en las siguientes actividades del curso, realizar la descarga de información satelital y seleccionar las estaciones hidroclimatológicas de la zona de estudio. 
 
