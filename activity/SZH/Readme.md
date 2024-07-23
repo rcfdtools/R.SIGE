@@ -109,22 +109,21 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <br>Catálogo de objetos en Subzonas [^4]  
 
-| Nombre       | Alias          | Definición                                                                   | Tipo de dato |
-|--------------|----------------|------------------------------------------------------------------------------|--------------|
-| OBJECTID     | OBJECTID       | Identificador de objeto geográfico.                                          | Texto        |
-| Shape        | Shape          | Tipo de geometría.                                                           | Geometría    |
-| COD_AH       | Código Area    | Código del Area hidrográfica a la que corresponde.                           | Entero       |
-| COD_ZH       | Código Zona    | Código de la Zona hidrográfica a la que corresponde.                         | Entero       |
-| COD_SZH      | Código Subzona | Código de Subzona hidrográfica a la que corresponde.                         | Entero       |
-| NOM_AH       | Nombre Área    | Nombre del área hidrográfica a la que corresponde. Dominio Área Hidográfica. | Texto        |
-| NOM_ZH       | Nombre Zona    | Nombre de la zona hidrográfica a la que corresponde.                         | Texto        |
-| NOM_SZH      | Nombre Subzona | Nombre de la Subzona hidrográfica a la que corresponde.                      | Texto        |
-| Shape_Length | Shape_Length   | Perímetro en las unidades del sistema de referencia espacial.                | Entero       |
-| Shape_Area   | Shape_Area     | Área en las unidades del sistema de referencia espacial.                     | Entero       |
-| RULEID       | RULEID         | Id único asignado por el sistema a la representación gráfica.                | Entero       |
-| Override     | Override       | Representación gráfica.                                                      | Blob         |
+| Nombre       | Alias          | Definición                                                                    | Tipo de dato |
+|--------------|----------------|-------------------------------------------------------------------------------|--------------|
+| OBJECTID     | OBJECTID       | Identificador de objeto geográfico.                                           | Texto        |
+| Shape        | Shape          | Tipo de geometría.                                                            | Geometría    |
+| COD_AH       | Código Area    | Código del Area hidrográfica a la que corresponde.                            | Entero       |
+| COD_ZH       | Código Zona    | Código de la Zona hidrográfica a la que corresponde.                          | Entero       |
+| COD_SZH      | Código Subzona | Código de Subzona hidrográfica a la que corresponde.                          | Entero       |
+| NOM_AH       | Nombre Área    | Nombre del área hidrográfica a la que corresponde. Dominio Área Hidrográfica. | Texto        |
+| NOM_ZH       | Nombre Zona    | Nombre de la zona hidrográfica a la que corresponde.                          | Texto        |
+| NOM_SZH      | Nombre Subzona | Nombre de la Subzona hidrográfica a la que corresponde.                       | Texto        |
+| Shape_Length | Shape_Length   | Perímetro en las unidades del sistema de referencia espacial.                 | Entero       |
+| Shape_Area   | Shape_Area     | Área en las unidades del sistema de referencia espacial.                      | Entero       |
+| RULEID       | RULEID         | Id único asignado por el sistema a la representación gráfica.                 | Entero       |
 
-2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _SZH_ y establezca el CRS 9377. Agregue al mapa la capa Dde zubzonas hidrográficas desde la ruta `\file\data\IDEAM\Zonificacion_hidrografica_2013.shp` y ajuste la simbología a valores únicos representando el campo de atributos `NOM_ZH` y rotule las zonas a partir del campo de atributos `COD_SZH` correspondiente a los códigos de las subzonas. 
+2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _SZH_ y establezca el CRS 9377. Agregue al mapa la capa de zubzonas hidrográficas desde la ruta `\file\data\IDEAM\Zonificacion_hidrografica_2013.shp` y ajuste la simbología a valores únicos representando el campo de atributos `NOM_ZH` y rotule las zonas a partir del campo de atributos `COD_SZH` correspondiente a los códigos de las subzonas. 
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_SZH.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -139,7 +138,7 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 > Como puede observar en la ilustración anterior, las zubzonas hidrográficas no contienen las divisorias internas de los ríos principales identificados en el Plan de Ordenamiento Territorial, por lo cual es actividades posteriores del curso, generaremos a partir de modelos digitales de elevación, los límites de las cuencas hidrológicas. 
 
-5. Debido a que generaremos una envolvente para el estudio climatológico local a partir de las subzonas hidrográficas y que la fracción del municipio correpondiente a la subzona 2306 del Río Negro se encuentra en zona de protección (tal como se evidenció en la revisión del MOT en la actividad [Análisis geográfico del Modelo de Ocupación Territorial - MOT](../LandUseAnalysis/Readme.md)), exportaremos únicamente la subzona correspondiente al Río Bogotá. Manualmente, seleccione la subzona hodrogáfica 2120 y dando clic derecho sobre la capa, exporte la selección como `\file\shp\SZH2120.shp`. Agregue al mapa y simbolice solo por contorno utilizando color rojo.
+5. :lady_beetle:Debido a que generaremos una envolvente para el estudio climatológico local a partir de las subzonas hidrográficas y que la fracción del municipio correpondiente a la subzona 2306 del Río Negro se encuentra en zona de protección (tal como se evidenció en la revisión del MOT en la actividad [Análisis geográfico del Modelo de Ocupación Territorial - MOT](../LandUseAnalysis/Readme.md)), exportaremos únicamente la subzona correspondiente al Río Bogotá. Manualmente, seleccione la subzona hodrogáfica 2120 y dando clic derecho sobre la capa, exporte la selección como `\file\shp\SZH2120.shp`. Agregue al mapa y simbolice solo por contorno utilizando color rojo.
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120.png" alt="R.SIGE" width="100%" border="0" /></div>
 
