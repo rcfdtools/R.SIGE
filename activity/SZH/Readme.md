@@ -137,6 +137,8 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ArcGISPro_Drenajes.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Como puede observar en la ilustración anterior, las zubzonas hidrográficas no contienen las divisorias internas de los ríos principales identificados en el Plan de Ordenamiento Territorial, por lo cual es actividades posteriores del curso, generaremos a partir de modelos digitales de elevación, los límites de las cuencas hidrológicas. 
+
 5. Debido a que generaremos una envolvente para el estudio climatológico local a partir de las subzonas hidrográficas y que la fracción del municipio correpondiente a la subzona 2306 del Río Negro se encuentra en zona de protección (tal como se evidenció en la revisión del MOT en la actividad [Análisis geográfico del Modelo de Ocupación Territorial - MOT](../LandUseAnalysis/Readme.md)), exportaremos únicamente la subzona correspondiente al Río Bogotá. Manualmente, seleccione la subzona hodrogáfica 2120 y dando clic derecho sobre la capa, exporte la selección como `\file\shp\SZH2120.shp`. Agregue al mapa y simbolice solo por contorno utilizando color rojo.
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -155,11 +157,11 @@ Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120_Envelope.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Utilizando la herramienta de geo-procesamiento xxxxx , cree un buffer de 250 metros al rededor del polígono envolvente
+8. Utilizando la herramienta de geo-procesamiento xxxxx , cree un buffer de 250 metros al rededor del polígono envolvente, nombre como `\file\shp\SZH2120_Envelope_Buffer250m.shp`.
 
 > La creación del buffer, permitirá el recorte completo de las grillas de los modelos digitales de elevación y variables climatológicas, debido a que incluirá las celdas del contorno de en las esquinas perimetrales de generación de la envolvente.  
 
-
+<div align="center"><img src="graph/ArcGISPro_SZH2120_Envelope_Buffer250m.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
@@ -196,7 +198,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
+| Avance **P3** | Identifique y exporte las zubzonas hidrográficas de su caso de estudio y evalúe si las zubzonas obtenidas, permiten definir las subcuencas de los ríos principales identificados en el POT del municipio                                                                                                                                                                                                                                            | 
+| Avance **P3** | Investigue y documente el procedimiento requerido para delimitar las cuencas hidrográficas correspondientes a los drenajes principales identificados en la zona de proyecto. No es necesario ejectar el procedimiento investigado y obtener las cuencas principales dentro de la zona hidrográfica de su caso de estudio.                                                                                                                           | 
 | Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
@@ -205,31 +208,28 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-
-
 ### Referencias
 
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/feature-envelope-to-polygon.htm
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/h-how-dissolve-data-management-works.htm
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/calculate-field.htm
 * https://docs.qgis.org/2.18/en/docs/user_manual/processing_algs/qgis/vector_geometry_tools.html
-* [PyCharm no sincroniza mis cambios en la nube - Archivos grandes rechazados en _Commit and Push_](https://github.com/rcfdtools/R.LTWB/discussions/40):lady_beetle:
 
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                            | Autor                                      | Horas |
+|------------|:-----------------------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.03.17 | Versión inicial con alcance de la actividad                            | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.23 | Investigación, documentación y desarrollo para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../POI/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|-----------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: http://www.ideam.gov.co/web/agua/zonificacion-hidrografica
 [^2]: http://documentacion.ideam.gov.co/openbiblio/bvirtual/022655/MEMORIASMAPAZONIFICACIONHIDROGRAFICA.pdf
