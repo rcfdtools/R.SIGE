@@ -1,5 +1,5 @@
 # Análisis de sub-zonas hidrográficas
-Keywords: `colombia` `ideam` `hyfrologic-area` `station` `feature-envelope-to-polygon` `bounding-box`
+Keywords: `colombia` `ideam` `hydrologic-area` `feature-envelope-to-polygon` `bounding-box`
 
 A partir de la capa de zonificación hidrográfica de Colombia del IDEAM, seleccione y obtenga a partir del límite municipal, las subzonas hidrográficas con cubrimiento en la zona de estudio, exporte las sub-zonas identificadas, evalúe si las zub-zonas obtenidas permiten definir las subcuencas de los ríos principales identificados en el POT del municipio.
 
@@ -151,8 +151,13 @@ Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (
 
 <div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la subzona 2110 correspondiente al Río Bogotá, nombre la capa como `\file\shp\SZH2120_Envelope.shp`.
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la subzona 2120 correspondiente al Río Bogotá, nombre la capa como `\file\shp\SZH2120_Envelope.shp`.
 
+<div align="center"><img src="graph/ArcGISPro_SZH2120_Envelope.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Utilizando la herramienta de geo-procesamiento xxxxx , cree un buffer de 250 metros al rededor del polígono envolvente
+
+> La creación del buffer, permitirá el recorte completo de las grillas de los modelos digitales de elevación y variables climatológicas, debido a que incluirá las celdas del contorno de en las esquinas perimetrales de generación de la envolvente.  
 
 
 
