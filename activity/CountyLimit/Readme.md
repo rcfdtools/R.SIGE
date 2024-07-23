@@ -87,6 +87,7 @@ Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el ed
 | Python    | `[nombre] + "\nA (ha): " + str(round(float([AGha]), 2)) + "\nP (m):" + str(round(float([PGm]), 2))`                                              |
 | JScript   | `[nombre] + "\nA (ha): " + parseFloat([AGha]).toFixed(2) + "\nP (m):" + parseFloat([PGm]).toFixed(2)`                                            |
 
+> En Arcade, el salto de línea también puede ser definido con la expresión "\n".
 
 <div align="center"><img src="graph/ArcGISPro_LabelAdvanced1.png" alt="R.SIGE" width="100%" border="0" /></div>
 

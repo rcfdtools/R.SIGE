@@ -145,20 +145,13 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Agregue a la capa de recorte, dos campos numéricos dobles con los nombres AGha y AGhaDP. Con el calculador de geometría y el calculador de campo, obtenga estos valores y rotule.
 
+Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (ha): " + Round($feature.AGha, 2) + "\n%: " + Round($feature.AGhaDP, 2)`
 
-Para la rotulación compuesta, utilice cualquiera de las siguientes instrucciones:
+<div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-* Parser VBScript: `[ZH] &VbNewLine& "Área, km²: " & round( [Akm2], 2) &VbNewLine& "Perímetro, km: " & round( [Pkm], 2)`
-* Parser Python: `[ZH] + "\nArea, km2: " +  [Akm2]  + "\nPerimetro, km: " + [Pkm]`
-* Parser Arcade: `$feature.ZH + '\nÁrea, km²: ' + Round($feature.Akm2, 2) + '\nPerímetro, km: : ' + Round($feature.Pkm, 2)`
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioLabelArcade.png)
-
-Utilizando la herramienta _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la zona de estudio. 
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioEnvelope.png)
-
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la subzona 2110 correspondiente al Río Bogotá, guarde como . 
 
 
 
