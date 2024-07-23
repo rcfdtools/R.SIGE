@@ -103,6 +103,8 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 1. Ingrese al portal https://www.colombiaenmapas.gov.co/, en el cuadro de búsqueda escriba _Zonificación Hidrográfica_ y realice la descarga del archivo de formas Shapefile correspondiente al año 2013. Guarde y descomprima el archivo obtenido en la carpeta `\file\data\IDEAM\`.
 
+> La descarga permite obtener un archivo comprimido que contiene la capa geográfica en formato Shapefile, un mapa de muestra en formato .pdf, un mapa en formato .pdf y otros elementos complementarios.
+
 <div align="center"><img src="graph/ColombiaMapasDescarga.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Catálogo de objetos en Subzonas [^4]  
