@@ -62,7 +62,7 @@ Tomados directamente del catálogo de objetos del archivo [CATALOGO_NACIONAL_DE_
 > Los atributos del catálogo nacional de estaciones y de otras entidades son equivalentes. Catálogos exportados a archivos de formas Shapefile utilizan máximo 10 caracteres en la definición de atributos.
 
 
-#### 1.2. Categorías de las estaciones
+### 1.2. Categorías de las estaciones
 
 Definiciones generales del catálogo nacional de estaciones tomado de [Anexo 2 - Definiciones CNE](http://www.ideam.gov.co/documents/10182/557765/Definiciones+CNE.pdf) del IDEAM.
 
@@ -83,7 +83,7 @@ Definiciones generales del catálogo nacional de estaciones tomado de [Anexo 2 -
 > Las abreviaturas contenidas en la columna Abrv., han sido definidas por [rcfdtools](https://github.com/rcfdtools) con el propósito de simplificar las cabeceras incluidas en la tabla de observaciones por tipo de estación.
 
 
-#### 1.3. Observaciones según la categoría de la estación :new:
+### 1.3. Observaciones según la categoría de la estación :new:
 
 En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com/rcfdtools), se presentan los tipos de observaciones que pueden ser realizadas por las estaciones dependiendo de su categoría.
 
