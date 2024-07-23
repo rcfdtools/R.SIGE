@@ -141,17 +141,17 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Calcule las áreas y los porcentajes de área municipal correspondientes a cada subzona hidrográfica. Para ello, limpie la selección de entidades realizada previamente y desde el panel lateral de geo-procesamiento, ejecute la herramienta _Analysis Tools / Clip_. Nombre la capa como `\file\shp\SZH_Mpio25899_Clip.shp`.
+6. Calcule las áreas y los porcentajes de área municipal correspondientes a cada subzona hidrográfica. Para ello, limpie la selección de entidades realizada previamente y desde el panel lateral de geo-procesamiento, ejecute la herramienta _Analysis Tools / Clip_, nombre la capa como `\file\shp\SZH_Mpio25899_Clip.shp`.
 
 <div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Agregue a la capa de recorte, dos campos numéricos dobles con los nombres AGha y AGhaDP. Con el calculador de geometría y el calculador de campo, obtenga estos valores y rotule.
+Agregue a la capa de recorte, dos campos numéricos dobles con los nombres AGha y AGhaDP; con el calculador de geometría y el calculador de campo, obtenga estos valores y rotule. Podrá observar, que el 93.55% del área municipal corresponde a la cuenca del Río Bogotá.
 
 Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (ha): " + Round($feature.AGha, 2) + "\n%: " + Round($feature.AGhaDP, 2)`
 
 <div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la subzona 2110 correspondiente al Río Bogotá, guarde como . 
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Features / Feature Envelope to Polygon_, cree el polígono regular envolvente de la subzona 2110 correspondiente al Río Bogotá, nombre la capa como `\file\shp\SZH2120_Envelope.shp`.
 
 
 
