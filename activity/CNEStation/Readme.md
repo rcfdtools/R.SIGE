@@ -190,7 +190,7 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20240702$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\shp\CNE_Colombia_20240702.shp`.
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702a.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702b.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702bb.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 7. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9107 estaciones.
 
