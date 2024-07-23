@@ -50,10 +50,10 @@ En este momento ya dispone de la grilla de terreno reacondicionada requerida par
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
-|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
-| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+| Proceso            | Procedimiento                                                           |
+|:-------------------|:------------------------------------------------------------------------|
+| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
+| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
