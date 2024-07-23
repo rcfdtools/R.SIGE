@@ -143,6 +143,8 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> :bulb:En el evento de que en su zona de estudio existan múltiples translapos con diferentes subzonas hidrográficas y que estas cubran gran parte de su área, será necesario realizar la extracción de estos polígonos y luego su disolución.
+
 6. Calcule las áreas y los porcentajes de área municipal correspondientes a cada subzona hidrográfica. Para ello, limpie la selección de entidades realizada previamente y desde el panel lateral de geo-procesamiento, ejecute la herramienta _Analysis Tools / Clip_, nombre la capa como `\file\shp\SZH_Mpio25899_Clip.shp`.
 
 <div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip.png" alt="R.SIGE" width="100%" border="0" /></div>
