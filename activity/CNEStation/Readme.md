@@ -179,7 +179,7 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 4. Realice las siguientes verificaciones:
 
-* La columna Codigo, debe ser establecida en formato de texto.
+* La columna `Codigo`, debe ser establecida en formato de texto.
 * En los campos `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
 * Los campos `LatDD` y `LongDD` deben contener siempre valores. 
 
