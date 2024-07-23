@@ -154,8 +154,9 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel y Shapefile, el Catálogo nacional de otras entidades y el Glosario de variables. Opcionalmente, el catálogo puede ser descargado desde el portal del IDEAM desde [Solicitud de Información](http://www.ideam.gov.co/solicitud-de-informacion). Copiar los archivos de Microsoft Excel _[CNE_IDEAM.xls](../../.datasets/CNE_IDEAM.xls)_ y _[CNE_OE.xls](../../.datasets/CNE_OE.xls)_ en el directorio _D:\R.LTWB\\.datasets_, copiar y descomprimir el archivo [CNE_IDEAM.zip](../../.shp/CNE_IDEAM.zip) que contiene los puntos de localización de las estaciones en formato Shapefile dentro de la carpeta _D:\R.LTWB\\.shp_.
 
-![R.LTWB](Screenshot/DHIMERecursos.png)
-![R.LTWB](Screenshot/IDEAMSolicitudInformacion.png)
+<div align="center"><img src="graph/DHIMERecursos.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/IDEAMSolicitudInformacion.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 2. En ArcGIS Pro, cree un proyecto nuevo en blanco en la ruta _D:\R.LTWB\\.map_ y nómbrelo como _ArcGISProSection03.aprx_. Automáticamente, serán generados el mapa de proyecto, la base de datos geográfica en formato .gdb, la carpeta para volcado de informes de registro de importación _ImportLog_ y la carpeta _Index_. Utilizando el Panel de catálogo y desde la sección Folders, realice la conexión a la carpeta D:\R.LTWB. 
 
