@@ -166,7 +166,7 @@ Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (
 <div align="center"><img src="graph/ArcGISPro_SZH2120_Envelope_Buffer250m.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Análisis usando software libre - QGIS
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -181,7 +181,6 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
 [:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
-
 
 
 ## Elementos requeridos en diccionario de datos
