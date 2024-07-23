@@ -137,13 +137,13 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ArcGISPro_Drenajes.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
 5. Debido a que generaremos una envolvente para el estudio climatológico local a partir de las subzonas hidrográficas y que la fracción del municipio correpondiente a la subzona 2306 del Río Negro se encuentra en zona de protección (tal como se evidenció en la revisión del MOT en la actividad [Análisis geográfico del Modelo de Ocupación Territorial - MOT](../LandUseAnalysis/Readme.md)), exportaremos únicamente la subzona correspondiente al Río Bogotá. Manualmente, seleccione la subzona hodrogáfica 2120 y dando clic derecho sobre la capa, exporte la selección como `\file\shp\SZH2120.shp`. Agregue al mapa y simbolice solo por contorno utilizando color rojo.
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Calcule las áreas y los porcentajes de área municipal correspondientes a cada subzona hidrográfica. Para ello, limpie la selección de entidades realizada previamente y desde el panel lateral de geo-procesamiento, ejecute la herramienta _Analysis Tools / Clip_. Nombre la capa como `\file\shp\SZH_Mpio25899_Clip.shp`.
 
+<div align="center"><img src="graph/ArcGISPro_SZH_Mpio25899_Clip.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
