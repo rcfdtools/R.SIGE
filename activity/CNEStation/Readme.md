@@ -3,7 +3,7 @@ Keywords: `ideam` `weather-station` `display-xy-Data` `buffer` `merge` `bar-grap
 
 A partir de las tablas del Catálogo Nacional de Estaciones del IDEAM y otras entidades, cree un catálogo integrado de estaciones. A partir del límite de las zub-zonas hidrográfica, seleccione las estaciones con cubrimiento y al rededor de la zona de estudio, cree las siguientes capas y análisis: envolvente de límite municipal, aferencia de envolvente, marcado de estaciones, áreas aferentes, distancia entre estaciones y su densidad.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/CNEStation.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
