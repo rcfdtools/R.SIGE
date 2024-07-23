@@ -185,11 +185,12 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                           | Descripción                                                                                                                                | Geometría   | Registros | 
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| SZH2120.shp                      | Polígono de la subzona hidrográfica 2120 correspondiente al Río Bogotá, obtenido a partir de la capa _Zonificacion_hidrografica_2013.shp_. | Polígono 2D | 1         | 
+| SZH_Mpio25899_Clip.shp           | Intersección entre _Zonificacion_hidrografica_2013.shp_ y _Mpio25899_MOT2013.shp_.                                                         | Polígono 2D | 2         | 
+| SZH2120_Envelope.shp             | Polígono envolvente al rededor de _SZH2120.shp_.                                                                                           | Polígono 2D | 1         | 
+| SZH2120_Envelope_Buffer250m.shp  | Buffer o aferencia alrederor de la capa SZH2120_Envelope.shp.                                                                              | Polígono 2D | 1         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
