@@ -175,7 +175,7 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 > 
 > La columna de identificador de objeto espacial `OBJECTID`, puede ser eliminada debido a que corresponde al consecutivo utilizado en cada una de las tablas orígen.
 
-<div align="center"><img src="graph/Excel_CNE_Colombia_20240702.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Excel_CNE_Colombia_20240702a.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. Realice las siguientes verificaciones:
 
