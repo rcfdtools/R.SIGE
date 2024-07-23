@@ -158,7 +158,7 @@ Rótulo Arcade: `"(SZH " + $feature.COD_SZH + ") " + $feature.NOM_SZH+"\nÁrea (
 
 <div align="center"><img src="graph/ArcGISPro_SZH2120_Envelope.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Utilizando la herramienta de geo-procesamiento xxxxx , cree un buffer de 250 metros al rededor del polígono envolvente, nombre como `\file\shp\SZH2120_Envelope_Buffer250m.shp`.
+8. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Buffer_, cree un buffer de 250 metros al rededor del polígono envolvente, nombre como `\file\shp\SZH2120_Envelope_Buffer250m.shp`.
 
 > La creación del buffer, permitirá el recorte completo de las grillas de los modelos digitales de elevación y variables climatológicas, debido a que incluirá las celdas del contorno de en las esquinas perimetrales de generación de la envolvente.  
 
