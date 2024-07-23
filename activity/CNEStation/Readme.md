@@ -25,9 +25,9 @@ A partir de las tablas del Catálogo Nacional de Estaciones del IDEAM y otras en
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## Conceptos generales
+## 1. Conceptos generales
 
-### Conceptos y atributos que componen el catálogo nacional de estaciones y especificaciones
+### 1.1. Conceptos y atributos que componen el catálogo nacional de estaciones y especificaciones
 
 El [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia, adscrito al [Ministerio de Medio Ambiente - Minambiente](https://www.minambiente.gov.co/), es la entidad nacional encargada registrar y mantener la información hidrometeorológica del país, incluida la localización y clasificación de la red de estaciones que hace parte del [Catálogo Nacional de Estaciones - CNE](http://dhime.ideam.gov.co/). A través del portal [DHIME](http://dhime.ideam.gov.co/atencionciudadano/) del IDEAM desde la pestaña _Recursos_, personas naturales o jurídicas, pueden obtener no solamente los catálogos, sino también las capas geográficas y los registros discretos registrados en cada estación.
 
@@ -62,12 +62,9 @@ Tomados directamente del catálogo de objetos del archivo [CATALOGO_NACIONAL_DE_
 > Los atributos del catálogo nacional de estaciones y de otras entidades son equivalentes. Catálogos exportados a archivos de formas Shapefile utilizan máximo 10 caracteres en la definición de atributos.
 
 
-### Definiciones generales del catálogo nacional de estaciones
+#### 1.2. Categorías de las estaciones
 
-Tomado de [Anexo 2 - Definiciones CNE](http://www.ideam.gov.co/documents/10182/557765/Definiciones+CNE.pdf) del IDEAM.
-
-
-#### Categorías de las estaciones
+Definiciones generales del catálogo nacional de estaciones tomado de [Anexo 2 - Definiciones CNE](http://www.ideam.gov.co/documents/10182/557765/Definiciones+CNE.pdf) del IDEAM.
 
 | Categoría                        | Abrv. | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:---------------------------------|:-----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,7 +83,7 @@ Tomado de [Anexo 2 - Definiciones CNE](http://www.ideam.gov.co/documents/10182/5
 > Las abreviaturas contenidas en la columna Abrv., han sido definidas por [rcfdtools](https://github.com/rcfdtools) con el propósito de simplificar las cabeceras incluidas en la tabla de observaciones por tipo de estación.
 
 
-#### Observaciones según la categoría de la estación :new:
+#### 1.3. Observaciones según la categoría de la estación :new:
 
 En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com/rcfdtools), se presentan los tipos de observaciones que pueden ser realizadas por las estaciones dependiendo de su categoría.
 
@@ -131,7 +128,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 | Anenómetro (no siempre)                        |     | ✓   |     |     |     |     |     |     |     |     |     |     |
 
 
-#### Estado de la estación
+### 1.4. Estado de la estación
 
 | Estado           | Descripción                                                                                                                                                                                 |
 |:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -140,7 +137,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 | Suspendida       | Estación que se encuentra fuera de servicio de manera definitiva y no registra datos automáticos o tomados por un observador. Solo se puede consultar datos históricos en estas estaciones. |
 
 
-####  Tecnología de la estación
+### 1.5. Tecnología de la estación
 
 | Tecnología                | Descripción                                                                                                                                                                                                                                                                                                                                 |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +148,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 > De acuerdo a la nota del Anexo 2 del IDEAM: se debe tener en cuenta que la red es de tipo dinámico; es decir, a través de su operación se han instalado y suspendido estaciones a lo largo del territorio nacional, conservando en todo caso los datos históricos registrados. Esto significa que la sumatoria de las estaciones del Catálogo corresponde al número total de estaciones que han hecho parte de la red a través de su historia de operación y registro de información.
 
 
-## Procedimiento general
+## 2. Creación de catálogo integrado
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel y Shapefile, el Catálogo nacional de otras entidades y el Glosario de variables. Opcionalmente, el catálogo puede ser descargado desde el portal del IDEAM desde [Solicitud de Información](http://www.ideam.gov.co/solicitud-de-informacion). Copiar los archivos de Microsoft Excel _[CNE_IDEAM.xls](../../.datasets/CNE_IDEAM.xls)_ y _[CNE_OE.xls](../../.datasets/CNE_OE.xls)_ en el directorio _D:\R.LTWB\\.datasets_, copiar y descomprimir el archivo [CNE_IDEAM.zip](../../.shp/CNE_IDEAM.zip) que contiene los puntos de localización de las estaciones en formato Shapefile dentro de la carpeta _D:\R.LTWB\\.shp_.
 
@@ -176,37 +173,6 @@ Como puede observar en la ilustración, en el polígono envolvente de la zona de
 
 > Para el cargue de archivos de Microsoft Excel en formato .xls, se requiere del [Driver de Microsoft Access Database Engine](https://www.microsoft.com/en-us/download/confirmation.aspx?id=54920)[^2].
 
-
-### Creación del polígono para selección de estaciones
-
-5. El polígono envolvente de la zona de estudio _ZonaEstudioEnvelope.shp_ fue creado a partir del borde externo de la zona hidrográfica 28 - Cesar Colombia que corresponde al [caso de estudio](../../Section01/CaseStudy) con el cual se ejemplifica este curso. El proceso de selección de estaciones, generalmente requiere que sean incluidas estaciones adicionales alrededor de la envolvente de la zona a evaluar, lo anterior debido a que en los procesos de interpolación espacial de las variables climatológicas, es necesario disponer de información espacial dentro de los rangos de los valores evaluados en las series de datos y sin extrapolación. Para ello, alrededor de la envolvente se genera un buffer o área aferente, utilizando p. ej. 1/20 de la menor extensión horizontal o vertical del polígono que delimita la zona a evaluar.
-
-Para conocer el tamaño de la extensión de _ZonaEstudioEnvelope.shp_, clic derecho en la tabla de contenido y _Properties_, ir a la pestaña _Source_ y ampliar la información de _Extent_. Para esta capa los límites geográficos expresados en grados decimales son: norte 10.940833°, sur 8.662500°, oeste -74.315834° y este -72.808322°.  
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioEnvelopeExtent.png)
-
-* Ancho (este - oeste ) = -72.808322° - -74.315834° =  1.507512°  
-* Alto (norte - sur) = 10.940833° - 8.662500° = 2.278333°  
-* Menor dimensión = ancho 1.507512°  
-* 1/20 menor dimensión = 0.0753756°
-
-> La relación 1/20 dependerá de la densidad de las estaciones en la zona de frontera del polígono envolvente. Si existen pocas estaciones, se recomienda disminuir esta relación, p. ej. 1/10 o menos y si por contrario, la red es muy densa, aumentar la relación a 1/30 o más. Luego de crear el polígono, evaluar visualmente si las estaciones son suficientes para cubrir la extensión espacial del área hidrográfica en estudio, de lo contrario, ampliar el polígono.
-
-6. Utilizando la herramienta _Geoprocessing / Analysis Tools / Proximity / Buffer_, cree un polígono aferente a la zona de estudio utilizando la relación 1/20 de la dimensión más corta correspondiente a 0.0753756°. Nombrar como _[ZonaEstudioBufferStation.shp](../../.shp/ZonaEstudioBufferStation.zip)_ en la carpeta _.shp_. Como puede observar, las esquinas obtenidas son redondeadas y debido a que este polígono únicamente será usado para seleccionar las estaciones de la zona de estudio y no para recortar los MDE o mapas interpolados, no es necesario generar un polígono envolvente.
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioBufferStation.png)
-
-El límite espacial del polígono buffer es:  
-* Norte (top): 11.016209°
-* Sur (bottom): 8.587125°
-* Este (right): -72.732946°
-* Oeste (left): -74.391210°
-
-> Tenga en cuenta que si utiliza métodos de filtrado o selección a partir de los límites del polígono buffer, se seleccionarán todas aquellas estaciones que estén cerca de las esquinas redondeadas y hasta su límite ortogonal proyectado.
-
-
-### Selección, exportación e integración de estaciones dentro y alrededor de la zona de estudio
-
 7. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo nacional de estaciones y de otras entidades que se intersecan con la zona de estudio. Para la zona de estudio y la versión descargada de los catálogos, se han seleccionado 315 estaciones del CNE y 125 de otras entidades.
 
 ![R.LTWB](Screenshot/ArcGISPro3.0.0SelectByLocation.png)
@@ -224,7 +190,7 @@ El límite espacial del polígono buffer es:
 ![R.LTWB](Screenshot/ArcGISPro3.0.0CNE_IDEAM_OE_ZEMerge.png)
 
 
-### Estudio de longitud hipotética de series
+## 3. Estudio de longitud hipotética de series
 
 10. Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es necesario estudiar la longitud hipotética de las series a partir de las fechas de instalación y suspensión registradas en el catálogo. 
 
@@ -401,7 +367,7 @@ Simbolice las estaciones por categoría a partir del campo `CATEGORIA` para las 
 ![R.LTWB](Screenshot/ArcGISPro3.0.0BarGraphCategoria.png)
 
 
-### Identificación de estaciones con datos de precipitación
+## 4. Identificación de estaciones con datos de precipitación
 
 Las longitudes hipotéticas de registros en estaciones evaluadas previamente, corresponden a diferentes categorías. En el caso específico de la precipitación, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias, Climatológicas Principales, Pluviográficas, Pluviométricas, Sinópticas Principales y Sinópticas Secundarias.
 
@@ -433,7 +399,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWRainTableToTable.png)
 
 
-### Identificación de estaciones con datos de temperatura del aire cerca al suelo
+## 5. Identificación de estaciones con datos de temperatura del aire cerca al suelo
 
 En el caso específico de la temperatura del aire cerca de la superficie del suelo, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias, Climatológicas Principales, Sinópticas Principales y Sinópticas Secundarias.
 
@@ -468,7 +434,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWTemperatureAirTableToTable.png)
 
 
-### Identificación de estaciones con datos de evaporación potencial
+## 6. Identificación de estaciones con datos de evaporación potencial
 
 En el caso específico de la evaporación potencial, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias y Climatológicas Principales.
 
@@ -497,7 +463,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWEvaporationTableToTable.png)
 
 
-### Identificación de estaciones con datos de nivel de lámina de agua en ríos
+### 7. Identificación de estaciones con datos de nivel de lámina de agua en ríos
 
 Una vez sea realizado el balance hidrológico de largo plazo y se obtengan los caudales medios, estos podrán ser comparados con los registros medios de las series de caudales obtenidos a partir de los datos obtenidos en estaciones limnimétricas y/o limnigráficas. 
 
@@ -526,10 +492,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWWaterLevelTableToTable.png)
 
 
-
-
-
-## 3. Análisis usando software libre - QGIS
+## 8. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -558,7 +521,6 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 | SZH2120_Envelope_Buffer250m.shp  | Buffer o aferencia alrederor de la capa SZH2120_Envelope.shp.                                                                              | Polígono 2D | 1         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -597,8 +559,6 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 | [:arrow_backward: Anterior](../POI/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/21) | [Siguiente :arrow_forward:](../CNEStation/Readme.md) |
 |-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------|
-
-
 
 [^1]: http://dhime.ideam.gov.co/atencionciudadano/
 [^2]: https://pro.arcgis.com/en/pro-app/latest/help/data/excel/prepare-to-work-with-excel-in-arcgis-pro.htm
