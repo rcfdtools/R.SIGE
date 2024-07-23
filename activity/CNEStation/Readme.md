@@ -8,8 +8,7 @@ A partir de las tablas del Catálogo Nacional de Estaciones del IDEAM y otras en
 
 ## Objetivos
 
-* Descargar el catálogo nacional de estaciones - CNE del IDEAM Colombia.
-* Descargar el catálogo nacional de estaciones - CNE de otras entidades de Colombia.
+* Descargar el catálogo nacional de estaciones - CNE del IDEAM y de otras entidades de Colombia.
 * Conocer las categorías de las estaciones hidro-climatológicas y qué tipo de observaciones realizan.
 * Conocer los estados, tecnologías y niveles de aprobación de los datos en estaciones.
 * Identificar los atributos contenidos en el catálogo de objetos del CNE.
