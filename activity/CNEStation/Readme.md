@@ -1,58 +1,37 @@
-## Estudio de redes hidro-climatológicas
-Keywords: `IDEAM` `Weather-station` `Display-XY-Data` `Buffer` `Merge` `Bar-graph` `Select-By-Location` `Python` `LYearS` `LYearSTW` `Definition-Query` `Normal-distribution` `Statistics`
+# Estudio de redes hidro-climatológicas
+Keywords: `ideam` `weather-station` `display-xy-Data` `buffer` `merge` `bar-graph` `select-by-location` `statistics`
 
-<div align="center">
-  <img alt="R.LTWB" src="../../.icons/R.LTWB.svg" width="250px">
-  <br><b>Balance hidrológico de largo plazo para estimación de caudales medios usando SIG</b><br><br><b>Universidad Escuela Colombiana de Ingeniería Julio Garavito</b><br>William Ricardo Aguilar Piña<br>Profesor del Centro de Estudios Hidráulicos<br>william.aguilar@escuelaing.edu.co<br>
-</div><br>
+A partir de las tablas del Catálogo Nacional de Estaciones del IDEAM y otras entidades, cree un catálogo integrado de estaciones. A partir del límite de las zub-zonas hidrográfica, seleccione las estaciones con cubrimiento y al rededor de la zona de estudio, cree las siguientes capas y análisis: envolvente de límite municipal, aferencia de envolvente, marcado de estaciones, áreas aferentes, distancia entre estaciones y su densidad.
 
-![R.LTWB](Graph/CNEStation.png)
-
-Luego de la definición del caso de estudio realizada en la Sección 1, es necesario identificar la red de estaciones terrestres que serán utilizadas para el análisis de las diferentes variables hidroclimatológicas en la zona estudio.                       
-
-> En la ilustración, _CNE_IDEAM_ corresponde a las estaciones del Catálogo Nacional de Estaciones del IDEAM y _CNE_IDEAM_ZE_ corresponde al grupo de estaciones prototipo en la zona de estudio. COD_ZH corresponde al código de la zona hidrográfica en estudio.
-
-<div align="center"><br><a href="http://www.youtube.com/watch?feature=player_embedded&v=TY8wRYunIRM" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHYouTubeInicioActividad.png" alt="R.LTWB" width="75%" border="0" /></a><sub><br>Playlist: https://www.youtube.com/playlist?list=PLneiG4vC_8YupZFL2DtUEdcgtXyWT7Apt</sub><br><br></div>
+<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### Objetivos
+## Objetivos
 
 * Descargar el catálogo nacional de estaciones - CNE del IDEAM Colombia.
 * Descargar el catálogo nacional de estaciones - CNE de otras entidades de Colombia.
-* Conocer las categorías de las estaciones hidroclimatológicas y que tipo de observaciones realizan.
+* Conocer las categorías de las estaciones hidro-climatológicas y qué tipo de observaciones realizan.
 * Conocer los estados, tecnologías y niveles de aprobación de los datos en estaciones.
 * Identificar los atributos contenidos en el catálogo de objetos del CNE.
-* Crear el polígono aferente a la envolvente de la zona de estudio para la selección de las estaciones requeridas.
-* Seleccionar, exportar e integrar las estaciones del IDEAM y de otras entidades dentro del polígono aferente definido.
-* Calcular la longitud hipotética de las series a partir de la fecha de instalación y suspensión de las estaciones utilizando Python Script.
-* Calcular la longitud hipotética de las series dentro de una ventana de tiempo establecida a partir de la fecha de instalación y suspensión de las estaciones utilizando Python Script.
-* Identificar, representar, graficar y analizar las longitudes hipotéticas de series para estaciones que contienen datos de precipitación, temperatura del aire cerca del suelo, evaporación potencial, nivel de lámina y caudal en ríos.
+* A partir de un polígono envolvente, seleccionar, exportar e integrar las estaciones del IDEAM y de otras entidades en un único catálogo.
+* Analizar la cobertura espacial sobre la zona de estudio las estaciones obtenidas.
 
 
-### Requerimientos
+## Requerimientos
 
-* [ArcGIS Pro 2+](https://pro.arcgis.com/en/pro-app/latest/get-started/download-arcgis-pro.htm)
-* [ArcGIS for Desktop 10+](https://desktop.arcgis.com/es/desktop/) (opcional)
-* [QGIS 3+](https://qgis.org/) (opcional)
-* [Polígono que delimita la zona de estudio. ](../../.shp/ZonaEstudio.zip)[:mortar_board:Aprender.](../../Section01/CaseStudy)
-* [Polígono envolvente que delimita la zona de estudio. ](../../.shp/ZonaEstudioEnvelope.zip)[:mortar_board:Aprender.](../../Section01/CaseStudy)
+* [:mortar_board:Actividad](../SZH/Readme.md): Análisis de sub-zonas hidrográficas. Polígono que delimita la subzona hidrográfica del caso de estudio y polígono envolvente con aferencia. 
+* [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
+* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-### Diagrama general de procesos
-
-El siguiente diagrama representa los procedimientos generales requeridos para el desarrollo de esta actividad.
-
-<div align="center">
-<br><img alt="R.LTWB" src="Graph/CNEStation.svg" width="65%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo y procesos manuales en amarillo. Líneas con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
-
+## Conceptos generales
 
 ### Conceptos y atributos que componen el catálogo nacional de estaciones y especificaciones
 
-El [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia, adscrito al [Ministerio de Medio Ambiente - Minambiente](https://www.minambiente.gov.co/), es la entidad nacional encargada registrar y mantener la información hidrometeorológica del país, incluida la localización y clasificación de la red de estaciones que hace parte del [Catálogo Nacional de Estaciones - CNE](http://bart.ideam.gov.co/cneideam/CNE_IDEAM.xls). A través del servicio de [Solicitud de Información](http://www.ideam.gov.co/solicitud-de-informacion) o a través del portal [DHIME](http://dhime.ideam.gov.co/atencionciudadano/) del IDEAM desde la pestaña _Recursos_, personas naturales o jurídicas, pueden obtener no solamente los catálogos, sino también las capas geográficas y los registros discretos registrados en cada estación.
+El [Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM](http://www.ideam.gov.co/) de Colombia, adscrito al [Ministerio de Medio Ambiente - Minambiente](https://www.minambiente.gov.co/), es la entidad nacional encargada registrar y mantener la información hidrometeorológica del país, incluida la localización y clasificación de la red de estaciones que hace parte del [Catálogo Nacional de Estaciones - CNE](http://dhime.ideam.gov.co/). A través del portal [DHIME](http://dhime.ideam.gov.co/atencionciudadano/) del IDEAM desde la pestaña _Recursos_, personas naturales o jurídicas, pueden obtener no solamente los catálogos, sino también las capas geográficas y los registros discretos registrados en cada estación.
 
-Tomados directamente del catálogo de objetos del archivo [CNE_IDEAM.xls](http://bart.ideam.gov.co/cneideam/CNE_IDEAM.xls) v20220731 y tipos devueltos por Python / Pandas.
+Tomados directamente del catálogo de objetos del archivo [CATALOGO_NACIONAL_DE_ESTACIONES_(EXCEL).xls](http://dhime.ideam.gov.co/) v20240723 y tipos devueltos por Python / Pandas.
 
 | Atributo             | Tipo        | Descripción                                                                                                                                                                                                                                    |
 |:---------------------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +62,7 @@ Tomados directamente del catálogo de objetos del archivo [CNE_IDEAM.xls](http:/
 > Los atributos del catálogo nacional de estaciones y de otras entidades son equivalentes. Catálogos exportados a archivos de formas Shapefile utilizan máximo 10 caracteres en la definición de atributos.
 
 
-#### Definiciones generales del catálogo nacional de estaciones
+### Definiciones generales del catálogo nacional de estaciones
 
 Tomado de [Anexo 2 - Definiciones CNE](http://www.ideam.gov.co/documents/10182/557765/Definiciones+CNE.pdf) del IDEAM.
 
@@ -172,7 +151,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 > De acuerdo a la nota del Anexo 2 del IDEAM: se debe tener en cuenta que la red es de tipo dinámico; es decir, a través de su operación se han instalado y suspendido estaciones a lo largo del territorio nacional, conservando en todo caso los datos históricos registrados. Esto significa que la sumatoria de las estaciones del Catálogo corresponde al número total de estaciones que han hecho parte de la red a través de su historia de operación y registro de información.
 
 
-### Procedimiento general
+## Procedimiento general
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel y Shapefile, el Catálogo nacional de otras entidades y el Glosario de variables. Opcionalmente, el catálogo puede ser descargado desde el portal del IDEAM desde [Solicitud de Información](http://www.ideam.gov.co/solicitud-de-informacion). Copiar los archivos de Microsoft Excel _[CNE_IDEAM.xls](../../.datasets/CNE_IDEAM.xls)_ y _[CNE_OE.xls](../../.datasets/CNE_OE.xls)_ en el directorio _D:\R.LTWB\\.datasets_, copiar y descomprimir el archivo [CNE_IDEAM.zip](../../.shp/CNE_IDEAM.zip) que contiene los puntos de localización de las estaciones en formato Shapefile dentro de la carpeta _D:\R.LTWB\\.shp_.
 

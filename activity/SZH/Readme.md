@@ -232,8 +232,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../POI/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/21) | [Siguiente :arrow_forward:]() |
-|-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../POI/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/21) | [Siguiente :arrow_forward:](../CNEStation/Readme.md) |
+|-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------|
 
 [^1]: http://www.ideam.gov.co/web/agua/zonificacion-hidrografica
 [^2]: http://documentacion.ideam.gov.co/openbiblio/bvirtual/022655/MEMORIASMAPAZONIFICACIONHIDROGRAFICA.pdf
