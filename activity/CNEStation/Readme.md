@@ -15,6 +15,7 @@ A partir de las tablas del Catálogo Nacional de Estaciones del IDEAM y otras en
 * A partir de un polígono envolvente, seleccionar, exportar e integrar las estaciones del IDEAM y de otras entidades en un único catálogo.
 * Analizar la cobertura espacial sobre la zona de estudio las estaciones obtenidas.
 * Calcular la longitud hipotética de las series a partir de la fecha de instalación y suspensión de las estaciones utilizando Python Script.
+* Calcular la longitud hipotética de las series dentro de una ventana de tiempo establecida a partir de las estaciones utilizando Python Script.
 * Identificar, representar, graficar y analizar las longitudes hipotéticas de series para estaciones que contienen datos de precipitación, temperatura del aire cerca del suelo, evaporación potencial, nivel de lámina y caudal en ríos.
 
 
