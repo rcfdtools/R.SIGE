@@ -66,7 +66,7 @@ Requisitos académicos:
 * Conocimientos básicos de geografía. 
 * Conocimientos básicos de estadística.
 
-> Para tomar este curso, no se requiere de conocimiento o certificaciones previas en el uso de herramientas computacionales SIG, tales como ArcGIS Pro o QGIS.
+> Para tomar este curso, no requiere de conocimientos específicos o certificaciones previas en el uso de herramientas computacionales SIG, tales como ArcGIS Pro o QGIS.
 
 
 ## Software requerido y estructura de directorios

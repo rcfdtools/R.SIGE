@@ -68,7 +68,7 @@ Como observa, se han agregado los siguientes atributos:
 
 <div align="center"><img src="graph/ArcGISPro_Near1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> En ArcGIS Pro, la herramienta _Analysis / Generate Origin-Destination Links_ permite generar las líneas conectoras desde el POI a la vía más cercana, sin embargo, en actualizaciones recientes, las líneas conectoras no se dibujan perpendiculares a la vía o sin dibujadas hasta su centroide.
+> En ArcGIS Pro, la herramienta _Analysis / Generate Origin-Destination Links_ permite generar las líneas conectoras desde el POI a la vía más cercana, sin embargo, en actualizaciones recientes, las líneas conectoras no se dibujan perpendiculares a la vía o son dibujadas hasta su centroide.
 
 
 ## 3. Creación de líneas conectoras y tiempo de desplazamiento
