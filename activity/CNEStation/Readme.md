@@ -150,7 +150,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 > De acuerdo a la nota del Anexo 2 del IDEAM: se debe tener en cuenta que la red es de tipo dinámico; es decir, a través de su operación se han instalado y suspendido estaciones a lo largo del territorio nacional, conservando en todo caso los datos históricos registrados. Esto significa que la sumatoria de las estaciones del Catálogo corresponde al número total de estaciones que han hecho parte de la red a través de su historia de operación y registro de información.
 
 
-## 2. Creación de catálogo integrado
+## 2. Creación de catálogo nacional integrado
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel, el Catálogo nacional de otras entidades y el Glosario de variables. Opcionalmente, el catálogo puede ser descargado desde el portal del IDEAM desde [Solicitud de Información](http://www.ideam.gov.co/solicitud-de-informacion). Guarde los archivos de Microsoft Excel _CNE_IDEAM.xls y CNE_OE.xls en el directorio _\file\data\IDEAM\_.
 
@@ -187,37 +187,27 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20240702$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\shp\CNE_Colombia_20240702.shp`.
+6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20240702$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\data\shp\CNE_Colombia_20240702.shp`.
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702a.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702bb.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702b.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 7. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9107 estaciones.
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702c.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. 
+
+## 2. Extracción de estaciones de la zona de estudio
+
+1. Desde la carpeta _\file\data\shp_, agregue al mapa las capas _SZH2120.shp_ y _SZH2120_Envelope_Buffer250m.shp_, creadas en la actividad [Análisis de sub-zonas hidrográficas](../SZH/Readme.md). Simbolice estas zonas solo por su contorno y simbolice las estaciones por valores únicos a partir del campo `CNESource`, podrá observar que mayoritariamente las estaciones dentro del polígono envolvente corresponden a estaciones de otras entidades y que su localización geográfica no es precisa.
+
+> Para la correcta localización geográfica de las estaciones, los catálogos deberían contener al menos 6 posiciones decimales en los campos geocodificacos `LatDD` y `LongDD` para tener precisión al menos métrica. Muchos de los valores consignados en la tabla del catálogo correspondiente a otras estaciones, tienen pocos decimales y en la ilustración se puede observar que se encuentran alineadas horizontal o verticalmente a una grilla imaginaria regular.
+
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702d.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-3. Desde la carpeta _.shp_, agregue al mapa el archivo shapefile [CNE_IDEAM.shp](../../.shp/CNE_IDEAM.zip), [ZonaEstudio.shp](../../.shp/ZonaEstudio.zip) y [ZonaEstudioEnvelope.shp](../../.shp/ZonaEstudioEnvelope.zip). Modifique la simbología de representación de _ZonaEstudioEnvelope_ sin relleno - línea contorno rojo - grosor 3 y _ZonaEstudio_ sin relleno - línea contorno negro - grosor 2. Simbolice las estaciones con puntos color gris 30% - sin contorno - tamaño 6, rotular por el campo `CODIGO` y acercar a la zona de estudio. 
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNEMap.png)
-
-> Tenga en cuenta que automáticamente ha sido asignado el sistema de coordenadas geográficas MAGNA al proyecto debido a que el Shapefile del CNE contiene integrado este sistema. En cuanto al número de estaciones, para la versión descargada a 20220731, el CNE se compone de 4476 estaciones.
-
-4. Desde la carpeta _.datasets_, agregue el archivo _CNE_OE.xls_ que contiene la localización de estaciones de otras entidades de Colombia y abra la tabla de atributos, podrá observar que a fecha 20220731 la tabla contiene 4620 registros. Dando clic derecho en la tabla y seleccionando la opción _Display XY Data_, cree una capa de eventos geográficos para representar la localización de estas estaciones. Utilice el sistema de coordenadas _GCS_WGS_1984_.
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNEOEDisplayXYData.png)
-
-Como puede observar en la ilustración, en el polígono envolvente de la zona de estudio existen múltiples estaciones del catálogo nacional del IDEAM y de otras entidades. 
-
-> Para el cargue de archivos de Microsoft Excel en formato .xls, se requiere del [Driver de Microsoft Access Database Engine](https://www.microsoft.com/en-us/download/confirmation.aspx?id=54920)[^2].
-
-7. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo nacional de estaciones y de otras entidades que se intersecan con la zona de estudio. Para la zona de estudio y la versión descargada de los catálogos, se han seleccionado 315 estaciones del CNE y 125 de otras entidades.
+2. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo nacional de estaciones y de otras entidades que se intersecan con la zona de estudio. Para la zona de estudio y la versión descargada de los catálogos, se han seleccionado 315 estaciones del CNE y 125 de otras entidades.
 
 ![R.LTWB](Screenshot/ArcGISPro3.0.0SelectByLocation.png)
 
