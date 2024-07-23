@@ -11,7 +11,7 @@ A partir de la capa de zonificación hidrográfica de Colombia del IDEAM, selecc
 ## Objetivos
 
 * Estudiar la estructura general de la zonificación hidrográfica de Colombia.
-* Crear una capa geográfica que delimite la zona geográfica de estudio.
+* Crear una capa geográfica que delimite la zona hidro-geográfica de estudio.
 * Crear el polígono regular del dominio espacial que envuelve la zona de estudio.
 * Calcular el área y perímetro de la zona de estudio y su dominio espacial.
 
@@ -107,7 +107,7 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 <div align="center"><img src="graph/ColombiaMapasDescarga.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Catálogo de objetos en Subzonas [^4]  
+<br>Catálogo de objetos en Subzonas [^4]  
 
 | Nombre       | Alias          | Definición                                                                   | Tipo de dato |
 |--------------|----------------|------------------------------------------------------------------------------|--------------|
@@ -124,33 +124,28 @@ Catálogo de objetos en Subzonas [^4]
 | RULEID       | RULEID         | Id único asignado por el sistema a la representación gráfica.                | Entero       |
 | Override     | Override       | Representación gráfica.                                                      | Blob         |
 
-2. En ArcGIS Pro, cree un proyecto nuevo en blanco en la ruta _D:\R.LTWB\\.map_ y nómbrelo como ArcGISPro o ArcGISProSection01. Automáticamente, serán generados el mapa de proyecto, la base de datos geográfica en formato .gdb, la carpeta para volcado de informes de registro de importación _ImportLog_ y la carpeta _Index_. Utilizando el Panel de catálogo y desde la sección _Folders_, realice la conexión a la carpeta _D:\R.LTWB_.
+2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _SZH_ y establezca el CRS 9377. Agregue al mapa la capa Dde zubzonas hidrográficas desde la ruta `\file\data\IDEAM\Zonificacion_hidrografica_2013.shp` y ajuste la simbología a valores únicos representando el campo de atributos `NOM_ZH` y rotule las zonas a partir del campo de atributos `COD_SZH` correspondiente a los códigos de las subzonas. 
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0NewMapProject.png)
+<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_SZH.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Agregue la capa de Subzonas Hidrográficas y simbolice por categorías de valores únicos o _Unique Values_ a partir del campo `NOM_ZH` correspondiente a la Zona Hidrográfica y rotule las zonas a partir del campo de atributos `COD_SZH` correspondiente a los códigos de las subzonas.
+3. Agregue al mapa la capa `\file\shp\Mpio25899_MOT2013.shp` correspondiente al límite territorial municipal, generado a partir de la capa del Modelo de Ocupación Territorial - MOT en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md), simbolice solo por contorno y acerque a escala 1:25000 o similar. Realice una selección por localización de subzonas, podrá observar que el Municipio en estudio se encuentra sobre las subzona hidrográfica 2120, correspondiente al Río Bogotá en la zona del Alto Magdalena, y la subzona 2306, correspondiente al Río Negro en la zoma del Medio Magdalena.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaHidrografica2013.png)
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_MOT2013a.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_MOT2013b.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Para el filtrado, desde las propiedades de la capa seleccione la pestaña _Definition Query_ y ensamble la expresión de filtrado o ingrese la instrucción SQL `COD_ZH = 28`.
+4. Agregue al mapa la capa `\file\data\POT\Anexo_Acuerdo_012_2013\shp\HIDROGRAFIA.shp`, correspondiente a los drenajes obtenidos de la formulación del POT, simbolice en color azul. Podrá observar que mayoritariamente los drenajes drenan hacia el Río Bogotá y que algunos de los drenajes localizados en la zona nor-occidental, drenan hacia la cuenca del Río Negro.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaHidrografica2013Query.png)
+<div align="center"><img src="graph/ArcGISPro_Drenajes.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-La disolución de los polígonos para la creación de la zona de estudio se realiza desde el panel de herramientas _Geoprocessing - Data Management Tools - Generalization - Dissolve_ que puede ser lanzado desde el menú _Analysis_ seleccionando la opción _Tools_.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaHidrografica2013Dissolve.png)
 
-Para cambiar el sistema de proyección de coordenadas, en las propiedades del mapa _Map_ de la tabla de contenidos _Contents_, seleccione la pestaña _Coordinate Systems_ y en la caja de búsqueda ingrese 103599, correspondiente a MAGNA-SIRGAS CMT12.
+5. Debido a que generaremos una envolvente para el estudio climatológico local a partir de las subzonas hidrográficas y que la fracción del municipio correpondiente a la subzona 2306 del Río Negro se encuentra en zona de protección (tal como se evidenció en la revisión del MOT en la actividad [Análisis geográfico del Modelo de Ocupación Territorial - MOT](../LandUseAnalysis/Readme.md)), exportaremos únicamente la subzona correspondiente al Río Bogotá. Manualmente, seleccione la subzona hodrogáfica 2120 y dando clic derecho sobre la capa, exporte la selección como `\file\shp\SZH2120.shp`. Agregue al mapa y simbolice solo por contorno utilizando color rojo.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0CRS103599.png)
+<div align="center"><img src="graph/ArcGISPro_Drenajes.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Para la creación de campos de atributo, abra la tabla de atributos y de clic en la opción Add, agregue los campos Akm2, Pkm y ZH.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioAddField.png)
 
-Calcule la geometría de los campos numéricos y asigne el nombre de la zona en el campo ZH utilizando el texto 'ZH 2 - Cesar' sobre Python 3 como _Expression Type_.
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioCalculateGeometry.png)
 
 Para la rotulación compuesta, utilice cualquiera de las siguientes instrucciones:
 
@@ -165,36 +160,23 @@ Utilizando la herramienta _Data Management Tools / Features / Feature Envelope t
 ![R.LTWB](Screenshot/ArcGISPro3.0.0ZonaEstudioEnvelope.png)
 
 
-#### Instrucciones en QGIS (3.26.0)
-
-Cree un mapa de proyecto, agregue la capa [Zonificacion_hidrografica_2013.shp](../../.shp/Zonificacion_Hidrografica_2013.zip) y guarde en la carpeta _.map_ como _R.LTWB.qgz_
-
-El filtrado de entidades se realiza a través de la ventana de propiedades de la capa desde la pestaña _Source_ y el _Query Builder_.
-
-![R.LTWB](Screenshot/QGIS3.26.0ZonaHidrografica2013Query.png)
-
-El proceso de disolución se realiza utilizando la herramienta _Vector geometry - Dissolve_ del _Processing Toolbox_ que se carga oprimiendo la combinación de teclas <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> o desde la barra de menús _Processing_.
-
-![R.LTWB](Screenshot/QGIS3.26.0ZonaHidrografica2013Dissolve.png)
-
-Para cambiar el sistema de proyección, oprima la combinación de teclas <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> para acceder a la ventana de propiedades del proyecto y en la ventana _CRS_, ingrese en la casilla de filtro o búsqueda el valor 9377, correspondiente al sistema de referencia de coordenadas MAGNA-SIRGAS / Origen-Nacional. Seleccione y de clic en _Apply_ y _Ok_. En la parte inferior derecha de QGIS, podrá observar el sistema asignado como _EPSG: 9377_.
-
-![R.LTWB](Screenshot/QGIS3.26.0CRS9377.png)
-
-Nuevos campos de atributos pueden ser creados directamente desde las opciones del _Field Calculator_, p. ej. para el cálculo del área en km² se crea el campo Akm2 y se calcula la geometría con la expresión `$area / (1000*1000)`. Para el perímetro utilizar la expresión `$perimeter / 1000`.
-
-![R.LTWB](Screenshot/QGIS3.26.0ZonaEstudioAddField.png)
-
-La rotulación compuesta indicando la zona, área y perímetro se realiza con la siguiente expresión: `concat("ZH",  '\nÁrea, km²: ', round("Akm2",2), '\nPerímetro, km: ', round("Pkm", 2))`
-
-![R.LTWB](Screenshot/QGIS3.26.0ZonaEstudioLabel.png)
-
-El proceso de obtención del polígono perimetral se realiza con la herramienta _Vector geometry - Bounding boxes_ del _Processing Toolbox_ que se carga oprimiendo la combinación de teclas <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> o desde la barra de menús _Processing_.
-
-![R.LTWB](Screenshot/QGIS3.26.0ZonaEstudioBoundingBoxes.png)
 
 
-Ahora dispone de un polígono que podrá utilizar como máscara de selección para la obtención de información satelital o para la selección de estaciones dentro de la zona de estudio.
+
+
+## 2. Análisis usando software libre - QGIS
+
+Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
+
+| Proceso                                                                                                         | Procedimiento                                                                                                                                                                                                                                   |
+|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                                                                                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                         |
+| Rotulado                                                                                                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                            |
+
+Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
+
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
+
 
 
 
