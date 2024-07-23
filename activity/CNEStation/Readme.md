@@ -165,7 +165,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 
 3. Cree un nuevo archivo de Excel y guárdelo como _\file\table\CNE_Colombia_20240702.xlsx_, renombre la hoja como _CNE_Colombia_20240702_, agregue una columna al inicio con el nombre _CNESource_, copie en la misma hoja los registros de las dos tablas de atributos y normalice los nombres de las cabeceras a 10 caracteres. La tabla final deberá contener 9107 registros.
 
-Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `Tecnologia`, `Estado`, `FechaInst`, `Altitud`, `Latitud`, `Longitud`, `Depto`, `Municipio`, `AreaOperat`, `COD_AH`, `COD_ZH`, `Observ`, `Corriente`, `FechaSusp`, `COD_SZH`, `Entidad`, `Subred`.
+Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `Tecnologia`, `Estado`, `FechaInst`, `Altitud`, `LatDD`, `LongDD`, `Depto`, `Municipio`, `AreaOperat`, `COD_AH`, `COD_ZH`, `Observ`, `Corriente`, `FechaSusp`, `COD_SZH`, `Entidad`, `Subred`.
 
 > Tenga en cuenta que en la unión de las dos tablas, debe incluir la cabecera una única vez y que en la columna `CNESource` debe ingresar _CNE_ o _CNE_OE_ dependiendo de la fuente de catálogo utilizada.
 > 
@@ -180,7 +180,8 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 4. Realice las siguientes verificaciones:
 
 * La columna Codigo, debe ser establecida en formato de texto.
-* En los campos `FechaInst`, `FechaSusp`, `Altitud`, `Latitud`, `Longitud`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
+* En los campos `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
+* Los campos `LatDD` y `LongDD` deben contener siempre valores. 
 
 
 
