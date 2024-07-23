@@ -463,7 +463,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWEvaporationTableToTable.png)
 
 
-### 7. Identificación de estaciones con datos de nivel de lámina de agua en ríos
+## 7. Identificación de estaciones con datos de nivel de lámina de agua en ríos
 
 Una vez sea realizado el balance hidrológico de largo plazo y se obtengan los caudales medios, estos podrán ser comparados con los registros medios de las series de caudales obtenidos a partir de los datos obtenidos en estaciones limnimétricas y/o limnigráficas. 
 
