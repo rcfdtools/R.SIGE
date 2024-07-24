@@ -72,7 +72,7 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 
 <div align="center"><img src="graph/ArcGISPro_Rename.png" alt="R.SIGE" width="60%" border="0" /></div>
 
-2. Desde el _Catalog Pane_ y dando clic derecho sobre el dataset _IGAC2013Cartografia_, seleccione la opción _Import / Feature Class(es)_ e importe desde la fuente `\file\data\POT\ Anexo_Acuerdo_012_2013\ gdb\25899.gdb\CARTOGRAFIA`, todas las clases de entidad. 
+2. Desde el _Catalog Pane_ y dando clic derecho sobre el dataset _IGAC2013Cartografia_, seleccione la opción _Import / Feature Class(es)_ e importe desde la fuente `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA`, todas las clases de entidad. 
 
 <div align="center"><img src="graph/ArcGISPro_ImportFeatureClass.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_ImportFeatureClass1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -97,12 +97,22 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 
 > Recuerde que al realizar la importación de clases de entidad dentro de la base de datos y los dataset creados, todas las capas serán re-proyectadas al CRS 9377.
 
+Agregue una cada desde cada dataset y verifique que los vectores se hayan importado correctamente.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="60%" border="0" /></div>
+
 
 ## 3. Importación de tablas
 
-1.
+1. Desde el _Catalog Pane_ y dando clic derecho sobre la raíz de la base de datos geográfica _SIGE_, seleccione la opción _Import / Table(s)_ e importe desde la fuente `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\`, las tablas _Registro1_ y _Registro2_.
 
-<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportFeatureClass5.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable1.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+2. Renombre las tablas como _IGAC2009Registro1_ e _IGAC2009Registro2_, agréguelas a la tabla de contenido y verifique que se encuentren los registros.
+
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
 
 
 
@@ -125,11 +135,9 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre            | Descripción                                                                                                                                                        | Geometría   | Registros | 
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Clases de entidad | No es necesario volver a incorporar todos estos elementos en la tabla resumen y en el diccionario de datos debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
