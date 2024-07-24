@@ -123,7 +123,7 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 
 | Proceso                                          | Procedimiento                                                                                                                                  |
 |:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Crear geodatabases (GDB) y datasets              | Directamente desde el panel _Browser_ y dando clic sobre un directorio, se pueden crear con la opción ESRI File Geodatabase.                   |
+| Crear geodatabases (GDB) y datasets              | Directamente desde el panel _Browser_ y dando clic sobre un directorio, se pueden crear con la opción _New / ESRI File Geodatabase_.           |
 | Importación de entidades a una geodatabase (GDB) | Desde el panel _Layers_ y dando clic en _Export / Save Features As_, podrá exportar la capa dentro de una base de datos ESRI File Geodatabase. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
