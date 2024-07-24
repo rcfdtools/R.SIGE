@@ -234,10 +234,14 @@ Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es nec
 
 1. En la capa `\file\data\shp\CNE_Colombia_20240702_ZE.shp`, cree los siguientes campos de atributos:
 
+<div align="center">
+
 | Campo    | Tipo   | Descripción                                                                                 |
 |:---------|:-------|---------------------------------------------------------------------------------------------|
 | LYearS   | Double | Campo para longitud hipotética de serie a partir de las fechas de instalación y suspensión. |
 | LYearSTW | Double | Campo para longitud hipotética de serie a partir de una ventana de tiempo definida.         |
+
+</div>
 
 En la tabla de atributos dar clic en el botón _Field: Add_ y desde el modo de edición agregar los campos indicados, luego desde el Menú superior _Fields_, dar clic en _Save_. 
 
@@ -247,7 +251,7 @@ En la tabla de atributos dar clic en el botón _Field: Add_ y desde el modo de e
 
 <div align="center"><img src="graph/ArcGISPro_CalculateFieldLYearSError.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> Para el correcto análisis de los campos fecha de instalación y fecha de suspensión, la configuración regional requerida debe ser definida desde el _Panel de Control / Region_, estableciendo el formato de fechas cortas como d/MM/yyyy.
+> Para el correcto análisis de los campos fecha de instalación y fecha de suspensión, también es necesario establecer en la configuración regional definida desde el _Panel de Control / Region_, el formato de fechas cortas como d/MM/yyyy.
 
 <div align="center"><img src="graph/Windows11_ControlPanelRegionFormat.png" alt="R.SIGE" width="40%" border="0" /></div>
 
@@ -301,23 +305,23 @@ len_years_serie(!FechaInst!, !FechaSusp!)[1]
 
 4. Para realizar el cálculo de longitudes hipotéticas totales y utilizando el calculador de campo sobre `LYearS`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
 
-<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearS.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearS.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 5. Para realizar el cálculo de longitudes hipotéticas de series a partir de una ventana de tiempo definida, p. ej. del 01/01/1980 al 31/12/2023 correspondiente a 44.027397 años, y utilizando el calculador de campo sobre `LYearSTW`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
 
-<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearSTW.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearSTW.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen registros cortos de menos de 10 años.
 
-<div align="center"><img src="graph/ArcGISPro_LYearSStatistics.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LYearSStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Utilizando la tecla <kbd>Ctrl</kbd>+<kbd>clic</kbd>, seleccione las barras correspondientes a los valores de la media y superiores, obtendrá que 707 estaciones contienen longitudes hipotéticas iguales o superiores a 24.76 años dentro y alrededor del límite municipal.    
 
-<div align="center"><img src="graph/ArcGISPro_LYearSStatistics1.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LYearSStatistics1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 En cuanto a las longitudes en la ventana de tiempo establecida, la media de las longitudes es de 24.47 años con una desviación estándar correspondiente a 17.68 años. Con respecto al umbral mínimo de 15 años para considerar la estación con registros suficientemente largos, al seleccionar las estaciones a partir del corte 14.58 años, podrá observar que se obtienen 827 estaciones. 
 
-<div align="center"><img src="graph/ArcGISPro_LYearSTWStatistics.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LYearSTWStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 5. Análisis usando software libre - QGIS
