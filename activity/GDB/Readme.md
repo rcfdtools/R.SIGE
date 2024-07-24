@@ -9,7 +9,7 @@ Cree una base de datos geográfica (file geodatabase) con grupos de capas o Data
 ## Objetivos
 
 * Crear una base de datos geográfica para integrar la información espacial del caso de estudio.
-* Agrupar en datasets, las capas recopiladas y producidas en el caso de estudio.
+* Importar y agrupar en datasets, las capas recopiladas y producidas en el caso de estudio.
 
 
 ## Requerimientos
@@ -47,7 +47,6 @@ Al revisar el directorio de datos, encontrará que se han creado múltiples arch
 | POT2013Formulacion                       | Información geográfica adaptada o producida en la formulación del POT.                                               | \file\data\POT\ Anexo_Acuerdo_012_2013\ shp\                                                      |
 | SIGE                                     | Importación de archivos de formas vectoriales en formato shapefile, creados en actividades anteriores de este curso. | \file\data\shp\                                                                                   |
 | Temp                                     | Carpeta para volcado temporal de clases de entidad geográficas.                                                      | N/A                                                                                               |
-|                                          |                                                                                                                      |                                                                                                   |
 
 </div>
 
@@ -133,9 +132,9 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre            | Descripción                                                                                                                                                        | Geometría   | Registros | 
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Clases de entidad | No es necesario volver a incorporar todos estos elementos en la tabla resumen y en el diccionario de datos debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
+| Nombre            | Descripción                                                                                                                                                                                       | Geometría   | Registros | 
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Clases de entidad | No es necesario volver a incorporar las clases de entidad y tablas importadas en la GDB, en la tabla resumen y en el diccionario de datos debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
@@ -147,8 +146,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P3** | Siguiendo el procedimiento descrito en esta actividad, cree una base de datos geográfica con diferentes dataset temáticos, e importe todas las clases de entidad y tablas recopiladas y producidas en actividades anteriores. Incluya capturas de pantalla detalladas de cada dataset con las clases de entidad y los dominios importados.                                                                                                                                                                                                                      | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -163,10 +161,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                 | Autor                                      | Horas |
+|------------|:------------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.03.19 | Versión inicial con alcance de la actividad                 | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.06.24 | Investigación y documentación para caso de estudio general  | [rcfdtools](https://github.com/rcfdtools)  |   5   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
