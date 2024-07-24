@@ -114,7 +114,7 @@ Agregue una cada desde cada dataset y verifique que los vectores se hayan import
 <div align="center"><img src="graph/ArcGISPro_ImportTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Análisis usando software libre - QGIS
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -173,7 +173,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../CNEStation/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
