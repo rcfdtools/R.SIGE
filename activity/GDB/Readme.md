@@ -100,7 +100,7 @@ Agregue una cada desde cada dataset y verifique que los vectores se hayan import
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Durante el proceso de importación de las clases de entidad, es posible que se incorporen algunos de los _Dominios_ asociados a las propiedades de sus tablas. Para consultarlos, de clic derecho en la base de datos geográficas _SIGE_ y seleccione la opción dominio. 
+5. Durante el proceso de importación de las clases de entidad, es posible que se incorporen algunos de los _Dominios_ asociados a las propiedades de sus tablas. Para consultarlos, de clic derecho en la base de datos geográficas _SIGE_ y seleccione la opción _Domains_. 
 
 <div align="center"><img src="graph/ArcGISPro_Domains.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -121,10 +121,10 @@ Agregue una cada desde cada dataset y verifique que los vectores se hayan import
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                          | Procedimiento                                                                                                                                  |
+|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Crear geodatabases (GDB) y datasets              | Directamente desde el panel _Browser_ y dando clic sobre un directorio, se pueden crear con la opción ESRI File Geodatabase.                   |
+| Importación de entidades a una geodatabase (GDB) | Desde el panel _Layers_ y dando clic en _Export / Save Features As_, podrá exportar la capa dentro de una base de datos ESRI File Geodatabase. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -136,9 +136,9 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre            | Descripción                                                                                                                                                                                       | Geometría   | Registros | 
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Clases de entidad | No es necesario volver a incorporar en la tabla resumen y en el diccionario de datos, las clases de entidad y tablas importadas en la GDB debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
+| Nombre            | Descripción                                                                                                                                                                                                      | Geometría   | Registros | 
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Clases de entidad | No es necesario volver a incorporar en la tabla resumen y en el diccionario de datos, las clases de entidad y tablas importadas en la GDB debido a que ya se incorporaron y documentaron en entregas anteriores. | N/A         | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
