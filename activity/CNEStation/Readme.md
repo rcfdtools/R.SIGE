@@ -348,8 +348,18 @@ Para el campo `AGkm2`, genere una estadística visual y analice el área promedi
 
 <div align="center"><img src="graph/ArcGISPro_TIN_Edge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Abra la tabla de atributos y agregue dos campos numéricos dobles con los nombres `LP2Dkm` y `LP3Dkm`, con el calculador de campo, calcule la distancia planar 2D y 3D de las líneas generadas.
 
+<div align="center"><img src="graph/ArcGISPro_TIN_Edge1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Seleccione por localización todas aquellas líneas cuya distancia sea menor o igual 35 km, podrá observar que en el contorno perimetral, existen algunas líneas conectoras de más de 35 km.
+
+<div align="center"><img src="graph/ArcGISPro_TIN_Edge2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Genere estadísticas visuales de los dos campos creados, podrá observar que para las líneas seleccionadas, la distancia promedio 2D entre estaciones es  4.38 km y la distancia promedio 3D es 4.44 km.  
+
+<div align="center"><img src="graph/ArcGISPro_TIN_Edge3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_TIN_Edge4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 5. Análisis usando software libre - QGIS
