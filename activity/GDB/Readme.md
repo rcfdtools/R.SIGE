@@ -100,6 +100,10 @@ Agregue una cada desde cada dataset y verifique que los vectores se hayan import
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Durante el proceso de importación de las clases de entidad, es posible que se incorporen algunos de los _Dominios_ asociados a las propiedades de sus tablas. Para consultarlos, de clic derecho en la base de datos geográficas _SIGE_ y seleccione la opción dominio. 
+
+<div align="center"><img src="graph/ArcGISPro_Domains.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 3. Importación de tablas
 
@@ -134,10 +138,9 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 
 | Nombre            | Descripción                                                                                                                                                                                       | Geometría   | Registros | 
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Clases de entidad | No es necesario volver a incorporar las clases de entidad y tablas importadas en la GDB, en la tabla resumen y en el diccionario de datos debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
+| Clases de entidad | No es necesario volver a incorporar en la tabla resumen y en el diccionario de datos, las clases de entidad y tablas importadas en la GDB debido a que ya se incorporaron en entregas anteriores. | N/A         | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
