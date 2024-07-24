@@ -32,10 +32,32 @@ Al revisar el directorio de datos, encontrará que se han creado múltiples arch
 
 <div align="center"><img src="graph/Windows11_GeodatabaseFolder.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. El siguiente paso es crear los conjuntos de datos o _Datasets_ que utilizará la base de datos, para ello, de clic en la raíz de la geodatabase _SIGE_,  seleccione la opción _New / Feature Dataset_, defina el CRS 9377. Crearemos los siguientes Datasets:
 
-2. 
+<div align="center">
 
-<div align="center"><img src="graph/ArcGISPro_NewFileGeodatabase.png" alt="R.SIGE" width="100%" border="0" /></div>
+| Dataset                                  | Descripción                                                                                                          | Fuente de datos                                                                               |
+|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| IGAC2013Cartografia                      | Información cartográfica IGAC 2013, utilizada en el diagnóstico del POT.                                             | \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA                               |
+| IGAC2013EntidadTerritorialAdministrativa | Información de entidades territoriales y administrativas IGAC 2013, utilizada en el diagnóstico del POT.             | \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\ENTIDADES_TERRITORIALES_Y_ADMINISTRATIVAS |
+| IGAC2013Rural                            | Información geográfica zona rural IGAC 2013, utilizada en el diagnóstico del POT.                                    | \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL                                     |
+| IGAC2013Urbano                           | Información geográfica zona urbana IGAC 2013, utilizada en el diagnóstico del POT.                                   | \file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\URBANO                                    |
+| POT2013Formulacion                       | Información geográfica adaptada o producida en la formulación del POT.                                               | \file\data\POT\Anexo_Acuerdo_012_2013\shp\                                                    |
+| SIGE                                     | Importación de archivos de formas vectoriales en formato shapefile, creados en actividades anteriores de este curso. | \file\data\shp\                                                                               |
+| Temp                                     | Carpeta para volcado temporal de clases de entidad geográficas.                                                      | N/A                                                                                           |
+|                                          |                                                                                                                      |                                                                                               |
+
+</div>
+
+> En la raíz de la base de datos geográfica _SIGE_, importaremos las tablas _Registro1_ y _Registro2_ que serán renombradas como _IGAC2009Registro1_ e _IGAC2009Registro2_.
+
+<div align="center"><img src="graph/ArcGISPro_NewDataset.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_NewDataset1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+3. 
+
+
 
 
 
