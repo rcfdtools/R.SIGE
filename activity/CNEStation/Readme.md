@@ -197,7 +197,7 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702c.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Extracción de estaciones de la zona de estudio
+## 2. Extracción de estaciones en la zona de estudio
 
 1. Desde la carpeta _\file\data\shp_, agregue al mapa las capas _SZH2120.shp_ y _SZH2120_Envelope_Buffer250m.shp_, creadas en la actividad [Análisis de sub-zonas hidrográficas](../SZH/Readme.md). Simbolice estas zonas solo por su contorno y simbolice las estaciones por valores únicos a partir del campo `CNESource`, podrá observar que mayoritariamente las estaciones dentro del polígono envolvente corresponden a estaciones de otras entidades y que su localización geográfica no es precisa.
 
@@ -205,23 +205,13 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702d.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo integrado estaciones que se intersecan con el polígono envolvente de la zona de estudio, podrá observar en la tabla de atributos que se han seleccionado 1250 estaciones.
 
+<div align="center"><img src="graph/ArcGISPro_SelectByLocation.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo nacional de estaciones y de otras entidades que se intersecan con la zona de estudio. Para la zona de estudio y la versión descargada de los catálogos, se han seleccionado 315 estaciones del CNE y 125 de otras entidades.
+8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20240702_ZE.shp`; en la exportación defina el CRS 9377. 
 
-![R.LTWB](Screenshot/ArcGISPro3.0.0SelectByLocation.png)
-
-8. Exporte las estaciones seleccionadas a nuevas capas geográficas, clic derecho en CNE_IDEAM / _Data / Export Features_ y nombre como _[CNE_IDEAM_ZE.shp](../../.shp/CNE_IDEAM_ZE.zip)_ dentro de la carpeta _.shp_. Repita este procedimiento para la capa de eventos de las estaciones de otras entidades y nombre como _[CNE_OE_ZE.shp](../../.shp/CNE_OE_ZE.zip)_.
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNE_IDEAM_ZEExportFeatures.png)  
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNE_OE_ZEExportFeatures.png)  
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNEZEExportFeaturesMap.png)
-
-> En ArcGIS for Desktop, el procedimiento de exportación se realiza dando clic derecho en la capa y seleccionando la opción _Data / Export Data_. Para el caso de la capa de eventos de las estaciones de otras entidades, se recomienda primero exportar la capa de eventos en un archivo Shapefile y luego efectuar la selección y exportación de las estaciones de la zona de estudio.
-
-9. Con la herramienta _Geoprocessing / Data Management Tools / General / Merge_, combine los archivos de formas _CNE_IDEAM_ZE.shp_ y _CNE_OE_ZE.shp_ en un único archivo y nombre como _[CNE_IDEAM_OE_ZE.shp](../../.shp/CNE_IDEAM_OE_ZE.zip)_. Asegúrese de marcar la casilla `Add source information to output` para obtener el campo de atributos `MERGE_SRC` que describe la capa fuente y de clic en la opción _Reset_ ubicada a la derecha de `Field Map` . La red de estaciones contendrá en total 440 estaciones (315 IDEAM + 125 otras entidades).
-
-![R.LTWB](Screenshot/ArcGISPro3.0.0CNE_IDEAM_OE_ZEMerge.png)
+<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702_ZEa.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Estudio de longitud hipotética de series
