@@ -197,11 +197,11 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702c.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Extracción de estaciones en la zona de estudio
+## 3. Extracción y estudio general de estaciones en la zona de estudio
 
 1. Desde la carpeta _\file\data\shp_, agregue al mapa las capas _SZH2120.shp_ y _SZH2120_Envelope_Buffer250m.shp_, creadas en la actividad [Análisis de sub-zonas hidrográficas](../SZH/Readme.md). Simbolice estas zonas solo por su contorno y simbolice las estaciones por valores únicos a partir del campo `CNESource`, podrá observar que mayoritariamente las estaciones dentro del polígono envolvente corresponden a estaciones de otras entidades y que su localización geográfica no es precisa.
 
-> Para la correcta localización geográfica de las estaciones, los catálogos deberían contener al menos 6 posiciones decimales en los campos geocodificacos `LatDD` y `LongDD` para tener precisión al menos métrica. Muchos de los valores consignados en la tabla del catálogo correspondiente a otras estaciones, tienen pocos decimales y en la ilustración se puede observar que se encuentran alineadas horizontal o verticalmente a una grilla imaginaria regular.
+> Para la correcta localización geográfica de las estaciones, los catálogos deben contener al menos 6 posiciones decimales en los campos geocodificacos `LatDD` y `LongDD` para tener precisión al menos métrica. Muchos de los valores consignados en la tabla del catálogo correspondiente a otras estaciones, tienen pocos decimales y en la ilustración se puede observar que se encuentran alineadas horizontal o verticalmente a una grilla imaginaria regular.
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702d.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -213,8 +213,25 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702_ZEa.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
 
-## 3. Estudio de longitud hipotética de series
+Conteo de estaciones por fuente  
+<div align="center"><img src="graph/ArcGISPro_Source_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Conteo de estaciones por categoría  
+<div align="center"><img src="graph/ArcGISPro_Category_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Conteo de estaciones por categoría y por fuente  
+<div align="center"><img src="graph/ArcGISPro_SourceCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Conteo de estaciones por tecnología y por fuente  
+<div align="center"><img src="graph/ArcGISPro_TechCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Conteo de estaciones por tecnología y por fuente  
+<div align="center"><img src="graph/ArcGISPro_CompCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 4. Estudio de longitud hipotética de series
 
 10. Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es necesario estudiar la longitud hipotética de las series a partir de las fechas de instalación y suspensión registradas en el catálogo. 
 
@@ -391,7 +408,7 @@ Simbolice las estaciones por categoría a partir del campo `CATEGORIA` para las 
 ![R.LTWB](Screenshot/ArcGISPro3.0.0BarGraphCategoria.png)
 
 
-## 4. Identificación de estaciones con datos de precipitación
+## 5. Identificación de estaciones con datos de precipitación
 
 Las longitudes hipotéticas de registros en estaciones evaluadas previamente, corresponden a diferentes categorías. En el caso específico de la precipitación, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias, Climatológicas Principales, Pluviográficas, Pluviométricas, Sinópticas Principales y Sinópticas Secundarias.
 
@@ -423,7 +440,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWRainTableToTable.png)
 
 
-## 5. Identificación de estaciones con datos de temperatura del aire cerca al suelo
+## 6. Identificación de estaciones con datos de temperatura del aire cerca al suelo
 
 En el caso específico de la temperatura del aire cerca de la superficie del suelo, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias, Climatológicas Principales, Sinópticas Principales y Sinópticas Secundarias.
 
@@ -458,7 +475,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWTemperatureAirTableToTable.png)
 
 
-## 6. Identificación de estaciones con datos de evaporación potencial
+## 7. Identificación de estaciones con datos de evaporación potencial
 
 En el caso específico de la evaporación potencial, los registros pueden ser obtenidos de estaciones Agrometeorológicas, Climatológicas Ordinarias y Climatológicas Principales.
 
@@ -487,7 +504,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWEvaporationTableToTable.png)
 
 
-## 7. Identificación de estaciones con datos de nivel de lámina de agua en ríos
+## 8. Identificación de estaciones con datos de nivel de lámina de agua en ríos
 
 Una vez sea realizado el balance hidrológico de largo plazo y se obtengan los caudales medios, estos podrán ser comparados con los registros medios de las series de caudales obtenidos a partir de los datos obtenidos en estaciones limnimétricas y/o limnigráficas. 
 
@@ -516,7 +533,7 @@ Utilizando la herramienta _Geoprocessing / Conversion Tools / To Geodatabase / T
 ![R.LTWB](Screenshot/ArcGISPro3.0.0LYearSTWWaterLevelTableToTable.png)
 
 
-## 8. Análisis usando software libre - QGIS
+## 9. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
