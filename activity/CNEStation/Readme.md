@@ -417,7 +417,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * http://dhime.ideam.gov.co/atencionciudadano/
 * http://www.ideam.gov.co/solicitud-de-informacion
-* [ArcGIS Pro tarda mucho tiempo en abrir mi proyecto](https://github.com/rcfdtools/R.LTWB/discussions/13):lady_beetle:
 
 
 ## Control de versiones
