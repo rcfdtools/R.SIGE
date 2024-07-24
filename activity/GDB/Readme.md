@@ -54,11 +54,22 @@ Al revisar el directorio de datos, encontrará que se han creado múltiples arch
 <div align="center"><img src="graph/ArcGISPro_NewDataset.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_NewDataset1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Una vez terminada la creación de los diferentes datasets, podrá observar su estructura en el _Catalog Pane_.
 
-3. 
+<div align="center"><img src="graph/ArcGISPro_NewDataset2.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+
+## 2. Importación de entidades
+
+1. 
+
+<div align="center"><img src="graph/ArcGISPro_NewDataset2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
+## 3. Importación de tablas
+
+1.
 
 
 
