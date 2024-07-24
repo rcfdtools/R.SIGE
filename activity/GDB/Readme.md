@@ -24,7 +24,7 @@ Cree una base de datos geográfica (file geodatabase) con grupos de capas o Data
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _GDB_ y establezca el CRS 9377. En el árbol de catálogo, localice la carpeta `\file\data\gdb\`, de clic derecho sobre la raíz de esta carpeta y seleccione la opción _New / File Geodatabase_ y nombre la base de datos como `SIGE`. Al crear la base de datos, automáticamente se asignará la extensión _.gdb_.
 
-> Como puede observar, en ArcGIS Pro se pueden crear dos tipos de bases geográficas, las _File Geodatabase_ son bases de datos corporativas que utilizan múltiples archivos y que pueden procesar grandes volúmenes de información; por otra parte, las _Mobile Geodatabase_ son bases compactas que utilizan un archivo principal único (y en algunos casos archivos complementarios de indexación) y aunque pueden almacenar gran cantidad de tablas y clases de entidad, su eficiencia no es óptima. 
+> Como puede observar, en ArcGIS Pro se pueden crear dos tipos de bases geográficas: las _File Geodatabase_ son bases de datos corporativas que utilizan múltiples archivos y que pueden procesar grandes volúmenes de información; por otra parte, las _Mobile Geodatabase_ son bases compactas que utilizan un archivo principal único (y en algunos casos archivos complementarios de indexación) y aunque pueden almacenar gran cantidad de tablas y clases de entidad, su eficiencia no es óptima. 
 
 <div align="center"><img src="graph/ArcGISPro_NewFileGeodatabase.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -58,14 +58,29 @@ Al revisar el directorio de datos, encontrará que se han creado múltiples arch
 
 Una vez terminada la creación de los diferentes datasets, podrá observar su estructura en el _Catalog Pane_.
 
-<div align="center"><img src="graph/ArcGISPro_NewDataset2.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_NewDataset2.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 
 ## 2. Importación de entidades
 
-1. 
+Para la importación debe tener en cuenta, que dos elementos (feature class, tabla, grilla) dentro de una misma base geográfica, no pueden tener el mismo nombre.
 
-<div align="center"><img src="graph/ArcGISPro_NewDataset2.png" alt="R.SIGE" width="100%" border="0" /></div>
+1. En el árbol de catálogo, identifique de las fuentes de datos a utilizar, cuáles de ellas tienen capas con nombres idénticos, p. ej., la capa _BARRIOS_ se encuentra en `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\ENTIDADES_TERRITORIALES_Y_ADMINISTRATIVAS` y en `\file\data\POT\Anexo_Acuerdo_012_2013\shp\`. Para todos los elementos duplicados, modifique el nombre agregando el dígito 1 al final, p. ej., _BARRIOS1_
+ 
+* Elementos con nombres idénticos: BARRIOS, COMUNAS, VEREDA, VIAS_PERIMETRO, VIAS_RURALES.
+* Renombra en carpeta shp como: BARRIOS1, COMUNAS1, VEREDA1, VIAS_PERIMETRO1, VIAS_RURALES1.
+
+<div align="center"><img src="graph/ArcGISPro_Rename.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el _Catalog Pane_ y dando clic derecho sobre el dataset _IGAC2013Cartografia_, seleccione la opción _Import / Feature Class(es)_ e importe desde la fuente `\file\data\POT\ Anexo_Acuerdo_012_2013\ gdb\25899.gdb\CARTOGRAFIA`, todas las clases de entidad. 
+
+<div align="center"><img src="graph/ArcGISPro_ImportFeatureClass.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ImportFeatureClass1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para verificar que la importación se haya realizado correctamente, agregue algunas de las capas al mapa.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
