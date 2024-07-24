@@ -311,7 +311,7 @@ len_years_serie(!FechaInst!, !FechaSusp!)[1]
 
 <div align="center"><img src="graph/ArcGISPro_CalculateField_LYearSTW.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen registros cortos de menos de 10 años.
+5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen longitudes cortas de menos de 10 años, correspondientes a estaciones jóvenes.
 
 <div align="center"><img src="graph/ArcGISPro_LYearSStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -319,7 +319,7 @@ Utilizando la tecla <kbd>Ctrl</kbd>+<kbd>clic</kbd>, seleccione las barras corre
 
 <div align="center"><img src="graph/ArcGISPro_LYearSStatistics1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-En cuanto a las longitudes en la ventana de tiempo establecida, la media de las longitudes es de 24.47 años con una desviación estándar correspondiente a 17.68 años. Con respecto al umbral mínimo de 15 años para considerar la estación con registros suficientemente largos, al seleccionar las estaciones a partir del corte 14.58 años, podrá observar que se obtienen 827 estaciones. 
+En cuanto a las longitudes en la ventana de tiempo establecida, la media de las longitudes es de 24.47 años con una desviación estándar correspondiente a 17.68 años. Con respecto al umbral mínimo de 15 años para considerar la estación con longitud de captura suficientemente larga, al seleccionar las estaciones a partir del corte 14.58 años, podrá observar que se obtienen 827 estaciones. 
 
 <div align="center"><img src="graph/ArcGISPro_LYearSTWStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
