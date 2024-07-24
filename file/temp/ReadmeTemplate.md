@@ -57,7 +57,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
-[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
+[:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
 
 
 ## Elementos requeridos en diccionario de datos
