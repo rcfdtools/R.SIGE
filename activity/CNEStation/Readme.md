@@ -389,6 +389,7 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 
 | Nombre                                | Descripción                                                                                                                                                    | Geometría    | Registros | 
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------| 
+| CNE_IDEAM_20240702.xls                | Libro de Excel con la integración de registros del catálogo nacional del IDEAM y otras entidades.                                                              | N/A          | 9107      | 
 | CNE_Colombia_20240702.shp             | Estaciones hidroclimatológicas de Colombia a partir del cátalogo nacional del IDEAM y de otras entidades.                                                      | Punto 2D     | 9107      | 
 | CNE_Colombia_20240702_ZE.shp          | Estaciones hidroclimatológicas de la zona de estudio a partir de la intersección del catálogo de Colombia con el polígono envolvente al rededor del municipio. | Punto 2D     | 1250      | 
 | CNE_Colombia_20240702_ZE_Thiessen.shp | Polígonos de Thiessen al rededor de las estaciones de la zona de estudio.                                                                                      | Polígono 2D  | 989       | 
