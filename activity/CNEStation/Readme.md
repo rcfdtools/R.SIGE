@@ -215,20 +215,15 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
 
-Conteo de estaciones por fuente  
-<div align="center"><img src="graph/ArcGISPro_Source_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Conteo de estaciones por fuente<br><img src="graph/ArcGISPro_Source_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-Conteo de estaciones por categoría  
-<div align="center"><img src="graph/ArcGISPro_Category_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Conteo de estaciones por categoría<br><img src="graph/ArcGISPro_Category_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-Conteo de estaciones por categoría y por fuente  
-<div align="center"><img src="graph/ArcGISPro_SourceCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Conteo de estaciones por categoría y por fuente<br><img src="graph/ArcGISPro_SourceCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-Conteo de estaciones por tecnología y por fuente  
-<div align="center"><img src="graph/ArcGISPro_TechCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Conteo de estaciones por tecnología y por fuente<br><img src="graph/ArcGISPro_TechCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-Conteo de estaciones por tecnología y por fuente  
-<div align="center"><img src="graph/ArcGISPro_CompCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Conteo de estaciones por tecnología y por fuente<br><img src="graph/ArcGISPro_CompCategory_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 ## 4. Estudio de longitud hipotética de series
