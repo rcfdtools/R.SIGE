@@ -362,7 +362,7 @@ Para el campo `AGkm2`, genere una estadística visual y analice el área promedi
 <div align="center"><img src="graph/ArcGISPro_TIN_Edge4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 5. Análisis usando software libre - QGIS
+## 6. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
