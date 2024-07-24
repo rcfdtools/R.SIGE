@@ -324,6 +324,25 @@ En cuanto a las longitudes en la ventana de tiempo establecida, la media de las 
 <div align="center"><img src="graph/ArcGISPro_LYearSTWStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 5. Análisis de cobertura espacial en estaciones
+
+1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Create Thiessen Polygons_, cree polígonos de aferencia al rededor de cada estación. Nombre la capa como `\file\data\shp\CNE_Colombia_20240702_ZE_Thiessen.shp` y simbolice solo por contorno.
+
+> Tenga en cuenta que para localizaciones donde se encuentran dos estacionas sobre un mismo punto (una convencional y una automática), se creará un único polígono. 
+
+<div align="center"><img src="graph/ArcGISPro_Thiessen.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la capa de polígonos de Thiessen, cree un campo numérico doble con el nombre `AGkm2` y calcula el área geodésica. Como puede observar, en la tabla de atributos únicamente aparecen 989 polígonos y en la capa original existían 1250 estaciones, lo que indica que en 261 localizaciones existen estaciones en la misma posición o muy próximas.
+
+
+
+
+
+
+
+
+
+
 ## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
