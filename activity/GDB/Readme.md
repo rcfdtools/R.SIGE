@@ -99,21 +99,19 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 
 Agregue una cada desde cada dataset y verifique que los vectores se hayan importado correctamente.
 
-<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Importación de tablas
 
 1. Desde el _Catalog Pane_ y dando clic derecho sobre la raíz de la base de datos geográfica _SIGE_, seleccione la opción _Import / Table(s)_ e importe desde la fuente `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\`, las tablas _Registro1_ y _Registro2_.
 
-<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable1.png" alt="R.SIGE" width="100%" border="0" /></div><br>
-<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center"><img src="graph/ArcGISPro_ImportTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ImportTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 2. Renombre las tablas como _IGAC2009Registro1_ e _IGAC2009Registro2_, agréguelas a la tabla de contenido y verifique que se encuentren los registros.
 
-<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportTable3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
-
-
+<div align="center"><img src="graph/ArcGISPro_ImportTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
