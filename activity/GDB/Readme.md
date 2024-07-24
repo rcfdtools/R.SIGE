@@ -77,16 +77,32 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 <div align="center"><img src="graph/ArcGISPro_ImportFeatureClass.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_ImportFeatureClass1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> En el evento que existan errores de importación por duplicidad de nombres, en la parte inferior del panel de importación y en una ventana emergente, aparecerá un mensaje de error indicando cuáles elementos no pudieron ser incorporados.
+
 3. Para verificar que la importación se haya realizado correctamente, agregue algunas de las capas al mapa.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Repita el procedimiento anterior importando a cada dataset, los datos correspondientes desde las fuentes identificadas.
 
+<div align="center">IGAC2013EntidadTerritorialAdministrativa<br><img src="graph/ArcGISPro_ImportFeatureClass2.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+<div align="center">IGAC2013Rural<br><img src="graph/ArcGISPro_ImportFeatureClass3.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+<div align="center">IGAC2013Urbano<br><img src="graph/ArcGISPro_ImportFeatureClass4.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportFeatureClass5.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+<div align="center">SIGE<br><img src="graph/ArcGISPro_ImportFeatureClass6.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+
+> Recuerde que al realizar la importación de clases de entidad dentro de la base de datos y los dataset creados, todas las capas serán re-proyectadas al CRS 9377.
 
 
 ## 3. Importación de tablas
 
 1.
+
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportFeatureClass5.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 
