@@ -340,6 +340,13 @@ Para el campo `AGkm2`, genere una estadística visual y analice el área promedi
 
 <div align="center"><img src="graph/ArcGISPro_Thiessen2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Para calcular la distancia promedio entre estaciones, en el panel de geo-procesamiento y a partir de la capa de estaciones de la zona de estudio, ejecute la herramienta _3D Analyst Tools / Create TIN_, guarde la superficie triangulada como `\file\dem\CNE_Colombia_20240702_ZE_TIN`. Podrá observar que se generó una superficie triangulada 3D a partir de los valores de elevación de las estaciones.
+
+<div align="center"><img src="graph/ArcGISPro_TIN.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / TIN Edge_, obtenga las líneas 3D de la red triangulada del modelo digital de elevación TIN, guarde la capa como `\file\shp\CNE_Colombia_20240702_ZE_TIN_Edge.shp`
+
+<div align="center"><img src="graph/ArcGISPro_TIN_Edge.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
