@@ -334,9 +334,11 @@ En cuanto a las longitudes en la ventana de tiempo establecida, la media de las 
 
 2. En la capa de polígonos de Thiessen, cree un campo numérico doble con el nombre `AGkm2` y calcula el área geodésica. Como puede observar, en la tabla de atributos únicamente aparecen 989 polígonos y en la capa original existían 1250 estaciones, lo que indica que en 261 localizaciones existen estaciones en la misma posición o muy próximas.
 
+<div align="center"><img src="graph/ArcGISPro_Thiessen1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Para el campo `AGkm2`, genere una estadística visual y analice el área promedio de cobertura por estación; podrá observar que corresponde a 20.61 km² con una desviación estándar de 31.38 km².
 
-
+<div align="center"><img src="graph/ArcGISPro_Thiessen2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
