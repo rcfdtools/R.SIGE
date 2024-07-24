@@ -70,7 +70,7 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 * Elementos con nombres idénticos: BARRIOS, COMUNAS, VEREDA, VIAS_PERIMETRO, VIAS_RURALES.
 * Renombra en carpeta shp como: BARRIOS1, COMUNAS1, VEREDA1, VIAS_PERIMETRO1, VIAS_RURALES1.
 
-<div align="center"><img src="graph/ArcGISPro_Rename.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Rename.png" alt="R.SIGE" width="60%" border="0" /></div>
 
 2. Desde el _Catalog Pane_ y dando clic derecho sobre el dataset _IGAC2013Cartografia_, seleccione la opción _Import / Feature Class(es)_ e importe desde la fuente `\file\data\POT\ Anexo_Acuerdo_012_2013\ gdb\25899.gdb\CARTOGRAFIA`, todas las clases de entidad. 
 
@@ -85,15 +85,15 @@ Para la importación debe tener en cuenta, que dos elementos (feature class, tab
 
 4. Repita el procedimiento anterior importando a cada dataset, los datos correspondientes desde las fuentes identificadas.
 
-<div align="center">IGAC2013EntidadTerritorialAdministrativa<br><img src="graph/ArcGISPro_ImportFeatureClass2.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">IGAC2013EntidadTerritorialAdministrativa<br><img src="graph/ArcGISPro_ImportFeatureClass2.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
-<div align="center">IGAC2013Rural<br><img src="graph/ArcGISPro_ImportFeatureClass3.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">IGAC2013Rural<br><img src="graph/ArcGISPro_ImportFeatureClass3.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
-<div align="center">IGAC2013Urbano<br><img src="graph/ArcGISPro_ImportFeatureClass4.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">IGAC2013Urbano<br><img src="graph/ArcGISPro_ImportFeatureClass4.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
-<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportFeatureClass5.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">POT2013Formulacion<br><img src="graph/ArcGISPro_ImportFeatureClass5.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
-<div align="center">SIGE<br><img src="graph/ArcGISPro_ImportFeatureClass6.png" alt="R.SIGE" width="60%" border="0" /></div><br>
+<div align="center">SIGE<br><img src="graph/ArcGISPro_ImportFeatureClass6.png" alt="R.SIGE" width="50%" border="0" /></div><br>
 
 > Recuerde que al realizar la importación de clases de entidad dentro de la base de datos y los dataset creados, todas las capas serán re-proyectadas al CRS 9377.
 
