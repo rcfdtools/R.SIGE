@@ -143,7 +143,7 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 > En versiones actuales de ArcGIS Pro, la asociación de dominio será realizada automáticamente al exportar la copia de la capa de predios.
 
-<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 5. Destinos económicos vs. Modelo de ocupación territorial - MOT 
