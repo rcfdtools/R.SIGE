@@ -136,9 +136,9 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre            | Descripción                                                                                                                                                                                                      | Geometría   | Registros | 
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Clases de entidad | No es necesario volver a incorporar en la tabla resumen y en el diccionario de datos, las clases de entidad y tablas importadas en la GDB debido a que ya se incorporaron y documentaron en entregas anteriores. | N/A         | N/A       | 
+| Nombre            | Descripción                                                                                                                                                                                                       | Geometría   | Registros | 
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Clases de entidad | No es necesario volver a incorporar en la tabla resumen y en el diccionario de datos, las clases de entidad y tablas importadas en la GDB, debido a que ya se incorporaron y documentaron en entregas anteriores. | N/A         | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
@@ -174,7 +174,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../CNEStation/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/23) | [Siguiente :arrow_forward:]() |
-|------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../CNEStation/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/23) | [Siguiente :arrow_forward:](../LandUseIGAC/Readme.md) |
+|------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------|
 
 [^1]: 
