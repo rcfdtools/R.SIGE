@@ -1,5 +1,5 @@
 # Análisis de destinaciones económicas IGAC (creación de dominios)
-Keywords: `domain` `land-economic-use`
+Keywords: `domain` `land-economic-use` `land-prohibited-use` `landuse`
 
 A partir de los predios urbanos y rurales importados en la GDB, realice una unión de capas para obtener una base de datos integrada de predios. A partir de un resumen estadístico, indique el número de predios de cada vereda y del área urbana, calcule el total del área predial de cada grupo. A partir de un Join entre la capa geográfica de predios y utilizando solo la información disponible en números de orden iguale a 1 de la tabla catastro, cree un resumen estadístico indicando el número de predios por destinación económica principal. En la base de datos, cree un nuevo dominio con el nombre `destino_econ` normalizando como campo de texto los códigos disponibles en el artículo 86 de la Resolución 70 de 2011 Instituto Geográfico Agustín Codazzi. Asocie el dominio creado con el campo de atributos `destino_econ` de la capa de predios. Cree un mapa de disolución que represente las destinaciones económicas principales de todo el municipio y compare las destinaciónes economicas catastrales con el mapa MOT correspondiente al modelo de ocupación territorial establecido en el POT, explique las diferencias entre estos dos mapas.
 
@@ -223,10 +223,15 @@ Selection Query: `SUELO = 'PROTECCION' And destino_econ IN ('A', 'B', 'C', 'D', 
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                         | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|:--------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                      | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                                                                                                                                                                       |
+| Rotulado                        | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                                                                                                                                                                          |
+| Combinación de capas (Merge)    | Herramienta disponible en el _Processing Toolbox / Vector General / [Merge vector layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#merge-vector-layers)_.                                                                                                                                                                                                                                       |
+| Resumen estadístico (Summarize) | Disponible en _Processing Toolbox / Vector Analysis / [Statistics by categories](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#statistics-by-categories)_.                                                                                                                                                                                                                                          |
+| Unión de tablas                 | En las propiedades de capa geográfica, seleccionar la pestaña _Join_ y realizar la unión. Solo se mostrarán los registros correspondientes a la primer coincidencia encontrada. Para visualizar o representar otros valores, es necesario filtrar previamente la tabla a unir.                                                                                                                                                                |
+| Disolución (Dissolve)           | Se ejecuta desde el _Processing Toolbox / Vector Geometry / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                                                                                                                                                                                          |
+| Dominios (Domains)              | En QGIS 3.0 o superior, se pueden a través de la pestaña [Attibute Forms](https://docs.qgis.org/3.34/en/docs/training_manual/create_vector_data/forms.html) de la capa, configurar valores codificados de dominio a campos de atributos, que luego puden seleccionados desde la tabla.                                                                                                                                                        |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -238,14 +243,14 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                    | Descripción                                                                                               | Geometría   | Registros | 
+|---------------------------|-----------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| TerrenoPredio_2013        | Combinación de predios urbano y rurales utilizados en el diagnóstico del POT.                             | Polígono 2D | 26198     | 
+| TerrenoPredio_2013_DestEc | Predios por destinación económica catastral para registros orden 001.                                     | Polígono 2D | 26198     | 
+| Mpio25899_DestEc2013      | Destinación económica catastral municipal.                                                                | Polígono 2D | 19        | 
+| Mpio25899_DestEc_MOT2013  | Intersección del modelo de ocupación territorial - MOT y el mapa de destinaciones económicas catastrales. | Polígono 2D | 484       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -254,8 +259,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P3** | Utilizando el procedimiento presentado en esta actividad, realice la integración predial y estudie las destinaciones económicas y las incompatibilidades con respecto a suelo de protección.                                                                                                                                                                                                                                                       | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-1: Predios urbanos y rurales 2013 por destinación económica_<br>Incluir Tabla y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                               | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-2: Destinaciones económicas disueltas 2013_<br>Incluir Tabla y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-3: Comparación MOT vs. Destinación económicas 2013_<br>Incluir Tabla y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                        | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -268,21 +275,22 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) 
 * https://colaboracion.dnp.gov.co/CDT/Programa%20Nacional%20del%20Servicio%20al%20Ciudadano/NORMATIVA%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf
 * https://geoportal.igac.gov.co/contenido/datos-abiertos-catastro
+* https://gis.stackexchange.com/questions/43712/using-subtypes-and-domains-in-qgis-like-can-be-done-in-arcgis-desktop
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.03.20 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.06.25 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../GDB/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|-----------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../GDB/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/24) | [Siguiente :arrow_forward:]() |
+|-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
