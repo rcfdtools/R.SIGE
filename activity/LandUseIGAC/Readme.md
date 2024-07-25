@@ -139,8 +139,16 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 <div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Desde las propiedades de campo de la capa creada, asocie al campo `destino_econ` el dominio de destinaciones _DestEc_ y simbolice por este campo. Podrá observar que los descriptores de dominio ahora muestran los valores asociados.
+
+> En versiones actuales de ArcGIS Pro, la asociación de dominio será realizada automáticamente al exportar la copia de la capa de predios.
+
+<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 5. Destinos económicos vs. Modelo de ocupación territorial - MOT 
+
+1. Utilizando la herramienta de geo-procesamiento 
 
 
 
