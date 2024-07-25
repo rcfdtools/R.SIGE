@@ -159,8 +159,30 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. 
+2. Agregue la clase de entidad del modelo de ocupación territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT`, modifique la simbología utilizando solo contorno y rotule la capa de destinaciones y MOT a partir de los campos `destino_econ` y `SUELO`. Podrá observar que a nivel general, en los suelos clasificados com rural de protección, existen zonas con destinaciones económicas catastrales habitacionales, agroindustriales, comerciales, mineras, de equipamientos y otros usos no compatibles. 
 
+Rótulo Arcade para destinaciones económicas: `DomainName($feature, 'destino_econ')`
+
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Cambie el mapa de fondo por la imágen satelital de ESRI y establezca transparencia de 30% en la capa de destinaciones.
+
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para identificar incompatibilidades entre la clasificación del suelo del MOT y las destinaciones económicas, cree con la herramienta de geo-procesamiento _Analysis Tools / Intersect_, la intersección espacial de estas dos capas y asocie el dominio de destinación económica. Nombre la clase de entidad resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_DestEc_MOT2013` y ajuste la simbología agregando contornos de color blanco. Podrá observar que ahora se identifican sub fracciones combinadas de los polígonos originales.
+
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc_MOT2013.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. A partir de un resumen estadístico de campo, genere una tabla que permita identificar por cada clase de suelo, las destinaciones asociadas. En la tabla de atributos de la capa _Mpio25899_DestEc_MOT2013_, de clic derecho en el campo `SUELO` y seleccione la herramienta _Summarize_. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\DestEcMOT2013_Summarize`.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Abra la tabla generada, podrá observar que para cada clase de suelo, se pueden conocer las destinaciones y el número de polígonos multi-parte asociados.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
