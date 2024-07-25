@@ -22,7 +22,7 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 * [:open_file_folder:LandUseIGAC.xlsx](LandUseIGAC.xlsx): libro con códigos y descriptores de destinaciones económicas de predios IGAC.
 
 
-## 1. Integración predial
+## 1. Combinación de predios urbanos y rurales (base predial)
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandUseIGAC_ y establezca el CRS 9377. Agregue al mapa las clases de entidad de predios urbanos y rurales disponibles en la base de datos geográfica en las rutas `\file\gdb\SIGE.gdb\IGAC2013Urbano\TERRENO_PREDIO_URBANO` y `\file\gdb\SIGE.gdb\IGAC2013Rural\TERRENO_PREDIO_RURAL`.
 
@@ -119,11 +119,32 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 <div align="center"><img src="graph/ArcGISPro_Registro1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>.
 
 
+## 4. Integración de predios a registros de catastro y estudio de destinaciones 
+
+1. En la tabla del Registro 1 de catastro, filtre los registros a partir del Orden 1 (`num_orden = '001'`), de los 46305 5 registros obtendrá 20939.  
+
+> El filtro le permitirá obtener los registros correspondientes solo al propietario principal de cada inmueble. Si bien, en un predio pueden existir propiedades horizontales y mejoras con diferentes destinaciones, se puede considerar como predominante la contenida en el orden 001. 
+
+<div align="center"><img src="graph/ArcGISPro_Registro1_QueryOrden001.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando un _Join_ de tabla, integre los registros de la capa _TerrenoPredio_2013_ con los registros filtrados en la tabla _IGAC2009Registro1_. Podrá observar que en la tabla de atributos de los predios ahora aparecen las columnas correspondientes a los registros catastrales, incluída la destinación económica con la asociación de su dominio.
+
+<div align="center"><img src="graph/ArcGISPro_Join.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Ajuste la simbología de los predios, representando ahora por destinaciones económicas. Podrá observar que no aparecen los nombres descriptivos del dominio, por lo que es necesario, crear una copia de la capa de predios para poder realizar la asociación y representación directa del dominio asociado.
+
+<div align="center"><img src="graph/ArcGISPro_Predio_DestEc.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En la tabla de contenido o _Contents_, de clic derecho en la capa de predios y mediante la opción _Data / Export Features_, cree una copia de esta capa, nombre como `\file\gdb\SIGE.gdb\SIGE\TerrenoPredio_2013_DestEc`. 
+
+<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
-## 2. Análisis usando software libre - QGIS
+
+
+## 6. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
