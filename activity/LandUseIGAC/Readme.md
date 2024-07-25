@@ -11,6 +11,7 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 * Integrar la capa de predios urbanos y rurales generando un análisis estadístico general.
 * Crea un dominio de base de datos que contenga los descriptores de destinaciones económicas del IGAC.
 * Crear el mapa de destinaciones económicas y comparar sus límites con los del mapa del modelo de ocupación territorial - MOT.
+* Identificar actividades económicas y zonas geográficas incompatibles con las categorías de uso definidas en el POT. 
 
 
 ## Requerimientos
