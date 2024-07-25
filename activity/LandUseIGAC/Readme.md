@@ -178,7 +178,7 @@ Cambie el mapa de fondo por la imágen satelital de ESRI y establezca transparen
 4. A partir de un resumen estadístico de campo, genere una tabla que permita identificar por cada clase de suelo, las destinaciones asociadas. En la tabla de atributos de la capa _Mpio25899_DestEc_MOT2013_, de clic derecho en el campo `SUELO` y seleccione la herramienta _Summarize_. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\DestEcMOT2013_Summarize`.
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 Abra la tabla generada, podrá observar que para cada clase de suelo, se pueden conocer las destinaciones y el número de polígonos multi-parte asociados.
 
