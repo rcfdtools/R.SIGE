@@ -141,11 +141,11 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 5. Desde las propiedades de campo de la capa creada, asocie al campo `destino_econ` el dominio de destinaciones _DestEc_ y simbolice por este campo. Podrá observar que los descriptores de dominio ahora muestran los valores asociados.
 
-> En versiones actuales de ArcGIS Pro, la asociación de dominio será realizada automáticamente al exportar la copia de la capa de predios.
+> En versiones recientes de ArcGIS Pro, la asociación de dominio será realizada automáticamente al exportar la copia de la capa de predios.
 
 <div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Cree gráficos de análisis con el total de predios por destinación y área total. 
+6. Cree gráficos de análisis con el total de predios por destinación y área total. Podrá observar que el mayor número de destinaciones por predio corresponde a usos habitacionales y que en área, el mayor valor corresponde a predios con destinación agropecuaria. 
 
 > Opcionalmente y con la herramienta _Summarize_ (clic derecho sobre el campo `destino_econ` en la tabla de atributos), puede generar un resumen estadístico de predios por destinación económica como tabla.
 
