@@ -155,7 +155,12 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 ## 5. Destinos económicos vs. Modelo de ocupación territorial - MOT 
 
-1. Utilizando la herramienta de geo-procesamiento 
+1. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Dissolve_, disuelva los predios a partir de las destinaciones económicas, nombre la clase de entidad resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_DestEc2013` y asocie el dominio de destinación económica al campo `destino_econ`. Obtendrá 19 zonas o polígonos multiparte diferentes. Modifique la simbología sin contornos y manteniendo los colores actuales. 
+
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. 
+
 
 
 
