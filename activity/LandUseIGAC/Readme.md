@@ -62,23 +62,11 @@ Para el estudio de las destinaciones económicas, utilizaremos el Registro 1 del
 * Área de terreno (m²)
 * Área construida (m²)
 
-En cuanto al Registro 2 del IGAC, este corresponde a la información catastral en su componente alfanumérico que describe los aspectos generales del predio en su aspecto físico:
+> En cuanto al Registro 2 del IGAC, este corresponde a la información catastral en su componente alfanumérico que describe los aspectos generales del predio en su aspecto físico, tales como: Departamento, Municipio, Número predial, Zona homogénea física, Zona homogénea geoeconómica, Número de baños, Número de locales, Número de pisos, Tipificación, Uso construcción,Puntaje y Área construida (m²). 
 
-* Departamento
-* Municipio
-* Número predial
-* Zona homogénea física
-* Zona homogénea geoeconómica
-* Número de baños
-* Número de locales
-* Número de pisos
-* Tipificación
-* Uso construcción
-* Puntaje
-* Área construida (m²) 
+1. Agregue a la tabla de contenido, el registro 1 del IGAC disponible en la raíz de la base de datos, abra la tabla y revise su contenido. Como observa,
 
-1. Carge
-
+<div align="center"><img src="graph/ArcGISPro_VeredaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
@@ -128,7 +116,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) 
 
 
 ## Control de versiones
