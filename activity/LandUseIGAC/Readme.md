@@ -44,10 +44,40 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 
 <div align="center"><img src="graph/ArcGISPro_AvaluoChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. A partir del campo `tipo_avaluo`, cree un gráfico de barras totalizando el área. Como observa, a nivel predial, la vereda con mayor extensión es la 2589900000009.
+6. A partir del campo `tipo_avaluo`, cree un gráfico de barras totalizando el área. Como observa, a nivel predial, la vereda con mayor extensión es la 2589900000009 y la zona que contiene el mayor número de unidades prediales, es la urbana.
 
 <div align="center"><img src="graph/ArcGISPro_VeredaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_VeredaChart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+
+## 2. Base catastral Registro 1
+
+Para el estudio de las destinaciones económicas, utilizaremos el Registro 1 del IGAC, que corresponde a la información catastral en su componente alfanumérico, que describe los aspectos generales del predio en su aspecto físico:
+
+* Departamento
+* Municipio
+* Número predial
+* Dirección
+* Destino económico
+* Área de terreno (m²)
+* Área construida (m²)
+
+En cuanto al Registro 2 del IGAC, este corresponde a la información catastral en su componente alfanumérico que describe los aspectos generales del predio en su aspecto físico:
+
+* Departamento
+* Municipio
+* Número predial
+* Zona homogénea física
+* Zona homogénea geoeconómica
+* Número de baños
+* Número de locales
+* Número de pisos
+* Tipificación
+* Uso construcción
+* Puntaje
+* Área construida (m²) 
+
+1. Carge
 
 
 
