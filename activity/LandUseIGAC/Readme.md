@@ -267,6 +267,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf) 
 * https://colaboracion.dnp.gov.co/CDT/Programa%20Nacional%20del%20Servicio%20al%20Ciudadano/NORMATIVA%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf
+* https://geoportal.igac.gov.co/contenido/datos-abiertos-catastro
 
 
 ## Control de versiones
