@@ -19,7 +19,7 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 * [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
+* [:open_file_folder:LandUseIGAC.xlsx](LandUseIGAC.xlsx): libro con códigos y descriptores de destinaciones económicas de predios IGAC.
 
 
 ## 1. Integración predial
@@ -43,6 +43,7 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 4. A partir del campo tipo de avalúo, cree un gráfico de pastel totalizando el área. Como observa, a nivel predial, el área urbana ocupa el 3.4% del área municipal, y el área rural el 96.6%.
 
 <div align="center"><img src="graph/ArcGISPro_AvaluoChart.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AvaluoChart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 6. A partir del campo `tipo_avaluo`, cree un gráfico de barras totalizando el área. Como observa, a nivel predial, la vereda con mayor extensión es la 2589900000009 y la zona que contiene el mayor número de unidades prediales, es la urbana.
 
@@ -97,7 +98,27 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 | Q      | Servicios Especiales                      | Predios que genera alto impacto ambiental y /o Social. Entre otros, están:  Centro de Almacenamiento de Combustible, Cementerios, Embalses, Rellenos Sanitarios, Lagunas de Oxidación, Mataderos, Frigoríficos y Cárceles. Parágrafo 1°. Esta clasificación podrá ser objeto de subclasificación de acuerdo con lo establecido mediante reglamento del Instituto Geográfico "Agustín Codazzi". Parágrafo 2°. En los casos de existir diversas destinaciones en un mismo predio, se clasificará atendiendo aquella actividad predominante que se desarrolle, para lo cual se aplicará el criterio de tomar la mayor área de terreno y /o construcción. Parágrafo 3°. Para fines catastrales y estadísticos los lotes se clasificarán de acuerdo con su grado de desarrollo, así |
 | R      | Lote urbanizable no urbanizado            | Predios no construidos que estando reglamentados para su desarrollo, no han sido urbanizados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | S      | Lote urbanizado no construido o edificado | Predios no construidos que cuentan con algún tipo de obra de urbanismo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| T      | Lote No Urbanizable                       | Predios que de conformidad con la reglamentación no se permite su desarrollo urbanístico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| T      | Lote no Urbanizable                       | Predios que de conformidad con la reglamentación no se permite su desarrollo urbanístico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+1. Desde el libro de Excel suministrado _LandUseIGAC.xlsx_, cargue al proyecto la hoja _DestEc_. Verifique que contenga 21 registros.
+
+<div align="center"><img src="graph/ArcGISPro_LandUseIGAC.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento Data Management _Tools / Table To Domain_, cree la tabla de dominio. Dando botón derecho sobre la base de datos geográfica SIGE.gdb, consulte las tablas de dominio mediante la opción _Domains_.
+
+<div align="center"><img src="graph/ArcGISPro_TableToDomain.png" alt="R.SIGE" width="100%" border="0" /></div>. 
+
+3. En la tabla de atributos _Registro1_ y desde el editor de campos, asocie el dominio _DestEc_ al campo `destino_econ`.
+
+<div align="center"><img src="graph/ArcGISPro_DomainAsoc.png" alt="R.SIGE" width="100%" border="0" /></div>.
+
+4. A partir de la tabla _Registro1_, cree una gráfica de barras que represente el número de predios por cada destinación. Podrá observar que en los rótulos aparecen los nombres descriptivos de cada destinación y no solo su código, también que la categoría con el mayor número de registros catastrales es la habitacional con 31237 filas.
+
+> Tenga en cuenta que el _Registro1_ del IGAC, contiene la información de todos los propietarios, y que el conteo obtenido se refiere al número de registros y no al número de predios.
+
+<div align="center"><img src="graph/ArcGISPro_Registro1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>.
+
+
 
 
 
