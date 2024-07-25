@@ -121,7 +121,7 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 ## 4. Integración de predios a registros de catastro y estudio de destinaciones 
 
-1. En la tabla del Registro 1 de catastro, filtre los registros a partir del Orden 1 (`num_orden = '001'`), de los 46305 5 registros obtendrá 20939.  
+1. En la tabla del Registro 1 de catastro, filtre los registros a partir del Orden 1 (`num_orden = '001'`), de los 46305 registros obtendrá 30939.  
 
 > El filtro le permitirá obtener los registros correspondientes solo al propietario principal de cada inmueble. Si bien, en un predio pueden existir propiedades horizontales y mejoras con diferentes destinaciones, se puede considerar como predominante la contenida en el orden 001. 
 
@@ -137,7 +137,7 @@ El artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 4. En la tabla de contenido o _Contents_, de clic derecho en la capa de predios y mediante la opción _Data / Export Features_, cree una copia de esta capa, nombre como `\file\gdb\SIGE.gdb\SIGE\TerrenoPredio_2013_DestEc`. 
 
-<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_TerrenoPredio_2013_DestEc.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
