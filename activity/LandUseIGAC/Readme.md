@@ -107,17 +107,17 @@ El Artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 2. Utilizando la herramienta de geo-procesamiento Data Management _Tools / Table To Domain_, cree la tabla de dominio. Dando botón derecho sobre la base de datos geográfica SIGE.gdb, consulte las tablas de dominio mediante la opción _Domains_.
 
-<div align="center"><img src="graph/ArcGISPro_TableToDomain.png" alt="R.SIGE" width="100%" border="0" /></div>. 
+<div align="center"><img src="graph/ArcGISPro_TableToDomain.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. En la tabla de atributos _Registro1_ y desde el editor de campos, asocie el dominio _DestEc_ al campo `destino_econ`.
 
-<div align="center"><img src="graph/ArcGISPro_DomainAsoc.png" alt="R.SIGE" width="100%" border="0" /></div>.
+<div align="center"><img src="graph/ArcGISPro_DomainAsoc.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. A partir de la tabla _Registro1_, cree una gráfica de barras que represente el número de predios por cada destinación. Podrá observar que en los rótulos aparecen los nombres descriptivos de cada destinación y no solo su código, también que la categoría con el mayor número de registros catastrales es la habitacional con 31237 filas.
 
 > Tenga en cuenta que el _Registro1_ del IGAC, contiene la información de todos los propietarios, y que el conteo obtenido se refiere al número de registros y no al número de predios.
 
-<div align="center"><img src="graph/ArcGISPro_Registro1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>.
+<div align="center"><img src="graph/ArcGISPro_Registro1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 4. Integración de predios a registros de catastro y estudio de destinaciones 
