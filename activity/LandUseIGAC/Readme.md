@@ -184,6 +184,38 @@ Abra la tabla generada, podrá observar que para cada clase de suelo, se pueden 
 
 <div align="center"><img src="graph/ArcGISPro_Summarize3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+De acuerdo a lo establecido en el Artículo 19 del Acuerdo Municipal 012 de 2013, para la asignación y definición de prioridades y compatibilidades, se distinguen las siguientes cuatro categorías de usos:
+
+<div align="center">
+
+| Uso                               | Descripción                                                                                                                                                                                                              |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Uso principal                     | Uso deseable que coincide con la función específica de la zona y que ofrece las mayores ventajas para el desarrollo sostenible.                                                                                          |
+| Usos compatibles                  | Son aquellos que no se oponen al principal y concuerdan con la potencialidad, productividad y protección del suelo y demás recursos naturales conexos.                                                                   |
+| Usos condicionados o restringidos | Son aquellos que presentan algún grado de incompatibilidad urbanística y/o ambiental que se puede controlar de acuerdo con las condiciones que impongan las normas urbanísticas y ambientales correspondientes.          |
+| Usos prohibidos                   | Son aquellos incompatibles con el uso principal de una zona, con los objetivos de conservación ambiental, de planificación ambiental territorial y por consiguiente, implica graves riesgos de tipo ecológico y social.  |
+
+</div>
+
+Con respecto a las áreas de rurales y las de conservación y protección ambiental que definen la estructura ecológica principal y según lo establecido en los Artículos 20 y 135 del mismo Acuerdo, se establecen como prohibidos los siguientes usos:
+
+| Artículo | Categoría de suelo                                                               | Uso prohibido                                                                                                                                                                                                                                                                                                           |
+|----------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 20       | Distrito de manejo integrado páramo y sub-páramo de Guerrero                     | Agropecuario mecanizado, recreación masiva, parcelación con fines de construcción de vivienda campestre, minería y extracción de materiales de construcción.                                                                                                                                                            |
+| 20       | Bosque protector                                                                 | Agropecuarios, industriales, urbanísticos, minería, institucionales y actividades como tala, quema, caza y pesca.                                                                                                                                                                                                       |
+| 20       | Área de amortiguación de áreas protegidas                                        | Institucionales, agropecuario mecanizado, recreación masiva y parcelaciones con fines de construcción de vivienda campestre, minería y extracción de materiales de construcción.                                                                                                                                        |
+| 20       | Ronda de protección río Bogotá – CAR                                             | Agropecuario tradicional, mecanizado o industrial, forestal productor, recreación activa, minero e industrial de todo tipo, extracción de materiales de construcción y/o material de río, disposición de residuos sólidos, quema y tala de vegetación nativa, rocería de la vegetación, caza, residencial de todo tipo. |
+| 20       | Áreas periféricas a nacimientos, cauces de ríos y quebradas, lagunas y humedales | Usos agropecuarios, industriales, urbanos, loteo y construcción de viviendas, minería, disposición de residuos sólidos, tala y rocería de la vegetación.                                                                                                                                                                |
+| 135      | Área agropecuaria tradicional                                                    | Residencial con intensidad urbana y suburbana, industria, loteos y parcelaciones para uso residencial campestre, minería y los demás no considerados como usos principales, compatibles o condicionados.                                                                                                                |
+| 135      | Área agropecuaria semi-intensiva                                                 | Residencial con intensidad urbana y suburbana, industria, loteos y parcelaciones para uso residencial campestre, minería y los demás no considerados como usos principales, compatibles o condicionados.                                                                                                                |
+| 135      | Área agropecuaria intensiva                                                      | Residencial con intensidad urbana y suburbana, industria, loteos y parcelaciones para uso residencial campestre, minería y los demás no considerados como usos principales, compatibles o condicionados. Las demás no contempladas.                                                                                     |
+| 135      | Área de bosque protector - productor                                             | Agropecuarios, industriales, urbanísticos, minería, institucionales y actividades como tala, quema, caza y pesca. Las demás no contempladas.                                                                                                                                                                            |
+| 135      | Área de actividad de vivienda campestre                                          | Residencial con intensidad urbana y suburbana,	industria, minería	y los demás no considerados como usos principales, compatibles o condicionados. Las demás no contempladas.                                                                                                                                            |
+
+
+
+
+
 
 
 ## 6. Análisis usando software libre - QGIS
