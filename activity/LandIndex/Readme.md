@@ -103,14 +103,13 @@ De esta forma, ha obtenido en cada registro catastral, los mismos códigos de ve
 
 5. Remueva la unión y calcule el índice de construcción dividiendo el área total construída entre el área total de la zona (`IndConst = !AreaConsm2!/!AGm2!`). Modifique el rótulo incluyendo el índice obtenido. Podrá observar que el área urbana tiene el mayor índice correspondiente a 0.65 o 65% de construcción, y que las veredas por ser rurales, presentan índices comparativamente menores. 
 
-Rótulo Arcade: `$feature.ZonaGeo + '\nIndCons: ' + round($feature.IndConst, 4) + "(" + round($feature.IndConst*100, 4) + "%)"`
+Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4) + " (" + round($feature.IndConst*100, 4) + "%)"`
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 6. Cree una gráfica de barras representando los índices obtenidos.
 
 <div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
-
 
 
 ## 3. Índice general de ocupación
