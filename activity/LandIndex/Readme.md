@@ -233,9 +233,9 @@ Rótulo Arcade: `$feature.codigo + "\nIndOcup: " + round($feature.IndOcup, 4) + 
 
 <div align="center"><img src="graph/ArcGISPro_IndOcup1sup.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. 
+8. Desactive las construcciones y modifique la simbología de las manzanas utilizando una representación por _Colores Graduados_ por quantiles a partir del campo del índice de ocupación. Incluya también una gráfica de estadística visual a partir del campo del índice, y una gráfica de dispersión comparando las áreas de las manzanas vs. el área total construída. Podrá observar que las ocupaciones altas se encuentran en las manzanas pequeñas, que los índices no se encuentran distribuídos al rededor de una tendencia centrada y que no hay una relación directa dominante entre el tamaño de las manzanas y sus áreas ocupadas.
 
-
+<div align="center"><img src="graph/ArcGISPro_Chart3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 5. Análisis usando software libre - QGIS
