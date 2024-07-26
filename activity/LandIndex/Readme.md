@@ -21,10 +21,16 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 0. Definiciones[^1]
+## 0. Definiciones
 
-* **Índice de ocupación**: es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio.
-* **Índice de construcción**: es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.
+<div align="center">
+
+| Índice                  | Descripción[^1]                                                                                                                                                                                                                                                     |                                                             |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| Indice de ocupación     | Es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio. | Se interpreta como el desarrollo horizontal de un inmueble. |
+| Índice de construcción  | Es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.                   | Se interpreta como el desarrollo vertical de un inmueble.   |
+
+</div>
 
 
 ## 1. Obtención de zonas geopolíticas y categorización de registros catastrales
@@ -70,11 +76,11 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Seleccione por atributos, los registros rurales cuyo código de zona es _2589900_ (15063 registros catastrales) y utilizando el calculador de campo, asigne en _vereda_id_, los 13 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:13]`). 
+8. Seleccione por atributos, los registros rurales cuyo código de zona es _2589900_ (15063 registros catastrales) y utilizando el calculador de campo, asigne en `vereda_id`, los 13 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:13]`). 
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-9. Seleccione por atributos, los registros urbanos cuyo código de zona es _2589901_ (31242 registros catastrales) y utilizando el calculador de campo, asigne en _vereda_id_, los 7 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:7]`). 
+9. Seleccione por atributos, los registros urbanos cuyo código de zona es _2589901_ (31242 registros catastrales) y utilizando el calculador de campo, asigne en `vereda_id`, los 7 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:7]`). 
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -83,7 +89,7 @@ De esta forma, ha obtenido en cada registro catastral, los mismos códigos de ve
 
 ## 2. Índice general de construcción 
 
-1. En la tabla de atributos _IGAC2009Registro1_, y utilizando la herramienta de resúmen estadístico o _Summarize_ sobre el campo de atributos _vereda_id_, genere una tabla que consolide el total de metros construídos en cada zona geográfica definida. Nombre la tabla como `\file\gdb\SIGE.gdb\IGAC2009Registro1_IndConstGeneral`.
+1. En la tabla de atributos _IGAC2009Registro1_, y utilizando la herramienta de resúmen estadístico o _Summarize_ sobre el campo de atributos `vereda_id`, genere una tabla que consolide el total de metros construídos en cada zona geográfica definida. Nombre la tabla como `\file\gdb\SIGE.gdb\IGAC2009Registro1_IndConstGeneral`.
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -114,7 +120,7 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 
 ## 3. Índice general de ocupación
 
-Para la estimación del índice de ocupación, es necesario excluir de la tabla de registros catastrales, los identificadores de condición de propiedad y número de construcción repetidos; para ello, incluiremos en el análisis solo los valores con los códigos indicados en la siguiente tabla:
+Para la estimación del índice de ocupación, es necesario excluir de la tabla de registros catastrales, los propietarios secudarios y los identificadores de condición de propiedad y número de construcción repetidos; para ello, incluiremos en el análisis solo los valores con los códigos indicados en la siguiente tabla:
 
 <div align="center">
 
@@ -122,21 +128,65 @@ Para la estimación del índice de ocupación, es necesario excluir de la tabla 
 |:---------------------------:|---------------------------------------------------------------------------------------------------------|:----------------:|
 |              0              | Predio no reglamentado en propiedad horizontal - PH                                                     |       000        |
 |              9              | Predio en propiedad horizontal - PH                                                                     |       900        |
-|              8              | Predio en condominio                                                                                    |       800        |
-|              7              | Parques cementerios                                                                                     |       700        |
-|              6              | Mejoras por edificaciones en terreno ajeno en propiedad horizontal - PH                                 |       600        |
-|              5              | Mejoras por edificaciones en terreno ajeno de propiedades no reglamentadas en propiedad horizontal - PH |       500        |
-|              4              | Vías                                                                                                    |       400        |
-|              3              | Bienes de uso público diferentes a las vías                                                             |       300        |
-|              2              | No Ley 14 de 1983                                                                                       |       200        |
+|              8              | Predio en condominio                                                                                    |       801        |
+|              7              | Parques cementerios                                                                                     |       701        |
+|              6              | Mejoras por edificaciones en terreno ajeno en propiedad horizontal - PH                                 |       601        |
+|              5              | Mejoras por edificaciones en terreno ajeno de propiedades no reglamentadas en propiedad horizontal - PH |       501        |
+|              4              | Vías                                                                                                    |       401        |
+|              3              | Bienes de uso público diferentes a las vías                                                             |       301        |
+|              2              | No Ley 14 de 1983                                                                                       |       201        |
 
 </div>
+
+> El código de inclusión dependerá de las mutaciones catastrales contenidas en el municipio, en municipios con formación catastral antigua no actualizada, algunos de los códigos primarios (201, 301, 401...) no fueron conservados dinámicamente.
+
+
+1. En la tabla _IGAC2009Registro1_, cree un campo de texto de 3 caracteres con el nombre _CPropCons_, utilizando el calculador de campo, obtenga los 3 dígitos finales del campo `CODPROPIEDAD`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el _Definition Query_ de la tabla de registros catastrales, filtre las filas correspondientes a números de orden 001 y condición de propiedad y construcción primarios. Obtendrá 27108 registros que no coinciden exactamente con el número de unidades prediales presentes en la capa _TerrenoPredio_2013_, correspondientes a 26304 (804 registros más).
+
+> La diferencia principal se debe a que el registro 1 contienen más registros de propiedad primaria que las unidades prediales incluídas en la capa de predio. Generalmente, los procesos de actualización predial no son incorporados en la capa de vectores inmediatamente de la expedición de resolución de subdivisión. 
+
+Definition Query para este ejemplo: `num_orden = '001' And CPropCons IN ('000', '201', '801', '901', '329')`
+
+<div align="center"><img src="graph/ArcGISPro_DefinitionQuery1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la tabla de atributos _IGAC2009Registro1_, y utilizando la herramienta de resúmen estadístico o _Summarize_ sobre el campo de atributos `vereda_id`, genere una tabla que consolide el total de metros construídos en cada zona geográfica definida. Nombre la tabla como `\file\gdb\SIGE.gdb\IGAC2009Registro1_IndOcupGeneral`.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Abra la tabla de obtenida y verifique su contenido. Verifique que la sumatoria de las frecuencias sea igual al total de registros filtrados, correspondientes a 27108, para ello, en la cabecera de columna del campo `FRECUENCY` de clic derecho y seleccione la opción _Visualize Statistics_.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la capa _Vereda_TerrenoPredio_2013_, agregue 2 campos numéricos dobles con los nombres `AreaOcupm2` y `IndOcup`. Luego cree un _Join_ o unión de tablas con los registros obtenidos del resúmen estadístico _IGAC2009Registro1_IndOcupGeneral_
+
+<div align="center"><img src="graph/ArcGISPro_Join5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+6. Utilizando el calculador de campo, asigne en `AreaOcupm2` el valor obtenido en el campo `SUM_area_construida`. Como observa, el área ocupada es menor que el área construída.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Remueva la unión y calcule el índice de ocupación dividiendo el área total ocupada entre el área total de la zona (`IndOcup = !AreaOcupm2!/!AGm2!`). Modifique el rótulo incluyendo el índice obtenido. Podrá observar que el área urbana tiene el mayor índice correspondiente a 0.65 o 65% de construcción, y que las veredas por ser rurales, presentan índices comparativamente menores. 
+
+Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4) + " (" + round($feature.IndConst*100, 4) + "%)\nIndOcup: " + round($feature.IndOcup, 4) + " (" + round($feature.IndOcup*100, 4) + "%)" `
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Cree una gráfica de barras representando los índices obtenidos.
+
+<div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
 
 ## 4. Índice de ocupación y construcción por manzana urbana
 
+Puede ser realizado a partir de polígonos, sin embargo no se encuentran actualizadas todas las costrucciones
 
 
 ## 5. Análisis usando software libre - QGIS
