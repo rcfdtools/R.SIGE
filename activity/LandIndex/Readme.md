@@ -39,8 +39,8 @@ Para el análisis de estos índices, se pueden utilizar diferentes estrategias:
 | Estrategia                           | Descripción                                                                                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | A partir de registros catastrales    | Las tablas del registro catastral 1 y 2 del IGAC, contiene información detallada de las características generales y físicas de los inmuebles. Se actualizan con mayor frecuencia que las bases prediales vectoriales, sin embargo, las áreas de predios y construcciones registradas pueden no corresponder con el área geodésica o planar de las capas de predios y construcciones. |
-| A partir de información cartográfica | A partir de la cartografía digital de predios y construcciones y sus áreas planares o geodésicas se puede realizar el análisis de ocupación, sin embargo, no es posible calcular indice de construcción. Generalmente, las bases vectoriales prediales, no contienen el mismo número de predios que contienen las tablas de registros catastrales.                                   |
-| Por foto-interpretación              | Utilizando imágenes satelitales históricas, se puede evaluar el desarrollo progresivo de las construcciones, sin embargo, la resolución espacial de captura es una limitante en construcciones pequeñas y el tiempo de procesamiento puede ser extenso si no se implementan algoritmos de aprendizaje.                                                                               |
+| A partir de información cartográfica | A partir de la cartografía digital de predios y construcciones y sus áreas planares o geodésicas, se puede realizar el análisis de ocupación, sin embargo, no es posible calcular indice de construcción. Generalmente, las bases vectoriales prediales, no contienen el mismo número de predios que contienen las tablas de registros catastrales.                                  |
+| Por foto-interpretación              | Utilizando imágenes satelitales históricas, se puede evaluar el desarrollo progresivo de las construcciones y calcular las ocupaciones, sin embargo, la resolución espacial de captura es una limitante en construcciones pequeñas y el tiempo de procesamiento puede ser extenso si no se implementan algoritmos de aprendizaje.                                                    |
 
 </div>
 
@@ -141,7 +141,7 @@ Para la estimación del índice de ocupación, es necesario excluir de la tabla 
 |  Condición de<br>propiedad  | Descripción[^2]                                                                                         | Código a incluir |
 |:---------------------------:|---------------------------------------------------------------------------------------------------------|:----------------:|
 |              0              | Predio no reglamentado en propiedad horizontal - PH                                                     |       000        |
-|              9              | Predio en propiedad horizontal - PH                                                                     |       900        |
+|              9              | Predio en propiedad horizontal - PH                                                                     |       901        |
 |              8              | Predio en condominio                                                                                    |       801        |
 |              7              | Parques cementerios                                                                                     |       701        |
 |              6              | Mejoras por edificaciones en terreno ajeno en propiedad horizontal - PH                                 |       601        |
@@ -175,7 +175,7 @@ Definition Query para este ejemplo: `num_orden = '001' And CPropCons IN ('000', 
 
 <div align="center"><img src="graph/ArcGISPro_Summarize4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En la capa _Vereda_TerrenoPredio_2013_, agregue 2 campos numéricos dobles con los nombres `AreaOcupm2` y `IndOcup`. Luego cree un _Join_ o unión de tablas con los registros obtenidos del resúmen estadístico _IGAC2009Registro1_IndOcupGeneral_
+5. En la capa _Vereda_TerrenoPredio_2013_, agregue 2 campos numéricos dobles con los nombres `AreaOcupm2` e `IndOcup`. Luego cree un _Join_ o unión de tablas con los registros obtenidos del resúmen estadístico _IGAC2009Registro1_IndOcupGeneral_
 
 <div align="center"><img src="graph/ArcGISPro_Join5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -195,12 +195,39 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 <div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 4. Índice de ocupación por manzana urbana
+
+1. Desde la ruta `\file\gdb\SIGE.gdb\IGAC2013Urbano\`. agregue al mapa las capas _MANZANA_, _EDIFICACION_ y _CONSTRUCCION_ANEXA_. Simbolice utilizando colores que permitan diferencias las construcciones y rotule las manzanas a partir de campo `codigo`.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Merge_, combine los polígonos de las construcciones en una única capa, nombre como `\file\gdb\SIGE.gdb\SIGE\Construccion_2013`. 
+
+<div align="center"><img src="graph/ArcGISPro_Merge1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la capa combinada, cree un campo de numérico doble con el nombre `AGm2` y calcule el área geodésica de cada construcción, también cree un campo de texto de 30 caracteres de longitud con el nombre `ManzanaId` y asigne los primeros 13 caracteres del campo `terreno_predio_id`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta _Summarize_ sobre el campo `ManzanaId` de la capa de construcciones integradas, genere un resúmen estadístico totalizando el área ocupada en cada manzana. Nombre como `\file\gdb\SIGE.gdb\Construccion_2013_Manzana`. Como observa, en cada manzana a obtenido el número de construcciones que la ocupan y el área tota de ocupación.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la capa de manzanas urbanas, cree dos campos numéricos dobles con los nombres `AreaOcupm2` e `IndOcup`. Luego realice un _Join_ o unión con la tabla de resumen estadístico de construcciones por manzana.
+
+<div align="center"><img src="graph/ArcGISPro_Join6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando el calculador de campo sobre `AreaOcupm2` de la capa de manzanas, asigne el valor `SUM_AGm2` de la tabla de resúmen estadístico.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator10.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Remueva la unión y en el campo `IndOcup`, calcule el índice de ocupación dividiendo el total del área ocupada entre el área total de la manzana.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
-## 4. Índice de ocupación y construcción por manzana urbana
 
-Puede ser realizado a partir de polígonos, sin embargo no se encuentran actualizadas todas las costrucciones
 
 
 ## 5. Análisis usando software libre - QGIS
