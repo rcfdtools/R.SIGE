@@ -37,6 +37,8 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 2. Utilizando la herramienta de geo-procesamiento _Data Managenet Tools / Dissolve_, disuelva los predios a partir del campo `vereda_id`, nombre como `\file\gdb\SIGE.gdb\SIGE\Vereda_TerrenoPredio_2013`. Abra la tabla de atributos, podrá observar que se obtienen 15 polígonos y que no se encuentra el nombre de las veredas y del área urbana.
 
+> La disolución de predios para obtener los límites geopolíticos internos del municipio, no incluyen las áreas correspondientes a los corredores viales. Para el análisis de índices de ocupación y construcción, utilizaremos únicamente el área correspondiente a las unidades inmobiliarias.
+
 <div align="center"><img src="graph/ArcGISPro_Dissolve1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. Para asignar incluir los nombres de las veredas en la capa disuelta, cree un campo de texto de 100 caracteres de longitud e identifíquelo como `ZonaGeo`. Agregue la capa de veredas utilizadas en el diagnóstico del POT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\VEREDA1` y realice un _Join_ o unión de registros en la capa disuelta.  
@@ -52,6 +54,11 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 > Recuerde que en el análisis veredal realizado en la actividad [Análisis veredal y límite territorial.](../CountyLimit/Readme.md), evidenciamos que los códigos veredales y nombres de veredas DANE, fueron actualizados en el año 2020. Para este ejemplo, utilizaremos la codificación utilizada en la formulación del POT del año 2013.
 
 <div align="center"><img src="graph/ArcGISPro_Join3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Agregue al mapa la tabla del registro 1 de catastro del IGAC, disponible en la ruta `\file\gdb\SIGE.gdb\IGAC2009Registro1`. Cree un campo de atributos tipo texto de 30 caracteres con el nombre `vereda_id` y utilizando el calculador de campo, obtenga los 13 primeros dígitos del campo `PRE_COD` de cada uno de los 46305 registros de esta tabla (`vereda_id=!PRE_COD![:13]`).
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
