@@ -25,10 +25,21 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center">
 
-| Índice                  | Descripción[^1]                                                                                                                                                                                                                                                     |                                                             |
+| Índice                  | Descripción[^1]                                                                                                                                                                                                                                                     | Interpretación                                              |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | Indice de ocupación     | Es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio. | Se interpreta como el desarrollo horizontal de un inmueble. |
 | Índice de construcción  | Es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.                   | Se interpreta como el desarrollo vertical de un inmueble.   |
+
+</div>
+
+Para el análisis de estos índices, se pueden utilizar diferentes estrategias:
+
+<div align="center">
+
+| Estrategia                           | Descripción                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A partir de registros catastrales    | Las tablas del registro catastral 1 y 2 del IGAC, contiene información detallada de las características generales y físicas de los inmuebles.<br>Se actualizan con mayor frecuencia que las bases prediales vectoriales, sin embargo, las áreas de predios y construcciones registradas pueden no corresponder con el área geodésica o planar de las capas de predios y construcciones. |
+| A partir de información cartográfica | A partir de la cartografía digital de predios y construcciones y sus áreas planares o geodésicas se puede realizar el análisis de ocupación, sin embargo, no es posible calcular indice de construcción. Generalmente, las bases vectoriales prediales, no contienen el mismo número de predios que contienen las tablas de registros catastrales.                                      |
 
 </div>
 
