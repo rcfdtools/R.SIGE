@@ -27,7 +27,7 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 * **Índice de construcción**: es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.
 
 
-## 1. Índice general de ocupación y construcción
+## 1. Obtención de zonas geopolíticas y categorización de registros catastrales
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandIndex_ y establezca el CRS 9377. Agregue al mapa la capa de predios creada en la actividad [Análisis de destinaciones económicas IGAC](../LandUseIGAC/Readme.md), nombrada como `\file\gdb\SIGE.gdb\SIGE\TerrenoPredio_2013`, ajuste la simbología a valores únicos representando el campo de atributos `vereda_id`.  
 
@@ -70,24 +70,59 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Seleccione por atributos, los registros rurales cuyo código de zona es _2589900_ (15063 registros catastrales) y utilizando el calculador de campo, obtenga en _vereda_id_, los 13 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:13]`). 
+8. Seleccione por atributos, los registros rurales cuyo código de zona es _2589900_ (15063 registros catastrales) y utilizando el calculador de campo, asigne en _vereda_id_, los 13 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:13]`). 
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-9. Seleccione por atributos, los registros urbanos cuyo código de zona es _2589901_ (31242 registros catastrales) y utilizando el calculador de campo, obtenga en _vereda_id_, los 7 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:7]`). 
+9. Seleccione por atributos, los registros urbanos cuyo código de zona es _2589901_ (31242 registros catastrales) y utilizando el calculador de campo, asigne en _vereda_id_, los 7 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:7]`). 
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-    
+De esta forma, ha obtenido en cada registro catastral, los mismos códigos de vereda de los polígonos generados previamente en la disolución de predios.
+
+
+## 2. Índice general de construcción 
+
+1. En la tabla de atributos _IGAC2009Registro1_, y utilizando la herramienta de resúmen estadístico o _Summarize_ sobre el campo de atributos _vereda_id_, genere una tabla que consolide el total de metros construídos en cada zona geográfica definida. Nombre la tabla como `\file\gdb\SIGE.gdb\IGAC2009Registro1_IndConstGeneral`.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Abra la tabla de resumen generada, podrá observar que contienen el conteo de registros utilizados en cada zona, la sumatoria de área catastral construída y la sumatoria del área de las construcciones.
+
+> Tenga en cuenta que en predios que contienen mejoras y propiedades horizontales, el área total de terreno obtenida, incluye la sumatoria múltiple de las áreas del mismo predio. Por ejemplo, si un predio de 100 m² posee internamente 4 mejoras, la sumatoria de terreno obtenida en el resumen estadístico de este predio será de 400 m². Al calcular los índices de construcción a partir de esta sumatoria, obtendrá valores errados y menores al índice de construcción real del predio. Es por ello que el cálculo del índice general se debe realizar a partir del área planar o geodésica de los polígonos disueltos a partir de las unidades prediales.  
+
+<div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la capa _Vereda_TerrenoPredio_2013_, agregue 3 campos numéricos dobles con los nombres `AGm2`, `AreaConsm2`, `IndConst`. Luego cree un _Join_ o unión de tablas con los registros obtenidos del resúmen estadístico _IGAC2009Registro1_IndConstGeneral_
+
+<div align="center"><img src="graph/ArcGISPro_Join4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando el calculador de geometría, calcule el área geodésica `AGm2` de cada zona geográfica y asigne en `AreaConsm2` el valor obtenido en el campo `SUM_area_construida`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Remueva la unión y calcule el índice de construcción dividiendo el área total construída entre el área total de la zona (`IndConst = !AreaConsm2!/!AGm2!`). Modifique el rótulo incluyendo el índice obtenido. Podrá observar que el área urbana tiene el mayor índice correspondiente a 0.65 o 65% de construcción, y que las veredas por ser rurales, presentan índices comparativamente menores. 
+
+Rótulo Arcade: `$feature.ZonaGeo + '\nIndCons: ' + round($feature.IndConst, 4) + "(" + round($feature.IndConst*100, 4) + "%)"`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Cree una gráfica de barras representando los índices obtenidos.
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+## 3. Índice general de ocupación
 
 
 
 
-## 2. Índice de ocupación y construcción por manzana
+## 4. Índice de ocupación y construcción por manzana urbana
 
 
 
-## 3. Análisis usando software libre - QGIS
+## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
