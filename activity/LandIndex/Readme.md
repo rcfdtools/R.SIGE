@@ -223,8 +223,13 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 
 7. Remueva la unión y en el campo `IndOcup`, calcule el índice de ocupación dividiendo el total del área ocupada entre el área total de la manzana.
 
+> Tenga en cuenta que para las manzanas sin construcciones, el indicador no será calculado y Python devolverá un mensaje a advertencia indicando que no se calcularon todos los valores solicitados.
+
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+En algunos casos, el índice de ocupación puede ser mayor que 1.000, esto debido a que pueden existir construcciones que cubran toda la manzana y que tengan voladizos o cubiertas fuera de ella.
+
+<div align="center"><img src="graph/ArcGISPro_IndOcup1sup.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
