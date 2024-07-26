@@ -10,6 +10,7 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 * Estimar el índice de ocupación y construcción municipal.
 * Representar geográficamente los índices obtenidos.
+* Identificar diferentes estrategias para el cálculo de índices y conocer sus limitaciones.
 
 
 ## Requerimientos
@@ -273,8 +274,11 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P3** | Realice el análisis de índices presentado en esta actividad. Complementariamente, realice el cálculo del índice de construcción en cada manzana urbana a partir de los valores reportados en la tabla del Registro 1 del IGAC.                                                                                                                                                                                                                      | 
+| Avance **P3** | Descargue la base predial y registros catastrales más recientes de su caso de estudio, realice un análisis de índices actualizado y compare con los valores obtenidos del estudio del POT.                                                                                                                                                                                                                                                          | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-4: Indices generales de ocupación y construcción por vereda y en el área urbana._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                               | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-5: Índices de ocupación y construcción por manzana urbana._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                     | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-6: Comparación índices adopción POT vs. ultima actualización catastral._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                        | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -293,8 +297,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.03.21 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.26 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
