@@ -8,32 +8,43 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 ## Objetivos
 
-* 
+* Estimar el índice de ocupación y construcción municipal.
+* Representar geográficamente los índices obtenidos.
 
 
 ## Requerimientos
 
-* [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
+* [:mortar_board:Actividad](../LandUseIGAC/Readme.md): Análisis de destinaciones económicas IGAC (creación de dominios).
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
+
+
+## 0. Definiciones[^1]
+
+* Índice de ocupación: es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio.
+* Índice de construcción: es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.
+
+
+## 1. Índice general de ocupación y construcción
+
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _LandIndex_ y establezca el CRS 9377. Agregue al mapa la capa de predios creada en la actividad [Análisis de destinaciones económicas IGAC](../LandUseIGAC/Readme.md), nombrada como `\file\gdb\SIGE.gdb\SIGE\TerrenoPredio_2013`, ajuste la simbología a valores únicos representando el campo de atributos `vereda_id`.  
+
+> Previamente, a los predios de la zona urbana, se les asignó el código `vereda_id` = 2589901, con el propósito de poder crear análisis estadísticos y poblar completamente este campo. 
+
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
-## 1. Procedimiento general en ArcGIS Pro
-
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
-
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
+## 2. Índice de ocupación y construcción por manzana
 
-## 2. Análisis usando software libre - QGIS
+
+
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -97,4 +108,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../LandUseIGAC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
-[^1]: 
+[^1]: https://www.sdp.gov.co/sites/default/files/dts_0.pdf

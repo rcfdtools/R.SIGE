@@ -25,7 +25,7 @@ A partir de las capas orden vial y red vial urbana, contenidas en los anexos de 
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RoadSummary_ y establezca el CRS 9377. Agregue al mapa desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\` las capas VIAS_PERIMETRO_URBANO.shp, ORDEN_VIAL.shp y MOT.shp, ajuste los colores para diferenciar las vías urbanas de las rurales y en el MOT, filtre la zona urbana y de expansión. 
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 2. Verifique las vías en el contorno de la zona urbana, podrá observar que varios de los tramos rurales se extienden dentro de esta zona y que en la mayoría de los casos, en la red vial urbana, ya se encuentran digitalizados. Para integrar estas dos capas en una única capa de análisis, primero crearemos una copia de las capas para editar su contenido.
 
@@ -82,7 +82,7 @@ Para finalizar la edición y guardar los cambios, en el menú _Edit_ de clic en 
 
 8. Simbolice la capa de unión por valores únicos a partir del campo _ZonaNombre_, podrá observar que es necesario redefinir la zona en varios tramos.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Seleccione los tramos a ajustar y desde la tabla de atributos asigne la zona.
 
@@ -104,12 +104,12 @@ Utilizando el calculador de campo, establezca `ORDEN_VIAL = "Vía Urbana"`.
 
 Simbolice la capa por valores únicos utilizando el campo `ORDEN_VIAL`, establezca color negro y grosor 2 para todas las vías sin orden vial. Podrá observar que las vías ajustadas por zona, no contienen orden vial. Utilizando los ordenes viales de las vías próximas, establezca el orden víal sobre estas vías.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues3.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues4.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Una vez finalizada la asignación, obtendrá la siguiente visualización de la capa.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues5.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis estadístico

@@ -27,7 +27,7 @@ A partir de la delimitación de límites geopolíticos internos y utilizando los
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 2. Utilizando la herramienta _Data Management Tools / Dissolve_, disuelva los polígonos del Modelo de Ocupación Territorial - MOT a partir del campo de atributos `SUELO`. Guarde la capa o clase de entidad resultante dentro de la base de datos GDB temporal del mapa con el nombre `\file\map\ArcGISPro\ArcGISPro.gdb\MOT_UrbanoRural_Dissolve` y abra la tabla de atributos de la capa inicial y la capa disuelta. Podrá observar que de los 80 polígonos iniciales, hemos obtenido 5 zonas.
 
@@ -209,18 +209,18 @@ Ahora, podrá activar la visualización de tiempo, observe que los rótulos y lo
 
 8. Cambie la simbología de representación a símbolos proporcionales utilizando la variable _Población_ con símbolos entre 12 y 90 puntos de tamaño. De esta forma podrá comparar la proporcionalidad entre los valores urbanos y rurales. De clic en Play de la barra de tiempo y observe el resultado
 
-<div align="center">Población por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Población por símbolos proporcionales<br><img src="graph/ArcGISPro_SymbologyProportional1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 9. Realice el mismo análisis para las demás variables, modifique el rótulo incluyendo los valores de densidad, espacio público y caudales estimados.
 
 Rótulo Arcade: `$feature['MOT_UrbanoRural_Dissolve.SUELO'] + textformatting.NewLine +"Año: "+ year($feature['PopulationGIS.Fecha']) + textformatting.NewLine +"Población: " + round($feature['PopulationGIS.Poblacion'], 0) + textformatting.NewLine + "Densidad (hab/ha): " + round($feature['PopulationGIS.Densidad'], 2) + textformatting.NewLine + "EPE (ha): " + round($feature['PopulationGIS.EPEUrbHa'], 2) + textformatting.NewLine + "QAcu (lps): " + round($feature['PopulationGIS.QAcu'], 2) + textformatting.NewLine + "QAlc (lps): " + round($feature['PopulationGIS.QAlc'], 2)`
 
-<div align="center">Densidad por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Densidad por símbolos proporcionales<br><img src="graph/ArcGISPro_SymbologyProportional2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 > Observe como la densidad urbana disminuye y como la rural se mantiene creciendo a un ritmo lento.
 
-<div align="center">Demanda de agua potable por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
-<div align="center">Caudal retornado a alcantarillado por símbolos proporcionales<br><img src="graph/ArcGISPro_SimbologyProportional4.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Demanda de agua potable por símbolos proporcionales<br><img src="graph/ArcGISPro_SymbologyProportional3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Caudal retornado a alcantarillado por símbolos proporcionales<br><img src="graph/ArcGISPro_SymbologyProportional4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 > Observe como la demanda de servicios es creciente a través del tiempo.
 >

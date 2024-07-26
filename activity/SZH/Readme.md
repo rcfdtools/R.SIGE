@@ -125,7 +125,7 @@ El proceso de delimitación se realiza a partir de la cobertura de Subzonas hidr
 
 2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _SZH_ y establezca el CRS 9377. Agregue al mapa la capa de zubzonas hidrográficas desde la ruta `\file\data\IDEAM\Zonificacion_hidrografica_2013.shp` y ajuste la simbología a valores únicos representando el campo de atributos `NOM_ZH` y rotule las zonas a partir del campo de atributos `COD_SZH` correspondiente a los códigos de las subzonas. 
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_SZH.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues_SZH.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. Agregue al mapa la capa `\file\shp\Mpio25899_MOT2013.shp` correspondiente al límite territorial municipal, generado a partir de la capa del Modelo de Ocupación Territorial - MOT en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md), simbolice solo por contorno y acerque a escala 1:25000 o similar. Realice una selección por localización de subzonas, podrá observar que el Municipio en estudio se encuentra sobre las subzona hidrográfica 2120, correspondiente al Río Bogotá en la zona del Alto Magdalena, y la subzona 2306, correspondiente al Río Negro en la zoma del Medio Magdalena.
 
