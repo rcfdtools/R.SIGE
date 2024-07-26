@@ -44,6 +44,8 @@ Para el análisis de estos índices, se pueden utilizar diferentes estrategias:
 
 </div>
 
+> En esta actividad, desarrollaremos el análisis a partir de registros catastrales combinados con información geográfica.
+
 
 ## 1. Obtención de zonas geopolíticas y categorización de registros catastrales
 
