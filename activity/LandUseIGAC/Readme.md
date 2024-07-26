@@ -124,7 +124,7 @@ El Artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 1. En la tabla del Registro 1 de catastro, filtre los registros a partir del Orden 1 (`num_orden = '001'`), de los 46305 registros obtendrá 30939.  
 
-> El filtro le permitirá obtener los registros correspondientes solo al propietario principal de cada inmueble. Si bien, en un predio pueden existir propiedades horizontales y mejoras con diferentes destinaciones, se puede considerar como predominante la contenida en el orden 001. 
+> El filtro le permitirá obtener los registros correspondientes solo al propietario principal de cada una de las mejoras o propiedades horizontales de cada inmueble. Si bien, en un predio pueden existir múltiples propiedades horizontales y mejoras con diferentes destinaciones, se puede considerar como predominante la contenida en el orden 001. Para obtener solo la primera mejora y el primer número de orden, puede crear una columna de atributos tipo texto de 3 caracteres y obtener los 3 dígitos derechos almacenados en el campo `CODPROPIEDAD`, luego en la expresión de filtrado, puede incluir el condicional "Y" con los valores terminados en _000_.
 
 <div align="center"><img src="graph/ArcGISPro_Registro1_QueryOrden001.png" alt="R.SIGE" width="100%" border="0" /></div>
 
