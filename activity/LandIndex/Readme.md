@@ -238,6 +238,10 @@ Rótulo Arcade: `$feature.codigo + "\nIndOcup: " + round($feature.IndOcup, 4) + 
 
 <div align="center"><img src="graph/ArcGISPro_Chart3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+9. Ajuste a simbología por colores graduados, el análisis realizado a nivel general en las veredas y el área urbana. Podrá observar que las zonas contiguas al área urbana se encuentran más ocupadas, y que las zonas de protección que previamente analizamos en otras actividades del curso, tienen una ocupación baja.
+
+<div align="center"><img src="graph/ArcGISPro_IndOcupGeneral.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 5. Análisis usando software libre - QGIS
 
