@@ -3,7 +3,7 @@ Keywords: `land-index` `land-occupation`
 
 Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupación y el índice de construcción municipal en cada vereda, en la zona urbana y en cada manzana. Una los resultados obtenidos con la capa de veredas DANE y manzanas IGAC y cree un mapa que simbolice o represente los valores obtenidos.  
 
-<div align="center"><img src="graph/LandIndex.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/LandIndex1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
