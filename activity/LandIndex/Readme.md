@@ -16,6 +16,7 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:mortar_board:Actividad](../LandUseIGAC/Readme.md): Análisis de destinaciones económicas IGAC (creación de dominios).
+* [:mortar_board:Actividad](../CountyLimit/Readme.md): Análisis veredal y límite territorial.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
@@ -34,9 +35,23 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geo-procesamiento _Data Managenet Tools / Dissolve_
+2. Utilizando la herramienta de geo-procesamiento _Data Managenet Tools / Dissolve_, disuelva los predios a partir del campo `vereda_id`, nombre como `\file\gdb\SIGE.gdb\SIGE\Vereda_TerrenoPredio_2013`. Abra la tabla de atributos, podrá observar que se obtienen 15 polígonos y que no se encuentra el nombre de las veredas y del área urbana.
 
+<div align="center"><img src="graph/ArcGISPro_Dissolve1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Para asignar incluir los nombres de las veredas en la capa disuelta, cree un campo de texto de 100 caracteres de longitud e identifíquelo como `ZonaGeo`. Agregue la capa de veredas utilizadas en el diagnóstico del POT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\VEREDA1` y realice un _Join_ o unión de registros en la capa disuelta.  
+
+<div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando el calculador de campo sobre `ZonaGeo`, asigne el nombre de vereda contenido en el campo `nombre` de la capa _VEREDA1_.
+
+<div align="center"><img src="graph/ArcGISPro_Join2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Remueva la unión de campo e ingrese manualmente el nombre del área urbana. Rotule a partir del campo `ZonaGeo`.
+
+> Recuerde que en el análisis veredal realizado en la actividad [Análisis veredal y límite territorial.](../CountyLimit/Readme.md), evidenciamos que los códigos veredales y nombres de veredas DANE, fueron actualizados en el año 2020. Para este ejemplo, utilizaremos la codificación utilizada en la formulación del POT del año 2013.
+
+<div align="center"><img src="graph/ArcGISPro_Join3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
