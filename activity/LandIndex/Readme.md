@@ -22,8 +22,8 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 ## 0. Definiciones[^1]
 
-* Índice de ocupación: es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio.
-* Índice de construcción: es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.
+* **Índice de ocupación**: es la proporción del área de suelo que puede ser ocupada por edificación en primer piso bajo cubierta, y se expresa por el cociente que resulta de dividir el área que puede ser ocupada por edificación en primer piso bajo cubierta por el área total del predio.
+* **Índice de construcción**: es el número máximo de veces que la superficie de un terreno puede convertirse por definición normativa en área construida, y se expresa por el cociente que resulta de dividir el área permitida de construcción por el área total de un predio.
 
 
 ## 1. Índice general de ocupación y construcción
@@ -34,7 +34,7 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+2. Utilizando la herramienta de geo-procesamiento _Data Managenet Tools / Dissolve_
 
 
 
@@ -90,7 +90,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://geoportal.igac.gov.co/contenido/datos-abiertos-catastro
+* https://datos.icde.gov.co/search?collection=dataset&q=CATASTRO
 
 
 ## Control de versiones
