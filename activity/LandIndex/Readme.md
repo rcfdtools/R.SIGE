@@ -243,10 +243,13 @@ Rótulo Arcade: `$feature.codigo + "\nIndOcup: " + round($feature.IndOcup, 4) + 
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                      | Procedimiento                                                                                                                                                                                                                                                                  |
+|:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                   | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                        |
+| Rotulado                     | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                           |
+| Disolución (Dissolve)        | Se ejecuta desde el _Processing Toolbox / Vector Geometry / [Dissolve](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#dissolve)_ o desde el menú _Vector / Geoprocessing Tools / Dissolve_.                                           |
+| Combinación de capas (Merge) | Herramienta disponible en el _Processing Toolbox / Vector General / [Merge vector layers](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#merge-vector-layers)_.                                                                        |
+| Unión de tablas              | En las propiedades de capa geográfica, seleccionar la pestaña _Join_ y realizar la unión. Solo se mostrarán los registros correspondientes a la primer coincidencia encontrada. Para visualizar o representar otros valores, es necesario filtrar previamente la tabla a unir. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -258,14 +261,15 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                            | Descripción                                                                                                                 | Geometría   | Registros | 
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Vereda_TerrenoPredio_2013         | Disolución predial por vereda y zona urbana a partir de la capa _TerrenoPredio_2013_.                                       | Polígono 2D | 15        | 
+| Construccion_2013                 | Combinación de edificaciones y construcciones anexas a partir de las capas _EDIFICACION_ y _CONSTRUCCION_ANEXA_.            | Polígono 2D | 41877     | 
+| IGAC2009Registro1_IndConstGeneral | Tabla de resumen estadístico de áreas construídas por vereda y zona urbana general, a partir de la tabla IGAC2009Registro1. | n/a (tabla) | 15        | 
+| IGAC2009Registro1_IndOcupGeneral  | Tabla de resumen estadístico de áreas ocupadas por vereda y zona urbana general, a partir de la tabla IGAC2009Registro1.    | n/a (tabla) | 15        | 
+| Construccion_2013_Manzana         | Tabla de resumen estadístico de áreas ocupadas por manzana urbana, a partir de la tabla IGAC2009Registro1.                  | n/a (tabla) | 598     | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -275,7 +279,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Avance **P3** | Realice el análisis de índices presentado en esta actividad. Complementariamente, realice el cálculo del índice de construcción en cada manzana urbana a partir de los valores reportados en la tabla del Registro 1 del IGAC.                                                                                                                                                                                                                      | 
-| Avance **P3** | Descargue la base predial y registros de la última actualización catastral de su caso de estudio, realice un análisis de índices actualizado y compare con los valores obtenidos del estudio del POT.                                                                                                                                                                                                                                               | 
+| Avance **P3** | Descargue la base predial y registros de la última actualización catastral de su caso de estudio, realice un análisis de índices actualizado y compare con los valores obtenidos del estudio y adopción del POT.                                                                                                                                                                                                                                    | 
 | Avance **P3** | :compass:Mapa digital impreso _P4-4: Indices generales de ocupación y construcción por vereda y en el área urbana._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                               | 
 | Avance **P3** | :compass:Mapa digital impreso _P4-5: Índices de ocupación y construcción por manzana urbana._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                     | 
 | Avance **P3** | :compass:Mapa digital impreso _P4-6: Comparación índices adopción POT vs. ultima actualización catastral._<br>Incluir vectores, tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                        | 
@@ -305,8 +309,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../LandUseIGAC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../LandUseIGAC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/25) | [Siguiente :arrow_forward:]() |
+|-------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://www.sdp.gov.co/sites/default/files/dts_0.pdf
 [^2]: [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf)
