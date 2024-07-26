@@ -207,7 +207,7 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 
 3. En la capa combinada, cree un campo de numérico doble con el nombre `AGm2` y calcule el área geodésica de cada construcción, también cree un campo de texto de 30 caracteres de longitud con el nombre `ManzanaId` y asigne los primeros 13 caracteres del campo `terreno_predio_id`.
 
-<div align="center"><img src="graph/ArcGISPro_FieldCalculator9.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator9.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 4. Utilizando la herramienta _Summarize_ sobre el campo `ManzanaId` de la capa de construcciones integradas, genere un resúmen estadístico totalizando el área ocupada en cada manzana. Nombre como `\file\gdb\SIGE.gdb\Construccion_2013_Manzana`. Como observa, en cada manzana a obtenido el número de construcciones que la ocupan y el área tota de ocupación.
 
