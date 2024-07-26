@@ -55,9 +55,30 @@ Utilizando las tablas del registro 1 de catastro, calcule el índice de ocupaci�
 
 <div align="center"><img src="graph/ArcGISPro_Join3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Agregue al mapa la tabla del registro 1 de catastro del IGAC, disponible en la ruta `\file\gdb\SIGE.gdb\IGAC2009Registro1`. Cree un campo de atributos tipo texto de 30 caracteres con el nombre `vereda_id` y utilizando el calculador de campo, obtenga los 13 primeros dígitos del campo `PRE_COD` de cada uno de los 46305 registros de esta tabla (`vereda_id=!PRE_COD![:13]`).
+6. Agregue al mapa la tabla del registro 1 de catastro del IGAC, disponible en la ruta `\file\gdb\SIGE.gdb\IGAC2009Registro1` y cree los siguientes atributos:
+
+<div align="center">
+
+| Campo     | Descripción                   | Tipo      | Propiedad ArcGIS Pro | 
+|-----------|-------------------------------|-----------|----------------------| 
+| Zona      | Zona urbana o rural           | text (7)  | n/a                  |
+| vereda_id | Código veredal                | text (30) | n/a                  |
+
+</div>
+
+7. Utilizando el calculador de campo sobre `Zona`, obtenga los 7 primeros dígitos del campo `PRE_COD` de cada uno de los 46305 registros de esta tabla (`Zona=!PRE_COD![:7]`).
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Seleccione por atributos, los registros rurales cuyo código de zona es _2589900_ (15063 registros catastrales) y utilizando el calculador de campo, obtenga en _vereda_id_, los 13 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:13]`). 
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Seleccione por atributos, los registros urbanos cuyo código de zona es _2589901_ (31242 registros catastrales) y utilizando el calculador de campo, obtenga en _vereda_id_, los 7 primeros dígitos del campo `PRE_COD` (`vereda_id=!PRE_COD![:7]`). 
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+    
 
 
 
@@ -114,6 +135,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * https://geoportal.igac.gov.co/contenido/datos-abiertos-catastro
 * https://datos.icde.gov.co/search?collection=dataset&q=CATASTRO
+* [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf)
 
 
 ## Control de versiones
