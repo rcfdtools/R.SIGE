@@ -114,6 +114,24 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 
 ## 3. Índice general de ocupación
 
+Para la estimación del índice de ocupación, es necesario excluir de la tabla de registros catastrales, los identificadores de condición de propiedad y número de construcción repetidos; para ello, incluiremos en el análisis solo los valores con los códigos indicados en la siguiente tabla:
+
+<div align="center">
+
+|  Condición de<br>propiedad  | Descripción[^2]                                                                                         | Código a incluir |
+|:---------------------------:|---------------------------------------------------------------------------------------------------------|:----------------:|
+|              0              | Predio no reglamentado en propiedad horizontal - PH                                                     |       000        |
+|              9              | Predio en propiedad horizontal - PH                                                                     |       900        |
+|              8              | Predio en condominio                                                                                    |       800        |
+|              7              | Parques cementerios                                                                                     |       700        |
+|              6              | Mejoras por edificaciones en terreno ajeno en propiedad horizontal - PH                                 |       600        |
+|              5              | Mejoras por edificaciones en terreno ajeno de propiedades no reglamentadas en propiedad horizontal - PH |       500        |
+|              4              | Vías                                                                                                    |       400        |
+|              3              | Bienes de uso público diferentes a las vías                                                             |       300        |
+|              2              | No Ley 14 de 1983                                                                                       |       200        |
+
+</div>
+
 
 
 
@@ -188,3 +206,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 |-------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://www.sdp.gov.co/sites/default/files/dts_0.pdf
+[^2]: [Reglamentación técnica de la formación catastral, la actualización de la formación catastral y la conservación catastral, IGAC.](https://antiguo.igac.gov.co/sites/igac.gov.co/files/normograma/resolucion_70_de_2011.pdf)
