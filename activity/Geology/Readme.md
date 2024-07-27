@@ -22,7 +22,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general 
+## 1. Mapa geológico de la zona de estudio
 
 1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta `\file\data\SGC\`. 
 
@@ -72,11 +72,27 @@ Unidades encontradas
 <div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Geología vs. MOT
 
+Para el análisis de compatibilidad entre las categorías del suelo establecidas en el Modelo de Ocupación Territorial - MOT y los tipos de unidades cronoestratigráficas - UC, evaluaremos principalmente los usos permitidos de vivienda sobre las unidades _Q-al_ y _Q-ca_, correspondientes a zonas con depósitos aluviales y de llanuras aluviales, y abanicos aluviales y depósitos coluviales, los cuales pueden provenir superficialmente de procesos de arrastre fluvial y de fenómenos de remoción en masa. Por otra parte, evaluaremos que zonas definidas en el MOT se encuentran sobre fallas geológicas. 
 
+1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, cree una intersección espacial entre la capa UC y la capa MOT, nombre la capa resultante como `\file\gdb\SIGE.gdb\SIGE\MOT_UC`. Podrá observar que las zonas de las unidades cronoestratigráficas se han fraccionado en múltiples partes.
 
+<div align="center"><img src="graph/ArcGISPro_Intersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Desde la tabla de atributos de la capa de intersección y desde el campo _catego_, cree un resúmen estadístico o _Summarize_ que permita identificar los diferentes tipos de unidades cronoestratigráficas. Nombre la tabla resultante como `\file\gdb\SIGE.gdb\MOT_UC_Eval`.
 
+<div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Abra la tabla obtenida, podrá observar que para cada categoría se pueden identificar las diferentes unidades. Utilizando la herramienta de selección por atributos y seleccione en la capa _MOT_UC_, todos aquellos polígonos categorizados como _Área de Vivienda Rural Campestre_, _Centro Poblado Rural_ y _Áreas de Actividad en Suelo Urbano_ que se encuentran sobre las unidades UC _Q-al_ y _Q-ca_.
+
+SQL: `catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Suelo Urbano', 'Centro Poblado Rural') And SimboloUC IN ('Q-al', 'Q-ca')`
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+El resultado de este análisis indica que en la unidad _Q-al_, existe incompatibilidad con las fracciones de áreas correspondientes a 3 las categorías en las zonas mostradas en la ilustración:
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
