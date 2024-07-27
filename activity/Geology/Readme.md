@@ -81,11 +81,6 @@ Unidades encontradas
 
 
 
-
-
-
-
-
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
