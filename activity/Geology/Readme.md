@@ -21,7 +21,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 ## 1. Procedimiento general 
 
-1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Mapa Geológico de Colombia versión 2023 a escala 1:1.5M (_mgc2023.gdb.zip_) y el archivo de estilos (_mgc2023.style_). Guarde y descomprima en la carpeta `\file\data\SGC`. 
+1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta `\file\data\SGC\`. 
 
 <div align="center"><img src="graph/SGC_Download2023.png" alt="R.SIGE" width="100%" border="0" /></div>
 
