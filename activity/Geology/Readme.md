@@ -177,8 +177,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../LandIndex/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/26) | [Siguiente :arrow_forward:]() |
-|-----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../LandIndex/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/26) | [Siguiente :arrow_forward:](../LandSoil/Readme.md) |
+|-----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------|
 
 [^1]: https://www.argentina.gob.ar/produccion/segemar/peligros-geologicos/ordenamiento-territorial
 [^2]: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
