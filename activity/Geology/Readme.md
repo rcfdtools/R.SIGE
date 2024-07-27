@@ -102,7 +102,13 @@ Rótulo Arcade: `$feature.SimboloUC + " " + $feature.NOMBRE`
 <div align="center">Centro Poblado Rural - C.P.R. LA MARIELA<br><img src="graph/ArcGISPro_SelectByAttributes5.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 <div align="center">Área de Vivienda Rural Campestre - BARANDILLAS<br><img src="graph/ArcGISPro_SelectByAttributes6.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
+4. Para el análisis de fallas geológicas, seleccione por localización, todos aquellos polígonos del MOT que se intersecan con las fallas recortadas dentro de la zona de estudio. Podrá observar que las categorías del suelo establecidas corresponden a suelos rurales y de protección, y que como categoría principal no se encuentran en zonas con usos principales de vivienda, lo cual indica que no existe incompatibilidad directa.
 
+<div align="center"><img src="graph/ArcGISPro_SelectByLocation1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center">Falla inversa o de cabalgamiento - Falla de La Quebrada Carrizal<br><img src="graph/ArcGISPro_SelectByLocation2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Falla inversa o de cabalgamiento<br><img src="graph/ArcGISPro_SelectByLocation3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Falla inversa o de cabalgamiento - Falla de El Porvenir<br><img src="graph/ArcGISPro_SelectByLocation4.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 ## 2. Análisis usando software libre - QGIS
