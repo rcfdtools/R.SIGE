@@ -122,7 +122,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 | Resumen estadístico (Summarize)      | Disponible en _Processing Toolbox / Vector Analysis / [Statistics by categories](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#statistics-by-categories)_. |
 | Recorte de capas vectoriales (clip)  | Herramienta disponible en el _Processing Toolbox / Vector Overlay / [Clip](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoroverlay.html#clip)_.                            |
 | Intersección espacial (Intersection) | Se realizan desde el menú _Vector_ a través de la opción _Geoprocessing Tools / Intersection_.                                                                                                       |
- Ejemplo rótulo en QGIS: `'A(ha): '   |                                                                                                                                                                                                      |  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
+
+Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
 [:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
 [:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
