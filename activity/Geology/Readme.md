@@ -1,4 +1,4 @@
-# Mapa geológico de Colombia
+# Mapa geológico de Colombia vs. MOT
 Keywords: `geology` `mot`
 
 Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite municipal del mapa MOT del POT. Describa y explique las fallas y unidades presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con la capa de unidades cronoestratigráficas y a través de un resumen estadístico, obtenga por cada categoría del MOT, las unidades cronoestratigráficas presentes y sus áreas en hectáreas. En la tabla de consolidación incluya un campo de texto con el nombre `Analisis`, analice y explique las incompatibilidades entre la categoría del POT y el tipo de geología encontrada.
@@ -133,14 +133,14 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre           | Descripción                                                                               | Geometría    | Registros | 
+|------------------|-------------------------------------------------------------------------------------------|--------------|-----------| 
+| Mpio25899_UC     | Recorte de unidades cronoestratigráficas utilizando las capas _Mpio25899_MOT2013_ y _UC_. | Polígono 2D  | 17        | 
+| Mpio25899_Fallas | Recorte de fallas geológicas utilizando las capas _Mpio25899_MOT2013_ y _Fallas_.         | Polilínea 2D | 3         | 
+| MOT_UC           | Intersección espacial de las capas _MOT_ y _UC_.                                          | Polígono 2D  | 175       | 
+| MOT_UC_Eval      | Resúmen estadístico a partir de la capa _MOT_UC_.                                         | n/a (tabla)  | 90        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -149,8 +149,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P3** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P3** | Desarrolle el análisis geológico presentado en esta actividad. Complemente el análisis incluyendo las capas de volcanes, pliegues, pozos, rocas alta presión, rocas alta temperatura, e indique si para su caso de estudio generan incompatibilidad con las categorías de uso establecidas en el MOT.                                                                                                                                               | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-7: Geología municipal._<br>Incluir tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                   | 
+| Avance **P3** | :compass:Mapa digital impreso _P4-8: Geología combinada con categorías de uso del POT._<br>Incluir tablas y gráficos de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                    | 
 | Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -177,8 +178,8 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../LandIndex/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../LandIndex/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/26) | [Siguiente :arrow_forward:]() |
+|-----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://www.argentina.gob.ar/produccion/segemar/peligros-geologicos/ordenamiento-territorial
 [^2]: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
