@@ -90,9 +90,17 @@ SQL: `catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Su
 
 <div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-El resultado de este análisis indica que en la unidad _Q-al_, existe incompatibilidad con las fracciones de áreas correspondientes a 3 las categorías en las zonas mostradas en la ilustración:
+Cambie el mapa base por el de la imágen satelital de ESRI.
 
-<div align="center"><img src="graph/ArcGISPro_SelectByAttributes2.png" alt="R.SIGE" width="100%" border="0" /></div>
+El resultado de este análisis indica que en la unidad _Q-al_, puede existir incompatibilidad con las fracciones de áreas correspondientes a 3 las categorías en las siguientes zonas:
+
+Rótulo Arcade: `$feature.SimboloUC + " " + $feature.NOMBRE`
+
+<div align="center">Centro Poblado Rural - C.P.R. SANTA ISABEL<br><img src="graph/ArcGISPro_SelectByAttributes2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Centro Poblado Rural - C.P.R. BARANDILLAS<br><img src="graph/ArcGISPro_SelectByAttributes3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Áreas de Actividad en Suelo Urbano - Z.U. BARANDILLAS<br><img src="graph/ArcGISPro_SelectByAttributes4.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Centro Poblado Rural - C.P.R. LA MARIELA<br><img src="graph/ArcGISPro_SelectByAttributes5.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+<div align="center">Área de Vivienda Rural Campestre - BARANDILLAS<br><img src="graph/ArcGISPro_SelectByAttributes6.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 
