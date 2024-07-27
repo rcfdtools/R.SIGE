@@ -15,6 +15,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 ## Requerimientos
 
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:mortar_board:Actividad](../CountyLimit/Readme.md): Análisis veredal y límite territorial.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
@@ -29,6 +30,26 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para incorporar en ArcGIS Pro los estilos contenidos en el archivo _agc2023.style_ del SGC, en el menú _Insert_, seleccione la opción _Styles / Import_ y añada el archivo.  
+
+> La importación de los estilos no actualiza automáticamente los colores aplicados a las unidades cronoestratigráficas, si aplicación puede ser realizada manualmente utilizando los códigos y colores importados.
+
+<div align="center"><img src="graph/ArcGISPro_Styles1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en el panel de simbología podrá observar que se ha incluído un grupo de estilo nuevo, denominado _agc2023_. Para aplicar el estilo _C-Pi_, correspondiente a _Dioritas, granodioritas, cuarzodioritas, tonalitas y gabros_, seleccione el símbolo correspondiente.
+
+<div align="center"><img src="graph/ArcGISPro_Styles2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Agregue al mapa, la capa del Modelo de Ocupación Territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT` y el límite territorial a partir del MOT creado en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md) desde la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013`. Ajuste la simbología utilizando solo contornos y rotule el mapa geológico a partir del campo `Simbolo_UC`.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
+
 
 
 
