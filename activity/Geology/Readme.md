@@ -49,9 +49,35 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en
 
 <div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Unidades encontradas  
+
+| Símbolo UC | Descripción                                                                                                                       | Edad                       | UG integradas      |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------|
+| b6k6-Stm   | Shales, calizas, arenitas, cherts y fosforitas                                                                                    | Albiano-Maastrichtiano     |                    |
+| E1-Sc      | Conglomerados intercalados con arenitas de grano medio a grueso y lodolitas carbonosas                                            | Paleoceno                  |                    |
+| k1k6-Stm   | Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur. | Cenomaniano-Maastrichtiano |                    |
+| k6E1-Stm   | Arcillolitas rojizas con intercalaciones de cuarzoarenitas de grano fino. Mantos de carbón a la base.                             | Maastrichtiano-Paleoceno   | Formación Guaduas  |
+| Q-al       | Depósitos aluviales y de llanuras aluviales                                                                                       | Cuaternario                |                    |
+| Q-ca       | Abanicos aluviales y depósitos coluviales                                                                                         | Cuaternario                |                    |
+| Q1-l       | Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas.                | Pleistoceno                |                    |
+
 6. Ajuste la simbología del mapa recortado utilizando los estilos importados.
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_UC1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7.  A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
+
+
+
+
+
 
 
 
