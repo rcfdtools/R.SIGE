@@ -1,7 +1,7 @@
-# Mapa de suelos, usos potenciales y conflictos de uso de Colombia vs. MOT
+# Mapa de suelos, vocación de uso y conflictos de uso de Colombia vs. MOT
 Keywords: `land-soil` `land-conflict` `land-potential-use`
 
-Descargue el Mapa de Suelos, usos potenciales y conflictos de uso de Colombia del IGAC y recorte hasta el límite municipal del mapa MOT del POT. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.         
+Descargue el Mapa de Suelos, usos potenciales y conflictos de uso de Colombia del IGAC y recorte hasta el límite municipal del mapa MOT del POT. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.  
 
 <div align="center"><img src="graph/LandSoil.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -19,7 +19,7 @@ Descargue el Mapa de Suelos, usos potenciales y conflictos de uso de Colombia de
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Suelos vs. Modelo de ocupación territorial - MOT
+## 1. Mapa de suelos de la zona de estudio
 
 El mapa de suelos del Departamento de Cundinamarca, ha sido creado por el [Instituto Geográfico Agustín Codazzi](https://www.igac.gov.co/) - Subdirección de Agrología - Grupo Interno de Trabajo Geomática - Carrera 30 # 48 - 51 – Sede Central, Bogotá D.C, Departamento de Cundinamarca, 111321, República de Colombia. Autor: german.alvarez@igac.gov.co (Subdirector de Agrología), +57 1 3694100 Ext. 91007
 
@@ -55,19 +55,12 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 
 
-## 2. Usos potenciales vs. Modelo de ocupación territorial - MOT
+## 2. Suelos vs. MOT
 
 
 
 
-
-## 3. Conflictos de uso vs. Modelo de ocupación territorial - MOT
-
-
-
-
-
-## 4. Análisis usando software libre - QGIS
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
