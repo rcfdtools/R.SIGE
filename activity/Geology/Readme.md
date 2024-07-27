@@ -45,7 +45,7 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+5. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa geológico y las fallas geológicas hasta el límite del mapa _Mpio25899_MOT2013_. Nombre las capas resultantes como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_UC` Y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Fallas`.
 
 
 
