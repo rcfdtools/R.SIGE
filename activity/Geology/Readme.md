@@ -27,6 +27,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Geology_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en `\file\data\SGC\agc2023.gdb\Geologia\` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../ref/ChronostratChart2023-04SpanishAmer.pdf)[^1].
 
+<div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
