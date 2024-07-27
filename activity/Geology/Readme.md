@@ -3,6 +3,8 @@ Keywords: `geology` `mot`
 
 Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite municipal del mapa MOT del POT. Describa y explique las fallas y unidades presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con la capa de unidades cronoestratigráficas y a través de un resumen estadístico, obtenga por cada categoría del MOT, las unidades cronoestratigráficas presentes y sus áreas en hectáreas. En la tabla de consolidación incluya un campo de texto con el nombre `Analisis`, analice y explique las incompatibilidades entre la categoría del POT y el tipo de geología encontrada.
 
+> El ordenamiento territorial y el funcionamiento de zonas productivas están influenciados por los factores ambientales y, particularmente, por las características del suelo, el paisaje y sus procesos exógenos. Los procesos naturales de origen geológico impactan severamente sobre la población afincada en sitios no aptos para su ocupación, representando estos una amenaza para el desarrollo social y económico de esas urbanizaciones, muchas de ellas ubicadas en las planicies aluviales de los ríos, en los piedemontes de las zonas montañosas o en las líneas de ribera del litoral marítimo. En el análisis geológico, se realiza la identificación de las litologías y de las principales estructuras geológicas, considerando su estabilidad y sus características geotécnicas; de las geoformas que conforman el paisaje, teniendo en cuenta especialmente pendientes, la morfodinámica actual y la estabilidad de las mismas; la identificación de los suelos, su caracterización y mapeo, incluyendo, si ocurriere, la evaluación de la degradación y la información referida a las aguas subterráneas y superficiales.[^1]
+
 <div align="center"><img src="graph/Geology.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
@@ -26,7 +28,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 <div align="center"><img src="graph/SGC_Download2023.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Geology_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en `\file\data\SGC\agc2023.gdb\Geologia\` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../ref/ChronostratChart2023-04SpanishAmer.pdf)[^1].
+2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Geology_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en `\file\data\SGC\agc2023.gdb\Geologia\` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../ref/ChronostratChart2023-04SpanishAmer.pdf)[^2].
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -150,4 +152,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |---------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
+[^1]: https://www.argentina.gob.ar/produccion/segemar/peligros-geologicos/ordenamiento-territorial
+[^2]: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204.
