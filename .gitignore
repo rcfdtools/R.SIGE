@@ -41,7 +41,7 @@ Lib/
 *.shp.*
 *.xml
 # Geodatabases
-*.gdb*
+*.gdb
 *.mdb*
 # Audio y video
 *.avi
