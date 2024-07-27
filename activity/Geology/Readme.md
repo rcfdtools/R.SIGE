@@ -45,10 +45,13 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa geológico y las fallas geológicas hasta el límite del mapa _Mpio25899_MOT2013_. Nombre las capas resultantes como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_UC` Y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Fallas`.
+5. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa geológico y las fallas geológicas hasta el límite del mapa _Mpio25899_MOT2013_. Nombre las capas resultantes como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_UC` Y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Fallas`. Podrá observar que para el caso de estudio, existen 7 diferentes unidades cronoestratigráficas y una falla inversa o de cabalgamiento.
 
+<div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Ajuste la simbología del mapa recortado utilizando los estilos importados.
 
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_UC1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
