@@ -140,7 +140,7 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 | Mpio25899_UC     | Recorte de unidades cronoestratigráficas utilizando las capas _Mpio25899_MOT2013_ y _UC_. | Polígono 2D  | 17        | 
 | Mpio25899_Fallas | Recorte de fallas geológicas utilizando las capas _Mpio25899_MOT2013_ y _Fallas_.         | Polilínea 2D | 3         | 
 | MOT_UC           | Intersección espacial de las capas _MOT_ y _UC_.                                          | Polígono 2D  | 175       | 
-| MOT_UC_Eval      | Resúmen estadístico a partir de la capa _MOT_UC_.                                         | n/a (tabla)  | 90        | 
+| MOT_UC_Eval      | Tabla de resúmen estadístico a partir de la capa _MOT_UC_.                                | n/a (tabla)  | 90        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
