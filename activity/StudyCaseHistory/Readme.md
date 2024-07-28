@@ -41,8 +41,6 @@ Información [DANE](https://www.dane.gov.co/)
 | Dirección territorial        | Gestor territorial: Municipio de Zipaquirá según Resolución IGAC 96 del 9 de Febrero de 2021 |
 | Categoría                    | 1                                                                                            |
 
-> Direcciones territoriales tomadas de www.colombiaenmapas.gov.co
-
 La zona rural del municipio está compuesta por diecisiete (17) veredas
 
 | Vereda              | Código DANE    |
@@ -83,11 +81,13 @@ En la zona rural se encuentran los siguientes centros poblados
 | San Miguel                 | La Granja   |
 | Santa Isabel               | La Granja   |
 
-> La Ley 388 de 1997 y el Decreto 1077 de 2015 se refieren a los centros poblados rurales, que forman parte de la definición de núcleos de población, caracterizados como asentamientos humanos agrupados en un conjunto de construcciones independientes y próximas, que comparten circulaciones e infraestructuras de servicios comunes. El artículo 2.2.2.2.3.2. del Decreto 1077 se refiere al ordenamiento de los centros poblados rurales y establece que el componente rural de los POT debe definir, entre otros aspectos, su delimitación, y los usos principales, compatibles, condicionados y prohibidos.
-
 <img src="graph/25899CentroPobladoRural.png" alt="R.SIGE" width="100%" border="0"/><br><sub>Centros poblados (norte hacia arriba)<br>En la ilustración se han excluido las veredas: Empalizado, Páramo de Guerrero, San Isidro, Pantano Redondo y Río Frío.<br>Elaborado por rcfdtools</sub>
 
 </div>
+
+> La Ley 388 de 1997 y el Decreto 1077 de 2015 se refieren a los centros poblados rurales, que forman parte de la definición de núcleos de población, caracterizados como asentamientos humanos agrupados en un conjunto de construcciones independientes y próximas, que comparten circulaciones e infraestructuras de servicios comunes. El artículo 2.2.2.2.3.2. del Decreto 1077 se refiere al ordenamiento de los centros poblados rurales y establece que el componente rural de los POT debe definir, entre otros aspectos, su delimitación, y los usos principales, compatibles, condicionados y prohibidos.
+>
+> Direcciones territoriales tomadas de www.colombiaenmapas.gov.co
 
 ## 3. Principales actividades económicas
 
