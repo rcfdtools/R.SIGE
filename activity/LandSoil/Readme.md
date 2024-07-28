@@ -48,15 +48,66 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa de suelos a partir del límite municipal contenido en la capa _Mpio25899_MOT2013_, nombre como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_SuelosVF`. Podrá observar que en las clasificaciones de uso de protección y rural localizadas al oeste del mapa, existen diferentes tipos de suelos,  
+4. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa de suelos a partir del límite municipal contenido en la capa _Mpio25899_MOT2013_, nombre como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_SuelosVF`. Podrá observar que en las clasificaciones de uso de protección y rural localizadas al oeste del mapa, existen múltiples tipos de suelos.  
 
 <div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Cree gráficos de barras representando las diferentes variables categóricas presentes en la capa de suelos dentro de la zona de estudio. 
 
+Por paisaje, montaña presenta la mayor área.  
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
+Por código de clasificación _UCS_F_, el suelo dominante es _MLCd_, correspondiente a suelos profundos a superficiales, bien drenados, con texturas moderadamente finas a moderadamente gruesas, reacción extremada a fuertemente ácida, saturación de aluminio media a alta y fertilidad, en general, moderada.  
+<div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+Por clima, frío húmedo y muy frío muy húmedo, presentan las mayores áreas.  
+<div align="center"><img src="graph/ArcGISPro_Chart3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+Por tipo de relieve y litología, las rocas clásticas arenosas y limo arcillosas y mantos de ceniza volcánica, presentan la mayor área.  
+<div align="center"><img src="graph/ArcGISPro_Chart4.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 ## 2. Suelos vs. MOT
+
+Para identificar las posibles incompatibilidades de los suelos con respecto a las categorías de uso establecidas en el modelo de ocupación territorial - MOT, utilizaremos los siguientes criterios en clases cuyo uso principal sea el habitacional y que en suelos las características de relieve contengan la descripción:
+
+* Fuertemente empinado: correspondiente a pendientes superiores al 75%.
+* Fuertemente escarpado: correspondiente a pendientes hasta del 75%.
+* Erosión hídrica ligera y moderada.
+* Erosión hídrica moderada y severa.
+* Cuerpo de agua.
+
+1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, cree una intersección espacial de las capas _Mpio25899_SuelosVF_ y _MOT_, nombre la capa resultante como `\file\gdb\SIGE.gdb\SIGE\MOT_SuelosVF`. Podrá observar que cada categoría de suelo ha sido fraccionada con las clasificaciones del MOT.
+
+<div align="center"><img src="graph/ArcGISPro_Intersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para identificar las zonas incompatibles, realice una selección por atributos utilizando la siguiente expresión.
+
+SQL: `(lower(CARACTERÍSTICAS_RELIEVE) LIKE '%cuerpo de agua%' Or lower(CARACTERÍSTICAS_RELIEVE) LIKE '%fuertemente empinado%' OR lower(CARACTERÍSTICAS_RELIEVE) LIKE '%fuertemente escarpado%' Or lower(CARACTERÍSTICAS_RELIEVE) LIKE '%erosión hídrica moderada y severa%' OR lower(CARACTERÍSTICAS_RELIEVE) LIKE '%erosion hidrica moderada y severa%' OR lower(CARACTERÍSTICAS_RELIEVE) LIKE '%erosión hídrica ligera y moderada%' OR lower(CARACTERÍSTICAS_RELIEVE) LIKE '%erosion hidrica ligera y moderada%') And catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Suelo de Expansión Urbana', 'Áreas de Actividad en Suelo Urbano', 'Centro Poblado Rural')`
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Podrá observar que se han identificado los siguientes 17 polígonos de intersección:
+
+| Suelo     | Categoría                                       | Nombre                      | Relieve                                                                                                                                       |
+|-----------|-------------------------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| EXPANSION | Áreas de Actividad en Suelo de Expansión Urbana | Z.E.U. ALGARRA - SAN RAFAEL | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| EXPANSION | Áreas de Actividad en Suelo de Expansión Urbana | Z.P.R LA FRAGUITA           | Relieve moderadamente quebrado a moderadamente escarpado con pendientes de 12-75%, afectado en sectores por erosión hídrica ligera y moderada |
+| RURAL     | Área de Vivienda Rural Campestre                | BARANDILLAS                 | Relieve fuertemente quebrado a moderadamente escarpado con pendientes de 25 a 75%, afectado en sectores por erosión hídrica moderada y severa |
+| RURAL     | Área de Vivienda Rural Campestre                | BARANDILLAS                 | Relieve fuertemente quebrado a moderadamente escarpado con pendientes de 25 a 75%, afectado en sectores por erosión hídrica moderada y severa |
+| RURAL     | Área de Vivienda Rural Campestre                | BARANDILLAS                 | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Área de Vivienda Rural Campestre                | EL CEDRO                    | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Área de Vivienda Rural Campestre                | PORTACHUELO                 | Relieve fuertemente empinado con pendientes superiores a 75%, afectado en sectores por erosión hídrica laminar ligera                         |
+| RURAL     | Área de Vivienda Rural Campestre                | PORTACHUELO                 | Relieve moderadamente quebrado a moderadamente escarpado con pendientes de 12-75%, afectado en sectores por erosión hídrica ligera y moderada |
+| RURAL     | Centro Poblado Rural                            | C.P.R. APOSENTO ALTO        | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. ARGELIA I            | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. ARGELIA II           | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. ARGELIA III          | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. BOLÍVAR 83           | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. BOLÍVAR 83           | Relieve moderadamente quebrado a moderadamente escarpado con pendientes de 12-75%, afectado en sectores por erosión hídrica ligera y moderada |
+| RURAL     | Centro Poblado Rural                            | C.P.R. BOSQUES DE SILECIA   | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
+| RURAL     | Centro Poblado Rural                            | C.P.R. PORTACHUELO          | Relieve moderadamente quebrado a moderadamente escarpado con pendientes de 12-75%, afectado en sectores por erosión hídrica ligera y moderada |
+| URBANO    | Áreas de Actividad en Suelo Urbano              | Z.U. CENTRO                 | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
 
 
 
@@ -107,6 +158,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
+* [Mapa Digital de Suelos del Departamento de Cundinamarca, República de Colombia. Escala 1:100.000. Año 2001.](https://metadatos.icde.gov.co/geonetwork/srv/api/records/f7c184ea-8abb-45a5-9cf2-1f88981760b6)
 * 
 
 
@@ -122,7 +174,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../Geology/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|-------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
 [^1]: 

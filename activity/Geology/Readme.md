@@ -88,6 +88,8 @@ Para el análisis de compatibilidad entre las categorías del suelo establecidas
 
 SQL: `catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Suelo Urbano', 'Centro Poblado Rural') And SimboloUC IN ('Q-al', 'Q-ca')`
 
+> Para este análisis también puede incluir las _Áreas de Actividad en Suelo de Expansión Urbana_.
+
 <div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Cambie el mapa base por el de la imágen satelital de ESRI.
