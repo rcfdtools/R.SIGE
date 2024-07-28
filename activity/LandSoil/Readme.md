@@ -87,7 +87,7 @@ SQL: `(lower(CARACTERÍSTICAS_RELIEVE) LIKE '%cuerpo de agua%' Or lower(CARACTER
 
 <div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Podrá observar que se han identificado los siguientes 17 polígonos de intersección:
+Podrá observar que se han identificado los siguientes 17 polígonos de intersección con posibles conflitos:
 
 | Suelo     | Categoría                                       | Nombre                      | Relieve                                                                                                                                       |
 |-----------|-------------------------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -109,6 +109,19 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 | RURAL     | Centro Poblado Rural                            | C.P.R. PORTACHUELO          | Relieve moderadamente quebrado a moderadamente escarpado con pendientes de 12-75%, afectado en sectores por erosión hídrica ligera y moderada |
 | URBANO    | Áreas de Actividad en Suelo Urbano              | Z.U. CENTRO                 | Relieve ligera a fuertemente quebrado con pendientes 7-12, 12-25 y 25-50%, afectado en sectores por erosión hídrica ligera y moderada         |
 
+<div align="center">EXPANSION - Áreas de Actividad en Suelo de Expansión Urbana - Z.E.U. ALGARRA - SAN RAFAEL<br><img src="graph/ArcGISPro_SelectByAttributes2.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">EXPANSION - Áreas de Actividad en Suelo de Expansión Urbana - Z.P.R LA FRAGUITA<br><img src="graph/ArcGISPro_SelectByAttributes3.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">RURAL - Área de Vivienda Rural Campestre - PORTACHUELO<br><img src="graph/ArcGISPro_SelectByAttributes4.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">RURAL - Centro Poblado Rural - C.P.R. ARGELIA I<br><img src="graph/ArcGISPro_SelectByAttributes5.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">RURAL - Centro Poblado Rural - C.P.R. ARGELIA II<br><img src="graph/ArcGISPro_SelectByAttributes6.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">RURAL - Centro Poblado Rural - C.P.R. ARGELIA III<br><img src="graph/ArcGISPro_SelectByAttributes7.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+<div align="center">RURAL - Centro Poblado Rural - C.P.R. BOSQUES DE SILECIA<br><img src="graph/ArcGISPro_SelectByAttributes8.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 
 
