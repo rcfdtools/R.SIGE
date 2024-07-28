@@ -146,7 +146,7 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 El análisis realizado de suelos, puede ser replicado utilizando la información geográfica contenida en los mapas de vocación de uso y conflictos de uso; el procedimiento consiste en descargar, recortar, intersecar e identificar a partir de los atributos contenidos, cuáles pueden generar incompatibilidad con las categorías propuestas en el MOT. 
 
-> Para su caso de estudio, realice el análisis de posibles incompatibilidades de estos dos mapas con respecto a las zona definidas en el modelo de ocupación territorial - MOT.
+> Para su caso de estudio, realice el análisis de posibles incompatibilidades de estos dos mapas, con respecto a las zonas definidas en el modelo de ocupación territorial - MOT.
 
 
 ### 3.1. Vocación de uso
