@@ -8,7 +8,7 @@ Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia de
 
 ## Objetivos
 
-* Estudiar los tipos de suelos presentes en la zona de estudio, sus vocaciones principales y los conflictos identificados por la autoridad catastral.
+* Estudiar los tipos de suelos presentes en la zona de estudio, sus vocaciones principales y los conflictos identificados por la autoridad catastral nacional.
 * Identificar íncompatibilidades entre suelos y el modelo de ocupación territorial - MOT.
 
 
@@ -139,6 +139,8 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 <div align="center">URBANO - Áreas de Actividad en Suelo Urbano - Z.U. CENTRO<br><img src="graph/ArcGISPro_SelectByAttributes15.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
+> :bulb:Tenga en cuenta que las incompatibilidades identificadas, en algunos casos pueden ser mitigadas, p. ej., suelos con erosión hídrica ligera, moderada y severa, pueden ser acondicionados mediante procesos de reforestación y obras de protección a partir de estudios técnicos especializados. En el caso de terreno muy empinados y escarpados, el proceso de mitigación dependerá de la geología, la disposición de las capas del suelo, su proximidad a obras de infrastructura y otros factores de riesgo definidos a través de estudios técnicos especializados.  
+
 
 ## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
 
@@ -217,15 +219,15 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * [Mapa Digital de Suelos del Departamento de Cundinamarca, República de Colombia. Escala 1:100.000. Año 2001.](https://metadatos.icde.gov.co/geonetwork/srv/api/records/f7c184ea-8abb-45a5-9cf2-1f88981760b6)
-* 
+* https://www.colombiaenmapas.gov.co/
 
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión     | Descripción                                                | Autor                                      | Horas |
+|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.03.23  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.07.28  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
