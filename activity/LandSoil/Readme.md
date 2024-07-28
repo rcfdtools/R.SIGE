@@ -142,7 +142,9 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 ## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
 
-El análisis realizado de suelos puede ser replicado utilizando la información geográfica contenida en los mapas de vocación de uso y conflictos de uso. El procedimiento consiste en descargar, recortar, intersecar e identificar a partir de los atributos contenidos, cuáles pueden generar incompatibilidad con las categorías propuestas en el MOT. 
+El análisis realizado de suelos, puede ser replicado utilizando la información geográfica contenida en los mapas de vocación de uso y conflictos de uso; el procedimiento consiste en descargar, recortar, intersecar e identificar a partir de los atributos contenidos, cuáles pueden generar incompatibilidad con las categorías propuestas en el MOT. 
+
+> Para su caso de estudio, realice el análisis de posibles incompatibilidades de estos dos mapas con respecto a las zona definidas en el modelo de ocupación territorial - MOT.
 
 
 ### 3.1. Vocación de uso
@@ -158,8 +160,13 @@ Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando l
 <div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ### 3.2. Conflictos de uso
+
+El mapa de conflictos de uso de las tierras del IGAC del año 2016, resulta de las discrepancias entre el uso que hace la población del medio natural y el que debería tener, de acuerdo con sus potencialidades y restricciones ambientales. El IGAC, a través de la Subdirección de Agrología, ha venido investigando durante los últimos 25 años, los criterios y metodologías tendientes a establecer el uso y las prácticas de manejo que deben tener los suelos y tierras del país, buscando su productividad sostenible en función de la oferta y demanda ambientales. Su mayor dedicación se ha concentrado en aspectos agrícolas, ganaderos, agroforestales, forestales y de conservación/recuperación de suelos y aguas. Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016 a escala 1:100.000.
+
+Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Conflictos de uso de la tierra año 2012. Territorio nacional_.
+
+<div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
