@@ -127,6 +127,8 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 <div align="center">RURAL - Centro Poblado Rural - C.P.R. BOLÍVAR 83<br><img src="graph/ArcGISPro_SelectByAttributes10.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
+> Gran parte del Centro Poblado Rural Bolívar 83, no ha sido identificado como zona incompatible en el análisis realizado, debido a que en la capa de suelos, casí toda su superficie ha sido catalogada como urbana.
+
 <div align="center">RURAL - Centro Poblado Rural - C.P.R. PORTACHUELO<br><img src="graph/ArcGISPro_SelectByAttributes11.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
 <div align="center">RURAL - Área de Vivienda Rural Campestre - EL CEDRO<br><img src="graph/ArcGISPro_SelectByAttributes12.png" alt="R.SIGE" width="100%" border="0" /></div><br>
@@ -137,12 +139,31 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 <div align="center">URBANO - Áreas de Actividad en Suelo Urbano - Z.U. CENTRO<br><img src="graph/ArcGISPro_SelectByAttributes15.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
-> Gran parte del Centro Poblado Rural Bolívar 83, no ha sido identificado como zona incompatible en el análisis realizado, debido a que en la capa de suelos, casí toda su superficie ha sido catalogada como urbana.
+
+## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
+
+El análisis realizado de suelos puede ser replicado utilizando la información geográfica contenida en los mapas de vocación de uso y conflictos de uso. El procedimiento consiste en descargar, recortar, intersecar e identificar a partir de los atributos contenidos, cuáles pueden generar incompatibilidad con las categorías propuestas en el MOT. 
+
+
+### 3.1. Vocación de uso
+
+El mapa de Vocación de Uso de las tierras del IGAC del año 2013, se determina mediante matrices de decisión que incluyen indicadores e índices de su estado. En los atributos geo gráficos considerados se encuentra el clima y la pendiente. Entre los de los suelos sobresalen la erosión, humedad, granulometría, pedregosidad, profundidad efectiva, fertilidad y salinidad. Esta clasificación comprende 5 clases: agrícola, ganadera, agroforestal, forestal y de conservación/recuperación. En cada una se establece el uso principal que debe tener. Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016 a escala 1:100.000.
+
+El objetivo principal de la vocación es la determinación del uso más apropiado que puede soportar cada uno de los suelos del país, propendiendo por una producción sostenible y sin deterioro de los recursos naturales. Son dos niveles categóricos los tenidos en cuenta en el presente estudio; el primero corresponde a la vocación general de uso de la tierra y, el segundo, como subdivisión del primero, hace referencia a los usos principales recomendados.
+
+**Estirpe**: con la finalidad de establecer el mejor uso de las tierras, se analizan y evalúan una serie de características biofísicas estables en el tiempo y en el espacio; que influyen en la selección y desempeño de los usos agropecuarios y forestales, principalmente, con requerimientos implícitos de protección y conservación de los recursos naturales. Por tanto, para la determinación del uso más apropiado que puede soportar cada uno de los suelos, se tienen en cuenta algunas de sus propiedades, difícilmente modificables por el hombre en un corto y mediano plazo que ejercen fuerte influencia en las actividades productivas antrópicas; estos criterios de determinación del uso principal para cada uno de los suelos hacen referencia a factores climáticos, pendiente, erosión, factores de humedad, pedregosidad y factores intrínsecos al suelo como la profundidad efectiva, grupo textural, fertilidad, salinidad, porcentaje de saturación de sodio, aluminio y carbono orgánico. A partir de la anterior información y estableciendo combinación de indicadores; se generan los índices del estado de las tierras, los cuales permiten tipificar como están conformadas y cuáles son sus calidades, obteniendo así, los índices de impacto con los cuales se puede medir el grado de deterioro que presenta cada una de las unidades de tierra. Los indicadores e índices a tener en cuenta en el proceso de evaluación están referidos a factores climáticos (precipitación, temperatura, distribución de las lluvias), factores del relieve como la pendiente y geomorfología, factores externos a los suelos como la erosión, la humedad (drenaje natural e inundaciones y encharcamientos) y la pedregosidad (porcentaje de fragmentos en superficie) y factores intrínsecos al suelo (profundidad efectiva, grupo textural, fertilidad, salinidad, porcentaje de saturación de sodio, de aluminio, de carbono orgánico y fragmentos de roca en el suelo); obteniendo como resultado la vocación subdividida en cinco (5) clases las cuales se dividen a su vez en treinta y cinco (35) subclases: (Agrícola: Cultivos transitorios intensivos de clima cálido, Cultivos transitorios intensivos de clima medio, Cultivos transitorios intensivos de clima frío, Cultivos transitorios semi intensivos de clima cálido, Cultivos transitorios semi intensivos de clima medio, Cultivos transitorios semi intensivos de clima frío, Cultivos permanentes intensivos de clima cálido, Cultivos permanentes intensivos de clima medio, Cultivos permanentes intensivos de clima frío, Cultivos permanentes semi intensivos de clima cálido, Cultivos permanentes semi intensivos de clima medio, Cultivos permanentes semi intensivos de clima frío); (Ganadera: Pastoreo intensivo de clima cálido, Pastoreo intensivo de clima medio, Pastoreo intensivo de clima frío, Pastoreo semi intensivo de clima cálido, Pastoreo semi intensivo de clima medio, Pastoreo semi intensivo de clima frío, Pastoreo extensivo de clima cálido, Pastoreo extensivo de clima medio, Pastoreo extensivo de clima frío, Pastoreo extensivo de clima muy frío); (Agroforestal: Agrosilvícola con cultivos transitorios, Agrosilvícola con cultivos permanentes, Agrosilvopastoril con cultivos transitorios, Agrosilvopastoril con cultivos permanentes, Silvopastoril); (Forestal: Producción de clima cálido, Producción de clima medio, Producción de clima frío, Producción de clima muy frío, Protección – producción); (Conservación: Protección, Humedales, Conservación y recuperación).
+
+Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Vocación de Uso. Territorio Nacional_.
+
+<div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
+### 3.2. Conflictos de uso
 
-## 3. Análisis usando software libre - QGIS
+
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
