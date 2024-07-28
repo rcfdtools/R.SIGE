@@ -123,6 +123,11 @@ Podrá observar que se han identificado los siguientes 17 polígonos de intersec
 
 <div align="center">RURAL - Centro Poblado Rural - C.P.R. BOSQUES DE SILECIA<br><img src="graph/ArcGISPro_SelectByAttributes8.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
+<div align="center">RURAL - Centro Poblado Rural - C.P.R. APOSENTO ALTO<br><img src="graph/ArcGISPro_SelectByAttributes9.png" alt="R.SIGE" width="100%" border="0" /></div><br>
+
+> Gran parte del Centro Poblado Rural Bolívar 83, no ha sido identificado como zona incompatible en el análisis realizado, debido a que en la capa de suelos, casí toda su superficie ha sido catalogada como urbana.
+
+
 
 
 ## 3. Análisis usando software libre - QGIS
