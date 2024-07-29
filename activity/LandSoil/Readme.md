@@ -223,6 +223,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * [Mapa Digital de Suelos del Departamento de Cundinamarca, República de Colombia. Escala 1:100.000. Año 2001.](https://metadatos.icde.gov.co/geonetwork/srv/api/records/f7c184ea-8abb-45a5-9cf2-1f88981760b6)
 * https://www.colombiaenmapas.gov.co/
 * https://geoportal.igac.gov.co/contenido/datos-abiertos-agrologia
+* https://www.datos.gov.co/dataset/vocaciondeusoterritorionacional/ip25-k55k/about_data
 
 
 ## Control de versiones
