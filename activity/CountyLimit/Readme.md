@@ -336,6 +336,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://www.colombiaenmapas.gov.co/
 * https://www.qgis.org/en/docs/index.html
 * https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html
+* [Geovisor del municipio de Zipaquirá](https://www.arcgis.com/apps/webappviewer/index.html?id=122af7ada9f1415692af27e9239a6d49)
 
 
 ## Control de versiones

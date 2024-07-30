@@ -278,7 +278,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://colaboracion.dnp.gov.co/CDT/Programa%20Nacional%20del%20Servicio%20al%20Ciudadano/NORMATIVA%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf
 * https://geoportal.igac.gov.co/contenido/datos-abiertos-catastro
 * https://gis.stackexchange.com/questions/43712/using-subtypes-and-domains-in-qgis-like-can-be-done-in-arcgis-desktop
-
+* [Base Catastral Nacional en https://www.colombiaenmapas.gov.co/](https://www.colombiaenmapas.gov.co/)
+* [Geovisor del municipio de Zipaquirá](https://www.arcgis.com/apps/webappviewer/index.html?id=122af7ada9f1415692af27e9239a6d49)
 
 ## Control de versiones
 
