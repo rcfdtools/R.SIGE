@@ -4,6 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/file/data/POT/Anexo_Acuerdo_012_2013/gdb/25899.gdb" />
       <excludeFolder url="file://$MODULE_DIR$/file/map/ArcGISPro/ArcGISPro.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/GobCund/Uso_Propuesto_del_Suelo.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/IGAC/SUELOS_CUNDINAMARCA_100K.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/SGC/agc2023.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/gdb/SIGE.gdb" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
