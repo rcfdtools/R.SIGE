@@ -131,7 +131,7 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 Para la estimación del caudal total demandado de agua potable, utilizaremos como referencia los valores de dotación neta por habitante, establecidos en el [Título B del Reglamento Técnico del Sector de Agua Potable y Sanemamiento Básico - RAS](https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf) de Colombia que hace parte de la Resolución 1096 del 17 de Noviembre de 2000. Para la estimación de los caudales domésticos retornados al sistema de alcantarillado utilizaremos los valores de referencia establecidos en el [Título D](https://www.minvivienda.gov.co/sites/default/files/documentos/titulo_d.pdf) del mismo reglamento.
 
-> :idea: Tenga en cuenta que la Resolución 0330 de 2017, por medio del cual se actualizó el reglamento de agua potable y saneamiento básico - RAS, ajustó los rangos de elevación de la zona estudio y los valores correspondientes a las dotaciones netas y coeficientes de retorno. Posteriormente y mediante la Resolución 799 de 2021, se realizaron ajustes complementarios a estas normas.
+> :bulb: Tenga en cuenta que la Resolución 0330 de 2017, por medio del cual se actualizó el reglamento de agua potable y saneamiento básico - RAS, ajustó los rangos de elevación de la zona estudio a partir de los cuales se definen los valores correspondientes a las dotaciones netas y coeficientes de retorno. Posteriormente y mediante la Resolución 799 de 2021, se realizaron ajustes complementarios a estas normas.
 
 En la tabla de población del libro de Microsoft Excel suministrado para el desarrollo de esta actividad, se han incluido los siguientes atributos:
 
