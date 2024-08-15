@@ -299,6 +299,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://es.wikipedia.org/wiki/Censos_de_Colombia
 * https://www.minvivienda.gov.co/sites/default/files/documentos/titulob-030714.pdf
 * https://geoportal.dane.gov.co/
+* https://terridata.dnp.gov.co/
+* https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion
+* https://geoportal.dane.gov.co/geovisores/sociedad/cnpv-2018/
 
 
 ## Control de versiones
