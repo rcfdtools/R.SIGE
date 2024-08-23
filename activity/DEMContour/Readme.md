@@ -70,7 +70,7 @@ Al visualizar toda la superficie podrá observar que fuera del límite de las cu
 
 2. Desde las propiedades de la capa del límite municipal _Mpio25899_MOT2013_, realice un join con la tabla de resultados estadísticos y rotule incluyendo los valores obtenidos.
 
-Rótulo Arcade: `"Municipio de Zipaquirá\n A (ha): " + Round($feature['Mpio25899_MOT2013.APha'], 2) + "\nCota mín. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MIN'], 2) + "\nCota máx. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MAX'], 2) + "\nCota media. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MEAN'], 2) + "\nDesv. Est. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.STD'], 2)`
+Rótulo Arcade: `"Municipio de Zipaquirá\nA (ha): " + Round($feature['Mpio25899_MOT2013.APha'], 2) + "\nCota mín. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MIN'], 2) + "\nCota máx. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MAX'], 2) + "\nCota media. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.MEAN'], 2) + "\nDesv. Est. (m): " + Round($feature['Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat.STD'], 2)`
 
 <div align="center"><img src="graph/ArcGISPro_Label1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -119,15 +119,15 @@ En la tabla de atributos de la capa _Mpio25899_DiviPol_ podrá observar que ahor
 
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Desde las propiedades de la capa de división política municipal catastral _Mpio25899_DiviPol_, realice un join con la tabla de resultados estadísticos y rotule incluyendo los valores obtenidos.
+2. Desde las propiedades de la capa de división política municipal catastral _Mpio25899_DiviPol_, realice un join con la tabla de resultados estadísticos y rotule incluyendo los valores obtenidos. Ajuste la simbología removiendo el color del relleno.
 
-Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\n" + Round($feature['Mpio25899_DiviPol.APha'], 2) + "\nCota mín. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MIN'], 2) + "\nCota máx. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MAX'], 2) + "\nCota media. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MEAN'], 2) + "\nDesv. Est. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.STD'], 2)`
+> Es necesario calcular y asignar los valores del área planar y geodésica al polígono urbano incorporado.
+
+Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\n" + Round($feature['Mpio25899_DiviPol.APha'], 2) + "\nCota mín. (m): " + Round($feature['Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat.MIN'], 2) + "\nCota máx. (m): " + Round($feature['Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat.MAX'], 2) + "\nCota media. (m): " + Round($feature['Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat.MEAN'], 2) + "\nDesv. Est. (m): " + Round($feature['Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat.STD'], 2)`
 
 <div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 <div align="center"><img src="graph/ArcGISPro_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-
 
 
 ## 4. Análisis usando software libre - QGIS
