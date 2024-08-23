@@ -50,10 +50,13 @@ Al visualizar toda la superficie podrá observar que fuera del límite de las cu
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyTIN2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Agregue al mapa la capa del límite territorial generada a partir del Modelo de Ocupación Territorial - MOT creada anteriormente y disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y simbolice solo por contorno. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Delineate TIN Data Area_, delimite el contorno del modelo triangulado utilizando un valor de máximo lado de cara que permita 
+6. Agregue al mapa la capa del límite territorial generada a partir del Modelo de Ocupación Territorial - MOT creada anteriormente y disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y simbolice solo por contorno. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Delineate TIN Data Area_, delimite el contorno del modelo triangulado utilizando un valor de máximo lado de cara que permita rebordear y ajustar el modelo a las curvas utilizadas, por ejemplo 4000 metros.
 
+> En la zona sur oriental del municipio, una pequeña fracción de superficie, no está cubierta por la superficie creada debido a que no existen curvas de nivel hasta su límite externo. 
 
-6. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / TIN To Raster_, convierta la superficie triangulada a una imagen o grilla TIFF, defina el tipo de salida en valores numéricos con decimales o _Floating Point_, seleccione el método Lineal y defina la resolución en 5 metros. Nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_   
+<div align="center"><img src="graph/ArcGISPro_DelineateTINDataArea.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / TIN To Raster_, convierta la superficie triangulada a una imagen o grilla TIFF, defina el tipo de salida en valores numéricos con decimales o _Floating Point_, seleccione el método Lineal y establezca la resolución de salida en 5 metros. Nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_   
 
 
 
