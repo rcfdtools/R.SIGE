@@ -153,10 +153,16 @@ Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\n" + Round($featur
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                                  | Procedimiento                                                                                                                                                    |
+|:---------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                               | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                          |
+| Rotulado                                                 | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                             |
+| Suavizar líneas (Smooth)                                 | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Smooth_.                                                                                    |
+| Convertir entidades a 3D (Feature to 3D by Attribute)    | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Set Z value_.                                                                               |
+| Superficie triangulada TIN                               | Herramienta disponible en el _Processing Toolbox / Mesh / [TIN Mesh Creation](https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/mesh.html). |
+| Superficie triangulada TIN a grilla (TIN to Raster)      | Herramienta disponible en el _Processing Toolbox / Mesh / Export Mesh on Grid.                                                                                   |
+| Estadística zonal como tabla (Zonal statistics as table) | Herramienta disponible en el _Processing Toolbox / Raster analysis / Zonal statistics.                                                                           |
+| Visualización en escena 3D (Local 3D scene)              | Se realiza utilizando el complemento [QGIS2threejs](https://plugins.qgis.org/plugins/Qgis2threejs/).                                                             |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -168,14 +174,17 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                       | Descripción                                                                                                                                                     | Geometría / Tipo | Registros | 
+|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------| 
+| IGAC_2013_CurvasNivelSmooth100m              | Curvas de nivel suavizadas 2D a partir de \file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL.                                                                  | Polilinea 2D     | 149       | 
+| IGAC_2013_CurvasNivelSmooth100m3D            | Conversión de curvas suavizadas a 3D a partir de IGAC_2013_CurvasNivelSmooth100m.                                                                               | Polígono 2D      | 149       | 
+| IGAC_2013_CurvasNivelSmooth100mTIN           | Modelo de terreno triangulado TIN a partir de curvas suavizadas 3D IGAC_2013_CurvasNivelSmooth100m3D.                                                           | (TIN)            | N/A       | 
+| IGAC_2013_CurvasNivelSmooth100mTIN.tif       | Modelo digital de elevación DEM a partir de TIN IGAC_2013_CurvasNivelSmooth100mTIN, resolución 5 metros.                                                        | (Ráster)         | N/A       | 
+| Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat | Tabla de estadísticos zonales del límite municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_MOT2013.              | (Tabla)          | 1         | 
+| Mpio25899_DiviPol                            | División política catastral municipal DANE 2020 a partir de la capa de veredas VeredaDANE2020 con inclusión de límite urbano catastral.                         | Polígono 2D      | 15        | 
+| Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat | Tabla de estadísticos zonales de la división política municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_DiviPol. | (Tabla)          | 15        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -184,8 +193,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P5** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P5** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P5** | Para su caso de estudio, realice el análisis topográfico presentado en esta actividad.                                                                                                                                                                                                                                                                                                                                                              | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-1: curvas de nivel categorizadas POT y suavizadas._<br>Incluir rótulos y simbología por categoría de curvas principales y secundarias. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                              | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-2: modelo digital de elevación TIN vectorial._<br>Incluir representación de la red triangulada. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                     | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-2: estadísticos de elevación municipal y por vereda._<br>Mostrar grilla de terreno de fondo y rotular incluyendo nombres de zona, área, cota mínima, media, máxima y desviación estándar. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                         | 
 | Avance **P5** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -195,22 +206,23 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/cartography/smooth-line.htm
+* https://www.esri.com/arcgis-blog/products/arcgis-desktop/mapping/some-best-practices-for-working-with-dems/
 
 
 ## Control de versiones
 
-| Versión     | Descripción                                                | Autor                                      | Horas |
-|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.03.24  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.08.23 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                | Autor                                     | Horas |
+|------------|:-----------------------------------------------------------|-------------------------------------------|:-----:|
+| 2024.03.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools) |   4   |
+| 2024.08.23 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools) |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../LandSoil/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../LandSoil/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/28) | [Siguiente :arrow_forward:]() |
+|----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
