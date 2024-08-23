@@ -91,8 +91,13 @@ Rótulo Arcade: `"Municipio de Zipaquirá\n A (ha): " + Round($feature['Mpio2589
 
 <div align="center"><img src="graph/ArcGISPro_Union1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Abra la tabla de atributos de la capa _VeredaDANEUnionLimiteMOT_ e invierta la selección para seleccionar todos los demás polígonos que no corresponden al límite urbano.
 
+<div align="center"><img src="graph/ArcGISPro_SwitchSelect1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. En la tabla de atributos, de clic en el botón _Delete_ que le permitirá eliminar las entidades seleccionadas excepto el polígono urbano. Como observa, perimetralmente existen múltiples elementos que no hacen parte del área urbana catastral.
+
+<div align="center"><img src="graph/ArcGISPro_Delete1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
