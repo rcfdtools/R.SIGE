@@ -42,12 +42,18 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 <div align="center"><img src="graph/ArcGISPro_CreateTIN1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-El modelo TIN puede ser representado utilizando diferentes estilos. Por ejemplo, puede representar la superficie en 32 rangos de colores y visualizar la caras de los tríangulos que componen el modelo.
+El modelo TIN puede ser representado utilizando diferentes estilos. Por ejemplo, puede representar la superficie en 32 rangos de colores y visualizar las caras de los tríangulos que componen el modelo.
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyTIN1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Al visualizar toda la superficie podrá observar que fuera del límite de las curvas de nivel, se han generado triángulos que no corresponden a terreno al terreno y que representan una extrapolación de la superficie.
 
-6. 
+<div align="center"><img src="graph/ArcGISPro_SymbologyTIN2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Agregue al mapa la capa del límite territorial generada a partir del Modelo de Ocupación Territorial - MOT creada anteriormente y disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y simbolice solo por contorno. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Delineate TIN Data Area_, delimite el contorno del modelo triangulado utilizando un valor de máximo lado de cara que permita 
+
+
+6. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / TIN To Raster_, convierta la superficie triangulada a una imagen o grilla TIFF, defina el tipo de salida en valores numéricos con decimales o _Floating Point_, seleccione el método Lineal y defina la resolución en 5 metros. Nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_   
 
 
 
