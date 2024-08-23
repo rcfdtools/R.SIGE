@@ -35,11 +35,11 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 3. Para incorporar en ArcGIS Pro los estilos contenidos en el archivo _agc2023.style_ del SGC, en el menú _Insert_, seleccione la opción _Styles / Import_ y añada el archivo.  
 
-> La importación de los estilos no actualiza automáticamente los colores aplicados a las unidades cronoestratigráficas, si aplicación puede ser realizada manualmente utilizando los códigos y colores importados.
+> La importación de los estilos no actualiza automáticamente los colores aplicados a las unidades cronoestratigráficas, su aplicación puede ser realizada manualmente utilizando los códigos y colores importados.
 
 <div align="center"><img src="graph/ArcGISPro_Styles1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en el panel de simbología podrá observar que se ha incluído un grupo de estilo nuevo, denominado _agc2023_. Para aplicar el estilo _C-Pi_, correspondiente a _Dioritas, granodioritas, cuarzodioritas, tonalitas y gabros_, seleccione el símbolo correspondiente.
+Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en el panel de simbología podrá observar que se ha incluido un grupo de estilo nuevo, denominado _agc2023_. Para aplicar el estilo _C-Pi_, correspondiente a _Dioritas, granodioritas, cuarzodioritas, tonalitas y gabros_, seleccione el símbolo correspondiente.
 
 <div align="center"><img src="graph/ArcGISPro_Styles2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
