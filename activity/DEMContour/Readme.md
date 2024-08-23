@@ -174,15 +174,15 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                                       | Descripción                                                                                                                                                     | Geometría / Tipo | Registros | 
-|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------| 
-| IGAC_2013_CurvasNivelSmooth100m              | Curvas de nivel suavizadas 2D a partir de \file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL.                                                                  | Polilinea 2D     | 149       | 
-| IGAC_2013_CurvasNivelSmooth100m3D            | Conversión de curvas suavizadas a 3D a partir de IGAC_2013_CurvasNivelSmooth100m.                                                                               | Polígono 2D      | 149       | 
-| IGAC_2013_CurvasNivelSmooth100mTIN           | Modelo de terreno triangulado TIN a partir de curvas suavizadas 3D IGAC_2013_CurvasNivelSmooth100m3D.                                                           | (TIN)            | N/A       | 
-| IGAC_2013_CurvasNivelSmooth100mTIN.tif       | Modelo digital de elevación DEM a partir de TIN IGAC_2013_CurvasNivelSmooth100mTIN, resolución 5 metros.                                                        | (Ráster)         | N/A       | 
-| Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat | Tabla de estadísticos zonales del límite municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_MOT2013.              | (Tabla)          | 1         | 
-| Mpio25899_DiviPol                            | División política catastral municipal DANE 2020 a partir de la capa de veredas VeredaDANE2020 con inclusión de límite urbano catastral.                         | Polígono 2D      | 15        | 
-| Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat | Tabla de estadísticos zonales de la división política municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_DiviPol. | (Tabla)          | 15        | 
+| Nombre                                        | Descripción                                                                                                                                                     | Geometría / Tipo | Registros | 
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------| 
+| IGAC_2013_CurvasNivelSmooth100m               | Curvas de nivel suavizadas 2D a partir de \file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL.                                                                  | Polilinea 2D     | 149       | 
+| IGAC_2013_CurvasNivelSmooth100m3D             | Conversión de curvas suavizadas a 3D a partir de IGAC_2013_CurvasNivelSmooth100m.                                                                               | Polígono 2D      | 149       | 
+| IGAC_2013_CurvasNivelSmooth100mTIN            | Modelo de terreno triangulado TIN a partir de curvas suavizadas 3D IGAC_2013_CurvasNivelSmooth100m3D.                                                           | (TIN)            | N/A       | 
+| IGAC_2013_CurvasNivelSmooth100mTIN.tif        | Modelo digital de elevación DEM a partir de TIN IGAC_2013_CurvasNivelSmooth100mTIN, resolución 5 metros.                                                        | (Ráster)         | N/A       | 
+| Mpio25899_MOT2013_IGAC_2013_ CurvasNivel_Stat | Tabla de estadísticos zonales del límite municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_MOT2013.              | (Tabla)          | 1         | 
+| Mpio25899_DiviPol                             | División política catastral municipal DANE 2020 a partir de la capa de veredas VeredaDANE2020 con inclusión de límite urbano catastral.                         | Polígono 2D      | 15        | 
+| Mpio25899_DiviPol_DANE_2020_ CurvasNivel_Stat | Tabla de estadísticos zonales de la división política municipal obtenido a partir del DEM IGAC_2013_CurvasNivelSmooth100mTIN.tif y el límite Mpio25899_DiviPol. | (Tabla)          | 15        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 

@@ -1,5 +1,5 @@
 # Plantilla para actividades
-Keywords: `DEM` `AgreeDEM`
+Keywords: `dem` `agreedem`
 
 xxxxxxxxxxxxxxxxxxxxxxxxxx
 
