@@ -26,7 +26,11 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_CurvaNivel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. 
+2. Manualmente, acérquese a escala 1:2000 sobre las curvas de nivel, podrá observar que en algunas zonas donde existen cambios de dirección fuertes, las curvas tienen terminaciones anguladas y no describen con suavidad el terreno.
+
+<div align="center"><img src="graph/ArcGISPro_Zoom1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
