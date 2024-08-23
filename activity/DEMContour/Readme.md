@@ -1,5 +1,5 @@
 # Modelo digital de elevación a partir de curvas de nivel
-Keywords: `DEM` `Contour`
+Keywords: `dem` `contour` `smooth-line` `feature-to-3d-by-attribute` `tin` `tin-to-raster` `zonal-statistics-as-table`
 
 A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulación del POT, genere las siguientes clases de entidad y modelos DEM: curvas de nivel suavizadas 2D, curvas de nivel suavizadas 3D, modelo de terreno triangulado en formato TIN con conversión a ráster. Genere estadísticos de elevación por vereda, centro poblado y zona urbana (obtenga: cota mínina, media, máxima, rango y desviación estándar). En una escena local, cree una visualización 3D que incluya la superficie de terreno generada, las curvas de nivel suavizadas y los límites veredales.
 
@@ -8,8 +8,10 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 ## Objetivos
 
+* Simbolizar curvas de nivel por categorías.
+* Suavizar curvas de nivel y convertir a 3 dimensiones.
 * Crear un modelo digital de elevación a partir de curvas de nivel.
-* Evaluar la topografía veredal a partir del modelo digital de elevación.
+* Analizar la topografía municipal a partir del modelo digital de elevación.
 
 
 ## Requerimientos
@@ -130,7 +132,24 @@ Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\n" + Round($featur
 <div align="center"><img src="graph/ArcGISPro_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 4. Análisis usando software libre - QGIS
+## 4. Representación 3D
+
+1. En el menú _Insert_ de clic en la opción _New Map_ y cree una nueva escena local, nombre la escena como DEMContour. En el Menú _Map_ y desde las opciones de _Layer / Elevation Source Layer_, agregue la grilla raster _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_. Como observa, la representación muestra el límite del modelo de terreno generado y el mapa topográfico de ESRI.
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_LocalScene2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el _Catalog Pane_, agregue al mapa las capas de división política, curvas de nivel 3D y la grilla del modelo de terreno. Simbolice la grilla de terreno utilizando sombreado de relieve en escala de grises, las curvas de nivel en color negro y los límites políticos en color rojo.
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la tabla de contenido o _Contents_, seleccione en _Elevation Surfaces_ el grupo _Ground_ y desde el menú superior _Elevation Surface Layer_, ajuste la exageración vertical a 5.00. De esta forma obtendrá una representación más visual de los elementos 3D contenidos en la escena.
+
+> Debido a que las curvas de nivel contienen vectores 3D, se recomienda mover en la tabla de contenido esta capa del grupo _3D Layers_ a _2D Layers_, así podrá reproyectar las curvas sobre el terreno con exageración vertical.
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
