@@ -95,12 +95,27 @@ Rótulo Arcade: `"Municipio de Zipaquirá\n A (ha): " + Round($feature['Mpio2589
 
 <div align="center"><img src="graph/ArcGISPro_SwitchSelect1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En la tabla de atributos, de clic en el botón _Delete_ que le permitirá eliminar las entidades seleccionadas excepto el polígono urbano. Como observa, perimetralmente existen múltiples elementos que no hacen parte del área urbana catastral.
+5. En la tabla de atributos, de clic en el botón _Delete_ que le permitirá eliminar las entidades seleccionadas excepto el polígono urbano. Como observa, perimetralmente existen múltiples elementos que no hacen parte del área urbana catastral y por el proceso de unión fueron asociados a esta entidad multiparte.
 
 <div align="center"><img src="graph/ArcGISPro_Delete1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Utilizando la herramienta de edición _Divide / Explode_, separe todas las entidades multi-parte asociadas al polígono urbano obtenido. Al realizar la explotación obtendrá en la tabla de atributos múltiples polígonos independientes (467 para este ejemplo).
 
+<div align="center"><img src="graph/ArcGISPro_Explode1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+7. Para eliminar las fracciones que no hacen parte del área catastral urbana, en el menú _Edit_ guarde la edición realizada, luego seleccione el polígono principal, invierta la selección y elimine estos elementos. Al finalizar obtendrá un único polígono.
+
+<div align="center"><img src="graph/ArcGISPro_Delete2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Para incorporar el polígono obtenido a la capa _Mpio25899_DiviPol_, seleccione el polígono urbano de la capa _VeredaDANEUnionLimiteMOT_ y en el menú _Map_ de clic en la opción _Copy_, luego en _Paste_, seleccione _Paste Special_, seleccione la capa destino _Mpio25899_DiviPol_ y de clic en _OK_.
+
+<div align="center"><img src="graph/ArcGISPro_PasteSpecial1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la tabla de atributos de la capa _Mpio25899_DiviPol_ podrá observar que ahora se encuentra el registro correspondiente al polígono urbano pero sin ningún tipo de atributo descriptivo. En el campo `NOMBRE_VER` asigne el nombre _URBANO_.
+
+<div align="center"><img src="graph/ArcGISPro_DiviPol2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+ 
 
 
 ## 4. Análisis usando software libre - QGIS
