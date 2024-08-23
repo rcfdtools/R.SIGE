@@ -16,11 +16,12 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:mortar_board:Actividad](../CountyLimit/Readme.md): Análisis veredal y límite territorial.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de modelo digital de elevación a partir de curvas
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMContour_ y establezca el CRS 9377. Agregue al mapa la capa de curvas de nivel disponible en la ruta `\file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL` y ajuste la simbología a valores únicos representando el campo de atributos `LAYER` cuyos valores correspondientes a curvas de nivel principales se han identificado con el número 15 y curvas secundarias para elementos nulos o vacíos. Abra la tabla de atributos, podrá observar que la geometría corresponde solo a líneas en dos dimensiones o _Polyline_.
 
@@ -50,7 +51,7 @@ Al visualizar toda la superficie podrá observar que fuera del límite de las cu
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyTIN2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Agregue al mapa la capa del límite territorial generada a partir del Modelo de Ocupación Territorial - MOT creada anteriormente y disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y simbolice solo por contorno. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Delineate TIN Data Area_, delimite el contorno del modelo triangulado utilizando un valor de máximo lado de cara que permita rebordear y ajustar el modelo a las curvas utilizadas, por ejemplo 4000 metros.
+6. Agregue al mapa la capa del límite territorial generada a partir del Modelo de Ocupación Territorial - MOT creada anteriormente en la actividad _[Análisis veredal y límite territorial](../CountyLimit/Readme.md)_ y disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y simbolice solo por contorno. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Delineate TIN Data Area_, delimite el contorno del modelo triangulado utilizando un valor de máximo lado de cara que permita rebordear y ajustar el modelo a las curvas utilizadas, por ejemplo 4000 metros.
 
 > En la zona sur oriental del municipio, una pequeña fracción de superficie, no está cubierta por la superficie creada debido a que no existen curvas de nivel hasta su límite externo. 
 
@@ -61,10 +62,23 @@ Al visualizar toda la superficie podrá observar que fuera del límite de las cu
 <div align="center"><img src="graph/ArcGISPro_DelineateTINToRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Análisis topográfico municipal
+
+1. Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga la tabla de valores estadísticos de elevación sobre todo el municipio, incluya los percentiles 15, 25, 75, 85 y guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_MOT2013_IGAC_2013_CurvasNivel_Stat`. Podrá observar en la tabla de resultados que la cota promedio municipal es 2955.52 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. 
+
+
+## 3. Análisis topográfico veredal
 
 
 
-## 2. Análisis usando software libre - QGIS
+
+
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
