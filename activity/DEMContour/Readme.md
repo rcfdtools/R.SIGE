@@ -34,6 +34,18 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 <div align="center"><img src="graph/ArcGISPro_SmoothLine1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. En la tabla de atributos de las líneas suavizadas, cree un campo de atributos numérico doble con el nombre `Cotam` y asigne el valor almacenado en el campo de texto `COTA`. Luego, utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Feature to 3D by Attribute_, convierta las curvas de nivel 2D a curvas en trés dimensiones, nombre la clase de entidad resultante como _\file\gdb\SIGE.gdb\SIGE\IGAC_2013_CurvasNivelSmooth100m3D_ y verifique la geometría en la tabla de atributos correspondiente a .
+
+<div align="center"><img src="graph/ArcGISPro_FeatureTo3DByAttribute.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / Create TIN_, cree una superficie 3D triangulada, nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN_, asigne el CRS 9377, utilice el campo _SHAPE.Z_ de las curvas suavizadas 3D, seleccione el tipo _Hard_Line_ y defina el campo de etiquetado a partir de `Cotam`.
+
+<div align="center"><img src="graph/ArcGISPro_CreateTIN1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. 
+
+
+
 
 
 
