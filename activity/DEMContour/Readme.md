@@ -30,9 +30,9 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 <div align="center"><img src="graph/ArcGISPro_Zoom1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Utilizando la herramienta de geo-procesamiento _Cartography Tools / Smooth Line_, suavice las curvas de nivel utilizando un radio de aproximación de 100 metros utilizando el algoritmo de aproximación polinómica PAEK y resolviendo los errores topológicos (como traslapo entre líneas suavizadas). Nombre la capa resultante como _\file\gdb\SIGE.gdb\SIGE\IGAC_2013_CurvasNivelSmooth100m_. Cambie la simbología de las curvas iniciales a valores únicos utilizando un color claro, podrá observar que la curvas suavizadas representan mejor la superficie del terreno.
 
-
-
+<div align="center"><img src="graph/ArcGISPro_SmoothLine1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
