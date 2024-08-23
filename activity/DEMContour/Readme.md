@@ -56,9 +56,9 @@ Al visualizar toda la superficie podrá observar que fuera del límite de las cu
 
 <div align="center"><img src="graph/ArcGISPro_DelineateTINDataArea.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / TIN To Raster_, convierta la superficie triangulada a una imagen o grilla TIFF, defina el tipo de salida en valores numéricos con decimales o _Floating Point_, seleccione el método Lineal y establezca la resolución de salida en 5 metros. Nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_   
+7. Utilizando la herramienta de geo-procesamiento _3D Analysis Tools / TIN To Raster_, convierta la superficie triangulada a una imagen o grilla TIFF, defina el tipo de salida en valores numéricos con decimales o _Floating Point_, seleccione el método Lineal y establezca la resolución de salida en 5 metros. Nombre como _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_ y simbolice por relieve sombreado. 
 
-
+<div align="center"><img src="graph/ArcGISPro_DelineateTINToRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
