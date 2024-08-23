@@ -42,6 +42,11 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 <div align="center"><img src="graph/ArcGISPro_CreateTIN1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+El modelo TIN puede ser representado utilizando diferentes estilos. Por ejemplo, puede representar la superficie en 32 rangos de colores y visualizar la caras de los tríangulos que componen el modelo.
+
+<div align="center"><img src="graph/ArcGISPro_SymbologyTIN1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 6. 
 
 
