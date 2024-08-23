@@ -115,7 +115,19 @@ En la tabla de atributos de la capa _Mpio25899_DiviPol_ podrá observar que ahor
 
 <div align="center"><img src="graph/ArcGISPro_DiviPol2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
- 
+9. Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga la tabla de valores estadísticos de elevación para cada polícono contenido en la división política municipal DANE 2020, incluya los percentiles 15, 25, 75, 85 y guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_DiviPol_DANE_2020_CurvasNivel_Stat`. 
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde las propiedades de la capa de división política municipal catastral _Mpio25899_DiviPol_, realice un join con la tabla de resultados estadísticos y rotule incluyendo los valores obtenidos.
+
+Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\n" + Round($feature['Mpio25899_DiviPol.APha'], 2) + "\nCota mín. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MIN'], 2) + "\nCota máx. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MAX'], 2) + "\nCota media. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.MEAN'], 2) + "\nDesv. Est. (m): " + Round($feature['Mpio25899_DiviPol_IGAC_2013_CurvasNivel_Stat.STD'], 2)`
+
+<div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+<div align="center"><img src="graph/ArcGISPro_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 ## 4. Análisis usando software libre - QGIS
