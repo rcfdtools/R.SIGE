@@ -75,8 +75,23 @@ Rótulo Arcade: `"Municipio de Zipaquirá\n A (ha): " + Round($feature['Mpio2589
 <div align="center"><img src="graph/ArcGISPro_Label1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 3. Análisis topográfico veredal catastral
 
-## 3. Análisis topográfico veredal
+1. Agregue al mapa y desde la ruta `\file\gdb\SIGE.gdb\SIGE\VeredaDANE2020`, la capa de límites veredales del DANE obtenida previamente, simbolice con relleno gris y rotule a partir del campo `NOMBRE_VER`. 
+
+> Cómo observa, el límite municipal obtenido a partir del MOT no es exactamente igual al límite de veredas del DANE debido a que la información catastral utilizada en la formulación del POT correspondía al año 2010. También, la capa de veredas no contiene el límite del polígono catastral urbano. 
+
+<div align="center"><img src="graph/ArcGISPro_VeredaDANE1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para crear el polígono del área urbana, primero cree una copia de la capa de veredas dando clic derecho en la tabla de contenido o _Contents_ sobre la capa _VeredaDANE2020_ y seleccionando la opción _Data / Export Features_, guarde la copia como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_DiviPol`.
+
+<div align="center"><img src="graph/ArcGISPro_DiviPol1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Union_, combine los polígonos de las capas _Mpio25899_DiviPol_ y _Mpio25899_MOT2013_. Guarde la capa resultante en la carpeta temporal de la GDB como `\file\gdb\SIGE.gdb\Temp\VeredaDANEUnionLimiteMOT`. Podrá observar que la unión contiene el polígono del área catastral urbana, sin embargo, al ser seleccionado manualmente, los sub-polígonos del contorno provenientes de la capa del límite del MOT, también han sido incluídos en esta entidada.
+
+<div align="center"><img src="graph/ArcGISPro_Union1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
