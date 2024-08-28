@@ -19,6 +19,9 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 * [:mortar_board:Actividad](../SZH/Readme.md): Análisis de sub-zonas hidrográficas.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:man_technologist:Usuario](https://urs.earthdata.nasa.gov/): Creación de cuenta de usuario NASA 
+* [:man_technologist:Usuario](https://ers.cr.usgs.gov/): Creación de cuenta de usuario USGS
+* [:man_technologist:Usuario:](https://portal.opentopography.org/newUser): Creación de cuenta de usuario en Open Topography 
 
 
 ## 1. Creación de máscara para obtención de modelos digitales de elevación - DEM 
