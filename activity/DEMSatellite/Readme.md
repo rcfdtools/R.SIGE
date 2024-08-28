@@ -1,9 +1,9 @@
-# Modelo digital de elevación a partir de sensores remotos satelitales
+# Modelo digital de elevación - DEM a partir de sensores remotos satelitales
 Keywords: `aster-gdem` `srtm` `alos-palsar` `copernicus` `extract-multivalues-to-points`
 
 Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el límite de la envolvente de las Subzonas Hidrográficas SZH de proyecto (utilice la envolvente creada para definir la zona de selección de las imágenes satelitales de terreno): ASTER GDEM v3, SRTM, ALOS PALSAR y ESA Copernicus. Cree una red de muestreo regular con nodos cada 1 km utilizando el límite municipal generado previamente a partir del MOT y obtenga en cada punto las elevaciones a partir de estos 4 modelos y el modelo generado a partir de las curvas de nivel del POT, compare y analice con matrices de dispersión múltiple las diferencias encontradas. A partir del DEM Copernicus, genere curvas de nivel categorizadas principales cada 50 metros y secundarias cada 10 metros, compare y analice las diferencias con respecto a las curvas del POT.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/DEMSatellite.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -16,21 +16,39 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 ## Requerimientos
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
-* [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:mortar_board:Actividad](../SZH/Readme.md): Análisis de sub-zonas hidrográficas.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de máscara para obtención de modelos digitales de elevación - DEM 
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMSatellite_ y establezca el CRS 9377. Agregue al mapa la capa del límite territorial municipal generado a partir del Modelo de Ocupación Territorial - MOT disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y ajuste la simbología a contorno rojo sin relleno.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Feature Envelope To Polygon_, genere un polígono envolvente alrededor del límite municipal, nombre como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013_Envelope`.
+
+<div align="center"><img src="graph/ArcGISPro_FeatureEnvelopeToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Buffer_, cree un polígono aferente externo de 2500 metros alrededor de la envolvente obtenida. Nombre la capa resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013_Envelope_Buffer2500m`.
+
+> Este polígono aferente será utilizado para definir el límite de descarga de los modelos digitales de elevación y hemos utilizado 2500 metros para que el terreno obtenido cubra los drenajes próximos que fluyen hacia dentro del área municipal evalada.
+
+<div align="center"><img src="graph/ArcGISPro_Buffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. 
 
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+
+
+
+
+## 2. Modelo digital de elevación NASA ASTER GDEM
+
+
+
+
 
 
 

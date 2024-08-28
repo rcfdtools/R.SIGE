@@ -1,4 +1,4 @@
-# Modelo digital de elevación a partir de curvas de nivel
+# Modelo digital de elevación - DEM a partir de curvas de nivel
 Keywords: `dem` `contour` `smooth-line` `feature-to-3d-by-attribute` `tin` `tin-to-raster` `zonal-statistics-as-table`
 
 A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulación del POT, genere las siguientes clases de entidad y modelos DEM: curvas de nivel suavizadas 2D, curvas de nivel suavizadas 3D, modelo de terreno triangulado en formato TIN con conversión a ráster. Genere estadísticos de elevación por vereda, centro poblado y zona urbana (obtenga: cota mínina, media, máxima, rango y desviación estándar). En una escena local, cree una visualización 3D que incluya la superficie de terreno generada, las curvas de nivel suavizadas y los límites veredales.
