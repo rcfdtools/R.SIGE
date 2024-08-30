@@ -79,7 +79,7 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Windows_ASTGTM_003Folder.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Cargue las 4 imágenes DEM descargadas al proyecto de ArcGIS Pro. Podrá observar que por la localización específica del municipio evaluado, fue necesario descargar estas 4 celdas.   
+6. Cargue las 4 imágenes DEM (_dem.tif) descargadas al proyecto de ArcGIS Pro. Podrá observar que por la localización específica del municipio evaluado, fue necesario descargar estas 4 celdas.   
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -97,6 +97,10 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 
 ## 3. Modelo digital de elevación SRTM (30 m)
+
+Shuttle Radar Topography Mission (SRTM), dispone de mapas topográficos de alta resolución para uso público desde el año 2015 y pueden ser utilizados para la creación de los mapas de dirección y acumulación de flujo.
+
+A partir del segundo semestre de 2019, el modelo de terreno SRTM v3, ya se encuentra disponible para descarga por el servidor EarthData de la NASA, buscar como "NASA Shuttle Radar Topography Mission Global 1 arc second V003".
 
 1. En https://search.earthdata.nasa.gov/, ingrese como cadena de búsqueda **_NASA Shuttle Radar Topography Mission Global 1 arc second V003_**, luego desde la parte superior izquierda, seleccione la opción de definición de límite de búsqueda a partir de un archivo o _File (KML, KMZ, ESRI, ...)_ y cargue el archivo comprimido `\file\shp\Mpio25899_MOT2013_Envelope_Buffer2500m.zip` tal como se explicó en el procedimiento de descarga ASTER GDEM v3.
 
@@ -125,11 +129,43 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 4. Modelo digital de elevación ALOS Palsar (12.5 m)
+
+ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrumentos de observación avanzada de la superficie terrestre, que permite entre otros, obtener un modelo digital de la tierra en alta resolución [^1].
+
+1. En https://search.earthdata.nasa.gov/, ingrese como cadena de búsqueda **_ALOS_PALSAR_RTC_HIGH_RES_**, luego desde la parte superior izquierda, seleccione la opción de definición de límite de búsqueda a partir de un archivo o _File (KML, KMZ, ESRI,...)_ y cargue el archivo comprimido `\file\shp\Mpio25899_MOT2013_Envelope_Buffer2500m.zip` tal como se explicó en el procedimiento de descarga ASTER GDEM v3.
+
+<div align="center"><img src="graph/Chrome_EarthData8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la ventana de resultados de búsqueda podrá observar que se despliegan 77 resultados correspondientes a las imágenes originales tomadas desde el satélite, en el panel lateral defina la fecha inicial en 2011-02-01 para obtener las imágenes más recientas, obtendrá 4 resultados. De clic en el botón _Download All_ para iniciar la descarga y siga las instrucciones mostradas en el navegador y mueva los archivos descargados a la carpeta `\file\dem\` y renombre la carpeta como `ALOSPalsarFBS`. Podrá observar que la descarga incluye 4 archivos comprimidos. De cada archivo comprimido, extraiga los archivos `.dem.tif`.
+
+<div align="center"><img src="graph/Chrome_EarthData9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center"><img src="graph/Windows_ALOSPalsarFBSFolder.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Cargue las 4 imágenes DEM descargadas al proyecto de ArcGIS Pro. 
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Mosaic to New Raster_, cree el mosaico a partir de las 4 imágenes independientes seleccionando Pixel Type en 32 bit signed, asigne el CRS 9377, defina el número de bandas en 1 y el operador de mosaico en _**Mean**_. Nombre como `\file\dem\ASTGTM_003\ALOSPalsarFBSMosaicArcGISPro.tif`. Podrá observar que el rango de elevaciones del mosaico se encuentra entre las cotas 188 y 3878 m.s.n.m cuyos valores son diferentes a los obtenidos en el modelo digital de elevación ASTER y ALOS Palsar.
+
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Simbolice por relieve sombreado en escala de grises y acerque al límite municipal.
+
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del municipio en estudio. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_ALOSPalsarFBS_Stat`. Podrá observar que el rango de elevaciones municipal es de 25557 a 3749 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 5. Modelo digital de elevación ESA Copernicus (30 m)
+
+
+
+
+
 
 
 ## 6. Análisis usando software libre - QGIS
