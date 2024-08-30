@@ -75,7 +75,29 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Chrome_EarthData5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Desde la carpeta de Descargas de su sistema operativo, mueva los archivos descargados a la carpeta  
+5. Desde la carpeta de Descargas de su sistema operativo, mueva los archivos descargados a la carpeta `\file\dem\` y renombre la carpeta como `ASTGTM_003`. Podrá observar que la descarga incluye 8 archivos, 4 corresponden al modelo digital de elevación (dem) y 4 a archivos de control numérico (num).
+
+<div align="center"><img src="graph/Windows_ASTGTM_003Folder.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
