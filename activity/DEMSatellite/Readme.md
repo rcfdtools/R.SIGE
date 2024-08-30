@@ -79,9 +79,17 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Windows_ASTGTM_003Folder.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. Cargue las 4 imágenes DEM descargadas al proyecto de ArcGIS Pro. Podrá observar que por la localización específica del municipio evaluado, fue necesario descargar estas 4 celdas.   
 
+<div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Mosaic to New Raster_, cree el mosaico a partir de las 4 imágenes independientes seleccionando Pixel Type en 32 bit signed, asigne el CRS 9377 y defina el número de bandas en 1. Nombre como `\file\dem\ASTGTM_003\ASTGTMV003MosaicArcGISPro.tif`. Podrá observar que el rango de elevaciones del mosaico se encuentra entre las cotas 86 y 1455 m.s.n.m.
 
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Simbolice por relieve sombreado en escala de grises y acerque al límite municipal.
+
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
