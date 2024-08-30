@@ -59,7 +59,7 @@ Lib/
 #HECHMS/gis/
 *.tif
 *.tif.*
-file/dem/*.zip
+file/dem/ALOSPalsarFBS/*.zip
 .dem/*.tif
 .dem/*.tif.*
 .data/DTM_Bogota2020_4326*.rar
