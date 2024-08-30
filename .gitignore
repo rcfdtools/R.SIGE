@@ -60,12 +60,9 @@ Lib/
 *.tif
 *.tif.*
 file/dem/ALOSPalsarFBS/*.zip
-.dem/*.tif
-.dem/*.tif.*
-.data/DTM_Bogota2020_4326*.rar
-.dem/DTM_Bogota2020_9377_Extent*.rar
-.dem/DTM_Bogota2020_9377_Extent_Building*.rar
-#.dem/*.zip
+file/dem/*.tif
+file/dem/*.tif.*
+file/dem/*.zip
 #.dem/*.rar
 #.dem/*.7z
 file/ref/Ley388de1997.pdf
