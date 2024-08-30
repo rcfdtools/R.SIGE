@@ -155,7 +155,7 @@ ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrument
 
 <div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del municipio en estudio. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_ALOSPalsarFBS_Stat`. Podrá observar que el rango de elevaciones municipal es de 25557 a 3749 m.s.n.m.
+6. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del municipio en estudio. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_ALOSPalsarFBS_Stat`. Podrá observar que el rango de elevaciones municipal es de 2557 a 3749 m.s.n.m.
 
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
