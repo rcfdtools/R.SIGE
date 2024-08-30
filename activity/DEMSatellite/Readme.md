@@ -55,48 +55,20 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 
 
 
+## 2. Modelo digital de elevación NASA ASTER GDEM (30 m)
 
 
 
+## 3. Modelo digital de elevación SRTM (30 m)
 
 
+## 4. Modelo digital de elevación ALOS Palsar (12.5 m)
 
 
+## 5. Modelo digital de elevación ESA Copernicus (30 m)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 2. Modelo digital de elevación NASA ASTER GDEM
-
-
-
-
-
-
-
-## 2. Análisis usando software libre - QGIS
+## 6. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
