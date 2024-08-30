@@ -42,7 +42,7 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 
 4. Desde la tabla de contenido y utilizando la herramienta _Export Features_, exporte la capa `Mpio25899_MOT2013_Envelope_Buffer2500m` en un archivo de formas shapefile dentro de la carpeta `\file\shp`. Utilice el mismo nombre de la clase de entidad contenida en la GDB.
 
-<div align="center"><img src="graph/ArcGISPro_Buffer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 
 
