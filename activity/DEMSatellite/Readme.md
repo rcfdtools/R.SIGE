@@ -83,7 +83,7 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Mosaic to New Raster_, cree el mosaico a partir de las 4 imágenes independientes seleccionando Pixel Type en 32 bit signed, asigne el CRS 9377 y defina el número de bandas en 1. Nombre como `\file\dem\ASTGTM_003\ASTGTMV003MosaicArcGISPro.tif`. Podrá observar que el rango de elevaciones del mosaico se encuentra entre las cotas 86 y 1455 m.s.n.m.
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Mosaic to New Raster_, cree el mosaico a partir de las 4 imágenes independientes seleccionando Pixel Type en 32 bit signed, asigne el CRS 9377 y defina el número de bandas en 1. Nombre como `\file\dem\ASTGTM_003\ASTGTMV003MosaicArcGISPro.tif`. Podrá observar que el rango de elevaciones del mosaico se encuentra entre las cotas 86 y 4155 m.s.n.m.
 
 <div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -106,9 +106,23 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Chrome_EarthData7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/Windows_SRTMGL3_003Folder.png" alt="R.SIGE" width="60%" border="0" /></div>
+<div align="center"><img src="graph/Windows_SRTMGL3_003Folder.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Cargue las 4 imágenes DEM descargadas al proyecto de ArcGIS Pro. 
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Mosaic to New Raster_, cree el mosaico a partir de las 4 imágenes independientes seleccionando Pixel Type en 32 bit signed, asigne el CRS 9377 y defina el número de bandas en 1. Nombre como `\file\dem\ASTGTM_003\SRTMGL3003MosaicArcGISPro.tif`. Podrá observar que el rango de elevaciones del mosaico se encuentra entre las cotas 131 y 4149 m.s.n.m cuyos valores son diferentes a los obtenidos en el modelo digital de elevación ASTER.
+
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Simbolice por relieve sombreado en escala de grises y acerque al límite municipal.
+
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del municipio en estudio. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_SRTMGL3003_Stat`. Podrá observar que el rango de elevaciones municipal es de 2546 a 3715 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
