@@ -165,10 +165,12 @@ ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrument
 
 
 
+## 6. Red de muestreo para comparación y análisis de elevaciones
 
 
 
-## 6. Análisis usando software libre - QGIS
+
+## 7. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
