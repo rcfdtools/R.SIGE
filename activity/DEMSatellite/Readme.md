@@ -66,7 +66,7 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Chrome_EarthData2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. En la casilla de búsqueda ingresar _ASTER Global Digital Elevation Model V003_. Podrá observar que para la zona de estudio, es necesario descargar 4 cuadrículas. En la parte inferior de la ventana de descarga, de clic en la opción _Donwload All_.
+3. En la casilla de búsqueda ingresar _**ASTER Global Digital Elevation Model V003**_. Podrá observar que para la zona de estudio, es necesario descargar 4 cuadrículas. En la parte inferior de la ventana de descarga, de clic en la opción _Donwload All_.
 
 <div align="center"><img src="graph/Chrome_EarthData3.png" alt="R.SIGE" width="80%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_EarthData4.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -96,23 +96,20 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 3. Modelo digital de elevación SRTM (30 m)
+
+1. En https://search.earthdata.nasa.gov/, ingrese como cadena de búsqueda **_NASA Shuttle Radar Topography Mission Global 1 arc second V003_**, luego desde la parte superior izquierda, seleccione la opción de definición de límite de búsqueda a partir de un archivo o _File (KML, KMZ, ESRI, ...)_ y cargue el archivo comprimido `\file\shp\Mpio25899_MOT2013_Envelope_Buffer2500m.zip` tal como se explicó en el procedimiento de descarga ASTER GDEM v3.
+
+<div align="center"><img src="graph/Chrome_EarthData6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la ventana de resultados de búsqueda podrá observar que al igual que el modelo ASTER, es necesario descargar 4 archivos. De clic en el botón _Download All_ para iniciar la descarga y siga las instrucciones mostradas en el navegador y mueva los archivos descargados a la carpeta `\file\dem\` y renombre la carpeta como `SRTMGL3_003`. Podrá observar que la descarga incluye 4 archivos comprimidos. De cada archivo comprimido, extraiga los archivos `.hgt`.
+
+<div align="center"><img src="graph/Chrome_EarthData7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center"><img src="graph/Windows_SRTMGL3_003Folder.png" alt="R.SIGE" width="60%" border="0" /></div>
+
+3. 
+
 
 
 ## 4. Modelo digital de elevación ALOS Palsar (12.5 m)
