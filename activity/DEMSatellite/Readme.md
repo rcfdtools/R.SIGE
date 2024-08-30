@@ -47,7 +47,7 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 
 5. En la carpeta `\file\shp\` comprima los archivos `Mpio25899_MOT2013_Envelope_Buffer2500m.dbf`, `Mpio25899_MOT2013_Envelope_Buffer2500m.prj`, `Mpio25899_MOT2013_Envelope_Buffer2500m.shp` y `Mpio25899_MOT2013_Envelope_Buffer2500m.shx` en un comprimido _.zip_.
 
-<div align="center"><img src="graph/Windows_ZipCompress1.png" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Windows_ZipCompress1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
