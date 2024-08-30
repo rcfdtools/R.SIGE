@@ -59,6 +59,7 @@ Lib/
 #HECHMS/gis/
 *.tif
 *.tif.*
+file/dem/*.zip
 .dem/*.tif
 .dem/*.tif.*
 .data/DTM_Bogota2020_4326*.rar
