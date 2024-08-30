@@ -66,7 +66,17 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 <div align="center"><img src="graph/Chrome_EarthData2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. En la casilla de búsqueda ingresar _ASTER Global Digital Elevation Model V003_. Podrá observar que para la zona de estudio, es necesario descargar 4 cuadrículas. En la parte inferior de la ventana de descarga, de clic en la opción _Donwload All_.
+
+<div align="center"><img src="graph/Chrome_EarthData3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_EarthData4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En la ventana de descarga, de clic en la opción _Download Data_ y siga los procedimientos complementarios desplegados por _EarthData_. El tamaño aproximado de los archivos es de 119.1 MB.
+
+<div align="center"><img src="graph/Chrome_EarthData5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Desde la carpeta de Descargas de su sistema operativo, mueva los archivos descargados a la carpeta  
+
 
 
 
