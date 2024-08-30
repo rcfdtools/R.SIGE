@@ -89,7 +89,7 @@ A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han 
 
 8. Simbolice por relieve sombreado en escala de grises y acerque al límite municipal.
 
-<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_MosaicToNewRaster2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
