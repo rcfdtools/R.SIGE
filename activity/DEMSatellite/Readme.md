@@ -19,7 +19,7 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 * [:mortar_board:Actividad](../SZH/Readme.md): Análisis de sub-zonas hidrográficas.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:man_technologist:Usuario](https://urs.earthdata.nasa.gov/): Creación de cuenta de usuario NASA. 
+* [:man_technologist:Usuario](https://urs.earthdata.nasa.gov/): Creación de cuenta de usuario NASA. [Más información](https://github.com/rcfdtools/R.LTWB/tree/main/Section02/UserCreation).
 * [:man_technologist:Usuario](https://ers.cr.usgs.gov/): Creación de cuenta de usuario USGS.
 * [:man_technologist:Usuario:](https://portal.opentopography.org/newUser): Creación de cuenta de usuario en Open Topography. 
 
@@ -45,17 +45,28 @@ Descargue y procese los siguientes modelos de terreno con cubrimiento hasta el l
 <div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="50%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_ExportFeatures2.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-5. En la carpeta `\file\shp\` comprima los archivos `Mpio25899_MOT2013_Envelope_Buffer2500m.dbf`, `Mpio25899_MOT2013_Envelope_Buffer2500m.prj`, `Mpio25899_MOT2013_Envelope_Buffer2500m.shp` y `Mpio25899_MOT2013_Envelope_Buffer2500m.shx` en un comprimido _.zip_.
+5. En la carpeta `\file\shp\` comprima en un archivo _.zip_ los archivos `Mpio25899_MOT2013_Envelope_Buffer2500m.dbf`, `Mpio25899_MOT2013_Envelope_Buffer2500m.prj`, `Mpio25899_MOT2013_Envelope_Buffer2500m.shp` y `Mpio25899_MOT2013_Envelope_Buffer2500m.shx`.
 
 <div align="center"><img src="graph/Windows_ZipCompress1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Modelo digital de elevación NASA ASTER GDEM v3 (30 m)
 
+Los sensores remotos japoneses Advanced Spaceborne Thermal Emission and Reflection Radiometer o ASTER, proveen imágenes de alta resolución del Planeta Tierra y las capturas están compuestas por 14 diferentes bandas del espectro electromagnético en el rango visible de la luz termal infrarroja. Las imágenes son capturadas en resoluciones entre 15 y 90 metros permitiendo crear mapas detallados de la temperatura y elevación de la tierra en celdas o píxeles con variaciones cada 1 metro.
 
+A partir del segundo semestre de 2019, los modelos de terreno ASTER GDEM v2 han sido reemplazados por la versión 3 integrada de todo el mundo, como novedad, la versión 3 no presenta problemas de sobre-elevaciones debidas a nubes.
 
+1. Utilizando su navegador de Internet, abra al portal https://search.earthdata.nasa.gov/, en la parte superior derecha ingrese con su cuenta de usuario y luego desde la parte superior izquierda, seleccione la opción de definición de límite de búsqueda a partir de un archivo o _File (KML, KMZ, ESRI, ...)_.
 
+<div align="center"><img src="graph/Chrome_EarthData1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-## 2. Modelo digital de elevación NASA ASTER GDEM (30 m)
+2. En la ventana de cargue de archivo, seleccione el archivo comprimido `\file\shp\Mpio25899_MOT2013_Envelope_Buffer2500m.zip` correspondiente a la envolvente de la zona de estudio.
+
+> Debido a que la envolvente incluye múltiples nodos en las esquinas redondeadas del buffer generado, es posible que reciba un mensaje de advertencia indicando que la capa contiene demasiados nodos. 
+
+<div align="center"><img src="graph/Chrome_EarthData2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
