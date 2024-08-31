@@ -229,12 +229,16 @@ Para el caso de estudio, las coordenadas límite obtenidas en grados decimales s
 
 A partir de las estadísticas zonales obtenidas de los modelos digitales de elevación, se pudo observar que los rangos de elevación son diferentes como se presenta en la siguiente tabla resúmen.
 
+<div align='center'>
+
 | Modelo digital                               | Mín.    | Med.     | Máx.    |
 |----------------------------------------------|---------|----------|---------|
 | NASA ASTER GDEM v3 (30 m)                    | 2528    | 2960.42  | 3717    |
 | Shuttle Radar Topography Mission SRTM (30 m) | 2546    | 2961.20  | 3715    |
 | ALOS Palsar (12.5 m)                         | 2557    | 2982.38  | 3749    |
 | Copernicus (30 m)                            | 2548.64 | 2961.87  | 3721.21 |
+
+</div>
 
 Para evaluar la correspondencia entre estos modelos digitales, crearemos una red de muestreo regular con separación cada 1 kilómetro.
 
