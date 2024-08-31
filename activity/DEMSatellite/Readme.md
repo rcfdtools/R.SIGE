@@ -240,9 +240,19 @@ A partir de las estadísticas zonales obtenidas de los modelos digitales de elev
 
 </div>
 
-Para evaluar la correspondencia entre estos modelos digitales, crearemos una red de muestreo regular con separación cada 1 kilómetro.
+Para evaluar la correspondencia entre estos modelos digitales, crearemos una red de muestreo regular y una matriz de dispersión múltiple. 
 
+1. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Create FishNet_, cree una red regular con separación cada 1 kilómetro definiendo en _Template Extent_ el límite geográfico de la capa `Mpio25899_MOT2013`. Guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_FishNet1km`. Podrá observar que _FishNet_ genera una nube de nodos y un retícula.
 
+<div align="center"><img src="graph/ArcGISPro_FishNet1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En el menú _Map_, seleccione la herramienta _Select By Location_ para seleccionar todos los nodos de la red de muestreo que no se encuentran dentro del municipio, asegurese de marcar la casilla _Invert Spatial Relationship_.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByLocation1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En el mení _Edit_, de clic en el botón _Delete_ para eliminar todos los nodos que no están dentro de la zona de estudio, luego para guardar la modificación sobre la capa, en el mismo menú _Edit_ seleccione la opción _Save_.
+
+<div align="center"><img src="graph/ArcGISPro_Delete1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
