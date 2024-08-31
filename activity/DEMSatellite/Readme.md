@@ -212,7 +212,7 @@ Para el caso de estudio, las coordenadas límite obtenidas en grados decimales s
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-10. Desde la tabla de contenido, exporte y reproyecte el modelo digital de elevación Copernicus a una grilla TIFF utilizando el CRS 9377, guarde como `\file\dem\Copernicus\Copernicus30m.tif`. El rango general de elevaciones obtenidas en este modelo está entre 1983.7 y 3752.15 m.s.n.m.
+10. Desde la tabla de contenido, exporte y re-proyecte el modelo digital de elevación Copernicus a una grilla TIFF utilizando el CRS 9377, guarde como `\file\dem\Copernicus\Copernicus30m.tif`. El rango general de elevaciones obtenidas en este modelo está entre 1983.7 y 3752.15 m.s.n.m.
 
 <div align="center"><img src="graph/ArcGISPro_ExportRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -227,6 +227,16 @@ Para el caso de estudio, las coordenadas límite obtenidas en grados decimales s
 
 ## 6. Red de muestreo para comparación y análisis de elevaciones
 
+A partir de las estadísticas zonales obtenidas de los modelos digitales de elevación, se pudo observar que los rangos de elevación son diferentes como se presenta en la siguiente tabla resúmen.
+
+| Modelo digital                               | Mín.    | Med.     | Máx.    |
+|----------------------------------------------|---------|----------|---------|
+| NASA ASTER GDEM v3 (30 m)                    | 2528    | 2960.42  | 3717    |
+| Shuttle Radar Topography Mission SRTM (30 m) | 2546    | 2961.20  | 3715    |
+| ALOS Palsar (12.5 m)                         | 2557    | 2982.38  | 3749    |
+| Copernicus (30 m)                            | 2548.64 | 2961.87  | 3721.21 |
+
+Para evaluar la correspondencia entre estos modelos digitales, crearemos una red de muestreo regular con separación cada 1 kilómetro.
 
 
 
