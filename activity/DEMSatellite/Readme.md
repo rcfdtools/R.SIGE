@@ -329,14 +329,23 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                 | Descripción                                                                                                         | Geometría     | Registros | 
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|-----------| 
+| Mpio25899_MOT2013_Envelope             | Envolvente municipal a partir de la capa Mpio25899_MOT2013.                                                         | Polígono 2D   | 1         | 
+| Mpio25899_MOT2013_Envelope_Buffer2500m | Envolvente municipal con aferencia de 2500 metros a partir de Mpio25899_MOT2013_Envelope.                           | Polígono 2D   | 1         | 
+| ASTGTMV003MosaicArcGISPro.tif          | Modelo digital de elevación ASTER GDEM v3 (30 m).                                                                   | (Grid)        | n/a       | 
+| Mpio25899_ASTGTMV003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ASTER GDEM v3 (30 m).  | (Tabla))      | 1         | 
+| SRTMGL3003MosaicArcGISPro.tif          | Modelo digital de elevación SRTM v3 (30 m).                                                                         | (Grid)        | n/a       | 
+| Mpio25899_SRTMGL3003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación SRTM v3 (30 m).        | (Tabla))      | 1         | 
+| ALOSPalsarFBSMosaicArcGISPro.tif       | Modelo digital de elevación Alos Palsar (12.5 m).                                                                   | (Grid)        | n/a       | 
+| Mpio25899_ALOSPalsarFBS_Stat           | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación Alos Palsar (12.5 m).  | (Tabla))      | 1         | 
+| Copernicus30m.tif                      | Modelo digital de elevación ESA Copernicus (30 m).                                                                  | (Grid)        | n/a       | 
+| Mpio25899_Copernicus_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ESA Copernicus (30 m). | (Tabla))      | 1         | 
+| Mpio25899_FishNet1km                   | Red de muestreo regular cada 1 km sobre límite municipal Mpio25899_MOT2013.                                         | Punto 2D      | 192       | 
+| CurvasNivel5mCopernicus                | Curvas de nivel categorizadas cada 50 y 5 metros a partir del DEM  Copernicus30m.tif.                               | Poli-línea 2D | 2461      | 
+| CurvasNivel5mCopernicusSmooth100m      | Curvas de nivel categorizadas cada 50 y 5 metros y suavizadas con radio 100 m a partir de CurvasNivel5mCopernicus.  | Poli-línea 2D | 2461      | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -345,8 +354,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P5** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P5** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P5** | Descargue y evalúe para su caso de estudio los diferentes modelos digitales de elevación presentados en esta actividad. Desarrolle las actividades y análisis realizados.                                                                                                                                                                                                                                                                           | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-4: Comparación de modelos digitales POT, ASTER GDEM, SRTM, ALOS PALSAR y Copernicus_<br>Incluir estadísticos zonales municipales. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                   | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-5: Red de muestreo municipal con elevaciones._<br>Incluir tabla y gráfico de dispersión múltiple. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                   | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-6: Curvas de nivel Copernicus vs. curvas POT._<br>Incluir análisis de diferencia y rótulos de cota. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                 | 
 | Avance **P5** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -354,25 +365,27 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-
 ## Referencias
 
-* 
+* https://asterweb.jpl.nasa.gov/gdem.asp
+* https://www.earthdata.nasa.gov/sensors/srtm
+* https://asf.alaska.edu/datasets/daac/alos-palsar/
+* https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.03.26 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.08.31 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../DEMContour/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|----------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../DEMContour/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/29) | [Siguiente :arrow_forward:]() |
+|------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
