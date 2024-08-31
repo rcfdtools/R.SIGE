@@ -269,7 +269,38 @@ Para evaluar la correspondencia entre estos modelos digitales, crearemos una red
 <div align="center"><img src="graph/ArcGISPro_ScatterPlotMatrix.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 7. Análisis usando software libre - QGIS
+## 7. Generación de curvas de nivel clasificadas
+
+1. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / Contour with Barriers_, cree curvas de nivel categorizadas principales cada 50 metros y secundarias cada 5 metros. Utilice como barrera de recorte el límite municipal contenido en la capa `Mpio25899_MOT2013`, guarde las curvas como `\file\gdb\SIGE.gdb\SIGE\CurvasNivel5mCopernicus`. Podra observar que se han generado curvas hasta el límite completo del DEM.
+
+<div align="center"><img src="graph/ArcGISPro_ContourWithBarriers1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de selección por localización disponible en el menu _Map_, seleccione todas las curvas de nivel cuyo centroide no se encuentra dentro del límite municipal, asegúrese de marcar la casilla _Invert Spatial Relationship_.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByLocation2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Desde el menú _Edit / Delete_, elimine todas las curvas de nivel seleccionadas y guarde los cambios, podrá observar que una de las curvas de nivel no ha sido segmentada y que una fracción se encuentra fuera de la zona de estudio.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByLocation3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizado las herramientas de edición _Edit / Split_ y el encajado por intersección, segmente la curva de nivel a partir del contorno del municipio y elimine el tramo de línea que externo.
+
+<div align="center"><img src="graph/ArcGISPro_EditSplit1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Delete2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. A partir del campo de atributos _Type_ de la capa de curvas de nivel, simbolice por valores únicos utilizando color negro y bordes gruesos para el tipo 2 y gris y bordes delgados para el tipo 1, acérquese y verifique la calidad de los contornos obtenidos, podrá observar que las curvas no tienen una apariencia suavizada.
+
+<div align="center"><img src="graph/ArcGISPro_SymbologyType1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Cartography Tools / Smooth Line_, realice un suavizado con rado de aproximación de 100 metros y compare con las curvas inicialmente obtenidas. Nombre como `\file\gdb\SIGE.gdb\SIGE\CurvasNivel5mCopernicusSmooth100m`.
+
+<div align="center"><img src="graph/ArcGISPro_SmoothLine1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Compare las curvas suavizadas generadas con las curvas utilizadas en la formulación del POT contenidas en la capa `\file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL`, podra observar que de forma general las curvas del POT describen el terreno de la zona de estudio pero no disponen de suficiente detalle para generar, por ejemplo, una superficie digital y un modelo de pendientes detallado.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+## 8. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
