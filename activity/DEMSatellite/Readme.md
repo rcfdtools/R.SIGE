@@ -300,14 +300,24 @@ Para evaluar la correspondencia entre estos modelos digitales, crearemos una red
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+
 ## 8. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                                                                 | Procedimiento                                                                                                                                                                                                                           |
+|:----------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                                                              | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                 |
+| Rotulado                                                                                | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                    |
+| Polígono envolvente (envelope o boundingbox)                                            | Herramienta disponible en el _Processing Toolbox / Vector Geometry / [Bounding boxes](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#bounding-boxes)_.                                         |
+| Area aferente (Buffer)                                                                  | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Buffer_.                                                                                                                                                           |
+| Mosaico de imágenes (Mosaic to New Raster)                                              | Herramienta disponible en el _Processing Toolbox / GRASS / i.image.mosaic.                                                                                                                                                              |
+| Estadística zonal como tabla (Zonal statistics as table)                                | Herramienta disponible en el _Processing Toolbox / Raster analysis / Zonal statistics.                                                                                                                                                  |
+| Red de muestreo (FishNet)                                                               | Herramienta disponible en el _Processing Toolbox / Vector creation / Create grid.                                                                                                                                                       |
+| Extracción de multiples valores desde grillas a puntos (Extract Multi Values to Points) | Puede ser realizado manualmente para cada grilla en el _Processing Toolbox / Raster analysis / Zonal statistics o se puede instalar el Plugin o complemento [Point sampling tool](https://plugins.qgis.org/plugins/pointsamplingtool/). |
+| Curvas de nivel (Contour)                                                               | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.contour.                                                                                                                                                          |
+| Suavizar líneas (Smooth)                                                                | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Smooth_.                                                                                                                                                           |
+
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
