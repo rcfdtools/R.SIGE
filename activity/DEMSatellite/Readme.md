@@ -131,7 +131,7 @@ A partir del segundo semestre de 2019, el modelo de terreno SRTM v3, ya se encue
 
 ## 4. Modelo digital de elevación ALOS Palsar (12.5 m)
 
-ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrumentos de observación avanzada de la superficie terrestre, que permite entre otros, obtener un modelo digital de la tierra en alta resolución [^1].
+ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrumentos de observación avanzada de la superficie terrestre, que permite entre otros, obtener un modelo digital de la tierra en alta resolución.
 
 1. En https://search.earthdata.nasa.gov/, ingrese como cadena de búsqueda **_ALOS_PALSAR_RTC_HIGH_RES_**, luego desde la parte superior izquierda, seleccione la opción de definición de límite de búsqueda a partir de un archivo o _File (KML, KMZ, ESRI,...)_ y cargue el archivo comprimido `\file\shp\Mpio25899_MOT2013_Envelope_Buffer2500m.zip` tal como se explicó en el procedimiento de descarga ASTER GDEM v3.
 
@@ -162,10 +162,72 @@ ALOS Phased Array type L-band Synthetic Aperture Radar, es uno de los instrument
 
 ## 5. Modelo digital de elevación ESA Copernicus (30 m)
 
+The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. This DSM is derived from an edited DSM named WorldDEM, where flattening of water bodies and consistent flow of rivers has been included. In addition, editing of shore- and coastlines, special features such as airports, and implausible terrain structures has also been applied.
 
+The WorldDEM product is based on the radar satellite data acquired during the TanDEM-X Mission, which is funded by a Public Private Partnership between the German State, represented by the German Aerospace Centre (DLR) and Airbus Defence and Space. OpenTopography is providing access to the global 30m (GLO-30) DSM through the public AWS S3 bucket established by Sinergise.
+
+1. En ArcGIS Pro y dentro de la tabla de atributos de la capa `Mpio25899_MOT2013_Envelope_Buffer2500m`, cree 4 campos de atributos numéricos dobles con los nombres `LongLeft`, `LongRight`, `LatTop` y `LatBottom`. Sobre estos campos calcularemos los límites geodésicos de la envolvente que rodea la zona de estudio.
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando el calculador de geometría de campo, calcule en los campos creados las localizaciones geográficas angulares de la envolvente. 
+
+<div align="center"><img src="graph/ArcGISPro_GeometryCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para el caso de estudio, las coordenadas límite obtenidas en grados decimales son:
+
+* Xmin: -74.11712645
+* Ymin: 4.94043097
+* Xmax: -73.88530317
+* Ymax: 5.18122946
+
+3. Ingrese al portal https://opentopography.org/ y en la pestaña _MyOpenTopo_ ingrese con su cuenta de usuario.
+
+<div align="center"><img src="graph/Chrome_OpenTopography1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En _DATA_, seleccione la opción _FIND DATA MAP_ que le permitirá ingresar a las opciones de búsqueda de colecciones.
+
+<div align="center"><img src="graph/Chrome_OpenTopography2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En el panel lateral derecho _Data Sources_ seleccione el dataset _COP 30m & 90m_.
+
+<div align="center"><img src="graph/Chrome_OpenTopography3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En el panel lateral izquierdo, de clic en la opción _Zoom to location by placename or coordinates_, ingrese las coordenadas límite obtenidas de la envolvente y de clic en el botón _Update Map_.
+
+<div align="center"><img src="graph/Chrome_OpenTopography4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. En los resultados desplegados, de clic en el botón _Copernicus 30m_ y consulte la descripción general de este producto, podrá observar que para los límites definidos, el área a descargar será de 688 km².
+
+<div align="center"><img src="graph/Chrome_OpenTopography5.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_OpenTopography6.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_OpenTopography7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Diríjase al final de la ventana de especificaciones, ingrese el detalle del uso que le dará a estos datos y de clic en el botón _Submit_. Una vez enviada la solicitud, el servidor procederá a extraer el modelo digital de elevación para la zona indicada y mostrará el resultado en la ventana de resultados. Para obtener el archivo, de clic en el enlace _rasters_COP30.tar.gz_, guarde el archivo en la ruta `\file\dem\Copernicus` y luego descomprímalo. El nombre genérico de este archivo es `output_hh.tif`. 
+
+<div align="center"><img src="graph/Chrome_OpenTopography8.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_OpenTopography9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Cargue la imagen DEM descargada al proyecto de ArcGIS Pro, podrá observar que cubre toda la zona de estudio y no requiere de la generación de un mosaico. Al consultar los metadatos de la imagen, también observará que la referencia espacial es WGS 1984.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Desde la tabla de contenido, exporte y reproyecte el modelo digital de elevación Copernicus a una grilla TIFF utilizando el CRS 9377, guarde como `\file\dem\Copernicus\Copernicus30m.tif`. El rango general de elevaciones obtenidas en este modelo está entre 1983.7 y 3752.15 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ExportRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+11. Simbolice por relieve sombreado en escala de grises y acerque al límite municipal.
+
+<div align="center"><img src="graph/ArcGISPro_ExportRaster2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+12. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del municipio en estudio. Guarde la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_Copernicus_Stat`. Podrá observar que el rango de elevaciones municipal es de 2548.64 a 3721.21 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 6. Red de muestreo para comparación y análisis de elevaciones
+
+
 
 
 
