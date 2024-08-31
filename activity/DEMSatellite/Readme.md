@@ -242,11 +242,11 @@ A partir de las estadísticas zonales obtenidas de los modelos digitales de elev
 
 Para evaluar la correspondencia entre estos modelos digitales, crearemos una red de muestreo regular y una matriz de dispersión múltiple. 
 
-1. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Create FishNet_, cree una red regular con separación cada 1 kilómetro definiendo en _Template Extent_ el límite geográfico de la capa `Mpio25899_MOT2013`. Guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_FishNet1km`. Podrá observar que _FishNet_ genera una nube de nodos y un retícula.
+1. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Create FishNet_, cree una red regular con separación cada 1 kilómetro definiendo en _Template Extent_ el límite geográfico de la capa `Mpio25899_MOT2013`. Guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_FishNet1km`. Podrá observar que _FishNet_ genera una nube de nodos y una retícula.
 
 <div align="center"><img src="graph/ArcGISPro_FishNet1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. En el menú _Map_, seleccione la herramienta _Select By Location_ para seleccionar todos los nodos de la red de muestreo que no se encuentran dentro del municipio, asegurese de marcar la casilla _Invert Spatial Relationship_.
+2. En el menú _Map_, seleccione la herramienta _Select By Location_ para seleccionar todos los nodos de la red de muestreo que no se encuentran dentro del municipio, asegúrese de marcar la casilla _Invert Spatial Relationship_.
 
 <div align="center"><img src="graph/ArcGISPro_SelectByLocation1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -254,6 +254,19 @@ Para evaluar la correspondencia entre estos modelos digitales, crearemos una red
 
 <div align="center"><img src="graph/ArcGISPro_Delete1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Cargue al mapa, el modelo digital de elevación _\file\dem\IGAC_2013_CurvasNivelSmooth100mTIN.tif_ generado en la actividad anterior a partir de las curvas de nivel del POT. Simbolice por sombreado de relieve.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Extract Multi Values to Points_, obtenga en cada punto de muestreo las elevaciones de los 5 modelos digitales de elevación, nombre las columnas de atributos como: `ASTGTMV003`, `SRTMGL3003`, `ALOSPalsar`, `Copernicus` y `POT2013`. Como puede observar, no son idéntica las elevaciones obtenidas en cada localización de la red, debido a las fechas de captura de los diferentes modelos y a la tecnología de los sensores empleados.
+
+<div align="center"><img src="graph/ArcGISPro_ExtractMultiValuesToPoints1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Simbolice por colores graduados y por quantiles en 5 clases los puntos de la red de muestreo `Mpio25899_FishNet1km_label` y desde la tabla de contenido cree una gráfica de matriz de dispersión múltiple o _Scatter Plot Matrix_.
+
+> Podrá observar que para las diferentes combinaciones existe una alta correlación entre los valores obtenidos y que muy pocos puntos no se ajustan a la línea de tendencia diagonal, con lo que se puede indicar que los diferentes modelos representan correctamente la topografía de la zona de estudio, sin embargo, al revisar los detalles visuales de cada modelo de terreno, se puede observar que Copernicus describe mejor los corredores de los drenajes.
+
+<div align="center"><img src="graph/ArcGISPro_ScatterPlotMatrix.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 7. Análisis usando software libre - QGIS
