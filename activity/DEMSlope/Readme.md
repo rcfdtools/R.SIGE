@@ -57,7 +57,7 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 
 <div align="center"><img src="graph/ArcGISPro_Reclassify1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+5. 
 
 
 ## 2. Análisis usando software libre - QGIS
