@@ -23,7 +23,7 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de mapa de pendientes clasificadas
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMSlope_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus disponible en la ruta `\file\dem\Copernicus\Copernicus30m.tif` y las capas `Mpio25899_MOT2013`, `Mpio25899_DiviPol` y `MOT` desde la base de datos geográfica `\file\gdb\SIGE.gdb`, simbolice el DEM por sombreado de relieve o _Shaded Relief_ y ajuste la simbología de los polígonos utilizando diferentes colores de contorno y sin relleno.  
 
@@ -57,10 +57,21 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 
 <div align="center"><img src="graph/ArcGISPro_Reclassify1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. 
+
+## 2. Análisis general de pendiente municipal
 
 
-## 2. Análisis usando software libre - QGIS
+
+## 3. Análisis de pendiente por división geopolítica municipal
+
+
+
+## 4. Análisis de pendiente por categoría de suelo e identificación de incompatibilidades
+
+
+
+
+## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
