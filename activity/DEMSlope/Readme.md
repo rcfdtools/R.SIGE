@@ -25,13 +25,37 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMSlope_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus disponible en la ruta `\file\dem\Copernicus\Copernicus30m.tif` y las capas Mpio25899_MOT2013, Mpio25899_DiviPol y MOT desde la base de datos geográfica `\file\gdb\SIGE.gdb` y ajuste la simbología de lo polígonos utilizando diferentes colores de contorno y sin relleno.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMSlope_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus disponible en la ruta `\file\dem\Copernicus\Copernicus30m.tif` y las capas `Mpio25899_MOT2013`, `Mpio25899_DiviPol` y `MOT` desde la base de datos geográfica `\file\gdb\SIGE.gdb`, simbolice el DEM por sombreado de relieve o _Shaded Relief_ y ajuste la simbología de los polígonos utilizando diferentes colores de contorno y sin relleno.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Utilizando la herramienta de geo-procesamiento _Spatial Analysis Tools / Fill_, rellene los sumideros del modelo digital de elevación Copernicus, guarde como `\file\dem\Copernicus\Copernicus30m_Fill.tif` y simbolice a partir por sombreado de relieve.
 
+<div align="center"><img src="graph/ArcGISPro_Fill1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Utilizando la herramienta de geo-procesamiento _Spatial Analysis Tools / Slope_, cree en mapa de pendientes de terreno en tasa porcentual, guarde como `\file\dem\Copernicus\Copernicus30m_Fill_Slope.tif`. Podrá observar que automáticamente se crea una visualización clasificada con diferentes rangos que representan la pendiente.
 
+<div align="center"><img src="graph/ArcGISPro_Slope1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento _Spatial Analysis Tools / Reclassify_, reclasifique el mapa de pendientes en las siguientes 9 clases definidas en el dominio `Dom_PenSuelo` del diccionario de datos del ANLA utilizado para la presentación de estudios ambientales en Colombia, guarde como `\file\dem\Copernicus\Copernicus30m_Fill_Slope_Reclass.tif` y ajuste la simbología a valores únicos utilizando la paleta _Brown Light to Dark_.
+
+<div align="center">
+
+| Código | Descripción                                      | Rango        |
+|:------:|:-------------------------------------------------|:-------------|
+|  6010  | A nivel                                          | 0-1% (a)     |
+|  6020  | Ligeramente plana                                | 1-3% (a)     |
+|  6030  | Ligeramente inclinada                            | 3-7% (b)     |
+|  6040  | Moderadamente inclinada                          | 7-12% (c)    |
+|  6050  | Fuertemente inclinada                            | 12-25% (d)   |
+|  6060  | Ligeramente escarpada o ligeramente empinada     | 25-50% (e)   |
+|  6070  | Moderadamente escarpada o moderadamente empinada | 50-75% (f)   |
+|  6080  | Fuertemente escarpada o fuertemente empinada     | 75-100% (g)  |
+|  6090  | Totalmente escarpada                             | >100% (g)    |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_Reclassify1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
