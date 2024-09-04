@@ -70,13 +70,15 @@ Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + 
 <div align="center"><img src="graph/ArcGISPro_ZonalStatsticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 3. Identificación de incompatibilidades con el MOT
 
+1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, obtenga la intersección espacial de la capa de páramos y la capa del MOT. Nombre el archivo resultante como `\file\gdb\SIGE.gdb\SIGE\MOT_Paramo`. Podrá observar que en la divisoria nor-occidental, toda el área rural no está cubierta por la capa de páramos.
 
 
 
-## 2. Análisis usando software libre - QGIS
+
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
