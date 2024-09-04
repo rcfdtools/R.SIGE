@@ -107,12 +107,12 @@ En la tabla de atributos podrá observar que los polígonos que cumplen con esta
 
 <div align="center">
 
-| Suelo  | Categoría                        | Nombre                    | Pendiente media (%) |
-|--------|----------------------------------|---------------------------|---------------------|
-| Rural  | Área de Vivienda Rural Campestre | Portachuelo               | 25.83               |
-| Rural  | Centro Poblado Rural             | C.P.R. Bosques de Silecia | 32.04               |
-| Rural  | Centro Poblado Rural             | C.P.R. Aposento Alto      | 26.47               |
-| Rural  | Centro Poblado Rural             | C.P.R. Bolívar 83         | 38.97               |
+| Suelo  | Categoría                        | Nombre                    |  Pendiente media (%)  |
+|--------|----------------------------------|---------------------------|:---------------------:|
+| Rural  | Área de Vivienda Rural Campestre | Portachuelo               |         25.83         |
+| Rural  | Centro Poblado Rural             | C.P.R. Bosques de Silecia |         32.04         |
+| Rural  | Centro Poblado Rural             | C.P.R. Aposento Alto      |         26.47         |
+| Rural  | Centro Poblado Rural             | C.P.R. Bolívar 83         |         38.97         |
 
 </div>
 
@@ -124,10 +124,15 @@ En la tabla de atributos podrá observar que los polígonos que cumplen con esta
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                                  | Procedimiento                                                                                                                                    |
+|:---------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                               | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                          |
+| Rotulado                                                 | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                             |
+| Relleno de sumideros (Fill)                              | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.fillnulls o en _Processing Toolbox / GDAL / Raster analysis / Fill NoData. |
+| Pendiente de terreno en tasa porcentual (Slope)          | Herramienta disponible en el _Processing Toolbox / GDAL / Raster analysis / Slope.                                                               |
+| Reclasificación de imágenes (Reclassify)                 | Herramienta disponible en el _Processing Toolbox /Raster analysis / Reclassify by table.                                                         |
+| Estadística zonal como tabla (Zonal statistics as table) | Herramienta disponible en el _Processing Toolbox / Raster analysis / Zonal statistics.                                                           |
+| Consultas o filtros de tabla (Definition Query)          | Se realizan desde las propiedades de la capa en la pestaña Source y la opción Query Builder.                                                     |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -139,14 +144,16 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                  | Descripción                                                                                                                                                               | Geometría   | Registros | 
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Copernicus30m_Fill.tif                  | Grilla de terreno con relleno de sumideros a partir de DEM Copernicus (30 m).                                                                                             | (Grid)      | n/a       | 
+| Copernicus30m_Fill_Slope.tif            | Grilla de pendientes de terreno en tasa porcentual a partir de DEM Copernicus con relleno de sumideros (30 m).                                                            | (Grid)      | n/a       | 
+| Copernicus30m_Fill_Slope_Reclass.tif    | Grilla de reclasificación de pendientes de terreno en clases ANLA a partir de grilla de pendientes generadas a partir del DEM Copernicus con relleno de sumideros (30 m). | (Grid)      | n/a       | 
+| Mpio25899_Copernicus_Slope_Stat         | Tabla de estadísticos zonales de pendiente sobre toda el área municipal Mpio25899_MOT2013.                                                                                | (Table)     | 1         | 
+| Mpio25899_DiviPol_Copernicus_Slope_Stat | Tabla de estadísticos zonales de pendiente para cada división geopolítica catastral municipal en Mpio25899_DiviPol.                                                       | (Table)     | 15        | 
+| MOT_Copernicus_Slope_Stat               | Tabla de estadísticos zonales para cada categoría de suelo definida en el MOT.                                                                                            | (Table)     | 80        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -155,8 +162,11 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P5** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P5** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P5** | Siguiendo la secuencia presentada en esta actividad, realice el análisis de pendientes e identifique zonas con posibles incompatibilidades con el uso definido en el POT.                                                                                                                                                                                                                                                                           | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-7: Mapa de pendientes y estadístico municipal._<br>Incluir tabla de valores de estadística zonal. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                   | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-8: Mapa de reclasificación de pendientes._<br>Incluir rótulo de categorías ANLA. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                    | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-9: Mapa de pendientes por división geopolítica catastral municipal._<br>Incluir rótulo y tabla de estadísticos zonales. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                             | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-10: Mapa de pendientes por categorías del MOT con identificación de polígonos incompatibles._<br>Incluir rótulo y tabla de estadísticos zonales. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                    | 
 | Avance **P5** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -166,22 +176,23 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/slope.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/fill.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-
+| 2024.03.27 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../DEMSatellite/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|------------------------------------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../DEMSatellite/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/30) | [Siguiente :arrow_forward:]() |
+|--------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
