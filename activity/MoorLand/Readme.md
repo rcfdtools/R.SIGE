@@ -44,9 +44,17 @@ Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delim
 
 2. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, obtenga la intersección espacial de la capa de páramos y la capa del límite municipal del MOT. Nombre el archivo resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013_Paramo`. Podrá observar que en la divisoria nor-occidental, toda el área rural no está cubierta por la capa de páramos.
 
+Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + "\n" +  $feature.Fuente`
+
 <div align="center"><img src="graph/ArcGISPro_Intersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Abra la tabla de atributos de la capa de intersección y cree dos campos numéricos dobles con los nombres `APParha` y `APParPorc` y calcule el área geométrica planar del polígono utilizando el CRS 9377 y el porcentaje con respecto al área total municipal. Rotule indicando el área total de la zona de páramo y su porcentaje con respecto al total del área municipal.
+
+Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + "\n" +  $feature.Fuente + "\nA (ha): " + Round($feature.APParha, 2) + " (" + Round($feature.APParPorc, 2) + "%)"`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. 
 
 
 
