@@ -1,5 +1,5 @@
 # Mapa de pendientes de terreno
-Keywords: `dem` `agreedem`
+Keywords: `slope-grid` `dem` `fill-sinks`
 
 A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumideros FIL, mapa de pendientes en tasa porcentual, mapa de pendientes reclasificadas en 9 clases utilizando las especificaciones definidas en el dominio `Dom_PenSuelo` del modelo nacional para presentación de licencias ambientales del [ANLA](https://www.anla.gov.co/). Para cada zona geopolítica municipal y para cada polígono de categoría de suelo disponible en el MOT, calcule la pendiente mínima, media y máxima e identifique incompatibilidades (por ejemplo, zonas con pendientes altas definidas para desarrollos urbanos, de centros poblados, implantación de equipamientos).
 
@@ -60,10 +60,25 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 
 ## 2. Análisis general de pendiente municipal
 
+Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga para el límite municipal contenido en la capa `Mpio25899_MOT2013` y el mapa detallado de pendientes _Copernicus30m_Fill_Slope.tif_, los estadísticos de la zona de estudio, guarde como `\file\gdb\SIGE.gdb\Mpio25899_Copernicus_Slope_Stat`. Podrá observar que a nivel municipal, se han encontrado pendientes entre 0 y 189.22% con media general de 22.05% y desviación estándar de 18.99%, que de acuerdo con la clasificación del mapa de rangos de pendiente, corresponde a _6050 - Fuertemente inclinada, entre 12-25%_.
 
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Análisis de pendiente por división geopolítica municipal
+
+1. Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga para la división geopolítica municipal catastral contenida en la capa `Mpio25899_DiviPol` y el mapa detallado de pendientes _Copernicus30m_Fill_Slope.tif_, los estadísticos de la zona de estudio, guarde como `\file\gdb\SIGE.gdb\Mpio25899_DiviPol_Copernicus_Slope_Stat`.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Realice unión de tablas integrando los resultados obtenidos a cada polígono de vereda y rotule incluyendo el valor medio y máximo obtenido. Podrá observar que la zona con mayor media de pendientes es _El Empalizado_ y que el valor máximo de pendiente se encuentra en la vereda _San Isidro_. 
+
+> Recuerde que en la capa de división geopolítica catastral, hemos incluido previamente el límite urbano.
+
+Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\nSlp Avg (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MEAN'], 1) + "\nSlp Max (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MAX'], 1)`
+
+<div align="center"><img src="graph/ArcGISPro_TableJoin1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Label1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
