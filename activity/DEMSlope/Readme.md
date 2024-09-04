@@ -8,9 +8,9 @@ A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumider
 
 ## Objetivos
 
-* Rellenar sumideros en el modelo digital de elevación para ajuste de pendientes no existentes.
+* Rellenar sumideros en el modelo digital de elevación para ajuste de pendientes erradas.
 * Crear y reclasificar el mapa de pendientes.
-* Estimar la pendiente característica municipal, en cada zona geopolítica municipal y para cada categoría del suelo en el MOT.
+* Estimar la pendiente característica municipal, en cada zona geopolítica catastral municipal y para cada categoría del suelo en el MOT.
 * Identificar incompatibilidades de pendientes altas en zonas con asentamientos humanos.
 
 
@@ -192,7 +192,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../DEMSatellite/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/30) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../DEMSatellite/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/30) | [Siguiente :arrow_forward:](../MoorLand/Readme.md) |
+|--------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------|
 
 [^1]: 
