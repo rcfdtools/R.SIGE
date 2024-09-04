@@ -72,10 +72,10 @@ Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + 
 
 ## 3. Identificación de incompatibilidades con el MOT
 
-1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, obtenga la intersección espacial de la capa de páramos y la capa del MOT. Nombre el archivo resultante como `\file\gdb\SIGE.gdb\SIGE\MOT_Paramo`. Podrá observar que en la divisoria nor-occidental, toda el área rural no está cubierta por la capa de páramos.
+Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, obtenga la intersección espacial de la capa de páramos y la capa del MOT. Nombre el archivo resultante como `\file\gdb\SIGE.gdb\SIGE\MOT_Paramo`. Podrá observar que en el suelo rural existen varias fracciones de suelo incompatibles correspondientes a _Áreas de Actividad Agropecuaria Tradicional_ correspondientes a 52.05 hectáreas.
 
-
-
+<div align="center"><img src="graph/ArcGISPro_Intersect2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Intersect3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 4. Análisis usando software libre - QGIS
