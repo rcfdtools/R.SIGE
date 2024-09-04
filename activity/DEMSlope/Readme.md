@@ -116,7 +116,8 @@ En la tabla de atributos podrá observar que los polígonos que cumplen con esta
 
 </div>
 
-
+<div align="center"><img src="graph/ArcGISPro_DefinitionQuery2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_DefinitionQuery3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
