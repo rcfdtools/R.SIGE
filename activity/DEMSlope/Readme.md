@@ -65,7 +65,7 @@ Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Sta
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Análisis de pendiente por división geopolítica municipal
+## 3. Análisis de pendiente por división geopolítica municipal catastral
 
 1. Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga para la división geopolítica municipal catastral contenida en la capa `Mpio25899_DiviPol` y el mapa detallado de pendientes _Copernicus30m_Fill_Slope.tif_, los estadísticos de la zona de estudio, guarde como `\file\gdb\SIGE.gdb\Mpio25899_DiviPol_Copernicus_Slope_Stat`.
 
@@ -81,8 +81,21 @@ Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\nSlp Avg (%): " + 
 <div align="center"><img src="graph/ArcGISPro_Label1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 4. Análisis de pendiente por categoría de suelo e identificación de incompatibilidades
+
+1. Utilizando la herramienta de geo-procesamiento _Image Analysis Tools / Zonal Statistics as Table_, obtenga para los límites definidos en el mapa del modelo de ocupación territorial - MOT contenidos en la capa `MOT` y el mapa detallado de pendientes _Copernicus30m_Fill_Slope.tif_, los estadísticos de la zona de estudio, guarde como `\file\gdb\SIGE.gdb\MOT_Copernicus_Slope_Stat`.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Realice unión de tablas integrando los resultados obtenidos a cada polígono del MOT y rotule incluyendo el valor medio obtenido. Podrá observar que la zona con mayor media de pendientes corresponde a _Protección_ en _Bosque Protector_. 
+
+Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\nSlp Avg (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MEAN'], 1) + "\nSlp Max (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MAX'], 1)`
+
+<div align="center"><img src="graph/ArcGISPro_TableJoin2.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 
