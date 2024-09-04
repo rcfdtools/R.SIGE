@@ -48,13 +48,31 @@ Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + 
 
 <div align="center"><img src="graph/ArcGISPro_Intersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Abra la tabla de atributos de la capa de intersección y cree dos campos numéricos dobles con los nombres `APParha` y `APParPorc` y calcule el área geométrica planar del polígono utilizando el CRS 9377 y el porcentaje con respecto al área total municipal. Rotule indicando el área total de la zona de páramo y su porcentaje con respecto al total del área municipal.
+3. Abra la tabla de atributos de la capa de intersección y cree dos campos numéricos dobles con los nombres `APParha` y `APParPorc` y calcule el área geométrica planar del polígono utilizando el CRS 9377 y el porcentaje con respecto al área total municipal. Rotule indicando el área total de la zona de páramo y su porcentaje con respecto al total del área municipal, podrá observar que la zona de páramo tiene una cobertura del 34.65% del área municipal.
 
 Rótulo Arcade: `"Páramo de " + $feature.Nombre + "\n" + $feature.Acto_Admin + "\n" +  $feature.Fuente + "\nA (ha): " + Round($feature.APParha, 2) + " (" + Round($feature.APParPorc, 2) + "%)"`
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. 
+
+## 2. Análisis de elevación y pendiente en zona de páramo
+
+1. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga los estadísticos de elevación del polígono del páramo en la zona de estudio. Nombre la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_MOT2013_Paramo_Copernicus_Stat`. Podrá observar que los rangos de elevaciones de la zona de páramo se encuentran entre los 2977.28 y 3721.21 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatsticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Agregue la capa de curvas de nivel desde la ruta `\file\gdb\SIGE.gdbSIGE\CurvasNivel5mCopernicus` y seleccione por atributos, todas aquellas curvas cuya elevación sea mayor o igual a 2978 m, podrá observar que el límite geográfico de la selección incluye áreas fuera del límite del parque, con lo que se evidencia que la delimitación de las zonas de páramo no obedece a criterios de cota, sino a presencia de fauna y flora, integridad ecológica y temperatura.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para el análisis de pendientes dentro de la zona de páramo, realice también una estadística zonal, nombre la tabla resultante como `\file\gdb\SIGE.gdb\Mpio25899_MOT2013_Paramo_CopernicusSlope_Stat`. Podrá observar en los resultados que el rango de pendientes va de 0 a 164.48% con media en 28.23%.
+
+<div align="center"><img src="graph/ArcGISPro_ZonalStatsticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+## 3. Identificación de incompatibilidades con el MOT
+
 
 
 
