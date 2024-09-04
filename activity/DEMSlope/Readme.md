@@ -89,12 +89,32 @@ Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\nSlp Avg (%): " + 
 
 2. Realice unión de tablas integrando los resultados obtenidos a cada polígono del MOT y rotule incluyendo el valor medio obtenido. Podrá observar que la zona con mayor media de pendientes corresponde a _Protección_ en _Bosque Protector_. 
 
-Rótulo Arcade: `$feature['Mpio25899_DiviPol.NOMBRE_VER'] + "\nSlp Avg (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MEAN'], 1) + "\nSlp Max (%): " + Round($feature['Mpio25899_DiviPol_Copernicus_Slope_Stat.MAX'], 1)`
+Rótulo Arcade: `$feature['MOT.SUELO'] + "\n" + $feature['MOT.catego'] + "\nSlp Avg (%): " + Round($feature['MOT_Copernicus_Slope_Stat.MEAN'], 1) `
 
 <div align="center"><img src="graph/ArcGISPro_TableJoin2.png" alt="R.SIGE" width="50%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Label2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Para la evaluación de zonas pobladas o con asentamientos humanos en condición de amenaza por pendientes altas utilizaremos la siguiente combinación de categorías:
 
+* Categorías MOT: Áreas de Actividad en Suelo Urbano, Áreas de Actividad en Suelo de Expansión Urbana, Área de Vivienda Rural Campestre y Centro Poblado Rural.
+* Pendiente: mayor o igual al 25% correspondiente a Ligeramente escarpada o ligeramente empinada, Moderadamente escarpada o moderadamente empinada, Fuertemente escarpada o fuertemente empinada y Totalmente escarpada.
+
+Desde las propiedades de la capa _MOT_ y a través de la definición de un filtro de consulta o _Definition Query_, filtre los elementos requeridos utilizando la siguiente expresión: `MOT.catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Suelo de Expansión Urbana', 'Áreas de Actividad en Suelo Urbano', 'Centro Poblado Rural') And MOT_Copernicus_Slope_Stat.MEAN >= 25`
+
+<div align="center"><img src="graph/ArcGISPro_DefinitionQuery1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la tabla de atributos podrá observar que los polígonos que cumplen con esta condición corresponden a:
+
+<div align="center">
+
+| Suelo  | Categoría                        | Nombre                    | Pendiente media (%) |
+|--------|----------------------------------|---------------------------|---------------------|
+| Rural  | Área de Vivienda Rural Campestre | Portachuelo               | 25.83               |
+| Rural  | Centro Poblado Rural             | C.P.R. Bosques de Silecia | 32.04               |
+| Rural  | Centro Poblado Rural             | C.P.R. Aposento Alto      | 26.47               |
+| Rural  | Centro Poblado Rural             | C.P.R. Bolívar 83         | 38.97               |
+
+</div>
 
 
 
