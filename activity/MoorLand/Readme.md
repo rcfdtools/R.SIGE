@@ -36,13 +36,17 @@ Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delim
 <div align="center"><img src="graph/Chrome_SIAC_Download" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 1. Porcentaje de cubrimiento de páramos en zona de estudio
+## 1. Análisis de cubrimiento de páramos en zona de estudio
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _MoorLand_ y establezca el CRS 9377. Agregue al mapa la capa de delimitación de páramos disponible en `\file\data\IvAH\Paramos_Delimitados_Junio_2020.shp` y ajuste la simbología a contorno de color rojo, agregue además las capas `Mpio25899_MOT2013`, `MOT`, el modelo digital de elevación _Copernicus30m.tif_ y el modelo de pendientes _Copernicus30m_Fill_Slope.tif_.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geo-procesamiento 
+2. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Intersect_, obtenga la intersección espacial de la capa de páramos y la capa del límite municipal del MOT. Nombre el archivo resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013_Paramo`. Podrá observar que en la divisoria nor-occidental, toda el área rural no está cubierta por la capa de páramos.
+
+<div align="center"><img src="graph/ArcGISPro_Intersect1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
