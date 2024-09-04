@@ -120,7 +120,6 @@ En la tabla de atributos podrá observar que los polígonos que cumplen con esta
 <div align="center"><img src="graph/ArcGISPro_DefinitionQuery3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 5. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
