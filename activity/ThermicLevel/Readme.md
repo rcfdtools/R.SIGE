@@ -95,10 +95,13 @@ Como puede observar, la zona de estudio se encuentra en pisos térmicos de clima
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                              | Procedimiento                                                                                                                                                             |
+|:-----------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                           | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                   |
+| Rotulado                                             | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                      |
+| Reclasificación de imágenes (Reclassify)             | Herramienta disponible en el _Processing Toolbox /Raster analysis / Reclassify by table.                                                                                  |
+| Conversión de ráster a polígono (Raster to Polygon)  | Herramienta disponible en el _Processing Toolbox / GDAL / Raster conversion / Polygonize (raster to vector).                                                              |
+| Recorte de capas vectoriales (clip)                  | Herramienta disponible en el _Processing Toolbox / Vector Overlay / [Clip](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectoroverlay.html#clip)_. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -110,14 +113,13 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                           | Descripción                                                                                       | Geometría   | Registros | 
+|--------------------------------------------------|---------------------------------------------------------------------------------------------------|-------------|-----------| 
+| Copernicus30m_ThermicLevelRegular.tif            | Grilla de reclasificación de elevación a pisos térmicos a partir de DEM Copernicus.               | (grid)      | n/a       | 
+| Copernicus30m_ThermicLevelRegular                | Polígonos de reclasificación de pisos térmicos a partir de Copernicus30m_ThermicLevelRegular.tif. | Polígono 2D | 55        | 
+| Mpio25899_MOT2013_ThermicLevelRegularCopernicus  | Polígonos de reclasificación de pisos térmicos recortado hasta el límite del MOT.                 | Polígono 2D | 2         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -126,8 +128,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P5** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P5** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P5** | Realice el análisis de pisos térmicos convencionales y pisos térmicos a partir de los valores simplificados de Caldas.                                                                                                                                                                                                                                                                                                                              | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-12: Mapa de pisos térmicos clasificación convencional._<br>Incluir rótulos internos en zona de estudio con valores de área y porcentaje. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                            | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-13: Mapa de pisos térmicos clasificación simplificada Caldas._<br>Incluir rótulos internos en zona de estudio con valores de área y porcentaje. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                     | 
 | Avance **P5** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -137,22 +140,22 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/conversion/raster-to-polygon.htm
+* https://www.portaluniciso.com/info/CLIM.pdf
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-
+| 2024.03.28 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.05 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/32) | [Siguiente :arrow_forward:]() |
+|--------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://es.wikipedia.org/wiki/Clima_de_Colombia
