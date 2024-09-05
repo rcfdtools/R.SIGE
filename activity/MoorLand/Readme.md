@@ -17,6 +17,8 @@ Según el artículo 4 de la Ley 1930 de 2018 o Ley de páramos, el Ministerio de
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:mortar_board:Actividad](../DEMSatellite/Readme.md): Mapa de pendientes de terreno.
+* [:mortar_board:Actividad](../DEMSlope/Readme.md): Modelo digital de elevación - DEM a partir de sensores remotos satelitales.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
@@ -143,7 +145,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../DEMSlope/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/31) | [Siguiente :arrow_forward:]() |
-|----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../DEMSlope/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/31) | [Siguiente :arrow_forward:](../ThermicLevel/Readme.md) |
+|----------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------|
 
 [^1]: https://www.humboldt.org.co/sobre-el-instituto
