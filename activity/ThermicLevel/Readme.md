@@ -88,7 +88,7 @@ Rótulo Arcade: `$feature.Label + "\nArea (ha): " + Round($feature.APha, 2) + " 
 
 <div align="center"><img src="graph/ArcGISPro_Symbology1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Como puede observar, la zona de estudio se encuentra en clima frío con 43.93% del área municipal y páramo con el 56.07% restante.
+Como puede observar, la zona de estudio se encuentra en pisos térmicos de clima frío con 43.93% del área municipal y páramo con el 56.07% restante.
 
 
 ## 2. Análisis usando software libre - QGIS
