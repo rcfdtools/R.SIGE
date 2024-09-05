@@ -3,7 +3,7 @@ Keywords: `thermic-level` `reclassify`
 
 A partir del modelo digital de elevación ESA Copernicus, crear los mapas de pisos térmicos con clasificación convencional (cortes cada 1000 m.s.n.m) y clasificación Francisco José de Caldas (año 1802, intervalos: 800, 1800, 2800, 3700 y 4700 m.s.n.m). A partir del límite obtenido del mapa MOT, determine las áreas por cada piso térmico.
 
-<div align="center"><img src="graph/ThermicLevel.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ThermicLevel1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
