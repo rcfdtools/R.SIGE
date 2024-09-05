@@ -25,7 +25,9 @@ A partir del modelo digital de elevación ESA Copernicus, crear los mapas de pis
 
 Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasificaciones.
 
-### Cortes convencionales
+<div align="center">
+
+Cortes convencionales
 
 | Valor de corte | Etiqueta                        |
 |----------------|---------------------------------|
@@ -35,9 +37,13 @@ Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasi
 | 4000           | Páramo, 0°C, <= 4000 meters     |
 | 99999          | Glacial, 0°C-, > 4000 meters    |
 
+</div>
+
 > A su vez existe la zonificación climática Caldas-Lang que subdivide los anteriores según la humedad (Superhúmedo, Húmedo, Semihúmedo, Semiárido, Árido y Desértico) en  veinticinco tipos climáticos.
 
-### Cortes Francisco José de Caldas, año 1802
+<div align="center">
+
+Cortes Francisco José de Caldas, año 1802
 
 | Valor de corte | Etiqueta                                    |
 |----------------|---------------------------------------------|
@@ -48,15 +54,16 @@ Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasi
 | 4700           | Extremadamente Frio, 6°C>T>0°C, <=4700meter |
 | 99999          | Nival, T<0°C, >4700meter                    |
 
+</div>
+
 > Existen clasificaciones complementarias como la Köppen-Geiger [^1] que para el caso de Colombia, presentan los climas tropicales hasta los polares de altitud pasando por climas secos y templados de montaña, con la ausencia absoluta de los climas continentales, ya que está dentro de la zona intertropical donde la radiación solar llega directamente y las latitudes no permiten la formación de tales climas.
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _ThermicLevel_ y establezca el CRS 9377. Agregue al mapa la capa del límite territorial municipal generado a partir del Modelo de Ocupación Territorial - MOT disponible `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013`, ajuste la simbología solo por contorno y agregue el modelo digital de elevación DEM Copernicus desde la ruta `\file\dem\Copernicus\Copernicus30m.tif` simbolizando por sombreado de relieve.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
-
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
