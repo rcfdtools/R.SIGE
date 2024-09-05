@@ -43,7 +43,7 @@ Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasi
 
 <div align="center">
 
-**Cortes Francisco José de Caldas, año 1802**
+**Cortes Francisco José de Caldas (simplificados), año 1802**
 
 | Valor de corte | Etiqueta                                    |
 |----------------|---------------------------------------------|
@@ -59,11 +59,36 @@ Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasi
 > Existen clasificaciones complementarias como la Köppen-Geiger [^1] que para el caso de Colombia, presentan los climas tropicales hasta los polares de altitud pasando por climas secos y templados de montaña, con la ausencia absoluta de los climas continentales, ya que está dentro de la zona intertropical donde la radiación solar llega directamente y las latitudes no permiten la formación de tales climas.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Procedimiento general para clasificación convencional
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _ThermicLevel_ y establezca el CRS 9377. Agregue al mapa la capa del límite territorial municipal generado a partir del Modelo de Ocupación Territorial - MOT disponible `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013`, ajuste la simbología solo por contorno y agregue el modelo digital de elevación DEM Copernicus desde la ruta `\file\dem\Copernicus\Copernicus30m.tif` simbolizando por sombreado de relieve.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / Reclassify_, reclasifique el mapa de elevaciones Copernicus por cortes convencionales, nombre como `\file\dem\Copernicus\Copernicus30m_ThermicLevelRegular.tif` y simbolice a partir de la paleta _Condition Number_ correspondiente a colores de verde a amarillo y rojo. Podrá observar que dentro del límite del municipio en estudio solo existen los pisos térmicos correspondientes a las clases 3 y 4 de hasta 3000 o 4000 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_Reclassify1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta de geo-procesamiento _Conversion Tools / Raster To Polygon_, convierta el mapa de reclasificación en una capa geográfica vectorial de polígonos, nombre como `\file\gdb\SIGE.gdb\SIGE\Copernicus30m_ThermicLevelRegular` y simbolice solo por contornos en color rojo. 
+
+<div align="center"><img src="graph/ArcGISPro_RasterToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento `Analysis Tools / Clip`, recorte la capa de polígonos de delimitación de pisos térmicos hasta el límite municipal del MOT y guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013_ThermicLevelRegularCopernicus`.
+
+<div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la tabla de atributos de la capa vectorial recortada, agregue un campo de atributos tipo texto de 100 caracteres con el nombre `Label` e incluya los valores de las etiquetas por piso térmico, en campos numéricos dobles complementarios, calcule el área planar en hectáreas y su porcentaje con respecto al total. Simbolice y rotule a partir de este campo.
+
+> Para mejorar la visualización del mapa obtenido y utilizando el editor de geometría, integre en una entidad multiparte los polígonos con el mismo valor de `gridcode`.
+
+<div align="center"><img src="graph/ArcGISPro_Merge1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Rótulo Arcade: `$feature.Label + "\nArea (ha): " + Round($feature.APha, 2) + " (" + Round($feature.APPorc, 2) + "%)"`
+
+<div align="center"><img src="graph/ArcGISPro_Symbology1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Como puede observar, la zona de estudio se encuentra en clima frío con 43.93% del área municipal y páramo con el 56.07% restante.
 
 
 ## 2. Análisis usando software libre - QGIS
