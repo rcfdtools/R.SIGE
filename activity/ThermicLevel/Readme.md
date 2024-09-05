@@ -27,7 +27,7 @@ Para el estudio de pisos térmico en Colombia, utilizaremos las siguientes clasi
 
 <div align="center">
 
-Cortes convencionales
+**Cortes convencionales**
 
 | Valor de corte | Etiqueta                        |
 |----------------|---------------------------------|
@@ -43,7 +43,7 @@ Cortes convencionales
 
 <div align="center">
 
-Cortes Francisco José de Caldas, año 1802
+**Cortes Francisco José de Caldas, año 1802**
 
 | Valor de corte | Etiqueta                                    |
 |----------------|---------------------------------------------|
