@@ -3,7 +3,7 @@ Keywords: `dem` `profile`
 
 A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaje principal que como mínimo tenga 10 km de longitud, y un tramo de vía principal con cobertura municipal, integre y cree una capa de líneas de muestreo. Extraiga todos los nodos disponibles en las polilíneas, calcule la distancia que existen entre cada pareja de puntos y abscise los nodos de 0 hasta la longitud total del tramo analizado. Para cada nodo, extraiga las elevaciones del modelo de terreno ESA Copernicus y grafique los perfiles del río y de la vía. Calcule la pendiente ponderada de la vía y del tramo de drenaje a partir de las subpendientes de cada pareja de puntos y compare con la pendiente media zonal obtenida a partir del mapa de pendientes creado en la actividad anterior. A partir de los nodos y sus elevaciones, cree y visualice en una escena local, los perfiles en 3 dimensiones.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/DEMProfile.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -16,20 +16,28 @@ A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaj
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
+* [:mortar_board:Actividad](../DEMSatellite/Readme.md): Modelo digital de elevación - DEM a partir de sensores remotos satelitales.
+* [:mortar_board:Actividad](../RoadBuffer/Readme.md): Corredores viales urbanos y construcciones afectadas.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMProfile_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus desde la ruta _\file\dem\Copernicus\Copernicus30m.tif_ y simbolice por sombreado de terreno; agregue también la capa de hidrografía desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\HIDROGRAFIA1` y la red vial integrada que se encuentran en la ruta `\file\gdb\SIGE.gdb\SIGE\Red_vial` y ajuste la simbología a valores únicos representando el campo de atributos `ZonaNombre`.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. 
 
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+
+
+
+
+
+
+
 
 
 
