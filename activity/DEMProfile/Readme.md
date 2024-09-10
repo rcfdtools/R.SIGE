@@ -45,12 +45,21 @@ Luego de seleccionar los tramos requeridos, utilice las opciones de copiar (Copy
 > Para la digitalización del tramo faltante al norte, utilice la imagen satelital de ESRI y trace las líneas a escala 1:1000 o inferior.
 
 <div align="center"><img src="graph/ArcGISPro_Edit1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Edit2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+En el evento de que el sentido vectorial de dibujo sea incorrecto, desde el editor selecciones la opción de edición de vértices o _Edit Vertices_ y dando clic sobre la línea, seleccione la opción _Reverse Direction_.
 
-3. A partir de la capa de _Hidrografia_, seleccione un drenaje principal que como mínimo tenga 10 km de longitud y a partir de la capa la red vial filtre solo las vías de orden vial 2 y extraiga el tramo que conduce al municipio de Pacho - Cundinamarca, copie estas líneas en la capa _LineaPerfil_.
+<div align="center"><img src="graph/ArcGISPro_Edit3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. A partir de la capa de la red vial filtre solo las vías de orden vial 2 y extraiga los tramos que conduce al municipio de Pacho - Cundinamarca, copie estas líneas en la capa _LineaPerfil_ y verifique que la línea sea contínua y que su sentido vectorial sea de la zona alta a la baja. 
 
+<div align="center"><img src="graph/ArcGISPro_Select2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. En la tabla de atributos de la capa _LineaPerfil_, cree un campo de texto de 100 caracteres con el nombre `PerfilNom` y asigne los nombres _Perfil Río Frío_ y _Perfil Vía a Pacho_ a los dos ejes. Simbolice los ejes con colores diferentes a partir del nombre asignado.
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. 
 
 
 
