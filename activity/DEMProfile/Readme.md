@@ -149,9 +149,6 @@ Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " 
 <div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
