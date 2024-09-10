@@ -10,6 +10,7 @@ A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaj
 
 * Obtener perfiles a partir de líneas de muestreo.
 * Representar perfiles en superficies 3D.
+* Estimar la pendiente ponderada de las líneas de muestreo.
 
 
 ## Requerimientos
@@ -22,7 +23,7 @@ A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaj
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Perfiles a partir de líneas de muestreo y nodos
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMProfile_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus desde la ruta _\file\dem\Copernicus\Copernicus30m.tif_ y simbolice por sombreado de terreno; agregue también la capa de hidrografía desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\HIDROGRAFIA1` y la red vial integrada que se encuentran en la ruta `\file\gdb\SIGE.gdb\SIGE\Red_vial` y ajuste la simbología a valores únicos representando el campo de atributos `ZonaNombre`.  
 
@@ -120,9 +121,24 @@ Llamado de función: `abscisacum(!DistNode!)`
 
 Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " | Abs (m): " + Round($feature.Abscisa, 2)`
 
-14. 
+14. En la tabla de contenido y desde las opciones de la capa de puntos, cree una gráfica de líneas representando las abscisas y las elevaciones.
 
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+15. Calcule la pendiente en tasa porcentual entre cada pareja de puntos sucesivos de cada eje. Para ello cree un campo de atributos numérico doble con el nombre `SlopePorc` y calcule la pendiente utilizando la siguiente función en Python:
+
+Código Python:  
+```
+CXUp, CYUp = -9999, -9999
+def distnode(CX, CY, Node):
+  global CXUp, CYUp
+  if CXUp == -9999 or Node == 0:
+    CXUp, CYUp = CX, CY
+  dist = ((CX - CXUp)**2 + (CY - CYUp)**2)**0.5
+  CXUp, CYUp = CX, CY
+  return dist
+ ```
+Llamado de función: `distnode(!CX!,!CY!,!Nodo!)`
 
 
 
