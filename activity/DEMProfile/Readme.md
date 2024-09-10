@@ -79,13 +79,46 @@ Ahora, seleccione el eje correspondiente al tramo de vía y con el calculador de
 
 <div align="center"><img src="graph/ArcGISPro_GeometryCalculator1a.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+11. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Extract Multi Values to Points_, obtenga la elevación de cada nodo a partir del DEM Copernicus.
 
+<div align="center"><img src="graph/ArcGISPro_ExtractMultiValuesToPoints1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+12. Calcule la distancia entre cada pareja de puntos en su orden consecutivo, para ello cree un campo numérico doble con el nombre `DistNode` y cree una función en Python que realice el cálculo utilizando el Teorema de Pitágoras. Complemente el rótulo de nodo incluyendo la distancia.
 
+Código Python:  
+```
+CXUp, CYUp = -9999, -9999
+def distnode(CX, CY, Node):
+  global CXUp, CYUp
+  if CXUp == -9999 or Node == 0:
+    CXUp, CYUp = CX, CY
+  dist = ((CX - CXUp)**2 + (CY - CYUp)**2)**0.5
+  CXUp, CYUp = CX, CY
+  return dist
+ ```
+Llamado de función: `distnode(!CX!,!CY!,!Nodo!)`
 
-11. Calcule la distancia que existen entre cada pareja de puntos, para ello 
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2)`
 
+13. Para el abscisado del perfil, cree un campo de atributos con el nombre _Abscisa_ y utilizando la siguiente función de Python, obtenga los valores requeridos.
+
+Código Python:  
+```
+acum = 0
+def abscisacum(distnode):
+  global acum
+  if distnode == 0:
+    acum =0
+  acum += distnode
+  return acum
+ ```
+Llamado de función: `abscisacum(!DistNode!)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " | Abs (m): " + Round($feature.Abscisa, 2)`
 
 
 ## 2. Análisis usando software libre - QGIS
