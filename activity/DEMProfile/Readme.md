@@ -1,36 +1,23 @@
-# Plantilla para actividades
-Keywords: `dem` `agreedem`
+# Perfiles de muestreo en red hidrográfica y vías principales
+Keywords: `dem` `profile`
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaje principal que como mínimo tenga 10 km de longitud, y un tramo de vía principal con cobertura municipal, integre y cree una capa de líneas de muestreo. Extraiga todos los nodos disponibles en las polilíneas, calcule la distancia que existen entre cada pareja de puntos y abscise los nodos de 0 hasta la longitud total del tramo analizado. Para cada nodo, extraiga las elevaciones del modelo de terreno ESA Copernicus y grafique los perfiles del río y de la vía. Calcule la pendiente ponderada de la vía y del tramo de drenaje a partir de las subpendientes de cada pareja de puntos y compare con la pendiente media zonal obtenida a partir del mapa de pendientes creado en la actividad anterior. A partir de los nodos y sus elevaciones, cree y visualice en una escena local, los perfiles en 3 dimensiones.
 
 <div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Objetivos
 
-* 
+* Obtener perfiles a partir de líneas de muestreo.
+* Representar perfiles en superficies 3D.
 
 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
-
-
-
-## Diagrama general de procesos
-
-<div align="center">
-<br><img alt="R.SIGE" src="Graph/AgreeDEMFlowchart.svg" width="80%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo, procesos automáticos o semiautomáticos en guiones rojos y procesos manuales en amarillo. Líneas conectoras con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
 
 
 ## 1. Procedimiento general en ArcGIS Pro
@@ -88,13 +75,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
-
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
 
 
 ## Referencias
