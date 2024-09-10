@@ -149,7 +149,19 @@ Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " 
 <div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 2. Análisis usando software libre - QGIS
+## 2. Visualización en escena 3D
+
+1. Para la visualización 3D, inserte una escena local, asigne el CRS 9377, agregue el modelo digital de elevación Copernicus, los ejes y los nodos. Defina la exageración vertical en 3.
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el menu _Map / Layer / Add Data_, agregue un nuevo _Elevation Source Layer_ a partir del modelo digital de elevación Copernicus.   
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
