@@ -19,6 +19,7 @@ A partir del modelo digital de elevación ESA Copernicus, cree el mapa de rellen
 * [:mortar_board:Actividad](../DEMSatellite/Readme.md): Modelo digital de elevación - DEM a partir de sensores remotos satelitales.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:toolbox:Herramienta](https://downloads.esri.com/archydro/archydro/Setup/Pro/): ArcHydroTools for ArcGIS Pro. 
 
 
 ## 1. Procedimiento general en ArcGIS Pro
@@ -27,11 +28,23 @@ A partir del modelo digital de elevación ESA Copernicus, cree el mapa de rellen
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Modifique y complete la red de drenaje incluyendo el tramo principal del Río Frío y elimine zonas con bucles. Para ello cree una copia de la capa _HIDROGRAFIA1_ guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Drenaje` y utilice el editor de ArcGIS Pro. Digitalice al menos 1 kilómetro adicional aguas abajo del Río Frío.
 
+<div align="center"><img src="graph/ArcGISPro_Edit1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. Utilizando la herramienta de geo-procesamiento _Conversion Tools / Feature to Raster_, convierta la red de drenaje en una grilla ráster con resolución de 30 metros. Nombre como `\file\grid\Mpio25899_Drenaje.tif`.
 
+<div align="center"><img src="graph/ArcGISPro_FeatureToRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Utilizando la herramienta de geo-procesamiento _Arc Hydro Tools Pro / DEM Reconditioning_, incruste en el modelo digital de elevación con relleno de sumideros la red de drenaje convertida a raster, guarde como `\file\dem\Copernicus\Copernicus30m_Fill_AgreeDEM.tif` 
 
+<div align="center"><img src="graph/ArcGISPro_DEMReconditioning1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En una escena local, verifique en una representación 3D el modelo de terreno ajustado.
+
+<div align="center"><img src="graph/ArcGISPro_LocalScene1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Flow Direction_, obtenga las direcciones de flujo en formato D8, guarde como `\file\dem\Copernicus\Copernicus30m_FDR.tif` 
 
 
 
