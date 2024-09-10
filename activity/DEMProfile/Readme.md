@@ -120,6 +120,11 @@ Llamado de función: `abscisacum(!DistNode!)`
 
 Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " | Abs (m): " + Round($feature.Abscisa, 2)`
 
+14. 
+
+
+
+
 
 ## 2. Análisis usando software libre - QGIS
 
