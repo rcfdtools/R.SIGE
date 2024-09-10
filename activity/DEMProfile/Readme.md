@@ -59,10 +59,31 @@ En el evento de que el sentido vectorial de dibujo sea incorrecto, desde el edit
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-7. 
+7. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Feature vertices to points_, extraiga todos los nodos disponibles en las poli-líneas de la capa _LineaPerfil_ y guarde como `\file\gdb\SIGE.gdb\SIGE\LineaPerfilPoint`. Simbolice los nodos utilizando los mismos colores de los ejes.
+
+<div align="center"><img src="graph/ArcGISPro_FeatureVerticesToPoints1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Rotule los nodos a partir del identificador de objeto espacial _OBJECTID_, podría observar que el código 1 ha sido asignado al tramo de la línea de drenaje debido a que en su extensión espacial es la que se encuentra más al norte. Siga la secuencia de los nodos y verifique que los valores consecutivos sean correctos en el sentido del flujo desde la zona más alta a la más baja. 
+
+<div align="center"><img src="graph/ArcGISPro_FeatureVerticesToPoints2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Numere de 0 a n los nodos de cada línea, para ello cree un campo de atributos numérico entero largo con el nombre `Nodo`, seleccione por atributos los nodos correspondientes al eje del río y con el calculador de campo asigne al valor `!OBJECTID!-1`. Rotule a partir de este nuevo campo.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Ahora, seleccione el eje correspondiente al tramo de vía y con el calculador de campo asigne el valor `!OBJECTID!-9575` donde 9575 corresponde al valor del primer nodo de este eje.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Utilizando el calculador de geometría, obtenga las coordenadas de cada nodo.
+
+<div align="center"><img src="graph/ArcGISPro_GeometryCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
+
+
+11. Calcule la distancia que existen entre cada pareja de puntos, para ello 
 
 
 
