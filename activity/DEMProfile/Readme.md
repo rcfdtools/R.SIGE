@@ -77,7 +77,7 @@ Ahora, seleccione el eje correspondiente al tramo de vía y con el calculador de
 
 10. Utilizando el calculador de geometría, obtenga las coordenadas de cada nodo.
 
-<div align="center"><img src="graph/ArcGISPro_GeometryCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_GeometryCalculator1a.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
