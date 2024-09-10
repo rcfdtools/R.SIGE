@@ -28,9 +28,26 @@ A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaj
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. 
+2. Dentro del dataset _\file\gdb\SIGE.gdb\SIGE\_ cree una clase de entidad 2D con geometría de poli-línea y nombre como _LineaPerfil_.
+
+<div align="center"><img src="graph/ArcGISPro_CreateFeatureClass1.png" alt="R.SIGE" width="50%" border="0" /></div>
+
+3. A partir de la capa de _Hidrografia_, seleccione un drenaje principal que como mínimo tenga 10 km de longitud y copie estas líneas en la capa _LineaPerfil_.
+
+De la capa de drenajes seleccionaremos para este ejemplo, los ejes correspondientes al Río Frío, podrá observar que no se encuentra completamente digitalizado todo el tramo en la zona norte y en la zona sur un tramo del río principal ha sido incorporado al eje principal del río principal.
+
+<div align="center"><img src="graph/ArcGISPro_Select1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Luego de seleccionar los tramos requeridos, utilice las opciones de copiar (Copy) y pegar (Paste Special) que se encuentran en el menu _Map_ o _Edit_.
+
+4. Edite la capa de la línea de drenaje y utilizando las herramientas de edición, digitalice el tramo faltante, segmente y elimine el tramo sur que no hace parte del río principal e integre en una única línea. Simbolice y verifique la dirección vectorial de la línea utilizando simbología de flechas de inicio a fin.
+
+> Para la digitalización del tramo faltante al norte, utilice la imagen satelital de ESRI y trace las líneas a escala 1:1000 o inferior.
+
+<div align="center"><img src="graph/ArcGISPro_Edit1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+3. A partir de la capa de _Hidrografia_, seleccione un drenaje principal que como mínimo tenga 10 km de longitud y a partir de la capa la red vial filtre solo las vías de orden vial 2 y extraiga el tramo que conduce al municipio de Pacho - Cundinamarca, copie estas líneas en la capa _LineaPerfil_.
 
 
 
