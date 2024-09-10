@@ -1,5 +1,5 @@
 # Perfiles de muestreo en red hidrográfica y vías principales
-Keywords: `dem` `profile`
+Keywords: `dem` `profile` `feature-vertices-to-points` `python`
 
 A partir de las capas de hidrografía y vías, seleccione y/o complete un drenaje principal que como mínimo tenga 10 km de longitud, y un tramo de vía principal con cobertura municipal, integre y cree una capa de líneas de muestreo. Extraiga todos los nodos disponibles en las polilíneas, calcule la distancia que existen entre cada pareja de puntos y abscise los nodos de 0 hasta la longitud total del tramo analizado. Para cada nodo, extraiga las elevaciones del modelo de terreno ESA Copernicus y grafique los perfiles del río y de la vía. Calcule la pendiente ponderada de la vía y del tramo de drenaje a partir de las subpendientes de cada pareja de puntos y compare con la pendiente media zonal obtenida a partir del mapa de pendientes creado en la actividad anterior. A partir de los nodos y sus elevaciones, cree y visualice en una escena local, los perfiles en 3 dimensiones.
 
@@ -157,6 +157,11 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 |:-------------------|:------------------------------------------------------------------------|
 | Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
 | Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Edición geométrica                                    | Activar modo de edición de capa o _Toggle Editing_ e iniciar a crear o editar entidades.                                                                                                                                                                                                                                                                                                                                                 |
+| Fraccionar o segmentar una entidad (Split)                                             | Activar el modo de edición de la capa y activar la barra _[Advanced Digitizing Toolbar](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html#advanced-digitizing)_ y las herramientas _Slipt Features_ o _Split Parts_.                                                                                                                                                                   |
+| Extraer vértices de entidades (Feature Vertices to Points)                              | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Extract vertices.                                                                                                                                                                                                                                                                                                                                                   |
+| Extracción de multiples valores desde grillas a puntos (Extract Multi Values to Points) | Puede ser realizado manualmente para cada grilla en el _Processing Toolbox / Raster analysis / Zonal statistics o se puede instalar el Plugin o complemento [Point sampling tool](https://plugins.qgis.org/plugins/pointsamplingtool/).                                                                                                                                                                                                  |
+| Cálculos geométricos o de campo                                                         | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                                                                                                                                                                                                                      |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -168,14 +173,12 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre            | Descripción                                                | Geometría     | Registros | 
+|-------------------|------------------------------------------------------------|---------------|-----------| 
+| LineaPerfil       | Lineas para generación de perfiles.                        | Poli-línea 2D | 2         | 
+| LineaPerfilPoint  | Vertices de líneas utilizadas para generación de perfiles. | Poli-línea 2D   | 10083     | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -184,8 +187,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P5** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P5** | :compass:Mapa digital impreso _P3-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P5** | Desarrolle los análisis presentados en esta actividad.                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Avance **P5** | Utilizando estadísticas zonales como tabla, obtenga la pendiente media de cada línea de perfil a partir del mapa de pendientes generado a partir del modelo Copernicus y compare con la pendiente ponderada obtenida en esta actividad.                                                                                                                                                                                                             | 
+| Avance **P5** | :compass:Mapa digital impreso _P5-14: Mapa de drenaje y tramo de vía con nodos y perfiles._<br>Incluir gráficos de análisis y rótulos descriptivos. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                   | 
 | Avance **P5** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -195,22 +199,22 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/extract-multi-values-to-points.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/feature-vertices-to-points.htm
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-
+| 2024.03.29 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.10 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../ThermicLevel/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/33)  | [Siguiente :arrow_forward:]() |
+|--------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
