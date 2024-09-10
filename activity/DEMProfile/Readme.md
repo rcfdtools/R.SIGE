@@ -129,16 +129,26 @@ Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " 
 
 Código Python:  
 ```
-CXUp, CYUp = -9999, -9999
-def distnode(CX, CY, Node):
-  global CXUp, CYUp
-  if CXUp == -9999 or Node == 0:
-    CXUp, CYUp = CX, CY
-  dist = ((CX - CXUp)**2 + (CY - CYUp)**2)**0.5
-  CXUp, CYUp = CX, CY
-  return dist
+CZUp = -9999
+def slopeporc(DistNode, CZ, Node):
+  global CZUp
+  if CZUp == -9999 or Node == 0:
+    CZUp = CZ
+  slope = (CZUp - CZ) / DistNode
+  CZUp = CZ
+  return slope
  ```
-Llamado de función: `distnode(!CX!,!CY!,!Nodo!)`
+Llamado de función: `slopeporc(!DistNode!,!CZ!,!Nodo!)`
+
+Rótulo Arcade: `$feature.Nodo + " | d (m): " + Round($feature.DistNode, 2) + " | Abs (m): " + Round($feature.Abscisa, 2)+ " | CZ (m): " + Round($feature.CZ, 2)+ " | Slp (m/m): " + Round($feature.SlopePorc, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+16. Cree un gráfico de barras que represente las pendientes medias obtenidas para cada tramo.
+
+<div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
