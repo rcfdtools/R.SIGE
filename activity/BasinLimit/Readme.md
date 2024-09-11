@@ -83,7 +83,7 @@ Automáticamente, el modelo de terreno será copiado en la carpeta `\file\HECHMS
 
 El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello es necesario exportar desde ArcGIS Pro la red de drenaje `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Drenaje` a un archivo de formas shapefile utilizando el CRS 9377 y en la ruta `\file\shp\Mpio25899_Drenaje.shp`.
 
-<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Seleccione la red de drenaje `\file\shp\Mpio25899_Drenaje.shp`, defina el número de celdas aferentes o _Smooth drop cell buffer_ (p. ej. 5), la profundidad de suavizado lateral o _Smooth drop height_ (p. ej. 10) y la profundidad de incrustación en el cauce o _Sharp drop height_ (p. ej. 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados), de clic en _Next >_. 
 
@@ -91,10 +91,15 @@ Seleccione la red de drenaje `\file\shp\Mpio25899_Drenaje.shp`, defina el númer
 
 Luego de terminada la ejecución podrá observar que ahora el DEM contiene la localización de los drenajes en el terreno.
 
-<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep3.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+7. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Preprocess Sinks` que identificará y rellenara los sumideros o zonas bajas donde el flujo puede confinarse y no drenar.
 
+> Este proceso es especialmente importante debido a que garantiza que todas las celdas del DEM drenen hacia un punto más bajo.
 
+<div align="center"><img src="graph/HECHMS_PreprocessSinks1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Podrá observar que al desplazarse por el mapa se visualizan momentáneamente los mapas previamente generados, para visualizar únicamente el último mapa creado, de clic derecho sobre el mapa, seleccione la opción
 
 
 
