@@ -31,11 +31,21 @@ A partir del modelo de terreno ESA Copernicus, identifique dentro de la zona de 
 
 <div align="center"><img src="graph/ArcGISPro_LineMapNotes1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Desde el menú _Edit / Features / Create_, active el modo de creación de entidades y dando botón derecho en _Line Notes_ del panel derecho, acceda a las propiedades y defina en la pestaña Tools densificación de líneas cada 5 metros.
+3. Desde el menú _Edit / Features / Create_, active el modo de creación de entidades y dando botón derecho en _Line Notes_ del panel derecho, acceda a las propiedades y defina en la pestaña Tools densificación de líneas cada 5 metros. En la parte superior derecha del menú _Edit / Elevation_ seleccione en modo de elevación _Surface / Ground_
 
-<div align="center"><img src="graph/ArcGISPro_DensifyLines1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_DensifyLines1a.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. 
+4. Acérquese al Embalse Neusa y cree una línea de muestreo a lo largo de la pantalla de la presa y hasta los laterales de la zona montañosa. Luego desde la tabla de contenidos y desde la capa _Line Notes_, cree una gráfica de perfil.
+
+> La primera línea trazada no realizará la densificación correcta de las líneas cada 5 metros, elimínela y vuelva a trazarla.
+
+<div align="center"><img src="graph/ArcGISPro_DensifyLines2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Ahora, para su zona de estudio, identifique una zona embalsable y trace una línea de muestreo donde podrá ubicarse la presa. Abra la tabla de atributos y asigne nombres a los ejes trazados, simbolice con dos colores diferentes y vuelva a crear la gráfica de perfil. Como puede observar, la coron del embalse del Neusa se encuentra a una elevación aproximada de 2970 m.s.n.m y la cota de fondo del embalse hipotético del Río Frío se encuentra en una cota cercana a los 3200 m.s.n.m. 
+
+<div align="center"><img src="graph/ArcGISPro_DensifyLines3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. 
 
 
 
