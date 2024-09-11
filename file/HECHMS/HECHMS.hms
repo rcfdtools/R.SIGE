@@ -1,0 +1,15 @@
+Project: HECHMS
+     Description: Modelo hidrologico SIGE
+     Version: 4.12
+     Filepath Separator: \
+     DSS File Name: HECHMS.dss
+     Time Zone ID: America/Bogota
+End:
+
+Basin: RioFrio
+     Filename: RioFrio.basin
+     Description: Cuenca Rio Frio
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 11:44:41
+End:
+

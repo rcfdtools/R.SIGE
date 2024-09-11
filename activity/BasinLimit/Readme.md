@@ -50,7 +50,7 @@ Automáticamente, obtendrá una carpeta con la estructura de directorios y archi
 
 <div align="center"><img src="graph/HECHMS_CreateNewProjectStructure.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionfile_ y copie dentro cualquier archivo de proyección de los archivos de forma shapefile generados en la carpeta `\file\shp` que cotenga los parámetros del CRS 9377 , por ejemplo, el archivo .prj de la capa _Predio.shp_. 
+Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionfile_ y copie dentro cualquier archivo de proyección de los archivos de forma shapefile generados en la carpeta `\file\shp` que cotenga los parámetros del CRS 9377 , por ejemplo, el archivo `.prj` de la capa _Predio.shp_. 
 
 2. En el menú _Components – Create Component – Basin Model_, cree 1 modelo de cuenca y nómbrelo como _RioFrio_.
 
@@ -62,63 +62,44 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. En el menú _Components – Create Component – Terrain Data_, cree los terrenos a partir de los modelos digitales de elevación - DEM recortados anteriormente hasta el límite de la zona de estudio localizados en las carpetas _D:\R.LTWB\\.dem\ASTER_, _D:\R.LTWB\\.dem\SRTM_ y _D:\R.LTWB\\.dem\ALOS_, seleccionando unidades verticales en metros, nombrar como _TerrainASTER_, _TerrainSRTM_ y _TerrainALOS_.
+4. En el menú _Components – Create Component – Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta `\file\dem\Copernicus\Copernicus30m.tif`, seleccionando unidades verticales en metros, nombrar como _TerrainCopernicus.
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainData1.png)
+<div align="center"><img src="graph/HECHMS_TerrainData1.png" alt="R.SIGE" width="50%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainData2.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainData2.png)
+Automáticamente, el modelo de terreno será copiado en la carpeta `\file\HECHMS\terrain`.
 
-Automáticamente, los archivos _ASTGTMV003MosaicArcGISProZE.tif_, _SRTMV003MosaicArcGISProZE.tif_ y _APFBSRT1MosaicArcGISProZE.tif_ serán copiados con los nombres _TerrainASTER.elevation.tif_, _TerrainSRTM.elevation.tif_ y _TerrainALOS.elevation.tif_ en la carpeta _D:\R.LTWB\HECHMS\terrain_ y también en la carpeta _D:\R.LTWB\HECHMS\gis_ dentro de subcarpetas independientes.
+<div align="center"><img src="graph/HECHMS_TerrainData3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainData3.png)
+5. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en la parte inferior asocie el terreno creado al modelo de cuencas.
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainData3a.png)
+<div align="center"><img src="graph/HECHMS_TerrainData4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En la tabla de contenido, seleccione _HECHMS – Basin Models – BasinASTER_ y en la parte inferior asocie el terreno creado al modelo de cuencas. Repita este procedimiento para los modelos de elevación SRTM y ALOS.
+6. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, dar clic en _Next >_. 
 
-> Este proceso puede tardar algunos segundos debido a la extensión del DEM y a su resolución.
+> Para el caso de estudio no ejecutaremos la generación de paredes perimetrales a partir de la zona de estudio correspondiente a la zona hidrográfica del Río Bogotá debido a que el análisis lo realizaremos en cuencas internas que descargan a este cauce principal. 
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainData4.png)
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep1.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-6. En la tabla de contenido, seleccione _HECHMS – Basin Models – BasinASTER_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, dar clic en _Next >_. 
+El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello es necesario exportar desde ArcGIS Pro la red de drenaje `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Drenaje` a un archivo de formas shapefile utilizando el CRS 9377 y en la ruta `\file\shp\Mpio25899_Drenaje.shp`.
 
-> Para el caso de estudio no ejecutaremos la generación de paredes perimetrales a partir de la zona de estudio correspondiente a la zona hidrográfica 28 - Cesar, debido a que realizaremos el cálculo de los caudales medios de largo plazo sobre todo el modelo digital de elevación. 
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainReconditioningStep1.png)
+Seleccione la red de drenaje `\file\shp\Mpio25899_Drenaje.shp`, defina el número de celdas aferentes o _Smooth drop cell buffer_ (p. ej. 5), la profundidad de suavizado lateral o _Smooth drop height_ (p. ej. 10) y la profundidad de incrustación en el cauce o _Sharp drop height_ (p. ej. 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados), de clic en _Next >_. 
 
-El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello seleccione la red de drenaje en formato Shapefile denominada _DrenajeSencilloIGAC100kZEMerge.shp_ localizada en _D:\R.LTWB\\.shp_, defina el número de celdas aferentes o _Smooth drop cell buffer_ (p. ej. 5), la profundidad de suavizado lateral o _Smooth drop height_ (p. ej. 10) y la profundidad de incrustación en el cauce o _Sharp drop height_ (p. ej. 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados), de clic en _Next >_. 
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep2.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-![R.LTWB](Screenshot/HECHMS4.9TerrainReconditioningStep2.png)
+Luego de terminada la ejecución podrá observar que ahora el DEM contiene la localización de los drenajes en el terreno.
 
-> Espere hasta que el proceso se complete, para la grilla de terreno _ASTGTMV003MosaicArcGISProZE.tif_ y la red _DrenajeSencilloIGAC100kZEMerge.shp_ este proceso en HEC-HMS requiere de aproximadamente 10 horas.
-
-![R.LTWB](Screenshot/HECHMS4.9TerrainReconditioningStep3.png)
-
-> Al igual que en la asociación y visualización en pantalla, este proceso puede tardar varios minutos debido a la extensión del DEM y a su resolución.
-
-A través del monitor de procesos o _Processes_ del administrador de tareas o _Task Manager_ de su sistema operativo, verifique que se esté ejecutando el proceso _OpenJDK Platform binary_ de HEC-HMS. Este proceso requiere de mínimo 8GB de memoria RAM para modelos de terrenos como los utilizados en el caso de estudio.
-
-![R.LTWB](Screenshot/Windows11TaskManagerProcesses.png)
-
-Reacondicionamiento completado.
-![R.LTWB](Screenshot/HECHMS4.9TerrainReconditioningStep4.png)
-
-Grilla obtenida localizada en _D:\R.LTWB\HECHMS\gis\BasinASTER_
-![R.LTWB](Screenshot/HECHMS4.9TerrainReconditioningStep5.png)
-
-Opcional: repita el procedimiento anterior en HEC-HMS para los modelos de cuenca _BasinSRTM_ y _BasinALOS_. Los modelos de terreno serán almacenados en los directorios _\HECHMS\gis\BasinASTER_, _\HECHMS\gis\BasinSRTM_ y _\HECHMS\gis\BasinALOS_. 
-
-> Debido a que los algoritmos y motor de cálculo del componente GIS de HEC-HMS requieren de varias horas para completar los procesos de reacondicionamiento en modelos digitales de elevación de gran tamaño, se recomienda realizar este procedimiento en _ArcGIS for Desktop_ a través de la herramienta _HEC-GeoHMS_ o desde _Arc Hydro Tools_ para ArcGIS.
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep3.png" alt="R.SIGE" width="50%" border="0" /></div>
 
 
 
-1. Utilizando la herramienta de geo-procesamiento _Arc Hydro Tools Pro / DEM Reconditioning_, incruste en el modelo digital de elevación con relleno de sumideros la red de drenaje convertida a raster, guarde como `\file\dem\Copernicus\Copernicus30m_Fill_AgreeDEM.tif` 
-
-<div align="center"><img src="graph/ArcGISPro_DEMReconditioning1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
-## 2. Análisis usando software libre - QGIS
+
+## 3. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 

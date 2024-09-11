@@ -1,0 +1,12 @@
+Terrain Data Manager: HECHMS
+     Version: 4.12
+     Filepath Separator: \
+End:
+
+Terrain Data: TerrainCopernicus
+     Description: 
+     Terrain Directory: terrain\TerrainCopernicus
+     Vertical Units: Meters
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 11:54:57
+End:

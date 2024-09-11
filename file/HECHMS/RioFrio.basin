@@ -14,9 +14,21 @@ Basin: RioFrio
 End:
 
 Basin Layer Properties:
+     Base Layer:
+          Name: Reconditioned Terrain
+          Layer shown: Yes
+          Properties Filename: maps\reconditioned1507072552024.xml
+     End Layer:
+     Base Layer:
+          Name: Terrain
+          Layer shown: Yes
+          Properties Filename: maps\elevation3457062552024.xml
+     End Layer:
 End:
 
 Basin Spatial Properties:
+     Coordinate System: PROJCS["MAGNA-SIRGAS_2018_Origen-Nacional",GEOGCS["MAGNA-SIRGAS_2018",DATUM["Marco_Geocentrico_Nacional_de_Referencia_2018",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["false_easting",5000000],PARAMETER["false_northing",2000000],PARAMETER["central_meridian",-73],PARAMETER["scale_factor",0.9992],PARAMETER["latitude_of_origin",4],UNIT["Meter",1],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+     Terrain: TerrainCopernicus
 End:
 
 Basin Schematic Properties:
@@ -28,7 +40,7 @@ Basin Schematic Properties:
      Maximum View S: NaN
      Maximum View W: NaN
      Maximum View E: NaN
-     Extent Method: Elements
+     Extent Method: Manual
      Buffer: 0
      Draw Icons: Yes
      Draw Icon Labels: Name
