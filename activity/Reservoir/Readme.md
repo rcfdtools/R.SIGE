@@ -23,9 +23,20 @@ A partir del modelo de terreno ESA Copernicus, identifique dentro de la zona de 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Reservoir_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus desde la ruta `\file\dem\Copernicus\Copernicus30m.tif` ajuste la simbología a sombreado de relieve con la paleta _Multipart Color Scheme_ y agregue las curvas de nivel generadas previamente en este módulo del curso que se encuentran en `\file\gdb\SIGE.gdb\SIGE\CurvasNivel5mCopernicusSmooth100m` simbolizando por categorías utilizando el clasificador `Type`.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para la localización de zonas embalsables, visualmente búsque una confinada por montañas que permita generar un cuerpo de agua. Tome como referencia el cuerpo de agua del Embalse Neusa localizado en la zona nor-oriental del DEM, podrá observar que alrededor de este existe un sistema montañoso y una zona de cierre. Desde el menú _Map / Add Layer / Elevation Source Layer_, defina como modelo de elevación de terreno el DEM de Copernicus, luego desde el menú _Insert / Layer Templates / Line Map Notes_, cree una capa de líneas de muestreo.
+
+<div align="center"><img src="graph/ArcGISPro_LineMapNotes1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Desde el menú _Edit / Features / Create_, active el modo de creación de entidades y dando botón derecho en _Line Notes_ del panel derecho, acceda a las propiedades y defina en la pestaña Tools densificación de líneas cada 5 metros.
+
+<div align="center"><img src="graph/ArcGISPro_DensifyLines1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 
