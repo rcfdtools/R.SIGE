@@ -143,7 +143,19 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 <div align="center"><img src="graph/ArcGISPro_Dissolve2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. 
+4. Cargue y visualice los diferentes mapas ráster generados en HEC-HMS.
+
+Modelo digital de terreno ajustado con drenajes  
+<div align="center"><img src="graph/ArcGISPro_DEMReconditioned.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Relleno y localización de sumideros  
+<div align="center"><img src="graph/ArcGISPro_DEMSink.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Acumulación de flujo  
+<div align="center"><img src="graph/ArcGISPro_DEMFAC.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Dirección de flujo  
+<div align="center"><img src="graph/ArcGISPro_DEMFDR.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 4. Análisis usando software libre - QGIS
