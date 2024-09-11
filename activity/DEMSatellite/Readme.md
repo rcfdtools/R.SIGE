@@ -334,13 +334,13 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 | Mpio25899_MOT2013_Envelope             | Envolvente municipal a partir de la capa Mpio25899_MOT2013.                                                         | Polígono 2D   | 1         | 
 | Mpio25899_MOT2013_Envelope_Buffer2500m | Envolvente municipal con aferencia de 2500 metros a partir de Mpio25899_MOT2013_Envelope.                           | Polígono 2D   | 1         | 
 | ASTGTMV003MosaicArcGISPro.tif          | Modelo digital de elevación ASTER GDEM v3 (30 m).                                                                   | (Grid)        | n/a       | 
-| Mpio25899_ASTGTMV003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ASTER GDEM v3 (30 m).  | (Tabla))      | 1         | 
+| Mpio25899_ASTGTMV003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ASTER GDEM v3 (30 m).  | (Tabla)       | 1         | 
 | SRTMGL3003MosaicArcGISPro.tif          | Modelo digital de elevación SRTM v3 (30 m).                                                                         | (Grid)        | n/a       | 
-| Mpio25899_SRTMGL3003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación SRTM v3 (30 m).        | (Tabla))      | 1         | 
+| Mpio25899_SRTMGL3003_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación SRTM v3 (30 m).        | (Tabla)       | 1         | 
 | ALOSPalsarFBSMosaicArcGISPro.tif       | Modelo digital de elevación Alos Palsar (12.5 m).                                                                   | (Grid)        | n/a       | 
-| Mpio25899_ALOSPalsarFBS_Stat           | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación Alos Palsar (12.5 m).  | (Tabla))      | 1         | 
+| Mpio25899_ALOSPalsarFBS_Stat           | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación Alos Palsar (12.5 m).  | (Tabla)       | 1         | 
 | Copernicus30m.tif                      | Modelo digital de elevación ESA Copernicus (30 m).                                                                  | (Grid)        | n/a       | 
-| Mpio25899_Copernicus_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ESA Copernicus (30 m). | (Tabla))      | 1         | 
+| Mpio25899_Copernicus_Stat              | Tabla de estadística zonal municipal de elevaciones a partir del modelo digital de elevación ESA Copernicus (30 m). | (Tabla)       | 1         | 
 | Mpio25899_FishNet1km                   | Red de muestreo regular cada 1 km sobre límite municipal Mpio25899_MOT2013.                                         | Punto 2D      | 192       | 
 | CurvasNivel5mCopernicus                | Curvas de nivel categorizadas cada 50 y 5 metros a partir del DEM  Copernicus30m.tif.                               | Poli-línea 2D | 2461      | 
 | CurvasNivel5mCopernicusSmooth100m      | Curvas de nivel categorizadas cada 50 y 5 metros y suavizadas con radio 100 m a partir de CurvasNivel5mCopernicus.  | Poli-línea 2D | 2461      | 
