@@ -35,7 +35,7 @@ A partir del modelo de terreno ESA Copernicus, identifique dentro de la zona de 
 
 <div align="center"><img src="graph/ArcGISPro_DensifyLines1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
+4. 
 
 
 
