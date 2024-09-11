@@ -142,8 +142,10 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 <div align="center"><img src="graph/ArcGISPro_Dissolve2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. 
 
-## 3. Análisis usando software libre - QGIS
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
