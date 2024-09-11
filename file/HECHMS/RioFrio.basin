@@ -1,7 +1,7 @@
 Basin: RioFrio
      Description: Cuenca Rio Frio
      Last Modified Date: 11 September 2024
-     Last Modified Time: 11:44:41
+     Last Modified Time: 12:28:12
      Version: 4.12
      Filepath Separator: \
      Unit System: Metric
@@ -13,10 +13,2893 @@ Basin: RioFrio
      Enable Sediment Routing: No
 End:
 
+Subbasin: W4
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.1204707050141245
+     Longitude Degrees: -74.01503474207291
+     Canvas X: 4887538.985141067
+     Canvas Y: 2123892.933019289
+     Area: 1.6067
+     Downstream: J33
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W3
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.127721656304616
+     Longitude Degrees: -74.00901542448155
+     Canvas X: 4888207.225864656
+     Canvas Y: 2124693.195996765
+     Area: 1.2825
+     Downstream: J33
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J33
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4887452.652081858
+     Canvas Y: 2124777.246704735
+     Downstream: R33
+End:
+
+Reach: R33
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884673.537577705
+     Canvas Y: 2125178.6743553346
+     From Canvas X: 4887452.652081858
+     From Canvas Y: 2124777.246704735
+     Downstream: J25
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W1
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.141984008996169
+     Longitude Degrees: -74.0452012505533
+     Canvas X: 4884200.197042994
+     Canvas Y: 2126275.7950941976
+     Area: 2.7690
+     Downstream: J25
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W39
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.132863355269972
+     Longitude Degrees: -74.02480298647664
+     Canvas X: 4886458.785514021
+     Canvas Y: 2125264.1917245067
+     Area: 2.5764
+     Downstream: J25
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J25
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884673.537577705
+     Canvas Y: 2125178.6743553346
+     Downstream: R25
+End:
+
+Reach: R25
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884457.384227383
+     Canvas Y: 2124437.577154227
+     From Canvas X: 4884673.537577705
+     From Canvas Y: 2125178.6743553346
+     Downstream: J24
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W6
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.122876938851918
+     Longitude Degrees: -74.02955283298434
+     Canvas X: 4885930.706104705
+     Canvas Y: 2124161.4135745703
+     Area: 1.7688
+     Downstream: J24
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W47
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.12988606110086
+     Longitude Degrees: -74.0373687155069
+     Canvas X: 4885065.9053603215
+     Canvas Y: 2124937.405037656
+     Area: 1.1700
+     Downstream: J24
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J24
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884457.384227383
+     Canvas Y: 2124437.577154227
+     Downstream: R24
+End:
+
+Reach: R24
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884333.868027198
+     Canvas Y: 2124344.940004089
+     From Canvas X: 4884457.384227383
+     From Canvas Y: 2124437.577154227
+     Downstream: J23
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W2
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.136079642139937
+     Longitude Degrees: -74.05367892049564
+     Canvas X: 4883259.760668271
+     Canvas Y: 2125624.8266492863
+     Area: 2.1797
+     Downstream: J23
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W48
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.124832330246085
+     Longitude Degrees: -74.0431123843892
+     Canvas X: 4884428.563780674
+     Canvas Y: 2124379.936260808
+     Area: 0.0143
+     Downstream: J23
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J23
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884333.868027198
+     Canvas Y: 2124344.940004089
+     Downstream: R23
+End:
+
+Reach: R23
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883839.80322646
+     Canvas Y: 2123819.9961533044
+     From Canvas X: 4884333.868027198
+     From Canvas Y: 2124344.940004089
+     Downstream: J22
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W49
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.121020119904649
+     Longitude Degrees: -74.04095499839076
+     Canvas X: 4884666.933491828
+     Canvas Y: 2123958.2500819205
+     Area: 1.6362
+     Downstream: J22
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W5
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.127728935575506
+     Longitude Degrees: -74.05630083144153
+     Canvas X: 4882967.716700437
+     Canvas Y: 2124702.4414660847
+     Area: 1.1938
+     Downstream: J22
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J22
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883839.80322646
+     Canvas Y: 2123819.9961533044
+     Downstream: R22
+End:
+
+Reach: R22
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883685.40797623
+     Canvas Y: 2123696.47995312
+     From Canvas X: 4883839.80322646
+     From Canvas Y: 2123819.9961533044
+     Downstream: J21
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W7
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.110020996333121
+     Longitude Degrees: -74.02840762888826
+     Canvas X: 4886055.32805289
+     Canvas Y: 2122740.4705815352
+     Area: 4.6970
+     Downstream: J21
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W50
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.1198262614798
+     Longitude Degrees: -74.04873111865378
+     Canvas X: 4883805.064295159
+     Canvas Y: 2123827.7159158164
+     Area: 0.0305
+     Downstream: J21
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J21
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883685.40797623
+     Canvas Y: 2123696.47995312
+     Downstream: R21
+End:
+
+Reach: R21
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883500.133675952
+     Canvas Y: 2122708.3503516437
+     From Canvas X: 4883685.40797623
+     From Canvas Y: 2123696.47995312
+     Downstream: J20
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W9
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.10203611773862
+     Longitude Degrees: -74.03710337505264
+     Canvas X: 4885090.338299132
+     Canvas Y: 2121859.5884913947
+     Area: 3.3230
+     Downstream: J20
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W51
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.118913083472988
+     Longitude Degrees: -74.05681253983539
+     Canvas X: 4882909.410951586
+     Canvas Y: 2123728.2661288916
+     Area: 2.4019
+     Downstream: J20
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J20
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883500.133675952
+     Canvas Y: 2122708.3503516437
+     Downstream: R20
+End:
+
+Reach: R20
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882913.431725076
+     Canvas Y: 2121781.9788502594
+     From Canvas X: 4883500.133675952
+     From Canvas Y: 2122708.3503516437
+     Downstream: J19
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W52
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.1018397871429295
+     Longitude Degrees: -74.04908810420473
+     Canvas X: 4883762.264856555
+     Canvas Y: 2121840.041762411
+     Area: 1.9442
+     Downstream: J19
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W8
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.110169669610968
+     Longitude Degrees: -74.06240243486411
+     Canvas X: 4882288.405442086
+     Canvas Y: 2122763.0234252536
+     Area: 1.7163
+     Downstream: J19
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J19
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882913.431725076
+     Canvas Y: 2121781.9788502594
+     Downstream: R19
+End:
+
+Reach: R19
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2121565.8254999365
+     From Canvas X: 4882913.431725076
+     From Canvas Y: 2121781.9788502594
+     Downstream: J18
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W10
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.091783654642713
+     Longitude Degrees: -74.04431089312544
+     Canvas X: 4884289.832762165
+     Canvas Y: 2120727.8507157625
+     Area: 2.1664
+     Downstream: J18
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W53
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.1006934809807865
+     Longitude Degrees: -74.06187983397301
+     Canvas X: 4882344.587538081
+     Canvas Y: 2121715.681901848
+     Area: 0.3957
+     Downstream: J18
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J18
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2121565.8254999365
+     Downstream: R18
+End:
+
+Reach: R18
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883067.8269753065
+     Canvas Y: 2119527.808196891
+     From Canvas X: 4882789.915524892
+     From Canvas Y: 2121565.8254999365
+     Downstream: J17
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W11
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.0825781934611625
+     Longitude Degrees: -74.04524111594931
+     Canvas X: 4884185.106454787
+     Canvas Y: 2119710.6966158743
+     Area: 2.3571
+     Downstream: J17
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W54
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.089345895141023
+     Longitude Degrees: -74.05950800597849
+     Canvas X: 4882605.354160837
+     Canvas Y: 2120461.1902377754
+     Area: 1.9824
+     Downstream: J17
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J17
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883067.8269753065
+     Canvas Y: 2119527.808196891
+     Downstream: R17
+End:
+
+Reach: R17
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2117952.9766445383
+     From Canvas X: 4883067.8269753065
+     From Canvas Y: 2119527.808196891
+     Downstream: J16
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W55
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.074675120967031
+     Longitude Degrees: -74.05493696861782
+     Canvas X: 4883109.2423162665
+     Canvas Y: 2118839.0485109263
+     Area: 3.5099
+     Downstream: J16
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W12
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.067775932277576
+     Longitude Degrees: -74.0725066694929
+     Canvas X: 4881160.971905351
+     Canvas Y: 2118079.7915617772
+     Area: 2.6956
+     Downstream: J16
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J16
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2117952.9766445383
+     Downstream: R16
+End:
+
+Reach: R16
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882759.036474845
+     Canvas Y: 2117489.790893846
+     From Canvas X: 4882728.157424799
+     From Canvas Y: 2117952.9766445383
+     Downstream: J15
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W13
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.062148208886436
+     Longitude Degrees: -74.0477139160303
+     Canvas X: 4883907.434172298
+     Canvas Y: 2117453.365267262
+     Area: 1.2634
+     Downstream: J15
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W56
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.065296804266804
+     Longitude Degrees: -74.05586449633547
+     Canvas X: 4883004.769356074
+     Canvas Y: 2117802.789361047
+     Area: 0.4758
+     Downstream: J15
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J15
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882759.036474845
+     Canvas Y: 2117489.790893846
+     Downstream: R15
+End:
+
+Reach: R15
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4881801.785923415
+     Canvas Y: 2116347.266042139
+     From Canvas X: 4882759.036474845
+     From Canvas Y: 2117489.790893846
+     Downstream: J14
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W14
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.05399747736131
+     Longitude Degrees: -74.08265161217247
+     Canvas X: 4880034.191751827
+     Canvas Y: 2116558.9473056686
+     Area: 3.9437
+     Downstream: J14
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W57
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.059782280942848
+     Longitude Degrees: -74.06505091799308
+     Canvas X: 4881985.750989717
+     Canvas Y: 2117195.024530323
+     Area: 2.4963
+     Downstream: J14
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J14
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4881801.785923415
+     Canvas Y: 2116347.266042139
+     Downstream: R14
+End:
+
+Reach: R14
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882481.12502443
+     Canvas Y: 2114278.369689048
+     From Canvas X: 4881801.785923415
+     From Canvas Y: 2116347.266042139
+     Downstream: J13
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W58
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.046113958758939
+     Longitude Degrees: -74.06090296903066
+     Canvas X: 4882442.957909114
+     Canvas Y: 2115683.7422966887
+     Area: 5.7974
+     Downstream: J13
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W17
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.03592725186468
+     Longitude Degrees: -74.07052301258197
+     Canvas X: 4881375.004669222
+     Canvas Y: 2114559.718020032
+     Area: 1.1137
+     Downstream: J13
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J13
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882481.12502443
+     Canvas Y: 2114278.369689048
+     Downstream: R13
+End:
+
+Reach: R13
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882666.399324707
+     Canvas Y: 2113938.7001385405
+     From Canvas X: 4882481.12502443
+     From Canvas Y: 2114278.369689048
+     Downstream: J12
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W15
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.051154799488273
+     Longitude Degrees: -74.03723497282215
+     Canvas X: 4885066.747333341
+     Canvas Y: 2116236.592883831
+     Area: 2.8520
+     Downstream: J30
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W16
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.051171031502404
+     Longitude Degrees: -74.04393365187283
+     Canvas X: 4884324.406220163
+     Canvas Y: 2116239.573898544
+     Area: 1.2634
+     Downstream: J30
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J30
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883932.440376598
+     Canvas Y: 2114834.192589878
+     Downstream: R30
+End:
+
+Reach: R30
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882666.399324707
+     Canvas Y: 2113938.7001385405
+     From Canvas X: 4883932.440376598
+     From Canvas Y: 2114834.192589878
+     Downstream: J12
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W42
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.036234707868455
+     Longitude Degrees: -74.0518159168425
+     Canvas X: 4883448.231553773
+     Canvas Y: 2114590.3249530583
+     Area: 0.6513
+     Downstream: J12
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W59
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.032733498054457
+     Longitude Degrees: -74.06072722146699
+     Canvas X: 4882460.029435787
+     Canvas Y: 2114204.993728543
+     Area: 0.2889
+     Downstream: J12
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J12
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882666.399324707
+     Canvas Y: 2113938.7001385405
+     Downstream: R12
+End:
+
+Reach: R12
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2113815.1839383557
+     From Canvas X: 4882666.399324707
+     From Canvas Y: 2113938.7001385405
+     Downstream: J11
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W18
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.03456562810736
+     Longitude Degrees: -74.04625128043686
+     Canvas X: 4884064.621616335
+     Canvas Y: 2114404.879266532
+     Area: 1.3082
+     Downstream: J11
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W60
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.030200985052392
+     Longitude Degrees: -74.05993938457868
+     Canvas X: 4882546.885964343
+     Canvas Y: 2113924.976116297
+     Area: 0.0515
+     Downstream: J11
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J11
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2113815.1839383557
+     Downstream: R11
+End:
+
+Reach: R11
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2113722.5467882175
+     From Canvas X: 4882728.157424799
+     From Canvas Y: 2113815.1839383557
+     Downstream: J10
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W19
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.030972148928642
+     Longitude Degrees: -74.07101650352772
+     Canvas X: 4881319.41625895
+     Canvas Y: 2114012.202003335
+     Area: 1.2110
+     Downstream: J10
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W61
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.028899909557083
+     Longitude Degrees: -74.05817777233916
+     Canvas X: 4882741.881447042
+     Canvas Y: 2113780.873882749
+     Area: 0.0086
+     Downstream: J10
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J10
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882728.157424799
+     Canvas Y: 2113722.5467882175
+     Downstream: R10
+End:
+
+Reach: R10
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2113382.8772377097
+     From Canvas X: 4882728.157424799
+     From Canvas Y: 2113722.5467882175
+     Downstream: J9
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W20
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.0325638236393155
+     Longitude Degrees: -74.03428018433739
+     Canvas X: 4885390.93515489
+     Canvas Y: 2114181.5414079567
+     Area: 1.5666
+     Downstream: J35
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W21
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.023707915661093
+     Longitude Degrees: -74.03340710909356
+     Canvas X: 4885486.14415787
+     Canvas Y: 2113202.702744248
+     Area: 1.0508
+     Downstream: J35
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J35
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4884550.021377522
+     Canvas Y: 2113568.1515379865
+     Downstream: R35
+End:
+
+Reach: R35
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2113382.8772377097
+     From Canvas X: 4884550.021377522
+     From Canvas Y: 2113568.1515379865
+     Downstream: J9
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W37
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.02734739312818
+     Longitude Degrees: -74.04637672351105
+     Canvas X: 4884049.442009258
+     Canvas Y: 2113607.1955126585
+     Area: 1.3559
+     Downstream: J9
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W62
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.027168619205995
+     Longitude Degrees: -74.05846521820978
+     Canvas X: 4882709.715769911
+     Canvas Y: 2113589.5953227407
+     Area: 0.1373
+     Downstream: J9
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J9
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2113382.8772377097
+     Downstream: R9
+End:
+
+Reach: R9
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2113074.0867372486
+     From Canvas X: 4882789.915524892
+     From Canvas Y: 2113382.8772377097
+     Downstream: J8
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W22
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.021570718734373
+     Longitude Degrees: -74.04570176516755
+     Canvas X: 4884123.22283175
+     Canvas Y: 2112968.6806826307
+     Area: 1.0584
+     Downstream: J8
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W63
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.024786576538792
+     Longitude Degrees: -74.06032220720026
+     Canvas X: 4882503.489630528
+     Canvas Y: 2113326.681907663
+     Area: 0.2594
+     Downstream: J8
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J8
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882789.915524892
+     Canvas Y: 2113074.0867372486
+     Downstream: R8
+End:
+
+Reach: R8
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882697.278374753
+     Canvas Y: 2112518.263836418
+     From Canvas X: 4882789.915524892
+     From Canvas Y: 2113074.0867372486
+     Downstream: J7
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W27
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.013999759144027
+     Longitude Degrees: -74.04358359916574
+     Canvas X: 4884356.634699668
+     Canvas Y: 2112131.620518819
+     Area: 2.9435
+     Downstream: J7
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W64
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.021239815131017
+     Longitude Degrees: -74.05815475525446
+     Canvas X: 4882743.062710202
+     Canvas Y: 2112934.3296526102
+     Area: 0.5511
+     Downstream: J7
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J7
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882697.278374753
+     Canvas Y: 2112518.263836418
+     Downstream: R7
+End:
+
+Reach: R7
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882573.762174568
+     Canvas Y: 2112487.3847863716
+     From Canvas X: 4882697.278374753
+     From Canvas Y: 2112518.263836418
+     Downstream: J6
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W23
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.025572337098369
+     Longitude Degrees: -74.07252394336686
+     Canvas X: 4881151.376575483
+     Canvas Y: 2113415.723802451
+     Area: 1.6162
+     Downstream: J6
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W65
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.017691987266521
+     Longitude Degrees: -74.0591678687976
+     Canvas X: 4882630.150005089
+     Canvas Y: 2112542.4300494976
+     Area: 0.0219
+     Downstream: J6
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J6
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882573.762174568
+     Canvas Y: 2112487.3847863716
+     Downstream: R6
+End:
+
+Reach: R6
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882481.12502443
+     Canvas Y: 2112332.989536141
+     From Canvas X: 4882573.762174568
+     From Canvas Y: 2112487.3847863716
+     Downstream: J5
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W24
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.021959045942697
+     Longitude Degrees: -74.07689524996434
+     Canvas X: 4880666.269192788
+     Canvas Y: 2113017.201833933
+     Area: 1.9032
+     Downstream: J5
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W66
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.017093817714004
+     Longitude Degrees: -74.06057659361207
+     Canvas X: 4882473.919912753
+     Canvas Y: 2112476.577118856
+     Area: 0.0572
+     Downstream: J5
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J5
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882481.12502443
+     Canvas Y: 2112332.989536141
+     Downstream: R5
+End:
+
+Reach: R5
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882172.334523968
+     Canvas Y: 2111746.2875852645
+     From Canvas X: 4882481.12502443
+     From Canvas Y: 2112332.989536141
+     Downstream: J4
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W67
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.011511732632885
+     Longitude Degrees: -74.05806150159017
+     Canvas X: 4882751.661393434
+     Canvas Y: 2111859.2335649133
+     Area: 1.3454
+     Downstream: J4
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W28
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.013943242838017
+     Longitude Degrees: -74.07327432393093
+     Canvas X: 4881066.108981094
+     Canvas Y: 2112130.68795827
+     Area: 1.0756
+     Downstream: J4
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J4
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882172.334523968
+     Canvas Y: 2111746.2875852645
+     Downstream: R4
+End:
+
+Reach: R4
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882048.8183237845
+     Canvas Y: 2111221.34373448
+     From Canvas X: 4882172.334523968
+     From Canvas Y: 2111746.2875852645
+     Downstream: J3
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W31
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.000684797228621
+     Longitude Degrees: -74.09917650722133
+     Canvas X: 4878192.983933142
+     Canvas Y: 2110670.195430328
+     Area: 2.2045
+     Downstream: J31
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W30
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.997525345921266
+     Longitude Degrees: -74.09081539890418
+     Canvas X: 4879119.065716177
+     Canvas Y: 2110319.487615795
+     Area: 1.2539
+     Downstream: J31
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J31
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4879269.703819632
+     Canvas Y: 2111159.585634388
+     Downstream: R31
+End:
+
+Reach: R31
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4879763.76862037
+     Canvas Y: 2111653.650435126
+     From Canvas X: 4879269.703819632
+     From Canvas Y: 2111159.585634388
+     Downstream: J29
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W25
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.024011563972888
+     Longitude Degrees: -74.09368688625952
+     Canvas X: 4878805.698505112
+     Canvas Y: 2113247.1204551877
+     Area: 1.1137
+     Downstream: J34
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W26
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.019151293612718
+     Longitude Degrees: -74.10069589185383
+     Canvas X: 4878028.014538915
+     Canvas Y: 2112711.292767148
+     Area: 1.0555
+     Downstream: J34
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J34
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4878466.848518432
+     Canvas Y: 2112209.4733359567
+     Downstream: R34
+End:
+
+Reach: R34
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4879763.76862037
+     Canvas Y: 2111653.650435126
+     From Canvas X: 4878466.848518432
+     From Canvas Y: 2112209.4733359567
+     Downstream: J29
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W38
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.013926105709185
+     Longitude Degrees: -74.0917792873947
+     Canvas X: 4879015.251606624
+     Canvas Y: 2112132.180989829
+     Area: 1.8651
+     Downstream: J29
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W41
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.006342636283546
+     Longitude Degrees: -74.08734953634705
+     Canvas X: 4879504.800700657
+     Canvas Y: 2111293.2853510776
+     Area: 0.2689
+     Downstream: J29
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J29
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4879763.76862037
+     Canvas Y: 2111653.650435126
+     Downstream: R29
+End:
+
+Reach: R29
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882048.8183237845
+     Canvas Y: 2111221.34373448
+     From Canvas X: 4879763.76862037
+     From Canvas Y: 2111653.650435126
+     Downstream: J3
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W43
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.008625615131616
+     Longitude Degrees: -74.07841678942131
+     Canvas X: 4880495.218589447
+     Canvas Y: 2111543.952708682
+     Area: 2.9788
+     Downstream: J3
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W68
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.0082524117210845
+     Longitude Degrees: -74.06378259494598
+     Canvas X: 4882117.026356002
+     Canvas Y: 2111500.0614264095
+     Area: 0.3652
+     Downstream: J3
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J3
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882048.8183237845
+     Canvas Y: 2111221.34373448
+     Downstream: R3
+End:
+
+Reach: R3
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882079.697373831
+     Canvas Y: 2111097.8275342956
+     From Canvas X: 4882048.8183237845
+     From Canvas Y: 2111221.34373448
+     Downstream: J2
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W29
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.002748168056716
+     Longitude Degrees: -74.05242116118166
+     Canvas X: 4883375.20878919
+     Canvas Y: 2110889.7421161775
+     Area: 1.8393
+     Downstream: J2
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W69
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  5.005759251695763
+     Longitude Degrees: -74.0632098652336
+     Canvas X: 4882180.05428648
+     Canvas Y: 2111224.4316394855
+     Area: 0.0381
+     Downstream: J2
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J2
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882079.697373831
+     Canvas Y: 2111097.8275342956
+     Downstream: R2
+End:
+
+Reach: R2
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882295.850724153
+     Canvas Y: 2109214.2054814813
+     From Canvas X: 4882079.697373831
+     From Canvas Y: 2111097.8275342956
+     Downstream: J1
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W35
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.981803585500278
+     Longitude Degrees: -74.02089664702956
+     Canvas X: 4886865.402907309
+     Canvas Y: 2108569.6094997036
+     Area: 2.6365
+     Downstream: J32
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W34
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.97669114359335
+     Longitude Degrees: -74.02877015342207
+     Canvas X: 4885991.89672544
+     Canvas Y: 2108005.979716661
+     Area: 1.5533
+     Downstream: J32
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J32
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4885661.667179182
+     Canvas Y: 2109028.9311812045
+     Downstream: R32
+End:
+
+Reach: R32
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883870.682276506
+     Canvas Y: 2109028.9311812045
+     From Canvas X: 4885661.667179182
+     From Canvas Y: 2109028.9311812045
+     Downstream: J28
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W40
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.991080389034127
+     Longitude Degrees: -74.03834551636194
+     Canvas X: 4884933.14612133
+     Canvas Y: 2109597.827586887
+     Area: 2.0720
+     Downstream: J28
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W32
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.995470582011552
+     Longitude Degrees: -74.04506820129592
+     Canvas X: 4884188.843658985
+     Canvas Y: 2110084.1772328625
+     Area: 1.1814
+     Downstream: J28
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J28
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883870.682276506
+     Canvas Y: 2109028.9311812045
+     Downstream: R28
+End:
+
+Reach: R28
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883592.770826091
+     Canvas Y: 2108781.8987808353
+     From Canvas X: 4883870.682276506
+     From Canvas Y: 2109028.9311812045
+     Downstream: J27
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W33
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.979905550126848
+     Longitude Degrees: -74.03924377089079
+     Canvas X: 4884831.64613142
+     Canvas Y: 2108363.0283757
+     Area: 1.2052
+     Downstream: J27
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W44
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.9857264460589015
+     Longitude Degrees: -74.04983054672337
+     Canvas X: 4883659.3205029145
+     Canvas Y: 2109008.1676820368
+     Area: 0.1106
+     Downstream: J27
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J27
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883592.770826091
+     Canvas Y: 2108781.8987808353
+     Downstream: R27
+End:
+
+Reach: R27
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883561.891776045
+     Canvas Y: 2108751.019730789
+     From Canvas X: 4883592.770826091
+     From Canvas Y: 2108781.8987808353
+     Downstream: J26
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W36
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.972637898173459
+     Longitude Degrees: -74.04229511122753
+     Canvas X: 4884492.194014162
+     Canvas Y: 2107560.3967860807
+     Area: 3.1685
+     Downstream: J26
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W45
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.983677820641324
+     Longitude Degrees: -74.05056706067919
+     Canvas X: 4883577.331301069
+     Canvas Y: 2108781.8987808353
+     Area: 0.0019
+     Downstream: J26
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J26
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4883561.891776045
+     Canvas Y: 2108751.019730789
+     Downstream: R26
+End:
+
+Reach: R26
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882295.850724153
+     Canvas Y: 2109214.2054814813
+     From Canvas X: 4883561.891776045
+     From Canvas Y: 2108751.019730789
+     Downstream: J1
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W70
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.996713070828587
+     Longitude Degrees: -74.067203586558
+     Canvas X: 4881735.814588508
+     Canvas Y: 2110225.426850702
+     Area: 3.2706
+     Downstream: J1
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Subbasin: W46
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.986948323533983
+     Longitude Degrees: -74.05483508698664
+     Canvas X: 4883104.878816882
+     Canvas Y: 2109144.0861918842
+     Area: 1.9509
+     Downstream: J1
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Junction: J1
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882295.850724153
+     Canvas Y: 2109214.2054814813
+     Downstream: R1
+End:
+
+Reach: R1
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882234.092624061
+     Canvas Y: 2109152.447381389
+     From Canvas X: 4882295.850724153
+     From Canvas Y: 2109214.2054814813
+     Downstream: Sink-1
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Channel Loss: None
+End:
+
+Subbasin: W71
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Latitude Degrees:  4.985438393557442
+     Longitude Degrees: -74.06186390082573
+     Canvas X: 4882325.600052857
+     Canvas Y: 2108978.470294544
+     Area: 0.0782
+     Downstream: Sink-1
+
+     Discretization: None
+     File: RioFrio.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+
+     Transform: Clark
+     Clark Method: Specified
+     Time Area Method: Default
+
+     Baseflow: Recession
+End:
+
+Sink: Sink-1
+     Last Modified Date: 11 September 2024
+     Last Modified Time: 12:28:12
+     Canvas X: 4882234.092624061
+     Canvas Y: 2109152.447381389
+     Computation Point: Yes
+End:
+
 Basin Layer Properties:
+     Element Layer:
+          Name: Icons
+          Layer shown: Yes
+     End Layer:
+     Element Layer:
+          Name: Reaches
+          Layer shown: Yes
+     End Layer:
+     2D Connection Layer:
+          Layer shown: No
+     End Layer:
+     Element Layer:
+          Name: Subbasins
+          Layer shown: Yes
+     End Layer:
+     Discretization Layer:
+          Layer shown: No
+     End Layer:
+     Breakpoint Layer:
+          Layer shown: Yes
+     End Layer:
+     Base Layer:
+          Name: Identified Streams
+          Layer shown: Yes
+          Properties Filename: maps\streams5620072552024.xml
+     End Layer:
+     Base Layer:
+          Name: Flow Accumulation
+          Layer shown: No
+          Properties Filename: maps\flowaccum3417072552024.xml
+     End Layer:
+     Base Layer:
+          Name: Flow Direction
+          Layer shown: No
+          Properties Filename: maps\flowdir3417072552024.xml
+     End Layer:
+     Base Layer:
+          Name: Sink Locations
+          Layer shown: No
+          Properties Filename: maps\sinklocs5011072552024.xml
+     End Layer:
+     Base Layer:
+          Name: Sink Fill
+          Layer shown: No
+          Properties Filename: maps\sinkfill5011072552024.xml
+     End Layer:
      Base Layer:
           Name: Reconditioned Terrain
-          Layer shown: Yes
+          Layer shown: No
           Properties Filename: maps\reconditioned1507072552024.xml
      End Layer:
      Base Layer:
@@ -29,18 +2912,27 @@ End:
 Basin Spatial Properties:
      Coordinate System: PROJCS["MAGNA-SIRGAS_2018_Origen-Nacional",GEOGCS["MAGNA-SIRGAS_2018",DATUM["Marco_Geocentrico_Nacional_de_Referencia_2018",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["false_easting",5000000],PARAMETER["false_northing",2000000],PARAMETER["central_meridian",-73],PARAMETER["scale_factor",0.9992],PARAMETER["latitude_of_origin",4],UNIT["Meter",1],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
      Terrain: TerrainCopernicus
+     Break Point: RioFrio
+          Description: Cuenca Rio Frio
+          X Coordinate: 4882232.891663233
+          Y Coordinate: 2109153.067681095
+     End Break Point:
+     reach_prefix: R
+     junction_insert: true
+     junction_prefix: J
+     subbasin_prefix: W
 End:
 
 Basin Schematic Properties:
-     Last View N: NaN
-     Last View S: NaN
-     Last View W: NaN
-     Last View E: NaN
-     Maximum View N: NaN
-     Maximum View S: NaN
-     Maximum View W: NaN
-     Maximum View E: NaN
-     Extent Method: Manual
+     Last View N: 2126275.7950941976
+     Last View S: 2107560.3967860807
+     Last View W: 4878028.014538915
+     Last View E: 4888207.225864656
+     Maximum View N: 2126275.7950941976
+     Maximum View S: 2107560.3967860807
+     Maximum View W: 4878028.014538915
+     Maximum View E: 4888207.225864656
+     Extent Method: Elements
      Buffer: 0
      Draw Icons: Yes
      Draw Icon Labels: Name
@@ -56,3 +2948,32 @@ Basin Schematic Properties:
      Fix Element Locations: No
      Fix Hydrologic Order: No
 End:
+
+Computation Point: Sink-1
+     Parameter Set: 1
+     End Parameter Set:
+     Parameter Set: 2
+     End Parameter Set:
+     Parameter Set: 3
+     End Parameter Set:
+     Parameter Set: 4
+     End Parameter Set:
+     Parameter Set: 5
+     End Parameter Set:
+
+     Graph Definition: 
+     End Graph Definition: 
+
+     Graph Definition: 
+     End Graph Definition: 
+
+     Graph Definition: 
+     End Graph Definition: 
+
+     Graph Definition: 
+     End Graph Definition: 
+
+     Graph Definition: 
+     End Graph Definition: 
+
+End Computation Point: 

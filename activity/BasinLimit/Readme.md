@@ -99,9 +99,48 @@ Luego de terminada la ejecución podrá observar que ahora el DEM contiene la lo
 
 <div align="center"><img src="graph/HECHMS_PreprocessSinks1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Podrá observar que al desplazarse por el mapa se visualizan momentáneamente los mapas previamente generados, para visualizar únicamente el último mapa creado, de clic derecho sobre el mapa, seleccione la opción
+Podrá observar que al desplazarse por el mapa se visualizan momentáneamente los mapas previamente generados, para visualizar únicamente el último mapa creado, de clic derecho sobre el mapa, seleccione la opción _Map Layers_ y deje activo solo los mapas Sink.
+
+<div align="center"><img src="graph/HECHMS_MapLayers1.png" alt="R.SIGE" width="40%" border="0" /></div>
+
+8. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Preprocess Drainage` que le permitirá conocer en detalle como drena el flujo sobre el modelo de terreno.
+
+<div align="center"><img src="graph/HECHMS_PreprocessDrainage1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice el mapa _Flow Direction_.
+
+<div align="center"><img src="graph/HECHMS_PreprocessDrainage2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Identify Stream` que le permitirá definir el área de aportación a partir de la cual obtendrá o generará las cuencas del modelo. Visualice el resultado utilizando como fondo el modelo de terreno.
+
+<div align="center"><img src="graph/HECHMS_IdentifyStream.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Utilizando la herramienta _Break Point Creation Tool_ cree un punto de extracción o sifón de cuenca en la parte baja del Río Frío.
+
+<div align="center"><img src="graph/HECHMS_BreakPointCreationTool1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+11. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Delineate Elements` que le permitirá extraer las cuencas y drenajes hasta el punto de estudio definido. Utilice los prefijos W, R, J.
+
+<div align="center"><img src="graph/HECHMS_DelineateElements1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+12. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos en la carpeta `\file\shp\' como _RioFrioCuencas_ y _RioFrioDrenajes_.
+
+<div align="center"><img src="graph/HECHMS_ExportLayers1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 3. Visualización de cuencas en ArcGIS Pro
+
+1. En el proyecto de ArcGIS Pro, cargue desde la carpeta `\file\shp\` las capas `RioFrioCuencas.shp` y `RioFrioDrenajes.shp` generadas en HEC-HMS.
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para obtener el límite externo de la cuenca, ejecute la herramienta de geo-procesamiento _Data Management Tools / Dissolve_, nombre como `\file\shp\RioFrioCuenca.shp`.
+
+<div align="center"><img src="graph/ArcGISPro_Dissolve1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Compare con el límite municipal, podrá observar que gran parte del área territorial municipal corresponde a esta cuenca, especialmente en la zona de montaña.
+
+<div align="center"><img src="graph/ArcGISPro_Dissolve2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Análisis usando software libre - QGIS
