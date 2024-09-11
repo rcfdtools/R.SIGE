@@ -45,7 +45,33 @@ A partir del modelo de terreno ESA Copernicus, identifique dentro de la zona de 
 
 <div align="center"><img src="graph/ArcGISPro_DensifyLines3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. 
+6. Dentro de la base de datos geográfica del proyecto y en el dataset SIGE, cre una capa 2D para la localización del punto central de localización de la pantalla del embalse Río Frío, nombre la capa como `EmbalsePunto`, agregue un campo para el nombre y cree el punto de localización.
+
+<div align="center"><img src="graph/ArcGISPro_NewFeatureClass1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Active y rotule las curvas de nivel e identifique una curva que permita confinar la posible lámina de agua de este cuerpo de agua, para ejemplo seleccionaremos la curva en la cota 3260 m.s.n.m.
+
+<div align="center"><img src="graph/ArcGISPro_Select1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Utilizando la herramienta de geo-procesamiento _3D Analyst / Contour with Barriers_ obtenga la curva de nivel 3260 m.s.n.m, nombre la capa resultante como `\file\gdb\SIGE.gdb\SIGE\EmbalseCurvaNivelCierre`. Podrá observar que en la zona norte, la curva no tiene un cierre completo y que parte de la divisoria norte también drena al Embalse Neusa por lo que será necesario crear manualmente un cierre en esta zona. 
+
+<div align="center"><img src="graph/ArcGISPro_ContourWithBarriers1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Edite la curva de nivel y cree una poli-línea que delimite el cuerpo de agua a embalsar. 
+
+> Será necesario eliminar las demás líneas de curvas de nivel con la misma cota fuera de la zona a embalsar y dejar únicamente una entidad. Utilice las herramientas de edición Slip y Merge para el ajuste de la línea perimetral.'
+
+<div align="center"><img src="graph/ArcGISPro_ContourWithBarriers2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Utilizando la herramienta de geo-procesamiento `Data Management Tools / Feature to Polygon`, convierta la línea de delimitación en un polígono que representa la superficie del cuerpo de agua a embalsar, nombre como `\file\gdb\SIGE.gdb\SIGE\EmbalseSuperficie` y calcule en un campo de atributos el área planar en hectáreas.
+
+Rótulo Arcade: `$feature.Nombre + "\nA (ha): " + Round($feature.APha, 2)`
+
+<div align="center"><img src="graph/ArcGISPro_FeatureToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+11. Utilizando la herramienta de geo-procesamiento `Spatial Analyst Tools / Storage Capacity`, genere las curvas de elevación-almacenamiento y elevación área cada 1 metro de elevación, nombre la tabla resultante como `\file\gdb\SIGE.gdb\EmbalseStorageCapacity` y grafique.
+
+
 
 
 

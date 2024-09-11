@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: miércoles, 11 de septiembre de 2024 9:57:08 a. m.</msg><msg code="0" type="0">Calculating storage capacity...</msg><msg code="1" type="100">ERROR 000496: table is being edited
+Failed to execute (Delete).
+</msg><msg code="1" type="100">ERROR 000496: table is being edited
+Failed to execute (Delete).
+</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 109, in ZonalCapacityAsTable
+﻿    arcpy.JoinField_management(elevTbl, "Value", out_zonal_sum, "Value", "AREA")      
+﻿    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 9684, in JoinField
+﻿    raise e
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 9681, in JoinField
+﻿    retval = convertArcObjectToPythonObject(gp.JoinField_management(*gp_fixargs((in_data, in_field, join_table, join_field, fields, fm_option, field_mapping, index_join_fields), True)))
+﻿                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 512, in &lt;lambda&gt;
+﻿    return lambda *args: val(*gp_fixargs(args, True))
+﻿                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿arcgisscripting.ExecuteError: ERROR 000499: table is not editable
+Failed to execute (JoinField).
+
+﻿
+﻿During handling of the above exception, another exception occurred:
+﻿
+﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 314, in execute
+﻿    res1 = ZonalCapacityAsTable(scratchRngTable, scratchWaterLevelRaster, scratchZonalRaster, in_dem, analysis_type, prjIsGeographic, xyFactor, in_cellSize, maxLoopC + 1, c)
+﻿           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 132, in ZonalCapacityAsTable
+﻿    raise arcpy.ExecuteError("Error in iteration {0}.".format(currentLoop))      
+﻿    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿arcgisscripting.ExecuteError: Error in iteration 0.
+﻿
+﻿During handling of the above exception, another exception occurred:
+﻿
+﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 404, in &lt;module&gt;
+﻿    execute()
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 401, in execute
+﻿    raise arcpy.ExecuteError()
+﻿arcgisscripting.ExecuteError﻿
+</msg><msg code="0" type="0">Failed script Storage Capacity...</msg><msg code="-2147467259" type="100">Failed to execute (StorageCapacity).</msg><msg code="0" type="3">Failed at miércoles, 11 de septiembre de 2024 9:57:10 a. m. (Elapsed Time: 1.83 seconds)</msg></messages>

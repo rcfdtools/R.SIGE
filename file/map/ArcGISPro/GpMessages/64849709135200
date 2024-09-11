@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: miércoles, 11 de septiembre de 2024 9:57:28 a. m.</msg><msg code="-2147467259" type="100">﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 212, in execute
+﻿    arcpy.FeatureToRaster_conversion(in_zonedata, in_zonefield, zone_raster, in_dem)
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\conversion.py", line 3174, in FeatureToRaster
+﻿    raise e
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\conversion.py", line 3171, in FeatureToRaster
+﻿    retval = convertArcObjectToPythonObject(gp.FeatureToRaster_conversion(*gp_fixargs((in_features, field, out_raster, cell_size), True)))
+﻿                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 512, in &lt;lambda&gt;
+﻿    return lambda *args: val(*gp_fixargs(args, True))
+﻿                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿arcgisscripting.ExecuteError: ERROR 160706: Cannot acquire a lock.
+Failed to execute (FeatureToRaster).
+
+﻿
+﻿During handling of the above exception, another exception occurred:
+﻿
+﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 404, in &lt;module&gt;
+﻿    execute()
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\storagecapacity.py", line 401, in execute
+﻿    raise arcpy.ExecuteError()
+﻿arcgisscripting.ExecuteError﻿
+</msg><msg code="0" type="0">Failed script Storage Capacity...</msg><msg code="-2147467259" type="100">Failed to execute (StorageCapacity).</msg><msg code="0" type="3">Failed at miércoles, 11 de septiembre de 2024 9:57:28 a. m. (Elapsed Time: 0.58 seconds)</msg></messages>
