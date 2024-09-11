@@ -104,7 +104,7 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 
 | Nombre                                        | Descripción                                                                                                        | Geometría   | Registros | 
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-| Paramos_Delimitados_Junio_2020.shp            | Páramos de Colombia a 2020 por Minambiemte.                                                                        | Polígono 2D | 163       | 
+| Paramos_Delimitados_Junio_2020.shp            | Páramos de Colombia a 2020 por Minambiente.                                                                        | Polígono 2D | 163       | 
 | Mpio25899_MOT2013_Paramo                      | Intersección espacial límite municipal a partir del MOT y páramos de Colombia.                                     | Polígono 2D | 1         | 
 | Mpio25899_MOT2013_Paramo_Copernicus_Stat      | Tabla de estadística zonal de elevaciones Copernicus dentro del límite de páramo en la zona de estudio.            | (Table)     | 1         | 
 | Mpio25899_MOT2013_Paramo_CopernicusSlope_Stat | Tabla de estadística zonal de pendientes a partir de Copernicus dentro del límite de páramo en la zona de estudio. | (Table)   | 1         | 
