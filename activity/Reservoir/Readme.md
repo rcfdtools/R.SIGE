@@ -121,7 +121,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/rasterterrainanalysis.html#hypsometric-curves
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/storage-capacity.htm
 
 
 ## Control de versiones
