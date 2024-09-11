@@ -69,21 +69,20 @@ Rótulo Arcade: `$feature.Nombre + "\nA (ha): " + Round($feature.APha, 2)`
 
 <div align="center"><img src="graph/ArcGISPro_FeatureToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-11. Utilizando la herramienta de geo-procesamiento `Spatial Analyst Tools / Storage Capacity`, genere las curvas de elevación-almacenamiento y elevación área cada 1 metro de elevación, nombre la tabla resultante como `\file\gdb\SIGE.gdb\EmbalseStorageCapacity` y grafique.
+11. Utilizando la herramienta de geo-procesamiento `Spatial Analyst Tools / Storage Capacity`, genere las curvas de elevación-almacenamiento y elevación área cada 1 metro de elevación, nombre la tabla resultante como `\file\gdb\SIGE.gdb\EmbalseStorageCapacity` y grafique. Como observa en las gráficas, el posible volúmen almacenado corresponde a 302246374.36 m³ o 302.25 hectómetros cúbicos.
 
-
-
-
+<div align="center"><img src="graph/ArcGISPro_StorageCapacity1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                 | Procedimiento                                                                                     |
+|:----------------------------------------|:--------------------------------------------------------------------------------------------------|
+| Simbología                              | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                           |
+| Rotulado                                | Modificable desde las propiedades de la capa en la pestaña _Labels_.                              |
+| Curvas hipsométricas (Storage Capacity) | Herramienta disponible en el _Processing Toolbox / Raster tterrain analysis / Hypsometric curves. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
