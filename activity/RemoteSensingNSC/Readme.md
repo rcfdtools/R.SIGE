@@ -9,7 +9,7 @@ A partir de las composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 recortadas has
 ## Objetivos
 
 * Reclasificar composiciones de imágenes satelitales en 24 clases.
-* Comparación de diferencias Landsat 7 2003 vs. Landsat 9 2023.
+* Identificar clases correspondientes a cuerpos de agua y comparar las diferencias entre Landsat 7 2003 vs. Landsat 9 2023.
 
 
 ## Requerimientos
