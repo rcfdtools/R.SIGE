@@ -71,14 +71,14 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre               | Descripción                                                                                              | Geometría  | Registros | 
+|----------------------|----------------------------------------------------------------------------------------------------------|------------|-----------| 
+| L7B4B3B2NS24.tif     | Grilla general de clasificación no supervisada Landsat 7 en 24 clases.                                   | (grid)     | n/a       | 
+| L9B5B4B3NS24.tif     | Grilla general de clasificación no supervisada Landsat 9 en 24 clases.                                   | (grid)     | n/a       | 
+| L7B4B3B2NS24Clip.tif | Grilla general de clasificación no supervisada Landsat 7 en 24 clases recortada hasta el límite del MOT. | (grid)     | n/a       | 
+| L9B5B4B3NS24Clip.tif | Grilla general de clasificación no supervisada Landsat 9 en 24 clases recortada hasta el límite del MOT. | (grid)     | n/a       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -87,8 +87,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P6** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P6** | :compass:Mapa digital impreso _P6-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P6** | Realice los análisis de clasificación no supervisada presentados en esta actividad y realice un análisis descriptivo de las diferencias encontradas en los cuerpos de agua identificados.                                                                                                                                                                                                                                                           | 
+| Avance **P6** | :compass:Mapa digital impreso _P6-3: Mapa de comparación de clasificación no supervisada 2003 vs. 2023 con tabla de resultados._<br>Incluir texto descriptivo de diferencias encontradas. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                             | 
 | Avance **P6** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -114,7 +114,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|-----------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/37) | [Siguiente :arrow_forward:]() |
+|-----------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
