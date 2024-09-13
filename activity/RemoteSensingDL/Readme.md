@@ -22,7 +22,7 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 * [:man_technologist:Usuario](https://ers.cr.usgs.gov/): Creación de cuenta de usuario USGS.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Descarga de imágenes desde earthexplorer.usgs.gov
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensing_ y establezca el CRS 9377. Agregue al mapa las capas `Mpio25899_MOT2013` y `Mpio25899_MOT2013_Envelope` disponibles en la ruta `\file\gdb\SIGE.gdb\SIGE` y represente por contornos.  
 
@@ -41,7 +41,7 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 <div align="center"><img src="graph/Chrome_EarthExplorer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_EarthExplorer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En las opciones de _Search Criteria_, agregue el archivo comprimido que delimita la zona de estudio, podrá observar que la ventana de búsqueda muestra el límite espacial y las esquinas de la zona de búsqueda. En la parte inferior, ingrese la fecha 11/01/2003 debido a que inicialmente descargaremos imágenes Landsat 7.
+5. En las opciones de _Search Criteria_, agregue el archivo comprimido que delimita la zona de estudio, podrá observar que la ventana de búsqueda muestra el límite espacial y las esquinas de la zona de búsqueda. En la parte inferior, ingrese la fecha 01/11/2003 debido a que inicialmente descargaremos imágenes Landsat 7 de esta fecha.
 
 <div align="center"><img src="graph/Chrome_EarthExplorer3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -57,9 +57,16 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 
 <div align="center"><img src="graph/Chrome_EarthExplorer6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-9. Utilizando la opción de descarga, obtenga las bandas de reflectancia y de emisión térmica, guarde en la carpeta .
+9. Utilizando la opción de descarga, obtenga las bandas de reflectancia y de emisión térmica, guarde como `\grid\LE07_L2SP\LE07_L2SP_008056_20030111_20200916_02_T1.tar`.
 
 <div align="center"><img src="graph/Chrome_EarthExplorer7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+10. Repita el procedimiento anterior y descargue imágenes Landsat 9 de la misma ruta o path 008 y fila o row 056 del 03 de febrero de 2023, guarde como `\grid\LC09_L2SP\LC09_L2SP_008056_20230203_20230311_02_T1.tar`..
+
+<div align="center"><img src="graph/Chrome_EarthExplorer8.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_EarthExplorer9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+## 2. 
 
 
 

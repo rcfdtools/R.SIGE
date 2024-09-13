@@ -64,6 +64,7 @@ file/dem/*.tif
 file/dem/*.tif.*
 file/dem/*.zip
 file/grid/LE07_L2SP/*.*
+file/grid/LC09_L2SP/*.*
 #.dem/*.rar
 #.dem/*.7z
 file/ref/Ley388de1997.pdf
