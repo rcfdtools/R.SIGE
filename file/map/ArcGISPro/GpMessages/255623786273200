@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: viernes, 13 de septiembre de 2024 2:56:53 p. m.</msg><msg code="539" type="100">ERROR 000539: ﻿Traceback (most recent call last):
+﻿  File "&lt;expression&gt;", line 1, in &lt;module&gt;
+﻿NameError: name 'Count' is not defined. Did you mean: 'round'?
+</msg><msg code="-2147467259" type="100">Failed to execute (CalculateField).</msg><msg code="0" type="3">Failed at viernes, 13 de septiembre de 2024 2:56:53 p. m. (Elapsed Time: 0.07 seconds)</msg></messages>

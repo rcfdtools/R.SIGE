@@ -116,10 +116,11 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                                    | Procedimiento                                                                                            |
-|:-----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| Composición de bandas en imágenes ráster (Composite Bands) | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.composite.                         |
-| Recorte de imágenes ráster (Clip Raster)                   | Herramienta disponible en el _Processing Toolbox / GDAL / Raster extraction / Clip raster by mask layer. |
+| Proceso                                                     | Procedimiento                                                                                             |
+|:------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
+| Simbología                                                  | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                   |
+| Composición de bandas en imágenes ráster (Composite Bands)  | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.composite.                          |
+| Recorte de imágenes ráster (Clip Raster)                    | Herramienta disponible en el _Processing Toolbox / GDAL / Raster extraction / Clip raster by mask layer.  |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 

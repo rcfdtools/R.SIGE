@@ -33,18 +33,33 @@ A partir de las composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 recortadas has
 <div align="center"><img src="graph/ArcGISPro_IsoClusterUnsupervisedClassification1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_IsoClusterUnsupervisedClassification2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las imágenes reclasificadas hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L7B4B3B2NS24Clip.tif` y `\file\grid\LC09_L2SP\L9B5B4B3NS24Clip.tif`.
 
+<div align="center"><img src="graph/ArcGISPro_RasterClip1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_RasterClip2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Abra la tabla de atributos de las tablas asociadas a las imágenes de reclasificación, agregue un campo numérico doble con el nombre `Aha` y calcule las áreas correspondientes a cada clase.
+
+> Para el cálculo de áreas por clase en hectáreas utilizar la expresión: ([Count] * 30 * 30) / 10000.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Convertir las imágenes ráster a polígonos en caso de que no pueda ser consultada la tabla raster, herramienta _Raster to Polygon_.
+
+5. Cree dos gráficos de barras a partir de los códigos de valores y las áreas calculadas. Podrá observar que los cuerpos de agua identificados en Landsat 7 corresponden a 1054.08 hectáreas y en Landsat 9 a 295.47 hectáreas. Las diferencias se deben a la calidad en la captura de la información de los sensores L9. 
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                                                                   | Procedimiento                                                                                            |
+|:------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
+| Simbología                                                                                | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                  |
+| Clasificación no supervisada de imágenes ráster (Iso Cluster Unsupervised Classification) | Utilizar el plugin [Unsupervised Classifier](https://plugins.qgis.org/plugins/unsupervised_classifier/). |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
