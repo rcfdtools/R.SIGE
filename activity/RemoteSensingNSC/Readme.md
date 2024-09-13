@@ -8,30 +8,32 @@ A partir de las composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 recortadas has
 
 ## Objetivos
 
-* 
+* Reclasificar composiciones de imágenes satelitales en 24 clases.
+* Comparación de diferencias Landsat 7 2003 vs. Landsat 9 2023.
 
 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingNSC_ y establezca el CRS 9377. Agregue al mapa la capa del límite municipal obtenido Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` ajuste la simbología solo a contorno y agregue las composiciones `L7B4B3B2.tif` y `L9B5B4B3.tif` generadas en la actividad anterior.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Iso Cluster Unsupervised Classification_, cree mapas de clasificación no supervisada en 24 clases para las  composiciones Landsat 7 y Landsat 9. Utilice como parámetros de entrada  `Clases: 24`, `Minimun class size: 20` y `Sample interval: 10`. Guarde los archivos resultantes como `\file\grid\LE07_L2SP\L7B4B3B2NS24.tif` y `\file\grid\LC09_L2SP\L9B5B4B3NS24.tif`.
 
+> Para la aplicación de la clasificación no supervisada se recomienda utilizar toda la extensión de la imagen debido a que aparecen varios embalses y cuerpos de agua principales que ayudan en la generación de las firmas espectrales. Considerar que en el mapa de clasificación no supervisada a partir de datos Landsat 7, los cuerpos de agua principales han sido marcados con la clase 2 y en Landsat 9 se encuentran en la clase 1.
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+<div align="center"><img src="graph/ArcGISPro_IsoClusterUnsupervisedClassification1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_IsoClusterUnsupervisedClassification2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
