@@ -41,7 +41,7 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 <div align="center"><img src="graph/Chrome_EarthExplorer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_EarthExplorer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En las opciones de _Search Criteria_, agregue el archivo comprimido que delimita la zona de estudio, podrá observar que la ventana de búsqueda muestra el límite espacial y las esquinas de la zona de búsqueda. En la parte inferior, ingrese la fecha 01/11/2003 debido a que inicialmente descargaremos imágenes Landsat 7 de esta fecha.
+5. En las opciones de _Search Criteria_, agregue el archivo comprimido que delimita la zona de estudio, podrá observar que la ventana de búsqueda muestra el límite espacial y las esquinas de la zona de búsqueda. En la parte inferior, ingrese la fecha (mm/dd/yyyy) 01/11/2003 debido a que inicialmente descargaremos imágenes Landsat 7 de esta fecha.
 
 <div align="center"><img src="graph/Chrome_EarthExplorer3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -84,6 +84,15 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 4. Repita el procedimiento anterior para Landsat 9 realizando la composición B4B3B2, guarde el archivo de composición como `\file\grid\LC09_L2SP\L9B4B3B2.tif`
 
 <div align="center"><img src="graph/ArcGISPro_CompositeBands2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la tabla de contenido, seleccione la imagen `L7B3B2B1.tif` y desde el menú _Layer_ active la opción de rango dinámico _DRA_ y ajuste o _Stretch Type_ _Esri_. Repita este ajuste para la composición de Landsat 9. Podrá observar la diferencia entre el límite de la zona urbana y el desarrollo rural en 20 años.
+
+<div align="center"><img src="graph/ArcGISPro_RasterLayerDRA1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las imágenes hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L7B3B2B1Clip.tif` y `\file\grid\LC09_L2SP\L9B4B3B2Clip.tif`.
+
+<div align="center"><img src="graph/ArcGISPro_RasterClip1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
