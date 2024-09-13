@@ -19,18 +19,48 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:man_technologist:Usuario](https://ers.cr.usgs.gov/): Creación de cuenta de usuario USGS.
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensing_ y establezca el CRS 9377. Agregue al mapa las capas `Mpio25899_MOT2013` y `Mpio25899_MOT2013_Envelope` disponibles en la ruta `\file\gdb\SIGE.gdb\SIGE` y represente por contornos.  
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. Exporte la clase de entidad `Mpio25899_MOT2013_Envelope` a un archivo de formas shapefile en la ruta `\file\shp\Mpio25899_MOT2013_Envelope4329.shp` asignando el CRS 4326.
 
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+3. Desde el directorio `\shp` comprima los archivos `Mpio25899_MOT2013_Envelope.shp`, `Mpio25899_MOT2013_Envelope.shx`, `Mpio25899_MOT2013_Envelope.dbf`, `Mpio25899_MOT2013_Envelope.prj` en un archivo `.zip` con el nombre `Mpio25899_MOT2013_Envelope.zip`.
+
+<div align="center"><img src="graph/Windows_Zip1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Ingrese al portal https://earthexplorer.usgs.gov/ y en la parte superior derecha a través de la opción _Login_ ingrese con su cuenta de usuario del Servicio Geológico de los Estados Unidos de América - USGS.  
+
+<div align="center"><img src="graph/Chrome_EarthExplorer1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_EarthExplorer2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En las opciones de _Search Criteria_, agregue el archivo comprimido que delimita la zona de estudio, podrá observar que la ventana de búsqueda muestra el límite espacial y las esquinas de la zona de búsqueda. En la parte inferior, ingrese la fecha 11/01/2003 debido a que inicialmente descargaremos imágenes Landsat 7.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En la pestaña _Data Sets_, busque y seleccione el conjunto de datos _Landsat 7 ETM+ C2 L2_
+
+<div align="center"><img src="graph/Chrome_EarthExplorer4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. En la pestaña _Additional Criteria_ busque la ruta o path 008 y la fila o row 056.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+8. Desde la pestaña de resultados, visualice la imagen `LE07_L2SP_008056_20030111_20200916_02_T1`, podrá observar que cubre un área más amplia y que en la zona de estudio se presentan pocas nubes.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+9. Utilizando la opción de descarga, obtenga las bandas de reflectancia y de emisión térmica, guarde en la carpeta .
+
+<div align="center"><img src="graph/Chrome_EarthExplorer7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
