@@ -94,6 +94,21 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 <div align="center"><img src="graph/ArcGISPro_RasterClip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 3. Identificación cuerpos de agua y vegetación
+
+1. Ejecutando la herramienta de geo-procesamiento _Data Management Tools / Composite Bands_, componga las bandas satelitales Landsat 7 B4B3B2, guarde el archivo de composición como `\file\grid\LE07_L2SP\L7B4B3B2.tif`. Una vez terminado el proceso, podrá observar que los cuerpos de agua aparecen en negro, la vegetación en rojo y las zonas urbanizadas en color gris.
+
+<div align="center"><img src="graph/ArcGISPro_CompositeBands3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Repita el procedimiento anterior para Landsat 9 realizando la composición B5B4B3, guarde el archivo de composición como `\file\grid\LC09_L2SP\L9B5B4B3.tif`
+
+<div align="center"><img src="graph/ArcGISPro_CompositeBands4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las imágenes hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L7B4B3B2Clip.tif` y `\file\grid\LC09_L2SP\L9B5B4B3Clip.tif`, ajuste la simbología por recorte porcentual y rango dinámico DRA.
+
+<div align="center"><img src="graph/ArcGISPro_RasterClip2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_RasterClip3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 
 
