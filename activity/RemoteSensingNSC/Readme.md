@@ -1,5 +1,5 @@
 # Clasificación no supervisada ISO Cluster
-Keywords: `dem` `agreedem`
+Keywords: `iso-cluster-unsupervised-classification` `clip-raster`
 
 A partir de las composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 recortadas hasta el límite del modelo de ocupación territorial - MOT, realizar clasificación no supervisada en 24 clases. Calcule y compare las áreas por clase en hectáreas hasta el límite municipal. Considerar que en el mapa de clasificación no supervisada a partir de datos Landsat 7, los cuerpos de agua principales han sido marcados con la clase 2 y en Landsat 9 se encuentran en la clase 1. Explique las diferencias principales encontradas y las diferencias de clasificación en la zona urbana.
 
@@ -98,15 +98,16 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/iso-cluster-unsupervised-classification.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm
 
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                | Autor                                      | Horas  |
+|------------|:-----------------------------------------------------------|--------------------------------------------|:------:|
+| 2024.04.03 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4    |
+| 2024.09.13 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4    |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
