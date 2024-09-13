@@ -61,12 +61,29 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 
 <div align="center"><img src="graph/Chrome_EarthExplorer7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-10. Repita el procedimiento anterior y descargue imágenes Landsat 9 de la misma ruta o path 008 y fila o row 056 del 03 de febrero de 2023, guarde como `\grid\LC09_L2SP\LC09_L2SP_008056_20230203_20230311_02_T1.tar`..
+10. Repita el procedimiento anterior y descargue imágenes Landsat 9 de la misma ruta o path 008 y fila o row 056 del 03 de febrero de 2023, guarde como `\grid\LC09_L2SP\LC09_L2SP_008056_20230203_20230311_02_T1.tar`.
 
 <div align="center"><img src="graph/Chrome_EarthExplorer8.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_EarthExplorer9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-## 2. 
+
+## 2. Composición de imágenes en falso color
+
+1. Del comprimido `\grid\LE07_L2SP\LE07_L2SP_008056_20030111_20200916_02_T1.tar`, extraiga en la carpeta `\grid\LE07_L2SP\` los archivos correspondientes a las bandas B1 a B6.
+
+<div align="center"><img src="graph/Windows_RarUncompress1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Del comprimido `\grid\LC09_L2SP\LC09_L2SP_008056_20230203_20230311_02_T1.tar`, extraiga en la carpeta `\grid\LC09_L2SP\` los archivos correspondientes a las bandas B1 a B7.
+
+<div align="center"><img src="graph/Windows_RarUncompress2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En ArcGIS Pro y ejecutando la herramienta de geo-procesamiento _Data Management Tools / Composite Bands_, componga las bandas satelitales Landsat 7 B3B2B1, guarde el archivo de composición como `\file\grid\LE07_L2SP\L7B3B2B1.tif`. Una vez terminado el proceso, podrá observar la imagen en falso color.
+
+<div align="center"><img src="graph/ArcGISPro_CompositeBands1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Repita el procedimiento anterior para Landsat 9 realizando la composición B4B3B2, guarde el archivo de composición como `\file\grid\LC09_L2SP\L9B4B3B2.tif`
+
+<div align="center"><img src="graph/ArcGISPro_CompositeBands2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
