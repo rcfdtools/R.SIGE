@@ -110,9 +110,7 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 <div align="center"><img src="graph/ArcGISPro_RasterClip3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
-## 2. Análisis usando software libre - QGIS
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
