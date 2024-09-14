@@ -80,14 +80,16 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                                        | Descripción                                                                                                  | Geometría   | Registros | 
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------|-----------| 
+| L7B4B3B2NS24ClipBin.tif                       | Imagen binarizada de clasificación supervisada para identificación de cuerpos de agua 2003 usando Landsat 7. | (grid)      | n/a       | 
+| L9B5B4B3NS24ClipBin.tif                       | Imagen binarizada de clasificación supervisada para identificación de cuerpos de agua 2023 usando Landsat 9. | (grid)      | n/a       | 
+| Mpio25899_CuerpoAguaLandsat7_2003             | Polígonos de cuerpos de agua 2003 usando Landsat 7.                                                          | Polígono 2D | 4         | 
+| Mpio25899_CuerpoAguaLandsat9_2023             | Polígonos de cuerpos de agua 2023 usando Landsat 9.                                                          | Polígono 2D | 4         | 
+| Mpio25899_CuerpoAguaLandsat7_2003_Smooth120m  | Polígonos de cuerpos de agua 2003 suavizados usando Landsat 7.                                               | Polígono 2D | 4         | 
+| Mpio25899_CuerpoAguaLandsat7_2023_Smooth120m  | Polígonos de cuerpos de agua 2023 suavizados usando Landsat 9                                                | Polígono 2D | 4         | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -124,7 +126,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../RemoteSensingNSC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/38) | [Siguiente :arrow_forward:]() |
+|------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
