@@ -1,5 +1,5 @@
 # Binarización por algebra de mapas para identificación de cuerpos de agua
-Keywords: `binary` `water-body`
+Keywords: `binary` `water-body` `raster-calculator` `raster-to-polygon` `smooth-polygon`
 
 Binarizar por algebra de mapas las grilla de clasificación no supervisada para identificar únicamente las celdas de la clase 1 o 2 correspondientes mayoritariamente a cuerpos de agua (incluídas nubes y zonas con alta humedad), convertir a polígonos y estimar el área total de los cuerpos de agua principales (incluídas plantas de tratamiento de aguas residuales - PTAR). Suavice los contornos de los cuerpos de agua obtenidos utilizando un radio de suavizado específico y aproximación polinómica.
 
@@ -58,15 +58,17 @@ En las imágenes resultantes podrá observar que para Landsat 7 se han obtenido 
 <div align="center"><img src="graph/ArcGISPro_GeometryCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## 2. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                             | Procedimiento                                                                                                |
+|:----------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
+| Simbología                                          | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                      |
+| Rotulado                                            | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                         |
+| Calculadora ráster (Raster Calculator)              | Herramienta disponible en el _Processing Toolbox / GDAL / Raster miscellaneous / Raster calculator.          |
+| Suavizar líneas y polígonos (Smooth)                | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Smooth_.                                |
+| Conversión de ráster a polígono (Raster to Polygon) | Herramienta disponible en el _Processing Toolbox / GDAL / Raster conversion / Polygonize (raster to vector). |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -105,15 +107,17 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/raster-calculator.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/conversion/raster-to-polygon.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/cartography/smooth-polygon.htm
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.04.04 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.14 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
