@@ -132,7 +132,11 @@ Si usa una lista delimitada por espacios, identificará las bandas NIR y roja e 
 
 El método Índice de vegetación ajustada de suelo modificado (MSAVI2) minimiza el efecto del terreno desnudo en el SAVI.
 
+<div align="center">
+
 `MSAVI2 = (1/2)*(2(NIR+1)-sqrt((2*NIR+1)2-8(NIR-Rojo)))`
+
+</div>
 
 * NIR = valores de píxel de la banda infrarroja cercana
 * Rojo = valores de píxel de la banda roja
@@ -144,7 +148,11 @@ El método Índice de vegetación ajustada de suelo modificado (MSAVI2) minimiza
 
 El método Índice de vegetación ajustado de suelo transformado (TSAVI, por sus siglas en inglés) es un índice de vegetación que minimiza las influencias de brillo del suelo al asumir que la línea del suelo tiene una intercepción y pendiente arbitraria.
 
+<div align="center">
+
 `TSAVI = (s * (NIR - s * Rojo - a)) / (a * NIR + Rojo - a * s + X * (1 + s2))`
+
+</div>
 
 * NIR = valores de píxel de la banda infrarroja cercana
 * Rojo = valores de píxel de la banda roja
@@ -159,7 +167,11 @@ El método Índice de vegetación ajustado de suelo transformado (TSAVI, por sus
 
 El método Índice de vegetación perpendicular (PVI, por sus siglas en inglés) es similar a un índice diferencial de vegetación; sin embargo, es sensible a las variaciones atmosféricas. Al utilizar este método para comparar imágenes, solo se debe utilizar en imágenes que se han corregido atmosféricamente.
 
+<div align="center">
+
 `PVI = (NIR - a*Rojo - b) / (sqrt(1 + a2))`
+
+</div>
 
 * NIR = valores de píxel de la banda infrarroja cercana
 * Rojo = valores de píxel de la banda roja
@@ -173,7 +185,11 @@ Este índice coloca los valores entre -1,0 y 1,0.
 
 El Índice de resistencia atmosféricamente visible (VARI) está diseñado para resaltar la vegetación en la parte visible del espectro, a la vez que mitiga las diferencias en la iluminación y los efectos atmosféricos. Resulta idóneo para las imágenes RGB o en color; utiliza las tres bandas de color.
 
+<div align="center">
+
 `VARI = (Green - Red) / (Green + Red - Blue)`
+
+</div>
 
 * Verde = valores de píxel de la banda verde
 * Rojo = valores de píxel de la banda roja
@@ -185,18 +201,161 @@ El Índice de resistencia atmosféricamente visible (VARI) está diseñado para 
 ### 3.2. Agua
 
 
+#### 3.2.1. NDSI 
 
+<div align="center">
+
+`NDSI = (Green - SWIR) / (Green + SWIR)`
+
+</div>
+
+* Verde = valores de píxel de la banda verde
+* SWIR = valores de píxel de la banda infrarroja de onda corta
+
+> Referencias:
+>
+> Wilson, E.H. y Sader, S.A., 2002, "Detection of forest harvest type using multiple dates of Landsat TM imagery." Remote Sensing of Environment, 80, pp. 385-396.
+>
+> Skakun, R.S., Wulder, M.A. y Franklin, S.E. (2003). "Sensitivity of the thematic mapper enhanced wetness difference index to detect mountain pine beetle red-attack damage". Remote Sensing of Environment, Vol. 86, pp. 433-443.
+>
+> Riggs, G., D. Hall y V. Salomonson. "A Snow Index for the Landsat Thematic Mapper and Moderate Resolution Imaging Spectrometer". Geoscience and Remote Sensing Symposium, IGARSS 94, Volumen 4: Surface and Atmospheric Remote Sensing: Technologies, Data Analysis, and Interpretation (1994), pp. 1942-1944.
+
+
+#### 3.2.2. MNDWI 
+
+El Índice de agua de diferencia normalizada modificado (MNDWI) utiliza las bandas verde y SWIR para realzar las entidades que se encuentran en mar abierto. También disminuye las entidades de área construidas que a menudo se correlacionan con el mar abierto en otros índices.
+
+<div align="center">
+
+`MNDWI = (Green - SWIR) / (Green + SWIR)`
+
+</div>
+
+* Verde = valores de píxel de la banda verde
+* SWIR = valores de píxel de la banda infrarroja de onda corta
+
+> Referencia: Xu, H. "Modification of Normalised Difference Water Index (NDWI) to Enhance Open Water Features in Remotely Sensed Imagery". International Journal of Remote Sensing 27, No. 14 (2006): 3025-3033.
+
+
+#### 3.2.3. NDMI 
+
+El Índice de diferencia de humedad normalizado (NDMI) es sensible a los niveles de humedad de la vegetación. Se usa para monitorizar las sequías y los niveles de combustible en las áreas vulnerables a los incendios. Usa las bandas NIR y SWIR para crear una relación diseñada para mitigar la iluminación y los efectos atmosféricos.
+
+<div align="center">
+
+`NDMI = (NIR - SWIR1)/(NIR + SWIR1)`
+
+</div>
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* SWIR1 = valores de píxel de la banda infrarroja de onda corta 1
+
+> Referencias:
+> 
+> Wilson, E.H. y Sader, S.A., 2002, "Detection of forest harvest type using multiple dates of Landsat TM imagery." Remote Sensing of Environment, 80, pp. 385-396.
+> Skakun, R.S., Wulder, M.A. y Franklin, S.E. (2003). "Sensitivity of the thematic mapper enhanced wetness difference index to detect mountain pine beetle red-attack damage". Remote Sensing of Environment, Vol. 86, pp. 433-443.
 
 
 ### 3.3. Geología
 
 
+#### 3.3.1. Minerales arcillosos 
+
+La relación de minerales arcillosos es una proporción entre las bandas SWIR1 y SWIR2. Esta relación aprovecha el hecho de que los minerales hídricos, como la arcilla o la alunita, absorben radiación en la parte de 2,0–2,3 micrones del espectro. Este índice atenúa los cambios de iluminación debidos al terreno, ya que se trata de una proporción.
+
+<div align="center">
+
+`Ratio de minerales arcillosos = SWIR1 / SWIR2`
+
+</div>
+
+* SWIR1 = valores de píxel de la banda infrarroja de onda corta 1
+* SWIR2 = valores de píxel de la banda infrarroja de onda corta 2
+
+> Referencia: Dogan, H., 2009. "Mineral composite assessment of Kelkit River Basin in Turkey by means of remote sensing," Journal of Earth System Science, Vol. 118, 701-710.
+
+
+#### 3.3.2. Minerales ferrosos 
+
+La relación de minerales ferrosos resalta los minerales que contienen hierro. Usa la relación entre las bandas SWIR y NIR.
+
+<div align="center">
+
+`Ratio de minerales ferrosos = SWIR / NIR`
+
+</div>
+
+* SWIR = valores de píxel de la banda infrarroja de onda corta
+* NIR = valores de píxel de la banda infrarroja cercana
+
+> Referencia: Segal, D. "Theoretical Basis for Differentiation of Ferric-Iron Bearing Minerals, Using Landsat MSS Data". Actas del Symposium for Remote Sensing of Environment, 2nd Thematic Conference on Remote Sensing for Exploratory Geology, Fort Worth, TX (1982): pp. 949-951.
+
+
+#### 3.3.3. Óxido de hierro 
+
+La relación de óxido de hierro es una proporción entre las longitudes de onda roja y azul. La presencia de filosilicatos con contenido limonítico y una alteración del óxido de hierro limonítico causan absorción en la banda azul y reflectancia en la banda roja. Esto hace que las áreas con una gran alteración de hierro brillen. La naturaleza de la relación permite que el índice atenúe las diferencias de iluminación causadas por las sombras del terreno.
+
+<div align="center">
+
+`Ratio de óxido de hierro = rojo / azul`
+
+</div>
+
+* Rojo = valores de píxel de la banda roja
+* Azul = valores de píxel de la banda azul
+
+> Referencia: Segal, D. "Theoretical Basis for Differentiation of Ferric-Iron Bearing Minerals, Using Landsat MSS Data". Actas del Symposium for Remote Sensing of Environment, 2nd Thematic Conference on Remote Sensing for Exploratory Geology, Fort Worth, TX (1982): pp. 949-951.
+
+
 ### 3.4. Paisaje
 
 
+#### 3.4.1. BAI 
+
+El Índice de área calcinada (BAI) utiliza los valores de reflectancia de la parte roja y NIR del espectro para identificar las áreas del terreno afectadas por un incendio.
+
+<div align="center">
+
+`BAI = 1/((0.1 -RED)^2 + (0.06 - NIR)^2)`
+
+</div>
+
+* Rojo = valores de píxel de la banda roja
+* NIR = valores de píxel de la banda infrarroja cercana
+
+> Referencia: Chuvieco, E., M. Pilar Martín y A. Palacios. "Assessment of Different Spectral Indices in the Red-Near-Infrared Spectral Domain for Burned Land Discrimination". Remote Sensing of Environment 112 (2002): 2381-2396.
 
 
+#### 3.4.2. NBR 
 
+El Índice de relación de calcinación normalizado (NBRI) utiliza las bandas NIR y SWIR para destacar las áreas calcinadas a la vez que mitiga las diferencias en la iluminación y los efectos atmosféricos. Las imágenes se deben corregir a los valores de reflectancia antes de utilizar este índice; consulte la función [Reflectancia aparente](https://pro.arcgis.com/es/pro-app/latest/help/analysis/raster-functions/apparent-reflectance-function.htm) para más información.
+
+<div align="center">
+
+`NBR = (NIR - SWIR) / (NIR + SWIR)`
+
+</div>
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* SWIR = valores de píxel de la banda infrarroja de onda corta
+
+> Referencia: Key, C. y N. Benson, N. "Landscape Assessment: Remote Sensing of Severity, the Normalized Burn Ratio; and Ground Measure of Severity, the Composite Burn Index." FIREMON: Fire Effects Monitoring and Inventory System, RMRS-GTR, Ogden, UT: Servicio forestal del USDA, Estación de investigación de las montañas Rocosas (2005).
+
+
+#### 3.4.3. NDBI 
+
+El Índice de áreas construidas de diferencia normalizada (NDBI) utiliza las bandas NIR y SWIR para resaltar las áreas construidas por el hombre. Se basa en una relación para mitigar los efectos de las diferencias de iluminación del terreno, así como los efectos atmosféricos.
+
+<div align="center">
+
+`NDBI = (SWIR - NIR) / (SWIR + NIR)`
+
+</div>
+
+* SWIR = valores de píxel de la banda infrarroja de onda corta
+* NIR = valores de píxel de la banda infrarroja cercana
+
+> Referencia: Zha, Y., J. Gao y S. Ni. "Use of Normalized Difference Built-Up Index in Automatically Mapping Urban Areas from TM Imagery". International Journal of Remote Sensing 24, n.° 3 (2003): 583-594.
 
 
 ## 4. Análisis usando software libre - QGIS
