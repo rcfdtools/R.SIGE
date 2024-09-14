@@ -35,19 +35,27 @@ En las imágenes resultantes podrá observar que para Landsat 7 se han obtenido 
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Utilizando la herramienta de geo-procesamiento _Conversion / Raster To Polygon_, convierta a polígonos los píxeles obtenidos de la binarización. Desactive la opción _Simplify polygons_ y nombre los archivos como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat7_2003` y .
+3. Utilizando la herramienta de geo-procesamiento _Conversion / Raster To Polygon_, convierta a polígonos los píxeles obtenidos de la binarización. Desactive la opción _Simplify polygons_ y nombre los archivos como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat7_2003` y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat9_2023`.
 
 <div align="center"><img src="graph/ArcGISPro_RasterToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_RasterToPolygon2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando el modo de edición, elimine todos los polígonos que no corresponden a cuerpos de agua en superficie y deje únicamente los correspondientes a la Laguna Pantano Redondo, lagunas de oxidación y laguna en vía a Tocancipá, estime el área total de los cuerpos de agua. Utilice como referencia de fondo la imagen satelital de ESRI.
+4. Utilizando el modo de edición, elimine todos los polígonos que no corresponden a cuerpos de agua en superficie y deje únicamente los correspondientes a la Laguna Pantano Redondo, lagunas de oxidación y laguna en vía a Tocancipá. Utilice como referencia de fondo la imagen satelital de ESRI.
 
 > Para los polígonos obtenidos a partir de Landsat 7, será necesario editar y remover parte del polígono de la laguna Pantano Redondo debido ha que se han integrado a esta celdas correspondientes a humedad en atmósfera. 
 
 <div align="center"><img src="graph/ArcGISPro_RasterToPolygon3.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_RasterToPolygon4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Utilizando la herramienta de geo-procesamiento
+5. Utilizando la herramienta de geo-procesamiento _Cartography Tools / Smooth Polygon_, suavice los polígonos de los cuerpos de agua obtenidos utilizanado un radio de aproximación de 4 veces la resolución de los píxeles originales y guarde como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat7_2003_Smooth120m` y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat7_2023_Smooth120m`. Podrá observar que los cuerpos de agua en la zona de llanura son similares, excepto en la planta de tratamiento localizada en la zona sur occidental que para 2023 incluye una mayor área, por otra parte, la Lagura de Pantano Redondo, presenta una superficie más precisa para 2023 debido a que se ha utilizado Landsat 9.
+
+<div align="center"><img src="graph/ArcGISPro_SmoothPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SmoothPolygon2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_SmoothPolygon3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En la tabla de atributos cree un campo numérico doble con el nombre `APha` y utilizando el calculado de geometría estime el área total de los cuerpos de agua obtenidos. Rotule y compare los resultados.
+
+<div align="center"><img src="graph/ArcGISPro_GeometryCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
