@@ -31,7 +31,7 @@ Binarizar por algebra de mapas las grilla de clasificación no supervisada para 
 * `\file\grid\LE07_L2SP\L7B4B3B2NS24ClipBin.tif`: binarizar a partir de la clase 2 usando la expresión `Con("L7B4B3B2NS24Clip.tif"==2,1,0)`
 * `\file\grid\LC09_L2SP\L9B5B4B3NS24ClipBin.tif`: binarizar a partir de la clase 1 usando la expresión `Con("L9B5B4B3NS24Clip.tif"==1,1,0)`
 
-En las imágenes resultantes podrá observar que para Landsat 7 se han obtenido pixeles en zonas de montaña correspondiente principalmente a zonas con humedad alta y no a cuerpos de agua en superficie.
+En las imágenes resultantes podrá observar que para Landsat 7 se han obtenido píxeles en zonas de montaña correspondiente principalmente a zonas con humedad alta y no a cuerpos de agua en superficie.
 
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>

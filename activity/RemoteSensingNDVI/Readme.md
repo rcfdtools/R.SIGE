@@ -41,7 +41,22 @@ Para Landsat 7 podrá observar que se han obtenido valores entre -0.495 y 0.595
 Para Landsat 9 podrá observar que se han obtenido valores entre -0.228 y 0.998
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+3. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las grilla NDVI hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L720030111NVDIClip.tif` y `\file\grid\LC09_L2SP\L920230219NVDIClip.tif`.
+
+<div align="center"><img src="graph/ArcGISPro_ClipRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ClipRaster2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Reclassify_, reclasifique los mapas obtenidos en las siguientes clases:
+
+| Corte | Label |
+|-------|-------|
+|       |       |
+|       |       |
+|       |       |
+|       |       |
+
+
+
 
 
 ## 2. Análisis usando software libre - QGIS
