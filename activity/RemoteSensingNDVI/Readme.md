@@ -113,7 +113,11 @@ Como observo en las opciones de _Imagery / Tools / Indices_, ArcGIS Pro permite 
 
 El método Índice de vegetación ajustado al suelo (SAVI, por sus siglas en inglés) es un índice de vegetación que intenta minimizar las influencias del brillo del suelo utilizando un factor de corrección de brillo del suelo. Esto con frecuencia se utiliza en regiones áridas en donde la cubierta de vegetación es baja y genera valores entre -1,0 y 1,0.
 
+<div align="center">
+
 `SAVI = ((NIR - Rojo) / (NIR + Rojo + L)) x (1 + L)`
+
+</div>
 
 * NIR = valores de píxel de la banda infrarroja cercana
 * Rojo = valores de píxel de la banda roja cercana
