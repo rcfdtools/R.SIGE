@@ -3,7 +3,7 @@ Keywords: `binary` `water-body` `raster-calculator` `raster-to-polygon` `smooth-
 
 Binarizar por algebra de mapas las grilla de clasificación no supervisada para identificar únicamente las celdas de la clase 1 o 2 correspondientes mayoritariamente a cuerpos de agua (incluídas nubes y zonas con alta humedad), convertir a polígonos y estimar el área total de los cuerpos de agua principales (incluídas plantas de tratamiento de aguas residuales - PTAR). Suavice los contornos de los cuerpos de agua obtenidos utilizando un radio de suavizado específico y aproximación polinómica.
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/RemoteSensingBinary.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
