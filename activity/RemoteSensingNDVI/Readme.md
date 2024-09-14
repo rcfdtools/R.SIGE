@@ -22,6 +22,17 @@ Utilizando las imágenes satelitales obtenidas en este módulo, crear con algebr
 
 ## 1. Cálculo manual del índice NDVI
 
+El método Índice diferencial de vegetación normalizado (NDVI, por sus siglas en inglés) es un índice normalizado que permite generar una imagen que muestra el verdor (la biomasa relativa). Este índice aprovecha el contraste de las características de dos bandas de un dataset ráster multiespectral: las absorciones de pigmento de clorofila en la banda roja y la alta reflectividad de los materiales de las plantas en la banda NIR.[^1]
+
+La ecuación del NDVI documentada y predeterminada es la siguiente:
+
+`NDVI = ((NIR - Red)/(NIR + Red))`
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* Rojo = valores de píxel de la banda roja
+
+Este índice coloca los valores entre -1,0 y 1,0. [^2]
+
 Utilizando las imágenes satelitales obtenidas en la primera actividad de este módulo realizar el siguiente procedimiento.
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingNDVI_ y establezca el CRS 9377. Agregue al mapa la capa del límite municipal obtenido Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` ajuste la simbología solo a contorno y agregue de Landsat 7 las bandas B4 y B3, para Landsat 9 agregue las bandas B5 y B4.
@@ -90,18 +101,101 @@ En la simbología, ajuste el orden de secuencia a `Band_3`, `Band_2` y `Band_1` 
 <div align="center"><img src="graph/ArcGISPro_IndicesNDVI2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Cálculo de otros índices
+## 3. Cálculo de otros índices [^1]
 
 Como observo en las opciones de _Imagery / Tools / Indices_, ArcGIS Pro permite el cálculo automático de los siguientes índices complementarios:
 
 
+### 3.1. Vegetación y suelos
+
+
+#### 3.1.1. SAVI
+
+El método Índice de vegetación ajustado al suelo (SAVI, por sus siglas en inglés) es un índice de vegetación que intenta minimizar las influencias del brillo del suelo utilizando un factor de corrección de brillo del suelo. Esto con frecuencia se utiliza en regiones áridas en donde la cubierta de vegetación es baja y genera valores entre -1,0 y 1,0.
+
+`SAVI = ((NIR - Rojo) / (NIR + Rojo + L)) x (1 + L)`
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* Rojo = valores de píxel de la banda roja cercana
+* L = cantidad de cobertura de vegetación verde
+
+Si usa una lista delimitada por espacios, identificará las bandas NIR y roja e introducirá el valor L en el siguiente orden: NIR Roja L. Por ejemplo, 4 3 0,5.
+
+> Referencia: Huete, A. R., 1988, "A soil-adjusted vegetation index (SAVI)," Remote Sensing of Environment, Vol. 25, 295–309.
+
+
+#### 3.1.2. MSAVI
+
+El método Índice de vegetación ajustada de suelo modificado (MSAVI2) minimiza el efecto del terreno desnudo en el SAVI.
+
+`MSAVI2 = (1/2)*(2(NIR+1)-sqrt((2*NIR+1)2-8(NIR-Rojo)))`
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* Rojo = valores de píxel de la banda roja
+
+> Referencia: Qi, J. et al., 1994, "A modified soil vegetation adjusted index," Remote Sensing of Environment, Vol. 48, n.º 2, 119–126.
+
+
+#### 3.1.3. TSAVI
+
+El método Índice de vegetación ajustado de suelo transformado (TSAVI, por sus siglas en inglés) es un índice de vegetación que minimiza las influencias de brillo del suelo al asumir que la línea del suelo tiene una intercepción y pendiente arbitraria.
+
+`TSAVI = (s * (NIR - s * Rojo - a)) / (a * NIR + Rojo - a * s + X * (1 + s2))`
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* Rojo = valores de píxel de la banda roja
+* s = la pendiente de la línea del suelo
+* a = la intercepción de la línea del suelo
+* X = un factor de ajuste que se establece para minimizar el ruido del suelo
+
+> Referencia: Baret, F. y G. Guyot, 1991, "Potentials and limits of vegetation indices for LAI and APAR assessment," Remote Sensing of Environment, Vol. 35, 161–173.
+
+
+#### 3.1.4. PVI
+
+El método Índice de vegetación perpendicular (PVI, por sus siglas en inglés) es similar a un índice diferencial de vegetación; sin embargo, es sensible a las variaciones atmosféricas. Al utilizar este método para comparar imágenes, solo se debe utilizar en imágenes que se han corregido atmosféricamente.
+
+`PVI = (NIR - a*Rojo - b) / (sqrt(1 + a2))`
+
+* NIR = valores de píxel de la banda infrarroja cercana
+* Rojo = valores de píxel de la banda roja
+* a = pendiente de la línea de suelo
+* b = gradiente de la línea del suelo
+
+Este índice coloca los valores entre -1,0 y 1,0.
+
+
+#### 3.1.5. VARI
+
+El Índice de resistencia atmosféricamente visible (VARI) está diseñado para resaltar la vegetación en la parte visible del espectro, a la vez que mitiga las diferencias en la iluminación y los efectos atmosféricos. Resulta idóneo para las imágenes RGB o en color; utiliza las tres bandas de color.
+
+`VARI = (Green - Red) / (Green + Red - Blue)`
+
+* Verde = valores de píxel de la banda verde
+* Rojo = valores de píxel de la banda roja
+* Azul = valores de píxel de la banda azul
+
+> Referencia: Gitelson, A., et al. "Vegetation and Soil Lines in Visible Spectral Space: A Concept and Technique for Remote Estimation of Vegetation Fraction." International Journal of Remote Sensing 23 (2002): 2537−2562.
+
+
+### 3.2. Agua
+
+
+
+
+
+### 3.3. Geología
+
+
+### 3.4. Paisaje
 
 
 
 
 
 
-## 2. Análisis usando software libre - QGIS
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
@@ -147,7 +241,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
-* 
+* https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
 
 
 ## Control de versiones
@@ -165,4 +259,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |---------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: 
+[^1]: https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
+[^2]: https://pro.arcgis.com/es/pro-app/latest/help/analysis/raster-functions/ndvi-function.htm
