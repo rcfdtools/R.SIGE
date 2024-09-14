@@ -74,6 +74,32 @@ Para Landsat 9 podrá observar que se han obtenido valores entre -0.228 y 0.998
 <div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Cálculo automático del índice NDVI
+
+1. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Composite Bands_, cree una composición de las bandas disponibles en Landsat 7, asegúrese de ingresar las bandas en el orden de secuencia B1 a B7. Guarde la composición como `\file\grid\LE07_L2SP\LE07_L2SP_Composite.TIF`. 
+
+<div align="center"><img src="graph/ArcGISPro_CompositeBands1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la simbología, ajuste el orden de secuencia a `Band_3`, `Band_2` y `Band_1` y en el menú superior active las opciones de visualización de rango dinámico _DRA_. 
+
+<div align="center"><img src="graph/ArcGISPro_Symbology1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la tabla de contenido, seleccione la composición `LE07_L2SP_Composite.TIF` y en el menú _Imagery_ seleccione la opción _Tools / Indices_, automáticamente será calculado este índice y será agregada al mapa la capa `NDVI_LE07_L2SP_Composite.TIF`. 
+
+<div align="center"><img src="graph/ArcGISPro_IndicesNDVI1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_IndicesNDVI2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 3. Cálculo de otros índices
+
+Como observo en las opciones de _Imagery / Tools / Indices_, ArcGIS Pro permite el cálculo automático de los siguientes índices complementarios:
+
+
+
+
+
+
+
 
 ## 2. Análisis usando software libre - QGIS
 
