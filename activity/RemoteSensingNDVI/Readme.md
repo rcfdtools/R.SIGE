@@ -46,16 +46,32 @@ Para Landsat 9 podrá observar que se han obtenido valores entre -0.228 y 0.998
 <div align="center"><img src="graph/ArcGISPro_ClipRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_ClipRaster2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Reclassify_, reclasifique los mapas obtenidos en las siguientes clases:
+4. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Reclassify_, reclasifique los mapas obtenidos en las siguientes clases, guarde como `\file\grid\LE07_L2SP\L720030111NVDIClipReclass.tif` y `\file\grid\LC09_L2SP\L920230219NVDIClipReclass.tif`, rotule y simbolice con los colores RGB indicados:
 
-| Corte | Label |
-|-------|-------|
-|       |       |
-|       |       |
-|       |       |
-|       |       |
+<div align="center">
 
+| Corte | Label                                 | RGB         |
+|-------|---------------------------------------|-------------|
+| 0.10  | 1 - Sin Vegetación - Urbano o Desnudo | 255,255,190 |
+| 0.23  | 2 - Bosque Mixto                      | 85,255,0    |
+| 0.35  | 3 - Bosque Denso                      | 112,168,0   |
+| 1.00  | 4 - Bosque Muy Denso                  | 38,115,0    |
 
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_Reclassify1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Reclassify2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Tenga en cuenta que los cuerpos de agua, zonas húmedas y zonas urbanas serán clasificadas en la clase 1 - Sin Vegetación - Urbano o Desnudo
+
+5. En la tabla de atributos de las grillas de reclasificación, agregue un campo numérico doble para el cálculo del área en hectáreas a partir del número de celdas (Count * 30 * 30 /10000), nombre como `APha` y un campo de texto para el rótulo con el nombre `Label`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Desde la tabla de contenido y para cada mapa, cree gráficas de barras y evalúe la distribución de las áreas obtenidas. Podrá observar que la clase 1 correspondiente a sin vegetación, urbano o desnudo a aumentado de 375.84 hectáreas a 463.23 hectáreas y que la distribución de bosques ha cambiado en el tiempo.
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
