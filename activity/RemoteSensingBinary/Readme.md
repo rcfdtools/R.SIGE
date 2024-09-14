@@ -8,39 +8,46 @@ Binarizar por algebra de mapas las grilla de clasificación no supervisada para 
 
 ## Objetivos
 
-* 
+* Binarizar el mapa ISO Cluster para obtener cuerpos de agua.
+* Convertir imágenes en vectores evaluando su espacialidad.
 
 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
-
-
-
-## Diagrama general de procesos
-
-<div align="center">
-<br><img alt="R.SIGE" src="Graph/AgreeDEMFlowchart.svg" width="80%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo, procesos automáticos o semiautomáticos en guiones rojos y procesos manuales en amarillo. Líneas conectoras con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingBonary_ y establezca el CRS 9377. Agregue al mapa la capa del límite municipal obtenido Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` ajuste la simbología solo a contorno y agregue los mapas de clasificación no supervisada ISO Cluster `L7B4B3B2NS24Clip.tif` y `L9B5B4B3NS24Clip.tif` generadas en la actividad anterior.  
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+2. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Raster Calculator_, cree mapas binarizados utilizando las siguientes expresiones y nombres de archivo:
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+* `\file\grid\LE07_L2SP\L7B4B3B2NS24ClipBin.tif`: binarizar a partir de la clase 2 usando la expresión `Con("L7B4B3B2NS24Clip.tif"==2,1,0)`
+* `\file\grid\LC09_L2SP\L9B5B4B3NS24ClipBin.tif`: binarizar a partir de la clase 1 usando la expresión `Con("L9B5B4B3NS24Clip.tif"==1,1,0)`
 
+En las imágenes resultantes podrá observar que para Landsat 7 se han obtenido pixeles en zonas de montaña correspondiente principalmente a zonas con humedad alta y no a cuerpos de agua en superficie.
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+<div align="center"><img src="graph/ArcGISPro_RasterCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta de geo-procesamiento _Conversion / Raster To Polygon_, convierta a polígonos los píxeles obtenidos de la binarización. Desactive la opción _Simplify polygons_ y nombre los archivos como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_CuerpoAguaLandsat7_2003` y .
+
+<div align="center"><img src="graph/ArcGISPro_RasterToPolygon1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_RasterToPolygon2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando el modo de edición, elimine todos los polígonos que no corresponden a cuerpos de agua en superficie y deje únicamente los correspondientes a la Laguna Pantano Redondo, lagunas de oxidación y laguna en vía a Tocancipá, estime el área total de los cuerpos de agua. Utilice como referencia de fondo la imagen satelital de ESRI.
+
+> Para los polígonos obtenidos a partir de Landsat 7, será necesario editar y remover parte del polígono de la laguna Pantano Redondo debido ha que se han integrado a esta celdas correspondientes a humedad en atmósfera. 
+
+<div align="center"><img src="graph/ArcGISPro_RasterToPolygon3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_RasterToPolygon4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Utilizando la herramienta de geo-procesamiento
 
 
 
@@ -86,13 +93,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
-
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
 
 
 ## Referencias
