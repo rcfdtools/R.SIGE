@@ -22,7 +22,8 @@ Binarizar por algebra de mapas las grilla de clasificación no supervisada para 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingBonary_ y establezca el CRS 9377. Agregue al mapa la capa del límite municipal obtenido Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` ajuste la simbología solo a contorno y agregue los mapas de clasificación no supervisada ISO Cluster `L7B4B3B2NS24Clip.tif` y `L9B5B4B3NS24Clip.tif` generadas en la actividad anterior.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingBinary_ y establezca el CRS 9377. Agregue al mapa la capa del límite municipal obtenido Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` ajuste la simbología solo a contorno y agregue los mapas de clasificación no supervisada ISO Cluster `L7B4B3B2NS24Clip.tif` y `L9B5B4B3NS24Clip.tif` generadas en la actividad anterior.  
+
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 2. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Raster Calculator_, cree mapas binarizados utilizando las siguientes expresiones y nombres de archivo:
@@ -67,8 +68,8 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 | Simbología                                          | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                      |
 | Rotulado                                            | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                         |
 | Calculadora ráster (Raster Calculator)              | Herramienta disponible en el _Processing Toolbox / GDAL / Raster miscellaneous / Raster calculator.          |
-| Suavizar líneas y polígonos (Smooth)                | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Smooth_.                                |
 | Conversión de ráster a polígono (Raster to Polygon) | Herramienta disponible en el _Processing Toolbox / GDAL / Raster conversion / Polygonize (raster to vector). |
+| Suavizar líneas y polígonos (Smooth)                | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Smooth_.                                |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -126,7 +127,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../RemoteSensingNSC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/38) | [Siguiente :arrow_forward:]() |
-|------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../RemoteSensingNSC/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/38) | [Siguiente :arrow_forward:](../RemoteSensingNDVI/Readme.md) |
+|------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------------|
 
 [^1]: 
