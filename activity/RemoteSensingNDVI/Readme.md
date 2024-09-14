@@ -28,8 +28,20 @@ Utilizando las imágenes satelitales obtenidas en la primera actividad de este m
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Raster Calculator_, calcule los mapas de índices para Landsat 7 y Landsat 9, utilice las siguientes expresiones y nombres de archivo:
 
+* `\file\grid\LE07_L2SP\L720030111NVDI.tif`: expresión de algebra de mapas `(B4 - B3) / (B4 + B3)`
+* `\file\grid\LC09_L2SP\L920230219NVDI.tif`: expresión de algebra de mapas `(B5 - B4) / (B5 + B4)`
 
+> En las expresiones, reemplace B3, B4, B5 por los nombres de las imágenes y bandas correspondientes.
+
+Para Landsat 7 podrá observar que se han obtenido valores entre -0.495 y 0.595  
+<div align="center"><img src="graph/ArcGISPro_RasterCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para Landsat 9 podrá observar que se han obtenido valores entre -0.228 y 0.998
+<div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 ## 2. Análisis usando software libre - QGIS
