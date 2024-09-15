@@ -23,6 +23,11 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
+## 0. Modelos digitales de elevación
+
+<div align="center"><img src="graph/Graph_DEM.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+
+
 ## 1. Creación de modelo digital de elevación a partir de curvas
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _DEMContour_ y establezca el CRS 9377. Agregue al mapa la capa de curvas de nivel disponible en la ruta `\file\gdb\SIGE.gdb\IGAC2013Cartografia\CURVAS_NIVEL` y ajuste la simbología a valores únicos representando el campo de atributos `LAYER` cuyos valores correspondientes a curvas de nivel principales se han identificado con el número 15 y curvas secundarias para elementos nulos o vacíos. Abra la tabla de atributos, podrá observar que la geometría corresponde solo a líneas en dos dimensiones o _Polyline_.
