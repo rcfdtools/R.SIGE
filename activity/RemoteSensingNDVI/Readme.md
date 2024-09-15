@@ -1,5 +1,5 @@
 # Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI, NBR
-Keywords: `normalized-difference-vegetation-index` 
+Keywords: `normalized-difference-vegetation-index` `raster-calculator` `reclassify` `clip-raster` `composite-bands`
 
 Utilizando las imágenes satelitales obtenidas en este módulo, crear con algebra de mapas o con Imagery / Indices, mapas de diferencias normalizadas de vegetación [NDVI](https://pro.arcgis.com/es/pro-app/latest/help/analysis/raster-functions/ndvi-function.htm). Recortar hasta el límite municipal obtenido con la envolvente del MOT, reclasificar las vegetaciones en 4 clases (definidas manualmente con cortes en 0.1, 0.23, 0.35 y 1 o hasta el valor máximo). A partir del número de celdas obtenidas en cada clase, calcule áreas y realice un análisis comparativo entre los datos obtenidos entre dos instantes de tiempo, explique las diferencias encontradas. Compare los mapas de vegetación obtenidos con el mapa de usos potenciales del suelo del IGAC evaluado en el módulo 4, explique si existe alguna correspondencia en sus límites internos. Cree mapas para índices complementarios. Uso y aplicabilidad de mapas de índices en estudios de ordenamiento territorial.
 
@@ -422,6 +422,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
 * https://support.micasense.com/hc/en-us/articles/226531127-Creating-agricultural-indices-NDVI-NDRE-in-QGIS
+* https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
 
 
 ## Control de versiones
