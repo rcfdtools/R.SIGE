@@ -31,7 +31,7 @@ Los sensores remotos o Teledetección [^2] comprenden diversas técnicas para lo
 
 Comprende el rango completo de longitudes de onda (frecuencias) por el que se extiende la radiación electromagnética.
 
-<div align="center"><img src="graph/Graph_ElectromagneticSpectrum.png" alt="R.SIGE" width="60%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+<div align="center"><img src="graph/Graph_ElectromagneticSpectrum.png" alt="R.SIGE" width="70%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
 
 
 ### 0.2. Plataformas utilizadas en sensores remotos satelitales
