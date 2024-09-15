@@ -43,6 +43,24 @@ Los Landsat son una serie de satélites construidos y puestos en órbita por Est
 
 <div align="center"><img src="graph/Graph_LandsatTimeLine.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
 
+<div align="center"><br>Bandas y longitudes de onda
+
+| Landsat 7<br>Banda                   | Landsat 7<br>Ancho (µm) | Landsat 7<br>Resolución (m) | Landsat 8/9<br>Banda                   | Landsat 8/9<br>Ancho (µm) | Landsat 8/9<br>Resolución (m) |
+|--------------------------------------|:-----------------------:|:---------------------------:|----------------------------------------|:-------------------------:|:-----------------------------:|
+|                                      |                         |                             | Band 1 Coastal Aerosol                 |        0.43 – 0.45        |              30               |
+| Band 1 Blue                          |       0.45 – 0.52       |             30              | Band 2 Blue                            |        0.45 – 0.51        |              30               |
+| Band 2 Green                         |       0.52 – 0.60       |             30              | Band 3 Green                           |        0.53 – 0.59        |              30               |
+| Band 3 Red                           |       0.63 – 0.69       |             30              | Band 4 Red                             |        0.64 – 0.67        |              30               |
+| Band 4 NIR<br>Near Infrared          |       0.77 – 0.90       |             30              | Band 5 NIR<br>Near Infrared            |        0.85 – 0.88        |              30               |
+| Band 5 SWIR1<br>Shortwave Infrared 1 |       1.55 – 1.75       |             30              | Band 6 SWIR1<br>Shortwave Infrared 1   |        1.57 – 1.65        |              30               |
+| Band 7 SWIR2<br>Shortwave Infrared 2 |       2.09 – 2.35       |             30              | Band 7 SWIR2<br>Shortwave Infrared 2   |        2.11 – 2.29        |              30               |
+| Band 8 Panchromatic                  |       0.52 – 0.90       |             15              | Band 8 Panchromatic                    |        0.50 – 0.68        |              15               |
+|                                      |                         |                             | Band 9 Cirrus [^7]                     |        1.36 – 1.38        |              30               |
+| Band 6 TIR<br>Thermal Infrared       |      10.40 – 12.50      |            30/60            | Band 10 TIRS1 [^8]<br>Thermal Infrared |       10.6 – 11.19        |              100              |
+|                                      |                         |                             | Band 11 TIRS2<br>Thermal Infrared      |       11.5 – 12.51        |              100              |
+
+</div>
+
 
 #### 0.2.2. SPOT [^4]
 
@@ -225,4 +243,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 [^4]: https://es.wikipedia.org/wiki/SPOT
 [^5]: https://es.wikipedia.org/wiki/Sentinel_(sat%C3%A9lite)
 [^6]: https://en.wikipedia.org/wiki/Ikonos
-[^7]: 
+[^7]: https://surfaceheat.sites.yale.edu/sites/default/files/files/Cirrus%20Band_2.pdf
+[^8]: https://www.satimagingcorp.com/satellite-sensors/other-satellite-sensors/landsat-8/
