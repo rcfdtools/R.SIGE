@@ -41,8 +41,8 @@ Utilizando las imágenes satelitales obtenidas en la primera actividad de este m
 
 2. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Raster Calculator_, calcule los mapas de índices para Landsat 7 y Landsat 9, utilice las siguientes expresiones y nombres de archivo:
 
-* `\file\grid\LE07_L2SP\L720030111NVDI.tif`: expresión de algebra de mapas `(B4 - B3) / (B4 + B3)`
-* `\file\grid\LC09_L2SP\L920230219NVDI.tif`: expresión de algebra de mapas `(B5 - B4) / (B5 + B4)`
+* `\file\grid\LE07_L2SP\L720030111NDVI.tif`: expresión de algebra de mapas `(B4 - B3) / (B4 + B3)`
+* `\file\grid\LC09_L2SP\L920230219NDVI.tif`: expresión de algebra de mapas `(B5 - B4) / (B5 + B4)`
 
 > En las expresiones, reemplace B3, B4, B5 por los nombres de las imágenes y bandas correspondientes.
 
@@ -52,12 +52,12 @@ Para Landsat 7 podrá observar que se han obtenido valores entre -0.495 y 0.595
 Para Landsat 9 podrá observar que se han obtenido valores entre -0.228 y 0.998
 <div align="center"><img src="graph/ArcGISPro_RasterCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las grilla NDVI hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L720030111NVDIClip.tif` y `\file\grid\LC09_L2SP\L920230219NVDIClip.tif`.
+3. Utilizando la herramienta de geo-procesamiento _Data Management Tools / Clip Raster_, recorte las grilla NDVI hasta el límite municipal del MOT, nombre como `\file\grid\LE07_L2SP\L720030111NDVIClip.tif` y `\file\grid\LC09_L2SP\L920230219NDVIClip.tif`.
 
 <div align="center"><img src="graph/ArcGISPro_ClipRaster1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_ClipRaster2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Reclassify_, reclasifique los mapas obtenidos en las siguientes clases, guarde como `\file\grid\LE07_L2SP\L720030111NVDIClipReclass.tif` y `\file\grid\LC09_L2SP\L920230219NVDIClipReclass.tif`, rotule y simbolice con los colores RGB indicados:
+4. Utilizando la herramienta de geo-procesamiento _Spatial Analyst Tools / Reclassify_, reclasifique los mapas obtenidos en las siguientes clases, guarde como `\file\grid\LE07_L2SP\L720030111NDVIClipReclass.tif` y `\file\grid\LC09_L2SP\L920230219NDVIClipReclass.tif`, rotule y simbolice con los colores RGB indicados:
 
 <div align="center">
 
@@ -362,10 +362,15 @@ El Índice de áreas construidas de diferencia normalizada (NDBI) utiliza las ba
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                    | Procedimiento                                                                                                          |
+|:-------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| Simbología                                 | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                |
+| Rotulado                                   | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                   |
+| Calculadora ráster (Raster Calculator)     | Herramienta disponible en el _Processing Toolbox / GDAL / Raster miscellaneous / Raster calculator.                    |
+| Recorte de imágenes ráster (Clip Raster)   | Herramienta disponible en el _Processing Toolbox / GDAL / Raster extraction / Clip raster by mask layer.               |
+| Reclasificación de imágenes (Reclassify)   | Herramienta disponible en el _Processing Toolbox /Raster analysis / Reclassify by table.                               |
+| Componer bandas ráster (Composite Bands)   | Herramienta disponible en el _Processing Toolbox / GDAL / Raster miscellaneous / Build virtual raster.                 |
+| Cálculo de índices (NDVI, EVI)             | Utilizar el plugin [NDVI and EVI Index Calculator](https://plugins.qgis.org/plugins/ndvi_and_evi_index_calculator/).   |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -377,14 +382,18 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                        | Descripción                                                                                | Geometría   | Registros | 
+|-------------------------------|--------------------------------------------------------------------------------------------|-------------|-----------| 
+| L720030111NDVI.tif            | Mapa NDVI Landsat 7 2003 generado con algebra de mapas.                                    | (grid)      | n/a       | 
+| L920230219NDVI.tif            | Mapa NDVI Landsat 9 2013 generado con algebra de mapas.                                    | (grid)      | n/a       | 
+| L720030111NDVIClip.tif        | Mapa NDVI Landsat 7 2003 recortado hasta límite municipal.                                 | (grid)      | n/a       |
+| L720030111NDVIClip.tif        | Mapa NDVI Landsat 7 2003 recortado hasta límite municipal.                                 | (grid)      | n/a       |
+| L720030111NDVIClipReclass.tif | Mapa NDVI Landsat 7 2003 recortado hasta límite municipal con reclasificación en 4 clases. | (grid)      | n/a       |
+| L920230219NDVIClipReclass.tif | Mapa NDVI Landsat 9 2023 recortado hasta límite municipal con reclasificación en 4 clases. | (grid)      | n/a       |
+| LE07_L2SP_Composite.tif       | Composición de 7 bandas a partir de Landsat 7.                                             | (grid)      | n/a       |
+| NDVI_LE07_L2SP_Composite.tif  | Mapa NDVI Landsat 7 2003 generado con herramienta de Indices.                              | (grid)      | n/a       |
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -405,22 +414,24 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
+* https://support.micasense.com/hc/en-us/articles/226531127-Creating-agricultural-indices-NDVI-NDRE-in-QGIS
 
 
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.04.05 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.14 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.15 | Complementación de índices                                 | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../RemoteSensingBinary/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/39) | [Siguiente :arrow_forward:]() |
+|---------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
 [^2]: https://pro.arcgis.com/es/pro-app/latest/help/analysis/raster-functions/ndvi-function.htm
