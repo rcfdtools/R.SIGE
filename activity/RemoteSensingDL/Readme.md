@@ -41,6 +41,8 @@ Comprende el rango completo de longitudes de onda (frecuencias) por el que se ex
 
 Los Landsat son una serie de satélites construidos y puestos en órbita por Estados Unidos de América para la observación en alta resolución de la superficie terrestre. Los satélites Landsat orbitan alrededor de la Tierra en órbita circular heliosincrónica, a 705 km de altura, con una inclinación de 98.2º respecto del ecuador y un período de 99 minutos. La órbita de los satélites está diseñada de tal modo que cada vez que estos cruzan el ecuador de norte a sur lo hacen entre las 10:00 y las 10:15 de la mañana hora local. Los Landsat están equipados con instrumentos específicos para la teledetección multiespectral. El primer satélite Landsat (en principio denominado ERTS-1) fue lanzado el 23 de julio de 1972. Landsat 9 fue puesto en órbita el 27 de septiembre de 2021. La resolución de las imágenes capturadas es de 15 a 100 metros dependiendo de la banda espectral y el modo de captura. https://landsat.gsfc.nasa.gov/
 
+<div align="center"><img src="graph/Graph_LandsatTimeLine.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+
 
 #### 0.2.2. SPOT [^4]
 
