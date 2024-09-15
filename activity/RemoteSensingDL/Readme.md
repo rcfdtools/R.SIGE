@@ -23,6 +23,40 @@ Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocup
 * [:man_technologist:Usuario](https://ers.cr.usgs.gov/): Creación de cuenta de usuario USGS.
 
 
+## 0. Introducción general a sensores remotos y fotointerpretación [^1]
+
+Los sensores remotos o Teledetección [^2] comprenden diversas técnicas para localización, captura y transmisión de datos de objetos y fenómenos a distancia, sin contacto físico con el elemento o fenómeno de interés. Algunas de sus aplicaciones más interesantes en la ingeniería civil y ambiental son: representación y análisis de modelos de terreno - elevación, elaboración de mapas de pendientes, composición de bandas de imágenes para la restitución masiva de cuerpos de agua, delimitación detallada de cuencas hidrográficas y morfometría, monitoreo de vegetación y evaluación de su calidad por medio de índices, monitoreo de contaminación atmosférica, seguir trayectoria de huracanes, medir fenómenos de remoción en masa, flujo por avalanchas, inundaciones y fenómenos de expansión urbana, entre otros.
+
+### 0.1. Espectro electromagnético
+
+Comprende el rango completo de longitudes de onda (frecuencias) por el que se extiende la radiación electromagnética.
+
+<div align="center"><img src="graph/Graph_ElectromagneticSpectrum.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+### 0.2. Plataformas utilizadas en sensores remotos satelitales
+
+
+#### 0.2.1. Landsat [^3]
+
+Los Landsat son una serie de satélites construidos y puestos en órbita por Estados Unidos de América para la observación en alta resolución de la superficie terrestre. Los satélites Landsat orbitan alrededor de la Tierra en órbita circular heliosincrónica, a 705 km de altura, con una inclinación de 98.2º respecto del ecuador y un período de 99 minutos. La órbita de los satélites está diseñada de tal modo que cada vez que estos cruzan el ecuador de norte a sur lo hacen entre las 10:00 y las 10:15 de la mañana hora local. Los Landsat están equipados con instrumentos específicos para la teledetección multiespectral. El primer satélite Landsat (en principio denominado ERTS-1) fue lanzado el 23 de julio de 1972. Landsat 9 fue puesto en órbita el 27 de septiembre de 2021. La resolución de las imágenes capturadas es de 15 a 100 metros dependiendo de la banda espectral y el modo de captura. https://landsat.gsfc.nasa.gov/
+
+
+#### 0.2.2. SPOT [^4]
+
+Los satélites Spot (Satellite Pour l’Observation de la Terre: Satélite Para la Observación de la Tierra) son una serie de satélites de teledetección civiles de observación del suelo terrestre que han sido desarrollado por el CNES (Centro Nacional de Estudios Espaciales francés) en colaboración con Bélgica y Suecia. La primera versión de SPOT fue lanzada el 22 de febrero de 1986 (Ariane 1). SPOT 7 fue lanzado el 30 de junio de 2014. La resolución de las imágenes capturadas es de 2.5 a 20 metros dependiendo de la banda espectral y el modo de captura. https://earth.esa.int/eogateway/missions/spot
+
+
+#### 0.2.3. Sentinel [^5]
+
+Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA (European Space Agency) en el marco del Programa Copérnico. Las misiones Sentinel incluyen satélites de radar y satélites de imágenes super-espectrales para la vigilancia terrestre, oceánica y atmosférica de la Tierra. La primera versión fue lanzada el 3 de abril de 2014, la versión 6 que incluye radar altimétrico fue lanzada el 21 de noviembre de 2020. La resolución de las imágenes capturadas es de 5 a 300 metros dependiendo de la banda espectral, el modo de captura, y la polarización. https://www.esa.int/Applications/Observing_the_Earth/Copernicus/The_Sentinel_missions
+
+
+#### 0.2.4. Ikonos [^6]
+
+Los satélites comerciales Ikonos para la observación de la tierra, capturaban colecciones de imágenes multiespectrales y pancromáticas. La primera versión fue lanzada el 24 de septiembre de 1999 y la versión 2 fue lanzada en enero del 2000 y suspendida el 31 de marzo de 2016.  La resolución de las imágenes capturadas es de 1 a 4 metros dependiendo de la banda espectral y el modo de captura. https://www.esa.int/SPECIALS/Eduspace_ES/SEM776E3GXF_0.html
+
+
 ## 1. Descarga de imágenes desde earthexplorer.usgs.gov
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensing_ y establezca el CRS 9377. Agregue al mapa las capas `Mpio25899_MOT2013` y `Mpio25899_MOT2013_Envelope` disponibles en la ruta `\file\gdb\SIGE.gdb\SIGE` y represente por contornos.  
@@ -183,4 +217,10 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../Reservoir/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/36)  | [Siguiente :arrow_forward:](../RemoteSensingNSC/Readme.md) |
 |-----------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------|
 
-[^1]: 
+[^1]: https://learn.arcgis.com/es/arcgis-imagery-book/chapter2/
+[^2]: http://mappinggis.com/2015/05/como-descargar-imagenes-landsat/
+[^3]: https://es.wikipedia.org/wiki/Landsat
+[^4]: https://es.wikipedia.org/wiki/SPOT
+[^5]: https://es.wikipedia.org/wiki/Sentinel_(sat%C3%A9lite)
+[^6]: https://en.wikipedia.org/wiki/Ikonos
+[^7]: 
