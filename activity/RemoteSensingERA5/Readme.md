@@ -130,7 +130,7 @@ Repita este procedimiento y realice la conversión de la temperatura de punto de
 
 <div align="center"><img src="graph/ArcGISPro_UnitConversion2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga para el límite de la cuenca del Río Bogotá _SZH2120_, los estadísticos mes a mes de cada una de las variables sin incluir `t2m` y `d2m` en grados Kelvin. Nombre los archivos de estadísticos como:
+3. Utilizando la herramienta de geo-procesamiento _Image Analyst Tools / Zonal Statistics as Table_, obtenga para el límite de la cuenca del Río Bogotá _SZH2120_, el promedio o `Mean` mes a mes de cada una de las variables sin incluir `t2m` y `d2m` en grados Kelvin. Nombre los archivos de estadísticos como:
 
 <div align="center">
 
@@ -148,11 +148,34 @@ Repita este procedimiento y realice la conversión de la temperatura de punto de
 
 </div>
 
-<div align="center"><img src="graph/ArcGISPro_UnitConversion2.png" alt="R.SIGE" width="100%" border="0" /></div>
+Podrá observar que para el límite de la cuenca, se ha utilizado la información de 49 píxeles y se han obtenido 888 registros correspondientes a 74 años (2023-1950+1) por 12 meses. 
 
+Estadística zonal para 2m dewpoint temperature (**d2m**) 
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Estadística zonal para 2m temperature (**t2m**)   
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Estadística zonal para Total evaporation (**e**)  
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Estadística zonal para Runoff (**ro**)  
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para 10m u-component of wind (**u10**)   
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para 10m v-component of wind (**v10**)  
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Surface net solar radiation (**ssr**)  
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Total precipitation (**tp**)  
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Surface pressure (**sp**)   
+<div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 4. Análisis usando software libre - QGIS
