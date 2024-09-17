@@ -1,11 +1,9 @@
-# Plantilla para actividades
-Keywords: `dem` `agreedem`
+# Análisis hidro-climatológico ERA5 Land Monthly
+Keywords: `remote-sensing` 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+Desde la plataforma [Copernicus](https://www.copernicus.eu/en) del [ECMWF](https://www.ecmwf.int/) y para el límite envolvente de la subzona hidrográfica de la zona de estudio: descargue las variables: d2m, t2m, e, ro, u10, v10, sp, tp, ssr para el rango de años 1950 a 2024. Cargue y visualice todas las variables en un mapa. Convierta y exporte las variables d2m y t2m correspondientes a temperatura de punto de rocio y temperatura a 2m sobre la superficie terreste, de grados Kelvin a grados centígrados. Para el límite completo de la subzona hidrográfica SZH que cubre el área de estudio y para cada variable, obtenga estadísticos zonales mes a mes y genere gráficos detallados y agregados mensuales y anuales. Utilizando los valores estadísticos mensuales de precipitación (tp) y evaporación total (e), realice el balance hidrológico mes a mes para obtener valores de escorrentía y compare con los valores obtenidos en la variable escorrentía (ro), cree una matriz de dispersión explique las diferencias. A partir de promedios y desviaciones decadales, calcule para cada variable el valor de z-score e identifique datos atípicos, grafique explique los resultados obtenidos (elegir 3 variables a analizar). A partir de los gráficos obtenidos, analice y determine si existen tendencias de crecimiento o decrecimiento en estos datos y si están asociados a fenómenos de cambio climático. 
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/RemoteSensingEra5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -18,31 +16,53 @@ xxxxxxxxxxxxxxxxxxxxxxxxxx
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
 * [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
-
-
-
-## Diagrama general de procesos
-
-<div align="center">
-<br><img alt="R.SIGE" src="Graph/AgreeDEMFlowchart.svg" width="80%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo, procesos automáticos o semiautomáticos en guiones rojos y procesos manuales en amarillo. Líneas conectoras con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
 
 
 ## 1. Procedimiento general en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _RemoteSensingERA5_ y establezca el CRS 9377. Agregue al mapa la capa de la subzona hidrográfica 2120 del IDEAM disponible en la ruta `\file\gdb\SIGE.gdb\SIGE\SZH2120` y la capa de envolvente `\file\gdb\SIGE.gdb\SIGE\SZH2120_Envelope`, ajuste la simbología solo a contorno.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+2. En la tabla de atributos de la capa `SZH2120_Envelope` cree 4 campos de atributos numéricos dobles con los nombres `Top`, `Bottom`, `Left` y `Right` y con el calculador de geometría, obtenga los límites geográficos en grados decimales, obtendrá los siguientes valores:
+
+* Top: 5.29833311
+* Bottom: 4.25977634
+* Left: -74.83249665
+* Right: -73.51499939
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Desde la plataforma https://cds.climate.copernicus.eu del ECMWF y para el límite envolvente de la subcuenca del Río Bogotá (SZH 2120) correspondiente a los límites redondeados a un decimal: top 5.3dd, botom 4.2dd, left -74.9dd y right -73.5dd, descargue las siguientes variables para el rango de años 1950 a 2023
+
+| Variable [^1]                                                             | Unidades              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2m dewpoint temperature (d2m)<br>Temperatura de punto de rocío a 2 metros | (K) Kelvin            | Temperature to which the air, at 2 metres above the surface of the Earth, would have to be cooled for saturation to occur.It is a measure of the humidity of the air. Combined with temperature and pressure, it can be used to calculate the relative humidity. 2m dew point temperature is calculated by interpolating between the lowest model level and the Earth's surface, taking account of the atmospheric conditions. Temperature measured in kelvin can be converted to degrees Celsius (°C) by subtracting 273.15.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 2m temperature (t2m)<br>Temperatura atmosférica a 2 metros                | (K) Kelvin            | Temperature of air at 2m above the surface of land, sea or in-land waters. 2m temperature is calculated by interpolating between the lowest model level and the Earth's surface, taking account of the atmospheric conditions. Temperature measured in kelvin can be converted to degrees Celsius (°C) by subtracting 273.15.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Total evaporation (e)<br>Evaporación total                                | m of water equivalent | Accumulated amount of water that has evaporated from the Earth's surface, including a simplified representation of transpiration (from vegetation), into vapour in the air above. This variable is accumulated from the beginning of the forecast to the end of the forecast step. The ECMWF Integrated Forecasting System convention is that downward fluxes are positive. Therefore, negative values indicate evaporation and positive values indicate condensation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Runoff (ro)<br>Escorrentía directa                                        | m                     | Some water from rainfall, melting snow, or deep in the soil, stays stored in the soil. Otherwise, the water drains away, either over the surface (surface runoff), or under the ground (sub-surface runoff) and the sum of these two is simply called 'runoff'. This variable is the total amount of water accumulated from the beginning of the forecast time to the end of the forecast step. The units of runoff are depth in metres. This is the depth the water would have if it were spread evenly over the grid box. Care should be taken when comparing model variables with observations, because observations are often local to a particular point rather than averaged over a grid square area. Observations are also often taken in different units, such as mm/day, rather than the accumulated metres produced here. Runoff is a measure of the availability of water in the soil, and can, for example, be used as an indicator of drought or flood. More information about how runoff is calculated is given in the IFS Physical Processes documentation. |
+| 10m u-component of wind (u10)<br>Componente este del viento a 10 metros   | m s-1                 | Eastward component of the 10m wind. It is the horizontal speed of air moving towards the east, at a height of ten metres above the surface of the Earth, in metres per second. Care should be taken when comparing this variable with observations, because wind observations vary on small space and time scales and are affected by the local terrain, vegetation and buildings that are represented only on average in the ECMWF Integrated Forecasting System. This variable can be combined with the V component of 10m wind to give the speed and direction of the horizontal 10m wind.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 10m v-component of wind (u10)<br>Componente norte del viento a 10 metros  | m s-1                 | Northward component of the 10m wind. It is the horizontal speed of air moving towards the north, at a height of ten metres above the surface of the Earth, in metres per second. Care should be taken when comparing this variable with observations, because wind observations vary on small space and time scales and are affected by the local terrain, vegetation and buildings that are represented only on average in the ECMWF Integrated Forecasting System. This variable can be combined with the U component of 10m wind to give the speed and direction of the horizontal 10m wind.                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Surface net solar radiation (ssr)<br>Radiación solar de onda corta        | J m-2                 | Amount of solar radiation (also known as shortwave radiation) reaching the surface of the Earth (both direct and diffuse) minus the amount reflected by the Earth's surface (which is governed by the albedo).Radiation from the Sun (solar, or shortwave, radiation) is partly reflected back to space by clouds and particles in the atmosphere (aerosols) and some of it is absorbed. The rest is incident on the Earth's surface, where some of it is reflected. The difference between downward and reflected solar radiation is the surface net solar radiation. This variable is accumulated from the beginning of the forecast time to the end of the forecast step. The units are joules per square metre (J m-2). To convert to watts per square metre (W m-2), the accumulated values should be divided by the accumulation period expressed in seconds. The ECMWF convention for vertical fluxes is positive downwards.                                                                                                                                        |
+| Total precipitation (tp)<>Precipitación total                             | m                      | Accumulated liquid and frozen water, including rain and snow, that falls to the Earth's surface. It is the sum of large-scale precipitation (that precipitation which is generated by large-scale weather patterns, such as troughs and cold fronts) and convective precipitation (generated by convection which occurs when air at lower levels in the atmosphere is warmer and less dense than the air above, so it rises). Precipitation variables do not include fog, dew or the precipitation that evaporates in the atmosphere before it lands at the surface of the Earth. This variable is accumulated from the beginning of the forecast time to the end of the forecast step. The units of precipitation are depth in metres. It is the depth the water would have if it were spread evenly over the grid box. Care should be taken when comparing model variables with observations, because observations are often local to a particular point in space and time, rather than representing averages over a model grid box and model time step.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                           |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+(sp)
+* tp
 
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
+En https://cds.climate.copernicus.eu/ seleccione la opción _Datasets_
+
+<div align="center"><img src="graph/Chrome_Copernicus1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la ventana de búsqueda ingrese _ERA5-Land monthly averaged data from 1950 to present_
+
+<div align="center"><img src="graph/Chrome_Copernicus2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 
 
 
@@ -90,13 +110,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
 
 
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
-
-
 ## Referencias
 
 * 
@@ -117,4 +130,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |---------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: 
+[^1]: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview
