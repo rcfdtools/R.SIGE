@@ -87,7 +87,7 @@ Automáticamente, será redirigido a la ventana de solicitudes donde será neces
 
 Una vez termine el proceso de extracción de datos aparecerá el botón de descarga. Descargue, guarde y descomprima el archivo _ERA5_land_monthly_climatological_var_010dd.zip_, renombrando a _ERA5_land_monthly_climatological_var_010ddRioBogota.nc_
 
-<div align="center"><img src="graph/Chrome_Copernicus8.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Windows_FolderEra5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Visualización y análisis en ArcGIS Pro
