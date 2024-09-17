@@ -98,11 +98,11 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="70%" border="0" /></div>
 
-Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable y en la parte superior de la ventana de visualización podrá observar la barra de desplazamiento temporal debido a que cada variable contiene información de diferentes instantes de tiempo. Como observa,   
+Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable y en la parte superior de la ventana de visualización podrá observar la barra de desplazamiento temporal debido a que cada variable contiene información de diferentes instantes de tiempo. Como observa, para el primer instante de tiempo correspondiente a enero de 1950, las temperaturas mostradas corresponden a valores entre 281.154 y 297.435 grados Kelvin.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Para realizar conversión de unidades, en el menú _Insert_ cree un nuevo cuaderno de Jupiter para Python seleccionando la opción _New Notebook_, ingrese el siguiente script que le permitirá convertir las temperaturas del aire de grados Kelvin a grados Centígrados:
+2. Para realizar conversión de unidades, en el menú _Insert_ cree un nuevo cuaderno de Jupiter para Python seleccionando la opción _New Notebook_, ingrese el siguiente script que le permitirá convertir la temperatura del aire (t2m) de grados Kelvin a grados Centígrados y agregue el archivo resultante `ERA5_land_monthly_t2m_celsius.nc_t2m` al mapa:
 
 ```
 # Import system modules
@@ -123,6 +123,14 @@ out_unit_raster = UnitConversion(inRaster_File, from_unit, to_unit)
 # Save the output
 out_unit_raster.save("D:/R.SIGE/file/data/ERA5/ERA5_land_monthly_t2m_celsius.nc")
 ```
+
+<div align="center"><img src="graph/ArcGISPro_UnitConversion1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita este procedimiento y realice la conversión de la temperatura de punto de rocío (d2m) de grados Kelvin a grados centígrados, nombre como `ERA5_land_monthly_d2m_celsius.nc`.
+
+<div align="center"><img src="graph/ArcGISPro_UnitConversion2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. 
 
 
 
