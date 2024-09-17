@@ -97,7 +97,7 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable.   
-<div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="70%" border="0" /></div>
 
 
 
