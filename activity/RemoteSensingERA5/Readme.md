@@ -87,6 +87,7 @@ Automáticamente, será redirigido a la ventana de solicitudes donde será neces
 
 Una vez termine el proceso de extracción de datos aparecerá el botón de descarga. Descargue, guarde y descomprima el archivo _ERA5_land_monthly_climatological_var_010dd.zip_, renombrando a _ERA5_land_monthly_climatological_var_010ddRioBogota.nc_
 
+<div align="center"><img src="graph/Chrome_Copernicus8.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Windows_FolderEra5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
@@ -97,8 +98,33 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="70%" border="0" /></div>
 
-Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable y en la parte superior de la ventana de visualización podrá observar la barra de desplazamiento temporal debido a que cada variable contiene información de diferentes instantes de tiempo.     
-<div align="center"><img src="graph/ArcGISPro_AddLayer4.png" alt="R.SIGE" width="70%" border="0" /></div>
+Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable y en la parte superior de la ventana de visualización podrá observar la barra de desplazamiento temporal debido a que cada variable contiene información de diferentes instantes de tiempo. Como observa,   
+
+<div align="center"><img src="graph/ArcGISPro_AddLayer4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Para realizar conversión de unidades, en el menú _Insert_ cree un nuevo cuaderno de Jupiter para Python seleccionando la opción _New Notebook_, ingrese el siguiente script que le permitirá convertir las temperaturas del aire de grados Kelvin a grados Centígrados:
+
+```
+# Import system modules
+import arcpy
+from arcpy.ia import *
+
+# Set the analysis environments
+arcpy.env.workspace = "D:/R.SIGE/file/data/ERA5"
+
+# Set the local variables
+inRaster_File = "ERA5_land_monthly_climatological_var_010ddRioBogota.nc_t2m"
+from_unit = 'Kelvin'
+to_unit = 'Celsius'
+
+# Execute UnitConversion function
+out_unit_raster = UnitConversion(inRaster_File, from_unit, to_unit)
+
+# Save the output
+out_unit_raster.save("D:/R.SIGE/file/data/ERA5/ERA5_land_monthly_t2m_celsius.nc")
+```
+
+
 
 
 
