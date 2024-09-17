@@ -95,10 +95,10 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 1. En el mapa de ArcGIS Pro y desde el menú _Map / Add Data_, seleccione la opción _Multidimensional Raster Layer / Import Variables From Layer_, seleccione todas las variables descargadas y de clic en _OK_.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable.   
 <div align="center"><img src="graph/ArcGISPro_AddLayer3.png" alt="R.SIGE" width="70%" border="0" /></div>
 
+Automáticamente, han sido agregados al mapa todas las variables seleccionadas. Al final de cada capa aparece el nombre de la variable y en la parte superior de la ventana de visualización podrá observar la barra de desplazamiento temporal debido a que cada variable contiene información de diferentes instantes de tiempo.     
+<div align="center"><img src="graph/ArcGISPro_AddLayer4.png" alt="R.SIGE" width="70%" border="0" /></div>
 
 
 
