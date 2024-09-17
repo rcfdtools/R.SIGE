@@ -90,9 +90,13 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 <div align="center"><img src="graph/Chrome_Copernicus8.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 3. Visualización y análisis en ArcGIS Pro
+
+1. 
 
 
-## 2. Análisis usando software libre - QGIS
+
+## 4. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
