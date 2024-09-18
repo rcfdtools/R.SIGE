@@ -239,7 +239,7 @@ A partir de promedios y desviaciones decadales, calcule para al menos 3 variable
 
 Utilizando el calculador de campo, calcule el valor
 
-<div align="center">**z-score = (x - μ) / σ**</div>
+<div align="center">z-score = (x - μ) / σ</div>
 
 Donde,
 
@@ -260,7 +260,55 @@ Donde,
 5. Repita este procedimiento para dos variables adicionales.
 
 
-## 6. Análisis usando software libre - QGIS
+## 6. Balance hidrológico
+
+Utilizando los valores estadísticos mensuales de precipitación (tp) y evaporación total (e), realice el balance hidrológico mes a mes para obtener valores de escorrentía y compare con los valores obtenidos en la variable escorrentía (ro), cree una matriz de dispersión explique las diferencias.
+
+1. Realice una unión o _Join_ entre las tablas `SZH2120_ERA5_tp` y `SZH2120_ERA5_e` utilizando como llave el identificador de objeto espacial `OBJECTID` que se encuentra cronológicamente ordenado de 1 a n en ambas tablas.
+
+<div align="center"><img src="graph/ArcGISPro_Join2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Exporte la tabla `SZH2120_ERA5_tp` que contiene el _Join_ a una nueva tabla con el nombre `SZH2120_ERA5_BalanceHid`, podrá observar que en la tabla resultante existen columnas de atributos con los mismos nombre, internamente las columnas repetidas incluyen en su nombre el sufijo `_1` que para este caso corresponden a los campos provenientes de la tabla de evaporación.
+
+<div align="center"><img src="graph/ArcGISPro_ExportTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExportTable2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la tabla de atributos, elimine todas las columnas con atributos duplicados correspondientes a: OBJECTID_1, COD_SZH_1, COUNT_1, AREA_1, Dimensions_1, Month_1, Year_1, Decade_1. Asegúrese de no eliminar el campo `MEAN_1` que contiene los valores de evaporación mensual. Modifique los Alias de los campos `MEAN` a `tp` y `MEAN_1` a `e` y cree una columna numérica doble con el nombre `Balance`.
+
+<div align="center"><img src="graph/ArcGISPro_ExportTable3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando el calculador de campo, realice el balance restando de la precipitación los valores de evaporación, convierta los resultados de metros a milímetros.
+
+> Tenga en cuenta que los valores de evaporación ya incluyen el signo negativo. 
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Realice una unión o _Join_ entre los registros de la tabla de balance `SZH2120_ERA5_BalanceHid` y la tabla de escorrentía `SZH2120_ERA5_ro`, utilice como llave `OBJECTID`. 
+
+<div align="center"><img src="graph/ArcGISPro_Join3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. En la tabla de atributos cree un campo numérico doble con el nombre `ro` y asigne el valor `(!SZH2120_ERA5_ro.MEAN!)*1000`.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Remueva la unión realizada, podrá observar que disponemos del resultado del balance y los valores de escorrentía estimados por ERA5.
+
+<div align="center"><img src="graph/ArcGISPro_Join4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Cree una gráfica de serie que represente las variables `Balance` y `ro` e identifique las diferencias en sus patrones. Podrá observar que los resultados son similares en la zona central y en el extremo inferior que los valores del balance son menores.
+
+<div align="center"><img src="graph/ArcGISPro_Chart12.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Chart13.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 7. Mapas de isolineas
+
+1. 
+
+
+
+
+## 8. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
