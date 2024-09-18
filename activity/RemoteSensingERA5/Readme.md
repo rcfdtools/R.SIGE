@@ -324,10 +324,14 @@ Remueva la unión realizada, podrá observar que disponemos del resultado del ba
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
+| Proceso                                                                          | Procedimiento                                                                                                                                                                                                        |
+|:---------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Simbología                                                                       | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                              |
+| Rotulado                                                                         | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                 |
+| Cálculos geométricos o de campo                                                  | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.  |
+| Estadística zonal como tabla (Zonal statistics as table)                         | Herramienta disponible en el _Processing Toolbox / Raster analysis / Zonal statistics.                                                                                                                               |
+| Agregación espacial de imágenes raster (Multidimensional / Analysis / Aggregate) | Herramienta disponible en el _Processing Toolbox / GRASS / r.resamp.stats.                                                                                                                                           |
+| Curvas de nivel (Contour)                                                        | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.contour.                                                                                                                                       |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
@@ -339,14 +343,33 @@ Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-
+| Nombre                                                     | Descripción                                                                            | Geometría               | Registros | 
+|------------------------------------------------------------|----------------------------------------------------------------------------------------|-------------------------|-----------| 
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_v10 | Componente norte del viento a 10 metros.                                               | (multidimensional grid) | 888       | 
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_u10 | Componente este del viento a 10 metros.                                                | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_tp  | Precipitación total en metros.                                                         | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_t2m | Temperatura atmosférica a 2 metros en grados Kelvin.                                   | (multidimensional grid) | 888       |
+| ERA5_land_monthly_t2m_celsius.nc_t2m                       | Temperatura atmosférica a 2 metros en grados Centígrados.                              | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_ssr | Radiación solar de onda corta en Julio m-2.                                            | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_sp  | Presión atmosférica en Pascales.                                                       | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_ro  | Escorrentía directa en metros.                                                         | (multidimensional grid) | 888       | 
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_e   | Evaporación total en metros.                                                           | (multidimensional grid) | 888       |
+| ERA5_land_monthly_climatological_var_010ddRioBogota.nc_d2m | Temperatura de punto de rocío del aire a 2 metros en grados Kelvin.                    | (multidimensional grid) | 888       |
+| ERA5_land_monthly_d2m_celsius.nc_d2m                       | Temperatura de punto de rocío del aire a 2 metros en grados Centígrados.               | (multidimensional grid) | 888       |
+| SZH2120_ERA5_d2m                                           | Estadísticos cuenca Río Bogotá para Temperatura de punto de rocío del aire a 2 metros. | (tabla)                 | 888       | 
+| SZH2120_ERA5_t2m                                           | Estadísticos cuenca Río Bogotá para Temperatura atmosférica a 2 metros.                | (tabla)                 | 888       | 
+| SZH2120_ERA5_e                                             | Estadísticos cuenca Río Bogotá para Evaporación total.                                 | (tabla)                 | 888       | 
+| SZH2120_ERA5_ro                                            | Estadísticos cuenca Río Bogotá para Escorrentía directa.                               | (tabla)                 | 888       | 
+| SZH2120_ERA5_u10                                           | Estadísticos cuenca Río Bogotá para Componente este del viento a 10 metros.            | (tabla)                 | 888       |  
+| SZH2120_ERA5_v10                                           | Estadísticos cuenca Río Bogotá para Componente norte del viento a 10 metros.           | (tabla)                 | 888       |  
+| SZH2120_ERA5_ssr                                           | Estadísticos cuenca Río Bogotá para Radiación solar de onda corta.                     | (tabla)                 | 888       |  
+| SZH2120_ERA5_tp                                            | Estadísticos cuenca Río Bogotá para Precipitación total.                               | (tabla)                 | 888       | 
+| SZH2120_ERA5_sp                                            | Estadísticos cuenca Río Bogotá para Presión atmosférica.                               | (tabla)                 | 888       | 
+| SZH2120_ERA5_t2m_Statistics                                | Estadísticos cuenca Río Bogotá decadal para Temperatura atmosférica a 2 metros.        | (tabla)                 | 8         | 
+| SZH2120_ERA5_BalanceHid                                    | Balance hidrológico cuenca Río Bogotá.                                                 | (tabla)                 | 888       | 
+| ERA5_land_tp_isolines                                      | Isoyetas multianuales.                                                                 | Poli-línea 2D           | 303       |
+ 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -355,8 +378,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P6** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P6** | :compass:Mapa digital impreso _P6-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P6** | Desarrolle las actividades presentadas en esta clase incluyendo capturas de pantalla detalladas de los procesos realizados.                                                                                                                                                                                                                                                                                                                         | 
+| Avance **P6** | A partir de los gráficos obtenidos, analice y determine si existen tendencias de crecimiento o decrecimiento en estos datos y si están asociados a fenómenos de cambio climático.                                                                                                                                                                                                                                                                   | 
+| Avance **P6** | :compass:Mapa digital impreso _P6-11: Mapa múltiple de variables climatológicas e isolíneas._<br>Incluir gráficas y tablas de análisis. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                               | 
 | Avance **P6** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -372,17 +396,18 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión     | Descripción                                                | Autor                                      | Horas |
+|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.04.06  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.17  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| 2024.09.18  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../RemoteSensingNDVI/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/40)  | [Siguiente :arrow_forward:]() |
+|-------------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview
