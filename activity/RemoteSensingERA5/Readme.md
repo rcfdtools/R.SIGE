@@ -91,7 +91,7 @@ Una vez termine el proceso de extracción de datos aparecerá el botón de desca
 <div align="center"><img src="graph/Windows_FolderEra5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Visualización y análisis en ArcGIS Pro
+## 3. Visualización y análisis general
 
 1. En el mapa de ArcGIS Pro y desde el menú _Map / Add Data_, seleccione la opción _Multidimensional Raster Layer / Import Variables From Layer_, seleccione todas las variables descargadas y de clic en _OK_.  
 
@@ -177,7 +177,10 @@ Estadística zonal para Total precipitation (**tp**)
 Estadística zonal para Surface pressure (**sp**)   
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. En cada tabla de resultados, cree trés columnas de atributos numéricos enteros largos o _Long_ con los nombres `Month`, `Year`, `Decade` y con las siguientes expresiones de Python obtenga los valores requeridos a partir del campo `StdTime`:
+
+## 4. Gráficos de agregación estadística
+
+1. En cada tabla de resultados de resúmen estadístico, cree trés columnas de atributos numéricos enteros largos o _Long_ con los nombres `Month`, `Year`, `Decade` y con las siguientes expresiones de Python obtenga los valores requeridos a partir del campo `StdTime`:
 
 * Month = `!StdTime!.month`
 * Year = `!StdTime!.year`
@@ -188,7 +191,7 @@ Estadística zonal para Surface pressure (**sp**)
 Ejemplo para 2m dewpoint temperature (**d2m**) 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. A partir de los valores obtenidos, genere gráficos detallados y agregados mensuales, anuales y decadales.
+2. A partir de los valores obtenidos, genere gráficos detallados y agregados mensuales, anuales y decadales.
 
 Estadística zonal para 2m dewpoint temperature (**d2m**) 
 <div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -221,13 +224,16 @@ Estadística zonal para Total precipitation (**tp**)
 Estadística zonal para Surface pressure (**sp**)   
 <div align="center"><img src="graph/ArcGISPro_Chart9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. A partir de promedios y desviaciones decadales, calcule para al menos 3 variables, el valor de z-score e identifique datos atípicos, grafique y explique los resultados obtenidos. 
 
-A partir de la tabla `SZH2120_ERA5_t2m`, cree un resúmen estadístico o _Summarize_ a partir de la columna _Decade_ y obtenga los estadísticos de promedio y desviación estándar de la variable `MEAN`. Guarde la tabla de resultados como `SZH2120_ERA5_t2m_Statistics`. Podrá observar que a tabla de resultados contiene 8 registros correspondientes a las décadas 1950 a 2020. 
+## 5. Identificación de valores atípicos
+
+A partir de promedios y desviaciones decadales, calcule para al menos 3 variables, el valor de z-score e identifique datos atípicos, grafique y explique los resultados obtenidos. 
+
+1. A partir de la tabla `SZH2120_ERA5_t2m`, cree un resúmen estadístico o _Summarize_ a partir de la columna _Decade_ y obtenga los estadísticos de promedio y desviación estándar de la variable `MEAN`. Guarde la tabla de resultados como `SZH2120_ERA5_t2m_Statistics`. Podrá observar que a tabla de resultados contiene 8 registros correspondientes a las décadas 1950 a 2020. 
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-En la tabla de atributos `SZH2120_ERA5_t2m`, cree un campo numérico doble con el nombre `zscore` y un campo entero corto con el nombre `zscoreeval`, luego, una los resultados obtenidos en la tabla `SZH2120_ERA5_t2m_Statistics` a la tabla principal `SZH2120_ERA5_t2m`, utilice como llave el campo `Decade`.
+2. En la tabla de atributos `SZH2120_ERA5_t2m`, cree un campo numérico doble con el nombre `zscore` y un campo entero corto con el nombre `zscoreeval`, luego, una los resultados obtenidos en la tabla `SZH2120_ERA5_t2m_Statistics` a la tabla principal `SZH2120_ERA5_t2m`, utilice como llave el campo `Decade`.
 
 <div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -243,18 +249,18 @@ Donde,
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Grafique la serie de valores de z-score e identifique un rango de valores o banda que permita identificar valores atípicos. Para la variable de temperatura, definiremos como atípicos aquellos valores superiores a z-score = 2.5 e inferiores a z-score = -2.0.
+3. Grafique la serie de valores de z-score e identifique un rango de valores o banda que permita identificar valores atípicos. Para la variable de temperatura, definiremos como atípicos aquellos valores superiores a z-score = 2.5 e inferiores a z-score = -2.0.
 
 <div align="center"><img src="graph/ArcGISPro_Chart10.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Utilizando la herramienta de selección por atributos, seleccione todos los valores atípicos y desde el calculador de campo, asigne al campo `zscoreeval = 1`. Podrá observar que se han identificado 31 datos atípicos de los cuales los valores altos pueden corresponder a años con fenómeno del Niño y los valores bajos a años con fenómeno de la Niña.
+4. Utilizando la herramienta de selección por atributos, seleccione todos los valores atípicos y desde el calculador de campo, asigne al campo `zscoreeval = 1`. Podrá observar que se han identificado 31 datos atípicos de los cuales los valores altos pueden corresponder a años con fenómeno del Niño y los valores bajos a años con fenómeno de la Niña.
 
 <div align="center"><img src="graph/ArcGISPro_Chart11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Repita este procedimiento para dos variables adicionales.
+5. Repita este procedimiento para dos variables adicionales.
 
 
-## 4. Análisis usando software libre - QGIS
+## 6. Análisis usando software libre - QGIS
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
