@@ -299,13 +299,24 @@ Remueva la unión realizada, podrá observar que disponemos del resultado del ba
 
 <div align="center"><img src="graph/ArcGISPro_Chart12.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Chart13.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Chart14.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 7. Mapas de isolineas
 
-1. 
+1. En la tabla de contenido, seleccione la grilla multidimensional `ERA5_land_monthly_climatological_var_010ddRioBogota.nc_tp`, luego en el menú _Multidimensional_ seleccione _Analysis / Aggregate_ para crear una agregación estadística espacial por sumatoria de la variable de precipitación total `tp`. En _Aggregation Definition_ será necesario primero agregar los 12 meses de cada año para luego crear el mapa estadístico multianual. Nombre como `ERA5_land_monthly_climatological_var_010ddRioBogota_Aggregate.crf`. Desde las propiedades prodrá observar que el archivo resultante contiene 74 grillas, una por cada año evaluado.
 
+<div align="center"><img src="graph/ArcGISPro_Aggregate1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Repita el procedimiento anterior generando ahora una agregación estadística del promedio de los 74 años agregados. Obtendrá una única grilla de agregación multianual. Nombre como `ERA5_land_monthly_climatological_var_010ddRioBogota_Aggregate_Aggregate.crf`.
+
+<div align="center"><img src="graph/ArcGISPro_Aggregate2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando la herramienta Spatial _Analyst Tools / Contour with Barriers_, cree isoyetas principales cada 10 mm y secundarias cada 2 mm de lluvia. Simbolice por valores únicos a partir del campo _Type_ y rotule solo las isoyetas principales en milímetros.
+
+<div align="center"><img src="graph/ArcGISPro_ContourWithBarriers1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Complementariamente, podrá suavizar las curvas con la herramienta _Smooth Line_ para eliminar las esquinas anguladas y recortar hasta el límite de la zona de estudio utilizando la herramienta _Clip_.
 
 
 ## 8. Análisis usando software libre - QGIS
