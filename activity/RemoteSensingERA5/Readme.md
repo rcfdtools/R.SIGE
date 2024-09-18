@@ -11,6 +11,7 @@ Desde la plataforma [Copernicus](https://www.copernicus.eu/en) del [ECMWF](https
 * Descargar datos hidro-climatológicos de re-análisis a partir de datos satelitales.
 * Estudiar el clima de la cuenca principal que contiene la zona de estudio.
 * Identificar datos atípicos.
+* Generar mapas de isolíneas.
 
 
 ## Requerimientos
