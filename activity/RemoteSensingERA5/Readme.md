@@ -221,6 +221,16 @@ Estadística zonal para Total precipitation (**tp**)
 Estadística zonal para Surface pressure (**sp**)   
 <div align="center"><img src="graph/ArcGISPro_Chart9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. A partir de promedios y desviaciones decadales, calcule para al menos 3 variables, el valor de z-score e identifique datos atípicos, grafique y explique los resultados obtenidos. 
+
+A partir de la tabla `SZH2120_ERA5_t2m`, cree un resúmen estadístico o _Summarize_ a partir de la columna _Decade_ y obtenga los estadísticos de promedio y desviación estándar de la variable `MEAN`. Guarde la tabla de resultados como `SZH2120_ERA5_t2m_Statistics`. Podrá observar que a tabla de resultados contiene 8 registros correspondientes a las décadas 1950 hasta 2020. 
+
+<div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
 
 ## 4. Análisis usando software libre - QGIS
 
