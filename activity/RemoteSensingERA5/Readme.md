@@ -223,13 +223,35 @@ Estadística zonal para Surface pressure (**sp**)
 
 6. A partir de promedios y desviaciones decadales, calcule para al menos 3 variables, el valor de z-score e identifique datos atípicos, grafique y explique los resultados obtenidos. 
 
-A partir de la tabla `SZH2120_ERA5_t2m`, cree un resúmen estadístico o _Summarize_ a partir de la columna _Decade_ y obtenga los estadísticos de promedio y desviación estándar de la variable `MEAN`. Guarde la tabla de resultados como `SZH2120_ERA5_t2m_Statistics`. Podrá observar que a tabla de resultados contiene 8 registros correspondientes a las décadas 1950 hasta 2020. 
+A partir de la tabla `SZH2120_ERA5_t2m`, cree un resúmen estadístico o _Summarize_ a partir de la columna _Decade_ y obtenga los estadísticos de promedio y desviación estándar de la variable `MEAN`. Guarde la tabla de resultados como `SZH2120_ERA5_t2m_Statistics`. Podrá observar que a tabla de resultados contiene 8 registros correspondientes a las décadas 1950 a 2020. 
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+En la tabla de atributos `SZH2120_ERA5_t2m`, cree un campo numérico doble con el nombre `zscore` y un campo entero corto con el nombre `zscoreeval`, luego, una los resultados obtenidos en la tabla `SZH2120_ERA5_t2m_Statistics` a la tabla principal `SZH2120_ERA5_t2m`, utilice como llave el campo `Decade`.
 
+<div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Utilizando el calculador de campo, calcule el valor
 
+<div align="center">**z-score = (x - μ) / σ**</div>
+
+Donde,
+
+* x: corresponde al valor MEAN de la tabla de atributos
+* μ: corresponde a la media decadal
+* σ: corresponde a la desviación estándar decadal
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Grafique la serie de valores de z-score e identifique un rango de valores o banda que permita identificar valores atípicos. Para la variable de temperatura, definiremos como atípicos aquellos valores superiores a z-score = 2.5 e inferiores a z-score = -2.0.
+
+<div align="center"><img src="graph/ArcGISPro_Chart10.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Utilizando la herramienta de selección por atributos, seleccione todos los valores atípicos y desde el calculador de campo, asigne al campo `zscoreeval = 1`. Podrá observar que se han identificado 31 datos atípicos de los cuales los valores altos pueden corresponder a años con fenómeno del Niño y los valores bajos a años con fenómeno de la Niña.
+
+<div align="center"><img src="graph/ArcGISPro_Chart11.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Repita este procedimiento para dos variables adicionales.
 
 
 ## 4. Análisis usando software libre - QGIS
