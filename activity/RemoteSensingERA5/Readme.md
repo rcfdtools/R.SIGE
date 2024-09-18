@@ -177,6 +177,50 @@ Estadística zonal para Total precipitation (**tp**)
 Estadística zonal para Surface pressure (**sp**)   
 <div align="center"><img src="graph/ArcGISPro_ZonalStatisticsAsTable9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. En cada tabla de resultados, cree trés columnas de atributos numéricos enteros largos o _Long_ con los nombres `Month`, `Year`, `Decade` y con las siguientes expresiones de Python obtenga los valores requeridos a partir del campo `StdTime`:
+
+* Month = `!StdTime!.month`
+* Year = `!StdTime!.year`
+* Decade = `str(!StdTime!.year)[:3]+'0'`
+
+> En el campo Decade consideraremos, p. ej., que la década de los 50's va de 1950 a 1959.
+
+Ejemplo para 2m dewpoint temperature (**d2m**) 
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. A partir de los valores obtenidos, genere gráficos detallados y agregados mensuales, anuales y decadales.
+
+Estadística zonal para 2m dewpoint temperature (**d2m**) 
+<div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para 2m temperature (**t2m**)   
+<div align="center"><img src="graph/ArcGISPro_Chart2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Total evaporation (**e**)  
+<div align="center"><img src="graph/ArcGISPro_Chart3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Para el análisis de evaporación es recomendable excluir los valores correspondientes a la decada del 2020's debido a que únicamente disponemos de 3 años.
+
+Estadística zonal para Runoff (**ro**)  
+<div align="center"><img src="graph/ArcGISPro_Chart4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para 10m u-component of wind (**u10**)   
+<div align="center"><img src="graph/ArcGISPro_Chart5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para 10m v-component of wind (**v10**)  
+<div align="center"><img src="graph/ArcGISPro_Chart6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Surface net solar radiation (**ssr**)  
+<div align="center"><img src="graph/ArcGISPro_Chart7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Al igual que en la evaporación es recomendable excluir los valores correspondientes de radiación solar neta de la decada del 2020's debido a que únicamente disponemos de 3 años.
+
+Estadística zonal para Total precipitation (**tp**)  
+<div align="center"><img src="graph/ArcGISPro_Chart8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Estadística zonal para Surface pressure (**sp**)   
+<div align="center"><img src="graph/ArcGISPro_Chart9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 4. Análisis usando software libre - QGIS
 
@@ -225,6 +269,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * https://pro.arcgis.com/en/pro-app/latest/arcpy/image-analyst/unit-conversion.htm
+* https://www.noaa.gov/jetstream/atmosphere/air-pressure
 
 
 ## Control de versiones
