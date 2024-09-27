@@ -84,30 +84,30 @@ Como pudo observar, los elementos en ILWIS pueden tener asociados diferentes ele
 
 3. Visualice cada uno de los mapas disponibles y describa su contenido, consulte cada una de las tablas de dominio.
 
-<div align="center">Mapa _Landslid.mpr_: Regiones con problemas severos de deslizamientos<br><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Landslid.mpr: Regiones con problemas severos de deslizamientos<br><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 Mapa _Volcanic.mpr_: Regiones con amenazas volcánicas<br>
 <div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Seismic.mpr_: Regiones con amenazas sísmicas<br><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Seismic.mpr: Regiones con amenazas sísmicas<br><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Tsunami.mpr_: Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos<br><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Tsunami.mpr: Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos<br><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Inundat.mpr_: Regiones con amenazas por inundación<br><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Inundat.mpr: Regiones con amenazas por inundación<br><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Rivers.mpr_: Regiones con actividad torrencial en ríos<br><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Rivers.mpr: Regiones con actividad torrencial en ríos<br><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 > En cuencas de pendientes fuertes existe la tendencia a la generación de crecientes en los ríos en tiempos relativamente cortos, estas cuencas se conocen como torrenciales, igual que los ríos que las drenan.[^1]
 
-<div align="center">Mapa _Beach.mpr_: Regiones con erosión en playas y/o acumulación de sedimentos<br><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Beach.mpr: Regiones con erosión en playas y/o acumulación de sedimentos<br><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Industry.mpr_: Principales regiones industriales<br>  <img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Industry.mpr: Principales regiones industriales<br>  <img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Infraseg.mpr_: Localización de infraestructura principal<br>  <img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Infraseg.mpr: Localización de infraestructura principal<br>  <img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Concentr.mpr_: Localización de zonas con concentración de actividades económicas<br>   <img src="graph/ILWIS_13.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Concentr.mpr: Localización de zonas con concentración de actividades económicas<br>   <img src="graph/ILWIS_13.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa _Topograp.mpr_: Regiones topográficas de Colombia<br>   <img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Topograp.mpr: Regiones topográficas de Colombia<br>   <img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes.
 
