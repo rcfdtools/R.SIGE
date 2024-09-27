@@ -28,7 +28,7 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 <div align="center"><img src="graph/Chrome_ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Descargue el paquete de datos y guía disponible en Exercises and data, correspondiente al caso de estudio [1. Hazard, vulnerability and risk analysis.](https://www.itc.nl/ilwis/applications-guide/application-1/). Descomprima el paquete de datos en 
+2. Descargue el paquete de datos y guía disponible en Exercises and data, correspondiente al caso de estudio [1. Hazard, vulnerability and risk analysis](https://www.itc.nl/ilwis/applications-guide/application-1/). Descomprima el paquete de datos en `\file\data\ILWIS`.
 
 <div align="center"><img src="graph/Chrome_ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Windows_ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -36,6 +36,36 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 
 ## 2. Visualización y descripción de objetos
 
+1. Ingrese a la aplicación ILWIS 3.3 Academic, y desde el panel lateral izquierdo, localice la carpeta de datos `\file\data\ILWIS`. En la ventana flotante podrá observar el contenido de la carpeta.
+
+<div align="center"><img src="graph/ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Los datos de entrada incluyen las siguientes grillas y capa vectorial:
+
+<div align="center">
+
+| Mapa / Capa   | Descripción                                                          |
+|---------------|----------------------------------------------------------------------|
+| Colombia.mpr  | Departamentos de Colombia                                            |
+| Landslid.mpr  | Regiones con problemas severos de deslizamientos                     |
+| Volcanic.mpr  | Regiones con amenazas volcánicas                                     |
+| Seismic.mpr   | Regiones con amenazas sísmicas                                       |
+| Tsunami.mpr   | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
+| Inundat.mpr   | Regiones con amenazas por inundación                                 |
+| Rivers.mpr    | Regiones con actividad torrencial en ríos                            |
+| Beach.mpr     | Regiones con erosión en playas y/o acumulación de sedimentos         |
+| Industry.mpr  | Principales regiones industriales                                    |
+| Infraseg.mpr  | Localización de infraestructura principal                            |
+| Concentr.mpr  | Localización de zonas con concentración de actividades económicas    |
+| Topograp.mpr  | Regiones topográficas de Colombia                                    |
+| Colombia.mpa  | Límites de departamentos de Colombia en formato vectorial            |
+
+</div>
+
+2. De doble clic en la capa _Colombia.mpa_ y en la ventana de parámetros de visualización de clic en el botón _OK_. Podrá observar que este mapa tiene asociado el dominio _colombia_ y un sistema de coordenadas.
+
+<div align="center"><img src="graph/ILWIS_2.png" alt="R.SIGE" width="40%" border="0" /></div>
+<div align="center"><img src="graph/ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
