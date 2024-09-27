@@ -86,8 +86,7 @@ Como pudo observar, los elementos en ILWIS pueden tener asociados diferentes ele
 
 <div align="center">Mapa Landslid.mpr: Regiones con problemas severos de deslizamientos<br><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Mapa _Volcanic.mpr_: Regiones con amenazas volcánicas<br>
-<div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Volcanic.mpr: Regiones con amenazas volcánicas<br><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 <div align="center">Mapa Seismic.mpr: Regiones con amenazas sísmicas<br><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -101,17 +100,17 @@ Mapa _Volcanic.mpr_: Regiones con amenazas volcánicas<br>
 
 <div align="center">Mapa Beach.mpr: Regiones con erosión en playas y/o acumulación de sedimentos<br><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa Industry.mpr: Principales regiones industriales<br>  <img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Industry.mpr: Principales regiones industriales<br><img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa Infraseg.mpr: Localización de infraestructura principal<br>  <img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Infraseg.mpr: Localización de infraestructura principal<br><img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 <div align="center">Mapa Concentr.mpr: Localización de zonas con concentración de actividades económicas<br>   <img src="graph/ILWIS_13.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center">Mapa Topograp.mpr: Regiones topográficas de Colombia<br>   <img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center">Mapa Topograp.mpr: Regiones topográficas de Colombia<br><img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes.
+4. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes. Para ello, abra el mapa de Colombia y luego arrastre los mapas _Landslid_, _Volcanic_, _Tsunami_, _Inundat_, _Rivers_, _Beach_ y _Topograp_ a la misma ventana estableciendo transparencias en 50%.
 
-
+<div align="center"><img src="graph/ILWIS_15.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
