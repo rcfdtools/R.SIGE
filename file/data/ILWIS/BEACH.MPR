@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Beach accumulation and erosion
+Time=730059986
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=beach.dom
+Type=Map
+DomainInfo=beach.dom;Byte;class;4;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=beach.mp#
+Type=Byte
+Structure=Line
+StartOffset=0
+RowLength=350
+StoreTime=730059986

@@ -1,64 +1,40 @@
-# Plantilla para actividades
-Keywords: `dem` `agreedem`
+# ILWIS - Descarga y visualización de mapas base
+Keywords: `integrated-land-and-water-information-system`
 
-xxxxxxxxxxxxxxxxxxxxxxxxxx
+Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete de actualización a la versión 3.31, y el paquete de datos y guía disponible en Exercises and data, correspondiente al caso de estudio 1. Hazard, vulnerability and risk analysis. Siguiendo las instrucciones de la guía de desarrollo del caso de estudio, visualice cada uno de los mapas disponibles y describa su contenido, consulte cada una de las tablas de dominio. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes.     
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.SIGE" width="100%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/ILWISDL.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
 
-* 
+* Descargar y visualizar datos de amenazas naturales de Colombia. 
 
 
 ## Requerimientos
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 
 
+## 1. Procedimiento general
 
-## Diagrama general de procesos
+1. Desde el enlace https://www.itc.nl/ilwis/download/, descargue e instale ILWIS 3.3 Academic y el paquete de actualización a la versión 3.31.
 
-<div align="center">
-<br><img alt="R.SIGE" src="Graph/AgreeDEMFlowchart.svg" width="80%"><br>
-<sub>Convenciones generales en diagramas: clases de entidad en azul, dataset en gris oscuro, grillas en color verde, geo-procesos en rojo, procesos automáticos o semiautomáticos en guiones rojos y procesos manuales en amarillo. Líneas conectoras con guiones corresponden a procedimientos opcionales.</sub><br><br>
-</div>
+<div align="center"><img src="graph/Chrome_ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_ILWIS_2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Descargue el paquete de datos y guía disponible en Exercises and data, correspondiente al caso de estudio [1. Hazard, vulnerability and risk analysis.](https://www.itc.nl/ilwis/applications-guide/application-1/). Descomprima el paquete de datos en 
 
-## 1. Procedimiento general en ArcGIS Pro
+<div align="center"><img src="graph/Chrome_ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Windows_ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+3. 
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
-
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
-
-
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
-
-
-
-## 2. Análisis usando software libre - QGIS
-
-Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
-
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
-
-Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
-
-[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
-[:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
 
 
 ## Elementos requeridos en diccionario de datos
@@ -88,13 +64,6 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
 > En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
-
-## Compatibilidad
-
-* Esta actividad puede ser desarrollada con cualquier software SIG que disponga de herramientas para de digitalización con opciones de encajado o snapping.
-* 
-
 
 
 ## Referencias

@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Main infrastructure
+Time=730063610
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64000.314 97000.901 1533000.73 2113000.099
+Domain=infraseg.dom
+Type=Map
+DomainInfo=infraseg.dom;Byte;class;5;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=infraseg.mp#
+Type=Byte
+StoreTime=730063610
+Structure=Line
+StartOffset=0
+RowLength=350

@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Concentration of economic activities
+Time=695589308
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=concentr.dom
+Type=Map
+DomainInfo=concentr.dom;Byte;class;2;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=concentr.mp#
+Type=Byte
+StoreTime=695589308
+Structure=Line
+StartOffset=0
+RowLength=350

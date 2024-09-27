@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Regions with landslide problems
+Time=695590512
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=landslid.dom
+Type=Map
+DomainInfo=landslid.dom;Byte;class;10;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=landslid.mp#
+Type=Byte
+Structure=Line
+StartOffset=0
+RowLength=350
+StoreTime=695590512

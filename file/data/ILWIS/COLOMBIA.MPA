@@ -1,0 +1,57 @@
+[Ilwis]
+Description=Departments of Colombia
+Time=873390896
+Type=BaseMap
+
+[IlwisObjectVirtual]
+Expression=PolygonMapFromSegment(colombia,"",colombia.mpp)
+DefOnlyPossible=No
+
+[ObjectDependency]
+NrDepObjects=2
+Object0=colombia.mps
+Object1=colombia.mpp
+
+[PolygonMap]
+Type=PolygonMapStore
+
+[PolygonMapVirtual]
+Expression=PolygonMapFromSegment(colombia,"",colombia.mpp)
+Type=PolygonMapFromSegment
+
+[PolygonMapFromSegment]
+SegmentMap=colombia.mps
+Mask=
+AutoCorrect=No
+Labels=colombia.mpp
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=65293.710516999912 99751.948524999883 1531680.677349 2110709.53877800005
+DomainInfo=colombia.dom;Byte;class;33;;
+Type=PolygonMap
+Domain=colombia.dom
+
+[SegmentMap]
+Alfa=113.287003
+Beta1=819898.437500
+Beta2=1099509.750000
+Snap Distance=13406.383935
+Tunnel Width=1340.638394
+Type=SegmentMapStore
+
+[SegmentMapStore]
+DataSeg=colombia.ps#
+DataCrd=colombia.pd#
+Status=0
+Format=1
+Segments=177
+DeletedSegments=0
+Coordinates=2647
+
+[PolygonMapStore]
+DataPol=colombia.pl#
+DataPolCode=colombia.pc#
+DataTop=colombia.tp#
+Polygons=37
+DeletedPolygons=0

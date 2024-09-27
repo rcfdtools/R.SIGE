@@ -1,0 +1,24 @@
+[Ilwis]
+Description=Torrential rivers
+Time=873380550
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=rivers.dom
+DomainInfo=rivers.dom;Byte;class;2;;
+Type=Map
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+StoreTime=873380550
+Data=rivers.mp#
+Structure=Line
+StartOffset=0
+RowLength=350
+Type=Byte

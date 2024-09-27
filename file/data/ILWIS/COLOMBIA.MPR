@@ -1,0 +1,41 @@
+[Ilwis]
+Description=Departments of Colombia
+Time=874316212
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=colombia.dom
+DomainInfo=colombia.dom;Byte;class;33;;
+Type=Map
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapVirtual
+
+[IlwisObjectVirtual]
+Expression=MapRasterizePolygon(colombia.mpa,colombia.grf)
+DefOnlyPossible=No
+
+[ObjectDependency]
+NrDepObjects=2
+Object0=colombia.mpa
+Object1=colombia.grf
+
+[MapVirtual]
+Expression=MapRasterizePolygon(colombia.mpa,colombia.grf)
+Type=MapFromPolygonMap
+
+[MapFromPolygonMap]
+PolygonMap=colombia.mpa
+Type=MapRasterizePolygon
+
+[MapStore]
+StoreTime=874316212
+Data=colombia.mp#
+Structure=Line
+StartOffset=0
+RowLength=350
+Type=Byte

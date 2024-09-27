@@ -1,0 +1,15 @@
+[Ilwis]
+Description=Colombia (using a local coordinate system)
+Time=873390930
+Type=CoordSystem
+
+[Domain]
+Type=DomainCoord
+
+[CoordSystem]
+CoordBounds=0 0 1600000 2500000
+Width=27
+Decimals=2
+UnitSize=1.000000
+Ellipsoid=Sphere
+Sphere Radius=0.000000

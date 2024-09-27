@@ -1,0 +1,37 @@
+[Col:Color]
+Description=Color
+Time=873379046
+Domain=Color
+DomainInfo=color.dom;Long;color;0;;
+ReadOnly=No
+OwnedByTable=Yes
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+
+[Table]
+Description=Representation Class "rivers"
+Time=873379046
+Domain=rivers.dom
+DomainInfo=rivers.dom;Byte;class;2;;
+Columns=1
+Records=2
+Type=TableStore
+
+[TableStore]
+Data=rivers.rp#
+Col0=Color
+Type=TableBinary
+StoreTime=873379046
+
+[Ilwis]
+Description=Representation Class "rivers"
+Time=873388308
+Type=Representation
+
+[Representation]
+Domain=rivers.dom
+DomainInfo=rivers.dom;Byte;class;2;;
+BoundaryColor=0
+BoundaryWidth=1
+Type=RepresentationClass

@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Inundation hazard
+Time=695922694
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=inundat.dom
+Type=Map
+DomainInfo=inundat.dom;Byte;class;14;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=inundat.mp#
+Type=Byte
+StoreTime=695922694
+Structure=Line
+StartOffset=0
+RowLength=350

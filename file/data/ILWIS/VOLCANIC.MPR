@@ -1,0 +1,26 @@
+[Ilwis]
+Description=Regions with volcanic hazards
+Time=695591640
+DataReadOnly=no
+PropertiesReadOnly=no
+Type=BaseMap
+
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=volcanic.dom
+Type=Map
+DomainInfo=volcanic.dom;Byte;class;2;;
+
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapStore
+
+[MapStore]
+Data=volcanic.mp#
+Type=Byte
+Structure=Line
+StartOffset=0
+RowLength=350
+StoreTime=695591640

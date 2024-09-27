@@ -1,0 +1,25 @@
+[Ilwis]
+Description=Georeference of the map of Colombia
+Time=873392628
+Type=GeoRef
+
+[GeoRef]
+CoordSystem=colombia.csy
+Lines=480
+Columns=350
+Type=GeoRefCorners
+
+[GeoRefSmpl]
+a11=0.000238
+a12=0.000000
+a21=0.000000
+a22=-0.000238
+b1=-15.318943
+b2=503.319039
+
+[GeoRefCorners]
+CornersOfCorners=Yes
+MinX=64314.000000
+MinY=97901.000000
+MaxX=1533730.000000
+MaxY=2113099.000000
