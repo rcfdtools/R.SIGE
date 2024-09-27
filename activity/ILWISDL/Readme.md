@@ -19,12 +19,12 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general
+## 1. Instalación y descarga de paquete de datos y guía de desarrollo
 
 1. Desde el enlace https://www.itc.nl/ilwis/download/, descargue e instale ILWIS 3.3 Academic y el paquete de actualización a la versión 3.31.
 
 <div align="center"><img src="graph/Chrome_ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
-<div align="center"><img src="graph/Chrome_ILWIS_2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_ILWIS_2.png" alt="R.SIGE" width="60%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Chrome_ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -33,7 +33,11 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 <div align="center"><img src="graph/Chrome_ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/Windows_ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. 
+
+## 2. Visualización y descripción de objetos
+
+
+
 
 
 
