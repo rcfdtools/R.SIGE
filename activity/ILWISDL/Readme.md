@@ -19,7 +19,7 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Instalación y descarga de paquete de datos y guía de desarrollo
+## 1. Instalación, descarga de paquete de datos y guía de desarrollo
 
 1. Desde el enlace https://www.itc.nl/ilwis/download/, descargue e instale ILWIS 3.3 Academic y el paquete de actualización a la versión 3.31.
 
