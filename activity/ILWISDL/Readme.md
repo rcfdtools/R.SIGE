@@ -67,6 +67,20 @@ Los datos de entrada incluyen las siguientes grillas y capa vectorial:
 <div align="center"><img src="graph/ILWIS_2.png" alt="R.SIGE" width="40%" border="0" /></div>
 <div align="center"><img src="graph/ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Como pudo observar, los elementos en ILWIS pueden tener asociados diferentes elementos, tales como:
+
+<div align="center">
+
+| Extensión | Descripción de archivo                     |
+|-----------|--------------------------------------------|
+| .dom      | Clase de dominio o descriptores de objetos |
+| .csy      | Sistema de proyección de coordenadas       |
+| .grf      | Límite espacial o coordenadas de esquinas  |
+| .mpa      | Capa vectorial                             |
+| .mpr      | Grilla ráster                              |
+| .rpr      | Paleta o estilos de color                  |
+
+</div>
 
 
 
