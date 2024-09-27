@@ -44,21 +44,21 @@ Los datos de entrada incluyen las siguientes grillas y capa vectorial:
 
 <div align="center">
 
-| Mapa / Capa   | Descripción                                                          |
-|---------------|----------------------------------------------------------------------|
-| Colombia.mpr  | Departamentos de Colombia                                            |
-| Landslid.mpr  | Regiones con problemas severos de deslizamientos                     |
-| Volcanic.mpr  | Regiones con amenazas volcánicas                                     |
-| Seismic.mpr   | Regiones con amenazas sísmicas                                       |
+| Mapa / Capa   | Descripción                                                           |
+|---------------|-----------------------------------------------------------------------|
+| Colombia.mpr  | Departamentos de Colombia                                             |
+| Landslid.mpr  | Regiones con problemas severos de deslizamientos                      |
+| Volcanic.mpr  | Regiones con amenazas volcánicas                                      |
+| Seismic.mpr   | Regiones con amenazas sísmicas                                        |
 | Tsunami.mpr   | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
-| Inundat.mpr   | Regiones con amenazas por inundación                                 |
-| Rivers.mpr    | Regiones con actividad torrencial en ríos                            |
-| Beach.mpr     | Regiones con erosión en playas y/o acumulación de sedimentos         |
-| Industry.mpr  | Principales regiones industriales                                    |
-| Infraseg.mpr  | Localización de infraestructura principal                            |
-| Concentr.mpr  | Localización de zonas con concentración de actividades económicas    |
-| Topograp.mpr  | Regiones topográficas de Colombia                                    |
-| Colombia.mpa  | Límites de departamentos de Colombia en formato vectorial            |
+| Inundat.mpr   | Regiones con amenazas por inundación                                  |
+| Rivers.mpr    | Regiones con actividad torrencial en ríos                             |
+| Beach.mpr     | Regiones con erosión en playas y/o acumulación de sedimentos          |
+| Industry.mpr  | Principales regiones industriales                                     |
+| Infraseg.mpr  | Localización de infraestructura principal                             |
+| Concentr.mpr  | Localización de zonas con concentración de actividades económicas     |
+| Topograp.mpr  | Regiones topográficas de Colombia                                     |
+| Colombia.mpa  | Límites de departamentos de Colombia en formato vectorial             |
 
 </div>
 
@@ -81,6 +81,47 @@ Como pudo observar, los elementos en ILWIS pueden tener asociados diferentes ele
 | .rpr      | Paleta o estilos de color                  |
 
 </div>
+
+3. Visualice cada uno de los mapas disponibles y describa su contenido, consulte cada una de las tablas de dominio.
+
+Mapa _Landslid.mpr_: Regiones con problemas severos de deslizamientos
+<div align="center"><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Volcanic.mpr_: Regiones con amenazas volcánicas
+<div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Seismic.mpr_: Regiones con amenazas sísmicas
+<div align="center"><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Tsunami.mpr_: Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos
+<div align="center"><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Inundat.mpr_: Regiones con amenazas por inundación
+<div align="center"><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Rivers.mpr_: Regiones con actividad torrencial en ríos
+<div align="center"><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+> En cuencas de pendientes fuertes existe la tendencia a la generación de crecientes en los ríos en tiempos relativamente cortos, estas cuencas se conocen como torrenciales, igual que los ríos que las drenan.[^1]
+
+Mapa _Beach.mpr_: Regiones con erosión en playas y/o acumulación de sedimentos
+<div align="center"><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Industry.mpr_: Principales regiones industriales  
+<div align="center"><img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Infraseg.mpr_: Localización de infraestructura principal    
+<div align="center"><img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Concentr.mpr_: Localización de zonas con concentración de actividades económicas    
+<div align="center"><img src="graph/ILWIS_13.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Mapa _Topograp.mpr_: Regiones topográficas de Colombia    
+<div align="center"><img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la opción Pixel Info, disponible en en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes.
+
+
 
 
 
@@ -134,4 +175,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
 |---------------------|-------------------|---------------------------------------------------------------------------|---------------|
 
-[^1]: 
+[^1]: https://www.cvc.gov.co/sites/default/files/Planes_y_Programas/Planes_de_Ordenacion_y_Manejo_de_Cuencas_Hidrografica/La%20Vieja%20-%20POMCA%20en%20Ajuste/Fase%20Diagnostico/7_CapituloI_Diagnostico_Morfometria.pdf

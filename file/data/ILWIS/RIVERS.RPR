@@ -35,3 +35,5 @@ DomainInfo=rivers.dom;Byte;class;2;;
 BoundaryColor=0
 BoundaryWidth=1
 Type=RepresentationClass
+[DomainClass]
+DrawMode=0
