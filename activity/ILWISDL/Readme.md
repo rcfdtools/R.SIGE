@@ -108,25 +108,13 @@ Como pudo observar, los elementos en ILWIS pueden tener asociados diferentes ele
 
 <div align="center">Mapa Topograp.mpr: Regiones topográficas de Colombia<br><img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes. Para ello, abra el mapa de Colombia y luego arrastre los mapas _Landslid_, _Volcanic_, _Tsunami_, _Inundat_, _Rivers_, _Beach_ y _Topograp_ a la misma ventana estableciendo transparencias en 50%.
+4. Utilizando la opción _Pixel Info_, disponible en panel lateral *Operation-Tre*e, visualice para todos los mapas, los valores representados en varias localizaciones diferentes. Para ello, abra el mapa de Colombia y luego arrastre los mapas _Landslid_, _Volcanic_, _Tsunami_, _Inundat_, _Rivers_, _Beach_ y _Topograp_ a la misma ventana estableciendo transparencias en 50%.
 
 <div align="center"><img src="graph/ILWIS_15.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+En la ventana Pixel Information, agregue desde el menú _File / Add Map_ los diferentes mapas requeridos y luego localice el puntero del mouse en diferentes localizaciones.
 
-
-
-## Elementos requeridos en diccionario de datos
-
-Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
-
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-
-> :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
+<div align="center"><img src="graph/ILWIS_16.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Actividades de proyecto :triangular_ruler:
