@@ -11,6 +11,7 @@ CoordBounds=64314 97901.000000000044 1533730 2113099
 Domain=tsunami.dom
 Type=Map
 DomainInfo=tsunami.dom;Byte;class;2;;
+AttributeTable=tsunami.tbt
 
 [Map]
 GeoRef=colombia.grf

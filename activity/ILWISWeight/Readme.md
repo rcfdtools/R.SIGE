@@ -106,9 +106,15 @@ Una vez creado el campo, rellene los valores de los pesos con los siguientes val
 
 <div align="center"><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Desde las propiedades de cada mapa (clic derecho sobre cada mapa o grilla con extensión .mpr), asocie la tabla de pesos correspondiente.
+3. Desde las propiedades de cada mapa (clic derecho sobre cada mapa o grilla con extensión .mpr), asocie la tabla de pesos correspondiente. Asocie los 5 mapas con tablas de pesos. 
 
 <div align="center"><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Abra cada mapa y verifique que la tabla de pesos se encuentre asociada y sea visible.
+
+<div align="center"><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
