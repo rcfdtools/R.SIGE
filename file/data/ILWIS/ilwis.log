@@ -32,3 +32,10 @@
 10:42:14 a. m. viernes, 27 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\COLOMBIA'.mpa
 10:46:31 a. m. viernes, 27 de septiembre de 2024  pixelinfo
 10:47:45 a. m. viernes, 27 de septiembre de 2024  pixelinfo
+10:16:32 a. m. sábado, 28 de septiembre de 2024  create tbl
+10:39:47 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\seismic'.tbt
+10:46:57 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\volcanic'.tbt
+10:47:54 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\landslid'.tbt
+10:48:35 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\tsunami'.tbt
+10:49:32 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\beach'.tbt
+10:51:19 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\BEACH'.mpr

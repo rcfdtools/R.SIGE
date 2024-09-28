@@ -22,32 +22,95 @@ Para los mapas Seismic, Volcanic, Landslid, Tsunami y Beach, cree tablas con los
 * [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de tablas de pesos
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+Para los mapas Seismic, Volcanic, Landslid, Tsunami y Beach, cree tablas con los valores de los pesos que serán asignados a cada clase o valor. Utilice los valores de referencia indicados en el numeral 1.2 de la guía de desarrollo y asocie cada mapa con su tabla correspondiente.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+1. En ILWIS, seleccione la opción de menú _File / Create / Table_, defina como nombre _seismic_, seleccione el dominio _SEISMIC_ y de clic en el botón _OK_.
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Asigne los pesos creando una columna nueva desde el menú _Columns / Add Column_, nombre como _Weight_, seleccione el Domain _Value_, defina el rango de valores entre 0 y 10 con precisión en 1.0 y de clic en _OK_:
+
+<div align="center"><img src="graph/ILWIS_2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Una vez creado el campo, rellene los valores de los pesos con los siguientes valores:
+
+<div align="center">
+
+| Legend Seismic          | Weight |
+|-------------------------|:------:|
+| High seismic hazard     |   10   |
+| Moderate seismic hazard |   5    |
+| Low seismic hazard      |   0    |
+
+</div>
+
+> Tenga en cuenca que existen múltiples factores que definen el grado de amenaza dependiendo de la influencia de un mapa con respecto a los demás. Los pesos utilizados pueden ser subjetivos dependiendo del enfoque de análisis que se pretenda realizar, p. ej., si el enfoque de análisis es mayoritariamente, los valores de los pesos pueden ser entre 0 y 100, sí en enfoque es distributivo, se pueden utilizar pesos similares en las variables utilizando valores entre 0 y 10.
+
+<div align="center"><img src="graph/ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Repita el procedimiento anterior para las amenazas _Volcanic_, _Landslid_, _Tsunami_ y _Beach_ utilizando los siguientes valores:
+
+<div align="center">
+
+| Legend **Volcanic** | Weight |
+|---------------------|:------:|
+| No Volcanic hazard  |   0    |
+| Volcanic hazard     |   10   |
+
+</div>
+
+<div align="center"><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center">
+
+| Legend **Landslid**     | Weight |
+|-------------------------|:------:|
+| Narino                  |   2    |
+| Region Huila            |   2    |
+| Valle de Cauca          |   3    |
+| Zona Cafetera           |   4    |
+| Manizales y alrededores |   4    |
+| Valle de Aburra         |   4    |
+| Cundinamarca            |   3    |
+| Boyaca and Santander    |   2    |
+| Bucaramanga             |   2    |
+| No landslide hazard     |   0    |
+
+</div>
+
+<div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center">
+
+| Legend **Tsunami** | Weight |
+|--------------------|:------:|
+| Tsunami hazard     |   10   |
+| No tsunami hazard  |   0    |
+
+</div>
+
+<div align="center"><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+<div align="center">
+
+| Legend **Beach**           | Weight |
+|----------------------------|:------:|
+| Accumulation               |   0    |
+| Accumulation and Erosion   |   1    |
+| Erosion                    |   2    |
+| No accumulation or erosion |   0    |
+
+</div>
+
+<div align="center"><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Desde las propiedades de cada mapa (clic derecho sobre cada mapa o grilla con extensión .mpr), asocie la tabla de pesos correspondiente.
+
+<div align="center"><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
-
-
-
-## 2. Análisis usando software libre - QGIS
-
-Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
-
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
-
-Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
-
-[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
-[:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
 
 
 ## Elementos requeridos en diccionario de datos
