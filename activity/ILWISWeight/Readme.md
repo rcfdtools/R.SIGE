@@ -114,22 +114,26 @@ Abra cada mapa y verifique que la tabla de pesos se encuentre asociada y sea vis
 
 <div align="center"><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> La creación de los mapas de pesos correspondientes a los mapas _Inundat_, _River_ y _Topograf_ se realiza mediante un procedimiento independiente, toda vez que estos mapas únicamente serán evaluados a partir de un único peso.
+
+4. Para la creación de los mapas de pesos, ejecute la opción de menú _Operations / Raster Operations / Attibute Map_. Seleccione el mapa ráster _Seismic_, la tabla de atributos _seismic_ y el atributo de peso Weight, asigne como nombre de mapa _Wseismic_ y en la descripción indique _Renumbered map Seismic with weights_ y de clic en _Show_ y _OK_.
+
+<div align="center"><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la ventana de visualización, seleccione el tipo de representación _pseudo_ y de clic en _OK_.
+
+<div align="center"><img src="graph/ILWIS_11.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+En la visualización podrá observar que al dar clic sobre el mapa en cualquier localización, ya no es visible el nombre de la clase sino el valor de peso asignado.
+
+<div align="center"><img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
 
 
-## Elementos requeridos en diccionario de datos
 
-Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-
-> :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
 
 
