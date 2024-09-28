@@ -141,9 +141,12 @@ Repita el procedimiento anterior para los mapas _Beach_, _Landslid_, _tsunami_ y
 Para los mapas _Inundat_, _River_, _Topograp_ y utilizando las siguientes expresiones desde la línea de comandos, cree y visualice los mapas de pesos:
 
 Expresiones:  
-`Winundat=iff(INUNDAT="No inundation hazard",0,5)`
-`Wriver=iff(RIVERS="No river",0,4)`
-`Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)`
+`Winundat=iff(INUNDAT="No inundation hazard",0,5)`  
+`Wriver=iff(RIVERS="No river",0,4)`  
+`Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)`  
+
+
+
 
 
 
