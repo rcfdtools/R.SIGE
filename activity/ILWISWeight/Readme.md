@@ -116,7 +116,12 @@ Abra cada mapa y verifique que la tabla de pesos se encuentre asociada y sea vis
 
 > La creación de los mapas de pesos correspondientes a los mapas _Inundat_, _River_ y _Topograf_ se realiza mediante un procedimiento independiente, toda vez que estos mapas únicamente serán evaluados a partir de un único peso.
 
-4. Para la creación de los mapas de pesos, ejecute la opción de menú _Operations / Raster Operations / Attibute Map_. Seleccione el mapa ráster _Seismic_, la tabla de atributos _seismic_ y el atributo de peso Weight, asigne como nombre de mapa _Wseismic_ y en la descripción indique _Renumbered map Seismic with weights_ y de clic en _Show_ y _OK_.
+
+## 2. Creación de mapas de pesos con tablas asociadas
+
+Utilizando la herramienta Operation-Tree/Raster Operations/Attribute Map of Raster Map, cree y visualice los mapas de pesos. Nombre los mapas usando el nombre original y agregando el prefijo W
+
+Para la creación de los mapas de pesos, ejecute la opción de menú _Operations / Raster Operations / Attibute Map_. Seleccione el mapa ráster _Seismic_, la tabla de atributos _seismic_ y el atributo de peso Weight, asigne como nombre de mapa _Wseismic_ y en la descripción indique _Renumbered map Seismic with weights_ y de clic en _Show_ y _OK_.
 
 <div align="center"><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -130,8 +135,15 @@ En la visualización podrá observar que al dar clic sobre el mapa en cualquier 
 
 Repita el procedimiento anterior para los mapas _Beach_, _Landslid_, _tsunami_ y _volcanic_ creando los mapas de pesos _Wlandsli_, _Wvolcani_, _Wtsunami_ y _Wbeach_ e ingresando descripciones como _Renumbered map xxxxxx with weights_.
 
-5. 
 
+## 3. Creación de mapas de pesos sin tablas asociadas
+
+Para los mapas _Inundat_, _River_, _Topograp_ y utilizando las siguientes expresiones desde la línea de comandos, cree y visualice los mapas de pesos:
+
+Expresiones:  
+`Winundat=iff(INUNDAT="No inundation hazard",0,5)`
+`Wriver=iff(RIVERS="No river",0,4)`
+`Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)`
 
 
 
