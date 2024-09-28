@@ -1,0 +1,46 @@
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=0:10:offset=-1
+Type=Map
+Proximity=7347.080000
+MinMax=0:10
+Perc1=0:10
+[Ilwis]
+Description=Renumbered map Tsunami with weights
+Time=1727540030
+Version=3.1
+Class=Dependent Raster Map
+Type=BaseMap
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapVirtual
+[IlwisObjectVirtual]
+Expression=TSUNAMI.Weight
+DefOnlyPossible=Yes
+[ObjectDependency]
+NrDepObjects=2
+Object0=TSUNAMI.mpr
+Object1=Column tsunami.Weight
+[MapVirtual]
+Expression=TSUNAMI.Weight
+Type=MapFromMap
+[MapFromMap]
+Map=TSUNAMI.mpr
+Type=MapAttribute
+[MapAttribute]
+AttribTable=tsunami.tbt
+AttribColumn=Weight
+[MapStore]
+StoreTime=1727540030
+Data=Wtsunami.mp#
+Structure=Line
+StartOffset=0
+RowLength=350
+PixelInterLeaved=No
+SwapBytes=No
+Type=Byte
+UseAs=No

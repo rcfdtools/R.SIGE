@@ -128,9 +128,9 @@ En la visualización podrá observar que al dar clic sobre el mapa en cualquier 
 
 <div align="center"><img src="graph/ILWIS_12.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Repita el procedimiento anterior para los mapas _Beach_, _Landslid_, _tsunami_ y _volcanic_ creando los mapas de pesos _Wlandsli_, _Wvolcani_, _Wtsunami_ y _Wbeach_ e ingresando descripciones como _Renumbered map xxxxxx with weights_.
 
-
-
+5. 
 
 
 

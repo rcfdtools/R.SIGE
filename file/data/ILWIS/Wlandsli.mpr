@@ -1,0 +1,46 @@
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=0:10:offset=-1
+Type=Map
+Proximity=7347.080000
+MinMax=0:4
+Perc1=0:4
+[Ilwis]
+Description=Renumbered map Landslid with weights
+Time=1727539942
+Version=3.1
+Class=Dependent Raster Map
+Type=BaseMap
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapVirtual
+[IlwisObjectVirtual]
+Expression=LANDSLID.Weight
+DefOnlyPossible=Yes
+[ObjectDependency]
+NrDepObjects=2
+Object0=LANDSLID.mpr
+Object1=Column landslid.Weight
+[MapVirtual]
+Expression=LANDSLID.Weight
+Type=MapFromMap
+[MapFromMap]
+Map=LANDSLID.mpr
+Type=MapAttribute
+[MapAttribute]
+AttribTable=landslid.tbt
+AttribColumn=Weight
+[MapStore]
+StoreTime=1727539942
+Data=Wlandsli.mp#
+Structure=Line
+StartOffset=0
+RowLength=350
+PixelInterLeaved=No
+SwapBytes=No
+Type=Byte
+UseAs=No
