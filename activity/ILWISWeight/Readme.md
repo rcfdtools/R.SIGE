@@ -3,7 +3,7 @@ Keywords: `dem` `agreedem`
 
 Para los mapas Seismic, Volcanic, Landslid, Tsunami y Beach, cree tablas con los valores de los pesos que serán asignados a cada clase o valor. Utilice los valores de referencia indicados en el numeral 1.2 de la guía de desarrollo y asocie cada mapa con su tabla correspondiente. Utilizando la herramienta Operation-Tree/Raster Operations/Attribute Map of Raster Map, cree y visualice los mapas de pesos. Nombre los mapas usando el nombre original y agregando el prefijo W. Para los mapas Inundat, River, Topograp y utilizando expresiones desde la línea de comandos, genere y visualice los mapas de pesos. 
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ILWISWeight.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
