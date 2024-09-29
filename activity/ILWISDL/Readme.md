@@ -136,8 +136,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://www.itc.nl/ilwis/
 * https://www.itc.nl/ilwis/users-guide/
 * https://www.itc.nl/ilwis/applications-guide/
+* [NSR-BIOSIG](https://storymaps.arcgis.com/stories/d5bc4d9aa6a640908379acfee207d46e) Visor geográfico que relaciona el lugar con factores que inciden en la toma de decisiones para la formulación de proyectos arquitectónicos.
+* https://www.dlubal.com/es/zonas-de-cargas-para-nieve-viento-y-sismos/terremoto-nsr-a.html
 
-
+    
 ## Control de versiones
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
