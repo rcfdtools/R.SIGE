@@ -34,19 +34,19 @@ Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid
 <div align="center"><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-
-
-
-
+3. Para analizar el mapa de resultados, reclasificaremos los resultados en 5 clases utilizando los valores descritos en la siguiente tabla:
 
 
 <div align="center">
 
-| Legend Seismic          | Weight |
-|-------------------------|:------:|
-| High seismic hazard     |   10   |
-| Moderate seismic hazard |   5    |
-| Low seismic hazard      |   0    |
+| Boundary  | Class                 | Color       | 
+|:---------:|-----------------------|-------------|
+|     5     | Very low hazard       | ForestGreen | 
+|    10     | Low hazard            | LawnGreen   | 
+|    15     | Moderately low hazard | Yellow      | 
+|    20     | Moderate hazard       | SandyBrown  | 
+|    25     | High hazard           | Orange      | 
+|    100    | Very high hazard      | OrangeRed   | 
 
 </div>
 
