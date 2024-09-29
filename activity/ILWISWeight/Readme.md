@@ -141,14 +141,22 @@ Repita el procedimiento anterior para los mapas _Beach_, _Landslid_, _tsunami_ y
 Para los mapas _Inundat_, _River_, _Topograp_ y utilizando las siguientes expresiones desde la línea de comandos, cree y visualice los mapas de pesos:
 
 Expresiones:  
-`Winundat=iff(INUNDAT="No inundation hazard",0,5)`  
-`Wriver=iff(RIVERS="No river",0,4)`  
-`Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)`  
+* `Winundat=iff(INUNDAT="No inundation hazard",0,5)`  
+* `Wriver=iff(RIVERS="No river",0,4)`  
+* `Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)`  
 
+Para el mapa de pesos _Winundat_, seleccione el dominio _Value_ con rangos de valores de 0 a 5 y precisión en 1.0, de clic en _OK_ y luego en _Show_. 
 
+<div align="center"><img src="graph/ILWIS_13.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ILWIS_14.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Repita el procedimiento para los mapas _Wriver_ y _Wtopogra_.
 
+<div align="center"><img src="graph/ILWIS_15.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Utilizando la herramienta _Pixel Information_, visualice los valores asignados a los mapas de pesos en algunas localizaciones del mapa.
+
+<div align="center"><img src="graph/ILWIS_16.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
