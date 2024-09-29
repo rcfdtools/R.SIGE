@@ -9,6 +9,7 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 ## Objetivos
 
 * Descargar y visualizar datos de amenazas naturales de Colombia. 
+* Identificar los valores obtenidos en diferentes localizaciones.
 
 
 ## Requerimientos

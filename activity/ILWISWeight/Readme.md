@@ -8,7 +8,8 @@ Para los mapas Seismic, Volcanic, Landslid, Tsunami y Beach, cree tablas con los
 
 ## Objetivos
 
-* 
+* Crear y visualizar mapas de pesos para diferentes amenazas.
+* Identificar los valores obtenidos en diferentes localizaciones. 
 
 
 ## Requerimientos
