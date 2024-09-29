@@ -34,8 +34,7 @@ Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid
 <div align="center"><img src="graph/ILWIS_4.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ILWIS_5.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Para analizar el mapa de resultados, reclasificaremos los resultados en 5 clases utilizando los valores descritos en la siguiente tabla:
-
+3. Para analizar el mapa de resultados, reclasificaremos los resultados en 6 clases utilizando los valores descritos en la siguiente tabla:
 
 <div align="center">
 
@@ -49,6 +48,16 @@ Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid
 |    100    | Very high hazard      | OrangeRed   | 
 
 </div>
+
+4. Cree una nueva tabla de dominio desde el menú _File / Create / Domain_, nombre como _Hazclas_ y seleccione las opciones _Class_ y _Group_. De clic en `OK`.
+
+<div align="center"><img src="graph/ILWIS_6.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la tabla de dominio, seleccione la opción _Edit / Add Item_ y cree los valores límite y etiquetas presentados en la tabla anterior.
+
+<div align="center"><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. 
 
 
 
