@@ -39,3 +39,58 @@
 10:48:35 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\tsunami'.tbt
 10:49:32 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\beach'.tbt
 10:51:19 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\BEACH'.mpr
+10:53:50 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\BEACH'.mpr
+10:55:06 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\LANDSLID'.mpr
+10:55:12 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\LANDSLID'.mpr
+10:55:21 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\SEISMIC'.mpr
+10:55:28 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\SEISMIC'.mpr
+10:55:45 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\TSUNAMI'.mpr
+10:55:50 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\TSUNAMI'.mpr
+10:56:00 a. m. sábado, 28 de septiembre de 2024  prop 'D:\R.SIGE\file\data\ILWIS\VOLCANIC'.mpr
+10:56:58 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\SEISMIC'.mpr
+11:00:49 a. m. sábado, 28 de septiembre de 2024  attribras
+11:04:27 a. m. sábado, 28 de septiembre de 2024  Wseismic.mpr{dom=value;vr=0:10} = MapAttribute(SEISMIC,Weight)
+11:04:27 a. m. sábado, 28 de septiembre de 2024  show Wseismic.mpr
+11:07:17 a. m. sábado, 28 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\Wseismic'.mpr
+11:10:01 a. m. sábado, 28 de septiembre de 2024  attribras
+11:10:54 a. m. sábado, 28 de septiembre de 2024  Wbeach.mpr{dom=value;vr=0:2} = MapAttribute(BEACH,Weight)
+11:10:54 a. m. sábado, 28 de septiembre de 2024  show Wbeach.mpr
+11:11:43 a. m. sábado, 28 de septiembre de 2024  attribras
+11:12:23 a. m. sábado, 28 de septiembre de 2024  Wlandsli.mpr{dom=value;vr=0:10} = MapAttribute(LANDSLID,Weight)
+11:12:23 a. m. sábado, 28 de septiembre de 2024  show Wlandsli.mpr
+11:12:56 a. m. sábado, 28 de septiembre de 2024  attribras
+11:13:16 a. m. sábado, 28 de septiembre de 2024  Wvolcani.mpr{dom=value;vr=0:10} = MapAttribute(VOLCANIC,Weight)
+11:13:16 a. m. sábado, 28 de septiembre de 2024  show Wvolcani.mpr
+11:13:26 a. m. sábado, 28 de septiembre de 2024  attribras
+11:13:49 a. m. sábado, 28 de septiembre de 2024  Wtsunami.mpr{dom=value;vr=0:10} = MapAttribute(TSUNAMI,Weight)
+11:13:49 a. m. sábado, 28 de septiembre de 2024  show Wtsunami.mpr
+7:36:58 a. m. domingo, 29 de septiembre de 2024  Winundat=iff(INUNDAT="No inundation hazard",0,5)
+7:40:26 a. m. domingo, 29 de septiembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\Winundat'.mpr
+7:42:13 a. m. domingo, 29 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\Winundat'.mpr
+7:43:15 a. m. domingo, 29 de septiembre de 2024  Wriver=iff(RIVERS="No river",0,4)
+7:43:27 a. m. domingo, 29 de septiembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\Wriver'.mpr
+7:43:46 a. m. domingo, 29 de septiembre de 2024  Wtopogra=iff(TOPOGRAP="Altitude less than 1000m",0,2)
+7:43:49 a. m. domingo, 29 de septiembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\Wtopogra'.mpr
+7:44:08 a. m. domingo, 29 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\Wriver'.mpr
+7:45:22 a. m. domingo, 29 de septiembre de 2024  pixelinfo
+7:47:14 a. m. domingo, 29 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\Wseismic'.mpr
+8:20:46 a. m. domingo, 29 de septiembre de 2024  Hazard=Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra
+8:20:51 a. m. domingo, 29 de septiembre de 2024  Calc Error  Map 'Wlandslid' not found
+(ILWIS Error 4020)
+in: 'Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra'
+                                ^
+8:21:14 a. m. domingo, 29 de septiembre de 2024  Hazard=Wseismic+Wvolcani+Wlandsli+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra
+8:21:24 a. m. domingo, 29 de septiembre de 2024  Hazard=Wseismic+Wvolcani+Wlandsli+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra
+8:23:00 a. m. domingo, 29 de septiembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\Hazard'.mpr
+8:27:35 a. m. domingo, 29 de septiembre de 2024  histogram
+8:29:32 a. m. domingo, 29 de septiembre de 2024  Hazard.his = TableHistogram(Hazard)
+8:29:32 a. m. domingo, 29 de septiembre de 2024  show Hazard.his
+8:33:51 a. m. domingo, 29 de septiembre de 2024  prop Hazard.his
+8:38:29 a. m. domingo, 29 de septiembre de 2024  histogram
+8:38:32 a. m. domingo, 29 de septiembre de 2024  Hazard.his = TableHistogram(Hazard)
+8:38:32 a. m. domingo, 29 de septiembre de 2024  show Hazard.his
+8:40:54 a. m. domingo, 29 de septiembre de 2024  create dom
+8:48:02 a. m. domingo, 29 de septiembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\Hazclas'.dom
+8:55:42 a. m. domingo, 29 de septiembre de 2024  slicing
+8:56:29 a. m. domingo, 29 de septiembre de 2024  Hazclas.mpr{dom=Hazclas.dom} = MapSlicing(Hazard,Hazclas.dom)
+8:56:29 a. m. domingo, 29 de septiembre de 2024  show Hazclas.mpr

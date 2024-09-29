@@ -73,7 +73,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Realice las diferentes actividades desarrolladas en esta clase y visualice la información de los diferentes mapas de pesos en al menos 3 localizaciones diferentes.                                                                                                                                                                                                                                                                                 | 
+| Avance **P7** | Realice las diferentes actividades desarrolladas en esta clase e identifique la clase de amenaza en al menos 3 localizaciones diferentes.                                                                                                                                                                                                                                                                                                           | 
+| Avance **P7** | Utilizando los conceptos aprendidos, cree el mapa de vulnerabilidad descrito en el numeral _1.3 Create vulnerability map_ de la guía del caso de estudio de ILWIS. Incluya capturas de pantallas detalladas con los procesos y mapas obtenidos. Explique los resultados.                                                                                                                                                                            | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -92,15 +93,15 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.04.08 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.09.28 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.04.09 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.09.29 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../ILWISDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/42) | [Siguiente :arrow_forward:](../ILWISHazard/Readme.md) |
-|---------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------------------------------|
+| [:arrow_backward: Anterior](../ILWISWeight/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/43) | [Siguiente :arrow_forward:](../ILWISHazard/Readme.md) |
+|-------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------|
 
 [^1]: 
