@@ -1,0 +1,40 @@
+[Ilwis]
+Description=MapSlicing(Hazard,Hazclas)
+Time=1727618188
+Version=3.1
+Class=Dependent Raster Map
+Type=BaseMap
+[BaseMap]
+CoordSystem=colombia.csy
+CoordBounds=64314 97901.000000000044 1533730 2113099
+Domain=Hazclas.dom
+DomainInfo=Hazclas.dom;Byte;group;6;;
+Type=Map
+Proximity=7347.080000
+[Map]
+GeoRef=colombia.grf
+Size=480 350
+Type=MapVirtual
+[IlwisObjectVirtual]
+Expression=MapSlicing(Hazard,Hazclas)
+DefOnlyPossible=Yes
+[ObjectDependency]
+NrDepObjects=2
+Object0=Hazard.mpr
+Object1=Hazclas.dom
+[MapVirtual]
+Expression=MapSlicing(Hazard,Hazclas)
+Type=MapFromMap
+[MapFromMap]
+Map=Hazard.mpr
+Type=MapSlicing
+[MapStore]
+StoreTime=1727618188
+Data=Hazclas.mp#
+Structure=Line
+StartOffset=0
+RowLength=350
+PixelInterLeaved=No
+SwapBytes=No
+Type=Byte
+UseAs=No

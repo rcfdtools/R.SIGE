@@ -57,9 +57,14 @@ Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid
 
 <div align="center"><img src="graph/ILWIS_7.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. 
+6. Utilizando la herramienta _Operation-Tree / Image Processing / Slicin_, cree y visualice el mapa de clasificación para las 6 clases definidas. Nombrar como `Hazclas`.
 
+<div align="center"><img src="graph/ILWIS_8.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ILWIS_9.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Representar con los colores indicados en la tabla anterior.
+
+<div align="center"><img src="graph/ILWIS_10.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Actividades de proyecto :triangular_ruler:
