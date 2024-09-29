@@ -14,10 +14,9 @@ Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete 
 
 ## Requerimientos
 
-* [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
-* [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
-* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
+* [:toolbox:Herramienta](https://www.itc.nl/ilwis/): ILWIS 3.3 Academic.
+* [:closed_book:Guía](https://www.itc.nl/ilwis/users-guide/): Guía de desarrollo caso de estudio amenazas con ILWIS.
+* [:closed_book:Datos](https://www.itc.nl/ilwis/applications-guide/): Paquete de datos caso de estudio amenazas con ILWIS.
 
 
 ## 1. Instalación, descarga de paquete de datos y guía de desarrollo
