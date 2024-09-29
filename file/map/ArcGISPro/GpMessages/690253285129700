@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: domingo, 29 de septiembre de 2024 10:39:54 a. m.</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\CerroNegro. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\CerroNegro exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\CerroNegro. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Chiles. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Chiles exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Chiles. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Cumbal. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Cumbal exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Cumbal. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Curiquinga. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Curiquinga exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Curiquinga. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Galeras. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Galeras exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Galeras. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Huila. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Huila exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Huila. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Machin. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Machin exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Machin. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Purace. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Purace exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Purace. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Ruiz. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Ruiz exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Ruiz. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\SantaIsabel. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\SantaIsabel exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\SantaIsabel. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Sotara. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Sotara exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Sotara. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Tolima. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Amenaza\Tolima exists within geodatabase as D:\R.SIGE\file\data\SGC\AmenazaVolcanica\AmenazaVolcanica.gdb\Tolima. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="3">Succeeded at domingo, 29 de septiembre de 2024 10:40:01 a. m. (Elapsed Time: 6.22 seconds)</msg></messages>
