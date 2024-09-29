@@ -159,7 +159,6 @@ Utilizando la herramienta _Pixel Information_, visualice los valores asignados a
 <div align="center"><img src="graph/ILWIS_16.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## Actividades de proyecto :triangular_ruler:
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
