@@ -11,6 +11,7 @@ El Servicio Geológico Colombiano tiene como objeto realizar la investigación c
 * https://www2.sgc.gov.co/sgc/mapas/Paginas/Imagenes-de-amenazas-.aspx
 * https://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/
 * [Amenaza sísmica nacional - Colombia](https://www.colombiaenmapas.gov.co/#)
+* https://miig.sgc.gov.co/Paginas/PaginaBusquedaPredefnida.aspx
 
 
 ## Archivos
