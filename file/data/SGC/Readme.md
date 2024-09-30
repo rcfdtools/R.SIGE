@@ -14,7 +14,8 @@ El Servicio Geológico Colombiano tiene como objeto realizar la investigación c
 * https://miig.sgc.gov.co/Paginas/PaginaBusquedaPredefnida.aspx
 * [Amenaza Volcánica en Colombia](https://srvags.sgc.gov.co/arcgis/rest/services/Amenaza_Volcanica/Amenaza_Volcanica/MapServer)
 * Amenaza por movimientos en masa
-* Zonas amenaza Sísmica NSR-10
+* [Zonas amenaza Sísmica NSR-10](https://srvags.sgc.gov.co/arcgis/rest/services/Zonas_amenaza_Sismica_NR10/Zonas_Amenaza_NSR_10/MapServer)
+* Susceptibilidad a los deslizamientos. Año 2010
 
 
 ## Archivos
