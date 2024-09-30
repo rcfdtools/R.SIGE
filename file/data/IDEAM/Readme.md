@@ -8,6 +8,7 @@ Enlaces de interés:
 
 * [Susceptibilidad a los deslizamientos e inundaciones 2010](https://visualizador.ideam.gov.co/gisserver/services/Vulnerabilidad_Susceptibilidad_Ambiental/MapServer/WFSServer?request=GetCapabilities&service=WFS)
 * https://visualizador.ideam.gov.co/CatalogoObjetos/geo-open-data?theme=&group=&search=&page=23&size=9
+* https://www.ideam.gov.co/sala-de-prensa/informes/publicacion-jue-23032023-1200
 
 
 [^1]: https://es.wikipedia.org/wiki/Instituto_de_Hidrolog%C3%ADa,_Meteorolog%C3%ADa_y_Estudios_Ambientales
