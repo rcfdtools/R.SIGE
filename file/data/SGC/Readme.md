@@ -13,12 +13,14 @@ El Servicio Geológico Colombiano tiene como objeto realizar la investigación c
 * [Amenaza sísmica nacional - Colombia](https://www.colombiaenmapas.gov.co/#)
 * https://miig.sgc.gov.co/Paginas/PaginaBusquedaPredefnida.aspx
 * [Amenaza Volcánica en Colombia](https://srvags.sgc.gov.co/arcgis/rest/services/Amenaza_Volcanica/Amenaza_Volcanica/MapServer)
+* Amenaza por movimientos en masa
+* Zonas amenaza Sísmica NSR-10
 
 
 ## Archivos
 
-* SuscMM_2019web.zip: Suceptibilidad por movimientos ​en masa 2019.
-* AmeMM_2019web.zip: Amenaza por movimientos ​en masa 2019.
+* SuscMM_2019web.zip: Suceptibilidad por movimientos en masa 2019.
+* AmeMM_2019web.zip: Amenaza por movimientos en masa 2019.
 * Intensidad_Esperada_Raster.zip: Intensidad sísmica esperada 2019.
 * AmenazaSismicaNacionalGeodatabase.zip: Base de datos de amenaza sísmica nacional 2019.
 
