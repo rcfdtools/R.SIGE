@@ -1,0 +1,31 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.38.0-Grenoble">
+  <identifier>https://srvags.sgc.gov.co/arcgis/rest/services/Zonas_amenaza_Sismica_NR10/Zonas_Amenaza_NSR_10/MapServer/1</identifier>
+  <parentidentifier></parentidentifier>
+  <language></language>
+  <type>dataset</type>
+  <title>Zonas_amenaza</title>
+  <abstract></abstract>
+  <links>
+    <link name="Source" format="" url="https://srvags.sgc.gov.co/arcgis/rest/services/Zonas_amenaza_Sismica_NR10/Zonas_Amenaza_NSR_10/MapServer/1" description="" mimeType="" type="WWW:LINK" size=""/>
+  </links>
+  <dates/>
+  <fees></fees>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt></wkt>
+      <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+      <srsid>3529</srsid>
+      <srid>4686</srid>
+      <authid>EPSG:4686</authid>
+      <description>MAGNA-SIRGAS</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial crs="EPSG:4686" minz="nan" maxx="-66.87222199999999361" maxy="12.4645146440000012" maxz="nan" miny="-4.22416700000001999" dimensions="2" minx="-79.04100693200000194"/>
+  </extent>
+</qgis>
