@@ -33,7 +33,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | AmenazaV.shp<br>\file\data\SGC\AmenazaVolcanica                            | Mapa de amenazas volcánicas - SGC                                     |
 | ZonaAmenazaNSR10a.shp<br>\file\data\SGC\                                   | Zonas amenaza Sísmica NSR-10 - SGC                                    |
 | Tsunami.mpr                                                                | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
-| SusceptibilidadInundacion500K2010.shp                                      | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010   |
+| SusceptibilidadInundacion500K2010.shp<br>\file\data\IDEAM\Susceptibilidad  | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010   |
 | Rivers.mpr                                                                 | Regiones con actividad torrencial en ríos                             |
 | Beach.mpr                                                                  | Regiones con erosión en playas y/o acumulación de sedimentos          |
 | Topograp.mpr                                                               | Regiones topográficas de Colombia                                     |
