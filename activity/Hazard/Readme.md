@@ -42,7 +42,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div>
 
-<div align="center">Susceptibilidad a los deslizamientos 2010 (SusceptibilidadDeslizamientos2010.tif)<br>
+<div align="center">Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
 
 | Valor  | Nombre    |   R   |  G   |  B   | (W)Peso |
 |:------:|:----------|:-----:|:----:|:----:|:-------:|
