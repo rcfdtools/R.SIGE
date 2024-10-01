@@ -26,19 +26,19 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">
 
-| Mapa / Capa                                                               | Descripción                                                           |
-|---------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Colombia.shp                                                              | Departamentos de Colombia - IGAC                                      |
-| SusceptibilidadDeslizamientos2010.tif<br>\file\data\IDEAM\Susceptibilidad | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010               |
-| SusceptibilidadInundacion500K2010.shp<br>\file\data\IDEAM\Susceptibilidad | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010   |
-| AmenazaV.shp<br>\file\data\SGC\AmenazaVolcanica                           | Mapa de amenazas volcánicas - SGC                                     |
-| ZonaAmenazaNSR10a.shp<br>\file\data\SGC\                                  | Zonas amenaza Sísmica NSR-10 - SGC                                    |
-| SuscMM_100kReclass.tif<br>\file\data\SGC\SuscMM_2019web\                  | Mapa de susceptibilidad por movimientos en masa - SGC                 |
-| Tsunami.mpr                                                               | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
-| Rivers.mpr                                                                | Regiones con actividad torrencial en ríos                             |
-| Beach.mpr                                                                 | Regiones con erosión en playas y/o acumulación de sedimentos          |
-| Topograp.mpr                                                              | Regiones topográficas de Colombia                                     |
-| Colombia.mpa                                                              | Límites de departamentos de Colombia en formato vectorial             |
+| Mapa / Capa                                                                           | Descripción                                                           |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Colombia.shp                                                                          | Departamentos de Colombia - IGAC                                      |
+| SusceptibilidadDeslizamientos2010.tif<br><sub>\file\data\IDEAM\Susceptibilidad</sub>  | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010               |
+| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\Susceptibilidad</sub>  | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010   |
+| AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica</sub>                            | Mapa de amenazas volcánicas - SGC                                     |
+| ZonaAmenazaNSR10a.shp<br><sub>\file\data\SGC\</sub>                                   | Zonas amenaza Sísmica NSR-10 - SGC                                    |
+| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\SuscMM_2019web\</sub>                   | Mapa de susceptibilidad por movimientos en masa - SGC                 |
+| Tsunami.mpr                                                                           | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
+| Rivers.mpr                                                                            | Regiones con actividad torrencial en ríos                             |
+| Beach.mpr                                                                             | Regiones con erosión en playas y/o acumulación de sedimentos          |
+| Topograp.mpr                                                                          | Regiones topográficas de Colombia                                     |
+| Colombia.mpa                                                                          | Límites de departamentos de Colombia en formato vectorial             |
 
 </div>
 
