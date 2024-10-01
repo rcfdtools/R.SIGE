@@ -44,16 +44,16 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
 
-| Valor  | Nombre    |   R   |  G   |  B   | (W) Peso |
-|:------:|:----------|:-----:|:----:|:----:|:--------:|
-|   0    | Nula      |  225  | 225  | 225  |    0     |
-|   1    | Muy Baja  |  56   | 168  |  0   |    0     |
-|   2    | Baja      |  139  | 209  |  0   |    1     |
-|   3    | Media     |  255  | 255  |  0   |    5     |
-|   4    | Alta      |  255  | 128  |  0   |   7.5    |
-|   5    | Muy Alta  |  255  |  0   |  0   |    10    |
+| Valor  | Nombre    |   R   |  G   |  B   | WLandSlid |
+|:------:|:----------|:-----:|:----:|:----:|:---------:|
+|   0    | Nula      |  225  | 225  | 225  |     0     |
+|   1    | Muy Baja  |  56   | 168  |  0   |     0     |
+|   2    | Baja      |  139  | 209  |  0   |     1     |
+|   3    | Media     |  255  | 255  |  0   |     5     |
+|   4    | Alta      |  255  | 128  |  0   |    7.5    |
+|   5    | Muy Alta  |  255  |  0   |  0   |    10     |
 
-</div>
+</div><br>
 
 <div align="center">Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
 
@@ -61,7 +61,20 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 |:----------:|:-----------|:----------:|
 |     1      | Inundación |     5      |
 
+</div><br>
+
 </div>
+
+<div align="center">Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
+
+| Amenaza |  R  |  G  |  B   | WVolcanic |
+|:-------:|:---:|:---:|:----:|:---------:|
+|  Baja   | 255 | 255 |  0   |     1     |
+|  Media  | 255 | 128 |  0   |     5     |
+|  Alta   | 255 |  0  |  0   |    10     |
+
+</div><br>
+
 
 
 
