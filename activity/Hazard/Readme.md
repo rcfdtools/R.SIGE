@@ -42,7 +42,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div>
 
-<div align="center">Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
+<div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
 
 | Valor  | Nombre    |   R   |  G   |  B   | WLandSlid |
 |:------:|:----------|:-----:|:----:|:----:|:---------:|
@@ -55,7 +55,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-<div align="center">Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
+<div align="center">Pesos - Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
 
 | Simbologia | Nombre     |  WInundat  |
 |:----------:|:-----------|:----------:|
@@ -65,7 +65,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div>
 
-<div align="center">Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
+<div align="center">Pesos - Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
 
 | Amenaza |  R  |  G  |  B   | WVolcanic |
 |:-------:|:---:|:---:|:----:|:---------:|
