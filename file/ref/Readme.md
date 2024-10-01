@@ -92,3 +92,4 @@
 * https://colaboracion.dnp.gov.co/CDT/Programa%20Nacional%20del%20Servicio%20al%20Ciudadano/NORMATIVA%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf
 * [CAR - Ley de Páramos.](https://www.car.gov.co/uploads/files/61e96f6886709.pdf)
 * [The ArcGIS Imagery Book (the-arcgis-imagery-book-companion-resource.pdf)](https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-imagery-book-companion-resource.pdf)
+* [ESRI - Identificar infraestructuras en riesgo por deslizamientos de tierra](https://learn.arcgis.com/es/projects/identify-infrastructure-at-risk-of-landslides/arcgis-pro/)

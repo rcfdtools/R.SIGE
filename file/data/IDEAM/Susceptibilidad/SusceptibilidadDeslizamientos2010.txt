@@ -1,0 +1,9 @@
+Susceptibilidad a los deslizamientos 2010
+| Valor | Nombre | R | G | B |
+|---|---|---|---|---|
+| 0 | Nula | 225 | 225 | 225 |
+| 1 | Muy Baja | 56 | 168 | 0 |
+| 2 | Baja | 139 | 209 | 0 |
+| 3 | Media | 255 | 255 | 0 |
+| 4 | Alta | 255 | 128 | 0 |
+| 5 | Muy Alta | 255 | 0 | 0 |
