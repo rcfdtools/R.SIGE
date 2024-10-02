@@ -122,11 +122,11 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 <div align="center">Pesos (ZonaAmenazaNSR10.shp)<br>
 
-| SeismicID |  Seismic   |  R  |  G  |  B   | WSeismic<br><sub>(peso)</sub> |
-|:---------:|:----------:|:---:|:---:|:----:|:-----------------------------:|
-|     3     |    Baja    | 56  | 168 |  0   |               0               |
-|     2     | Intermedia | 255 | 255 |  0   |               5               |
-|     1     |    Alta    | 255 |  0  |  0   |              10               |
+| SeismicID |  Seismic   | SeismicRGB  | WSeismic<br><sub>(peso)</sub>  |
+|:---------:|:----------:|:-----------:|:------------------------------:|
+|     3     |    Baja    | (56,168,0)  |               0                |
+|     2     | Intermedia | (255,255,0) |               5                |
+|     1     |    Alta    |  (255,0,0)  |               10               |
 
 </div><br>
 
