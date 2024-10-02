@@ -42,7 +42,10 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div>
 
-<div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.shp)<br>
+
+### 0.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
+
+<div align="center">Pesos (SusceptibilidadDeslizamientos2010.shp)<br>
 
 | LandSlid     |   LandSRGB    | WLandSlid<br><sub>(peso)</sub> |
 |:-------------|:-------------:|:------------------------------:|
@@ -57,25 +60,48 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 > El mapa original de susceptibilidad a deslizamientos - IDEAM ha sido convertido a polígonos multiparte.
 
-<div align="center">Pesos - Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
+
+### 0.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
+
+<div align="center">Pesos (SusceptibilidadInundacion500K2010.shp)<br>
 
 | Inundat        | WInundat<br><sub>(peso)</sub> |
-|:---------------|:------------------:|
-| 1 - Inundación |         5          |
+|:---------------|:-----------------------------:|
+| 1 - Inundación |               5               |
 
 </div><br>
 
-<div align="center">Pesos - Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
 
-| Amenaza |  R  |  G  |  B   | WVolcanic<br><sub>(peso)</sub> |
-|:-------:|:---:|:---:|:----:|:----------------:|
-|  Baja   | 255 | 255 |  0   |        1         |
-|  Media  | 255 | 128 |  0   |        5         |
-|  Alta   | 255 |  0  |  0   |        10        |
+### 0.3. Mapa de amenazas volcánicas - SGC
+
+<div align="center">Pesos (AmenazaVolcanicaZonas.shp)<br>
+
+| Volcanic |  VolcanRGB   | WVolcanic<br><sub>(peso)</sub> |
+|:---------|:------------:|:------------------------------:|
+| Baja     | (255,255,0)  |               1                |
+| Media    | (255,128,0)  |               5                |
+| Alta     |  (255,0,0)   |               10               |
 
 </div><br>
 
-<div align="center">Pesos - Zonas amenaza Sísmica NSR-10 - SGC<br>(ZonaAmenazaNSR10.shp)<br>
+> Utilizando la herramienta _Analysys Tools / Union_ se han unido los polígonos de cada volcán o nevado contenido en _AmenazaVolcanicaZonas.shp_ y se ha definido como valor final del peso en cada fracción, el mayor peso encontrado (para ejecutar este procedimiento, primero se deben crear capas independientes para cada nevado o volcán). 
+
+Script en Python  
+```
+def WVolcMax(WVolList):
+    return max(WVolList)
+```
+
+Llamado de función  
+```
+WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_12_13_14!,!WVolcanic_12_13_14_15!,!WVolcanic_12_13_14_15_16!,!WVolcanic_12_13_14_15_16_17!,!WVolcanic_12_13_14_15_16_17_18!,!WVolcanic_12_13_14_15_16_17_18_19!,!WVolcanic_12_13_14_15_16_17_18_19_20!,!WVolcanic_12_13_14_15_16_17_18_19_20_21!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22_23!))
+```
+
+
+
+### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
+
+<div align="center">Pesos (ZonaAmenazaNSR10.shp)<br>
 
 |  ID  |   Valor    |  R  |  G  |  B   | WSeismic<br><sub>(peso)</sub> |
 |:----:|:----------:|:---:|:---:|:----:|:---------------:|
@@ -85,7 +111,10 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-<div align="center">Pesos - Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC<br>(SuscMM_100kReclass.tif)<br>
+
+### 0.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
+
+<div align="center">Pesos (SuscMM_100kReclass.tif)<br>
 
 | Value | Nombre    |   R   |  G   |  B   | WMassMove<br><sub>(peso)</sub> |
 |:-----:|:----------|:-----:|:----:|:----:|:----------------:|
@@ -97,7 +126,12 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-<div align="center">Pesos - Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools <br>(TsunamiCota3menos.shp)<br>
+
+### 0.6. Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools
+
+A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
+
+<div align="center">Pesos (TsunamiCota3menos.shp)<br>
 
 | Value | TsunAmen   |  R   |  G   |  B   | WTsunami<br><sub>(peso)</sub> |
 |:-----:|:-----------|:----:|:----:|:----:|:---------------:|
@@ -109,7 +143,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-> A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
+
 
 
 
