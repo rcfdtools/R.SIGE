@@ -132,19 +132,19 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 ### 1.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
 
-<div align="center">Pesos (SuscMM_100kReclass.shp)<br>
+<div align="center">Pesos (SuscMM_500kReclass.shp)<br>
 
-| MassMoveID | MassMove |   MassMRGB   | WMassMove<br><sub>(peso)</sub> |
-|:----------:|:---------|:------------:|:------------------------------:|
-|     1      | Muy Baja |  (56,168,0)  |               0                |
-|     2      | Baja     | (139,209,0)  |               1                |
-|     3      | Media    | (255,255,0)  |               5                |
-|     4      | Alta     | (255,128,0)  |              7.5               |
-|     5      | Muy Alta |  (255,0,0)   |               10               |
+| MassMove     |   MassMRGB   | WMassMove<br><sub>(peso)</sub> |
+|:-------------|:------------:|:------------------------------:|
+| 1 - Muy Baja |  (56,168,0)  |               0                |
+| 2 - Baja     | (139,209,0)  |               1                |
+| 3 - Media    | (255,255,0)  |               5                |
+| 4 - Alta     | (255,128,0)  |              7.5               |
+| 5 - Muy Alta |  (255,0,0)   |               10               |
 
 </div><br>
 
-> El mapa original de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC ha sido convertido a polígonos multiparte.
+> Para simplificar el análisis presentado en esta actividad, el mapa original de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC a escala 1:100K ha sido reescalado por vecinos naturales a celdas de 250 metros y convertido a polígonos multiparte.
 
 <div align="center"><img src="graph/ArcGISPro_WMassMove.png" alt="R.SIGE" width="100%" border="0" /></div>
 
