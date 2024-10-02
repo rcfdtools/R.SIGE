@@ -45,7 +45,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 ### 1.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
 
-Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, contiene información geográfica que corresponde a la información indicativa tipo raster de la susceptibilidad del terreno a los movimientos en masa, generado a partir de información primaria de geomorfología, geología, suelos y cobertura de la tierra, a escala 1:500.000.
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a la información indicativa tipo raster de la susceptibilidad del terreno a los movimientos en masa, generado a partir de información primaria de geomorfología, geología, suelos y cobertura de la tierra, a escala 1:500.000 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co/).
 
 <div align="center">Pesos (SusceptibilidadDeslizamientos2010.shp)<br>
 
@@ -67,7 +67,7 @@ Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - I
 
 ### 1.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
 
-Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000.
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co/).
 
 > Tenga en cuenta que en este mapa del IDEAM no se han incluido las zonas susceptibles a inundación de los drenajes de la Orinoquía Colombiana ni las zonas inundables del pacífico por eventos sísmicos producidos por Tsunamis.
 
@@ -83,6 +83,8 @@ Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - I
 
 
 ### 1.3. Mapa de amenazas volcánicas - SGC
+
+Este mapa del Servicio Geológico Colombiano - SGC, contiene la zonificación de áreas vulnerables que pueden resultar afectadas en caso de la posible erupción de un volcán, y sirve de herramienta fundamental para la planificación en prevención de desastres, en ordenamiento territorial y en planes de inversión. Elaborado el 01-01-2017 (obtenido a partir de servicio rest de https://www.colombiaenmapas.gov.co/).
 
 <div align="center">Pesos (AmenazaVolcanicaZonasMax.shp)<br>
 
@@ -120,13 +122,15 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 <div align="center">Pesos (ZonaAmenazaNSR10.shp)<br>
 
-|  ID  |   Valor    |  R  |  G  |  B   | WSeismic<br><sub>(peso)</sub> |
-|:----:|:----------:|:---:|:---:|:----:|:---------------:|
-|  3   |    Baja    | 56  | 168 |  0   |        0        |
-|  2   | Intermedia | 255 | 255 |  0   |        5        |
-|  1   |    Alta    | 255 |  0  |  0   |       10        |
+| SeismicID |  Seismic   |  R  |  G  |  B   | WSeismic<br><sub>(peso)</sub> |
+|:---------:|:----------:|:---:|:---:|:----:|:-----------------------------:|
+|     3     |    Baja    | 56  | 168 |  0   |               0               |
+|     2     | Intermedia | 255 | 255 |  0   |               5               |
+|     1     |    Alta    | 255 |  0  |  0   |              10               |
 
 </div><br>
+
+<div align="center"><img src="graph/ArcGISPro_WSeismic.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 1.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
@@ -134,12 +138,12 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 <div align="center">Pesos (SuscMM_100kReclass.tif)<br>
 
 | Value | Nombre    |   R   |  G   |  B   | WMassMove<br><sub>(peso)</sub> |
-|:-----:|:----------|:-----:|:----:|:----:|:----------------:|
-|   1   | Muy Baja  |  56   | 168  |  0   |        0         |
-|   2   | Baja      |  139  | 209  |  0   |        1         |
-|   3   | Media     |  255  | 255  |  0   |        5         |
-|   4   | Alta      |  255  | 128  |  0   |       7.5        |
-|   5   | Muy Alta  |  255  |  0   |  0   |        10        |
+|:-----:|:----------|:-----:|:----:|:----:|:------------------------------:|
+|   1   | Muy Baja  |  56   | 168  |  0   |               0                |
+|   2   | Baja      |  139  | 209  |  0   |               1                |
+|   3   | Media     |  255  | 255  |  0   |               5                |
+|   4   | Alta      |  255  | 128  |  0   |              7.5               |
+|   5   | Muy Alta  |  255  |  0   |  0   |               10               |
 
 </div><br>
 
