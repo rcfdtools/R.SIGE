@@ -26,19 +26,19 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">
 
-| Mapa / Capa                                                            | Descripción                                                           |
-|------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Colombia.shp                                                           | Departamentos de Colombia - IGAC                                      |
-| SusceptibilidadDeslizamientos2010.tif<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010               |
-| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010   |
-| AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                     |
-| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                    |
-| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                  | Mapa de susceptibilidad por movimientos en masa - SGC                 |
-| Tsunami.mpr                                                            | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos |
-| Rivers.mpr                                                             | Regiones con actividad torrencial en ríos                             |
-| Beach.mpr                                                              | Regiones con erosión en playas y/o acumulación de sedimentos          |
-| Topograp.mpr                                                           | Regiones topográficas de Colombia                                     |
-| Colombia.mpa                                                           | Límites de departamentos de Colombia en formato vectorial             |
+| Mapa / Capa                                                            | Descripción                                                                    |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Colombia.shp                                                           | Departamentos de Colombia - IGAC                                               |
+| SusceptibilidadDeslizamientos2010.tif<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
+| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
+| AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                              |
+| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                             |
+| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                  | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
+| Tsunami.mpr                                                            | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos          |
+| Rivers.mpr                                                             | Regiones con actividad torrencial en ríos                                      |
+| Beach.mpr                                                              | Regiones con erosión en playas y/o acumulación de sedimentos                   |
+| Topograp.mpr                                                           | Regiones topográficas de Colombia                                              |
+| Colombia.mpa                                                           | Límites de departamentos de Colombia en formato vectorial                      |
 
 </div>
 
@@ -63,8 +63,6 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-</div>
-
 <div align="center">Pesos - Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
 
 | Amenaza |  R  |  G  |  B   | WVolcanic |
@@ -75,13 +73,25 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-<div align="center">Pesos - Zonas amenaza Sísmica NSR-10 - SGC<br>(ZonaAmenazaNSR10.sh)<br>
+<div align="center">Pesos - Zonas amenaza Sísmica NSR-10 - SGC<br>(ZonaAmenazaNSR10.shp)<br>
 
 |  ID  |   Valor    |  R  |  G  |  B   | WSeismic |
 |:----:|:----------:|:---:|:---:|:----:|:--------:|
 |  3   |    Baja    | 56  | 168 |  0   |    0     |
 |  2   | Intermedia | 255 | 255 |  0   |    5     |
 |  1   |    Alta    | 255 |  0  |  0   |    10    |
+
+</div><br>
+
+<div align="center">Pesos - Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC<br>(SuscMM_100kReclass.tif)<br>
+
+| Value | Nombre    |   R   |  G   |  B   | WMassMove |
+|:-----:|:----------|:-----:|:----:|:----:|:---------:|
+|   1   | Muy Baja  |  56   | 168  |  0   |     0     |
+|   2   | Baja      |  139  | 209  |  0   |     1     |
+|   3   | Media     |  255  | 255  |  0   |     5     |
+|   4   | Alta      |  255  | 128  |  0   |    7.5    |
+|   5   | Muy Alta  |  255  |  0   |  0   |    10     |
 
 </div><br>
 
@@ -147,6 +157,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Referencias
 
+* [Tsunami Coastal Assessment Tool (TsuCAT)](https://sift.pmel.noaa.gov/ComMIT/TsuCAT/software/)
 * 
 
 
