@@ -34,7 +34,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                              |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                             |
 | SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                  | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
-| TsunamiCota3menos.shp                                                  | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
+| TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>             | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
 | Rivers.mpr                                                             | Regiones con actividad torrencial en ríos                                      |
 | Beach.mpr                                                              | Regiones con erosión en playas y/o acumulación de sedimentos                   |
 | Topograp.mpr                                                           | Regiones topográficas de Colombia                                              |
