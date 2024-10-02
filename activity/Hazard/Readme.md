@@ -15,30 +15,27 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 * [:mortar_board:Actividad](../TopoBasic/Readme.md): Conceptos básicos de topografía, fotogrametría y fotointerpretación.
 * [:mortar_board:Actividad](../POTLayer/Readme.md): Inventario de información geo-espacial recopilada del POT y diccionario de datos.
-* [:notebook:Lectura](https://edu.gcfglobal.org/es/estadistica-basica/): Conocimientos básicos en estadística.
-* [:toolbox:Herramienta](https://www.microsoft.com/es/microsoft-365/excel?market=bz): Microsoft Excel 365.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
-* [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 
 
 ## 1. Capas requeridas y pesos
 
 <div align="center">
 
-| Mapa / Capa                                                                  | Descripción                                                                    |
-|------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                               |
-| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos escala 1:500K - IDEAM - 2010          |
-| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
-| AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                              |
-| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                             |
-| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                        | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
-| TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>                   | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
-| Rivers.mpr                                                                   | Regiones con actividad torrencial en ríos                                      |
-| Beach.mpr                                                                    | Regiones con erosión en playas y/o acumulación de sedimentos                   |
-| Topograp.mpr                                                                 | Regiones topográficas de Colombia                                              |
-| Colombia.mpa                                                                 | Límites de departamentos de Colombia en formato vectorial                      |
+| Mapa / Capa                                                                  | Descripción                                                                                   |
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                                              |
+| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos escala 1:500K - IDEAM - 2010                         |
+| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010                           |
+| AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                                             |
+| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                                            |
+| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                        | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC                |
+| TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>                   | Zonas con amenazas de inundación por tsunamí debidas a ondas inducidas por sismos - rcfdtools |
+| Rivers.mpr                                                                   | Regiones con actividad torrencial en ríos                                                     |
+| Beach.mpr                                                                    | Regiones con erosión en playas y/o acumulación de sedimentos                                  |
+| Topograp.mpr                                                                 | Regiones topográficas de Colombia                                                             |
+| Colombia.mpa                                                                 | Límites de departamentos de Colombia en formato vectorial                                     |
 
 </div>
 
@@ -152,19 +149,19 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 <div align="center"><img src="graph/ArcGISPro_WMassMove.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.6. Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools
+### 1.6. Zonas con amenazas de inundación por tsunamí debidas a ondas inducidas por sismos - rcfdtools
 
 A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
 
 <div align="center">Pesos (TsunamiCota3menos.shp)<br>
 
-| Value | TsunAmen   |  R   |  G   |  B   | WTsunami<br><sub>(peso)</sub> |
-|:-----:|:-----------|:----:|:----:|:----:|:---------------:|
-|  0.3  | Baja       | 139  | 209  |  0   |        0        |
-|   1   | Media      | 255  | 255  |  0   |        1        |
-|   3   | Alta       | 255  | 128  |  0   |        5        |
-|   5   | Extrema    | 255  |  0   |  0   |       7.5       |
-|  10   | Severa     | 168  |  0   |  0   |       10        |
+| TsunamiAmp | Tsunami   | WTsunamRGB  | WTsunami<br><sub>(peso)</sub> |
+|:----------:|:----------|:-----------:|:-----------------------------:|
+|    0.3     | Baja      | (139,209,0) |               0               |
+|     1      | Media     | (255,255,0) |               1               |
+|     3      | Alta      | (255,128,0) |               5               |
+|     5      | Extrema   |  (255,0,0)  |              7.5              |
+|     10     | Severa    |  (168,0,0)  |              10               |
 
 </div><br>
 
@@ -178,10 +175,6 @@ A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.t
 
 <div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/ECEF.svg" alt="R.SIGE" width="50%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
-
-
-En este momento ya dispone de la grilla de terreno reacondicionada requerida para el relleno de sumideros.
 
 
 
