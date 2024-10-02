@@ -29,7 +29,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | Mapa / Capa                                                            | Descripción                                                                    |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | Colombia.shp                                                           | Departamentos de Colombia - IGAC                                               |
-| SusceptibilidadDeslizamientos2010.tif<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
+| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
 | SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
 | AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                              |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                             |
@@ -42,16 +42,16 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div>
 
-<div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
+<div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.shp)<br>
 
-| Valor  | LandSlid  |   R   |  G   |  B   | WLandSlid (peso) |
-|:------:|:----------|:-----:|:----:|:----:|:----------------:|
-|   0    | Nula      |  225  | 225  | 225  |        0         |
-|   1    | Muy Baja  |  56   | 168  |  0   |        0         |
-|   2    | Baja      |  139  | 209  |  0   |        1         |
-|   3    | Media     |  255  | 255  |  0   |        5         |
-|   4    | Alta      |  255  | 128  |  0   |       7.5        |
-|   5    | Muy Alta  |  255  |  0   |  0   |        10        |
+| Valor  |  LandSlid  |   LandSRGB    | WLandSlid (peso) |
+|:------:|:----------:|:-------------:|:----------------:|
+|   0    |    Nula    | (225,225,225) |        0         |
+|   1    |  Muy Baja  |  (56,168,0)   |        0         |
+|   2    |    Baja    |  (139,209,0)  |        1         |
+|   3    |   Media    |  (255,255,0)  |        5         |
+|   4    |    Alta    |  (255,128,0)  |       7.5        |
+|   5    |  Muy Alta  |   (255,0,0)   |        10        |
 
 </div><br>
 
