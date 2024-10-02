@@ -26,19 +26,19 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">
 
-| Mapa / Capa                                                            | Descripción                                                                    |
-|------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Colombia.shp                                                           | Departamentos de Colombia - IGAC                                               |
-| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
-| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub> | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
-| AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                              |
-| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                             |
-| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                  | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
-| TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>             | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
-| Rivers.mpr                                                             | Regiones con actividad torrencial en ríos                                      |
-| Beach.mpr                                                              | Regiones con erosión en playas y/o acumulación de sedimentos                   |
-| Topograp.mpr                                                           | Regiones topográficas de Colombia                                              |
-| Colombia.mpa                                                           | Límites de departamentos de Colombia en formato vectorial                      |
+| Mapa / Capa                                                                  | Descripción                                                                    |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                               |
+| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
+| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
+| AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                              |
+| ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                             |
+| SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                        | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
+| TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>                   | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
+| Rivers.mpr                                                                   | Regiones con actividad torrencial en ríos                                      |
+| Beach.mpr                                                                    | Regiones con erosión en playas y/o acumulación de sedimentos                   |
+| Topograp.mpr                                                                 | Regiones topográficas de Colombia                                              |
+| Colombia.mpa                                                                 | Límites de departamentos de Colombia en formato vectorial                      |
 
 </div>
 
@@ -74,7 +74,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 ### 0.3. Mapa de amenazas volcánicas - SGC
 
-<div align="center">Pesos (AmenazaVolcanicaZonas.shp)<br>
+<div align="center">Pesos (AmenazaVolcanicaZonasMax.shp)<br>
 
 | Volcanic |  VolcanRGB   | WVolcanic<br><sub>(peso)</sub> |
 |:---------|:------------:|:------------------------------:|
@@ -84,9 +84,11 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-Utilizando la herramienta _Analysys Tools / Union_ se han unido los polígonos de cada volcán o nevado contenido en _AmenazaVolcanicaZonas.shp_ y se ha definido como valor final del peso en cada fracción, el mayor peso encontrado (para ejecutar este procedimiento, primero se deben crear capas independientes para cada nevado o volcán). 
+Utilizando la herramienta _Analysis Tools / Union_ se han unido los polígonos de cada volcán o nevado contenido en _AmenazaVolcanicaZonas.shp_ y se ha definido como valor final del peso en cada fracción, el mayor peso encontrado (para ejecutar este procedimiento, primero se deben crear capas independientes para cada nevado o volcán). 
 
-Script en Python  
+<div align="center"><img src="graph/ArcGISPro_WVolcanic_Union.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+Script en Python para obtención de mayor peso   
 ```
 def WVolcMax(WVolList):
     return max(WVolList)
