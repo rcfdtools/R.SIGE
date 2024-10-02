@@ -60,6 +60,8 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 > El mapa original de susceptibilidad a deslizamientos - IDEAM ha sido convertido a polígonos multiparte.
 
+<div align="center"><img src="graph/ArcGISPro_WLandSlid.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ### 0.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
 
