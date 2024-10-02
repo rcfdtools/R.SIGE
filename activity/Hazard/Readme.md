@@ -44,20 +44,20 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.shp)<br>
 
-| Valor  |  LandSlid  |   LandSRGB    | WLandSlid (peso) |
-|:------:|:----------:|:-------------:|:----------------:|
-|   0    |    Nula    | (225,225,225) |        0         |
-|   1    |  Muy Baja  |  (56,168,0)   |        0         |
-|   2    |    Baja    |  (139,209,0)  |        1         |
-|   3    |   Media    |  (255,255,0)  |        5         |
-|   4    |    Alta    |  (255,128,0)  |       7.5        |
-|   5    |  Muy Alta  |   (255,0,0)   |        10        |
+| LandSlid     |   LandSRGB    | WLandSlid<br>(peso) |
+|:-------------|:-------------:|:--------------------:|
+| 0 - Nula     | (225,225,225) |          0           |
+| 1 - Muy Baja |  (56,168,0)   |          0           |
+| 2 - Baja     |  (139,209,0)  |          1           |
+| 3 - Media    |  (255,255,0)  |          5           |
+| 4 - Alta     |  (255,128,0)  |         7.5          |
+| 5 - Muy Alta |   (255,0,0)   |          10          |
 
 </div><br>
 
 <div align="center">Pesos - Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
 
-| Simbologia | Nombre     | WInundat (peso) |
+| Simbologia | Inundat     | WInundat (peso) |
 |:----------:|:-----------|:---------------:|
 |     1      | Inundación |        5        |
 
