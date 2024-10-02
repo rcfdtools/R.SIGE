@@ -45,8 +45,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 ### 1.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
 
-* Entidad: Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM
-* Contenido: capa de información geográfica que corresponde a la información indicativa tipo raster de la susceptibilidad del terreno a los movimientos en masa, generado a partir de información primaria de geomorfología, geología, suelos y cobertura de la tierra, a escala 1:500.000.
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, contiene información geográfica que corresponde a la información indicativa tipo raster de la susceptibilidad del terreno a los movimientos en masa, generado a partir de información primaria de geomorfología, geología, suelos y cobertura de la tierra, a escala 1:500.000.
 
 <div align="center">Pesos (SusceptibilidadDeslizamientos2010.shp)<br>
 
@@ -68,6 +67,10 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 ### 1.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
 
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000.
+
+> Tenga en cuenta que en este mapa del IDEAM no se han incluido las zonas susceptibles a inundación de los drenajes de la Orinoquía Colombiana ni las zonas inundables del pacífico por eventos sísmicos producidos por Tsunamis.
+
 <div align="center">Pesos (SusceptibilidadInundacion500K2010.shp)<br>
 
 | Inundat        | WInundat<br><sub>(peso)</sub> |
@@ -75,6 +78,8 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | 1 - Inundación |               5               |
 
 </div><br>
+
+<div align="center"><img src="graph/ArcGISPro_WInundat.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 1.3. Mapa de amenazas volcánicas - SGC
