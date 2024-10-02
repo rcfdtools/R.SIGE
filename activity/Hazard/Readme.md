@@ -29,7 +29,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | Mapa / Capa                                                                  | Descripción                                                                    |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                               |
-| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos - IDEAM - 2010                        |
+| SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos escala 1:500K - IDEAM - 2010          |
 | SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010            |
 | AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                              |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                             |
@@ -44,6 +44,9 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 
 ### 1.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
+
+* Entidad: Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM
+* Contenido: capa de información geográfica que corresponde a la información indicativa tipo raster de la susceptibilidad del terreno a los movimientos en masa, generado a partir de información primaria de geomorfología, geología, suelos y cobertura de la tierra, a escala 1:500.000.
 
 <div align="center">Pesos (SusceptibilidadDeslizamientos2010.shp)<br>
 
