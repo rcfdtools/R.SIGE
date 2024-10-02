@@ -34,7 +34,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 | AmenazaV.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub>           | Mapa de amenazas volcánicas - SGC                                              |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                    | Zonas amenaza Sísmica NSR-10 - SGC                                             |
 | SuscMM_100kReclass.tif<br><sub>\file\data\SGC\ </sub>                  | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC |
-| Tsunami.mpr                                                            | Regiones con amenazas de tsunamí debidas a ondas inducidas por sismos          |
+| TsunamiCota3menos.shp                                                  | Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools |
 | Rivers.mpr                                                             | Regiones con actividad torrencial en ríos                                      |
 | Beach.mpr                                                              | Regiones con erosión en playas y/o acumulación de sedimentos                   |
 | Topograp.mpr                                                           | Regiones topográficas de Colombia                                              |
@@ -44,57 +44,70 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 <div align="center">Pesos - Mapa de susceptibilidad a deslizamientos - IDEAM - 2010<br>(SusceptibilidadDeslizamientos2010.tif)<br>
 
-| Valor  | Nombre    |   R   |  G   |  B   | WLandSlid |
-|:------:|:----------|:-----:|:----:|:----:|:---------:|
-|   0    | Nula      |  225  | 225  | 225  |     0     |
-|   1    | Muy Baja  |  56   | 168  |  0   |     0     |
-|   2    | Baja      |  139  | 209  |  0   |     1     |
-|   3    | Media     |  255  | 255  |  0   |     5     |
-|   4    | Alta      |  255  | 128  |  0   |    7.5    |
-|   5    | Muy Alta  |  255  |  0   |  0   |    10     |
+| Valor  | LandSlid  |   R   |  G   |  B   | WLandSlid (peso) |
+|:------:|:----------|:-----:|:----:|:----:|:----------------:|
+|   0    | Nula      |  225  | 225  | 225  |        0         |
+|   1    | Muy Baja  |  56   | 168  |  0   |        0         |
+|   2    | Baja      |  139  | 209  |  0   |        1         |
+|   3    | Media     |  255  | 255  |  0   |        5         |
+|   4    | Alta      |  255  | 128  |  0   |       7.5        |
+|   5    | Muy Alta  |  255  |  0   |  0   |        10        |
 
 </div><br>
 
 <div align="center">Pesos - Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010<br>(SusceptibilidadInundacion500K2010.shp)<br>
 
-| Simbologia | Nombre     |  WInundat  |
-|:----------:|:-----------|:----------:|
-|     1      | Inundación |     5      |
+| Simbologia | Nombre     | WInundat (peso) |
+|:----------:|:-----------|:---------------:|
+|     1      | Inundación |        5        |
 
 </div><br>
 
 <div align="center">Pesos - Mapa de amenazas volcánicas - SGC<br>(AmenazaVolcanicaZonas.shp)<br>
 
-| Amenaza |  R  |  G  |  B   | WVolcanic |
-|:-------:|:---:|:---:|:----:|:---------:|
-|  Baja   | 255 | 255 |  0   |     1     |
-|  Media  | 255 | 128 |  0   |     5     |
-|  Alta   | 255 |  0  |  0   |    10     |
+| Amenaza |  R  |  G  |  B   | WVolcanic (peso) |
+|:-------:|:---:|:---:|:----:|:----------------:|
+|  Baja   | 255 | 255 |  0   |        1         |
+|  Media  | 255 | 128 |  0   |        5         |
+|  Alta   | 255 |  0  |  0   |        10        |
 
 </div><br>
 
 <div align="center">Pesos - Zonas amenaza Sísmica NSR-10 - SGC<br>(ZonaAmenazaNSR10.shp)<br>
 
-|  ID  |   Valor    |  R  |  G  |  B   | WSeismic |
-|:----:|:----------:|:---:|:---:|:----:|:--------:|
-|  3   |    Baja    | 56  | 168 |  0   |    0     |
-|  2   | Intermedia | 255 | 255 |  0   |    5     |
-|  1   |    Alta    | 255 |  0  |  0   |    10    |
+|  ID  |   Valor    |  R  |  G  |  B   | WSeismic (peso) |
+|:----:|:----------:|:---:|:---:|:----:|:---------------:|
+|  3   |    Baja    | 56  | 168 |  0   |        0        |
+|  2   | Intermedia | 255 | 255 |  0   |        5        |
+|  1   |    Alta    | 255 |  0  |  0   |       10        |
 
 </div><br>
 
 <div align="center">Pesos - Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC<br>(SuscMM_100kReclass.tif)<br>
 
-| Value | Nombre    |   R   |  G   |  B   | WMassMove |
-|:-----:|:----------|:-----:|:----:|:----:|:---------:|
-|   1   | Muy Baja  |  56   | 168  |  0   |     0     |
-|   2   | Baja      |  139  | 209  |  0   |     1     |
-|   3   | Media     |  255  | 255  |  0   |     5     |
-|   4   | Alta      |  255  | 128  |  0   |    7.5    |
-|   5   | Muy Alta  |  255  |  0   |  0   |    10     |
+| Value | Nombre    |   R   |  G   |  B   | WMassMove (peso) |
+|:-----:|:----------|:-----:|:----:|:----:|:----------------:|
+|   1   | Muy Baja  |  56   | 168  |  0   |        0         |
+|   2   | Baja      |  139  | 209  |  0   |        1         |
+|   3   | Media     |  255  | 255  |  0   |        5         |
+|   4   | Alta      |  255  | 128  |  0   |       7.5        |
+|   5   | Muy Alta  |  255  |  0   |  0   |        10        |
 
 </div><br>
 
+<div align="center">Pesos - Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools <br>(TsunamiCota3menos.shp)<br>
+
+| Value | TsunAmen   |  R   |  G   |  B   | WTsunami (peso) |
+|:-----:|:-----------|:----:|:----:|:----:|:---------------:|
+|  0.3  | Baja       | 139  | 209  |  0   |        0        |
+|   1   | Media      | 255  | 255  |  0   |        1        |
+|   3   | Alta       | 255  | 128  |  0   |        5        |
+|   5   | Extrema    | 255  |  0   |  0   |       7.5       |
+|  10   | Severa     | 168  |  0   |  0   |       10        |
+
+</div><br>
+
+> A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
 
 
 

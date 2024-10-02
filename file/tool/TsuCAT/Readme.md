@@ -1,0 +1,17 @@
+# Tsunami Coastal Assessment Tool (TsuCAT)
+
+* http://nctr.pmel.noaa.gov/TsuCAT
+* https://tsunami.ioc.unesco.org/en/node/185
+* https://sift.pmel.noaa.gov/ComMIT/TsuCAT/software/
+
+Default Password: No Internet
+
+The Tsunami Coastal Assessment Tool (TsuCAT) is a simple and quick, yet powerful tool for exploring the impact from many different tsunamis. It was developed by the NOAA Center for Tsunami Research (NCTR) to support the International Tsunami Information Center’s (ITIC) effort to provide countries with tsunami decision support tools.
+
+In 2014, the U.S. Pacific Tsunami Warning Center (PTWC) ceased provision of watches and warnings for countries throughout the Pacific Ocean. Enhanced products that include wave amplitude were developed and are now provided to offer forecast guidance. The 2014 change now requires countries to be responsible for assessing their own threat, and deciding when to issue warnings based on their own alert level criteria. In an effort to assist countries in their decision making, the ITIC and NCTR developed and distributed TsuCAT v1.0 at the Twenty-seventh Session of the ICG/PTWS (March 28-31, 2017). The current version is TsuCAT v4.2 (October 2020) and is available on request to agencies and authorities responsible for and supporting tsunami warning and mitigation in their countries.
+
+TsuCAT provides access to a global database (including Pacific, Caribbean, and Indian Ocean sources) of tsunami modeling results from NOAA’s pre-computed catalog of sources (Propagation Database, GICA et al., 2008), and from NOAA’s RIFT model, to assist a country in its tsunami hazard assessment, tsunami exercise and response planning, warning decision-making, and education and outreach. Simulations for historical tsunami sources from NOAA’s National Centers for Environmental Information (NCEI) and the U.S. Geological Survey earthquake archive are also included. The tool is a ‘standalone’ application not requiring the Internet, and can be used for outreach in remote locations, as well as during events when telecommunications are down.
+
+TsuCAT assists countries in response planning and preparedness by providing a tool that enables planners to determine where the worst case tsunami sources are located, how big the earthquake’s magnitude must be to directly threaten their coastlines, how much time they will have before the first tsunami wave hits, and how big the tsunami wave is expected to be. This information can then be used to develop tsunami emergency response and evacuation plans, and to conduct tsunami exercises that will prepare response agencies and communities to be ready for the real event. Tsucat v4 introduces an exercise tool will allow countries to choose their own scenario and conduct their own exercises using the PTWC public text and enhanced graphical products.
+
+TsuCAT can also assist national tsunami warning centers with early situational awareness (approximate scenario) prior to the availability of event-specific forecasts from national agencies or international tsunami service providers. As TsuCAT is a pre-computed database of plausible tsunami scenarios with customizable coastal hazard warning polygons, it could be useful as a look-up tool to provide a conservative assessment prior to PTWC tsunami forecasts (typically 30 minutes after the earthquake due to the time required to reliably characterize the earthquake source).
