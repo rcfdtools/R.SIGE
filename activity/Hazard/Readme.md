@@ -94,12 +94,12 @@ def WVolcMax(WVolList):
 
 Llamado de función a través de una lista de campos   
 ```
-WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_12_13_14!,!WVolcanic_12_13_14_15!,!WVolcanic_12_13_14_15_16!,!WVolcanic_12_13_14_15_16_17!,!WVolcanic_12_13_14_15_16_17_18!,!WVolcanic_12_13_14_15_16_17_18_19!,!WVolcanic_12_13_14_15_16_17_18_19_20!,!WVolcanic_12_13_14_15_16_17_18_19_20_21!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22_23!))
+WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolcani_3!,!WVolcani_4!,!WVolcani_5!,!WVolcani_6!,!WVolcani_7!,!WVolcani_8!,!WVolcani_9!,!WVolcan_10!,!WVolcan_11!))
 ```
 
-> Los valores de los campos de atributos incluídos en la lista de entrada corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de intersección encontradas.
+> Los valores de los campos de atributos incluídos en la lista de entrada corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de las intersecciones encontradas.
 
-<div align="center"><img src="graph/ArcGISPro_WVolcanic_Python1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_WVolcanic_Python.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
