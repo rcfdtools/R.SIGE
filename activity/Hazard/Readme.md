@@ -165,7 +165,7 @@ A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.t
 
 </div><br>
 
-
+<div align="center"><img src="graph/ArcGISPro_WTsunami.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
