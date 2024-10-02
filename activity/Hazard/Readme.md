@@ -22,7 +22,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 * [:open_file_folder:PoblacionDANE.xlsx](PoblacionDANE.xlsx): libro para registro y proyección de población DANE.
 
 
-## 0. Capas requeridas y pesos
+## 1. Capas requeridas y pesos
 
 <div align="center">
 
@@ -43,7 +43,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 </div>
 
 
-### 0.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
+### 1.1. Mapa de susceptibilidad a deslizamientos - IDEAM - 2010
 
 <div align="center">Pesos (SusceptibilidadDeslizamientos2010.shp)<br>
 
@@ -63,7 +63,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 <div align="center"><img src="graph/ArcGISPro_WLandSlid.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 0.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
+### 1.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
 
 <div align="center">Pesos (SusceptibilidadInundacion500K2010.shp)<br>
 
@@ -74,7 +74,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 </div><br>
 
 
-### 0.3. Mapa de amenazas volcánicas - SGC
+### 1.3. Mapa de amenazas volcánicas - SGC
 
 <div align="center">Pesos (AmenazaVolcanicaZonasMax.shp)<br>
 
@@ -108,7 +108,7 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 <div align="center">Mapa de pesos WVolcanic<br><img src="graph/ArcGISPro_WVolcanicMax.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
+### 1.4. Zonas amenaza Sísmica NSR-10 - SGC
 
 <div align="center">Pesos (ZonaAmenazaNSR10.shp)<br>
 
@@ -121,7 +121,7 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 </div><br>
 
 
-### 0.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
+### 1.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
 
 <div align="center">Pesos (SuscMM_100kReclass.tif)<br>
 
@@ -136,7 +136,7 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 </div><br>
 
 
-### 0.6. Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools
+### 1.6. Zonas con amenazas de tsunamí debidas a ondas inducidas por sismos - rcfdtools
 
 A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
 
@@ -156,7 +156,7 @@ A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.t
 
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 2. Análisis de amenazas
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
 
