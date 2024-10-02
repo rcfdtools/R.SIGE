@@ -103,6 +103,8 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 <div align="center"><img src="graph/ArcGISPro_WVolcanic_Python.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+<div align="center"><img src="graph/ArcGISPro_WVolcanic_Max.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
 
