@@ -84,7 +84,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 </div><br>
 
-> Utilizando la herramienta _Analysys Tools / Union_ se han unido los polígonos de cada volcán o nevado contenido en _AmenazaVolcanicaZonas.shp_ y se ha definido como valor final del peso en cada fracción, el mayor peso encontrado (para ejecutar este procedimiento, primero se deben crear capas independientes para cada nevado o volcán). 
+Utilizando la herramienta _Analysys Tools / Union_ se han unido los polígonos de cada volcán o nevado contenido en _AmenazaVolcanicaZonas.shp_ y se ha definido como valor final del peso en cada fracción, el mayor peso encontrado (para ejecutar este procedimiento, primero se deben crear capas independientes para cada nevado o volcán). 
 
 Script en Python  
 ```
@@ -97,6 +97,7 @@ Llamado de función
 WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_12_13_14!,!WVolcanic_12_13_14_15!,!WVolcanic_12_13_14_15_16!,!WVolcanic_12_13_14_15_16_17!,!WVolcanic_12_13_14_15_16_17_18!,!WVolcanic_12_13_14_15_16_17_18_19!,!WVolcanic_12_13_14_15_16_17_18_19_20!,!WVolcanic_12_13_14_15_16_17_18_19_20_21!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22_23!))
 ```
 
+Los valores de los campos de atributos corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de intersección encontradas.
 
 
 ### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
