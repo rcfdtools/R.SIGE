@@ -93,11 +93,9 @@ def WVolcMax(WVolList):
 ```
 
 Llamado de función  
-```
-WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_12_13_14!,!WVolcanic_12_13_14_15!,!WVolcanic_12_13_14_15_16!,!WVolcanic_12_13_14_15_16_17!,!WVolcanic_12_13_14_15_16_17_18!,!WVolcanic_12_13_14_15_16_17_18_19!,!WVolcanic_12_13_14_15_16_17_18_19_20!,!WVolcanic_12_13_14_15_16_17_18_19_20_21!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22_23!))
-```
+`WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_12_13_14!,!WVolcanic_12_13_14_15!,!WVolcanic_12_13_14_15_16!,!WVolcanic_12_13_14_15_16_17!,!WVolcanic_12_13_14_15_16_17_18!,!WVolcanic_12_13_14_15_16_17_18_19!,!WVolcanic_12_13_14_15_16_17_18_19_20!,!WVolcanic_12_13_14_15_16_17_18_19_20_21!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22!,!WVolcanic_12_13_14_15_16_17_18_19_20_21_22_23!))`
 
-Los valores de los campos de atributos corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de intersección encontradas.
+> Los valores de los campos de atributos corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de intersección encontradas.
 
 
 ### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
