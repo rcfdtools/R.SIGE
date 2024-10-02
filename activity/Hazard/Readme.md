@@ -3,7 +3,7 @@ Keywords: `hazard`
 
 A partir de los conceptos aprendidos en este curso y de la investigación de geo-procesos complementarios, desarrollaremos un procedimiento que permite obtener el mapa de amenazas de Colombia, incluye: flujograma de procesos indicando el nombre de los geoprocesos a utilizar, ejecución paso a paso de los geoprocesos indicados con visualización de mapas y tablas de atributos. Utilizando el mapa de amenazas obtenido y mediante un recorte hasta la zona límite del Modelo de Ocupación Territorial - MOT de la zona de estudio, determinar el riesgo ponderado en función de las áreas de cada clase.                           
 
-<div align="center"><img src="graph/AddedValue.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Hazard.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -98,6 +98,8 @@ WVolcMax((!WVolcanic!,!WVolcanic_1!,!WVolcanic_12!,!WVolcanic_12_13!,!WVolcanic_
 ```
 
 > Los valores de los campos de atributos incluídos en la lista de entrada corresponden a los nombres asignados por la herramienta _Analysys Tools / Union_ a partir de las diferentes combinaciones de intersección encontradas.
+
+<div align="center"><img src="graph/ArcGISPro_WVolcanic_Python1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ### 0.4. Zonas amenaza Sísmica NSR-10 - SGC
