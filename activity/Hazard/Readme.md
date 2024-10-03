@@ -25,17 +25,13 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 
 | Mapa / Capa                                                                  | Descripción                                                                                   |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                                              |
 | SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos escala 1:500K - IDEAM - 2010                         |
-| SusceptibilidadInundacion.shp<br><sub>\file\data\IDEAM\ </sub>               | Mapa de susceptibilidad por inundación - IDEAM                                                |
+| SusceptibilidadInundacion.shp<br><sub>\file\data\IDEAM\ </sub>               | Mapa de susceptibilidad por inundación debidas a lluvias - IDEAM                              |
 | AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                                             |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                                            |
 | SuscMM_500kReclass.shp<br><sub>\file\data\SGC\ </sub>                        | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC                |
 | TsunamiCota3menos.shp<br><sub>\file\data\rcfdtools\ </sub>                   | Zonas con amenazas de inundación por tsunamí debidas a ondas inducidas por sismos - rcfdtools |
-| Rivers.mpr                                                                   | Regiones con actividad torrencial en ríos                                                     |
-| Beach.mpr                                                                    | Regiones con erosión en playas y/o acumulación de sedimentos                                  |
-| Topograp.mpr                                                                 | Regiones topográficas de Colombia                                                             |
-| Colombia.mpa                                                                 | Límites de departamentos de Colombia en formato vectorial                                     |
+| Erosion1988.shp<br><sub>\file\data\IDEAM\ </sub>                             | Zonas erosionables IDEAM - 1988                                                               |
 
 </div>
 
@@ -148,7 +144,7 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 <div align="center"><img src="graph/ArcGISPro_WMassMove.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.6. Zonas con amenazas de inundación por tsunamí debidas a ondas inducidas por sismos - rcfdtools
+### 1.6. Zonas con amenazas de inundación por tsunamí debidas a olas inducidas por sismos - rcfdtools
 
 A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
 
@@ -167,13 +163,44 @@ A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.t
 <div align="center"><img src="graph/ArcGISPro_WTsunami.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+### 1.7. Zonas erosionables IDEAM - 1988
+
+El mapa de Erosión y degradaciÓn de las Tierras Colombianas (IGAC, 1988) a escala 3.400.000 fue elaborado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi y publicado en 1988, en el Atlas de Suelos y Bosques de Colombia. Se presentan estadísticas de áreas afectadas y porcentajes sobre cada una de las cinco regiones naturales continentales de Colombia. En la memoria se hace alusión a la degradación de las tierras según la FAO (1980) y a la erosión de los suelos. En la leyenda del mapa, se utilizan seis clases, con base en parámetros selectivos y evidencias de campo.
+Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016. Elaborado el 09-12-2022 a escala 1:3.400.000 (obtenido a partir de servicio rest de https://www.colombiaenmapas.gov.co).
+
+<div align="center">Pesos (Erosion1988.shp)<br>
+
+| Erosion                 |   LandSRGB    | WErosion<br><sub>(peso)</sub> |
+|:------------------------|:-------------:|:-----------------------------:|
+| 0 - Sin Erosión         | (225,225,225) |               0               |
+| 1 - Erosion muy ligera  |  (56,168,0)   |               0               |
+| 2 - Erosion ligera      |  (139,209,0)  |               1               |
+| 3 - Erosion moderada    |  (255,255,0)  |              2.5              |
+| 4 - Erosion severa      |  (255,128,0)  |               5               |
+| 5 - Erosion muy severa  |   (255,0,0)   |              10               |
+
+</div><br>
+
+<div align="center"><img src="graph/ArcGISPro_WErosion.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 2. Análisis de amenazas
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _PopulationGIS_ y establezca el CRS 9377. Agregue al mapa la capa del Modelo de Ocupación Territorial - MOT disponible en la información recopilada del POT en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp` y ajuste la simbología a valores únicos representando el campo de atributos `SUELO`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Hazard_ y establezca el CRS 9377. Agregue al mapa las diferentes capas indicadas en el numeral 1, ajuste la simbología a los valores RGB establecidos y establezca transparencias en 50%.
 
-<div align="center"><img src="graph/ArcGISPro_SimbologyUniqueValues_MOT_Suelo.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. Utilizando la herramienta de geoprocesamiento _Analysis Tools / Union_, cree la unión e intersección espacial de las 7 capas de amenazas evaluadas, nombre como _\file\shp\Hazard.shp_. Podrá observar que hemos obtenido 425869 sub polígonos.
+
+<div align="center"><img src="graph/ArcGISPro_Union1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En la capa resultante, agregue un campo numérico doble con el nombre `Hazard` y utilizando la siguiente expresión realice la suma de los diferentes pesos establecidos por variable. Simbolice por colores graduados a partir del campo `Hazard` y obtenga una estadística visual del conjunto de datos.
+
+`Hazard = !WLandSlid! + !WInundat! + !WVolcanic! + !WMassMove! + !WTsunami! + !WErosion!`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. 
 
 
 
