@@ -27,7 +27,7 @@ A partir de los conceptos aprendidos en este curso y de la investigación de geo
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Colombia.shp                                                                 | Departamentos de Colombia - IGAC                                                              |
 | SusceptibilidadDeslizamientos2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad a deslizamientos escala 1:500K - IDEAM - 2010                         |
-| SusceptibilidadInundacion500K2010.shp<br><sub>\file\data\IDEAM\ </sub>       | Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010                           |
+| SusceptibilidadInundacion.shp<br><sub>\file\data\IDEAM\ </sub>               | Mapa de susceptibilidad por inundación - IDEAM                                                |
 | AmenazaVolcanicaZonasMax.shp<br><sub>\file\data\SGC\AmenazaVolcanica\ </sub> | Mapa de amenazas volcánicas - SGC                                                             |
 | ZonaAmenazaNSR10.shp<br><sub>\file\data\SGC\ </sub>                          | Zonas amenaza Sísmica NSR-10 - SGC                                                            |
 | SuscMM_500kReclass.shp<br><sub>\file\data\SGC\ </sub>                        | Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC                |
@@ -62,13 +62,11 @@ Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - I
 <div align="center"><img src="graph/ArcGISPro_WLandSlid.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-### 1.2. Mapa de susceptibilidad por inundación escala 1:500K - IDEAM - 2010
+### 1.2. Mapa de susceptibilidad por inundación debida a lluvia - IDEAM
 
-Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co).
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co) combinada con las zonas inundadas por eventos extremos generados por el fenómeno de la Niña en los años 1988, 2000, 2011, 2012.
 
-> Tenga en cuenta que en este mapa del IDEAM no se han incluido las zonas susceptibles a inundación de los drenajes de la Orinoquía Colombiana ni las zonas inundables del pacífico por eventos sísmicos producidos por Tsunamis.
-
-<div align="center">Pesos (SusceptibilidadInundacion500K2010.shp)<br>
+<div align="center">Pesos (SusceptibilidadInundacion.shp)<br>
 
 | Inundat        | WInundat<br><sub>(peso)</sub> |
 |:---------------|:-----------------------------:|
@@ -76,6 +74,7 @@ Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - I
 
 </div><br>
 
+<div align="center"><img src="graph/ArcGISPro_WInundat_Merge.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_WInundat.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
