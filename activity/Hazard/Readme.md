@@ -239,6 +239,12 @@ Llamado de función:
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+Imágenes complementarias  
+<div align="center"><img src="graph/ArcGISPro_Hazard1.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Hazard2.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Hazard3.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Hazard4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## 2. Análisis usando software libre - QGIS
 
