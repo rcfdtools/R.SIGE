@@ -194,14 +194,50 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 <div align="center"><img src="graph/ArcGISPro_Union1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. En la capa resultante, agregue un campo numérico doble con el nombre `Hazard` y utilizando la siguiente expresión realice la suma de los diferentes pesos establecidos por variable. Simbolice por colores graduados a partir del campo `Hazard` y obtenga una estadística visual del conjunto de datos.
+3. En la capa resultante, agregue un campo numérico doble con el nombre `Hazard` y utilizando la siguiente expresión realice la suma de los diferentes pesos establecidos por variable. Simbolice por colores graduados en 6 clases por cortes naturales a partir del campo `Hazard` y obtenga una estadística visual del conjunto de datos.
 
 `Hazard = !WLandSlid! + !WInundat! + !WVolcanic! + !WMassMove! + !WTsunami! + !WErosion!`
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. 
+4. En un campo de texto nuevo nombrado como `HazardCls` y utilizando el calculador de campo y un script en Python, reclasifique los valores obtenidos en las siguientes 6 clases a partir de los valores de corte o _Boundary_ indicados. Simbolice a partir de la marcación de clases.
 
+<div align="center">
+
+| Boundary  | HazardCls                 | Color RGB     | 
+|:---------:|---------------------------|---------------|
+|     5     | 1 - Very low hazard       | (62,128,79)   | 
+|    10     | 2 - Low hazard            | (142,252,61)  | 
+|    15     | 3 - Moderately low hazard | (254,254,65)  | 
+|    20     | 4 - Moderate hazard       | (237,164,102) | 
+|    25     | 5 - High hazard           | (246,135,36)  | 
+|    100    | 6 - Very high hazard      | (255,0,0)   | 
+
+</div>
+
+Script en Python:  
+```
+hazardLevel = [[5, '1 - Very low hazard'],
+                   [10, '2 - Low hazard'],
+                   [15, '3 - Moderately low hazard'],
+                   [20, '4 - Moderate hazard'],
+                   [25, '5 - High hazard'],
+                   [100, '6 - Very high hazard']]
+
+def hazardcls(elevation):
+  for i in hazardLevel:
+    if elevation <= i[0]:
+      return i[1]
+```
+
+Llamado de función:  
+`hazardcls(!Hazard!)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En un campo de atributos numérico doble nombrado como `APkm2`, calcule el área planar en km² de cada fracción. A través de un resúmen estadístico o _Summarize_, obtenga el total de áreas por clase de amenaza de Colombia. Cree un gráfico de análisis.  
+
+<div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
