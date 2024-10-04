@@ -25,6 +25,10 @@ A partir de los conceptos aprendidos en este curso, desarrollaremos un procedimi
 
 ## 1. Capas requeridas y pesos
 
+Para la creación del mapa general de amenazas naturales de Colombia, utilizaremos los mapas listados en la siguiente tabla, los cuales han sido obtenidos, ajustados o generados a partir de diferentes fuentes de información pública.
+
+> Tenga en cuenta que los pesos establecidos, pueden no corresponder a los valores de referencia utilizados por las entidades gubernamentales que gestionan los riesgos naturales en Colombia, y que estos valores han sido definidos solamente para ejemplificar esta actividad académica. 
+
 <div align="center">
 
 | Mapa / Capa                                                                  | Descripción                                                                                   |
