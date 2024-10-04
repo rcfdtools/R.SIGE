@@ -1,14 +1,18 @@
 # ArcGIS Pro - Análisis de amenazas naturales
 Keywords: `hazard`
 
-A partir de los conceptos aprendidos en este curso y de la investigación de geo-procesos complementarios, desarrollaremos un procedimiento que permite obtener el mapa de amenazas de Colombia, incluye: flujograma de procesos indicando el nombre de los geoprocesos a utilizar, ejecución paso a paso de los geoprocesos indicados con visualización de mapas y tablas de atributos. Utilizando el mapa de amenazas obtenido y mediante un recorte hasta la zona límite del Modelo de Ocupación Territorial - MOT de la zona de estudio, determinar el riesgo ponderado en función de las áreas de cada clase.                           
+A partir de los conceptos aprendidos en este curso, desarrollaremos un procedimiento que permita generar el mapa de amenazas de Colombia. Utilizando el mapa de amenazas obtenido y mediante un recorte hasta la zona límite del Modelo de Ocupación Territorial - MOT de la zona de estudio, determinar el riesgo ponderado en función de las áreas de cada clase.                           
 
 <div align="center"><img src="graph/Hazard.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
 
-* 
+* Identificar y descargar mapas de amenazas naturales.
+* Para las clases contenidas en cada, asignar pesos en función del tipo de amenaza.
+* Mediante unión geográfica, combinar y obtener sub-polígonos calculando el valor total de la amenaza.
+* Reclasificar los valores obtenidos en diferentes categorías.
+* Obtener el riesgo ponderado dentro del límite geográfico del área de estudio.
 
 
 ## Requerimientos
@@ -112,6 +116,8 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 ### 1.4. Zonas amenaza Sísmica NSR-10 - SGC
 
+Zonificación y parámetros para el diseño sismo resistente según el Reglamento NSR-10. La NSR-10 es el Reglamento Colombiano de Construcción Sismo Resistente, que regula las condiciones con las que deben contar las construcciones con el fin de que la respuesta estructural a un sismo sea favorable y pretende evitar que los movimientos sísmicos ocasionen derrumbes o daños a las edificaciones e igualmente preservar la integridad física y los bienes de las personas (obtenido a partir de servicio rest de https://srvags.sgc.gov.co).
+
 <div align="center">Pesos (ZonaAmenazaNSR10.shp)<br>
 
 | SeismicID |  Seismic   | SeismicRGB  | WSeismic<br><sub>(peso)</sub>  |
@@ -126,6 +132,8 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 
 ### 1.5. Mapa de susceptibilidad por movimientos en masa debidos eventos sísmicos - SGC
+
+Este mapa creado por el Servicio Geológico Colombiano - SGC, contiene la zonificación de zonas susceptibles a movivientos en masa debidas a la ocurrencia de eventos sísmicos (obtenido a partir de servicio rest de https://srvags.sgc.gov.co).
 
 <div align="center">Pesos (SuscMM_500kReclass.shp)<br>
 
@@ -146,7 +154,7 @@ WVolcMax((!WVolcanic!,!WVolcanic_!,!WVolcanic1!,!WVolcani_1!,!WVolcani_2!,!WVolc
 
 ### 1.6. Zonas con amenazas de inundación por tsunamí debidas a olas inducidas por sismos - rcfdtools
 
-A partir del modelo digital de elevación SRTM (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
+A partir del modelo digital de elevación SRTM de la NASA con cobertura sobre Colombia (\file\data\NASA\SRTM\sa_con_3s.tif) se han creado los polígonos de zonas costeras amenazadas por Tsunamis con elevaciones inferiores o iguales a 3 metros, correspondientes a amenazas de nivel 3. En la delimitación de la zona de afectación, se han mantenido los corredores de los cauces principales cuya cota no supera el valor límite establecido; lo anterior debido a que los efectos de la onda cinemática y la condición de control en la descarga al pacífico, puede generar sobre elevaciones en los cauces e inundaciones. 
 
 <div align="center">Pesos (TsunamiCota3menos.shp)<br>
 
