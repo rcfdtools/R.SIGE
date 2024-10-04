@@ -1,5 +1,5 @@
 # ArcGIS Pro - Análisis de amenazas naturales
-Keywords: `hazard`
+Keywords: `hazard` `landslide` `seismic` `volcanic` `tsunami` `mass-move` `erosion`
 
 A partir de los conceptos aprendidos en este curso, desarrollaremos un procedimiento que permita generar el mapa de amenazas de Colombia. Utilizando el mapa de amenazas obtenido y mediante un recorte hasta la zona límite del Modelo de Ocupación Territorial - MOT de la zona de estudio, determinar el riesgo ponderado en función de las áreas de cada clase.                           
 
