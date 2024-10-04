@@ -68,7 +68,7 @@ Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - I
 
 ### 1.2. Mapa de susceptibilidad por inundación debida a lluvia - IDEAM
 
-Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co) combinada con las zonas inundadas por eventos extremos generados por el fenómeno de la Niña en los años 1988, 2000, 2011, 2012.
+Este mapa del Instituto de Hidrología, Meteorología y Estudios Ambientales - IDEAM de Colombia, contiene información geográfica que corresponde a las zonas susceptibles a inundación, a escala 1:500.000  combinada con las zonas inundadas por eventos extremos generadas por el fenómeno de la Niña en los años 1988, 2000, 2011, 2012 (obtenido a partir de mapa por servicio de https://www.colombiaenmapas.gov.co).
 
 <div align="center">Pesos (SusceptibilidadInundacion.shp)<br>
 
@@ -198,11 +198,11 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 ## 2. Análisis de amenazas
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Hazard_ y establezca el CRS 9377. Agregue al mapa las diferentes capas indicadas en el numeral 1, ajuste la simbología a los valores RGB establecidos y establezca transparencias en 50%.
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Hazard_ y establezca el CRS 9377. Agregue al mapa las diferentes capas indicadas en el numeral 1 de esta actividad, ajuste la simbología a los valores RGB establecidos y establezca transparencias en 50%. Agregue también la capa del límite territorial del MOT disponible en `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013` y la capas de límites de departamentos. A partir de los departamentos y utilizando la herramienta dissolve, obtenga el límite territorial de Colombia.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geoprocesamiento _Analysis Tools / Union_, cree la unión e intersección espacial de las 7 capas de amenazas evaluadas, nombre como _\file\shp\Hazard.shp_. Podrá observar que hemos obtenido 425869 sub polígonos.
+2. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Union_, cree la unión e intersección espacial de las 7 capas de amenazas evaluadas, nombre como _\file\shp\Hazard.shp_. Podrá observar que hemos obtenido 425869 sub polígonos.
 
 <div align="center"><img src="graph/ArcGISPro_Union1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -216,14 +216,14 @@ Este producto es generado por la Subdirección de Agrología del Instituto Geogr
 
 <div align="center">
 
-| Boundary  | HazardCls                 | Color RGB     | 
-|:---------:|---------------------------|---------------|
-|     5     | 1 - Very low hazard       | (62,128,79)   | 
-|    10     | 2 - Low hazard            | (142,252,61)  | 
-|    15     | 3 - Moderately low hazard | (254,254,65)  | 
-|    20     | 4 - Moderate hazard       | (237,164,102) | 
-|    25     | 5 - High hazard           | (246,135,36)  | 
-|    100    | 6 - Very high hazard      | (255,0,0)   | 
+| Boundary  | HazardCls                 | Color RGB      | 
+|:---------:|---------------------------|----------------|
+|     5     | 1 - Very low hazard       | (62,128,79)    | 
+|    10     | 2 - Low hazard            | (142,252,61)   | 
+|    15     | 3 - Moderately low hazard | (254,254,65)   | 
+|    20     | 4 - Moderate hazard       | (237,164,102)  | 
+|    25     | 5 - High hazard           | (246,135,36)   | 
+|    100    | 6 - Very high hazard      | (255,0,0)      | 
 
 </div>
 
@@ -256,6 +256,14 @@ Imágenes complementarias
 <div align="center"><img src="graph/ArcGISPro_Hazard2.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Hazard3.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Hazard4.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte la capa de amenazas _Hazard_ hasta el límite territorial del MOT, guarde como `\file\shp\Hazard25899.shp`.
+
+<div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. En la tabla de atributos de la capa recortada, recalcule los valores de las áreas planares en km² contenidas en el campo _APkm2_ y luego genere un resumen estadístico por clase de amenaza totalizando las áreas obtenidas. Cree un gráfico de análisis, podrá observar que la clase dominante corresponde a _3 - Moderately low hazard_ o amenaza moderadamente baja. Debido a la topografía municipal y a los análisis relacionados con riesgos por deslizamiento, 18.6 km² del área municipal han sido catalogados como de amenaza moderada correspondiente a la clase 4.
+
+<div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 2. Análisis usando software libre - QGIS
@@ -305,7 +313,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 ## Referencias
 
 * [Tsunami Coastal Assessment Tool (TsuCAT)](https://sift.pmel.noaa.gov/ComMIT/TsuCAT/software/)
-* 
+* https://pro.arcgis.com/en/pro-app/3.3/tool-reference/analysis/union.htm
 
 
 ## Control de versiones

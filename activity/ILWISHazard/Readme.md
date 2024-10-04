@@ -1,7 +1,7 @@
 # ILWIS - Creación y clasificación del mapa combinado de amenazas
 Keywords: `integrated-land-and-water-information-system` `hazard` `grid-map` `domain` `crs` `pixel-info`
 
-Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra` y obtenga el mapa de amenazas. Visualice el histograma generado y la tabla de estadísticos para las 32 diferentes combinaciones obtenidas. Explique los resultados obtenidos. Cree una tabla de dominio con el nombre Hazclas, de tipo Class y Group que incluya clases para clasificación de amenazas. Utilizando la herramienta Operation-Tree / Image Processing / Slicin, cree y visualice el mapa de clasificación para las 6 clases definidas. Nombrar como Hazclas y representar con los colores indicados. 
+Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra` y obtenga el mapa de amenazas. Visualice el histograma generado y la tabla de estadísticos para las 32 diferentes combinaciones obtenidas. Explique los resultados obtenidos. Cree una tabla de dominio con el nombre Hazclas, de tipo Class y Group que incluya clases para clasificación de amenazas. Utilizando la herramienta Operation-Tree / Image Processing / Slicing, cree y visualice el mapa de clasificación para las 6 clases definidas. Nombrar como Hazclas y representar con los colores indicados. 
 
 <div align="center"><img src="graph/ILWISHazard.png" alt="R.SIGE" width="100%" border="0" /></div>
 
