@@ -265,6 +265,8 @@ Imágenes complementarias
 
 <div align="center"><img src="graph/ArcGISPro_Summarize2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
+> Otro tipo de amenazas a considerar son las zonas inundables debidas a descargas súbitas producidas por el fallo o colapso de represas debidas a la ocurrencia de eventos sísmicos de gran magnitud. Más información en el [Estudio de amenazas hidráulicas en la llanura de inundación de la cuenca del Río Bogotá - Cundinamarca - Colombia](https://github.com/rcfdtools/R.HydroBogota/blob/main/README.md) desarrollado por [rcfdtools](https://github.com/rcfdtools).  
+
 
 ## 2. Análisis usando software libre - QGIS
 
