@@ -74,7 +74,7 @@ Requisitos académicos:
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
 * [:toolbox:Herramienta](https://www.office.com/): Microsoft Office 365.
-* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
+* [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior. Instrucciones de instalación [aquí](file/temp/R.SIGE_InstruccionesInstalacionArcGISPro.pdf).
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 * [:toolbox:Herramienta](https://notepad-plus-plus.org/): Notepad++.
 * [:toolbox:Herramienta](https://www.itc.nl/ilwis/download/): ILWIS 3.3.
