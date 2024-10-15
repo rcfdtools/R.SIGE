@@ -1,0 +1,29 @@
+Asunto: Escuela - SIGE - Bienvenid@ al Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT)
+
+UNIVERSIDAD ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO
+Instructor: William Ricardo Aguilar Piña
+william.aguilar@escuelaing.edu.co
+
+Horario: martes y miércoles de 6:00pm – 9:00pm
+Fecha de inicio: martes 15 de octubre de 2024
+Modalidad: remota a través de Microsoft Teams
+Micrositio del curso: https://github.com/rcfdtools/R.SIGE/blob/main/README.md
+
+Bienvenido al Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE. A través de talleres orientados a la solución de un caso de estudio general, los participantes desarrollarán un proyecto de clase que les permitirá crear el prototipo de un sistema de información geográfica para la gestión del ordenamiento territorial.
+
+Al finalizar este curso taller, el asistente dispondrá de un modelo geográfico general (creado a lo largo del curso), podrá continuar implementando nuevos componentes a la base de datos construida y podrá fortalecer las gestiones relacionadas con el ordenamiento territorial de su municipio o del caso de estudio asignado.
+
+Autopresentación: el diligenciamiento completo de este formulario me permite como instructor, conocer su perfil académico y profesional, saber con qué recursos informáticos cuenta para preparar y desarrollar los talleres, conocer sus conocimientos generales en el uso de herramientas computacionales, lenguajes de programación, métodos de estudio y habilidades. https://forms.office.com/r/NhgAUZkPFP
+
+Metodología: El curso se desarrolla a través de talleres prácticos que requieren de lecturas previas de conceptos generales y el análisis de un caso de estudio general. 
+
+Consejería académica individual: previo a cada sesión, el estudiante preparara los contenidos asignados y durante el horario de clase en aula o a través de un chat directo por Microsoft Teams, se realiza la consejería y soporte de herramientas computacionales a utilizar, para así completar los talleres asignados semanalmente.
+
+Agradecemos su interés y esperamos que este curso le aporte algunos conocimientos que complementen, fortalezcan y faciliten sus actuales o futuras labores académicas y profesionales.
+
+
+**********************************************************
+
+Texto complementario para chat grupal:
+
+Para consejería individual, escribir a william.aguilar@escuelaing.edu.co a través de un chat directo de Microsoft Teams.
