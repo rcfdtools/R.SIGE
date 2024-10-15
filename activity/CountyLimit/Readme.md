@@ -145,7 +145,7 @@ En la tabla podrá observar que esta capa también se compone de 14 entidades o 
 
 ## 3. Mapa veredal formulación POT año 2013
 
-Desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, agregue la capa vectorial shapefile _VEREDA.shpL_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
+Desde la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\shp\`, agregue la capa vectorial shapefile _VEREDA.shp_, cambie la simbología, agregue y calcule los campos de atributos geométricos indicados al inicio de esta actividad, y realice la rotulación. Siga el mismo procedimiento realizado en el numeral 1.1 de esta actividad.
 
 Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($feature.AGha, 2) + textformatting.NewLine + "P (m):" + Round($feature.PGm, 2)`
 
