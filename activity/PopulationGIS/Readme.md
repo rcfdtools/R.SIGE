@@ -88,13 +88,13 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center">
 
-| Columna   | Descripción                                                                                                                                                                |
-|:----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AreaUrbPL | Tamaño del área urbana en hectáreas a partir del total del área municipal menos el área rural.                                                                             |
-| AreaRurPL | Tamaño del área urbana en hectáreas proyectada linealmente. Utilizando la regresión, al menos se debe reservar 1 ha de suelo urbano para realizar los cálculos requeridos. |
-| DensTotal | Densidad total municipal en habitantes / hectárea: población total / área total municipal.                                                                                 |
-| DensUrb   | Densidad urbana en habitantes / hectárea: población urbana / área urbana                                                                                                   |
-| DensRur   | Densidad rural en habitantes / hectárea: población rural / área rural                                                                                                      |
+| Columna   | Descripción                                                                                                                                                               |
+|:----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AreaUrbPL | Tamaño del área urbana en hectáreas a partir del total del área municipal menos el área rural.                                                                            |
+| AreaRurPL | Tamaño del área rural en hectáreas proyectada linealmente. Utilizando la regresión, al menos se debe reservar 1 ha de suelo urbano para realizar los cálculos requeridos. |
+| DensTotal | Densidad total municipal en habitantes / hectárea: población total / área total municipal.                                                                                |
+| DensUrb   | Densidad urbana en habitantes / hectárea: población urbana / área urbana                                                                                                  |
+| DensRur   | Densidad rural en habitantes / hectárea: población rural / área rural                                                                                                     |
 
 </div>
 
