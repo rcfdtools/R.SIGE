@@ -18,7 +18,7 @@ En esta actividad realizaremos una revisión del marco general de los POT y su n
 
 ## Requerimientos
 
-* [:notebook:Lectura](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html): Ley 388 de 1997.
+* [:notebook:Lectura](http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html): Ley 388 de 1997. (Leer en [SUIN Juriscol](https://www.suin-juriscol.gov.co/viewDocument.asp?id=1659295).)
 * [:notebook:Lectura](https://www.faoswalim.org/resources/Land/Land_resource_Mgt/pdfdocs/guia_sim.pdf): Guía simplificada para la elaboración del plan de ordenamiento territorial municipal.
 
 
@@ -256,7 +256,7 @@ Sin embargo, existen herramientas metodológicas más detalladas para la incorpo
 Los municipios que tienen influencia de la dinámica marino-costera deberán incorporar información relacionada a posibles cambios en el nivel del mar o cambios en la línea costera en sus análisis de cambio climático. 
 
 
-## 11. Roles de la arquitectura y la ingeniería en la elaboración de los POT
+## 11. Roles de la arquitectura, la ingeniería y profesiones afines en la elaboración de los POT
 
 | Profesión [^3]              | Estudios a realizar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Experiencia general |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
