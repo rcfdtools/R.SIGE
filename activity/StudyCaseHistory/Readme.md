@@ -181,6 +181,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 * https://es.wikipedia.org/wiki/Zipaquir%C3%A1
 * https://www.colombiaenmapas.gov.co/inicio/
+* [Geovisor del municipio de Zipaquirá](https://www.arcgis.com/apps/webappviewer/index.html?id=122af7ada9f1415692af27e9239a6d49)
 
 
 ## Control de versiones
