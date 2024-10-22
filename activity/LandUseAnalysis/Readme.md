@@ -124,7 +124,7 @@ Otendrá los siguientes valores:
 
 ## 2. Análisis de diferencias
 
-En la siguiente tabla resumen e ilustración, podrá observar las diferencias encontradas entre las áreas por clasificación de suelo a partir de los datos mostrados en el mapa oficial del POT CG-01, con respecto a las asignaciones de categoría de suelo contenidas en la capa _MOT.shp_.
+En la siguiente tabla de resumen e ilustración, podrá observar las diferencias encontradas entre las áreas por clasificación de suelo a partir de los datos mostrados en el mapa oficial del POT CG-01, con respecto a las asignaciones de categoría de suelo contenidas en la capa _MOT.shp_.
 
 <div align="center"><img src="graph/Excel_MOT_ClasificacionSuelo_Diferencias1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_MOT_ClasificacionSuelo_Diferencias1.png" alt="R.SIGE" width="100%" border="0" /></div>
