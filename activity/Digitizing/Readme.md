@@ -167,7 +167,7 @@ De acuerdo al valor obtenido y a los rangos definidos, el tramo digitalizado del
 
 ## 3. Digitalización de predios
 
-1. Agregue al mapa la capa de drenajes disponible en la ruta `\R.SIGE\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\RURAL\TERRENO_PREDIO_RURAL`, ajuste la simbología dejando solo el contorno, filtre solo los predios de la vereda 2589900000004 y rotule utilizando solo los 4 últimos caracteres del campo _codigo_. Como observa, alrededor del tramo de drenaje digitalizado, existen algunos predios cuyo límite es el río, también este corresponde a un límite veredal y los predios no se adaptan a la verdadera forma del cauce. 
+1. Agregue al mapa la capa de predios disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\ 25899.gdb\RURAL\TERRENO_PREDIO_RURAL`, ajuste la simbología dejando solo el contorno, filtre solo los predios de la vereda 2589900000004 y rotule utilizando solo los 4 últimos caracteres del campo _codigo_. Como observa, alrededor del tramo de drenaje digitalizado, existen algunos predios cuyo límite es el río, también este corresponde a un límite veredal y los predios no se adaptan a la verdadera forma del cauce. 
 
 Rótulo Arcade: `Right($feature.codigo, 4)`
 
