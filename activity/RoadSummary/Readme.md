@@ -53,7 +53,7 @@ Desde la tabla de contenido y utilizando la herramienta _Data / Export Features_
 
 <div align="center"><img src="graph/ArcGISPro_VialUrbanoTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. En la capa de vías rurales, asigne _Rural_ en el campo `ZonaNombre` y asigne los nombres de las vías tomando como referencia los valores contenidos en los campos `Layer` y `VIAS_`. una vez asignados los nombres, elimine los campos `Layer` y `VIAS_`. 
+5. En la capa de vías rurales, asigne _Rural_ en el campo `ZonaNombre` y asigne los nombres de las vías tomando como referencia los valores contenidos en los campos `Layer` y `VIAS_`, una vez asignados los nombres, elimine los campos `Layer` y `VIAS_`. 
 
 <div align="center"><img src="graph/ArcGISPro_VialRuralTable1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -102,7 +102,7 @@ Utilizando el calculador de campo, establezca `ORDEN_VIAL = "Vía Urbana"`.
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Simbolice la capa por valores únicos utilizando el campo `ORDEN_VIAL`, establezca color negro y grosor 2 para todas las vías sin orden vial. Podrá observar que las vías ajustadas por zona, no contienen orden vial. Utilizando los ordenes viales de las vías próximas, establezca el orden víal sobre estas vías.
+Simbolice la capa por valores únicos utilizando el campo `ORDEN_VIAL`, establezca color negro y grosor 2 para todas las vías sin orden vial. Podrá observar que algunas de las vías ajustadas por zona, no contienen orden vial. Utilizando los órdenes viales de las vías próximas, establezca el orden víal de estas vías.
 
 <div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues3.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_SymbologyUniqueValues4.png" alt="R.SIGE" width="100%" border="0" /></div>
