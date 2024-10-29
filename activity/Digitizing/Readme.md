@@ -227,7 +227,7 @@ Como observa, ya tenemos completamente digitalizado uno de los predios que se en
 
 </div>
 
-> Tenga en cuenta que los códigos catastrales en Colombia cambiaron de 20 a 30 dígitos. ([Resolución 070 de 2011](../../file/ref/resolucion_70_de_2011.pdf) - IGAC Colombia. Estructura del código catastral ([Guía](../../file/ref/resolucion_70_de_2011_guia.pdf))).
+> Tenga en cuenta que los códigos catastrales en Colombia cambiaron de 20 a 30 dígitos. ([Resolución 070 de 2011](../../file/ref/resolucion_70_de_2011.pdf) - IGAC Colombia. Estructura del código catastral <[Guía](../../file/ref/resolucion_70_de_2011_guia.pdf)>).
 
 <div align="center"><img src="graph/ArcGISPro_Predio_AddField.png" alt="R.SIGE" width="100%" border="0" /></div>
 
