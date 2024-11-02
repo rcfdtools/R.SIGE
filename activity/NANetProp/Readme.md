@@ -29,14 +29,29 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center"><img src="graph/ArcGISPro_CreateGDB.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Importe al dataset _ModeloVial_, la capa _Red_vial_. Desde el panel lateral izquierdo _Contents_, modifique la fuente de datos de cla capa _Red_vial_ hacia la ruta de la GDB del _ModeloVial_
+3. Importe al dataset _ModeloVial_, la capa _Red_vial_. Desde el panel lateral izquierdo _Contents_, modifique la fuente de datos de cla capa _Red_vial_ hacia la ruta de la GDB del _ModeloVial_. Renombre como `T25899EjeVial`.
 
 <div align="center"><img src="graph/ArcGISPro_GDBImportLines.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. En la tabla de atributos de la red vial, cree los siguientes atributos:
 
+<div align="center">
 
+| Atributo    | Descripción                                                                                                                 | Tipo        |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------|:------------|
+| Name        | Nombre de la vía                                                                                                            | Text (255)  |
+| Class       | Clase de vía (Autopista, Calle, Camino, Carrera, Diagonal, Ferrea, Peatonal, Sin Clase, Transversal)                        | Text (255)  |
+| Meters      | Longitud de tramo en metros                                                                                                 | Double      |
+| kph         | Velocidad de tramo en kilómetros / hora                                                                                     | Double      |
+| Oneway      | Sentido vial vector (TF, FT, N). To, From, Not                                                                              | Text (1)    |
+| Hierarchy   | Jerarquía víal de 1 a n                                                                                                     | Long        |
+| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                               | Long        |
+| FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)  | Double      |
+| TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)                | Double      |
 
+</div>
+
+> Atributos complementarios: en caso de que la red vial incluya puentes, deprimidos, tramos sin pavimentar, zonas de paso peatonal y otros elementos importantes, deberá incluir estos atributos
 
 
 
