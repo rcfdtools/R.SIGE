@@ -69,6 +69,8 @@ Expresión Python: `!ORDEN_VIAL! + " " + !TIPO_FOR!`
 
 6. Para la homologación de los atributos `Class` correspondiente a la clase de vía, `kph` correspondiente a la velocidad y `Hierarchy` correspondiente a la jerarquía vía, utilice como referencia los valores descritos en la siguiente tabla y script de Python:
 
+<div align="center">
+
 | Class         | kph | Hierarchy |
 |:--------------|:---:|:---------:|
 | Peatonal      |  5  |     9     |
@@ -89,6 +91,8 @@ Expresión Python: `!ORDEN_VIAL! + " " + !TIPO_FOR!`
 | Doble calzada | 60  |     1     |
 | Vía Ubate     | 60  |     1     |
 | Rural         | 30  |     3     |
+
+</div>
 
 > Para vías que contienen dos descriptores, p.ej. _Peatonal Carrera 6_, la clase asignada corresponderá a la primera encontrada en la lista de evaluación del script de Python.  
 > Para vías por tipo de orden también son necesarias las homologaciones.  
