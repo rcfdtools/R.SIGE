@@ -37,21 +37,28 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center">
 
-| Atributo    | Descripción                                                                                                                 | Tipo        |
-|:------------|:----------------------------------------------------------------------------------------------------------------------------|:------------|
-| Name        | Nombre de la vía                                                                                                            | Text (255)  |
-| Class       | Clase de vía (Autopista, Calle, Camino, Carrera, Diagonal, Ferrea, Peatonal, Sin Clase, Transversal)                        | Text (255)  |
-| Meters      | Longitud de tramo en metros                                                                                                 | Double      |
-| kph         | Velocidad de tramo en kilómetros / hora                                                                                     | Double      |
-| Oneway      | Sentido vial vector (TF, FT, N). To, From, Not                                                                              | Text (1)    |
-| Hierarchy   | Jerarquía víal de 1 a n                                                                                                     | Long        |
-| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                               | Long        |
-| FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)  | Double      |
-| TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)                | Double      |
+| Atributo    | Descripción                                                                                                                | Tipo       |
+|:------------|:---------------------------------------------------------------------------------------------------------------------------|:-----------|
+| Name        | Nombre de la vía                                                                                                           | Text (255) |
+| Class       | Clase de vía (Autopista, Calle, Camino, Carrera, Diagonal, Ferrea, Peatonal, Transversal, Sin Clase)                       | Text (255) |
+| Meters      | Longitud de tramo en metros                                                                                                | Double     |
+| kph         | Velocidad de tramo en kilómetros / hora                                                                                    | Double     |
+| Oneway      | Sentido vial vector (TF, FT, N). To, From, Not                                                                             | Text (2)   |
+| Hierarchy   | Jerarquía víal de 1 a n                                                                                                    | Long       |
+| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                              | Long       |
+| FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60) | Double     |
+| TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)               | Double     |
 
 </div>
 
 > Atributos complementarios: en caso de que la red vial incluya puentes, deprimidos, tramos sin pavimentar, zonas de paso peatonal y otros elementos importantes, deberá incluir estos atributos
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
+
+
 
 
 
