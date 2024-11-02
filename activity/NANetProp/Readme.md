@@ -19,7 +19,7 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 * [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
-## 1. Procedimiento general en ArcGIS Pro
+## 1. Creación de base de datos e importación de ejes viales
 
 1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _NetworkAnalyst_ y establezca el CRS 9377. Agregue al mapa la capa de la red vial municipal disponible en la ruta `\file\gdb\SIGE.gdb\Red_vial` y ajuste la simbología a valores únicos representando el campo de atributos `ZonaNombre`.  
 
@@ -45,7 +45,7 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 | kph         | Velocidad de tramo en kilómetros / hora                                                                                       | Double     |
 | Oneway      | Sentido vial vector (FT, TF, N). To, From, Not                                                                                | Text (2)   |
 | Hierarchy   | Jerarquía víal de 1 a n                                                                                                       | Long       |
-| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                                 | Long       |
+| Func_Class  | Clasificador víal numérico en función de la clase, jerarquía y localización geográfica                                        | Long       |
 | FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)    | Double     |
 | TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)                  | Double     |
 
@@ -55,7 +55,10 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Para la homologación de atributos, asigne al campo _Name_ los valores contenidos en el campo _NombreVia_, para ello utilice el calculador de campo. Podrá observar que mayoritariamente los nombres solo están disponibles en las vías urbanas.
+
+## 2. Homologación de atributos
+
+1. Para la homologación de atributos, asigne al campo _Name_ los valores contenidos en el campo _NombreVia_, para ello utilice el calculador de campo. Podrá observar que mayoritariamente los nombres solo están disponibles en las vías urbanas.
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -67,7 +70,7 @@ Expresión Python: `!ORDEN_VIAL! + " " + !TIPO_FOR!`
 
 > Para vías sin ningún tipo de atributo disponible asigne _(Sin nombre)_.
 
-6. Para la homologación de los atributos `Class` correspondiente a la clase de vía, `kph` correspondiente a la velocidad y `Hierarchy` correspondiente a la jerarquía vía, utilice como referencia los valores descritos en la siguiente tabla y script de Python:
+2. Para la homologación de los atributos `Class` correspondiente a la clase de vía, `kph` correspondiente a la velocidad y `Hierarchy` correspondiente a la jerarquía vía, utilice como referencia los valores descritos en la siguiente tabla y script de Python:
 
 <div align="center">
 
@@ -149,6 +152,43 @@ Simbología para velocidades viales
 Simbología para jerarquías viales
 
 <div align="center"><img src="graph/ArcGISPro_Symbology3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para la homologación del campo _Oneway_ correspondiente a sentidos viales, simbolice utilizando la direccionalidad de las líneas y establezca los siguientes valores de ejemplo:
+
+* Vías peatonales: `N` debido a que no es transitable en vehículo.
+* VÍA FERREA: `N` debido a que no es transitable en vehículo.
+* CARRERA 10: `TF` debido a que el tránsito de esta vía es de noreste a sudeste.  
+* CARRERA 11: `FT` debido a que el tránsito de esta vía es de sudeste a noreste. 
+
+Para vías peatonales y vía férrea
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para carrera 10
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Para carrera 11
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Para completar la homologación de sentidos viales se recomienda utilizar como referencia las flechas direccionales de los mapas de Google Stree o Waze.
+
+Simbología de jerarquía
+
+<div align="center"><img src="graph/ArcGISPro_Symbology4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Para la homologación del atributo `Func_Class` correspondiente a la combinación de clase, jerarquía y localización geográfica, que permite ajustar la prioridad con la que se resolverá la red, utilizaremos los valores inicialmente definidos en _Hierarchy_.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Los atributos de longitud de tramo `Meters` y tiempos de desplazamiento en diferentes sentidos FT_Minutes y TF_Minutes, serán obtenidos una vez se planaricen o segmenten los tramos viales entre intersecciones.
+
+
+## 3. Segmentación de tramos a partir de intersecciones
+
+
+
 
 
 
