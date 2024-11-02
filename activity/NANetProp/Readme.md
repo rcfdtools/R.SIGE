@@ -29,7 +29,7 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center"><img src="graph/ArcGISPro_CreateGDB.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Importe al dataset _ModeloVial_, la capa _Red_vial_. Desde el panel lateral izquierdo _Contents_, modifique la fuente de datos de cla capa _Red_vial_ hacia la ruta de la GDB del _ModeloVial_. Renombre como `T25899EjeVial`.
+3. Importe al dataset _ModeloVial_, la capa _Red_vial_. Desde el panel lateral izquierdo _Contents_, modifique la fuente de datos de la capa _Red_vial_ hacia la ruta de la GDB del _ModeloVial_. Renombre como `T25899EjeVial`.
 
 <div align="center"><img src="graph/ArcGISPro_GDBImportLines.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -37,17 +37,17 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center">
 
-| Atributo    | Descripción                                                                                                                | Tipo       |
-|:------------|:---------------------------------------------------------------------------------------------------------------------------|:-----------|
-| Name        | Nombre de la vía                                                                                                           | Text (255) |
-| Class       | Clase de vía (Autopista, Calle, Camino, Carrera, Diagonal, Ferrea, Peatonal, Transversal, Sin Clase)                       | Text (255) |
-| Meters      | Longitud de tramo en metros                                                                                                | Double     |
-| kph         | Velocidad de tramo en kilómetros / hora                                                                                    | Double     |
-| Oneway      | Sentido vial vector (TF, FT, N). To, From, Not                                                                             | Text (2)   |
-| Hierarchy   | Jerarquía víal de 1 a n                                                                                                    | Long       |
-| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                              | Long       |
-| FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60) | Double     |
-| TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!KPH!/60)               | Double     |
+| Atributo    | Descripción                                                                                                                   | Tipo       |
+|:------------|:------------------------------------------------------------------------------------------------------------------------------|:-----------|
+| Name        | Nombre de la vía                                                                                                              | Text (255) |
+| Class       | Clase de vía (Autopista, Calle, Camino, Carrera, Diagonal, Férrea, Peatonal, Transversal, Rural, Alameda, Avenida, Sin clase) | Text (255) |
+| Meters      | Longitud de tramo en metros                                                                                                   | Double     |
+| kph         | Velocidad de tramo en kilómetros / hora                                                                                       | Double     |
+| Oneway      | Sentido vial vector (FT, TF, N). To, From, Not                                                                                | Text (2)   |
+| Hierarchy   | Jerarquía víal de 1 a n                                                                                                       | Long       |
+| Func_Class  | Clasificador víal numérico en función de la clase y jerarquía                                                                 | Long       |
+| FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)    | Double     |
+| TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)                  | Double     |
 
 </div>
 
@@ -55,9 +55,96 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center"><img src="graph/ArcGISPro_AddField1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+5. Para la homologación de atributos, asigne al campo _Name_ los valores contenidos en el campo _NombreVia_, para ello utilice el calculador de campo. Podrá observar que mayoritariamente los nombres solo están disponibles en las vías urbanas.
 
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+Desde las propiedades de la capa de vías, filtre solo aquellos tramos que no tienen nombre y utilizando el calculador de campo, asigne nombres temporales a partir de los demás campos existentes en la tabla. Por ejemplo, asigne como nombre los valores contenidos en los campos _ORDEN_VIAL_ y _TIPO_FOR_. Luego de la asignación podrá observar que todas las vías tienen un nombre asignado.
 
+Expresión Python: `!ORDEN_VIAL! + " " + !TIPO_FOR!`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Para vías sin ningún tipo de atributo disponible asigne _(Sin nombre)_.
+
+6. Para la homologación de los atributos `Class` correspondiente a la clase de vía, `kph` correspondiente a la velocidad y `Hierarchy` correspondiente a la jerarquía vía, utilice como referencia los valores descritos en la siguiente tabla y script de Python:
+
+| Class         | kph | Hierarchy |
+|:--------------|:---:|:---------:|
+| Peatonal      |  5  |     9     |
+| Alameda       |  5  |     9     |
+| Autopista     | 60  |     1     |
+| Avenida       | 30  |     2     |
+| Carrera       | 30  |     2     |
+| Calle         | 20  |     3     |
+| Diagonal      | 20  |     2     |
+| Transversal   | 20  |     2     |
+| Férrea        | 30  |     9     |
+| Camino        | 40  |     4     |
+| Urbana        | 20  |     3     |
+| Primer orden  | 50  |     4     |
+| Segundo orden | 40  |     5     |
+| Tercer orden  | 35  |     6     |
+| Cuarto orden  | 30  |     7     |
+| Doble calzada | 60  |     1     |
+| Vía Ubate     | 60  |     1     |
+| Rural         | 30  |     3     |
+
+> Para vías que contienen dos descriptores, p.ej. _Peatonal Carrera 6_, la clase asignada corresponderá a la primera encontrada en la lista de evaluación del script de Python.  
+> Para vías por tipo de orden también son necesarias las homologaciones.  
+
+```
+# roadlist: 0-Class, 1-kph, 2-Hierarchy
+roadlist = [['Peatonal', 5, 9],
+            ['Alameda', 5, 9],
+            ['Autopista', 60, 1],
+            ['Avenida', 30, 2],
+            ['Carrera', 30, 2],
+            ['Calle', 20, 3],
+            ['Diagonal', 20, 2],
+            ['Transversal', 20, 2],
+            ['Férrea', 30, 9],
+            ['Camino', 40, 5],
+            ['Urbana', 20, 3],
+            ['Primer orden', 50, 4],
+            ['Segundo orden', 40, 5],
+            ['Tercer orden', 35, 6],
+            ['Cuarto orden', 30, 7],
+            ['Doble calzada', 60, 1],
+            ['Vía Ubate', 60, 1],
+            ['Rural', 30, 4]]
+
+#valnovalid: Class='(No definido)', kph=20, Hierarchy=9
+def roadclass(roadname, atributo, valnovalid):
+  roadname = ' ' + roadname + ' ' # required initial and end spaces for correct validation
+  val = True
+  txt = valnovalid
+  for i in roadlist:
+    if roadname.upper().find(i[0].upper()) > 0 and val:
+      val = False
+      txt = i[atributo]
+  return txt
+  ```
+
+Llamados de función
+
+* Class = `roadclass(!Name!, 0, '(No definido)')` donde 0 corresponde a la columna de la matriz de atributos
+* kph = `roadclass(!Name!, 1, 20)` donde 20 corresponde a 20 kph para vías sin Class 
+* Hierarchy = `roadclass(!Name!, 2, 9)` donde 9 corresponde la jerarquía para vías sin Class
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Simbología para clases viales
+
+<div align="center"><img src="graph/ArcGISPro_Symbology1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Simbología para velocidades viales
+
+<div align="center"><img src="graph/ArcGISPro_Symbology2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Simbología para jerarquías viales
+
+<div align="center"><img src="graph/ArcGISPro_Symbology3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
