@@ -32,7 +32,7 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 <div align="center"><img src="graph/ArcGISPro_GDBImportLines.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. En la tabla de atributos de la red vial, cree los siguientes atributos:
+4. En la tabla de atributos de la red vial, cree los siguientes campos:
 
 <div align="center">
 

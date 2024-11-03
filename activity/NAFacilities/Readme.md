@@ -18,14 +18,71 @@ Importe a la GDB, la capa de establecimientos educativos obtenidos de la cartogr
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 
 
-## 1. Importación y homologación de atributos
+## 1. Importación de establecimientos educativos y homologación de atributos 
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _NetworkAnalyst_ y establezca el CRS 9377. Agregue al mapa la capa de la red vial municipal disponible en la ruta `\file\gdb\SIGE.gdb\Red_vial` y ajuste la simbología a valores únicos representando el campo de atributos `ZonaNombre`.  
+1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado en la actividad anterior. Importe a la GDB _RedVial_, la capa _\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\EDUCATIVO_ de la cartografía del POT, correspondiente a la localización de instituciones educativas y nombre cómo T25899Educacion. Agregue al mapa y simbolice utilizando el _Pushpin School_.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. En la tabla de atributos, cree los siguientes campos:
+
+<div align="center">
+
+| Atributo | Descripción                                                                  | Tipo       |
+|:---------|:-----------------------------------------------------------------------------|:-----------|
+| Name     | Nombre de la institución educativa                                           | Text (255) |
+| Category | Categoría de la institución (Centro, Colegio, Escuela, Jardin, Universidad)  | Text (50)  |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_AddField1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando el calculador de campo, asigne en _Name_ los nombres de instituciones disponibles en `Nombre_Geografico`, luego de la asignación elimine el campo `Nombre_Geografico` y el campo `CUDE` que se encuentra vacío.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Para la asignación de las categorías requeridas en el campo `Category`, ejecute el siguiente script en Python:
+
+```
+# edufaclist: 0-SearchText, 1-AssignedCategory
+edufaclist = [['Centro', 'Centro'],
+            ['Escuela', 'Escuela'],
+            ['Jardin', 'Jardin'],
+            ['Jardín', 'Jardin'],
+            ['I.C.B.F.', 'Jardin'],
+            ['Universidad', 'Universidad'],
+            ['SENA', 'Universidad'],
+            ['Colegio', 'Colegio'],
+            ['Gimnasio', 'Colegio'],
+            ['Instituto', 'Colegio'],
+            ['Liceo', 'Colegio'],
+            ['I.E.D.', 'Colegio']]
+
+def edufaccategory(edufac):
+  edufac = ' ' + edufac + ' ' # required initial and end spaces for correct validation
+  val = True
+  txt = 'Centro' # default value for facilities uncontained in the list
+  for i in edufaclist:
+    if edufac.upper().find(i[0].upper()) > 0 and val:
+      val = False
+      txt = i[1]
+  return txt
+  ```
+
+Llamado de función
+
+* Category = `edufaccategory(!Name!)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Simbolice por valores únicos y cree un gráfico de barras mostrando el conteo de establecimientos educativos por categoría.
+
+<div align="center"><img src="graph/ArcGISPro_Char1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
+## 2. Importación de centros de atención de emergencias y homologación de atributos 
+
+1. 
 
 
 
