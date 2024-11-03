@@ -99,6 +99,7 @@ Expresión Python: `!ORDEN_VIAL! + " " + !TIPO_FOR!`
 
 > Para vías que contienen dos descriptores, p.ej. _Peatonal Carrera 6_, la clase asignada corresponderá a la primera encontrada en la lista de evaluación del script de Python.  
 > Para vías por tipo de orden también son necesarias las homologaciones.  
+> Las velocidades definidas en el campo _kph_ corresponden a velocidades vehiculares. 
 
 ```
 # roadlist: 0-Class, 1-kph, 2-Hierarchy
@@ -138,6 +139,8 @@ Llamados de función
 * Class = `roadclass(!Name!, 0, '(No definido)')` donde 0 corresponde a la columna de la matriz de atributos
 * kph = `roadclass(!Name!, 1, 20)` donde 20 corresponde a 20 kph para vías sin Class 
 * Hierarchy = `roadclass(!Name!, 2, 9)` donde 9 corresponde la jerarquía para vías sin Class
+
+> En el llamado de función, los valores del segundo parámetros correspondientes a 0,1,2, corresponden al número de columnas en la matriz roadlist, donde 0 es utilizado para la clase, 1 para la velocidad en kph y 2 para las jerarquías.
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -185,7 +188,7 @@ Simbología de jerarquía
 > Los atributos de longitud de tramo `Meters` y tiempos de desplazamiento en diferentes sentidos FT_Minutes y TF_Minutes, serán calculados una vez se segmenten los tramos viales entre intersecciones.
 
 
-## 3. Segmentación de tramos a partir de intersecciones
+## 3. Segmentación de tramos a partir de intersecciones y asignación de atributos
 
 1. Cree una copia de la capa `T25899EjeVial` y nombre como `\file\gdb\RedVial.gdb\ModeloVial\T25899EjeVialPlanarize`.
 
@@ -201,19 +204,29 @@ Simbología de jerarquía
 
 <div align="center"><img src="graph/ArcGISPro_Planarize2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Utilizando el calculador de campo, calcule en el campo `Meters` la longitud en metros de cada segmento de la red. Rotule cada tramo y verifique las longitudes de cada segmento.
+
+Rótulo Arcade: `Round($feature.Meters, 1)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator8.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Utilizando el calculador de campo, calcule el tiempo de viaje por tramo en los campos `FT_Minutes` y `Tf_Minutes = (!Meters!/1000)/(!kph!/60)`. Rotule y verifique los valores obtenidos convirtiendo a minutos. Simbolice por colores graduados y desviación estándar la red a partir de los tiempos obtenidos.
+
+Rótulo Arcade: `Round($feature.FT_Minutes*60, 0) + "seg"` 
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator9.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
 
 ## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                | Geometría   | Registros | 
-|----------------------------------|--------------------------------------------|-------------|-----------| 
-|                                  |                                            | Polígono 2D | 14        | 
-|                                  |                                            | Polígono 2D | 14        | 
-|                                  |                                            | Polígono 2D | 14        | 
+| Nombre                  | Descripción                                                                             | Geometría     | Registros | 
+|-------------------------|-----------------------------------------------------------------------------------------|---------------|-----------| 
+| T25899EjeVial           | Red vial municipal importada a la GDB RedVial.gdb                                       | Poli-línea 2D | 1548      | 
+| T25899EjeVialPlanarize  | Red vial municipal importada a la GDB con tramos segmentados a partir de intersecciones | Poli-línea 2D   | 3208      | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
 
 
 ## Actividades de proyecto :triangular_ruler:
@@ -222,8 +235,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Esta actividad no requiere del desarrollo de elementos en el avance del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                        | 
-| Avance **P7** | :compass:Mapa digital impreso _P7-1: xxxx_<br>Incluir xxxxx. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                                                                                                                                          | 
+| Avance **P7** | Para su caso de estudio, importe, homologue y segmente los tramos viales a partir de intersecciones.                                                                                                                                                                                                                                                                                                                                                | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -239,17 +251,17 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.02.24 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.06.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión     | Descripción                                                | Autor                                      | Horas |
+|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.04.11  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.11.02  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../xxxx) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|---------------------|-------------------|---------------------------------------------------------------------------|---------------|
+| [:arrow_backward: Anterior](../Hazard/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
+|--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
