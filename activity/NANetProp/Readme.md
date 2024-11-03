@@ -191,44 +191,26 @@ Simbología de jerarquía
 
 <div align="center"><img src="graph/ArcGISPro_ExportFeatures1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Desde el panel lateral izquierdo _Contents_ y dando clic derecho sobre la capa `T25899EjeVialPlanarize`, seleccione todas las entidades o líneas (para el caso de estudio corresponde a 1584 líneas). Luego desde el menú _Edit / Tools_, ejecute la opción _Divide / Planarize_ que subdividirá cada línea a partir de las intersecciones encontradas. Defina el _Cluster Tolerance_ o radio de aproximación de intersección en 0.001m.
+2. Desde el panel lateral izquierdo _Contents_ y dando clic derecho sobre la capa `T25899EjeVialPlanarize`, seleccione todas las entidades o líneas (para el caso de estudio corresponde a 1584 líneas). Luego desde el menú _Edit / Tools_, ejecute la opción _Divide / Planarize_ que subdividirá cada línea a partir de las intersecciones encontradas. Defina el _Cluster Tolerance_ o radio de aproximación de intersección en 0.001m. Una vez segmentadas las líneas, en el menú _Edit_ de clic en _Save_ para guardar las modificaciones realizadas.
+
+> El proceso de segmentación de tramos en intersecciones es requerido para resolver los giros en esquinas. Pasos elevados entre tramos, p.ej., los correspondientes a puentes, requieren de la unión de tramos próximos para evitar giros incorrectos. 
 
 <div align="center"><img src="graph/ArcGISPro_Planarize1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-Abra la tabla de atributos y simbolice a partir de flechas direccionales hacia el punto final, podrá observar que se han obtenido 3208 entidades.
+3. Abra la tabla de atributos y simbolice a partir de flechas direccionales hacia el punto final, podrá observar que se han obtenido 3208 entidades.
 
 <div align="center"><img src="graph/ArcGISPro_Planarize2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
-
-
-
-
-
-
-
-## 2. Análisis usando software libre - QGIS
-
-Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
-
-| Proceso            | Procedimiento                                                           |
-|:-------------------|:------------------------------------------------------------------------|
-| Simbología         | Modificable desde las propiedades de la capa en la pestaña _Symbology_. |
-| Rotulado           | Modificable desde las propiedades de la capa en la pestaña _Labels_.    |
-
-Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
-
-[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
-[:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
 
 
 ## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                           | Descripción                                                                                                                  | Geometría   | Registros | 
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-------------|-----------| 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
-|                                  |                                                                                                                              | Polígono 2D | 14        | 
+| Nombre                           | Descripción                                | Geometría   | Registros | 
+|----------------------------------|--------------------------------------------|-------------|-----------| 
+|                                  |                                            | Polígono 2D | 14        | 
+|                                  |                                            | Polígono 2D | 14        | 
+|                                  |                                            | Polígono 2D | 14        | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
