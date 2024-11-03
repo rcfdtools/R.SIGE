@@ -1,5 +1,5 @@
 # Homologación de red vial urbana y rural
-Keywords: `network-properties` `hierarchy` `oneway`
+Keywords: `network-properties` `hierarchy` `oneway` `planarize`
 
 En la carpeta GDB cree una File Geodatabase y un dataset para la integración de la red vial. Importe al dataset las vías municipales y homologue a los atributos para modelación de redes viales. Seleccione todas las vías y ejecute la función Planarize que le permitira obtener tramos independientes entre intersecciones (recalcule longitudes y tiempos de viaje en cada tramo).
 
@@ -188,7 +188,7 @@ Simbología de jerarquía
 > Los atributos de longitud de tramo `Meters` y tiempos de desplazamiento en diferentes sentidos FT_Minutes y TF_Minutes, serán calculados una vez se segmenten los tramos viales entre intersecciones.
 
 
-## 3. Segmentación de tramos a partir de intersecciones y asignación de atributos
+## 3. Segmentación de tramos por intersecciones y complementación de atributos
 
 1. Cree una copia de la capa `T25899EjeVial` y nombre como `\file\gdb\RedVial.gdb\ModeloVial\T25899EjeVialPlanarize`.
 
@@ -221,10 +221,10 @@ Rótulo Arcade: `Round($feature.FT_Minutes*60, 0) + "seg"`
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre                  | Descripción                                                                             | Geometría     | Registros | 
-|-------------------------|-----------------------------------------------------------------------------------------|---------------|-----------| 
-| T25899EjeVial           | Red vial municipal importada a la GDB RedVial.gdb                                       | Poli-línea 2D | 1548      | 
-| T25899EjeVialPlanarize  | Red vial municipal importada a la GDB con tramos segmentados a partir de intersecciones | Poli-línea 2D   | 3208      | 
+| Nombre                  | Descripción                                                                             | Geometría     | Registros  | 
+|-------------------------|-----------------------------------------------------------------------------------------|---------------|------------| 
+| T25899EjeVial           | Red vial municipal importada a la GDB RedVial.gdb                                       | Poli-línea 2D | 1548       | 
+| T25899EjeVialPlanarize  | Red vial municipal importada a la GDB con tramos segmentados a partir de intersecciones | Poli-línea 2D | 3208       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
@@ -235,7 +235,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Para su caso de estudio, importe, homologue y segmente los tramos viales a partir de intersecciones.                                                                                                                                                                                                                                                                                                                                                | 
+| Avance **P7** | Para su caso de estudio, importe, homologue y segmente los tramos viales a partir de intersecciones. Verifique que los campos de atributos creados estén completamente poblados, excepto por el atributo `Oneway` que únicamente se aplica a tramos específicos de la red.                                                                                                                                                                          | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
