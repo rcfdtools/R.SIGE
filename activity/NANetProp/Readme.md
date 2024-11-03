@@ -182,10 +182,22 @@ Simbología de jerarquía
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-> Los atributos de longitud de tramo `Meters` y tiempos de desplazamiento en diferentes sentidos FT_Minutes y TF_Minutes, serán obtenidos una vez se planaricen o segmenten los tramos viales entre intersecciones.
+> Los atributos de longitud de tramo `Meters` y tiempos de desplazamiento en diferentes sentidos FT_Minutes y TF_Minutes, serán calculados una vez se segmenten los tramos viales entre intersecciones.
 
 
 ## 3. Segmentación de tramos a partir de intersecciones
+
+1. Cree una copia de la capa `T25899EjeVial` y nombre como `\file\gdb\RedVial.gdb\ModeloVial\T25899EjeVialPlanarize`.
+
+<div align="center"><img src="graph/ArcGISPro_ExportFeatures1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el panel lateral izquierdo _Contents_ y dando clic derecho sobre la capa `T25899EjeVialPlanarize`, seleccione todas las entidades o líneas (para el caso de estudio corresponde a 1584 líneas). Luego desde el menú _Edit / Tools_, ejecute la opción _Divide / Planarize_ que subdividirá cada línea a partir de las intersecciones encontradas. Defina el _Cluster Tolerance_ o radio de aproximación de intersección en 0.001m.
+
+<div align="center"><img src="graph/ArcGISPro_Planarize1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Abra la tabla de atributos y simbolice a partir de flechas direccionales hacia el punto final, podrá observar que se han obtenido 3208 entidades.
+
+<div align="center"><img src="graph/ArcGISPro_Planarize2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
