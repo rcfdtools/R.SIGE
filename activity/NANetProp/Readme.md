@@ -3,7 +3,7 @@ Keywords: `network-properties` `hierarchy` `oneway`
 
 En la carpeta GDB cree una File Geodatabase y un dataset para la integración de la red vial. Importe al dataset las vías municipales y homologue a los atributos para modelación de redes viales. Seleccione todas las vías y ejecute la función Planarize que le permitira obtener tramos independientes entre intersecciones (recalcule longitudes y tiempos de viaje en cada tramo).
 
-<div align="center"><img src="graph/NANetPro.png" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/NANetPro.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Objetivos
