@@ -16,7 +16,6 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 
 * [:mortar_board:Actividad](../RoadSummary/Readme.md): Análisis estadístico de la red vial.
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
-* [:toolbox:Herramienta](https://qgis.org/): QGIS 3.38 o superior.
 
 
 ## 1. Creación de base de datos e importación de ejes viales
@@ -261,7 +260,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../Hazard/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../Hazard/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/45) | [Siguiente :arrow_forward:](../NAFacilities/Readme.md) |
+|--------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------|
 
 [^1]: 
