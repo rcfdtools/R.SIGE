@@ -90,11 +90,11 @@ Llamado de función
 
 <div align="center">
 
-| Atributo  | Descripción                                                                                               | Tipo       |
-|:----------|:----------------------------------------------------------------------------------------------------------|:-----------|
-| Name      | Nombre del centro de atención                                                                             | Text (255) |
-| Emergency | Centro de atención de emergencias: 1-Sí, 0-No                                                             | Short      |
-| Category  | Categoría del centro de atención (Bomberos, Policía, Municipal, CAI, ESP, Hospital, Centro Salud, Médico) | Text (50)  |
+| Atributo  | Descripción                                                                                          | Tipo       |
+|:----------|:-----------------------------------------------------------------------------------------------------|:-----------|
+| Name      | Nombre del centro de atención                                                                        | Text (255) |
+| Emergency | Centro de atención de emergencias: 1-Sí, 0-No                                                        | Short      |
+| Category  | Categoría del centro de atención (Bomberos, Policía, Municipal, CAI, Hospital, Centro Salud, Médico) | Text (50)  |
 
 </div>
 
@@ -108,8 +108,46 @@ Llamado de función
 
 <div align="center"><img src="graph/ArcGISPro_SelectByAttibutes1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+4. Para la asignación de las categorías requeridas en el campo `Category`, ejecute el siguiente script en Python:
 
+```
+# emergencylist: 0-SearchText, 1-AssignedCategory
+emergencylist = [['Bomberos', 'Bomberos'],
+                ['Policía', 'Policia'],
+                ['Municipal', 'Municipal'],
+                ['CAI', 'Policia'],
+                ['Hospital', 'Medico'],
+                ['Centro Salud', 'Medico'],
+                ['Médico', 'Medico'],
+                ['Clínica', 'Medico'],
+                ['E.A.A.A.Z.', 'Municipal'],
+                ['Salud', 'Medico'],
+                ['Médica', 'Medico'],
+                ['ALCALDÍA', 'Municipal'],
+                ['SALUDCOOP', 'Medico']]
+def emergencycategory(emergencyname):
+  emergencyname = ' ' + emergencyname + ' ' # required initial and end spaces for correct validation
+  val = True
+  txt = '(No emergencias)' # default value for facilities uncontained in the list
+  for i in emergencylist:
+    if emergencyname.upper().find(i[0].upper()) > 0 and val:
+      val = False
+      txt = i[1]
+  return txt
+  ```
 
+Llamado de función
+
+* Category = `emergencycategory(!Name!)`
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Para la marcación de cuáles localizaciones atienden o no emergencias, seleccione por atributos todos los registros cuya categoría sea `(No emergencias)` y asigne el código cero, luego invierta la selección y asigne 1 a las localizaciones con categoría asignada.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. 
 
 
 
