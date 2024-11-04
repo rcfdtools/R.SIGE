@@ -18,7 +18,7 @@ En el dataset contenido en la GDB, crear el dataset para modelación de redes vi
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 
 
-## 1. Importación de establecimientos educativos y homologación de atributos 
+## 1. Creación y configuración de la red de analisis
 
 1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente. En el Dataset `ModeloVial` contenido en la GDB, de clic derecho y seleccione la opción _Create Network Dataset_, nombre como `ModeloVial_ND` y seleccione el feature class `T25899EjeVialPlanarize`. En caso de que su red corresponda a líneas 3D o haya incluido atributos para pasos elevados o deprimidos, seleccione la opción `Elevation Fields`. Remueva el Network Dataset del mapa para que se puedan modificar sus propiedades.
 
@@ -97,14 +97,23 @@ En _Landmarks_ agregar _Confirmation_ y _Turn_ para las localizaciones de instit
 <div align="center"><img src="graph/ArcGISPro_BuildNetwork1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
 
+## 2. Exploración de la red
+
+En el panel lateral izquierdo _Contents_, seleccione el dataset _ModeloVial_ND_ y en el menú superior _Data_ seleccione la opción _Explore Network_. De clic en cualquier tramo de la red, verifique los resultados obtenidos en el panel lateral derecho correspondientes a las propiedades configuradas para su solución. Repita la exploración en varias localizaciones de la red en la zona urbana y rural. 
+
+<div align="center"><img src="graph/ArcGISPro_ExploreNetwork1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExploreNetwork2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ExploreNetwork3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+
 ## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre           | Descripción                                                            | Geometría | Registros | 
-|------------------|------------------------------------------------------------------------|-----------|-----------| 
-| T25899Educacion  | Localización de establecimientos educativos                            | Point 2D  | 74        | 
-| T25899Emergencia | Localización de puntos de interes y centros de atención de emergencias | Point 2D  | 341       | 
+| Nombre         | Descripción    | Geometría      | Registros      | 
+|----------------|----------------|----------------|----------------| 
+| (No requerido) | (No requerido) | (No requerido) | (No requerido) | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
@@ -115,7 +124,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Para su caso de estudio, importe y homologue los centros educativos y de atención de emergencias.                                                                                                                                                                                                                                                                                                                                                   | 
+| Avance **P7** | Para su caso de estudio, cree, configure y verifique que se creen los nodos de intersección de la red vehicular.                                                                                                                                                                                                                                                                                                                                    | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -133,8 +142,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Versión    | Descripción                                                | Autor                                      | Horas |
 |------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.04.12 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.11.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   5   |
+| 2024.04.13 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.11.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |  3   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
