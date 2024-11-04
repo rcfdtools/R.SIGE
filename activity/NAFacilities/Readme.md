@@ -152,15 +152,14 @@ Llamado de función
 <div align="center"><img src="graph/ArcGISPro_Char2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
 ## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
 
-| Nombre | Descripción                                                                             | Geometría     | Registros  | 
-|--------|-----------------------------------------------------------------------------------------|---------------|------------| 
-| xxx    | Red vial municipal importada a la GDB RedVial.gdb                                       | Poli-línea 2D | 1548       | 
-| xxx    | Red vial municipal importada a la GDB con tramos segmentados a partir de intersecciones | Poli-línea 2D | 3208       | 
+| Nombre           | Descripción                                                            | Geometría | Registros | 
+|------------------|------------------------------------------------------------------------|-----------|-----------| 
+| T25899Educacion  | Localización de establecimientos educativos                            | Point 2D  | 74        | 
+| T25899Emergencia | Localización de puntos de interes y centros de atención de emergencias | Point 2D  | 341       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
@@ -171,7 +170,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Para su caso de estudio, importe, homologue y segmente los tramos viales a partir de intersecciones. Verifique que los campos de atributos creados estén completamente poblados, excepto por el atributo `Oneway` que únicamente se aplica a tramos específicos de la red.                                                                                                                                                                          | 
+| Avance **P7** | Para su caso de estudio, importe y homologue los centros educativos y de atención de emergencias.                                                                                                                                                                                                                                                                                                                                                   | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -187,17 +186,17 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión     | Descripción                                                | Autor                                      | Horas |
-|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.04.11  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.11.02  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
+| Versión    | Descripción                                                | Autor                                      | Horas |
+|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.04.12 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.11.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   5   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../Hazard/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/99999) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../Hazard/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/46) | [Siguiente :arrow_forward:]() |
+|--------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-------------------------------|
 
 [^1]: 
