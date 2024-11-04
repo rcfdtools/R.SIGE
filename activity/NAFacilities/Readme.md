@@ -82,7 +82,26 @@ Llamado de función
 
 ## 2. Importación de centros de atención de emergencias y homologación de atributos 
 
-1. 
+1. Utilizando la herramienta de Geo-procesamiento _Data Management Tools / Merge_, combine dentro de la GDB `RedVial`, las capas _\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\ANOTACION_ y _\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\ANOTACION_URBANO_ de la cartografía del POT, que incluyen puntos de interés y equipamientos. Elimine los elementos que no hacen parte de atención a emergencias, nombre como `T25899Emergencia`. Abra y verifique la tabla de atributos, podrá observar que se han integrado 2009 localizaciones y varias de ellas no tienen nombre geográfico o etiqueta.
+
+<div align="center"><img src="graph/ArcGISPro_Merge1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En la tabla de atributos, cree los siguientes campos:
+
+<div align="center">
+
+| Atributo  | Descripción                                                                                               | Tipo       |
+|:----------|:----------------------------------------------------------------------------------------------------------|:-----------|
+| Name      | Nombre del centro de atención                                                                             | Text (255) |
+| Emergency | Centro de emergencias: 1-Sí, 0-No                                                                         | Short      |
+| Category  | Categoría del centro de atención (Bomberos, Policía, Municipal, CAI, ESP, Hospital, Centro Salud, Médico) | Text (50)  |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_AddField2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Elimine el campo `CUDE` y en el campo `Nombre`, asigne l
+
 
 
 
