@@ -90,10 +90,11 @@ En _Landmarks_ agregar _Confirmation_ y _Turn_ para las localizaciones de instit
 
 <div align="center"><img src="graph/ArcGISPro_Directions3.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
-9. 
+9. En el _Catalog Pane_ de clic derecho en el dataset _ModeloVial_ND_, seleccione la opción _Network Dataset / Build_ y marque la casilla _Force Full Build_. Agregue al mapa el dataset y la capa `ModeloVial_ND_Junctions`.
 
+> En caso de que los nodos de construcción de la red `ModeloVial_ND_Junctions` no aparezcan en pantalla, cierre y vuelva a abrir ArcGIS Pro.
 
-
+<div align="center"><img src="graph/ArcGISPro_BuildNetwork1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
 
 ## Elementos requeridos en diccionario de datos
