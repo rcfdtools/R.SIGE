@@ -72,11 +72,11 @@ Llamado de función: `SetOneway(!Oneway!)`
 
 6. En la pestaña _Travel Attributes_, defina en _Hierarchy_ las jerarquías viales a través del _Field Script_ `!Hierarchy!`, defina en <Default> un valor constante de 1
 
-<div align="center"><img src="graph/ArcGISPro_Hierarchy1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Hierarchy1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
+7. En _Travel Attributes_, defina en _Travel Modes_, costos de _Impedance_ usando `Meters` y _Time Cost_ usando `Minutes`, active las restricciones (Driving a Car), no permita giros en U y active Hierarchy.
 
-
-
+<div align="center"><img src="graph/ArcGISPro_TravelModes1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
 
 ## Elementos requeridos en diccionario de datos
