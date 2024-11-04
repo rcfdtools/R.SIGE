@@ -30,9 +30,48 @@ En el dataset contenido en la GDB, crear el dataset para modelación de redes vi
 
 <div align="center"><img src="graph/ArcGISPro_VerticalConnectivity.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. En _Travel Attributes /  Costs_, defina los nombres `Length` con la propiedad `!Shape!` y `Time` con los campos de atributos `!FT_Minutes!` y `!TF_Minutes!` a lo largo y en el sentido contrario de los vectores (Along, Against), renombre como Meters y Minutes. En el costeo de tiempo, cambie Turns al tipo Turn Category
+3. En _Travel Attributes / Costs_, defina los nombres `Length` con la propiedad `!Shape!` y `Time` con los campos de atributos `!FT_Minutes!` y `!TF_Minutes!` a lo largo y en el sentido contrario de los vectores (Along, Against), renombre como Meters y Minutes. En el costeo de tiempo, cambie Turns al tipo Turn Category
 
-> El atributo Length puede ser definido a partir del campo Meters de la capa vial.
+> Para la creación de los costos de distancia, en la parte superior derecha podrá observar un ícono con 3 líneas horizontales que contiene la opción _New_.  
+> El atributo `Length` también puede ser definido a partir del campo `Meters` de la capa vial.
+
+<div align="center"><img src="graph/ArcGISPro_Cost1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Cost2.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+Para la configuración de costos de tiempo en minutos, en la sección _Evaluators / Turns_ podrá definir los tipos de giros y tiempos de retardo en intersecciones.
+
+<div align="center"><img src="graph/ArcGISPro_Cost3.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+4. En la pestaña _Travel Attributes_, establezca la restricción _Drive a Car_ en _Prohibited_ con `!Class! == "Peatonal"`
+
+<div align="center"><img src="graph/ArcGISPro_Restrictions1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+5. En la pestaña _Travel Attributes_, establezca la restricción _One Way_ en _Prohibited_ usando los siguientes scripts de Python:
+
+Script One Way (Along)  
+```
+def SetOneway(value):
+ if value and value.upper() in ('N', 'TF', 'T'):
+  return True
+ return False
+```  
+
+Script One Way (Against)  
+```
+def SetOneway(value):
+ restricted = False
+ if value and value.upper() in ('N', 'FT', 'F'):
+  restricted = True
+ return restricted
+```
+
+Llamado de función: `SetOneway(!Oneway!)`
+
+<div align="center"><img src="graph/ArcGISPro_Restrictions2.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Restrictions3.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+
+
 
 
 
