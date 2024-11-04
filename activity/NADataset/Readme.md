@@ -20,9 +20,19 @@ En el dataset contenido en la GDB, crear el dataset para modelación de redes vi
 
 ## 1. Importación de establecimientos educativos y homologación de atributos 
 
-1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado en la actividad anterior. Importe a la GDB _RedVial_, la capa _\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\EDUCATIVO_ de la cartografía del POT, correspondiente a la localización de instituciones educativas y nombre cómo T25899Educacion. Agregue al mapa y simbolice utilizando el _Pushpin School_.
+1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente. En el Dataset `ModeloVial` contenido en la GDB, de clic derecho y seleccione la opción _Create Network Dataset_, nombre como `ModeloVial_ND` y seleccione el feature class `T25899EjeVialPlanarize`. En caso de que su red corresponda a líneas 3D o haya incluido atributos para pasos elevados o deprimidos, seleccione la opción `Elevation Fields`. Remueva el Network Dataset del mapa para que se puedan modificar sus propiedades.
 
-<div align="center"><img src="graph/ArcGISPro_AddLayer1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_CreateNetworkDataset1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Desde el Catalog Pane, acceda a las propiedades del ND y en la pestaña _Source Settings_ establezca los parámetros de conectividad vertical (sí creo previamente los atributos verticales). 
+
+> Para el ejercicio de clase utilizaremos una red sin propiedades 3D, sin embargo, las longitudes 3D pueden ser calculadas y asignadas en el campo `Meters` de la capa vial.
+
+<div align="center"><img src="graph/ArcGISPro_VerticalConnectivity.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En _Travel Attributes /  Costs_, defina los nombres `Length` con la propiedad `!Shape!` y `Time` con los campos de atributos `!FT_Minutes!` y `!TF_Minutes!` a lo largo y en el sentido contrario de los vectores (Along, Against), renombre como Meters y Minutes. En el costeo de tiempo, cambie Turns al tipo Turn Category
+
+> El atributo Length puede ser definido a partir del campo Meters de la capa vial.
 
 
 
