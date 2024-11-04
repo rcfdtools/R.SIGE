@@ -147,7 +147,9 @@ Llamado de función
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. 
+6. Simbolice por categoría y cree una gráfica de barras mostrando el conteo de elementos.
+
+<div align="center"><img src="graph/ArcGISPro_Char2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
