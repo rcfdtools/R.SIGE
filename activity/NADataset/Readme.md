@@ -78,6 +78,23 @@ Llamado de función: `SetOneway(!Oneway!)`
 
 <div align="center"><img src="graph/ArcGISPro_TravelModes1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
 
+8. En _Directions_, establecer en _General_ / _Default Length Attribute = Meters_ y _Default Time Attribute = Minutes_.
+
+<div align="center"><img src="graph/ArcGISPro_Directions1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+En _Field Mappings_ establecer _Prefix Type = Class_ y _Base Name = Name_.
+
+<div align="center"><img src="graph/ArcGISPro_Directions2.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+En _Landmarks_ agregar _Confirmation_ y _Turn_ para las localizaciones de instituciones Educativas y Centros de Atención de Emergencias, usar el campo `Name` como _Label Field_.
+
+<div align="center"><img src="graph/ArcGISPro_Directions3.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+
+9. 
+
+
+
+
 
 ## Elementos requeridos en diccionario de datos
 
