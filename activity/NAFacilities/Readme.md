@@ -93,14 +93,22 @@ Llamado de función
 | Atributo  | Descripción                                                                                               | Tipo       |
 |:----------|:----------------------------------------------------------------------------------------------------------|:-----------|
 | Name      | Nombre del centro de atención                                                                             | Text (255) |
-| Emergency | Centro de emergencias: 1-Sí, 0-No                                                                         | Short      |
+| Emergency | Centro de atención de emergencias: 1-Sí, 0-No                                                             | Short      |
 | Category  | Categoría del centro de atención (Bomberos, Policía, Municipal, CAI, ESP, Hospital, Centro Salud, Médico) | Text (50)  |
 
 </div>
 
 <div align="center"><img src="graph/ArcGISPro_AddField2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Elimine el campo `CUDE` y en el campo `Nombre`, asigne l
+3. En el campo `Nombre`, asigne los nombres contenidos en los campos `Nombre_Geografico` y `NOMBRE` filtrando o seleccionando por atributos aquellos elementos que se encuentran vacíos o nulos.
+
+<div align="center"><img src="graph/ArcGISPro_FieldCalculator3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Utilizando la herramienta de selección por atributos, elimine todas las localizaciones que no tienen nombre. Para el ejemplo corresponden a 1668 de las 2009 localizaciones integradas. Obtendrá 341 localizaciones con nombres asignados. Una vez eliminados estas entidades, elimine los campos `CUDE`, `Nombre_Geografico` y `NOMBRE`.
+
+<div align="center"><img src="graph/ArcGISPro_SelectByAttibutes1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
 
 
 
