@@ -1,4 +1,4 @@
-# Homologación de red vial urbana y rural
+# Network Analyst - Homologación de red vial urbana y rural
 Keywords: `network-properties` `hierarchy` `oneway` `planarize`
 
 En la carpeta GDB cree una File Geodatabase y un dataset para la integración de la red vial. Importe al dataset las vías municipales y homologue a los atributos para modelación de redes viales. Seleccione todas las vías y ejecute la función Planarize que le permitira obtener tramos independientes entre intersecciones (recalcule longitudes y tiempos de viaje en cada tramo).
