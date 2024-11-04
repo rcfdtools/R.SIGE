@@ -44,7 +44,7 @@ Para la configuración de costos de tiempo en minutos, en la sección _Evaluator
 
 4. En la pestaña _Travel Attributes_, establezca la restricción _Drive a Car_ en _Prohibited_ con `!Class! == "Peatonal"`
 
-<div align="center"><img src="graph/ArcGISPro_Restrictions1.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Restrictions1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 5. En la pestaña _Travel Attributes_, establezca la restricción _One Way_ en _Prohibited_ usando los siguientes scripts de Python:
 
@@ -67,12 +67,12 @@ def SetOneway(value):
 
 Llamado de función: `SetOneway(!Oneway!)`
 
-<div align="center"><img src="graph/ArcGISPro_Restrictions2.jpg" alt="R.SIGE" width="80%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_Restrictions3.jpg" alt="R.SIGE" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Restrictions2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_Restrictions3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+6. En la pestaña _Travel Attributes_, defina en _Hierarchy_ las jerarquías viales a través del _Field Script_ `!Hierarchy!`, defina en <Default> un valor constante de 1
 
-
-
+<div align="center"><img src="graph/ArcGISPro_Hierarchy1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
