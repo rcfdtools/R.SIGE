@@ -9,7 +9,7 @@ A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especific
 ## Objetivos
 
 * Asociar a los ejes viales, los anchos de los corredores definidos en el POT.
-* Generar áreas aferentes al rededor de los ejes viales, identificando construcciones afectadas en la implantación de proyectos de renovación vial.
+* Generar áreas aferentes alrededor de los ejes viales, identificando construcciones afectadas en la implantación de proyectos de renovación vial.
 
 
 ## Requerimientos
@@ -99,7 +99,7 @@ Para la vía rural proyectada de orden 1 (`ZonaNombre = 'Rural' And ORDEN_VIAL =
 
 > La Avenida Algarra contiene dos perfiles diferentes y desde calle 8 hasta su terminación, no ha sido incluída en la capa de vías del POT.
 
-2. En cuanto a la Calle 8, esta ha sido definida a partir de dos perfiles diferentes, entre la carrera 5 y via férrea, y entre vía férrea carrera 36. Los vectores encontrados no están segmentados hasta el límite de la vía férrea, por lo que deberá utilizar lad herramientas de edición _Explode_ para separar entidades multiparte, _Merge_ para unir los tramos de cada lado de la vía férres y _Split_ para segmentar la vía en la vía férrea.
+2. En cuanto a la Calle 8, esta ha sido definida a partir de dos perfiles diferentes, entre la carrera 5 y vía férrea, y entre vía férrea carrera 36. Los vectores encontrados no están segmentados hasta el límite de la vía férrea, por lo que deberá utilizar las herramientas de edición _Explode_ para separar entidades multiparte, _Merge_ para unir los tramos de cada lado de la vía férrea y _Split_ para segmentar la vía en la vía férrea.
 
 Calle 8 inicial  
 <div align="center"><img src="graph/ArcGISPro_Calle8Inicial.png" alt="R.SIGE" width="100%" border="0" /></div>
