@@ -91,9 +91,7 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> :ladybeetle: Una vez terminado el proceso de generación de la capa de puntos, se recomienda retirar de la tabla de contenido, la hoja del libro de Excel. En algunas versiones de ArcGIS Pro, se bloquea la apertura del mapa de proyecto cuando se utilizan fuentes externas de datos contenidas en libros de Excel.
-
-:ladybeetle:
+> :lady_beetle:Una vez terminado el proceso de generación de la capa de puntos, se recomienda retirar de la tabla de contenido, la hoja del libro de Excel. En algunas versiones de ArcGIS Pro, se bloquea la apertura del mapa de proyecto cuando se utilizan fuentes externas de datos contenidas en libros de Excel.
 
 4. Desde la capa _POTGeoTablePunto9377_, cree una gráfica de barras por _ZonaNombre_ y mediante un conteo de elementos, verifique que todos los nodos hayan sido cargados.
 
