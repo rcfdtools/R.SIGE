@@ -183,7 +183,7 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 * En los campos `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
 * Los campos `LatDD` y `LongDD` deben contener siempre valores. 
 
-5. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _CNEStation_ y establezca el CRS 9377. Agregue y abra en el mapa la tabla integrada creada en Excel`, verifique que contenga 9107 registros.
+5. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _CNEStation_ y establezca el CRS 9377. Agregue y abra en el mapa la tabla integrada creada en Excel, verifique que contenga 9107 registros.
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702.png" alt="R.SIGE" width="100%" border="0" /></div>
 
