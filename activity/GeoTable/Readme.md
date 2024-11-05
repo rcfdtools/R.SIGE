@@ -26,7 +26,7 @@ A partir de las tablas geo-codificadas contenidas en el Acuerdo o Decreto que re
 
 ## 1. Creación de tabla geo-codificada
 
-> La geo-codificación, es el proceso de transformar una descripción de una ubicación (por ejemplo, un par de coordenadas, una dirección o un nombre de un lugar) en una ubicación de la superficie de la Tierra. Se puede geo-codificar introduciendo una descripción de una ubicación a la vez o proporcionando muchas de ellas al mismo tiempo en una tabla. Las ubicaciones que se obtienen se transforman en entidades geográficas con atributos, que se pueden utilizar para la representación cartográfica o él para análisis espacial. Con la geoc-odificación, puede buscar varios tipos de ubicaciones de manera rápida. Los tipos de ubicaciones que puede buscar incluyen: puntos de interés o nombres de un diccionario geográfico, como montañas, puentes y negocios; coordenadas basadas en latitud y longitud o en otros sistemas de referencia.[^1]
+> La geo-codificación, es el proceso de transformar una descripción de una ubicación (por ejemplo, un par de coordenadas, una dirección o un nombre de un lugar) en una ubicación de la superficie de la Tierra. Se puede geo-codificar introduciendo una descripción de una ubicación a la vez o proporcionando muchas de ellas al mismo tiempo en una tabla. Las ubicaciones que se obtienen se transforman en entidades geográficas con atributos, que se pueden utilizar para la representación cartográfica o él para análisis espacial. Con la geo-codificación, puede buscar varios tipos de ubicaciones de manera rápida. Los tipos de ubicaciones que puede buscar incluyen: puntos de interés o nombres de un diccionario geográfico, como montañas, puentes y comercios; coordenadas basadas en latitud y longitud o en otros sistemas de referencia.[^1]
 
 1. A partir de las tablas geo-codificadas contenidas en los Artículos 12, 13, 14, 15 y 134 del Acuerdo Municipal 012 de 2013, cree un libro de Microsoft Excel con el nombre [POTGeoTable.xlsx](POTGeoTable.xlsx) (guarde en la carpeta _\table_) que contenga una hoja con el nombre _POTGeoTable_ y que incluya las siguientes columnas de atributos:
 
@@ -91,7 +91,7 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377_shp.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> :ladybeetle:Una vez terminado el proceso de generación de la capa de puntos, se recomienda retirar de la tabla de contenido, la hoja del libro de Excel. En algunas versiones de ArcGIS Pro, se bloquea la apertura del mapa de proyecto cuando se utilizan fuentes externas de datos contenidas en libros de Excel.
+> :ladybeetle: Una vez terminado el proceso de generación de la capa de puntos, se recomienda retirar de la tabla de contenido, la hoja del libro de Excel. En algunas versiones de ArcGIS Pro, se bloquea la apertura del mapa de proyecto cuando se utilizan fuentes externas de datos contenidas en libros de Excel.
 
 4. Desde la capa _POTGeoTablePunto9377_, cree una gráfica de barras por _ZonaNombre_ y mediante un conteo de elementos, verifique que todos los nodos hayan sido cargados.
 
