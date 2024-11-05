@@ -99,7 +99,7 @@ Como observa, se han agregado los siguientes atributos:
 
 Para el caso de estudio, la velocidad a emplear es de 4.54 km/h.
 
-En la tabla de atributos de la capa de líneas de proximidad, cree dos campos de atributos numéricos dobles con los nombres `LGm` y `Tmin`, correspondientes a la longitud geodésica de la línea y el tiempo de desplazamiento caminando en minutos. Utilice el calculador de geometría de campo para obtener la longitud y calcule el tiempo con la siguiente expresión:
+En la tabla de atributos de la capa de líneas de proximidad, cree dos campos de atributos numéricos dobles con los nombres `LGm` y `Tmin`, correspondientes a la longitud geodésica de la línea y el tiempo de desplazamiento caminando en minutos. Utilice el calculador de geometría de campo para obtener la longitud y calcule el tiempo con la siguiente expresión `v=d/t` ó `t=d/v`:
 
 Tmin = `((!LGm!/1000)/4.54)*60`
 
@@ -107,7 +107,7 @@ Tmin = `((!LGm!/1000)/4.54)*60`
 
 Rotule la línea de proximidad incluyendo la distancia y el tiempo.
 
-Rótulo Arcade: `"d (m): "+ ROund($feature.LGm, 2) +  textformatting.NewLine + "t (min): " + Round($feature.Tmin, 1)`
+Rótulo Arcade: `"d (m): "+ Round($feature.LGm, 2) +  textformatting.NewLine + "t (min): " + Round($feature.Tmin, 1)`
 
 <div align="center"><img src="graph/ArcGISPro_DistanciaTiempoLabel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
