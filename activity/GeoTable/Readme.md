@@ -116,6 +116,8 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 
 7. Cree los polígonos de delimitación utilizando la herramienta de geoprocesamiento _Defense Tools / Coordinate Table to Polygon_, nombre la capa de salida como `\file\shp\POTGeoTablePoligono9377.shp`.
 
+> La herramienta de geo-procesamiento _Points To Line_, permite crear líneas perimetrales a partir de nodos y _Line to Polygon_ permite crear polígonos a partir de líneas. Estos dos procedimientos pueden ser ejecutados directamente de puntos a polígonos con la herramienta _Coordinate Table to Polygon_.
+
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePunto9377CoordinateTableToPolygon.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 8. Simbolice los polígonos por valores únicos con contornos de color negro, establezca transparencia en 40% y rotule a partir del campo _ZonaNombre_. Verifique que en la tabla de atributos aparezcan 35 registros o polígonos. Podrá observar que entre algunas zonas existen zonas intermedias vacías o que no se coalinean correctamente.
