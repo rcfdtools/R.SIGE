@@ -125,7 +125,7 @@ Una vez ejecutada esta herramienta, obtendrá una nube de puntos, simbolice por 
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_POTGeoTablePoligono9377_shp2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> :idea:Luego de la creación de los polígonos, se recomienda verifique y ajuste manualmente con el Editor, los polígonos con zonas internas vacías o regiones y polígonos con secuencias erradas. Utilice los conceptos aprendidos en la actividad [Digitalización de vectores: drenajes, vías y predios](../Digitizing/Readme.md).
+> :bulb:Luego de la creación de los polígonos, se recomienda verifique y ajuste manualmente con el Editor, los polígonos con zonas internas vacías o regiones y polígonos con secuencias erradas. Utilice los conceptos aprendidos en la actividad [Digitalización de vectores: drenajes, vías y predios](../Digitizing/Readme.md).
 
 9. Revisando la tabla de atributos, podrá darse cuenta qué únicamente aparecen los nombre de las zonas, y que durante el proceso de generación de los polígonos, no fueron incorporados los atributos de la clase de suelo y la norma que reglamento la zona. 
 
