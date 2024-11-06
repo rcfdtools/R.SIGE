@@ -160,7 +160,7 @@ El Artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Agregue la clase de entidad del modelo de ocupación territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT`, modifique la simbología utilizando solo contorno y rotule la capa de destinaciones y MOT a partir de los campos `destino_econ` y `SUELO`. Podrá observar que a nivel general, en los suelos clasificados com rural de protección, existen zonas con destinaciones económicas catastrales habitacionales, agroindustriales, comerciales, mineras, de equipamientos y otros usos no compatibles. 
+2. Agregue la clase de entidad del modelo de ocupación territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT`, modifique la simbología utilizando solo contorno y rotule la capa de destinaciones y MOT a partir de los campos `destino_econ` y `SUELO`. Podrá observar que a nivel general, en los suelos clasificados con rural de protección, existen zonas con destinaciones económicas catastrales habitacionales, agroindustriales, comerciales, mineras, de equipamientos y otros usos no compatibles. 
 
 Rótulo Arcade para destinaciones económicas: `DomainName($feature, 'destino_econ')`
 
@@ -172,7 +172,7 @@ Cambie el mapa de fondo por la imágen satelital de ESRI y establezca transparen
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT2.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc2013_MOT3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Para identificar incompatibilidades entre la clasificación del suelo del MOT y las destinaciones económicas, cree con la herramienta de geo-procesamiento _Analysis Tools / Intersect_, la intersección espacial de estas dos capas y asocie el dominio de destinación económica. Nombre la clase de entidad resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_DestEc_MOT2013` y ajuste la simbología agregando contornos de color blanco. Podrá observar que ahora se identifican sub fracciones combinadas de los polígonos originales.
+3. Para identificar incompatibilidades entre la clasificación del suelo del MOT y las destinaciones económicas, cree con la herramienta de geo-procesamiento _Analysis Tools / Intersect_, la intersección espacial de estas dos capas y asocie el dominio de destinación económica. Nombre la clase de entidad resultante como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_DestEc_MOT2013` y ajuste la simbología agregando contornos de color blanco. Podrá observar que ahora se identifican sub-fracciones combinadas de los polígonos originales.
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_DestEc_MOT2013.png" alt="R.SIGE" width="100%" border="0" /></div>
 

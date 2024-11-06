@@ -62,7 +62,7 @@ Para el análisis de estos índices, se pueden utilizar diferentes estrategias:
 
 <div align="center"><img src="graph/ArcGISPro_Dissolve1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Para asignar incluir los nombres de las veredas en la capa disuelta, cree un campo de texto de 100 caracteres de longitud e identifíquelo como `ZonaGeo`. Agregue la capa de veredas utilizadas en el diagnóstico del POT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\VEREDA1` y realice un _Join_ o unión de registros en la capa disuelta.  
+3. Para incluir los nombres de las veredas en la capa disuelta, cree un campo de texto de 100 caracteres de longitud e identifíquelo como `ZonaGeo`. Agregue la capa de veredas utilizadas en el diagnóstico del POT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\VEREDA1` y realice un _Join_ o unión de registros en la capa disuelta.  
 
 <div align="center"><img src="graph/ArcGISPro_Join1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -162,13 +162,15 @@ Para la estimación del índice de ocupación, es necesario excluir de la tabla 
 
 2. Desde el _Definition Query_ de la tabla de registros catastrales, filtre las filas correspondientes a números de orden 001 y condición de propiedad y construcción primarios. Obtendrá 27108 registros que no coinciden exactamente con el número de unidades prediales presentes en la capa _TerrenoPredio_2013_, correspondientes a 26304 (804 registros más).
 
-> La diferencia principal se debe a que el registro 1 contienen más registros de propiedad primaria que las unidades prediales incluídas en la capa de predio. Generalmente, los procesos de actualización predial no son incorporados en la capa de vectores inmediatamente de la expedición de resolución de subdivisión. 
+> La diferencia principal se debe a que el registro 1 contienen más registros de propiedad primaria que las unidades prediales incluídas en la capa de predios. Generalmente, los procesos de actualización predial no son incorporados en la capa de vectores inmediatamente de la expedición de resolución de subdivisión. 
 
 Definition Query para este ejemplo: `num_orden = '001' And CPropCons IN ('000', '201', '801', '901', '329')`
 
 <div align="center"><img src="graph/ArcGISPro_DefinitionQuery1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 3. En la tabla de atributos _IGAC2009Registro1_, y utilizando la herramienta de resúmen estadístico o _Summarize_ sobre el campo de atributos `vereda_id`, genere una tabla que consolide el total de metros construídos en cada zona geográfica definida. Nombre la tabla como `\file\gdb\SIGE.gdb\IGAC2009Registro1_IndOcupGeneral`.
+
+> :bulb:Para obtener el área ocupada en primer planta, cree una columna de atributos numérica doble y divida los metros construídos de cada registro entre el número de pisos, luego consolide el total de metros ocupados. De esta forma obtendrá un valor más representativo de la ocupación en cada vereda y en el área urbana. 
 
 <div align="center"><img src="graph/ArcGISPro_Summarize3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
