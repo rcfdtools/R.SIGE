@@ -28,6 +28,7 @@
 | :busts_in_silhouette:  | `:busts_in_silhouette:`  | Grupo de proyecto                                                                                    |
 |   :man_technologist:   | `:man_technologist:`     | Usuario                                                                                              |
 |         :mag:          | `:mag:`                  | Caso de estudio / Case Study                                                                         |
+|         :fire:          | `:fire:`                  | Riesgo natural                                                                                       |
 
 
 ## Abreviaturas
