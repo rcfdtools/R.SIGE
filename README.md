@@ -69,7 +69,7 @@ Requisitos académicos:
 > Para tomar este curso, no requiere de conocimientos específicos o certificaciones previas en el uso de herramientas computacionales SIG, tales como ArcGIS Pro o QGIS.
 
 
-## Software requerido y estructura de directorios
+## :open_file_folder:Software requerido y estructura de directorios
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
