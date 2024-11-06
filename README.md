@@ -82,7 +82,7 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 * [:open_file_folder:Estructura de directorios](file/Readme.md)
 
 
-## Caso de estudio general y grupos de proyecto
+## :mag:Caso de estudio general y grupos de proyecto
 
 El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
 
