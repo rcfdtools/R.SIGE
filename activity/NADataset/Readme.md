@@ -18,7 +18,7 @@ En el dataset contenido en la GDB, crear el dataset para modelación de redes vi
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 
 
-## 1. Creación y configuración de la red de analisis
+## 1. Creación y configuración de la red de análisis
 
 1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente. En el Dataset `ModeloVial` contenido en la GDB, de clic derecho y seleccione la opción _Create Network Dataset_, nombre como `ModeloVial_ND` y seleccione el feature class `T25899EjeVialPlanarize`. En caso de que su red corresponda a líneas 3D o haya incluido atributos para pasos elevados o deprimidos, seleccione la opción `Elevation Fields`. Remueva el Network Dataset del mapa para que se puedan modificar sus propiedades.
 
@@ -150,7 +150,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../NAFacilities/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/47) | [Siguiente :arrow_forward:]() |
-|--------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------|-------------------------------|
+| [:arrow_backward: Anterior](../NAFacilities/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/47) | [Siguiente :arrow_forward:](../NASchoolRoute/Readme.md) |
+|--------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 
 [^1]: 
