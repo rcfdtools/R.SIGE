@@ -38,11 +38,68 @@ Luego de dar clic en aceptar, podrá observar que se han cargado las localizacio
 
 3. Para resolver la red optimizando la secuencia de viaje, en _Contents_ seleccione _Route_ y en el menu _Route Layer_ seleccione la opción Travel _Settings / Sequence / Find Best_ y luego de clic en _Run_. Podrá observar que se ha resuelto la ruta óptima. De clic en el expansor de la pentaña _Analysis_ para conocer qué instituciones educativas no pudieron ser resueltas, podrá observar que dos de ellas no cumplen con los criterios establecidos de solución.
 
+> Tenga en cuenta que en la parametrización de la red, se definieron globalmente restricciones para giros en U, solución por jerarquía vial y se inhabilitaron los corredores peatonales para paso vehicular. 
+
 <div align="center"><img src="graph/ArcGISPro_Route4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 4. Para conocer la secuencia de barrido, los tiempos de viaje y las distancias acumuladas, revise las columnas de atributos `Sequence`, `Cumul_Minutes` y `Cumul_Meters`.
 
 <div align="center"><img src="graph/ArcGISPro_Route5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+> Para la red resuelta se ha obtenido un tiempo total de 163.16 minutos y una distancia total recorrida de 77919.05 metros.
+
+5. Para desactivar las restricciones de giros en U o las demás restricciones definidas para la red, de clic en el expansor de la pestaña _Travel Settings_ y desmarque las casillas requeridas. Para este ejemplo desactivaremos las restricciones de giros en U y permitiremos el paso por vías peatonales. Vuelva a solucionar la red y verifique el nuevo tiempo total y distancia recorrida, podrá observar que ahora el tiempo total es de 154.29 minutos y distancia recorrida de 75985.24 metros, inferior a la obtenida inicialmente.
+
+<div align="center"><img src="graph/ArcGISPro_Route6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Para conocer las secuencias y giros a realizar en cada vía, en el menú _Route Layer_ de clic en la opción _Directions / Show Directions_.
+
+<div align="center"><img src="graph/ArcGISPro_Route7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 2. Ruta óptima por categoría de institución educativa
+
+1. En el panel lateral _Contents_, seleccione el Network Dataset _ModeloVial_ND_ y en el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis / Route_ para crear una nueva ruta a resolver, será nombrada como _Route 2_. 
+
+<div align="center"><img src="graph/ArcGISPro_Route8.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En el panel lateral _Contents_, seleccione _Stops_ en _Route_ y en el menú _Route Layer - Data_, de clic en _Import Stops_. En la ventana de importación de localizaciones, seleccione en _Input Locations_ la capa o feature class `T25899Educacion`, establezca la tolerancia de búsqueda en 1000 metros y en _Field Mappings / Property_, seleccione la propiedad _RouteName_ y el campo `Category`. Simbolice los nodos de ruta por valores únicos a partir del campo _RouteName_. En la tabla de atributos podrá observar que cada grupo tiene una secuencia específica a resolver.
+
+<div align="center"><img src="graph/ArcGISPro_Route9.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Solucione la red por ruta óptima, simbolice por valores únicos cada ruta y analice el resultado obtenido. En la tabla de atributos de rutas podrá conocer los tiempos y distancia acumulada obtenida para cada una. Cree una gráfica de análisis.
+
+<div align="center"><img src="graph/ArcGISPro_Route10.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 3. Simulación de incidentes en red
+
+1. Para la ruta anterior por categoría de establecimiento, agregue manualmente un incidente en la coordenada x: 4890174.2372m, y: 2114019.1483999994m. En el panel lateral _Contents_, seleccione _Route 2_ y en el menú _Route Layer / Imput Data_, seleccione la opción _Create Features_.  
+
+<div align="center"><img src="graph/ArcGISPro_Route11.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. Resuelva la red y evalúe los cambios en las distancias recorridas y corredores utilizados. Podrá observar que la ruta de Colegios tuvo una pequeña variación.
+
+<div align="center"><img src="graph/ArcGISPro_Route12.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Resuelva el recorrido de la red simulando cierre completo en el centro histórico entre las calles 3 y 6 y las carreras 6 y 10. Utilice las siguientes coordenadas para la generación del polígono de restricción vehicular.
+
+<div align="center">
+
+| Nodo | CX(m)            | CY(m)           |
+|------|------------------|-----------------|
+| 1    | 4888861.8813000  | 2112922.9550000 |
+| 2    | 4888552.6838000  | 2113139.8007000 |
+| 3    | 4888703.8872000  | 2113367.5113000 |
+| 4    | 4889038.4363000  | 2113198.6524000 |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_Route13.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+Solucione la red, podrá observar que varias de las rutas han cambiado al igual que los tiempos y distancias recorridas.
+
+<div align="center"><img src="graph/ArcGISPro_Route14.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
