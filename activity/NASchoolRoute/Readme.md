@@ -72,7 +72,7 @@ Luego de dar clic en aceptar, podrá observar que se han cargado las localizacio
 <div align="center"><img src="graph/ArcGISPro_Route10.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 3. Simulación de incidentes en red
+## 3. Simulación de incidentes y restricciones en red
 
 1. Para la ruta anterior por categoría de establecimiento, agregue manualmente un incidente en la coordenada x: 4890174.2372m, y: 2114019.1483999994m. En el panel lateral _Contents_, seleccione _Route 2_ y en el menú _Route Layer / Imput Data_, seleccione la opción _Create Features_.  
 
