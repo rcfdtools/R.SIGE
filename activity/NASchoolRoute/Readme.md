@@ -102,8 +102,6 @@ Solucione la red, podrá observar que varias de las rutas han cambiado al igual 
 <div align="center"><img src="graph/ArcGISPro_Route14.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-
-
 ## Elementos requeridos en diccionario de datos
 
 Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
@@ -121,7 +119,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 | Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Para su caso de estudio, cree, configure y verifique que se creen los nodos de intersección de la red vehicular que permita explorar sus propiedades.                                                                                                                                                                                                                                                                                               | 
+| Avance **P7** | Para su caso de estudio, resuelva rútas optimas para todas las instituciones educativas y por categorías, incluya la simulación de accidentes y restricciones lineales y por áreas.                                                                                                                                                                                                                                                                 | 
 | Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
@@ -137,10 +135,10 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 
 ## Control de versiones
 
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.04.13 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.11.04 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |  3   |
+| Versión      | Descripción                                                | Autor                                      | Horas |
+|--------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
+| 2024.04.14   | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
+| 2024.11.10 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |  3   |
 
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
