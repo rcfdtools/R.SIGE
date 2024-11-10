@@ -59,6 +59,18 @@ Realice un análisis de áreas de servicio por anillos alejándose del centro de
 
 <div align="center"><img src="graph/ArcGISPro_ServiceArea7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+Cree una gráfica de análisis totalizando las áreas cubiertas para cada tiempo resuelto.
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea8.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+
+## 2. Estudio centro de atención más cercano para atención de incidentes
+
+
+
+## 3. Matriz de costos Origen a Destino
+
+
 
 
 ## Elementos requeridos en diccionario de datos
