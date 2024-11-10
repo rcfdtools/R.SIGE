@@ -18,11 +18,31 @@ Realice un análisis de ruta única óptima que permita recorrer las institucion
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 
 
-## 1. Creación y configuración de la red de análisis
+## 1. Ruta óptima global
 
-1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente. En el Dataset `ModeloVial` contenido en la GDB, de clic derecho y seleccione la opción _Create Network Dataset_, nombre como `ModeloVial_ND` y seleccione el feature class `T25899EjeVialPlanarize`. En caso de que su red corresponda a líneas 3D o haya incluido atributos para pasos elevados o deprimidos, seleccione la opción `Elevation Fields`. Remueva el Network Dataset del mapa para que se puedan modificar sus propiedades.
+Realice un análisis de ruta única óptima que permita recorrer las instituciones educativas y determine el tiempo y distancia total recorrida. Defina como tolerancia de búsqueda 1000 metros e indique cuáles instituciones no han sido cubiertas. Active las restricciones y modos de transporte establecidas sin permitir giros en U. Para las instituciones cubiertas determine la distancia hasta la red. Muestre el detalle de las instrucciones de recorrido
 
-<div align="center"><img src="graph/ArcGISPro_CreateNetworkDataset1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente, en contents verifique que esté cargado el Network Dataset y selecciónelo. En el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis / Route_.
+
+<div align="center"><img src="graph/ArcGISPro_Route1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En el panel lateral _Contents_, seleccione _Stops_ en _Route_ y en el menú _Route Layer - Data_, de clic en _Import Stops_. En la ventana de importación de localizaciones, seleccione en _Input Locations_ la capa o feature class `T25899Educacion` y establezca la tolerancia de búsqueda en 1000 metros.
+
+> Debido a que previamente se realizó la definición de atributos con nombres compatibles con esta herramienta y se realizó la configuración de del Dataset, automáticamente han sido asociados el campo de nombre y los elementos de criterio de búsqueda relacionados con la red vial y sus nodos.
+
+<div align="center"><img src="graph/ArcGISPro_Route2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+ 
+Luego de dar clic en aceptar, podrá observar que se han cargado las localizaciones de la red a resolver. Abra y explore la tabla de atributos, observará que la secuencia ha sido definida en el mismo orden de entidades de la capa de instituciones educativas. El campo `DistanceToNetworkInMeters` contiene el cálculo inicial de proximidad hasta el punto más cercano en la red.
+
+<div align="center"><img src="graph/ArcGISPro_Route3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Para resolver la red optimizando la secuencia de viaje, en _Contents_ seleccione _Route_ y en el menu _Route Layer_ seleccione la opción Travel _Settings / Sequence / Find Best_ y luego de clic en _Run_. Podrá observar que se ha resuelto la ruta óptima. De clic en el expansor de la pentaña _Analysis_ para conocer qué instituciones educativas no pudieron ser resueltas, podrá observar que dos de ellas no cumplen con los criterios establecidos de solución.
+
+<div align="center"><img src="graph/ArcGISPro_Route4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Para conocer la secuencia de barrido, los tiempos de viaje y las distancias acumuladas, revise las columnas de atributos `Sequence`, `Cumul_Minutes` y `Cumul_Meters`.
+
+<div align="center"><img src="graph/ArcGISPro_Route5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
