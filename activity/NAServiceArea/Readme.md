@@ -1,4 +1,4 @@
-# Network Analyst - Estudio de áreas de servicio para atención de emergencias
+# Network Analyst - Estudio de áreas de servicio para atención de emergencias y costos
 Keywords: `service-area` `rings` `facilities`
 
 Realice un análisis de áreas de servicio por anillos alejándose del centro de atención para impedancias de 1, 3, 5 minutos. Defina como tolerancia de búsqueda 500 metros, active las restricciones y permita giros en U. Indique el total de las áreas cubiertas en hectáreas y que zonas no han sido cubiertas. Realice el mismo análisis simulando un accidente en una coordenada específica, compare las áreas de cobertura con las obtenidas anteriormente 
@@ -18,16 +18,46 @@ Realice un análisis de áreas de servicio por anillos alejándose del centro de
 * [:toolbox:Herramienta](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview): ESRI ArcGIS Pro 3.3.1 o superior.
 
 
-## 1. Solución de áreas de servicio
+## 1. Estudio de áreas de servicio
 
-Realice un análisis de áreas de servicio por anillos alejándose del centro de atención para impedancias de 1, 3, 5 minutos. Defina como tolerancia de búsqueda 500 metros, active las restricciones y permita giros en U. Indique el total de las áreas cubiertas en hectáreas y qué zonas no han sido cubiertas.
+Realice un análisis de áreas de servicio por anillos alejándose del centro de atención de emergencias y analice sus coberturas.
 
-1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente, en contents verifique que esté cargado el Network Dataset y selecciónelo. En el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis / Route_.
+1. Abra el proyecto de ArcGIS Pro y el mapa _NetworkAnalyst_ creado previamente, en contents verifique que esté cargado el Network Dataset y la clase de entidad `T25899Emergencia`. Filtre los centros correspondientes a puntos de atención de emergencias.
 
-<div align="center"><img src="graph/ArcGISPro_Route1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ServiceArea1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. En el panel lateral _Contents_, seleccione el _Network Dataset_ `ModeloVial_ND` y en el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis - Data / Service Area_.
 
+<div align="center"><img src="graph/ArcGISPro_ServiceArea2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+3. En el grupo _Service Area_ mostrado en el panel lateral _Contents_, seleccione _Facilities_, luego en el menú superior _Service Area Layer_ importe las instalaciones desde la pestaña _Imput Data / Import Facilities_. En la ventana de configuración, seleccione la capa _T25899Emergencia_ y establezca la tolerancia de búsqueda en 500 metros. Rotule por nombre de punto de emergencia.
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. En el expansor de la pestaña _Travel Settings_, defina en costos impedancias en función del tiempo en minutos y desactive la restricción de giros en U y la jerarquía.
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. En la pestaña _Travel Settings_, defina cortes o _Cutoffs_ en 1, 3 y 5 minutos alejándose del centro de atención de emergencias y de clic en resolver o _Run_. Podrá observar que casi toda el área urbana puede ser atendida en los tiempos establecidos. Para una mejor representación, desde la simbología remueva los contornos de los polígonos de áreas de servicio. Desde la tabla de atributos podrá seleccionar cualquiera de los puntos de atención y la cobertura por atención para cada tiempo.
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Para resolver áreas de servicio incluyendo incidentes, incluya un cierre vehicular a lo largo de las siguientes coordenadas:
+
+<div align="center">
+
+| Nodo | CX(m)        | CY(m)              |
+|------|--------------|--------------------|
+| 1    | 4891436.0648 | 2113342.3385000005 |
+| 2    | 4891110.0199 | 2113940.2716000006 |
+
+</div>
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+7. Resuelva la red y analice las áreas de coberturas. Podrá observar que en la zona oeste ya no pueden ser atendidas emergencias en los tiempos establecidos.
+
+<div align="center"><img src="graph/ArcGISPro_ServiceArea7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 
