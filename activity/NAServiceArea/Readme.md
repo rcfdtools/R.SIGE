@@ -66,9 +66,46 @@ Cree una gráfica de análisis totalizando las áreas cubiertas para cada tiempo
 
 ## 2. Estudio centro de atención más cercano para atención de incidentes
 
+En las siguientes 3 localizaciones, se han producido incidentes que requieren atención de emergencias, resuelva la red indicando cuál es el centro de atención más cercano y cuáles pueden ser atendidos en menos de 5 minutos. Indique los tiempos y distancias recorridas desde el centro de atención hasta el lugar del incidente.
+
+<div align="center">
+
+| Localización | CX(m)       | CY(m)       |
+|--------------|-------------|-------------|
+| 1            | 4889782.448 | 2114328.889 |
+| 2            | 4888182.875 | 2113572.618 |
+| 3            | 4890313.638 | 2112615.276 |
+
+</div>
+
+1. En el panel lateral _Contents_, seleccione el _Network Dataset_ `ModeloVial_ND` y en el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis - Data / Closest Facility_.
+
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+2. En el panel lateral _Contents_, seleccione _Facilities_ en el grupo _Closest Facility_ y desde el menú superior _Closest Facility Layer_ seleccione la opción _Import Facilities_. En la ventana de importación, seleccione _T25899Emergencia_ en _Input Locations_ y establezca tolerancias de búsqueda en 500 metros.
+
+> En el numeral anterior filtramos de_T25899Emergencia_ los nodos correspondientes a centros de atención de emergencias.
+
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. Utilizando el editor de entidades, cree en _Incidents_ las 3 localizaciones indicadas. Manualmente, nombre como _Incidente 1_, _Incidente 2_ e _Incidente 3_.
+
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Resuelva la red definiendo en _Travel Settings_ costos por tiempo para corte en menos de 5 minutos y atención desde un único centro de atención de emergencias.
+
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Resuelva la red con los dos centros de atención de emergencias más cercanos a cada incidente.
+
+<div align="center"><img src="graph/ArcGISPro_ClosestFacility6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## 3. Matriz de costos Origen a Destino
+
+Cree un análisis de matriz de costos OD, establezca como origen los centros de atención de emergencia y como destino las instituciones educativas. Defina 1000 metros como radio de búsqueda, active las restricciones definidas anteriormente y resuelva para impedancias menores o iguales a 5 minutos para máximo 5 destinaciones por centro de emergencia. Indique cuáles instituciones pueden ser atendidas y cree un gráfico de análisis de los resultados obtenidos.
+
 
 
 
