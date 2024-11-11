@@ -106,8 +106,32 @@ En las siguientes 3 localizaciones, se han producido incidentes que requieren at
 
 Cree un análisis de matriz de costos OD, establezca como origen los centros de atención de emergencia y como destino las instituciones educativas. Defina 1000 metros como radio de búsqueda, active las restricciones definidas anteriormente y resuelva para impedancias menores o iguales a 5 minutos para máximo 5 destinaciones por centro de emergencia. Indique cuáles instituciones pueden ser atendidas y cree un gráfico de análisis de los resultados obtenidos.
 
+1. En el panel lateral _Contents_, seleccione el _Network Dataset_ `ModeloVial_ND` y en el menú superior _Network Dataset Layer - Data_, seleccione la opción _Network Analysis - Data / Origin-Destination Cost Matrix_.
 
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix1.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
+2. En el panel lateral _Contents_, seleccione _Origins_ en el grupo _OD Cost Matrix_ y desde el menú superior _OD Cost Matrix Layer_ seleccione la opción _Import Origins_. En la ventana de importación, seleccione _T25899Emergencia_ en _Input Locations_ y establezca tolerancias de búsqueda en 1000 metros.
+
+> Previamente, filtramos de_T25899Emergencia_ los nodos correspondientes a centros de atención de emergencias.
+
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+3. En el panel lateral _Contents_, seleccione _Destinations_ en el grupo _OD Cost Matrix_ y desde el menú superior _OD Cost Matrix Layer_ seleccione la opción _Import Destinations_. En la ventana de importación, seleccione _T25899Educacion_ en _Input Locations_ y establezca tolerancias de búsqueda en 1000 metros.
+
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix3.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+4. Resuelva la matriz de costos para impedancias menores o iguales a 5 minutos para máximo 5 destinaciones por centro de emergencia.
+
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix5.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+5. Rotule las líneas conectoras con la expresión: `"(" + $feature.DestinationRank + ") "+ Round($feature.Total_Minutes, 2) + 'min'`
+
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix6.jpg" alt="R.SIGE" width="100%" border="0" /></div>
+
+6. Cree un gráfico de análisis de los resultados obtenidos.
+
+<div align="center"><img src="graph/ArcGISPro_ODCostMatrix7.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
 
 ## Elementos requeridos en diccionario de datos
@@ -125,11 +149,11 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 
 En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
 
-| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P7** | Para su caso de estudio, resuelva rútas optimas para todas las instituciones educativas y por categorías, incluya la simulación de accidentes y restricciones lineales y por áreas.                                                                                                                                                                                                                                                                 | 
-| Avance **P7** | Estudio de rutas de transporte público: a partir de los conceptos y habilidades obtenidas en el estudio de rutas de transporte escolar, diseñe y modelo 2 rutas de transporte público en diferentes paraderos establecidos.                                                                                                                                                                                                                         | 
-| Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. | 
+| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avance **P7** | Para su caso de estudio, resuelva areas de servicio, equipamientos cercanos y matriz de costos.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 
+| Avance **P7** | TransCAD (investigación aplicada): A. Investigue qué es y como funciona el software TransCAD, B.Cree un ejemplo aplicado que permita modelar y optimizar los recorridos de las rutas de transporte escolar del Municipio de Zipaquirá, C. Compare los tiempos y distancias obtenidas por tipo de ruta escolar con las obtenidas utiizando ArcGIS Pro, D. En el informe técnico incluya capturas de pantalla con el paso a paso realizado para la construcción de la red vial, su configuración detallada, mapas y tablas detalladas de resultados. | 
+| Avance **P7** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas.                                                                                                | 
 
 > No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
 > 
