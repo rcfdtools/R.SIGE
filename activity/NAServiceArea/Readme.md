@@ -10,6 +10,8 @@ Realice un análisis de áreas de servicio por anillos alejándose del centro de
 
 * Estudiar áreas de servicio
 * Realizar análisis de cobertura de áreas de servicio
+* Obtener el centro de atención de emergencia más cercano para atención de incidentes
+* Crear y evaluar matrices de costos origen- destino
 
 
 ## Requerimientos
