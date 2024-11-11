@@ -1,7 +1,7 @@
 # Network Analyst - Estudio de áreas de servicio para atención de emergencias y costos
 Keywords: `service-area` `rings` `facilities`
 
-Realice un análisis de áreas de servicio por anillos alejándose del centro de atención para impedancias de 1, 3, 5 minutos. Defina como tolerancia de búsqueda 500 metros, active las restricciones y permita giros en U. Indique el total de las áreas cubiertas en hectáreas y que zonas no han sido cubiertas. Realice el mismo análisis simulando un accidente en una coordenada específica, compare las áreas de cobertura con las obtenidas anteriormente 
+Realice un análisis de áreas de servicio por anillos alejándose del centro de atención para impedancias de 1, 3, 5 minutos. Defina como tolerancia de búsqueda 500 metros, active las restricciones y permita giros en U. Indique el total de las áreas cubiertas en hectáreas y qué zonas no han sido cubiertas. Realice el mismo análisis simulando un accidente en una coordenada específica, compare las áreas de cobertura con las obtenidas anteriormente. En 3 localizaciones, se han producido incidentes que requieren atención de emergencias, resuelva la red indicando cuál es el centro de atención más cercano y cuáles pueden ser atendidos en menos de 5 minutos. Indique los tiempos y distancias recorridas desde el centro de atención hasta el lugar del incidente. Cree un análisis de matriz de costos OD, establezca como origen los centros de atención de emergencia y como destino las instituciones educativas.
 
 <div align="center"><img src="graph/NAServiceArea.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
