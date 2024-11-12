@@ -41,12 +41,12 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 
 <div align="center"><img src="graph/ArcGISPro_VeredaId.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. A partir del campo tipo de avalúo, cree un gráfico de pastel totalizando el área. Como observa, a nivel predial, el área urbana ocupa el 3.4% del área municipal, y el área rural el 96.6%.
+4. A partir del campo `tipo_avaluo`, cree un gráfico de pastel totalizando el área. Como observa, a nivel predial, el área urbana ocupa el 3.4% del área municipal, y el área rural el 96.6%.
 
 <div align="center"><img src="graph/ArcGISPro_AvaluoChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AvaluoChart1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-6. A partir del campo `tipo_avaluo`, cree un gráfico de barras totalizando el área. Como observa, a nivel predial, la vereda con mayor extensión es la 2589900000009 y la zona que contiene el mayor número de unidades prediales, es la urbana.
+6. A partir del campo `vereda_id`, cree un gráfico de barras totalizando el área. Como observa, a nivel predial, la vereda con mayor extensión es la 2589900000009 y la zona que contiene el mayor número de unidades prediales, es la urbana.
 
 <div align="center"><img src="graph/ArcGISPro_VeredaChart.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_VeredaChart1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -54,7 +54,7 @@ A partir de los predios urbanos y rurales importados en la GDB, realice una uni�
 
 ## 2. Base catastral Registro 1
 
-Para el estudio de las destinaciones económicas, utilizaremos el Registro 1 del IGAC, que corresponde a la información catastral en su componente alfanumérico, que describe los aspectos generales del predio en su aspecto físico:
+Para el estudio de las destinaciones económicas, utilizaremos el Registro 1 del IGAC, que corresponde a información catastral en su componente alfanumérico y describe los siguientes aspectos generales del predio en su aspecto físico:
 
 * Departamento
 * Municipio
@@ -64,11 +64,11 @@ Para el estudio de las destinaciones económicas, utilizaremos el Registro 1 del
 * Área de terreno (m²)
 * Área construida (m²)
 
-> En cuanto al Registro 2, este corresponde a la información catastral en su componente alfanumérico que describe los aspectos generales del predio en su aspecto físico, tales como: Departamento, Municipio, Número predial, Zona homogénea física, Zona homogénea geoeconómica, Número de baños, Número de locales, Número de pisos, Tipificación, Uso construcción, Puntaje y Área construida (m²). 
+> En cuanto al Registro 2, este corresponde a la información catastral en su componente alfanumérico y describe los aspectos generales del predio en su aspecto físico, tales como: Departamento, Municipio, Número predial, Zona homogénea física, Zona homogénea geoeconómica, Número de baños, Número de locales, Número de pisos, Tipificación, Uso construcción, Puntaje y Área construida (m²). 
 
 Agregue a la tabla de contenido, el registro 1 del IGAC disponible en la raíz de la base de datos, abra la tabla y revise su contenido. Como observa, los registros descargados de https://www.colombiaot.gov.co/, contienen la información básica regular (incluída la destinación económica representada por una letra), e información de los propietarios.
 
-> De acuerdo al Artículo 6° de la Ley 1266 de 2008 de Derechos de los titulares de la información, la administración de datos semiprivados y privados requiere el consentimiento previo y expreso del titular de los datos, salvo en el caso del dato financiero, crediticio, comercial, de servicios y el proveniente de terceros países el cual no requiere autorización del titular. En todo caso, la administración de datos semiprivados y privados se sujeta al cumplimiento de los principios de la administración de datos personales y a las demás disposiciones de la presente ley.
+> De acuerdo al Artículo 6° de la Ley 1266 de 2008 de Derechos de los titulares de la información, la administración de datos semiprivados y privados requiere el consentimiento previo y expreso del titular de los datos, salvo en el caso del dato financiero, crediticio, comercial, de servicios y el proveniente de terceros países el cual no requiere autorización del titular. En todo caso, la administración de datos semiprivados y privados se sujeta al cumplimiento de los principios de la administración de datos personales y a las demás disposiciones de esta ley.
 
 <div align="center"><img src="graph/ArcGISPro_Registro1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -105,7 +105,7 @@ El Artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 <div align="center"><img src="graph/ArcGISPro_LandUseIGAC.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta de geo-procesamiento Data Management _Tools / Table To Domain_, cree la tabla de dominio. Dando botón derecho sobre la base de datos geográfica SIGE.gdb, consulte las tablas de dominio mediante la opción _Domains_.
+2. Utilizando la herramienta de geo-procesamiento Data Management _Tools / Table To Domain_, cree la tabla de dominio. Dando botón derecho sobre la base de datos geográfica _SIGE.gdb_, consulte las tablas de dominio mediante la opción _Domains_.
 
 <div align="center"><img src="graph/ArcGISPro_TableToDomain.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -115,7 +115,7 @@ El Artículo 86 de la [Resolución 70 de 2011](../../file/ref/resolucion_70_de_2
 
 4. A partir de la tabla _Registro1_, cree una gráfica de barras que represente el número de predios por cada destinación. Podrá observar que en los rótulos aparecen los nombres descriptivos de cada destinación y no solo su código, también que la categoría con el mayor número de registros catastrales es la habitacional con 31237 filas.
 
-> Tenga en cuenta que el _Registro1_ del IGAC, contiene la información de todos los propietarios, y que el conteo obtenido se refiere al número de registros y no al número de predios.
+> Tenga en cuenta que el _Registro1_ del IGAC, contiene la información de todos los propietarios y que el conteo obtenido se refiere al número de registros y no al número de predios.
 
 <div align="center"><img src="graph/ArcGISPro_Registro1Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
