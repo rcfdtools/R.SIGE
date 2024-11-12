@@ -87,7 +87,7 @@ SQL: `(lower(CARACTERÍSTICAS_RELIEVE) LIKE '%cuerpo de agua%' Or lower(CARACTER
 
 <div align="center"><img src="graph/ArcGISPro_SelectByAttributes1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Podrá observar que se han identificado los siguientes 17 polígonos de intersección con posibles conflitos:
+Podrá observar que se han identificado los siguientes 17 polígonos de intersección con posibles conflictos:
 
 | Suelo     | Categoría                                       | Nombre                      | Relieve                                                                                                                                       |
 |-----------|-------------------------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|

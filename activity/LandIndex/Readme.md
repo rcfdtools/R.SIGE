@@ -72,7 +72,7 @@ Para el análisis de estos índices, se pueden utilizar diferentes estrategias:
 
 5. Remueva la unión de campo e ingrese manualmente el nombre del área urbana. Rotule a partir del campo `ZonaGeo`.
 
-> Recuerde que en el análisis veredal realizado en la actividad [Análisis veredal y límite territorial.](../CountyLimit/Readme.md), evidenciamos que los códigos veredales y nombres de veredas DANE, fueron actualizados en el año 2020. Para este ejemplo, utilizaremos la codificación utilizada en la formulación del POT del año 2013.
+> Recuerde que en el análisis veredal realizado en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md), evidenciamos que los códigos veredales y nombres de veredas DANE, fueron actualizados en el año 2020. Para este ejemplo, utilizaremos la codificación utilizada en la formulación del POT del año 2013.
 
 <div align="center"><img src="graph/ArcGISPro_Join3.png" alt="R.SIGE" width="100%" border="0" /></div>
 

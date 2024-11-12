@@ -5,7 +5,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 <div align="center"><img src="graph/Geology.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-> El ordenamiento territorial y el funcionamiento de zonas productivas están influenciados por los factores ambientales y, particularmente, por las características del suelo, el paisaje y sus procesos exógenos. Los procesos naturales de origen geológico impactan severamente sobre la población afincada en sitios no aptos para su ocupación, representando estos una amenaza para el desarrollo social y económico de esas urbanizaciones, muchas de ellas ubicadas en las planicies aluviales de los ríos, en los piedemontes de las zonas montañosas o en las líneas de ribera del litoral marítimo. En el análisis geológico, se realiza la identificación de las litologías y de las principales estructuras geológicas, considerando su estabilidad y sus características geotécnicas; de las geoformas que conforman el paisaje, teniendo en cuenta especialmente pendientes, la morfodinámica actual y la estabilidad de las mismas; la identificación de los suelos, su caracterización y mapeo, incluyendo, si ocurriere, la evaluación de la degradación y la información referida a las aguas subterráneas y superficiales.[^1]
+> El ordenamiento territorial y el funcionamiento de zonas productivas están influenciados por los factores ambientales y, particularmente, por las características del suelo, el paisaje y sus procesos exógenos. Los procesos naturales de origen geológico impactan severamente sobre la población asentada en sitios no aptos para su ocupación, representando estos una amenaza para el desarrollo social y económico de esas urbanizaciones, muchas de ellas ubicadas en las planicies aluviales de los ríos, en los piedemontes de las zonas montañosas o en las líneas de ribera del litoral marítimo. En el análisis geológico, se realiza la identificación de las litologías y de las principales estructuras geológicas, considerando su estabilidad y sus características geotécnicas; de las geoformas que conforman el paisaje, teniendo en cuenta especialmente pendientes, la morfodinámica actual y la estabilidad de las mismas; la identificación de los suelos, su caracterización y mapeo, incluyendo, si ocurriere, la evaluación de la degradación y la información referida a las aguas subterráneas y superficiales.[^1]
 
 
 ## Objetivos
@@ -43,11 +43,11 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC, en
 
 <div align="center"><img src="graph/ArcGISPro_Styles2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Agregue al mapa, la capa del Modelo de Ocupación Territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT` y el límite territorial a partir del MOT creado en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md) desde la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013`. Ajuste la simbología utilizando solo contornos y rotule el mapa geológico a partir del campo `Simbolo_UC`.
+4. Agregue al mapa, la capa del Modelo de Ocupación Territorial - MOT desde la ruta `\file\gdb\SIGE.gdb\POT2013Formulacion\MOT` y el límite territorial generado a partir del MOT creado en la actividad [Análisis veredal y límite territorial](../CountyLimit/Readme.md) desde la ruta `\file\gdb\SIGE.gdb\SIGE\Mpio25899_MOT2013`. Ajuste la simbología utilizando solo contornos y rotule el mapa geológico a partir del campo `Simbolo_UC`.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa geológico y las fallas geológicas hasta el límite del mapa _Mpio25899_MOT2013_. Nombre las capas resultantes como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_UC` Y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Fallas`. Podrá observar que para el caso de estudio, existen 7 diferentes unidades cronoestratigráficas y una falla inversa o de cabalgamiento.
+5. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Clip_, recorte el mapa geológico y las fallas geológicas hasta el límite del mapa _Mpio25899_MOT2013_. Nombre las capas resultantes como `\file\gdb\SIGE.gdb\SIGE\Mpio25899_UC` y `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Fallas`. Podrá observar que para el caso de estudio, existen 7 diferentes unidades cronoestratigráficas y una falla inversa o de cabalgamiento.
 
 <div align="center"><img src="graph/ArcGISPro_Clip1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
