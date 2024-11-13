@@ -270,7 +270,7 @@ Para evaluar la correspondencia entre estos modelos digitales, crearemos una red
 
 ## 7. Generación de curvas de nivel clasificadas
 
-1. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / Contour with Barriers_, cree curvas de nivel categorizadas principales cada 50 metros y secundarias cada 5 metros a partir del DEM Copernicus. Utilice como barrera de recorte el límite municipal contenido en la capa `Mpio25899_MOT2013`, guarde las curvas como `\file\gdb\SIGE.gdb\SIGE\CurvasNivel5mCopernicus`. Podrá observar que se han generado curvas hasta el límite completo del DEM.
+1. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / Contour with Barriers_, cree curvas de nivel categorizadas principales cada 50 metros y secundarias cada 5 metros a partir del DEM ESA - Copernicus. Utilice como barrera de recorte el límite municipal contenido en la capa `Mpio25899_MOT2013`, guarde las curvas como `\file\gdb\SIGE.gdb\SIGE\CurvasNivel5mCopernicus`. Podrá observar que se han generado curvas hasta el límite completo del DEM.
 
 <div align="center"><img src="graph/ArcGISPro_ContourWithBarriers1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
