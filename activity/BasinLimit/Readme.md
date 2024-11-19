@@ -25,7 +25,7 @@ A partir del modelo digital de elevación ESA Copernicus, cree el mapa de rellen
 
 ## 1. Edición de red de drenaje en ArcGIS Pro
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _BasinLimit_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus desde `\file\dem\Copernicus\Copernicus30m.tif`, el límite del modelo de ocupación territorial `\file\gdb\SIGE\Mpio25899_MOT2013` la red de drenaje utilizada en la formulación del POT disponible en `\file\gdb\SIGE.gdb\POT2013Formulacion\HIDROGRAFIA1` y el eje del tramo ajustado del Río Frío evaluado en la actividad anterior que se encuentra en `\file\gdb\SIGE.gdb\SIGE\LineaPerfil`.  
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _BasinLimit_ y establezca el CRS 9377. Agregue al mapa el modelo digital de elevación Copernicus desde `\file\dem\Copernicus\Copernicus30m.tif`, el límite del modelo de ocupación territorial `\file\gdb\SIGE\Mpio25899_MOT2013`, la red de drenaje utilizada en la formulación del POT disponible en `\file\gdb\SIGE.gdb\POT2013Formulacion\HIDROGRAFIA1` y el eje del tramo ajustado del Río Frío evaluado en la actividad anterior que se encuentra en `\file\gdb\SIGE.gdb\SIGE\LineaPerfil`.  
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
 

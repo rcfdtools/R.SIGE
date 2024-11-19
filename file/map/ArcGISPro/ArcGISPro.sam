@@ -1,0 +1,119 @@
+{
+  "SAModels": {
+    "Info": {
+      "ModelNames": [
+        "New Suitability Model"
+      ],
+      "ModelTypes": [
+        "Suitability"
+      ]
+    },
+    "New Suitability Model": {
+      "General": {
+        "Version": "2.0",
+        "ModelName": "New Suitability Model",
+        "ModelType": "Suitability",
+        "CreateDate": "19/11/2024 9:33:31 a. m.",
+        "ModifyDate": "19/11/2024 9:33:31 a. m.",
+        "CriterionCount": 0,
+        "QueryCount": 0
+      },
+      "Control": {
+        "WeightByIndex": 0,
+        "ScaleIndex": 4,
+        "OutRaster": "",
+        "SummaryReport": ""
+      },
+      "Suitability": {
+        "CriteriaNames": [],
+        "XformNames": [],
+        "CriteriaURIs": [],
+        "TransformURIs": [],
+        "XmlDataConns": [],
+        "XmlXfmConns": [],
+        "WeightValues": [],
+        "MinWeights": [],
+        "MaxWeights": [],
+        "IsSelected": [],
+        "TransformCategory": [],
+        "TransformParameters": [],
+        "FromScale": 1.0,
+        "ToScale": 10.0
+      },
+      "Query": {
+        "QueryLayerName": [],
+        "QueryLayerXml": []
+      },
+      "Locate": {
+        "TotalArea": "",
+        "AreaUnits": "",
+        "OutRegionRaster": "",
+        "RegionCount": "",
+        "RegionShape": "",
+        "TradeOffPct": "",
+        "EvalMethod": "",
+        "RegionMinArea": "",
+        "RegionMaxArea": "",
+        "MaxDistBetRegions": "",
+        "MinDistBetRegions": "",
+        "DistanceUnits": "",
+        "ExistingRegions": "",
+        "NeighborGrowth": "",
+        "IslandsAllowed": "",
+        "SeedCount": "",
+        "ResolutionGrowth": "",
+        "SelectionMethod": ""
+      },
+      "Environments": {
+        "workspace": "",
+        "scratchWorkspace": ""
+      },
+      "SuitabilityEnvironments": {
+        "extent": "DEFAULT",
+        "cellSize": "MAXOF"
+      },
+      "LocateEnvironments": {
+        "extent": "DEFAULT",
+        "cellSize": "MAXOF"
+      },
+      "SourcesDataGroups": {
+        "LocalDataParams": [],
+        "ServiceDataParams": [],
+        "NoXFMDataParams": []
+      },
+      "Evaluate": {
+        "DefaultEvaluateTemplate": true,
+        "EvaluateLeftViewName": "",
+        "EvaluateRightViewName": "",
+        "EvaluateSuitabilityParameters": {
+          "SuitabilityMapState": "",
+          "LocateMapState": ""
+        },
+        "EvaluateLocateParameters": {
+          "LocateLayerName": "",
+          "LocateFullPath": ""
+        },
+        "EvaluateOverview": {
+          "SelectedOverviewExploreLayer": ""
+        },
+        "EvaluateCriteria": {
+          "SelectedCriteriaExploreStatistic": "",
+          "SelectedCriteriaInfluenceItem": "",
+          "SelectedCriteriaInfluenceStatistic": ""
+        },
+        "EvaluateSummarize": {
+          "SelectedSummarizeSuitabilityIndex": "",
+          "SelectedSummarizeCriteriaIndex": ""
+        },
+        "EvaluateValidate": {
+          "SelectedValidateSuitabilityIndex": "",
+          "SelectedValidateCriteriaIndex": ""
+        },
+        "EvaluateLocate": {
+          "SelectedLocateSuitabilityIndex": "",
+          "SelectedLocateCriteriaIndex": ""
+        }
+      }
+    }
+  }
+}
