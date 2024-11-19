@@ -43,11 +43,11 @@ Ajuste y extensión zona baja Río Frío
 ## 2. Delimitación de cuencas en HEC-HMS
 
 
-1. En HEC-HMS, cree un proyecto nuevo en blanco definiendo _Metric_ en el sistema de unidades por defecto, guardar como _HECHMS_ en la carpeta D:\R.LTWB\.
+1. En HEC-HMS, cree un proyecto nuevo en blanco definiendo _Metric_ en el sistema de unidades por defecto, guardar como _HECHMS_ en la carpeta D:\R.SIGE\.
 
 <div align="center"><img src="graph/HECHMS_CreateNewProject.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Automáticamente, obtendrá una carpeta con la estructura de directorios y archivos requeridos por este modelo, que para la versión 4.9 contendrá:
+Automáticamente, obtendrá una carpeta con la estructura de directorios y archivos requeridos por este modelo, que para la versión 4.12 contendrá:
 
 <div align="center"><img src="graph/HECHMS_CreateNewProjectStructure.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -59,7 +59,7 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 <div align="center"><img src="graph/HECHMS_CreateBasinModel.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS – Basin Models – RioFrio_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _MAGNA_OrigenNacional.prj_ localizado en el directorio _D:\R.LTWB\\.ProjectionFile_. Repita este procedimiento para los demás modelos de cuenca.
+3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS – Basin Models – RioFrio_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _D:\R.SIGE\file\HECHMS\projectionfile_. 
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.png" alt="R.SIGE" width="100%" border="0" /></div>
 
