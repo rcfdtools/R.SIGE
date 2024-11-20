@@ -43,7 +43,7 @@ Una vez creado el campo, rellene los valores de los pesos con los siguientes val
 
 </div>
 
-> Tenga en cuenca que existen múltiples factores que definen el grado de amenaza dependiendo de la influencia de un mapa con respecto a los demás. Los pesos utilizados pueden ser subjetivos dependiendo del enfoque de análisis que se pretenda realizar, p. ej., si el enfoque de análisis es mayoritariamente, los valores de los pesos pueden ser entre 0 y 100, sí en enfoque es distributivo, se pueden utilizar pesos similares en las variables utilizando valores entre 0 y 10.
+> Tenga en cuenca que existen múltiples factores que definen el grado de amenaza dependiendo de la influencia de un mapa con respecto a los demás. Los pesos utilizados pueden ser subjetivos dependiendo del enfoque de análisis que se pretenda realizar, p. ej., si el enfoque de análisis es mayoritariamente sísmico, los valores de los pesos pueden ser entre 0 y 100, sí en enfoque es distributivo, se pueden utilizar pesos similares en las variables utilizando valores entre 0 y 10.
 
 <div align="center"><img src="graph/ILWIS_3.png" alt="R.SIGE" width="100%" border="0" /></div>
 

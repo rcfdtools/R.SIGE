@@ -21,7 +21,7 @@ Desde el Command Line, ejecute la expresión `Hazard=Wseismic+Wvolcani+Wlandslid
 
 ## 1. Procedimiento general
 
-1. En ILWIS y desde el _Command Line_, ejecute el comando `Hazard=Wseismic+Wvolcani+Wlandsli+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra` para obtener el mapa de amenazas correspondiente a la sumatoria de los diferentes mapas pesos generados en la actividad anterior. En la ventana emergente _Raster Map Definition_ de clic en el botón_Show_ y visualice utilizando la representación Pseudo..
+1. En ILWIS y desde el _Command Line_, ejecute el comando `Hazard=Wseismic+Wvolcani+Wlandsli+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra` para obtener el mapa de amenazas correspondiente a la sumatoria de los diferentes mapas pesos generados en la actividad anterior. En la ventana emergente _Raster Map Definition_ de clic en el botón _Show_ y visualice utilizando la representación Pseudo..
 
 <div align="center"><img src="graph/ILWIS_1.png" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ILWIS_2.png" alt="R.SIGE" width="100%" border="0" /></div>

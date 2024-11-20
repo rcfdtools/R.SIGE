@@ -2853,7 +2853,7 @@ End:
 Basin Layer Properties:
      Element Layer:
           Name: Icons
-          Layer shown: Yes
+          Layer shown: No
      End Layer:
      Element Layer:
           Name: Reaches
@@ -2870,11 +2870,11 @@ Basin Layer Properties:
           Layer shown: No
      End Layer:
      Breakpoint Layer:
-          Layer shown: Yes
+          Layer shown: No
      End Layer:
      Base Layer:
           Name: Identified Streams
-          Layer shown: Yes
+          Layer shown: No
           Properties Filename: maps\streams5620072552024.xml
      End Layer:
      Base Layer:
@@ -2945,7 +2945,7 @@ Basin Schematic Properties:
      Ignore Elevation Color Ramp Scale: No
      Use Interpolated Color Ramp for Elevation Layer: Yes
      Color Ramp Opacity Level for Elevation Layer: 33.0
-     Fix Element Locations: No
+     Fix Element Locations: Yes
      Fix Hydrologic Order: No
 End:
 

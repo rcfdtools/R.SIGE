@@ -59,7 +59,7 @@ A partir del modelo de terreno ESA Copernicus, identifique dentro de la zona de 
 
 9. Edite la curva de nivel y cree una poli-línea que delimite el cuerpo de agua a embalsar. 
 
-> Será necesario eliminar las demás líneas de curvas de nivel con la misma cota fuera de la zona a embalsar y dejar únicamente una entidad. Utilice las herramientas de edición Slip y Merge para el ajuste de la línea perimetral.'
+> Será necesario eliminar las demás líneas de curvas de nivel con la misma cota fuera de la zona a embalsar y dejar únicamente una entidad. Utilice las herramientas de edición Split y Merge para el ajuste de la línea perimetral.
 
 <div align="center"><img src="graph/ArcGISPro_ContourWithBarriers2.png" alt="R.SIGE" width="100%" border="0" /></div>
 
