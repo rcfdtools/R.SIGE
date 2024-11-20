@@ -249,7 +249,7 @@ Para evaluar la correspondencia entre estos modelos digitales, crearemos una red
 
 <div align="center"><img src="graph/ArcGISPro_SelectByLocation1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. En el mení _Edit_, de clic en el botón _Delete_ para eliminar todos los nodos que no están dentro de la zona de estudio, luego para guardar la modificación sobre la capa, en el mismo menú _Edit_ seleccione la opción _Save_.
+3. En el menú _Edit_, de clic en el botón _Delete_ para eliminar todos los nodos que no están dentro de la zona de estudio, luego para guardar la modificación sobre la capa, en el mismo menú _Edit_ seleccione la opción _Save_.
 
 <div align="center"><img src="graph/ArcGISPro_Delete1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
