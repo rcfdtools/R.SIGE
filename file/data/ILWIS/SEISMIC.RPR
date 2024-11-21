@@ -31,3 +31,5 @@ Domain=seismic.dom
 BoundaryColor=0
 BoundaryWidth=1
 Type=RepresentationClass
+[DomainClass]
+DrawMode=0

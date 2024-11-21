@@ -95,3 +95,5 @@ in: 'Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra'
 8:56:29 a. m. domingo, 29 de septiembre de 2024  Hazclas.mpr{dom=Hazclas.dom} = MapSlicing(Hazard,Hazclas.dom)
 8:56:29 a. m. domingo, 29 de septiembre de 2024  show Hazclas.mpr
 6:48:51 a. m. miércoles, 2 de octubre de 2024  open 'D:\R.SIGE\file\data\ILWIS\TSUNAMI'.mpr
+8:05:17 p. m. miércoles, 20 de noviembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\SEISMIC'.mpr
+8:10:09 p. m. miércoles, 20 de noviembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\seismic'.rpr -mpr
