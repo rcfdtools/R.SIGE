@@ -176,6 +176,7 @@ Para carrera 11
 
 > Para completar la homologación de sentidos viales se recomienda utilizar como referencia las flechas direccionales de los mapas de Google Street o Waze.
 
+
 Simbología de jerarquía
 
 <div align="center"><img src="graph/ArcGISPro_Symbology4.jpg" alt="R.SIGE" width="100%" border="0" /></div>
