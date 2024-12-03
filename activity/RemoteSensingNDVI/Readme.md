@@ -424,6 +424,8 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://pro.arcgis.com/es/pro-app/latest/help/data/imagery/indices-gallery.htm
 * https://support.micasense.com/hc/en-us/articles/226531127-Creating-agricultural-indices-NDVI-NDRE-in-QGIS
 * https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
+* https://eos.com/make-an-analysis/ndmi/?form=MG0AV3
+* https://www.usgs.gov/landsat-missions/normalized-difference-moisture-index
 
 
 ## Control de versiones
