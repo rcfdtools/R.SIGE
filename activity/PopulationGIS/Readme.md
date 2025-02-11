@@ -171,11 +171,11 @@ En la tabla de población del libro de Microsoft Excel suministrado para el desa
 
 <div align="center"><img src="graph/ArcGISPro_ExcelDataPoblacionGIS.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. De clic derecho en la hoja _PoblacionGIS_ del libro de Excel y seleccione la opción _Export / Table to Table_.
+3. De clic derecho en la hoja _PoblacionGIS_ del libro de Excel y seleccione la opción _Export / Table to Table_ ó _Export Table_.
 
 <div align="center"><img src="graph/ArcGISPro_TableToTable.png" alt="R.SIGE" width="50%" border="0" /></div>
 
-4. En _Table to Table_, en _Fields_, modifique el campo `Fecha` a formato _Date_ y defina como ruta de salida y nombre de tabla la ruta `\file\map\ArcGISPro\ArcGISPro.gdb\PopulationGIS`. Al terminar será cargada automáticamente la tabla al proyecto, abrala para verificar su contenido.
+4. En _Table to Table_ ó _Export Table_, en _Fields_, modifique el campo `Fecha` a formato _Date_ y defina como ruta de salida y nombre de tabla la ruta `\file\map\ArcGISPro\ArcGISPro.gdb\PopulationGIS`. Al terminar será cargada automáticamente la tabla al proyecto, abrala para verificar su contenido.
 
 > Para utilizar campos tipo fecha y optimizar la visualización temporal de elementos, se recomienda guardar la tabla dentro de la base de datos GDB temporal del proyecto. (no requiere extensión)  
 > El campo EPEUrbHa, también requiere ser ajustado a tipo numérico para su exportación.
