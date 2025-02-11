@@ -252,7 +252,7 @@ Los datos asociados a un elemento geográfico contenidos en los registros de atr
 
 | Formato                | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |:-----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **SHP**<br>Shapefile   | Archivo de formas nativo desarrollado por Esri que es utilizado por herramientas comerciales y de dominio público. Es el formato estándar para intercambio de información geográfica entre las diferentes plataformas. Cada cobertura o capa de geográfica requiere de un sistema de proyección de coordenadas, no posee reglas topológicas directas y el formato de base de datos para almacenar atributos es dBase .dbf.<br><br>Un archivo de formas shapefile se compone de 4 archivos:<br><br>* .dbf: Base o tabla de datos de atributos><br>* .prj: Atributos de proyección geográfica><br>* .shp: Archivo de vectores><br>* .shx: Archivo de índices><br> |
+| **SHP**<br>Shapefile   | Archivo de formas nativo desarrollado por Esri que es utilizado por herramientas comerciales y de dominio público. Es el formato estándar para intercambio de información geográfica entre las diferentes plataformas. Cada cobertura o capa de geográfica requiere de un sistema de proyección de coordenadas, no posee reglas topológicas directas y el formato de base de datos para almacenar atributos es dBase .dbf.<br><br>Un archivo de formas shapefile se compone de 4 archivos:<br><br>* .dbf: Base o tabla de datos de atributos<br>* .prj: Atributos de proyección geográfica<br>* .shp: Archivo de vectores<br>* .shx: Archivo de índices<br> |
 | **GDB**<br>Geodatabase | Base de datos geográfica ó GDB que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente (tablas, vectores, grillas) y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb, PostgreSQL, postgis) y corporativas (gdb, oracle)                                                                                                                                                                                                                |
 
 <div align="center"><img src="graph/GDBBenefits.png" alt="R.SIGE" width="60%" border="0"/><br><sub>Beneficios al usar una Geodatabase<br>Elaborado por rcfdtools</sub></div>
@@ -282,15 +282,11 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 | Avance **P1** | Esta actividad no requiere del desarrollo de elementos en el avance P1 del proyecto final, los contenidos son evaluados en el quiz de conocimiento y habilidad.                                                                                                                                                                                                                                                                                     | 
 | Avance **P1** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas. |
 
+
 ## Referencias
 
 * https://es.wikipedia.org/wiki/Zipaquir%C3%A1
 * https://www.colombiaenmapas.gov.co/inicio/
-
-
-
-## Referencias
-
 * https://www.esri.com/es-es/what-is-gis/overview
 * https://volaya.github.io/libro-sig/chapters/Calidad_datos.html
 

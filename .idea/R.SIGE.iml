@@ -9,6 +9,10 @@
       <excludeFolder url="file://$MODULE_DIR$/file/data/SGC/agc2023.gdb" />
       <excludeFolder url="file://$MODULE_DIR$/file/gdb/SIGE.gdb" />
       <excludeFolder url="file://$MODULE_DIR$/file/map/ArcGISPro/scratch.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/IDEAM/Erosion1988.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/SGC/AmenazaVolcanica/AmenazaVolcanica.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/data/SGC/asn2019.gdb" />
+      <excludeFolder url="file://$MODULE_DIR$/file/gdb/RedVial.gdb" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
