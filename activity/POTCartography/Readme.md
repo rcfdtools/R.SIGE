@@ -116,7 +116,7 @@ Cartografía tomada del Plan de Ordenamiento Territorial Municipio de Zipaquirá
 
 ## 3. Fuente base cartográfica y fuente temática
 
-> **Descarga de base de datos vectoriales por hojas cartográficas**: ingresar a www.colombiaenmapas.gov.co, en la sección de _Cartografía Básica_ seleccionar la opción _Bases de datos vectoriales por hojas cartográficas_, en el panel lateral izquierdo ingresar el número de la hoja, p.ej. 208IVB y descargar en formato geodatabase - GDB.
+> **Descarga de bases de datos vectoriales por hojas cartográficas**: ingresar a www.colombiaenmapas.gov.co, en la sección de _Cartografía Básica_ seleccionar la opción _Bases de datos vectoriales por hojas cartográficas_, en el panel lateral izquierdo ingresar el número de la hoja, p.ej. 208IVB y descargar en formato geodatabase - GDB.
 
 | No.  | Etapa       | Componente | Código | Nombre                                                                | Fuente base cartográfica                                                                                         | Fuente temática                                                                                                                                                                                                                            |
 |------|-------------|------------|--------|:----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
