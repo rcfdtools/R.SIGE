@@ -61,7 +61,7 @@ Información geo-espacial del Plan de Ordenamiento Territorial Municipio de Zipa
 
 Luego, desde su navegador busque los resultados cuyo formato sea .zip y descargue estos archivos.
 
-> :bulb: Si su municipio no cuenta con información publicada en la plataforma _Colombia OT_, realice directamente la solicitud de información del POT a la Secretaría de Planeación.
+> :bulb: Si su municipio no cuenta con información publicada en la plataforma _Colombia OT_, realice directamente la solicitud de información del POT a la Secretaría o Gerencia de Planeación.
 
 <div align="center"><img src="graph/ColombiaOT_2.png" alt="R.SIGE" width="100%" border="0"/></div>
 
@@ -113,15 +113,15 @@ Para la visualización preliminar y consulta de los datos geo-espaciales descarg
 
 2. En el menú _View_, de clic en el botón _Catalog Pane_ que activará el panel lateral derecho de su catálogo de datos. De clic derecho en la carpeta _Folders_, seleccione la opción _Add Folder Connection_ y seleccione su directorio de proyecto.
 
-> Para ejemplificar este curso, la carpeta de proyecto es `C:\R.SIGUE`.
+> Para ejemplificar este curso, la carpeta de proyecto es `C:\R.SIGE`.
 
 <div align="center"><img src="graph/ArcGISPro_AddFolderConnection.png" alt="R.SIGE" width="100%" border="0"/></div>
 
-3. Expanda el árbol de _Folders_, podrá observar que se encuentran dos carpetas asociadas. La carpeta `ArcGISPro` corresponde a la carpeta por defecto que se genera al crear un proyecto nuevo en ArcGIS Pro, y la carpeta _R.SIGUE_ es la carpeta general del proyecto.
+3. Expanda el árbol de _Folders_, podrá observar que se encuentran dos carpetas asociadas. La carpeta `ArcGISPro` corresponde a la carpeta por defecto que se genera al crear un proyecto nuevo en ArcGIS Pro, y la carpeta _R.SIGE_ es la carpeta general del proyecto.
 
 <div align="center"><img src="graph/ArcGISPro_Folders.png" alt="R.SIGE" width="100%" border="0"/></div>
 
-4. En _R.SIGUE_, expanda el arból de la carpeta _file_ hasta el subnivel `\data\POT\`, la carpeta del Acuerdo y las subcarpetas _shp_ y _gdb_. Podrá observar que se encuentran las diferentes capas descomprimidas y la base de datos. De clic derecho en la capa _BARRIOS.shp_ y seleccione la opción _Properties_.
+4. En _R.SIGE_, expanda el arból de la carpeta _file_ hasta el subnivel `\data\POT\`, la carpeta del Acuerdo y las subcarpetas _shp_ y _gdb_. Podrá observar que se encuentran las diferentes capas descomprimidas y la base de datos. De clic derecho en la capa _BARRIOS.shp_ y seleccione la opción _Properties_.
 
 <div align="center"><img src="graph/ArcGISPro_LayerProperties.png" alt="R.SIGE" width="100%" border="0"/></div>
 
