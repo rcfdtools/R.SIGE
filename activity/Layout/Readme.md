@@ -161,7 +161,7 @@ Realice la siguiente configuración basada en la capa de Veredas de DANE 2020.
 
 <div align="center"><img src="graph/ArcGISPro_MapSeries2.png" alt="R.SIGE" width="60%" border="0" /></div>
 
-Luego de aceptar la configuración, podrá observar que automáticamente se cream los mapas de series con una impresión para cada vereda. Observe que el gráfico de barras se ha ajustado automáticamente para mostrar solo las veredas que aparecen en cada impreso.
+Luego de aceptar la configuración, podrá observar que automáticamente se crea los mapas de series con una impresión para cada vereda. Observe que el gráfico de barras se ha ajustado automáticamente para mostrar solo las veredas que aparecen en cada impreso.
 
 <div align="center"><img src="graph/ArcGISPro_MapSeries3.png" alt="R.SIGE" width="100%" border="0" /></div>
 
