@@ -156,7 +156,7 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 <div align="center"><img src="graph/ArcGISPro_Vereda3Chart.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 
-## 4. Mapa veredal DANE 2022
+## 4. Mapa veredal DANE 2020
 
 1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, descargue la capa de veredas en formato shapefile de Colombia creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la ruta `\R.SIGE\file\data\DANE\` de su repositorio de datos. 
 
