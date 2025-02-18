@@ -9,7 +9,7 @@ A partir de la capa MOT contenida en el anexo de formulación del POT, realice u
 ## Objetivos
 
 * Disolver los polígonos de subcategorías del Modelo de Ocupación Territorial - MOT para obtener el mapa de clasificación del suelo.
-* Calcular las áreas de los polígonos de clasificación e identificar las diferencias geográficas entre el mapa oficial CG-01 del POT y las clasificaciones realizadas en el Modelo de Ocupación Territorial - MOT.
+* Calcular las áreas de los polígonos de clasificación e identificar las diferencias geográficas entre el mapa oficial CG-01 del POT y las clasificaciones contenidas en el Modelo de Ocupación Territorial - MOT.
 * Entender la diferencia entre cálculo geométrico planar y geodésico.
 
 
