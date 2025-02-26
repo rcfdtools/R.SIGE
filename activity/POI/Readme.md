@@ -21,7 +21,7 @@ Utilizando la capa vial y la localización de los diferentes equipamientos, real
 
 ## 1. Integración y homologación de nodos
 
-1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _POI_ y establezca el CRS 9377. Agregue al mapa las capas _ANOTACION, ANOTACION_URBANO, EDUCATIVO_ disponibles en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb`.
+1. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _POI_ y establezca el CRS 9377. Agregue al mapa las capas _ANOTACION, ANOTACION_URBANO, EDUCATIVO_ disponibles en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\gdb\25899.gdb\CARTOGRAFIA\`.
 
 <div align="center"><img src="graph/ArcGISPro_AddLayer.png" alt="R.SIGE" width="100%" border="0" /></div>
 
