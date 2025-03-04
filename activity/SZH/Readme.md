@@ -105,6 +105,11 @@ El proceso de delimitación se realiza a partir de la cobertura de Sub-zonas hid
 
 > La descarga permite obtener un archivo comprimido que contiene la capa geográfica en formato Shapefile, un mapa de muestra en formato .pdf, un mapa en formato .pdf y otros elementos complementarios.
 
+Otros servicios de descarga:
+
+* http://dhime.ideam.gov.co/server/rest/services/AlertasHidrologicasActuales/AlertasHidrologicasActuales/FeatureServer/1
+* https://geonetwork.minambiente.gov.co/geonetwork/srv/api/records/bafb2beb-5a6d-430b-93c0-4e0e4e767716
+
 <div align="center"><img src="graph/ColombiaMapasDescarga.png" alt="R.SIGE" width="100%" border="0" /></div>
 
 <br>Catálogo de objetos en Sub-zonas [^4]  
