@@ -121,10 +121,10 @@ Agregue una cada desde cada dataset y verifique que los vectores se hayan import
 
 Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
 
-| Proceso                                          | Procedimiento                                                                                                                                  |
-|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Crear geodatabases (GDB) y datasets              | Directamente desde el panel _Browser_ y dando clic sobre un directorio, se pueden crear con la opción _New / ESRI File Geodatabase_.           |
-| Importación de entidades a una geodatabase (GDB) | Desde el panel _Layers_ y dando clic en _Export / Save Features As_, podrá exportar la capa dentro de una base de datos ESRI File Geodatabase. |
+| Proceso                                          | Procedimiento                                                                                                                                                                                               |
+|:-------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Crear geodatabases (GDB) y datasets              | Directamente desde el panel _Browser_ y dando clic sobre un directorio, se pueden crear con la opción _New / ESRI File Geodatabase_.                                                                        |
+| Importación de entidades a una geodatabase (GDB) | Desde el panel _Layers_ y dando clic en _Export / Save Features As_, podrá exportar la capa dentro de una base de datos ESRI File Geodatabase o podrá arrastrar los archivos Shapefile a la raíz de la GDB. |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
