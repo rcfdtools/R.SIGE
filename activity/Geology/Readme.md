@@ -28,7 +28,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 
 <div align="center"><img src="graph/SGC_Download2023.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Geology_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en `\file\data\SGC\agc2023.gdb\Geologia\` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../ref/ChronostratChart2023-04SpanishAmer.pdf)[^2].
+2. Abra el proyecto de ArcGIS Pro, creado previamente y desde el menú _Insert_ cree un nuevo mapa _New Map_, renombre como _Geology_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en `\file\data\SGC\agc2023.gdb\Geologia\` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^2].
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 <div align="center"><img src="graph/ArcGISPro_AddLayer1.png" alt="R.SIGE" width="100%" border="0" /></div>
@@ -84,7 +84,7 @@ Para el análisis de compatibilidad entre las categorías del suelo establecidas
 
 <div align="center"><img src="graph/ArcGISPro_Summarize1.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-3. Abra la tabla obtenida, podrá observar que para cada categoría se pueden identificar las diferentes unidades. Utilizando la herramienta de selección por atributos y seleccione en la capa _MOT_UC_, todos aquellos polígonos categorizados como _Área de Vivienda Rural Campestre_, _Centro Poblado Rural_ y _Áreas de Actividad en Suelo Urbano_ que se encuentran sobre las unidades UC _Q-al_ y _Q-ca_.
+3. Abra la tabla obtenida, podrá observar que para cada categoría se pueden identificar las diferentes unidades. Utilizando la herramienta de selección por atributos, seleccione en la capa _MOT_UC_, todos aquellos polígonos categorizados como _Área de Vivienda Rural Campestre_, _Centro Poblado Rural_ y _Áreas de Actividad en Suelo Urbano_ que se encuentran sobre las unidades UC _Q-al_ y _Q-ca_.
 
 SQL: `catego IN ('Área de Vivienda Rural Campestre', 'Áreas de Actividad en Suelo Urbano', 'Centro Poblado Rural') And SimboloUC IN ('Q-al', 'Q-ca')`
 
