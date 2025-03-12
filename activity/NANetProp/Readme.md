@@ -43,8 +43,8 @@ En la carpeta GDB cree una File Geodatabase y un dataset para la integración de
 | Meters      | Longitud de tramo en metros                                                                                                   | Double     |
 | kph         | Velocidad de tramo en kilómetros / hora                                                                                       | Double     |
 | Oneway      | Sentido vial vector (FT, TF, N). To, From, Not                                                                                | Text (2)   |
-| Hierarchy   | Jerarquía víal de 1 a n                                                                                                       | Long       |
-| Func_Class  | Clasificador víal numérico en función de la clase, jerarquía y localización geográfica                                        | Long       |
+| Hierarchy   | Jerarquía vial de 1 a n                                                                                                       | Long       |
+| Func_Class  | Clasificador vial numérico en función de la clase, jerarquía y localización geográfica                                        | Long       |
 | FT_Minutes  | Tiempo de viaje en minutos, desde a hacia o hacia desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)    | Double     |
 | TF_Minutes  | Tiempo de viaje en minutos, hacia a desde. Calcular con la expresión FT_Minutes = (!Meters!/1000)/(!kph!/60)                  | Double     |
 

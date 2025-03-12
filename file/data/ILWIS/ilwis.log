@@ -97,3 +97,27 @@ in: 'Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra'
 6:48:51 a. m. miércoles, 2 de octubre de 2024  open 'D:\R.SIGE\file\data\ILWIS\TSUNAMI'.mpr
 8:05:17 p. m. miércoles, 20 de noviembre de 2024  open 'D:\R.SIGE\file\data\ILWIS\SEISMIC'.mpr
 8:10:09 p. m. miércoles, 20 de noviembre de 2024  show 'D:\R.SIGE\file\data\ILWIS\seismic'.rpr -mpr
+9:14:45 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpa
+9:14:50 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpr
+9:15:30 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpa
+9:17:32 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpa
+9:17:39 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazard'.mpr
+9:18:02 a. m. miércoles, 12 de marzo de 2025  pixelinfo
+9:19:08 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpa
+9:19:28 a. m. miércoles, 12 de marzo de 2025  show 'D:\R.sige\file\data\ILWIS\seismic'.rpr -mpr
+9:19:55 a. m. miércoles, 12 de marzo de 2025  show 'D:\R.sige\file\data\ILWIS\seismic'.rpr -mpr
+9:21:39 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\SEISMIC'.dom
+9:22:00 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\SEISMIC'.dom
+9:22:10 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\seismic'.tbt
+9:22:50 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\LANDSLID'.mpr
+9:23:11 a. m. miércoles, 12 de marzo de 2025  prop 'D:\R.sige\file\data\ILWIS\LANDSLID'.mpr
+9:23:14 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\LANDSLID'.mpr
+9:23:17 a. m. miércoles, 12 de marzo de 2025  prop 'D:\R.sige\file\data\ILWIS\LANDSLID'.mpr
+9:24:06 a. m. miércoles, 12 de marzo de 2025  attribras
+9:24:43 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Wseismic'.mpr
+9:27:32 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazard'.mpr
+9:28:51 a. m. miércoles, 12 de marzo de 2025  histogram
+9:29:03 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazard'.his
+9:30:18 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazclas'.dom
+9:30:41 a. m. miércoles, 12 de marzo de 2025  slicing
+9:30:57 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazclas'.mpr
