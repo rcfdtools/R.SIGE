@@ -157,8 +157,8 @@ Simbología para jerarquías viales
 
 3. Para la homologación del campo _Oneway_ correspondiente a sentidos viales, simbolice utilizando la direccionalidad de las líneas y establezca los siguientes valores de ejemplo:
 
-* Vías peatonales: `N` debido a que no es transitable en vehículo.
-* VÍA FERREA: `N` debido a que no es transitable en vehículo.
+* Vías peatonales: `N` debido a que no es transitable en vehículo particular.
+* VÍA FERREA: `N` debido a que no es transitable en vehículo particular.
 * CARRERA 10: `TF` debido a que el tránsito de esta vía es de noreste a sudeste.  
 * CARRERA 11: `FT` debido a que el tránsito de esta vía es de sudeste a noreste. 
 
@@ -203,7 +203,7 @@ Simbología de jerarquía
 
 <div align="center"><img src="graph/ArcGISPro_Planarize2.jpg" alt="R.SIGE" width="100%" border="0" /></div>
 
-4. Utilizando el calculador de campo, calcule en el campo `Meters` la longitud en metros de cada segmento de la red. Rotule cada tramo y verifique las longitudes de cada segmento.
+4. Utilizando el calculador de geometría, calcule en el campo `Meters` la longitud en metros de cada segmento de la red. Rotule cada tramo y verifique las longitudes de cada segmento.
 
 Rótulo Arcade: `Round($feature.Meters, 1)`
 
