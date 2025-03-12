@@ -2853,14 +2853,14 @@ End:
 Basin Layer Properties:
      Element Layer:
           Name: Icons
-          Layer shown: No
+          Layer shown: Yes
      End Layer:
      Element Layer:
           Name: Reaches
           Layer shown: Yes
      End Layer:
      2D Connection Layer:
-          Layer shown: No
+          Layer shown: Yes
      End Layer:
      Element Layer:
           Name: Subbasins
