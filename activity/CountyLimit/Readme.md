@@ -158,7 +158,7 @@ Rótulo Arcade: `$feature.nombre + textformatting.NewLine + "A (ha): " + Round($
 
 ## 4. Mapa veredal DANE 2020
 
-1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, seleccione la colección temática _Límites_ y descargue la capa de Veredas de Colombia en formato shapefile creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la ruta `\R.SIGE\file\data\DANE\` de su repositorio de datos. 
+1. Desde la plataforma de https://www.colombiaenmapas.gov.co/, seleccione la colección temática _Límites_ y descargue la capa de _Veredas de Colombia_ en formato shapefile creada por el DANE. Obtendrá un archivo comprimido, descomprima y guarde en la ruta `\R.SIGE\file\data\DANE\` de su repositorio de datos. 
 
 > Para la descarga se requiere de inicio de sesión de usuario utilizando, por ejemplo, una cuenta activa de Google.
 
