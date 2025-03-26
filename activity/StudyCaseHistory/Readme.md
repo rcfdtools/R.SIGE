@@ -40,7 +40,7 @@ Información [DANE](https://www.dane.gov.co/)
 | Dirección territorial        | Gestor territorial: Municipio de Zipaquirá según Resolución IGAC 96 del 9 de Febrero de 2021 |
 | Categoría                    | 1                                                                                            |
 
-> Para conocer su gestor catastral territorial, en www.colombiaenmapas.gov.co buscar _"Gestores Catastrales Colombia"_. Dentro del marco de la política de Catastro Multipropósito del Gobierno Nacional, el Instituto Geográfico Agustín Codazzi (IGAC) habilitó diferentes entidades, como gestores catastrales, con el objetivo de empoderar a los entes territoriales y que puedan mejorar la gestión de sus territorios.
+> Para conocer su gestor catastral territorial, en www.colombiaenmapas.gov.co buscar en la temática Catastro: _"Gestores Catastrales Colombia"_. Dentro del marco de la política de Catastro Multipropósito del Gobierno Nacional, el Instituto Geográfico Agustín Codazzi (IGAC) habilitó diferentes entidades, como gestores catastrales, con el objetivo de empoderar a los entes territoriales y que puedan mejorar la gestión de sus territorios.
 
 La zona rural del municipio está compuesta por diecisiete (17) veredas
 
