@@ -29,7 +29,6 @@ De fundación prehispánica, sus pobladores se asentaban en el sector hoy conoci
 
 La ciudad de Zipaquirá está situada en el Valle de El Abra, sobre la cordillera Oriental, en el altiplano Cundiboyacense. El casco urbano se encuentra a una altitud de 2652 m.s.n.m., lo que la convierte en la tercera ciudad con mayor altitud en Colombia con más de 100.000 habitantes de acuerdo a la lista de las grandes ciudades más altas del mundo. Zipaquirá posee una extensión aproximada de 197 km² así: 8 km² de la zona urbana y 189 km² de la zona rural. El territorio donde se asienta la ciudad fue en el pasado un gran campo lleno de vegetación; algunos sectores de la ciudad también están construidos sobre unos viejos fosos de agua-sal, en los que la sal vigua era procesada para su consumo. Su río principal más extenso es el río Bogotá, pasando por el borde oriental de Zipaquirá en límites con Tocancipá y Sopó que desde hace varias décadas presenta altos niveles de contaminación, finalizando en Girardot. La zona en donde está ubicada la ciudad corresponde a la placa tectónica sudamericana, por lo que presenta una importante actividad sísmica.
 
-
 <div align="center">
 
 Información [DANE](https://www.dane.gov.co/)
@@ -40,6 +39,8 @@ Información [DANE](https://www.dane.gov.co/)
 | Municipio de Zipaquirá       | Código DANE: 899                                                                             |
 | Dirección territorial        | Gestor territorial: Municipio de Zipaquirá según Resolución IGAC 96 del 9 de Febrero de 2021 |
 | Categoría                    | 1                                                                                            |
+
+> Para conocer su gestor catastral territorial, en www.colombiaenmapas.gov.co buscar _"Gestores Catastrales Colombia"_. Dentro del marco de la política de Catastro Multipropósito del Gobierno Nacional, el Instituto Geográfico Agustín Codazzi (IGAC) habilitó diferentes entidades, como gestores catastrales, con el objetivo de empoderar a los entes territoriales y que puedan mejorar la gestión de sus territorios.
 
 La zona rural del municipio está compuesta por diecisiete (17) veredas
 

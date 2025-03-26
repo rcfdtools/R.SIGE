@@ -39,11 +39,11 @@ Los datasets o conjuntos de datos SIG, incluyen ubicaciones de coordenadas dentr
 
 Un método para describir la posición de una ubicación geográfica en la superficie de la Tierra consiste en utilizar mediciones esféricas de latitud y longitud. Estas son mediciones de los ángulos (en grados) desde el centro de la Tierra hasta un punto en su superficie. Este tipo de sistema de referencia de coordenadas generalmente se denomina sistema de coordenadas geográficas.
 
-<div align="center"><img src="graph/LatitudeLongitude.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/LatitudeLongitude.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud y Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 La longitud mide ángulos en una dirección este-oeste. Las mediciones de longitud comúnmente se basan en el meridiano de Greenwich, que es una línea imaginaria que realiza un recorrido desde el Polo Norte, a través de Greenwich, Inglaterra, hasta el Polo Sur. Este ángulo es de longitud 0. El oeste del meridiano de Greenwich por lo general se registra como longitud negativa y el este, como longitud positiva. Por ejemplo, la ubicación de Los Angeles, California, tiene una latitud de aproximadamente +33 grados, 56 minutos y una longitud de -118 grados, 24 minutos.
 
-<div align="center"><img src="graph/ParallelsMeridians.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/ParallelsMeridians.png" alt="R.SIGE" width="40%" border="0" /><sub><br>Latitud y Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 Si bien la longitud y la latitud se pueden ubicar en posiciones exactas de la superficie de la Tierra, no proporcionan unidades de medición uniformes de longitud y distancia. Solo a lo largo del ecuador la distancia que representa un grado de longitud se aproxima a la distancia que representa un grado de latitud. Esto se debe a que el ecuador es la única línea paralela que es tan extensa como el meridiano. 
 
@@ -64,7 +64,7 @@ El sistema de coordenadas cartesianas utiliza dos ejes: uno horizontal (x), que 
 
 En la ilustración que se muestra a continuación, la notación (4,3) registra un punto que se encuentra cuatro unidades por encima en x y tres unidades por encima en y desde el origen.
 
-<div align="center"><img src="graph/CartesianCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/CartesianCoordinates.png" alt="R.SIGE" width="20%" border="0" /><sub><br>Latitud y Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
 ### 1.3. Sistemas de coordenadas en 3D
@@ -74,7 +74,7 @@ Cada vez más sistemas de coordenadas proyectadas utilizan un valor z para medir
 
 En la ilustración que se muestra a continuación, la notación (2,3,4) registra un punto que está dos unidades por encima de x y tres unidades por encima de y desde el origen, y cuya elevación está cuatro unidades por encima de la superficie de la Tierra (4 metros por encima del nivel del mar).
 
-<div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud t Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
+<div align="center"><img src="graph/3DCoordinates.png" alt="R.SIGE" width="30%" border="0" /><sub><br>Latitud y Longitud<br>Tomado de: <a href="https://resources.arcgis.com/es/help/getting-started/articles/026n0000000s000000.htm">https://resources.arcgis.com</a></sub><br><br></div>
 
 
 ### 1.4. Propiedades y distorsión en proyecciones del mapa  
