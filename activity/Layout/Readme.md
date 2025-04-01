@@ -100,6 +100,8 @@ Para el mapa de localización solo es necesario rotular el departamento de Cundi
 
 <div align="center"><img src="graph/ArcGISPro_Layer_MapaDepartamental_Label.png" alt="R.SIGE" width="40%" border="0" /></div>
 
+> Para resaltar el límite geopolítico de Colombia, cree una disolución a partir de los departamentos y simbolice con borde de grosor 2 en color negro y sin relleno.
+
 
 ### 2.2. Mapa municipal
 
@@ -113,7 +115,7 @@ Simbolice por valores únicos a partir del nombre del municipio estableciendo co
 
 <div align="center"><img src="graph/ArcGISPro_Layer_MapaMunicipal.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-Para resaltar el contorno del departamento, agregue la capa _Depto.shp_, filtre solo Cundinamarca, establezca la simbología con borde de grosor 2 negro y sin relleno.
+Para resaltar el contorno del departamento, agregue la capa _Depto.shp_, filtre solo Cundinamarca, establezca la simbología con borde de grosor 2 en color negro y sin relleno.
 
 <div align="center"><img src="graph/ArcGISPro_Layer_MapaMunicipalDepartamento.png" alt="R.SIGE" width="100%" border="0" /></div>
 
