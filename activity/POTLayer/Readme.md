@@ -1,4 +1,4 @@
-# Inventario de información geo-espacial recopilada del POT y diccionario de datos
+# Inventario de información geo-espacial recopilada del POT, diccionario y modelo de datos
 Keywords: `pot` `data-gis-dictionaty` `shapefile` `feature-class` `layer` `grid` `tiff` `geodatabase` `gdb` `CRS` `envelope` `geotable`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.
@@ -350,7 +350,7 @@ En QGIS podrá realizar la visualización de los diferentes elementos siguiendo 
 <div align="center"><img src="graph/QGIS_LayerProperties.png" alt="R.SIGE" width="100%" border="0"/></div>
 
 
-## 5. Diccionario de datos
+## 5. Diccionario y modelo de datos LADM_COL
 
 El diccionario de datos, es un documento o un libro en el cual se establecen las especificaciones de los objetos espaciales y tablas geo-codificadas, manipulados en un Sistema de Información Geográfica. La aplicación de este documento es primordial para los procesos de producción, actualización, consulta, análisis y distribución de datos espaciales, debido a que se contribuye a mejorar su calidad y administración, evitando de esta manera ambiguedades e inconsistencias que puedan surgir en su interpretación.
 
@@ -402,6 +402,18 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Capas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Tablas.png" alt="R.SIGE" width="100%" border="0"/></div>
 <div align="center"><img src="graph/Excel_DiccionarioDatosUECIJG_Grillas.png" alt="R.SIGE" width="100%" border="0"/></div>
+
+
+### 5.3 Modelo de datos LADM_COL
+
+Land Administration Domain Model (LADM), es un modelo conceptual que concreta una ontología y una semántica para la administración del territorio.
+
+Consulta en https://www.icde.gov.co/datos-y-recursos/repositorio-modelos-ladm, las versiones oficiales y las versiones en desarrollo de los modelos y sub-modelos conceptuales, lógicos, y físicos derivados de LADM definidos para Colombia y denominados como LADM_COL. Para
+
+En el caso específico de Planes de Ordenamiento Territorial, el [Ministerio de Vivienda, Ciudad y Territorio de Colombia - MVCT](https://www.minvivienda.gov.co/), ha dispuesto del siguiente modelo relacional, disponible en https://www.icde.gov.co/datos-y-recursos/repositorio-modelos-ladm/plan-de-ordenamiento-territorial-pot
+
+<div align="center"><img src="graph/MVCT_LADM_COL_Diagrama_POT.jpeg" alt="R.SIGE" width="100%" border="0"/></div>
+
 
 
 ## Actividades de proyecto :triangular_ruler:
