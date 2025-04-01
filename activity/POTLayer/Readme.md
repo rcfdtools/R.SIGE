@@ -408,12 +408,61 @@ Para el catálogo de objetos de capas y tablas, se deben incluir:
 
 Land Administration Domain Model (LADM), es un modelo conceptual que concreta una ontología y una semántica para la administración del territorio.
 
-Consulta en https://www.icde.gov.co/datos-y-recursos/repositorio-modelos-ladm, las versiones oficiales y las versiones en desarrollo de los modelos y sub-modelos conceptuales, lógicos, y físicos derivados de LADM definidos para Colombia y denominados como LADM_COL. Para
+Consulta en https://www.icde.gov.co/datos-y-recursos/repositorio-modelos-ladm, las versiones oficiales y las versiones en desarrollo de los modelos y sub-modelos conceptuales, lógicos, y físicos derivados de LADM definidos para Colombia y denominados como LADM_COL.
 
 En el caso específico de Planes de Ordenamiento Territorial, el [Ministerio de Vivienda, Ciudad y Territorio de Colombia - MVCT](https://www.minvivienda.gov.co/), ha dispuesto del siguiente modelo relacional, disponible en https://www.icde.gov.co/datos-y-recursos/repositorio-modelos-ladm/plan-de-ordenamiento-territorial-pot
 
 <div align="center"><img src="graph/MVCT_LADM_COL_Diagrama_POT.jpeg" alt="R.SIGE" width="100%" border="0"/></div>
 
+Este modelo contiene las especificaciones de diferentes objetos, tales como:
+
+* COL_UnidadAdministrativaBasica
+* COL_FuenteAdministrativa
+* COL_FuenteEspacial
+* COL_UnidadEspacial
+* COL_DRR
+* COL_Fuente
+* COL_Interesado
+* POT_UAB_ClasificacionSuelo
+* POT_UAB_SueloProteccionUrbano
+* POT_UAB_AreasActividad
+* POT_UAB_TratamientoUrbanistico
+* POT_UAB_SistemasGenerales
+* POT_UAB_ZonificacionSueloRural
+* POT_UAB_CentroPobladoRural
+* POT_UAB_AreaCondicionRiesgo
+* POT_UAB_AreaCondicionAmenaza
+* POT_UAB_ZonificacionAmenaza
+* POT_Municipio
+* POT_FuenteAdministrativa
+* POT_FuenteEspacial
+
+Con relación a los dominios, se encuentran definidos:
+
+* POT_AreaActividadTipo
+* POT_SistemasGeneralesNivelTipo
+* POT_FenomenoAmenazaTipo
+* POT_ClasificacionSueloTipo
+* POT_CategoriaAmenazaTipo
+* POT_SistemasGeneralesEstadoTipo
+* POT_TratamientoUrbanisticoTipo
+* POT_UsoSueloRuralTipo
+* POT_SistemasGeneralesTipo
+* POT_CategoriaRuralTipo
+* POT_PriorizacionTipo
+* POT_SueloProteccionUrbanoTipo
+* POT_MedidaIntervencionTipo
+* COL_UnidadAdministrativaBasicaTipo
+* POT_FuenteAdministrativaTipo
+* COL_DocumentoTipo
+* COL_InteresadoTipo
+* COL_RelacionSuperficieTipo
+* POT_RevisionTipo
+* POT_PlanOrdenamientoTerritorialTipo
+* COL_FuenteAdministrativaTipo
+* COL_FormatoTipo
+* COL_FuenteEspacialTipo
+* COL_EstadoDisponibilidadTipo
 
 
 ## Actividades de proyecto :triangular_ruler:
