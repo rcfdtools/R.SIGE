@@ -137,7 +137,7 @@ Como observa, los mapas de localización incluyen el borde del _Map Frame_, desd
 
 > Para la impresión digital en formato Adobe Acrobat .pdf, es necesario instalar previamente Adobe Acrobat o una impresora virtual compatible con impresión digital pdf.
 
-1. Agregue al mapa _CountyLimit_ el mapa del Modelo de Ocupación Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0 y transparencia de 30%. Active el mapa topográfico de fondo.
+1. Agregue al mapa _CountyLimit_ la capa vectorial del Modelo de Ocupación Territorial - MOT, disponible en la ruta `\file\data\POT\Anexo_Acuerdo_012_2013\shp\MOT.shp`. Simbolice por valores únicos a partir del campo `catego` utilizando la paleta _Muted Pastels_ y para todos los elementos defina borde color blanco en grosor 1.0 y transparencia de 30%. Active el mapa topográfico de fondo.
 
 <div align="center"><img src="graph/ArcGISPro_CountyLimitMOT.png" alt="R.SIGE" width="100%" border="0" /></div>
 
