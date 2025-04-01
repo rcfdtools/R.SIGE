@@ -88,7 +88,7 @@ Para salir del modo de ajuste del marco de impresión del mapa, de clic en la fl
 
 Desde el menú _Insert_, cree un mapa nuevo y nómbrelo como _Localizacion Departamental_, ajuste el CRS a 9377 correspondiente al Orígen Único Nacional de Colombia.
 
-Desde https://www.colombiaenmapas.gov.co/, descargue como shapefile el mapa de Departamentos de Colombia 2023 del IGAC y guarde el comprimido en la ruta `\file\data\IGAC\` como _Departamentos_Agosto_2023.zip_, descomprima y agregue la capa _Depto.shp_ al mapa.
+En https://www.colombiaenmapas.gov.co/, seleccione el grupo temático _Límites_ y descargue como shapefile el mapa de Departamentos de Colombia del IGAC y guarde el comprimido en la ruta `\file\data\IGAC\` como _Departamentos_Agosto_2023.zip_, descomprima y agregue la capa _Depto.shp_ al mapa.
 
 <div align="center"><img src="graph/ColombiaMapas_Departamentos2023.png" alt="R.SIGE" width="100%" border="0" /></div>
 
@@ -105,7 +105,7 @@ Para el mapa de localización solo es necesario rotular el departamento de Cundi
 
 Desde el menú _Insert_, cree un mapa nuevo y nómbrelo como _Localizacion Municipal_, ajuste el CRS a 9377 correspondiente al Orígen Único Nacional de Colombia.
 
-Desde https://www.colombiaenmapas.gov.co/, descargue como shapefile el mapa de Municipios, Distritos y Áreas no municipalizadas de Colombia 2023 del IGAC y guarde el comprimido en la ruta `\file\data\IGAC\` como _Municipios_Agosto_2023.zip_, descomprima y agregue la capa _Munpio.shp_ al mapa. Desde las propiedades de la capa y a través de un filtro o _Definition Query_, filtre solo los municipios de Cundinamarca.
+En https://www.colombiaenmapas.gov.co/, seleccione el grupo temático _Límites_ y descargue como shapefile el mapa de Municipios, Distritos y Áreas no municipalizadas de Colombia del IGAC y guarde el comprimido en la ruta `\file\data\IGAC\` como _Municipios_Agosto_2023.zip_, descomprima y agregue la capa _Munpio.shp_ al mapa. Desde las propiedades de la capa y a través de un filtro o _Definition Query_, filtre solo los municipios de Cundinamarca.
 
 <div align="center"><img src="graph/ColombiaMapas_Municipios2023.png" alt="R.SIGE" width="100%" border="0" /></div>
 
