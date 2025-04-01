@@ -67,7 +67,8 @@ En la tabla podrá observar que esta capa se compone de 14 entidades o veredas.
 
 Calcule las propiedades solicitadas indicando las unidades de cálculo y el sistema de proyección 9377, correspondiente a MAGNA Orígen Único Nacional de Colombia.
 
-> En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.  
+> En actividades anteriores evidenciamos que el sistema de proyección de coordenadas de las capas recopiladas del POT es el 3116, correspondiente a MAGNA Sirgas Orígen Bogotá.
+> 
 > Tenga en cuenta que el cálculo de las propiedades geométricas puede variar entre sistemas de coordenadas, por lo cual, los valores calculádos automáticamente (por estar contenida la capa dentro de una GDB) en esta capa en los campos `Shape_Area` y `Shape_length` (a partir del CRS 3116), son diferentes a los obtenidos con el sistema 9377.
 
 Incluya un campo adicional tipo entero largo con el nombre `Nodos` y desde el editor de geometría, calcule el número de nodos que componen cada entidad, utilizando para ello la propiedad geométrica número de vértices (_Number of Vertices_).
