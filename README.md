@@ -79,6 +79,7 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 * [:toolbox:Herramienta](https://notepad-plus-plus.org/): Notepad++.
 * [:toolbox:Herramienta](https://www.itc.nl/ilwis/download/): ILWIS 3.3.
 * [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/): HEC-HMS 4.12 o superior.
+* [:toolbox:Herramienta](file/tool): Microsoft Access Database Engine (requerido para apertura de archivos .xlsx en ArcGIS Pro)
 * [:open_file_folder:Estructura de directorios](file/Readme.md)
 
 
