@@ -229,7 +229,7 @@ Para este ejercicio, excluiremos del rotulado, todas las fracciones objeto de pl
 
 > :bulb:Luego de finalizado el proceso de identificación, podrá generar [reportes directamente en ArcGIS Pro](https://pro.arcgis.com/es/pro-app/latest/help/reports/reports-in-arcgis-pro.htm) o exportar la tabla de resultados a Excel.
 > 
-> :bulb:Creando un resúmen estadístico y asignando valores promedio por metro cuadrado, podrá conocer el valor total que genera la plusvalía y evaluar si estos recursos pueden cubrir los gastos administrativos de su cobro para financiar los planes, programas y proyectos establecidos en el POT.
+> :bulb:Creando un resúmen estadístico y asignando valores promedio por metro cuadrado, podrá conocer el valor total que genera la plusvalía y evaluar si estos recursos cubren los gastos administrativos de su ejecución y si existe un remanente para financiar los planes, programas y proyectos establecidos en el POT.
 
 
 ## 3. Análisis usando software libre - QGIS
