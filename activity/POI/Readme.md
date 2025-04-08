@@ -116,7 +116,7 @@ Rótulo Arcade: `"d (m): "+ Round($feature.LGm, 2) +  textformatting.NewLine + "
 
 ## 4. Cobertura geográfica por POI
 
-1. Para la estimación de la cobertura geográfica en cada POI, crearemos zonas de múltiples anillos, considerando tiempos de desplazamiento caminando de 5, 10 y 15 minutos. Utilizaremos como referencia, una velocidad de desplazamiento de 4.54 km/h.
+1. Para la estimación de la cobertura geográfica desde cada POI, crearemos zonas de múltiples anillos, considerando tiempos de desplazamiento caminando de 5, 10 y 15 minutos. Utilizaremos como referencia, una velocidad de desplazamiento de 4.54 km/h.
 
 <div align="center">
 
