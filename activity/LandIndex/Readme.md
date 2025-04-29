@@ -230,7 +230,7 @@ Rótulo Arcade: `$feature.ZonaGeo + '\nIndConst: ' + round($feature.IndConst, 4)
 
 <div align="center"><img src="graph/ArcGISPro_FieldCalculator11.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-En algunos casos, el índice de ocupación puede ser mayor que 1.000, esto debido a que pueden existir construcciones que cubran toda la manzana y que tengan voladizos o cubiertas fuera de ella. Modifique el rótulo de manzana incluyendo el valor del índice calculado.
+En algunos casos, el índice de ocupación puede ser mayor que 1.00, esto debido a que pueden existir construcciones que cubran toda la manzana y que tengan voladizos o cubiertas fuera de ella. Modifique el rótulo de manzana incluyendo el valor del índice calculado.
 
 Rótulo Arcade: `$feature.codigo + "\nIndOcup: " + round($feature.IndOcup, 4) + " (" + round($feature.IndOcup*100, 4) + "%)" `
 
