@@ -121,3 +121,25 @@ in: 'Wseismic+Wvolcani+Wlandslid+Wtsunami+Wbeach+Wriver+Winundat+Wtopogra'
 9:30:18 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazclas'.dom
 9:30:41 a. m. miércoles, 12 de marzo de 2025  slicing
 9:30:57 a. m. miércoles, 12 de marzo de 2025  open 'D:\R.sige\file\data\ILWIS\Hazclas'.mpr
+5:49:52 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\Hazard'.mpr
+7:09:03 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\COLOMBIA'.mpa
+7:10:15 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\SEISMIC'.mpr
+7:11:00 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\INUNDAT'.mpr
+7:12:12 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\INUNDAT'.mpr
+7:17:09 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\SEISMIC'.mpr
+7:17:13 PM Wednesday, May 7, 2025  pixelinfo
+7:17:22 PM Wednesday, May 7, 2025  pixelinfo
+7:18:36 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\SEISMIC'.mpr
+7:20:08 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\seismic'.tbt
+7:23:39 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\Wseismic'.mpr
+7:25:08 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\INUNDAT'.mpr
+7:26:28 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\TOPOGRAP'.mpr
+7:27:37 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\Winundat'.mpr
+7:28:00 PM Wednesday, May 7, 2025  pixelinfo
+7:28:51 PM Wednesday, May 7, 2025  show 'D:\R.sige\file\data\ILWIS\Wvolcani'.mpr
+7:30:26 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\Hazard'.mpr
+7:31:10 PM Wednesday, May 7, 2025  prop Hazard.mpr
+7:31:35 PM Wednesday, May 7, 2025  histogram
+7:31:42 PM Wednesday, May 7, 2025  Hazard.his = TableHistogram(Hazard)
+7:31:42 PM Wednesday, May 7, 2025  show Hazard.his
+7:33:31 PM Wednesday, May 7, 2025  open 'D:\R.sige\file\data\ILWIS\Hazclas'.mpr
