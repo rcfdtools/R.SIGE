@@ -1,5 +1,26 @@
 ## Herramientas comúnmente utilizadas en QGIS
 
+### Cálculo de propiedades geométricas
+
+* Longitud de una poli-línea: length(@geometry)
+* Perimetro de un polígono: perimeter(@geometry)
+* Área de un polígono: area(@geometry)
+* Coordenada x inicio: x(start_point(@geometry))
+* Coordenada y inicio: y(start_point(@geometry))
+* Coordenada x fin: x(end_point(@geometry))
+* Coordenada y fin: y(end_point(@geometry))
+* Centroide en x: x(@geometry)
+* Centroide en y: y(@geometry)
+* Centroide en x en grados geodésicos: x(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+* Centroide en y en grados geodésicos: y(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+* Límite este en grados decimales: x_max(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+* Límite oeste en grados decimales: x_min(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+* Límite norte en grados decimales: y_max(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+* Límite sur en grados decimales: y_min(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))
+
+
+### Herramientas geográficas
+
 | Proceso                                                                                   | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Definición de CRS                                                                         | En la parte inferior derecha de QGIS se encuentra la opción _EPSG_ que permite cambiar el sistema de proyección del mapa.                                                                                                                                                                                                                                                                                                                |
