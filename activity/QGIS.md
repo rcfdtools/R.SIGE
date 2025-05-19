@@ -84,3 +84,6 @@
 | Agregación espacial de imágenes raster (Multidimensional / Analysis / Aggregate)          | Herramienta disponible en el _Processing Toolbox / GRASS / r.resamp.stats.                                                                                                                                                                                                                                                                                                                                                               |
 |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
+Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
+
+[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
