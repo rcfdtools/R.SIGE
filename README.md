@@ -51,7 +51,7 @@ El curso se desarrolla a través de talleres prácticos que requieren de lectura
 > En la tabla, las columnas de la derecha indican si el estudiante debe o no presentar o realizar las actividades. Estudiantes de Educación Continuada requieren de al menos la asistencia a clase y realizar las lecturas de conceptos generales, las demás actividades son opcionales, sin embargo, se recomienda desarrollar las actividades del proyecto para al finar del curso disponer de un sistema básico de información geográfica aplicado. Estudiantes de Pregrado y Posgrado deben desarrollar obligatoriamente las entregas de proyecto y quices de conocimiento y habilidad y opcionalmente pueden desarrollar las actividades desarrolladas en clase correspondientes al caso de estudio general.
 
 
-## :mortar_board:Dirigido a / Requisitos académicos 
+## Dirigido a / Requisitos académicos 
 
 Los contenidos presentados en este curso están dirigidos a funcionarios públicos, estudiantes y profesionales de diferentes disciplinas que requieran aprender y/o fortalecer sus conocimientos en el uso de sistemas de información geográfica, tales como:
 
@@ -69,7 +69,7 @@ Requisitos académicos:
 > Para tomar este curso, no requiere de conocimientos específicos o certificaciones previas en el uso de herramientas computacionales SIG, tales como ArcGIS Pro o QGIS.
 
 
-## :open_file_folder:Software requerido y estructura de directorios
+## Software requerido y estructura de directorios
 
 Para el desarrollo del curso, son requeridas las siguientes herramientas:
 
@@ -83,7 +83,7 @@ Para el desarrollo del curso, son requeridas las siguientes herramientas:
 * [:open_file_folder:Estructura de directorios](file/Readme.md)
 
 
-## :mag:Caso de estudio general y grupos de proyecto
+## Caso de estudio general y grupos de proyecto
 
 El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **"Análisis topográfico, geográfico, catastral, climatológico, vial y de ordenamiento territorial del Municipio de Zipaquirá Cundinamarca"**. Luego, a partir de los conocimientos y habilidades obtenidas, cada estudiante o grupo de estudiantes, desarrollan las mismas actividades a través de un proyecto de clase el cual es definido para casos de estudios particulares.
 
