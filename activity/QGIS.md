@@ -86,4 +86,6 @@
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
+Configuración de perfil de usuario: C:\Users\R\AppData\Roaming\QGIS\QGIS3\profiles\default\QGIS\QGIS3.ini
+
 [:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)
