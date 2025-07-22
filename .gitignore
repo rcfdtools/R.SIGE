@@ -12,6 +12,8 @@
 .github/
 .venvPython312/
 Lib/
+file/temp/Pix4D/
+
 #.refs/GitHubRefs/
 # Grid pyramid
 *.ovr
