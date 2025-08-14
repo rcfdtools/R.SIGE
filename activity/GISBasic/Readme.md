@@ -101,8 +101,6 @@ Un SIG (GIS, en su acrónimo inglés Geographic Information System) es un sistem
 > :bulb: Imagine por un instante que la semana anterior realizó un estudio hidráulico a partir del levantamiento topo-batimétrico de un tramo de río que contiene un meandro con la representación de esta información en un SIG. Una semana después, una lluvia extrema ocasionó una avenida torrencial y una avalancha que desplazo y corto el meandro en la zona levantada. Como observa, la geografía ha cambiado y el SIG creado ya no representa la condición actual del tramo de río en estudio. Para actualizar el sistema de información deberá realizar nuevamente el levantamiento y crear una nueva versión del estudio. 
 
 
-
-
 ## 4. Ventajas y desafíos de los SIG [^3]
 
 La operación de los sistemas de información geográfica afrontan desafíos importantes que deben ser considerados antes de su implementación.
