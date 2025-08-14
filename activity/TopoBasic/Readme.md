@@ -20,7 +20,7 @@ La topografía se trata de la medición de las características físicas o geom�
 
 
 
-## 1. ¿Qué es la Topografía?[^2]
+## 1. ¿Qué es la Topografía? [^2]
 
 La topografía es una ciencia que estudia el conjunto de procedimientos para determinar las posiciones relativas de los puntos sobre la superficie de la tierra y debajo de la misma, mediante la combinación de las medidas según los tres elementos del espacio: 
 
