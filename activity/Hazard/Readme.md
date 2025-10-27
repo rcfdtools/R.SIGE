@@ -177,7 +177,7 @@ A partir del modelo digital de elevación SRTM de la NASA con cobertura sobre Co
 
 ### 1.7. Zonas erosionables IDEAM - 1988
 
-El mapa de Erosión y degradaciÓn de las Tierras Colombianas (IGAC, 1988) a escala 3.400.000 fue elaborado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi y publicado en 1988, en el Atlas de Suelos y Bosques de Colombia. Se presentan estadísticas de áreas afectadas y porcentajes sobre cada una de las cinco regiones naturales continentales de Colombia. En la memoria se hace alusión a la degradación de las tierras según la FAO (1980) y a la erosión de los suelos. En la leyenda del mapa, se utilizan seis clases, con base en parámetros selectivos y evidencias de campo.
+El mapa de Erosión y degradación de las Tierras Colombianas (IGAC, 1988) a escala 3.400.000 fue elaborado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi y publicado en 1988, en el Atlas de Suelos y Bosques de Colombia. Se presentan estadísticas de áreas afectadas y porcentajes sobre cada una de las cinco regiones naturales continentales de Colombia. En la memoria se hace alusión a la degradación de las tierras según la FAO (1980) y a la erosión de los suelos. En la leyenda del mapa, se utilizan seis clases, con base en parámetros selectivos y evidencias de campo.
 Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016. Elaborado el 09-12-2022 a escala 1:3.400.000 (obtenido a partir de servicio rest de https://www.colombiaenmapas.gov.co).
 
 <div align="center">Pesos (Erosion1988.shp)<br>
