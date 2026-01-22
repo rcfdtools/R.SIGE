@@ -309,7 +309,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../Population/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/7) | [Siguiente :arrow_forward:](../POTStudyZone/Readme.md) |
+| [◄ Anterior](../Population/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/7) | [Siguiente ►](../POTStudyZone/Readme.md) |
 |------------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|--------------------------------------------------------|
 
 [^1]: https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot

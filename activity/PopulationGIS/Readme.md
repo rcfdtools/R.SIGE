@@ -296,7 +296,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../CountyLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/12) | [Siguiente :arrow_forward:](../Layout/Readme.md) |
+| [◄ Anterior](../CountyLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/12) | [Siguiente ►](../Layout/Readme.md) |
 |-------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------|
 
 [^1]: Organización Mundial de la Salud. La salud en la economía verde. Los co-beneficios de la mitigación al cambio climático para la salud. Sector de la vivienda. 

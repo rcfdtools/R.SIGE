@@ -300,7 +300,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../TopoBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/3) | [Siguiente :arrow_forward:](../CRS/Readme.md) |
+| [◄ Anterior](../TopoBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/3) | [Siguiente ►](../CRS/Readme.md) |
 |-----------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------|
 
 [^1]: https://www.esri.com/es-es/what-is-gis/history-of-gis 

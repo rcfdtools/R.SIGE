@@ -197,7 +197,7 @@ _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [:arrow_backward: Anterior](../CRS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/5)  | [Siguiente :arrow_forward:](../Population/Readme.md) |
+| [◄ Anterior](../CRS/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/5)  | [Siguiente ►](../Population/Readme.md) |
 |-----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------|
 
 [^1]: Tomado o adaptado de https://es.wikipedia.org/wiki/Zipaquir%C3%A1
