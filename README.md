@@ -1,6 +1,6 @@
 <div align="center"><a href="https://www.escuelaing.edu.co/es/investigacion-e-innovacion/centro-de-estudios-hidraulicos/" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBanner.jpg" alt="R.LTWB" width="100%" border="0" /></a></div>
 
-# Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE  
+# Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE  
 Keywords: `gis` `urban-planning` `digital-elevation-model` `hazard-detection` `soil-mapping` `population-dynamics` `arcgis-pro` `qgis` `rural-development` `urban-development` 
 
 _Bienvenido al Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE. A través de talleres orientados a la solución de un caso de estudio general y con el apoyo técnico de instructores y monitores (dependiendo del número de inscritos), los participantes desarrollarán un proyecto de clase que les permitirá crear el prototipo de un sistema de información geográfica para la gestión del ordenamiento territorial._
