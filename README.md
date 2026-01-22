@@ -5,7 +5,7 @@ Keywords: `gis` `urban-planning` `digital-elevation-model` `hazard-detection` `s
 
 _Bienvenido al Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE. A través de talleres orientados a la solución de un caso de estudio general y con el apoyo técnico de instructores y monitores (dependiendo del número de inscritos), los participantes desarrollarán un proyecto de clase que les permitirá crear el prototipo de un sistema de información geográfica para la gestión del ordenamiento territorial._
 
-<div align="center"><img src="file/graph/Gemini_Generated_Image_rswh9mrswh9mrswh.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/e7636286c1e033ba">https://gemini.google.com</a></sub><br><br></div>
+<div align="center"><img src="file/graph/Gemini_Generated_Image_bqo9babqo9babqo9.png" alt="R.SIGE" width="60%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/e7636286c1e033ba">https://gemini.google.com</a></sub><br><br></div>
 
 **"Los procesos de toma de decisión orientados a la gestión del ordenamiento territorial requieren conocimientos y habilidades en el uso y manejo de sistemas de información geográfica. En este curso, el participante aprenderá a recopilar, integrar, relacionar y analizar información espacial y alfanumérica de una forma ágil y asertiva".**
 
