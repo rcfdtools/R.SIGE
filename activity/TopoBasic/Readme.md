@@ -1,4 +1,9 @@
-# Conceptos básicos de topografía, fotogrametría y fotointerpretación
+# :large_blue_circle:Módulo 1 – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
+
+En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a su aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.
+
+
+# 1.0. Conceptos básicos de topografía, fotogrametría y fotointerpretación
 Keywords: `Topography` `Photogrammetric` `Earth-Shape` `GNSS`
 
 La topografía se trata de la medición de las características físicas o geométricas de la Tierra. Los levantamientos topográficos se clasifican a menudo por el tipo de datos estudiados o por los instrumentos o métodos utilizados. Algunos ejemplos son los estudios geodésicos, geológicos, topográficos, hidrográficos, terrestres, geofísicos, de suelos, de minas y de ingeniería.[^1]

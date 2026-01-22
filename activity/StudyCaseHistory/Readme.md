@@ -1,4 +1,4 @@
-# Reseña histórica y geográfica municipal del caso de estudio  
+# 1.3. Reseña histórica y geográfica municipal del caso de estudio  
 Keywords: `History` `StudyCase`
 
 Zipaquirá es un municipio de Colombia ubicado en el departamento de Cundinamarca, en la provincia de Sabana Centro, de la que es capital. Es el segundo municipio más grande y poblado de la provincia. Es uno de los centros de explotación de sal más importantes del país, razón por la que también es conocida como la Capital Salinera de Colombia.

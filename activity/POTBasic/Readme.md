@@ -1,4 +1,4 @@
-# Conceptos generales de Ordenamiento Territorial - OT
+# 1.5. Conceptos generales de Ordenamiento Territorial - OT
 Keywords: `EOT` `PBOT` `POT`
 
 El ordenamiento del territorio comprende un conjunto de acciones político-administrativas y de planificación física concertadas, adelantadas por los municipios o distritos y áreas metropolitanas, en ejercicio de la función pública que les compete, dentro de los límites fijados por la Constitución y las leyes, en orden a disponer de instrumentos eficientes para orientar el desarrollo del territorio bajo su jurisdicción y regular la utilización, transformación y ocupación del espacio, de acuerdo con las estrategias de desarrollo socioeconómico y en armonía con el medio ambiente y las tradiciones históricas y culturales (Art. 5 Ley 388 de 1997).
