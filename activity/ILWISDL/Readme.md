@@ -1,4 +1,12 @@
-# ILWIS - Descarga y visualización de mapas base
+# :large_blue_circle:Módulo 7 – Análisis de amenazas naturales, modelación de redes vehiculares y fotogrametría con drones (6 horas)
+
+En este módulo realizaremos diferentes análisis complementarios utilizando herramientas especializadas de análisis orientadas a identificaciones de amenazas, modelación de redes y fotogrametría.
+
+
+## :fire:A. Análisis de amenazas naturales con ILWIS y ArcGIS Pro
+
+
+# 7A.1. ILWIS - Descarga y visualización de mapas base
 Keywords: `integrated-land-and-water-information-system` `hazard` `grid-map` `domain` `crs` `pixel-info`
 
 Descargue e instale [ILWIS 3.3](https://www.itc.nl/ilwis/download/), el paquete de actualización a la versión 3.31, y el paquete de datos y guía disponible en Exercises and data, correspondiente al caso de estudio 1. Hazard, vulnerability and risk analysis. Siguiendo las instrucciones de la guía de desarrollo del caso de estudio, visualice cada uno de los mapas disponibles y describa su contenido, consulte cada una de las tablas de dominio. Utilizando la opción Pixel Info, disponible en panel lateral Operation-Tree, visualice para todos los mapas, los valores representados en 3 localizaciones diferentes.     

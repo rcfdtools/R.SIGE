@@ -1,4 +1,4 @@
-# Estudio de localización de equipamientos y puntos de interés - POI
+# 3.3. Estudio de localización de equipamientos y puntos de interés - POI
 Keywords: `poi` `point-of-interest` `facilities`
 
 Utilizando la capa vial y la localización de los diferentes equipamientos, realice un análisis de proximidad para identificar la vía más próxima y cree un buffer de proximidad por categoría.

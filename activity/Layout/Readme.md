@@ -1,4 +1,4 @@
-# Creación de plantillas para impresión digital
+# 2.4. Creación de plantillas para impresión digital
 Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `crs` `map-series`
 
 Creación de plantillas con inclusión de elementos dinámicos para impresión digital: norte, escala, grilla, convenciones, CRS y otros elementos. Impresión digital de mapas por vereda con representación de clasificación del suelo y categorías de uso del Modelo de Ocupación del Territorio - MOT.                 

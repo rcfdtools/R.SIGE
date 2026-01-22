@@ -1,4 +1,4 @@
-# Clasificación no supervisada ISO Cluster
+# 6.2. Clasificación no supervisada ISO Cluster
 Keywords: `iso-cluster-unsupervised-classification` `clip-raster`
 
 A partir de las composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 recortadas hasta el límite del modelo de ocupación territorial - MOT, realizar clasificación no supervisada en 24 clases. Calcule y compare las áreas por clase en hectáreas hasta el límite municipal. Considerar que en el mapa de clasificación no supervisada a partir de datos Landsat 7, los cuerpos de agua principales han sido marcados con la clase 2 y en Landsat 9 se encuentran en la clase 1. Explique las diferencias principales encontradas y las diferencias de clasificación en la zona urbana.

@@ -1,4 +1,4 @@
-# Identificación de predios en plusvalía por cambio de clasificación o categoría de suelo
+# 2.6. Identificación de predios en plusvalía por cambio de clasificación o categoría de suelo
 Keywords: `land-added-value` `land-appreciation` `land-betterment` `intersect` 
 
 A partir de la combinación de predios con el mapa del Modelo de Ocupación Territorial - MOT, se realiza la identificación de predios rurales con cambio de categoría a expansión urbana, suburbano o urbano y/o por modificación de la zonificación de usos del suelo.

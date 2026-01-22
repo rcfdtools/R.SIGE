@@ -1,4 +1,4 @@
-# Ordenamiento Territorial de la zona de estudio
+# 1.6. Ordenamiento Territorial de la zona de estudio
 Keywords: `soil-classification` `pot-implementation`
 
 En esta actividad revisaremos la denominación (POT, PBOT, EOT) aplicable de ordenamiento territorial del municipio del caso de estudio en función de la población del último registro censal y evaluaremos los diferentes alcances establecidos en la Ley 388 de 1997 para los componentes general, urbano y rural, y su adopción a nivel municipal.

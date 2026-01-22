@@ -1,4 +1,4 @@
-# Corredores viales urbanos y construcciones afectadas
+# 3.2. Corredores viales urbanos y construcciones afectadas
 Keywords: `road-buffer` `rail-buffer` `intersect`
 
 A partir de la capa de vías urbanas, sus jerarquías, y siguiendo las especificaciones de perfiles viales establecidas en el POT, cree las áreas aferentes o corredores viales. A partir de los buffers de vía generados y las construcciones disponibles en la cartografía del POT, realice una intersección e identifique las construcciones afectadas. Cree un reporte indicando el área total de la construcción, el área afectada, % de afectación y el corredor víal de la afectación.

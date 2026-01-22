@@ -1,4 +1,9 @@
-# Inventario de información geo-espacial recopilada del POT, diccionario y modelo de datos
+# :large_blue_circle:Módulo 2 – Conceptos básicos aplicados de SIG en OT (3 horas)
+
+En este módulo se abordan conceptos de ciencias y tecnologías relacionadas con los SIG, sus ventajas y desafíos, y su aplicación y utilidad. En cuanto a su aplicabilidad, estudiaremos los mapas veredales para la disolución y obtención de los límites territoriales, analizaremos el cubrimiento de la red vial municipal, realizaremos un análisis geográfico del modelo de ocupación territorial - MOT y la digitalización y cálculo de propiedades geométricas y geográficas.
+
+
+# 2.1. Inventario de información geo-espacial recopilada del POT, diccionario y modelo de datos
 Keywords: `pot` `data-gis-dictionaty` `shapefile` `feature-class` `layer` `grid` `tiff` `geodatabase` `gdb` `CRS` `envelope` `geotable`
 
 En esta actividad se presenta una tabla resumen de la información geo-espacial (vectorial, ráster) y tablas anexas al POT.

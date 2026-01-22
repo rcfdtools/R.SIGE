@@ -1,4 +1,4 @@
-# Representación geográfica de población, densidad poblacional, espacio público efectivo (EPE) y demanda de servicios públicos
+# 2.3. Representación geográfica de población, densidad poblacional, espacio público efectivo (EPE) y demanda de servicios públicos
 Keywords: `population-gis` `public-space` `epe` `water-demand` `water-return` `proportional-symbol` `time-view` `dynamic-view`
 
 A partir de la delimitación de límites geopolíticos internos y utilizando los datos de población proyectada, crear una representación visual dinámica de su crecimiento y la demanda de espacio público efectivo y servicios públicos domiciliarios.                          

@@ -1,4 +1,4 @@
-# Digitalización de vectores: drenajes, vías y predios
+# 2.8. Digitalización de vectores: drenajes, vías y predios
 Keywords: `digitizing` `polyline` `polygon` `sinuosity` `euclidian-distance`
 
 Conceptos de escala. Tomado como referencia los vectores de la red hidrográfica, la red vial y la base predial y utilizando como mapa base la imágen satelital mundial de ESRI o Google, realice la digitalización de un tramo de drenaje de al menos 1 kilómetro y luego digitalice las vías y predios próximos y/o que están ubicados lateralmente.

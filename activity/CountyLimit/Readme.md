@@ -1,4 +1,4 @@
-# Análisis veredal y límite territorial
+# 2.2. Análisis veredal y límite territorial
 Keywords: `rural-limit` `geopolitical-limit` `rural-zone` `dissolve` `geometry-calculator` `advanced-labeling`
 
 En esta actividad evaluaremos los límites veredales y sus diferencias a partir del análisis de diferentes fuentes de información. Luego, crearemos el límite territorial municipal global que será utilizado para el recorte de la información geo-espacial obtenida en actividades posteriores.

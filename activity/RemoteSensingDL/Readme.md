@@ -1,4 +1,9 @@
-# Descarga de imágenes satelitales y composición de bandas
+# :large_blue_circle:Módulo 6 – Sensores remotos y procesamiento digital de imágenes (9 horas)
+
+En este módulo se abordan conceptos relacionados con la definición, aplicación y clasificación de los sensores remotos, tipos de composiciones espectrales utilizados para identificación de algunos tipos básicos de coberturas (agua, suelo, vegetación) y las plataformas utilizadas para su descarga y procesamiento. En cuanto a su aplicabilidad, realizaremos la descarga de imágenes satelitales con generación de mosaicos, el análisis de composición para identificación de zonas urbanas y cuerpos de agua, análisis multiespectral para identificación de coberturas vegetales a partir de índices y su relación con las zonas de protección establecidas en el OT y análisis hidro-climatológico a partir de datos satelitales en formato científico.
+
+
+# 6.1. Descarga de imágenes satelitales y composición de bandas
 Keywords: `landsat` `remote-sensing` `composite-band` `clip-raster`
 
 Utilizando una envolvente generada a partir de los polígonos del Modelo de Ocupación Territorial - MOT, descargue, componga y reproyecte al CRS 9733, imágenes y bandas satelitales de Landsat 7 y Lansat 9. Composiciones Landsat 7 B3B2B1 y Landsat 9 B4B3B2 para imágenes en falso color. Composiciones Landsat 7 B4B3B2 y Landsat 9 B5B4B3 para identificación de cuerpos de agua y vegetación. Análisis descriptivo de las diferencias encontradas entre los grupos de composiciones realizadas.

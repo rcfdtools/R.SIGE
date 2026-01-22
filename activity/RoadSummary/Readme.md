@@ -1,4 +1,4 @@
-# Análisis estadístico de la red vial
+# 2.7. Análisis estadístico de la red vial
 Keywords: `road-summary` `summarize` `merge`
 
 A partir de las capas _orden vial_ y _red vial urbana_, contenidas en los anexos de formulación del POT, realice un análisis estadístico de longitud de vías por orden vial y longitud de vías urbanas por tipo.

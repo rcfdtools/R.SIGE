@@ -1,4 +1,9 @@
-# Modelo digital de elevación - DEM a partir de curvas de nivel
+# :large_blue_circle:Módulo 5 – Modelos de elevación digital - DEM (6 horas)
+
+En este módulo se abordan conceptos relacionados con la definición, funciones y aplicaciones de los de los DEM así como sus métodos de creación. En cuanto a su aplicabilidad, realizaremos la creación de DEM's a partir de curvas de nivel, la descarga, procesamiento y validación de DEM satelitales, los análisis zonales a partir de divisiones geopolíticas municipales, la generación de perfiles y su visualización 3D, y crearemos el mapa de pendientes para el análisis de incompatibilidad con áreas de actividad definidas en el OT.
+
+
+# 5.1. Modelo digital de elevación - DEM a partir de curvas de nivel
 Keywords: `dem` `contour` `smooth-line` `feature-to-3d-by-attribute` `tin` `tin-to-raster` `zonal-statistics-as-table`
 
 A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulación del POT, genere las siguientes clases de entidad y modelos DEM: curvas de nivel suavizadas 2D, curvas de nivel suavizadas 3D, modelo de terreno triangulado en formato TIN con conversión a ráster. Genere estadísticos de elevación por vereda, centro poblado y zona urbana (obtenga: cota mínina, media, máxima, rango y desviación estándar). En una escena local, cree una visualización 3D que incluya la superficie de terreno generada, las curvas de nivel suavizadas y los límites veredales.

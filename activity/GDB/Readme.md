@@ -1,4 +1,9 @@
-# Creación de base de datos geográfica del proyecto - GDB
+# :large_blue_circle:Módulo 4 – Bases de datos espaciales GDB para gestión del OT (3 horas)
+
+En este módulo se abordan conceptos de diagramas Entidad-Relación, creación y edición de bases de datos, conjuntos de entidades, clases de entidad, tablas y dominios. En cuanto a su aplicabilidad, realizaremos la integración de los conjuntos de datos recopilados en una única GDB, estudiaremos los índices de ocupación y construcción y el análisis de destinaciones catastrales y su relación con las actividades de uso definidas en el OT.
+
+
+# 4.1. Creación de base de datos geográfica del proyecto - GDB
 Keywords: `geodatabase` `dataset` `relation` `table` `domain` `grid`
 
 Cree una base de datos geográfica (file geodatabase) con grupos de capas o Datasets, e importe y reproyecte las capas y clases de entidad recopiladas y creadas en actividades anteriores.

@@ -1,4 +1,4 @@
-# Mapa de pendientes de terreno
+# 5.3. Mapa de pendientes de terreno
 Keywords: `slope-grid` `dem` `fill-sinks` `reclassify` `slope-hazard`
 
 A partir del modelo de terreno ESA Copernicus, crear: mapa de relleno de sumideros FIL, mapa de pendientes en tasa porcentual, mapa de pendientes reclasificadas en 9 clases utilizando las especificaciones definidas en el dominio `Dom_PenSuelo` del modelo nacional para presentación de licencias ambientales del [ANLA](https://www.anla.gov.co/). Para cada zona geopolítica municipal y para cada polígono de categoría de suelo disponible en el MOT, calcule la pendiente mínima, media y máxima e identifique incompatibilidades (por ejemplo, zonas con pendientes altas definidas para desarrollos urbanos, de centros poblados, implantación de equipamientos).

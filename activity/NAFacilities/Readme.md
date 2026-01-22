@@ -1,4 +1,4 @@
-# Network Analyst - Equipamientos educativos y centros de atención de emergencias
+# 7B.2. Network Analyst - Equipamientos educativos y centros de atención de emergencias
 Keywords: `facilities` `emergencies`
 
 Importe a la GDB, la capa de establecimientos educativos y las capas de puntos de interés obtenidos de la cartografía del POT, que contienen los equipamientos que hacen parte de los centros de atención a emergencias y homologue sus atributos.

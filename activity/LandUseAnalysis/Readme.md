@@ -1,4 +1,4 @@
-# Análisis geográfico del Modelo de Ocupación Territorial - MOT
+# 2.5. Análisis geográfico del Modelo de Ocupación Territorial - MOT
 Keywords: `land-use-analysis` `mot`
 
 A partir de la capa MOT contenida en el anexo de formulación del POT, realice un análisis estadístico de áreas por clasificación del suelo (urbano, expansión urbana, rural) y categorías definidas en el Modelo de Ocupación Territorial - MOT con porcentaje de distribución respecto al total del área municipal.
