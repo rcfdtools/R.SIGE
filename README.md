@@ -1,4 +1,4 @@
-<div align="center"><img alt="R.SIGE" src="file/graph/R.SIGE.svg" width="220px"><br><i>COURSE - Geographic information systems applied to development and Territorial planning (TP) - TSIG</i></div>
+<div align="center"><img alt="R.SIGE" src="file/graph/R.SIGE.svg" width="220px"><br><i>COURSE: Geographic information systems applied in engineering - TSIG</i></div>
 
 # CURSO: Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE  
 Keywords: `gis` `urban-planning` `digital-elevation-model` `hazard-detection` `soil-mapping` `population-dynamics` `arcgis-pro` `qgis` `rural-development` `urban-development` 
