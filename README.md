@@ -1,6 +1,6 @@
 <div align="center"><img alt="R.SIGE" src="file/graph/R.SIGE.svg" width="220px"><br><i>COURSE - Geographic information systems applied to development and territorial planning (TP)</i></div>
 
-# CURSO: Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE  
+# CURSO: Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT)
 Keywords: `gis` `urban-planning` `digital-elevation-model` `hazard-detection` `soil-mapping` `population-dynamics` `arcgis-pro` `qgis` `rural-development` `urban-development` 
 
 _Bienvenido al Curso taller de Sistemas de Información Geográfica aplicados a Desarrollo y Ordenamiento Territorial (OT) - SIGE. A través de talleres orientados a la solución de un caso de estudio general y con el apoyo técnico de instructores y monitores (dependiendo del número de inscritos), los participantes desarrollarán un proyecto de clase que les permitirá crear el prototipo de un sistema de información geográfica para la gestión del ordenamiento territorial._
