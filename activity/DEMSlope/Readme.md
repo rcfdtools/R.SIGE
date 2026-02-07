@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 5.3. Mapa de pendientes de terreno
 Keywords: `slope-grid` `dem` `fill-sinks` `reclassify` `slope-hazard`
 

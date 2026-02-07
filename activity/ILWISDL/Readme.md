@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 7 – Análisis de amenazas naturales, modelación de redes vehiculares y fotogrametría con drones (6 horas)
 
 En este módulo realizaremos diferentes análisis complementarios utilizando herramientas especializadas de análisis orientadas a identificaciones de amenazas, modelación de redes y fotogrametría.

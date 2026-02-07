@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 5.8. Estudio geográfico de embalses
 Keywords: `reservoir` `elevation-volume` `elevation-area` `storage-capacity`
 

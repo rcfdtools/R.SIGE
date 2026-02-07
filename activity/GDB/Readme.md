@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 4 – Bases de datos espaciales GDB para gestión del OT (3 horas)
 
 En este módulo se abordan conceptos de diagramas Entidad-Relación, creación y edición de bases de datos, conjuntos de entidades, clases de entidad, tablas y dominios. En cuanto a su aplicabilidad, realizaremos la integración de los conjuntos de datos recopilados en una única GDB, estudiaremos los índices de ocupación y construcción y el análisis de destinaciones catastrales y su relación con las actividades de uso definidas en el OT.

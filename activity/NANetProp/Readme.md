@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 ## :vertical_traffic_light:B. Análisis de redes viales - Network Analyst
 
 # 7B.1. Network Analyst - Homologación de red vial urbana y rural

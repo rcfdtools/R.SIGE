@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 2 – Conceptos básicos aplicados de SIG en OT (3 horas)
 
 En este módulo se abordan conceptos de ciencias y tecnologías relacionadas con los SIG, sus ventajas y desafíos, y su aplicación y utilidad. En cuanto a su aplicabilidad, estudiaremos los mapas veredales para la disolución y obtención de los límites territoriales, analizaremos el cubrimiento de la red vial municipal, realizaremos un análisis geográfico del modelo de ocupación territorial - MOT y la digitalización y cálculo de propiedades geométricas y geográficas.

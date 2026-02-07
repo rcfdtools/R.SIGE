@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 1.6. Ordenamiento Territorial de la zona de estudio
 Keywords: `soil-classification` `pot-implementation`
 

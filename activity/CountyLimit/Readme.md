@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 2.2. Análisis veredal y límite territorial
 Keywords: `rural-limit` `geopolitical-limit` `rural-zone` `dissolve` `geometry-calculator` `advanced-labeling`
 

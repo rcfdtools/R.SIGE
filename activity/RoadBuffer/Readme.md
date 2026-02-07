@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 3.2. Corredores viales urbanos y construcciones afectadas
 Keywords: `road-buffer` `rail-buffer` `intersect`
 

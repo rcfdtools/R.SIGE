@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 3 – Herramientas de análisis espacial aplicadas a OT (3 horas)
 
 En este módulo se abordan conceptos de tablas geo-codificadas y los geo-procesos más comúnmente utilizados para análisis espacial. En cuanto a su aplicabilidad, realizaremos la reconstrucción de los límites geográficos de áreas urbanas, zonas de expansión, centros poblados y áreas especiales definidas en tablas geo-codificadas del OT, también su comparación con los vectores de la cartografía oficial del OT. Complementariamente, realizaremos la generación de corredores viales a partir de perfiles definidos en el OT con identificación de construcciones afectadas y para finalizar, un análisis de coberturas de redes de estaciones hidro-climatológicas por subzonas hidrográficas y equipamientos por proximidad a corredores viales.

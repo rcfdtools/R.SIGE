@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 1.2. Georreferenciación
 Keywords: `CRS` `SRS` `EPSG-4326` `WGS84`
 

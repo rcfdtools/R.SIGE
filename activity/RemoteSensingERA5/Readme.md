@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 6.5. Análisis hidro-climatológico ERA5 Land Monthly
 Keywords: `remote-sensing` `era-5` `reanalysis` `anomalies` `aggregate` `isoline` `z-score`
 

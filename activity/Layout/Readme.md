@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 2.4. Creación de plantillas para impresión digital
 Keywords: `layout` `north` `scale-text` `scale-bar` `grid` `contents` `crs` `map-series`
 

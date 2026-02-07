@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 2.3. Representación geográfica de población, densidad poblacional, espacio público efectivo (EPE) y demanda de servicios públicos
 Keywords: `population-gis` `public-space` `epe` `water-demand` `water-return` `proportional-symbol` `time-view` `dynamic-view`
 

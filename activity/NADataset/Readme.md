@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 7B.3. Network Analyst - Creación y configuración del network dataset
 Keywords: `facilities` `emergencies`
 

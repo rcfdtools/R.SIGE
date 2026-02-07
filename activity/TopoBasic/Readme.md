@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 1 – Introducción y nivelación de conceptos generales de SIG y OT (3 horas)
 
 En este módulo se abordan conceptos básicos de topografía, conceptos básicos de fotogrametría y fotointerpretación, uso y manejo de mapas topográficos y temáticos (cartografía), georreferenciación y sistemas de proyección de coordenadas y se estudia el componente normativo relacionado con ordenamiento territorial. En cuanto a su aplicabilidad, realizaremos la definición de casos de estudio, el estudio del ordenamiento territorial local a partir de Acuerdos o Decretos y cartografía digital, y evaluaremos los censos poblacionales para realizar proyecciones de población.

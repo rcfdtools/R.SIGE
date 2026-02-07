@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 6.4. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices
 Keywords: `normalized-difference-vegetation-index` `raster-calculator` `reclassify` `clip-raster` `composite-bands`
 

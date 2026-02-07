@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 4.3. Índices de ocupación y construcción del suelo
 Keywords: `land-index` `land-occupation`
 

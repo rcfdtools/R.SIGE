@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 2.7. Análisis estadístico de la red vial
 Keywords: `road-summary` `summarize` `merge`
 

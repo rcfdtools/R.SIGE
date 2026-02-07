@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 7A.3. ILWIS - Creación y clasificación del mapa combinado de amenazas
 Keywords: `integrated-land-and-water-information-system` `hazard` `grid-map` `domain` `crs` `pixel-info`
 

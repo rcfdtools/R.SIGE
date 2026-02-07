@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 2.8. Digitalización de vectores: drenajes, vías y predios
 Keywords: `digitizing` `polyline` `polygon` `sinuosity` `euclidian-distance`
 

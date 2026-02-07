@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 3.3. Estudio de localización de equipamientos y puntos de interés - POI
 Keywords: `poi` `point-of-interest` `facilities`
 

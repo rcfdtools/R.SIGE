@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 1.4. Estudio poblacional: censos y proyecciones
 Keywords: `Population` `Census` `Projection` `Linear` `Polynomial` `Logarithmic` `Exponential` `Power` `DANE` `SISBEN` `RNEC`
 

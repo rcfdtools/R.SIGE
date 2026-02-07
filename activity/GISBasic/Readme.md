@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 1.1. Conceptos básicos de SIG 
 Keywords: `GIS-Basics` `GIS-Utility` `GIS-Functions` `GIS-History` `Data-types` `Related-Sciences` `Shapefile` `GDB`
 

@@ -1,6 +1,8 @@
-## Herramientas comúnmente utilizadas en QGIS
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
 
-### Cálculo de propiedades geométricas
+# Herramientas comúnmente utilizadas en QGIS
+
+## Cálculo de propiedades geométricas
 
 * Longitud de una poli-línea: `length(@geometry)`
 * Perimetro de un polígono: `perimeter(@geometry)`
@@ -19,7 +21,7 @@
 * Límite sur en grados decimales: `y_min(transform($geometry, layer_property(@layer, 'crs'),'EPSG:4326'))`
 
 
-### Herramientas geográficas
+## Herramientas geográficas
 
 | Proceso                                                                                   | Procedimiento                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

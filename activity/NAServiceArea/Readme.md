@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 7B.5. Network Analyst - Estudio de áreas de servicio para atención de emergencias y costos
 Keywords: `service-area` `rings` `facilities` `od_matrix_cost` `closest-facility`
 

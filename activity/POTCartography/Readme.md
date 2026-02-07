@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 1.7. Revisión de cartografía impresa digitalmente
 Keywords: `cartography` `POT` `scale-text` `scale-bar` `north` `grid-interval` 
 

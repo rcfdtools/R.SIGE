@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 4.4. Mapa geológico de Colombia vs. MOT
 Keywords: `geology` `geological-map` `mot` `uc` `geological-fail` `volcanic`
 

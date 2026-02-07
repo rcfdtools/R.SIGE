@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 6.3. Binarización por algebra de mapas para identificación de cuerpos de agua
 Keywords: `binary` `water-body` `raster-calculator` `raster-to-polygon` `smooth-polygon`
 

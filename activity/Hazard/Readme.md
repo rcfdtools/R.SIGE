@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 7A.4. ArcGIS Pro - Análisis de amenazas naturales
 Keywords: `hazard` `landslide` `seismic` `volcanic` `tsunami` `mass-move` `erosion`
 

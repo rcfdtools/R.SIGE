@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # :large_blue_circle:Módulo 5 – Modelos de elevación digital - DEM (6 horas)
 
 En este módulo se abordan conceptos relacionados con la definición, funciones y aplicaciones de los de los DEM así como sus métodos de creación. En cuanto a su aplicabilidad, realizaremos la creación de DEM's a partir de curvas de nivel, la descarga, procesamiento y validación de DEM satelitales, los análisis zonales a partir de divisiones geopolíticas municipales, la generación de perfiles y su visualización 3D, y crearemos el mapa de pendientes para el análisis de incompatibilidad con áreas de actividad definidas en el OT.

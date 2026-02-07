@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 6.2. Clasificación no supervisada ISO Cluster
 Keywords: `iso-cluster-unsupervised-classification` `clip-raster`
 

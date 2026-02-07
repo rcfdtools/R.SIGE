@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 4.2. Análisis de destinaciones económicas IGAC (creación de dominios)
 Keywords: `domain` `land-economic-use` `land-prohibited-use` `landuse`
 

@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 5.2. Modelo digital de elevación - DEM a partir de sensores remotos satelitales
 Keywords: `aster-gdem` `srtm` `alos-palsar` `copernicus` `feature-envelope` `extract-multivalues-to-points`
 

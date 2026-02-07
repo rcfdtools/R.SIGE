@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 7A.2. ILWIS - Creación de mapas de pesos
 Keywords: `integrated-land-and-water-information-system` `hazard` `grid-map` `domain` `crs` `pixel-info`
 

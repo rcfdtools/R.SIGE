@@ -1,3 +1,5 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.SIGE.svg" height="46px"></div>
+
 # 4.5. Mapa de suelos, vocación de uso y conflictos de uso de Colombia vs. MOT
 Keywords: `land-soil` `land-conflict` `land-potential-use`
 
