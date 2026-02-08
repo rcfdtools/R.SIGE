@@ -57,6 +57,7 @@
 ## Referencias generales
 
 * https://www.colombiaot.gov.co/
+* https://www.colombiaot.gov.co/acerca-de/
 * https://volaya.github.io/libro-sig/
 * https://clinicamasp.uniandes.edu.co/wp-content/uploads/Cartilla-Ley-de-P%C3%A1ramos.pdf
 * http://www.secretariasenado.gov.co/senado/basedoc/ley_0388_1997.html
@@ -94,3 +95,8 @@
 * [The ArcGIS Imagery Book (the-arcgis-imagery-book-companion-resource.pdf)](https://www.esri.com/content/dam/esrisites/en-us/esri-press/book-pages/sample-page/the-arcgis-imagery-book-companion-resource.pdf)
 * [ESRI - Identificar infraestructuras en riesgo por deslizamientos de tierra](https://learn.arcgis.com/es/projects/identify-infrastructure-at-risk-of-landslides/arcgis-pro/)
 * [Ley 44 de 1990 Colombia - Normas sobre catastro e impuestos sobre la propiedad raíz](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=283&dt=S)
+* https://observatorioplanificacion.cepal.org/es/marcos-regulatorios/ley-organica-de-ordenamiento-territorial-de-colombia
+* https://www.mininterior.gov.co/grupo-de-apoyo-a-la-gestion-territorial-y-buen-gobierno-local/ordenamiento-territorial-grupo-de-apoyo-a-la-gestion/
+* https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot
+* https://www.sdp.gov.co/micrositios/pot-2019/que-es
+* https://medioambiente.uexternado.edu.co/wp-content/uploads/sites/19/2017/11/Presentación-Jorge-Iván-Rincón.pdf
