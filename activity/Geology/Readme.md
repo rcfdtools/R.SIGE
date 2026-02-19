@@ -69,7 +69,7 @@ Unidades encontradas
 
 <div align="center"><img src="graph/ArcGISPro_Mpio25899_UC1.png" alt="rcfdtools" width="100%" border="0" /></div>
 
-7.  A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
+7. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
 
 <div align="center"><img src="graph/ArcGISPro_Chart1.png" alt="rcfdtools" width="100%" border="0" /></div>
 
