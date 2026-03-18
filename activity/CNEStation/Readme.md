@@ -211,11 +211,11 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/ArcGISPro_SelectByLocation.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20240702_ZE.shp`; en la exportación defina el CRS 9377. 
+3. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20240702_ZE.shp`; en la exportación defina el CRS 9377. 
 
 <div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702_ZEa.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
+4. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
 
 <div align="center">Conteo de estaciones por fuente<br><img src="graph/ArcGISPro_Source_Chart.png" alt="R.SIGE" width="100%" border="0" /></div><br>
 
@@ -313,7 +313,7 @@ len_years_serie(!FechaInst!, !FechaSusp!)[1]
 
 <div align="center"><img src="graph/ArcGISPro_CalculateField_LYearSTW.png" alt="R.SIGE" width="100%" border="0" /></div>
 
-5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen longitudes cortas de menos de 10 años, correspondientes a estaciones jóvenes.
+6De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen longitudes cortas de menos de 10 años, correspondientes a estaciones jóvenes.
 
 <div align="center"><img src="graph/ArcGISPro_LYearSStatistics.png" alt="R.SIGE" width="100%" border="0" /></div>
 
