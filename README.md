@@ -52,6 +52,12 @@ El curso se desarrolla a través de talleres prácticos que requieren de lectura
 | Consejería académica individual o grupal | Previo a cada clase, el estudiante preparara los contenidos asignados para cada sesión, durante el horario regular de clase se realiza la explicación general de cada taller y fuera del horario de clase y a través de un chat directo por Microsoft Teams, los estudiantes pueden solicitar consejerías académicas y/o soporte de las herramientas computacionales a utilizar, para así completar los talleres y el proyecto final. (Aplica solo para estudiantes inscritos bajo modalidad de certificación.)              |        Opcional         |       Opcional       |
 
 > En la tabla, las columnas de la derecha indican si el estudiante debe o no presentar o realizar las actividades. Estudiantes de Educación Continuada requieren de al menos la asistencia a clase y realizar las lecturas de conceptos generales, las demás actividades son opcionales, sin embargo, se recomienda desarrollar las actividades del proyecto para al finar del curso disponer de un sistema básico de información geográfica aplicado. Estudiantes de Pregrado y Posgrado deben desarrollar obligatoriamente las entregas de proyecto y quices de conocimiento y habilidad y opcionalmente pueden desarrollar las actividades desarrolladas en clase correspondientes al caso de estudio general.
+>
+> **Pregrado**: acorde con el parágrafo del Artículo 38 del reglamento estudiantil, _“La asistencia a talleres y laboratorios es de carácter obligatorio. La inasistencia a estas actividades se califica con cero coma cero (0,0)”_.
+> 
+> **Posgrado**: acorde con el Literal b del Artículo 46 del reglamento estudiantil, los estudiantes de posgrado deben _“Asistir y participar cumplida y activamente en todas las actividades académicas contempladas en el plan de estudios”_.
+> 
+> **Informe técnico**: solo será válido si en cada una de las capturas de pantalla se observa su código de alumno en el título o nombre de archivo. Para las capturas de pantalla puede utilizar la Herramienta de Recortes o Snipping Tool, las teclas <kbd>Win</kbd>+<kbd>PrtScn</kbd> para guardar capturas de toda la ventana en la carpeta de imágenes, las teclas <kbd>Win</kbd>+<kbd>G</kbd> para obtener capturas desde la Game Bar, o las teclas <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> para capturas instantáneas. Una vez finalizada la elaboración del informe técnico, este debe ser convertido a formato Adobe Acrobat .pdf y adjuntado al Quiz.
 
 
 ## Dirigido a / Requisitos académicos 
