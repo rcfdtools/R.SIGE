@@ -1,6 +1,6 @@
 # Estructura de directorios
 
-Para el desarrollo del caso de estudio y del proyecto de clase, es necesario crear la siguiente estructura en su repositorio de proyecto.
+Para el desarrollo de las diferentes actividades del curso, son requeridos los siguientes directorios, que deben estar contenidos en la carpeta `C:\SIGE` o `D:\SIGE`. [:package:Descargar.](SIGE_FileStructure.zip)
 
 > Atención: no incluya archivos en la raíz del repositorio, utilice la carpeta correspondiente. En caso de que requiera de la creación de archivos temporales, utilice la carpeta `\temp`.
 
@@ -23,3 +23,4 @@ Para el desarrollo del caso de estudio y del proyecto de clase, es necesario cre
 | [:open_file_folder:temp](temp)                     | Carpeta para el almacenamiento temporal de datos que pueden ser eliminados completamente en cualquier momento. Por ejemplo, para la realización de pruebas preliminares o revisión de archivos descargados, antes de su incorporación a las carpetas oficiales del taller o el proyecto.                                                                                                                                                         |
 | [:open_file_folder:tool](tool)                     | Carpeta para el almacenamiento de herramientas complementarias de análisis e instaladores. Por ejemplo, archivos de instalación de herramientas HEC, visores de datos externos como Panoply, instaladores de Python y otras herramientas de uso libre.                                                                                                                                                                                           |
 
+_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../LICENSE.md)._
