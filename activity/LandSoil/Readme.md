@@ -228,13 +228,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://www.datos.gov.co/dataset/vocaciondeusoterritorionacional/ip25-k55k/about_data
 
 
-## Control de versiones
-
-| Versión     | Descripción                                                | Autor                                      | Horas |
-|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.03.23  | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.07.28  | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-
+#
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 

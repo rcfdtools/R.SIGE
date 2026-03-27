@@ -219,13 +219,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://docs.qgis.org/3.34/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html#advanced-digitizing
 
 
-## Control de versiones
-
-| Versión      | Descripción                                                | Autor                                      | Horas |
-|--------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.03.13   | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.07.15   | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   7   |
-
+#
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 

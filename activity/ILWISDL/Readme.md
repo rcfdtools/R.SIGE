@@ -150,13 +150,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://www.dlubal.com/es/zonas-de-cargas-para-nieve-viento-y-sismos/terremoto-nsr-a.html
 
     
-## Control de versiones
-
-| Versión    | Descripción                                                | Autor                                      | Horas |
-|------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.04.07 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.09.27 | Investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-
+#
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 

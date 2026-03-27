@@ -136,12 +136,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/intersect.htm
 
 
-## Control de versiones
-
-| Versión    | Descripción                                                                                             | Autor                                      | Horas |
-|------------|:--------------------------------------------------------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.09.04 | Versión inicial con alcance de la actividad, investigación y documentación para caso de estudio general | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-
+#
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 

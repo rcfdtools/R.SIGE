@@ -302,13 +302,7 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * Especificaciones técnicas cartografía básica, Instituto Geográfico Agustín Codazzi – IGAC. Subdirección Geografía y Cartografía. 2016
 
 
-## Control de versiones
-
-| Versión    | Descripción                                | Autor                                      | Horas |
-|------------|:-------------------------------------------|--------------------------------------------|:-----:|
-| 2018.07.22 | Versión inicial contenida en el curso TSIG | [rcfdtools](https://github.com/rcfdtools)  |   8   |
-| 2024.06.25 | Versión adaptada curso SIGE                | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-
+#
 
 _R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
 
