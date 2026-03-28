@@ -304,6 +304,9 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * https://terridata.dnp.gov.co/
 * https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion
 * https://geoportal.dane.gov.co/geovisores/sociedad/cnpv-2018/
+* [Modeling and Simulation in Python / World Population](https://allendowney.github.io/ModSimPy/chap05.html)
+* [Modeling and Simulation in Python / Projecting Population Growth](https://allendowney.github.io/ModSimPy/chap08.html#)
+* [Modeling and Simulation in Python / Analysis of Population Growth](https://allendowney.github.io/ModSimPy/chap09.html#)
 
 
 #
