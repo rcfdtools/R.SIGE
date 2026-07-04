@@ -86,7 +86,7 @@ Para el desarrollo de las actividades desarrolladas en esta clase, se pueden uti
 | Rotulado                                 | Modificable desde las propiedades de la capa en la pestaña _Labels_.                               |
 | Curvas de nivel (Contour)                | Herramienta disponible en el _Processing Toolbox / GRASS / Raster / r.contour.                     |
 | Convertir líneas a polígonos             | Herramienta disponible en el _Processing Toolbox / Vector Geometry / Polygonize_.                  |
-| Curvas hipsométricas (Storage Capacity)  | Herramienta disponible en el _Processing Toolbox / Raster terrain analysis / Hypsometric curves_.  |
+| Curvas hipsométricas (Storage Capacity)  | Herramienta disponible en el _Processing Toolbox / Raster terrain analysis / Hypsometric curves_.</br>Instalar complemento: Surface Water Storage. Ejecutar _Processing Toolbox /  Area-Volume-Elevation graph_.  |
 
 Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
 
