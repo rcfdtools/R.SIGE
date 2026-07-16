@@ -100,3 +100,5 @@
 * https://minvivienda.gov.co/viceministerio-de-vivienda/espacio-urbano-y-territorial/plan-ordenamiento-territorial/pot
 * https://www.sdp.gov.co/micrositios/pot-2019/que-es
 * https://medioambiente.uexternado.edu.co/wp-content/uploads/sites/19/2017/11/Presentación-Jorge-Iván-Rincón.pdf
+* [Decreto 1807 de 2007 Gestión del riesgo en POT](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=59488)
+
