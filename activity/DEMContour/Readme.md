@@ -32,7 +32,7 @@ A partir de la capa de curvas de nivel utilizada en el diagnóstico y formulaci�
 
 ## 0. Modelos digitales de elevación
 
-<div align="center"><img src="graph/Graph_DEM.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+<div align="center"><img src="graph/Graph_DEM.png" alt="R.SIGE" width="80%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
 
 
 ## 1. Creación de modelo digital de elevación a partir de curvas
